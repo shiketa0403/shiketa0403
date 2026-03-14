@@ -23,48 +23,50 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: wp_config.py を生成
+        env:
+          WP_USERNAME: ${{ secrets.WP_USERNAME }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
         run: |
-          cat > wp_config.py << 'PYEOF'
-          WP_CONFIG = {
-              "site_url": "https://civichat.jp",
-              "username": "${{ secrets.WP_USERNAME }}",
-              "app_password": "${{ secrets.WP_APP_PASSWORD }}",
+          python3 -c "
+          import os
+          config = '''WP_CONFIG = {
+              \"site_url\": \"https://civichat.jp\",
+              \"username\": \"''' + os.environ['WP_USERNAME'] + '''\",
+              \"app_password\": \"''' + os.environ['WP_APP_PASSWORD'] + '''\",
           }
-          PYEOF
-          # インデントを除去
-          sed -i 's/^          //' wp_config.py
+          '''
+          with open('wp_config.py', 'w') as f:
+              f.write(config)
+          "
+          echo "wp_config.py を生成しました"
+          cat wp_config.py
 
       - name: CSV記事を投稿
         run: |
           if [ -n "${{ github.event.inputs.csv_file }}" ]; then
-            # 手動実行の場合
             CSV_FILE="csv/${{ github.event.inputs.csv_file }}"
             STATUS="${{ github.event.inputs.status }}"
+            echo "=== 手動実行: $CSV_FILE (status: $STATUS) ==="
+            python wp_bulk_post.py "$CSV_FILE" --status "$STATUS"
           else
-            # push トリガーの場合: 変更されたCSVを全て投稿
-            CSV_FILE=""
-            STATUS="draft"
-            for f in $(git diff --name-only HEAD~1 HEAD -- 'csv/post_*.csv' 2>/dev/null || echo ""); do
+            echo "=== push トリガー: 変更CSVを検出中 ==="
+            FOUND=0
+            for f in csv/post_*.csv; do
               if [ -f "$f" ]; then
                 echo "=== $f を投稿中 ==="
-                python wp_bulk_post.py "$f" --status "$STATUS"
+                python wp_bulk_post.py "$f" --status draft
+                FOUND=1
               fi
             done
-            if [ -z "$CSV_FILE" ]; then
-              echo "新しいCSVファイルを検出しました"
+            if [ "$FOUND" -eq 0 ]; then
+              echo "投稿対象のCSVが見つかりませんでした"
             fi
-          fi
-
-          if [ -n "$CSV_FILE" ]; then
-            if [ ! -f "$CSV_FILE" ]; then
-              echo "エラー: $CSV_FILE が見つかりません"
-              exit 1
-            fi
-            python wp_bulk_post.py "$CSV_FILE" --status "$STATUS"
           fi
