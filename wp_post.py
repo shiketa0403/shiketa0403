@@ -47,7 +47,10 @@ def api_request(endpoint, method="GET", data=None):
         with urllib.request.urlopen(req) as resp:
             return json.loads(resp.read().decode())
     except urllib.error.HTTPError as e:
-        error_body = e.read().decode()
+        try:
+            error_body = e.read().decode("utf-8", errors="replace")
+        except Exception:
+            error_body = "(レスポンス読み取り不可)"
         print(f"エラー {e.code}: {error_body}", file=sys.stderr)
         sys.exit(1)
 
