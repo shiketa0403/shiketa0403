@@ -118,6 +118,19 @@ jobs:
             fi
           fi
 
+      - name: テスト記事を全削除
+        run: |
+          python3 << 'PYEOF'
+          from wp_post import api_request
+          for status in ["draft", "publish", "pending", "private"]:
+              posts = api_request(f"posts?per_page=100&status={status}")
+              for p in posts:
+                  print(f"  削除中: [{p['id']}] {p['title']['rendered']} ({p['status']})")
+                  api_request(f"posts/{p['id']}?force=true", "DELETE")
+                  print(f"  → 削除完了")
+          print("全記事の削除が完了しました")
+          PYEOF
+
       - name: カテゴリ「未分類」を削除
         run: |
           python3 << 'PYEOF'
