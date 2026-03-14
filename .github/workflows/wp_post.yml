@@ -96,14 +96,14 @@ jobs:
               print(f"認証付きAPI: 接続エラー {e}")
           PYEOF
 
-      - name: カテゴリ「海外女子」を削除
+      - name: カテゴリ「未分類」を削除
         run: |
           python3 << 'PYEOF'
           from wp_post import api_request
           cats = api_request("categories?per_page=100")
           for c in cats:
               print(f"  [{c['id']}] {c['name']}")
-              if c['name'] == '海外女子':
+              if c['name'] == '未分類':
                   print(f"  → 削除中: {c['name']} (ID: {c['id']})")
                   api_request(f"categories/{c['id']}?force=true", "DELETE")
                   print(f"  → 削除完了")
