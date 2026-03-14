@@ -96,19 +96,6 @@ jobs:
               print(f"認証付きAPI: 接続エラー {e}")
           PYEOF
 
-      - name: カテゴリ「未分類」を削除
-        run: |
-          python3 << 'PYEOF'
-          from wp_post import api_request
-          cats = api_request("categories?per_page=100")
-          for c in cats:
-              print(f"  [{c['id']}] {c['name']}")
-              if c['name'] == '未分類':
-                  print(f"  → 削除中: {c['name']} (ID: {c['id']})")
-                  api_request(f"categories/{c['id']}?force=true", "DELETE")
-                  print(f"  → 削除完了")
-          PYEOF
-
       - name: CSV記事を投稿
         run: |
           if [ -n "${{ github.event.inputs.csv_file }}" ]; then
@@ -130,3 +117,16 @@ jobs:
               echo "投稿対象のCSVが見つかりませんでした"
             fi
           fi
+
+      - name: カテゴリ「未分類」を削除
+        run: |
+          python3 << 'PYEOF'
+          from wp_post import api_request
+          cats = api_request("categories?per_page=100")
+          for c in cats:
+              print(f"  [{c['id']}] {c['name']}")
+              if c['name'] == '未分類':
+                  print(f"  → 削除中: {c['name']} (ID: {c['id']})")
+                  api_request(f"categories/{c['id']}?force=true", "DELETE")
+                  print(f"  → 削除完了")
+          PYEOF
