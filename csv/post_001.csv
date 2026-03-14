@@ -1,0 +1,2 @@
+title,content,status,category,tags
+"【テスト】GitHub Actions自動投稿テスト","<p>この記事はGitHub Actionsから自動投稿されたテスト記事です。</p><p>正常に表示されていれば、自動投稿の仕組みは成功です。</p>",draft,"未分類","テスト,自動投稿"

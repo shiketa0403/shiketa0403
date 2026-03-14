@@ -1,0 +1,70 @@
+name: WordPress 自動投稿
+
+on:
+  push:
+    paths:
+      - 'csv/post_*.csv'
+  workflow_dispatch:
+    inputs:
+      csv_file:
+        description: '投稿するCSVファイル名（例: post_001.csv）'
+        required: true
+      status:
+        description: '投稿ステータス'
+        required: true
+        default: 'draft'
+        type: choice
+        options:
+          - draft
+          - publish
+
+jobs:
+  post-to-wordpress:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: wp_config.py を生成
+        run: |
+          cat > wp_config.py << 'PYEOF'
+          WP_CONFIG = {
+              "site_url": "https://civichat.jp",
+              "username": "${{ secrets.WP_USERNAME }}",
+              "app_password": "${{ secrets.WP_APP_PASSWORD }}",
+          }
+          PYEOF
+          # インデントを除去
+          sed -i 's/^          //' wp_config.py
+
+      - name: CSV記事を投稿
+        run: |
+          if [ -n "${{ github.event.inputs.csv_file }}" ]; then
+            # 手動実行の場合
+            CSV_FILE="csv/${{ github.event.inputs.csv_file }}"
+            STATUS="${{ github.event.inputs.status }}"
+          else
+            # push トリガーの場合: 変更されたCSVを全て投稿
+            CSV_FILE=""
+            STATUS="draft"
+            for f in $(git diff --name-only HEAD~1 HEAD -- 'csv/post_*.csv' 2>/dev/null || echo ""); do
+              if [ -f "$f" ]; then
+                echo "=== $f を投稿中 ==="
+                python wp_bulk_post.py "$f" --status "$STATUS"
+              fi
+            done
+            if [ -z "$CSV_FILE" ]; then
+              echo "新しいCSVファイルを検出しました"
+            fi
+          fi
+
+          if [ -n "$CSV_FILE" ]; then
+            if [ ! -f "$CSV_FILE" ]; then
+              echo "エラー: $CSV_FILE が見つかりません"
+              exit 1
+            fi
+            python wp_bulk_post.py "$CSV_FILE" --status "$STATUS"
+          fi
