@@ -30,14 +30,13 @@ from wp_post import api_request, create_post
 
 
 def get_or_create_category(name):
-    """カテゴリ名から ID を取得（なければ作成）"""
+    """カテゴリ名から ID を取得（なければエラー）"""
     cats = api_request(f"categories?search={urllib.parse.quote(name)}")
     for c in cats:
         if c["name"] == name:
             return c["id"]
-    result = api_request("categories", "POST", {"name": name})
-    print(f"  カテゴリ作成: [{result['id']}] {result['name']}")
-    return result["id"]
+    print(f"  ✗ カテゴリ '{name}' が見つかりません。WordPress側で先に作成してください。")
+    return None
 
 
 def get_or_create_tag(name):
@@ -91,6 +90,10 @@ def bulk_post_from_csv(csv_path, default_status="draft", delay=2, dry_run=False)
         category_ids = []
         if category_name:
             cat_id = get_or_create_category(category_name)
+            if cat_id is None:
+                print(f"  ✗ スキップ（カテゴリ '{category_name}' が存在しません）")
+                errors += 1
+                continue
             category_ids = [cat_id]
 
         # タグID取得
