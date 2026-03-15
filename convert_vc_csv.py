@@ -298,14 +298,13 @@ def convert_vc_csv(input_path, output_path):
     for group in article_groups:
         title = build_title(group)
         content = build_article_html(group)
-        tags = build_tags(group)
 
         output_rows.append({
             "title": title,
             "content": content,
             "status": "draft",
-            "category": "アフィリエイト案件",
-            "tags": tags,
+            "category": "",
+            "tags": "",
         })
 
     with open(output_path, "w", encoding="utf-8-sig", newline="") as f:

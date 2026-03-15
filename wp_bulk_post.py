@@ -40,14 +40,13 @@ def get_or_create_category(name):
 
 
 def get_or_create_tag(name):
-    """タグ名から ID を取得（なければ作成）"""
+    """タグ名から ID を取得（なければエラー）"""
     tags = api_request(f"tags?search={urllib.parse.quote(name)}")
     for t in tags:
         if t["name"].lower() == name.lower():
             return t["id"]
-    result = api_request("tags", "POST", {"name": name})
-    print(f"  タグ作成: [{result['id']}] {result['name']}")
-    return result["id"]
+    print(f"  ✗ タグ '{name}' が見つかりません。WordPress側で先に作成してください。")
+    return None
 
 
 def bulk_post_from_csv(csv_path, default_status="draft", delay=2, dry_run=False):
@@ -102,7 +101,9 @@ def bulk_post_from_csv(csv_path, default_status="draft", delay=2, dry_run=False)
             for tag_name in tags_str.split(","):
                 tag_name = tag_name.strip()
                 if tag_name:
-                    tag_ids.append(get_or_create_tag(tag_name))
+                    tag_id = get_or_create_tag(tag_name)
+                    if tag_id is not None:
+                        tag_ids.append(tag_id)
 
         try:
             create_post(title, content, status, category_ids or None, tag_ids or None)
