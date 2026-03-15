@@ -32,186 +32,248 @@ SEPARATE_ADVERTISERS = {
 }
 
 
+def _asp_comparison_table():
+    """5社ASP比較テーブル（バリューコマースのみ◯、他は✕）を返す"""
+    TH_STYLE = 'style="width: 50%; background-color: #301ef7;"'
+    TD_CENTER = 'style="width: 50%; text-align: center; vertical-align: middle;"'
+    IMG_BASE = "https://www.civichat.jp/wp-content/uploads/2026/03"
+
+    asp_list = [
+        {
+            "name": "A8net",
+            "img": f"{IMG_BASE}/a8.png",
+            "link": "https://px.a8.net/svt/ejp?a8mat=3BG026+FXXVXU+0K+10A5LT",
+            "display_url": "https://www.a8.net/",
+            "mark": '<span style="font-size: 7em;">✕</span>',
+        },
+        {
+            "name": "バリューコマース",
+            "img": f"{IMG_BASE}/vc.png",
+            "link": "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3548721&amp;pid=892566121",
+            "display_url": "https://www.valuecommerce.ne.jp/",
+            "mark": '<span class="hutoaka"><span style="font-size: 7em;">◯</span></span>',
+            "beacon": '<img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3548721&amp;pid=892566121" width="1" height="1" border="0" />',
+        },
+        {
+            "name": "アクセストレード",
+            "img": f"{IMG_BASE}/acces.png",
+            "link": "https://h.accesstrade.net/sp/cc?rk=0100nldw00kolw",
+            "display_url": "https://www.accesstrade.ne.jp/",
+            "mark": '<span style="font-size: 7em;">✕</span>',
+        },
+        {
+            "name": "afb",
+            "img": f"{IMG_BASE}/afb.png",
+            "link": "https://www.afi-b.com/",
+            "display_url": "https://www.afi-b.com/",
+            "mark": '<span style="font-size: 7em;">✕</span>',
+        },
+        {
+            "name": "もしもアフィリエイト",
+            "img": f"{IMG_BASE}/moshimo.png",
+            "link": "//af.moshimo.com/af/c/click?a_id=4207547&amp;p_id=1&amp;pc_id=1&amp;pl_id=82635",
+            "display_url": "https://af.moshimo.com/",
+            "mark": '<span style="font-size: 7em;">✕</span>',
+        },
+    ]
+
+    rows_html = []
+    for asp in asp_list:
+        beacon = asp.get("beacon", "")
+        rows_html.append(
+            f'<tr>\n'
+            f'<td {TD_CENTER}>'
+            f'<a href="{asp["link"]}" rel="nofollow">'
+            f'<img class="alignnone size-full" src="{asp["img"]}" alt="{asp["name"]}" width="500" height="200" /></a>\n'
+            f'<a href="{asp["link"]}" rel="nofollow">{beacon}{asp["display_url"]}</a></td>\n'
+            f'<td {TD_CENTER}>{asp["mark"]}</td>\n'
+            f'</tr>'
+        )
+
+    return (
+        f'<table style="border-collapse: collapse; width: 100%;">\n'
+        f'<tbody>\n'
+        f'<tr>\n<th {TH_STYLE}></th>\n'
+        f'<th {TH_STYLE}><strong><span style="color: #ffffff;">広告掲載状況</span></strong></th>\n</tr>\n'
+        + "\n".join(rows_html)
+        + "\n</tbody>\n</table>"
+    )
+
+
+def _vc_detail_section():
+    """バリューコマースの詳細紹介セクション（静的）を返す"""
+    IMG_BASE = "https://www.civichat.jp/wp-content/uploads/2026/03"
+    TH_STYLE = 'style="width: 50%; text-align: center; vertical-align: middle; background-color: #4a4a4a;"'
+    TD_STYLE = 'style="width: 50%; text-align: center; vertical-align: middle;"'
+
+    vc_info = [
+        ("サービス開始年", "1999年（日本初のASP）"),
+        ("運営会社", "バリューコマース株式会社（LINEヤフーグループ）"),
+        ("サイト審査", "あり（記事数目安：7〜10記事程度）"),
+        ("SNS・サイトなしで登録", "✕（サイト必要）"),
+        ("初心者向けサポート", "◯"),
+        ("案件総数", "大規模（累計広告主6,500社以上）"),
+        ("得意ジャンル", "Yahoo!ショッピング・大手EC・金融・旅行"),
+        ("Amazon・楽天案件", "〇"),
+        ("独自案件の豊富さ", "◎（大手企業の独占案件多数）"),
+        ("最低支払額", "500円"),
+        ("振込手数料", "無料"),
+        ("特別報酬制度", "会員ランク制度（ゴールド・シルバー・ブロンズ・一般）"),
+        ("高単価案件", "〇"),
+        ("管理画面の使いやすさ", "◎"),
+        ("専任担当者", "〇"),
+        ("薬機法チェック機能", "×"),
+        ("おまかせ広告機能", "◎（コンテンツに合わせ自動で最適広告を配信）"),
+        ("会員数", "85万サイト以上登録"),
+        ("満足度実績", "日本最古のASPとしての老舗ブランド力"),
+    ]
+
+    table_rows = "\n".join(
+        f'<tr>\n<th {TH_STYLE}><span style="color: #ffffff;">{label}</span></th>\n'
+        f'<td {TD_STYLE}>{value}</td>\n</tr>'
+        for label, value in vc_info
+    )
+
+    return (
+        f'<h3>バリューコマース</h3>\n'
+        f'<img class="alignnone size-full" src="{IMG_BASE}/スクリーンショット-2026-03-15-182118.png" '
+        f'alt="バリューコマース" width="951" height="535" />\n'
+        f'<table style="border-collapse: collapse; width: 100%;">\n<tbody>\n'
+        f'{table_rows}\n'
+        f'</tbody>\n</table>\n'
+        f'[st-minihukidashi webicon="" fontsize="" fontweight="" bgcolor="#FFB74D" color="#fff" '
+        f'margin="0 0 20px 0" radius="" position="" myclass="" add_boxstyle=""]おすすめな人\n'
+        f'<div class="st-square-checkbox st-square-checkbox-nobox">\n'
+        f'<ul>\n'
+        f' \t<li>Yahoo!ショッピングのアフィリエイトを扱いたい人</li>\n'
+        f' \t<li>大手企業・有名ブランドの信頼性の高い案件を紹介したい人</li>\n'
+        f' \t<li>広告の貼り替えの手間を省いて効率よく運用したい人</li>\n'
+        f'</ul>\n'
+        f'</div>\n'
+        f'[/st-minihukidashi]\n'
+        f'日本初のASPとして1999年に誕生した、<span class="hutoaka">信頼と実績のあるサービス</span>です。\n'
+        f'Yahoo!ショッピングのアフィリエイトを扱えるのはバリューコマースだけ。\n'
+        f'大手企業・有名ECサイトの案件が充実しているので、「信頼できるブランドの商品を紹介したい」という方に特に向いています。\n'
+        f'コンテンツに合わせて広告を自動表示してくれる<span class="st-mymarker-s">「おまかせ広告」機能も便利</span>です。\n'
+        f'また、会員ランク制度があり、成果を積み上げるほど特典や報酬条件が有利になっていく仕組みも魅力のひとつです。'
+    )
+
+
+def _vc_cta_button():
+    """バリューコマースCTAボタン（静的）を返す"""
+    return (
+        '[st-mcbutton url="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3548721&amp;amp;pid=892566121" '
+        'title="バリューコマースへ無料登録" rel="nofollow" webicon="" target="" color="#fff" bgcolor="#039BE5" '
+        'bgcolor_top="#29B6F6" bordercolor="#4FC3F7" borderwidth="1" borderradius="15" fontweight="bold" '
+        'fontsize="120" width="90" webicon_after="st-svg-chevron-right" shadow="#039BE5" ref="on" '
+        'mcbox_bg="#fafafa" mcbox_color="" mcbox_title="＼登録は最短1分で完了／" beacon=""]'
+        '<img src="https://www16.a8.net/0.gif?a8mat=3HOQGY+1IRWFM+461Y+6D4GI" alt="" width="1" height="1" border="0" />'
+        '[/st-mcbutton]\n'
+        '<p style="text-align: center;"><span style="font-size: 90%;">公式サイト：'
+        '<a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3548721&amp;amp;pid=892566121" rel="nofollow">'
+        'https://www.valuecommerce.ne.jp/</a></span></p>'
+    )
+
+
+def _build_affiliate_info_table(row):
+    """案件のアフィリエイト情報テーブル1行分を生成"""
+    TD_TH = 'style="width: 50%; text-align: center; vertical-align: middle; background-color: #4a4a4a;"'
+    TD_STYLE = 'style="width: 50%; text-align: center; vertical-align: middle;"'
+
+    program_name = row.get("プログラム名", "").strip()
+    company_name = row.get("会社名", "").strip()
+    advertiser_name = row.get("広告主名", "").strip()
+    site_url = row.get("広告主サイトURL", "").strip()
+    condition = row.get("注文発生対象・条件", "").strip()
+    approval = row.get("成果の承認基準", "").strip()
+
+    cpc = row.get("CPC報酬", "").strip()
+    fixed_reward = row.get("定額報酬", "").strip()
+    rate_reward = row.get("定率報酬", "").strip()
+    reward_text = _format_reward(cpc, fixed_reward, rate_reward)
+
+    site_link = (
+        f'<a href="{site_url}" target="_blank" rel="noopener">{advertiser_name or site_url}</a>'
+        if site_url else "-"
+    )
+
+    info_items = [
+        ("案件名", program_name or "-"),
+        ("運営会社", company_name or "-"),
+        ("公式サイト", site_link),
+        ("ジャンル", "物販"),
+        ("報酬単価", reward_text),
+        ("成果条件", condition or "-"),
+        ("確定率", "不明"),
+        ("CVR", "不明"),
+        ("EPC", "不明"),
+        ("承認基準", approval or "-"),
+    ]
+
+    rows_html = "\n".join(
+        f'<tr>\n<td {TD_TH}><strong><span style="color: #ffffff;">{label}</span></strong></td>\n'
+        f'<td {TD_STYLE}>{value}</td>\n</tr>'
+        for label, value in info_items
+    )
+
+    return (
+        f'<table style="border-collapse: collapse; width: 100%;">\n'
+        f'<tbody>\n{rows_html}\n</tbody>\n</table>'
+    )
+
+
+def _build_program_description(row):
+    """案件の紹介文を生成"""
+    program_content = row.get("プログラム内容", "").strip()
+    if not program_content:
+        return ""
+    return program_content.replace("\n", "<br>")
+
+
 def build_article_html(rows):
     """案件データ（1件 or 複数件）からHTML記事本文を生成"""
     sections = []
-    asp_name = "バリューコマース"
 
     if len(rows) == 1:
-        # 単一プログラム
         row = rows[0]
         program_name = row.get("プログラム名", "").strip()
-        program_content = row.get("プログラム内容", "").strip()
-        advertiser_name = row.get("広告主名", "").strip()
-        company_name = row.get("会社名", "").strip()
-        site_url = row.get("広告主サイトURL", "").strip()
+    else:
+        program_name = rows[0].get("広告主名", "").strip()
 
-        # 報酬情報
-        cpc = row.get("CPC報酬", "").strip()
-        fixed_reward = row.get("定額報酬", "").strip()
-        rate_reward = row.get("定率報酬", "").strip()
+    # 1) 冒頭文 + ASP5社比較テーブル
+    sections.append(
+        f'{program_name}は<span class="st-mymarker-s">バリューコマース</span>でアフィリエイトできます。\n'
+        + _asp_comparison_table()
+    )
 
-        # 成果条件
-        condition = row.get("注文発生対象・条件", "").strip()
-        approval = row.get("成果の承認基準", "").strip()
+    # 2) H2: アフィリエイトできるASP → H3: バリューコマース詳細 + CTA
+    sections.append(
+        f'<h2>{program_name}をアフィリエイトできるASP</h2>\n'
+        + _vc_detail_section() + "\n"
+        + _vc_cta_button()
+    )
 
-        # 対応状況
-        smartphone = row.get("スマホ対応", "").strip()
-        itp = row.get("ITP対応済", "").strip()
-        self_affiliate = row.get("自己アフィリエイト可能", "").strip()
-
-        # プログラム概要
-        if program_content:
-            content_html = program_content.replace("\n", "<br>")
-            sections.append(
-                f'<h2>{program_name}とは</h2>\n<p>{content_html}</p>'
-            )
-
-        # ASP情報テーブル
+    # 3) H2: アフィリエイト情報テーブル + 紹介文 + CTA
+    if len(rows) == 1:
+        row = rows[0]
         sections.append(
-            f'<h2>{program_name}のアフィリエイトがあるASP</h2>\n'
-            f'<table>\n<thead><tr><th>ASP</th><th>プログラム名</th><th>報酬</th><th>CVR</th><th>EPC</th></tr></thead>\n'
-            f'<tbody>\n'
-            f'<tr><td>{asp_name}</td><td>{program_name}</td><td>{_format_reward(cpc, fixed_reward, rate_reward)}</td><td></td><td></td></tr>\n'
-            f'</tbody>\n</table>'
+            f'<h2>{program_name}のアフィリエイト情報</h2>\n'
+            + _build_affiliate_info_table(row) + "\n"
+            + _build_program_description(row) + "\n"
+            + _vc_cta_button()
         )
-
-        # 報酬・成果条件
-        reward_rows = []
-        if cpc:
-            reward_rows.append(f"<tr><td>CPC報酬</td><td>{cpc}</td></tr>")
-        if fixed_reward:
-            reward_rows.append(f"<tr><td>定額報酬</td><td>{fixed_reward}</td></tr>")
-        if rate_reward:
-            reward_rows.append(f"<tr><td>定率報酬</td><td>{rate_reward}</td></tr>")
-        if condition:
-            reward_rows.append(f"<tr><td>成果条件</td><td>{condition}</td></tr>")
-        if approval:
-            reward_rows.append(f"<tr><td>承認基準</td><td>{approval}</td></tr>")
-
-        if reward_rows:
-            rows_html = "\n".join(reward_rows)
-            sections.append(
-                f'<h2>報酬・成果条件</h2>\n'
-                f'<table>\n<thead><tr><th>項目</th><th>内容</th></tr></thead>\n'
-                f'<tbody>\n{rows_html}\n</tbody>\n</table>'
-            )
-
-        # 基本情報テーブル
-        info_rows = []
-        if company_name:
-            info_rows.append(f"<tr><td>運営会社</td><td>{company_name}</td></tr>")
-        if site_url:
-            info_rows.append(
-                f'<tr><td>公式サイト</td><td><a href="{site_url}" target="_blank" rel="noopener">'
-                f'{advertiser_name or site_url}</a></td></tr>'
-            )
-        if smartphone:
-            info_rows.append(f"<tr><td>スマホ対応</td><td>{smartphone}</td></tr>")
-        if itp:
-            info_rows.append(f"<tr><td>ITP対応</td><td>{itp}</td></tr>")
-        if self_affiliate:
-            is_ok = "可能" if self_affiliate in ("可能", "○", "可") else "不可"
-            info_rows.append(f"<tr><td>自己アフィリエイト</td><td>{is_ok}</td></tr>")
-
-        if info_rows:
-            rows_html = "\n".join(info_rows)
-            sections.append(
-                f'<h2>基本情報</h2>\n'
-                f'<table>\n<thead><tr><th>項目</th><th>内容</th></tr></thead>\n'
-                f'<tbody>\n{rows_html}\n</tbody>\n</table>'
-            )
-
     else:
         # 複数プログラムをまとめる場合
-        first = rows[0]
-        advertiser_name = first.get("広告主名", "").strip()
-        company_name = first.get("会社名", "").strip()
-        site_url = first.get("広告主サイトURL", "").strip()
-
-        # 概要（最初のプログラムの内容を使用）
-        program_content = first.get("プログラム内容", "").strip()
-        if program_content:
-            content_html = program_content.replace("\n", "<br>")
-            sections.append(
-                f'<h2>{advertiser_name}とは</h2>\n<p>{content_html}</p>'
-            )
-
-        # ASP情報テーブル（全プログラムをまとめて表示）
-        asp_rows = []
+        parts = [f'<h2>{program_name}のアフィリエイト情報</h2>']
         for row in rows:
             pname = row.get("プログラム名", "").strip()
-            cpc = row.get("CPC報酬", "").strip()
-            fixed = row.get("定額報酬", "").strip()
-            rate = row.get("定率報酬", "").strip()
-            reward = _format_reward(cpc, fixed, rate)
-            asp_rows.append(
-                f'<tr><td>{asp_name}</td><td>{pname}</td><td>{reward}</td><td></td><td></td></tr>'
-            )
-        asp_rows_html = "\n".join(asp_rows)
-        sections.append(
-            f'<h2>{advertiser_name}のアフィリエイトがあるASP</h2>\n'
-            f'<table>\n<thead><tr><th>ASP</th><th>プログラム名</th><th>報酬</th><th>CVR</th><th>EPC</th></tr></thead>\n'
-            f'<tbody>\n{asp_rows_html}\n</tbody>\n</table>'
-        )
-
-        # 各プログラムの報酬・成果条件
-        for row in rows:
-            pname = row.get("プログラム名", "").strip()
-            cpc = row.get("CPC報酬", "").strip()
-            fixed = row.get("定額報酬", "").strip()
-            rate = row.get("定率報酬", "").strip()
-            condition = row.get("注文発生対象・条件", "").strip()
-            approval = row.get("成果の承認基準", "").strip()
-
-            reward_rows = []
-            if cpc:
-                reward_rows.append(f"<tr><td>CPC報酬</td><td>{cpc}</td></tr>")
-            if fixed:
-                reward_rows.append(f"<tr><td>定額報酬</td><td>{fixed}</td></tr>")
-            if rate:
-                reward_rows.append(f"<tr><td>定率報酬</td><td>{rate}</td></tr>")
-            if condition:
-                reward_rows.append(f"<tr><td>成果条件</td><td>{condition}</td></tr>")
-            if approval:
-                reward_rows.append(f"<tr><td>承認基準</td><td>{approval}</td></tr>")
-
-            if reward_rows:
-                rows_html = "\n".join(reward_rows)
-                sections.append(
-                    f'<h3>{pname}</h3>\n'
-                    f'<table>\n<thead><tr><th>項目</th><th>内容</th></tr></thead>\n'
-                    f'<tbody>\n{rows_html}\n</tbody>\n</table>'
-                )
-
-        # 基本情報（共通）
-        smartphone = first.get("スマホ対応", "").strip()
-        itp = first.get("ITP対応済", "").strip()
-        self_affiliate = first.get("自己アフィリエイト可能", "").strip()
-
-        info_rows = []
-        if company_name:
-            info_rows.append(f"<tr><td>運営会社</td><td>{company_name}</td></tr>")
-        if site_url:
-            info_rows.append(
-                f'<tr><td>公式サイト</td><td><a href="{site_url}" target="_blank" rel="noopener">'
-                f'{advertiser_name or site_url}</a></td></tr>'
-            )
-        if smartphone:
-            info_rows.append(f"<tr><td>スマホ対応</td><td>{smartphone}</td></tr>")
-        if itp:
-            info_rows.append(f"<tr><td>ITP対応</td><td>{itp}</td></tr>")
-        if self_affiliate:
-            is_ok = "可能" if self_affiliate in ("可能", "○", "可") else "不可"
-            info_rows.append(f"<tr><td>自己アフィリエイト</td><td>{is_ok}</td></tr>")
-
-        if info_rows:
-            rows_html = "\n".join(info_rows)
-            sections.append(
-                f'<h2>基本情報</h2>\n'
-                f'<table>\n<thead><tr><th>項目</th><th>内容</th></tr></thead>\n'
-                f'<tbody>\n{rows_html}\n</tbody>\n</table>'
-            )
+            parts.append(f'<h3>{pname}</h3>')
+            parts.append(_build_affiliate_info_table(row))
+            desc = _build_program_description(row)
+            if desc:
+                parts.append(desc)
+        parts.append(_vc_cta_button())
+        sections.append("\n".join(parts))
 
     return "\n\n".join(sections)
 
