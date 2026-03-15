@@ -156,10 +156,10 @@ def _vc_detail_section():
         f'</ul>\n'
         f'</div>\n'
         f'[/st-minihukidashi]\n'
-        f'日本初のASPとして1999年に誕生した、<span class="hutoaka">信頼と実績のあるサービス</span>です。\n'
-        f'Yahoo!ショッピングのアフィリエイトを扱えるのはバリューコマースだけ。\n'
-        f'大手企業・有名ECサイトの案件が充実しているので、「信頼できるブランドの商品を紹介したい」という方に特に向いています。\n'
-        f'コンテンツに合わせて広告を自動表示してくれる<span class="st-mymarker-s">「おまかせ広告」機能も便利</span>です。\n'
+        f'日本初のASPとして1999年に誕生した、<span class="hutoaka">信頼と実績のあるサービス</span>です。\n\n'
+        f'Yahoo!ショッピングのアフィリエイトを扱えるのはバリューコマースだけ。\n\n'
+        f'大手企業・有名ECサイトの案件が充実しているので、「信頼できるブランドの商品を紹介したい」という方に特に向いています。\n\n'
+        f'コンテンツに合わせて広告を自動表示してくれる<span class="st-mymarker-s">「おまかせ広告」機能も便利</span>です。\n\n'
         f'また、会員ランク制度があり、成果を積み上げるほど特典や報酬条件が有利になっていく仕組みも魅力のひとつです。'
     )
 
@@ -222,15 +222,21 @@ def _build_affiliate_info_table(row):
     )
 
 
+def _add_line_breaks(text):
+    """句読点（。）の後に空行を挿入"""
+    import re
+    return re.sub(r'。', '。\n\n', text)
+
+
 def _build_program_description(row):
     """案件の紹介文を生成（AI生成があればそちらを優先）"""
     ai_desc = _g(row, "ai_description")
     if ai_desc:
-        return ai_desc.replace("\n", "<br>")
+        return _add_line_breaks(ai_desc)
     program_content = _g(row, "プログラム内容")
     if not program_content:
         return ""
-    return program_content.replace("\n", "<br>")
+    return _add_line_breaks(program_content)
 
 
 def build_article_html(rows):
