@@ -169,21 +169,27 @@ def _vc_cta_button():
     return '[st_af id="2784"]'
 
 
+def _g(row, key):
+    """CSVフィールドを安全に取得（None対策）"""
+    v = row.get(key, "")
+    return v.strip() if v else ""
+
+
 def _build_affiliate_info_table(row):
     """案件のアフィリエイト情報テーブル1行分を生成"""
     TD_TH = 'style="width: 50%; text-align: center; vertical-align: middle; background-color: #4a4a4a;"'
     TD_STYLE = 'style="width: 50%; text-align: center; vertical-align: middle;"'
 
-    program_name = row.get("プログラム名", "").strip()
-    company_name = row.get("会社名", "").strip()
-    advertiser_name = row.get("広告主名", "").strip()
-    site_url = row.get("広告主サイトURL", "").strip()
-    condition = row.get("注文発生対象・条件", "").strip()
-    approval = row.get("成果の承認基準", "").strip()
+    program_name = _g(row, "プログラム名")
+    company_name = _g(row, "会社名")
+    advertiser_name = _g(row, "広告主名")
+    site_url = _g(row, "広告主サイトURL")
+    condition = _g(row, "注文発生対象・条件")
+    approval = _g(row, "成果の承認基準")
 
-    cpc = row.get("CPC報酬", "").strip()
-    fixed_reward = row.get("定額報酬", "").strip()
-    rate_reward = row.get("定率報酬", "").strip()
+    cpc = _g(row, "CPC報酬")
+    fixed_reward = _g(row, "定額報酬")
+    rate_reward = _g(row, "定率報酬")
     reward_text = _format_reward(cpc, fixed_reward, rate_reward)
 
     site_link = (
@@ -218,10 +224,10 @@ def _build_affiliate_info_table(row):
 
 def _build_program_description(row):
     """案件の紹介文を生成（AI生成があればそちらを優先）"""
-    ai_desc = row.get("ai_description", "").strip()
+    ai_desc = _g(row, "ai_description")
     if ai_desc:
         return ai_desc.replace("\n", "<br>")
-    program_content = row.get("プログラム内容", "").strip()
+    program_content = _g(row, "プログラム内容")
     if not program_content:
         return ""
     return program_content.replace("\n", "<br>")
@@ -233,9 +239,9 @@ def build_article_html(rows):
 
     if len(rows) == 1:
         row = rows[0]
-        program_name = row.get("プログラム名", "").strip()
+        program_name = _g(rows[0], "プログラム名")
     else:
-        program_name = rows[0].get("広告主名", "").strip()
+        program_name = _g(rows[0], "広告主名")
 
     # 1) 冒頭文 + ASP5社比較テーブル
     sections.append(
@@ -263,7 +269,7 @@ def build_article_html(rows):
         # 複数プログラムをまとめる場合
         parts = [f'<h2>{program_name}のアフィリエイト情報</h2>']
         for row in rows:
-            pname = row.get("プログラム名", "").strip()
+            pname = _g(row, "プログラム名")
             parts.append(f'<h3>{pname}</h3>')
             parts.append(_build_affiliate_info_table(row))
             desc = _build_program_description(row)
@@ -290,10 +296,10 @@ def _format_reward(cpc, fixed, rate):
 def build_title(rows):
     """記事タイトルを生成"""
     if len(rows) == 1:
-        program_name = rows[0].get("プログラム名", "").strip()
+        program_name = _g(rows[0], "プログラム名")
         return f"{program_name}のアフィリエイトはどこのASP？"
     else:
-        advertiser_name = rows[0].get("広告主名", "").strip()
+        advertiser_name = _g(rows[0], "広告主名")
         return f"{advertiser_name}のアフィリエイトはどこのASP？"
 
 
@@ -301,11 +307,11 @@ def build_tags(rows):
     """タグを生成"""
     tags = set()
     for row in rows:
-        if row.get("CPC報酬", "").strip():
+        if _g(row, "CPC報酬"):
             tags.add("CPC")
-        if row.get("定額報酬", "").strip():
+        if _g(row, "定額報酬"):
             tags.add("定額報酬")
-        if row.get("定率報酬", "").strip():
+        if _g(row, "定率報酬"):
             tags.add("定率報酬")
     return ",".join(sorted(tags))
 
@@ -315,12 +321,12 @@ def group_programs(rows):
     # 広告主名でグループ化（出現順を保持）
     advertiser_groups = collections.OrderedDict()
     for row in rows:
-        adv = row.get("広告主名", "").strip()
+        adv = _g(row, "広告主名")
         if adv not in advertiser_groups:
             advertiser_groups[adv] = []
         # 重複プログラム名を除外
-        prog = row.get("プログラム名", "").strip()
-        existing_progs = [r.get("プログラム名", "").strip() for r in advertiser_groups[adv]]
+        prog = _g(row, "プログラム名")
+        existing_progs = [_g(r, "プログラム名") for r in advertiser_groups[adv]]
         if prog not in existing_progs:
             advertiser_groups[adv].append(row)
 
