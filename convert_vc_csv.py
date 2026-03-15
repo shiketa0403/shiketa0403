@@ -19,6 +19,7 @@
 import argparse
 import collections
 import csv
+import os
 import sys
 
 
@@ -194,7 +195,7 @@ def _build_affiliate_info_table(row):
         ("案件名", program_name or "-"),
         ("運営会社", company_name or "-"),
         ("公式サイト", site_link),
-        ("ジャンル", "物販"),
+        ("ジャンル", row.get("ai_genre", "物販")),
         ("報酬単価", reward_text),
         ("成果条件", condition or "-"),
         ("確定率", "不明"),
@@ -216,7 +217,10 @@ def _build_affiliate_info_table(row):
 
 
 def _build_program_description(row):
-    """案件の紹介文を生成"""
+    """案件の紹介文を生成（AI生成があればそちらを優先）"""
+    ai_desc = row.get("ai_description", "").strip()
+    if ai_desc:
+        return ai_desc.replace("\n", "<br>")
     program_content = row.get("プログラム内容", "").strip()
     if not program_content:
         return ""
@@ -337,13 +341,22 @@ def group_programs(rows):
     return article_groups
 
 
-def convert_vc_csv(input_path, output_path):
+def convert_vc_csv(input_path, output_path, use_ai=False):
     """バリューコマースCSVをWordPress投稿用CSVに変換"""
     with open(input_path, encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
         rows = list(reader)
 
     print(f"入力: {len(rows)} 件の案件を読み込みました")
+
+    # AI処理（ジャンル判定 + 紹介文生成）
+    if use_ai:
+        if not os.environ.get("ANTHROPIC_API_KEY"):
+            print("警告: ANTHROPIC_API_KEY が未設定のためAI処理をスキップします", file=sys.stderr)
+        else:
+            from ai_generator import process_rows
+            print("Claude API でジャンル判定・紹介文生成を実行します...")
+            rows = process_rows(rows)
 
     # グループ化
     article_groups = group_programs(rows)
@@ -378,11 +391,13 @@ def main():
     parser.add_argument("--post", action="store_true", help="変換後にそのまま投稿する")
     parser.add_argument("--dry-run", action="store_true", help="投稿のドライラン")
     parser.add_argument("--status", default="draft", choices=["draft", "publish"])
+    parser.add_argument("--ai", action="store_true",
+                        help="Claude APIでジャンル判定・紹介文を自動生成する")
 
     args = parser.parse_args()
 
     output_path = args.output or "csv/vc_posts.csv"
-    result_path = convert_vc_csv(args.input_csv, output_path)
+    result_path = convert_vc_csv(args.input_csv, output_path, use_ai=args.ai)
 
     if args.post:
         from wp_bulk_post import bulk_post_from_csv
