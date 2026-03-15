@@ -45,11 +45,13 @@ def _asp_comparison_table():
             "link": "https://px.a8.net/svt/ejp?a8mat=3BG026+FXXVXU+0K+10A5LT",
             "display_url": "https://www.a8.net/",
             "mark": '<span style="font-size: 7em;">✕</span>',
+            "img_rel": "nofollow noopener",
         },
         {
             "name": "バリューコマース",
             "img": f"{IMG_BASE}/vc.png",
-            "link": "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3548721&amp;pid=892566121",
+            "link": "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3548721&amp;amp;pid=892566121",
+            "text_link": "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3548721&amp;pid=892566121",
             "display_url": "https://www.valuecommerce.ne.jp/",
             "mark": '<span class="hutoaka"><span style="font-size: 7em;">◯</span></span>',
             "beacon": '<img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3548721&amp;pid=892566121" width="1" height="1" border="0" />',
@@ -80,12 +82,14 @@ def _asp_comparison_table():
     rows_html = []
     for asp in asp_list:
         beacon = asp.get("beacon", "")
+        img_rel = asp.get("img_rel", "nofollow")
+        text_link = asp.get("text_link", asp["link"])
         rows_html.append(
             f'<tr>\n'
             f'<td {TD_CENTER}>'
-            f'<a href="{asp["link"]}" rel="nofollow">'
+            f'<a href="{asp["link"]}" rel="{img_rel}">'
             f'<img class="alignnone size-full" src="{asp["img"]}" alt="{asp["name"]}" width="500" height="200" /></a>\n'
-            f'<a href="{asp["link"]}" rel="nofollow">{beacon}{asp["display_url"]}</a></td>\n'
+            f'<a href="{text_link}" rel="nofollow">{beacon}{asp["display_url"]}</a></td>\n'
             f'<td {TD_CENTER}>{asp["mark"]}</td>\n'
             f'</tr>'
         )
@@ -161,18 +165,7 @@ def _vc_detail_section():
 
 def _vc_cta_button():
     """バリューコマースCTAボタン（静的）を返す"""
-    return (
-        '[st-mcbutton url="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3548721&amp;amp;pid=892566121" '
-        'title="バリューコマースへ無料登録" rel="nofollow" webicon="" target="" color="#fff" bgcolor="#039BE5" '
-        'bgcolor_top="#29B6F6" bordercolor="#4FC3F7" borderwidth="1" borderradius="15" fontweight="bold" '
-        'fontsize="120" width="90" webicon_after="st-svg-chevron-right" shadow="#039BE5" ref="on" '
-        'mcbox_bg="#fafafa" mcbox_color="" mcbox_title="＼登録は最短1分で完了／" beacon=""]'
-        '<img src="https://www16.a8.net/0.gif?a8mat=3HOQGY+1IRWFM+461Y+6D4GI" alt="" width="1" height="1" border="0" />'
-        '[/st-mcbutton]\n'
-        '<p style="text-align: center;"><span style="font-size: 90%;">公式サイト：'
-        '<a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3548721&amp;amp;pid=892566121" rel="nofollow">'
-        'https://www.valuecommerce.ne.jp/</a></span></p>'
-    )
+    return '[st_af id="2784"]'
 
 
 def _build_affiliate_info_table(row):
