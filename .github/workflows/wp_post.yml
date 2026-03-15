@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'csv/post_*.csv'
+      - 'csv/vc_ai_request.txt'
       - '.github/workflows/wp_post.yml'
       - 'wp_post.py'
       - 'wp_bulk_post.py'
@@ -145,17 +146,31 @@ jobs:
             python wp_bulk_post.py "$CSV_FILE" --status "$STATUS"
           else
             # pushトリガー
-            echo "=== push トリガー: 変更CSVを検出中 ==="
-            FOUND=0
-            for f in csv/post_*.csv; do
-              if [ -f "$f" ]; then
-                echo "=== $f を投稿中 ==="
-                python wp_bulk_post.py "$f" --status draft
-                FOUND=1
+            if [ -f "csv/vc_ai_request.txt" ]; then
+              # AI変換リクエストファイルがある場合
+              LIMIT=$(cat csv/vc_ai_request.txt | head -1)
+              echo "=== AI変換モード (pushトリガー): 件数=$LIMIT ==="
+              if [ -n "$LIMIT" ] && [ "$LIMIT" -gt 0 ] 2>/dev/null; then
+                python3 limit_csv.py csv/vc_raw_utf8.csv "$LIMIT" csv/_ai_limited.csv
+                python convert_vc_csv.py csv/_ai_limited.csv -o csv/_ai_output.csv --ai
+              else
+                python convert_vc_csv.py csv/vc_raw_utf8.csv -o csv/_ai_output.csv --ai
               fi
-            done
-            if [ "$FOUND" -eq 0 ]; then
-              echo "投稿対象のCSVが見つかりませんでした"
+              echo "=== AI変換完了、投稿開始 ==="
+              python wp_bulk_post.py csv/_ai_output.csv --status draft
+            else
+              echo "=== push トリガー: 変更CSVを検出中 ==="
+              FOUND=0
+              for f in csv/post_*.csv; do
+                if [ -f "$f" ]; then
+                  echo "=== $f を投稿中 ==="
+                  python wp_bulk_post.py "$f" --status draft
+                  FOUND=1
+                fi
+              done
+              if [ "$FOUND" -eq 0 ]; then
+                echo "投稿対象のCSVが見つかりませんでした"
+              fi
             fi
           fi
 
