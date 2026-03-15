@@ -33,10 +33,14 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Python依存パッケージをインストール
+        run: pip install -r requirements.txt
+
       - name: wp_config.py を生成
         env:
           WP_USERNAME: ${{ secrets.WP_USERNAME }}
           WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           python3 << 'PYEOF'
           import os
@@ -97,6 +101,8 @@ jobs:
           PYEOF
 
       - name: CSV記事を投稿
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           if [ -n "${{ github.event.inputs.csv_file }}" ]; then
             CSV_FILE="csv/${{ github.event.inputs.csv_file }}"
