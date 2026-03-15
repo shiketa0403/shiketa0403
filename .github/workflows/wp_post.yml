@@ -9,9 +9,24 @@ on:
       - 'wp_bulk_post.py'
   workflow_dispatch:
     inputs:
-      csv_file:
-        description: '投稿するCSVファイル名（例: post_001.csv）'
+      mode:
+        description: '実行モード'
         required: true
+        default: 'csv'
+        type: choice
+        options:
+          - csv
+          - ai_convert
+      csv_file:
+        description: '【csv】投稿するCSVファイル名（例: post_001.csv）'
+        required: false
+      vc_source:
+        description: '【ai_convert】変換元のVC CSVファイル名（例: vc_raw_utf8.csv）'
+        required: false
+        default: 'vc_raw_utf8.csv'
+      ai_limit:
+        description: '【ai_convert】処理する案件数（空=全件）'
+        required: false
       status:
         description: '投稿ステータス'
         required: true
@@ -104,12 +119,44 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
-          if [ -n "${{ github.event.inputs.csv_file }}" ]; then
+          MODE="${{ github.event.inputs.mode }}"
+          STATUS="${{ github.event.inputs.status || 'draft' }}"
+
+          if [ "$MODE" = "ai_convert" ]; then
+            # AI変換モード: VC CSV → AI生成 → 投稿
+            VC_SOURCE="csv/${{ github.event.inputs.vc_source || 'vc_raw_utf8.csv' }}"
+            LIMIT="${{ github.event.inputs.ai_limit }}"
+            echo "=== AI変換モード: $VC_SOURCE (status: $STATUS) ==="
+
+            if [ -n "$LIMIT" ]; then
+              # 件数制限: 指定行数だけ抽出
+              python3 << PYEOF
+import csv
+with open("$VC_SOURCE", encoding="utf-8-sig") as f:
+    reader = csv.DictReader(f)
+    rows = list(reader)
+limited = rows[:$LIMIT]
+with open("csv/_ai_limited.csv", "w", encoding="utf-8-sig", newline="") as f:
+    w = csv.DictWriter(f, fieldnames=rows[0].keys())
+    w.writeheader()
+    w.writerows(limited)
+print(f"制限: {len(limited)}/{len(rows)} 件を抽出")
+PYEOF
+              python convert_vc_csv.py csv/_ai_limited.csv -o csv/_ai_output.csv --ai
+            else
+              python convert_vc_csv.py "$VC_SOURCE" -o csv/_ai_output.csv --ai
+            fi
+
+            echo "=== AI変換完了、投稿開始 ==="
+            python wp_bulk_post.py csv/_ai_output.csv --status "$STATUS"
+
+          elif [ -n "${{ github.event.inputs.csv_file }}" ]; then
+            # 手動CSV指定モード
             CSV_FILE="csv/${{ github.event.inputs.csv_file }}"
-            STATUS="${{ github.event.inputs.status }}"
             echo "=== 手動実行: $CSV_FILE (status: $STATUS) ==="
             python wp_bulk_post.py "$CSV_FILE" --status "$STATUS"
           else
+            # pushトリガー
             echo "=== push トリガー: 変更CSVを検出中 ==="
             FOUND=0
             for f in csv/post_*.csv; do
