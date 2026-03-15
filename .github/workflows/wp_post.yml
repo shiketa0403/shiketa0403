@@ -129,18 +129,7 @@ jobs:
             echo "=== AI変換モード: $VC_SOURCE (status: $STATUS) ==="
 
             if [ -n "$LIMIT" ]; then
-              python3 -c "
-import csv, sys
-src, limit = sys.argv[1], int(sys.argv[2])
-with open(src, encoding='utf-8-sig') as f:
-    rows = list(csv.DictReader(f))
-limited = rows[:limit]
-with open('csv/_ai_limited.csv', 'w', encoding='utf-8-sig', newline='') as f:
-    w = csv.DictWriter(f, fieldnames=rows[0].keys())
-    w.writeheader()
-    w.writerows(limited)
-print(f'制限: {len(limited)}/{len(rows)} 件を抽出')
-" "$VC_SOURCE" "$LIMIT"
+              python3 limit_csv.py "$VC_SOURCE" "$LIMIT" csv/_ai_limited.csv
               python convert_vc_csv.py csv/_ai_limited.csv -o csv/_ai_output.csv --ai
             else
               python convert_vc_csv.py "$VC_SOURCE" -o csv/_ai_output.csv --ai
