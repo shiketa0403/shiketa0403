@@ -1,0 +1,72 @@
+name: WordPress 管理操作
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: '実行する操作'
+        required: true
+        type: choice
+        options:
+          - list-categories
+          - delete-category
+          - list-posts
+          - delete-post
+      target_id:
+        description: '削除対象のID（削除時のみ）'
+        required: false
+
+jobs:
+  wp-admin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: wp_config.py を生成
+        env:
+          WP_USERNAME: ${{ secrets.WP_USERNAME }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: |
+          python3 << 'PYEOF'
+          import os
+          username = os.environ.get('WP_USERNAME', '')
+          app_password = os.environ.get('WP_APP_PASSWORD', '')
+          with open('wp_config.py', 'w') as f:
+              f.write(f'''WP_CONFIG = {{
+              "site_url": "https://civichat.jp",
+              "username": "{username}",
+              "app_password": "{app_password}",
+          }}
+          ''')
+          PYEOF
+
+      - name: 操作を実行
+        run: |
+          ACTION="${{ github.event.inputs.action }}"
+          TARGET_ID="${{ github.event.inputs.target_id }}"
+
+          if [ "$ACTION" = "list-categories" ]; then
+            python wp_post.py list-categories
+          elif [ "$ACTION" = "delete-category" ]; then
+            if [ -z "$TARGET_ID" ]; then
+              echo "エラー: target_id が必要です"
+              exit 1
+            fi
+            python3 -c "
+          from wp_post import api_request
+          result = api_request('categories/${TARGET_ID}?force=true', 'DELETE')
+          print(f'カテゴリ削除成功: {result}')
+          "
+          elif [ "$ACTION" = "list-posts" ]; then
+            python wp_post.py list
+          elif [ "$ACTION" = "delete-post" ]; then
+            if [ -z "$TARGET_ID" ]; then
+              echo "エラー: target_id が必要です"
+              exit 1
+            fi
+            python wp_post.py delete --id "$TARGET_ID" --force
+          fi

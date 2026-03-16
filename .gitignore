@@ -1,0 +1,6 @@
+# 認証情報は絶対にコミットしない
+wp_config.py
+__pycache__/
+*.pyc
+.env
+screenshots/

@@ -1,0 +1,6 @@
+# WordPress API設定（コピーして wp_config.py にリネームしてください）
+WP_CONFIG = {
+    "site_url": "https://your-site.com",
+    "username": "your-username",
+    "app_password": "xxxx xxxx xxxx xxxx xxxx xxxx",
+}

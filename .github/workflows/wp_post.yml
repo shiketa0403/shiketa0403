@@ -1,0 +1,68 @@
+name: WordPress 自動投稿
+
+on:
+  push:
+    paths:
+      - 'csv/post.csv'
+  workflow_dispatch:
+    inputs:
+      status:
+        description: '投稿ステータス'
+        required: true
+        default: 'draft'
+        type: choice
+        options:
+          - draft
+          - publish
+
+jobs:
+  post-to-wordpress:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Python依存パッケージをインストール
+        run: pip install -r requirements.txt
+
+      - name: wp_config.py を生成
+        env:
+          WP_USERNAME: ${{ secrets.WP_USERNAME }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: |
+          python3 << 'PYEOF'
+          import os
+          username = os.environ.get('WP_USERNAME', '')
+          app_password = os.environ.get('WP_APP_PASSWORD', '')
+          if not username or not app_password:
+              print("ERROR: シークレットが設定されていません！")
+              exit(1)
+          with open('wp_config.py', 'w') as f:
+              f.write(f'''WP_CONFIG = {{
+              "site_url": "https://civichat.jp",
+              "username": "{username}",
+              "app_password": "{app_password}",
+          }}
+          ''')
+          print("wp_config.py を生成しました")
+          PYEOF
+
+      - name: csv/post.csv を投稿
+        run: |
+          STATUS="${{ github.event.inputs.status || 'draft' }}"
+          echo "=== csv/post.csv を投稿 (status: $STATUS) ==="
+          python wp_bulk_post.py csv/post.csv --status "$STATUS"
+
+      - name: 投稿結果を確認
+        run: |
+          python3 << 'PYEOF'
+          from wp_post import api_request
+          posts = api_request("posts?per_page=5&status=draft")
+          print(f"下書き記事 ({len(posts)}件):")
+          for p in posts:
+              print(f"  [{p['id']}] {p['title']['rendered']} ({p['status']})")
+              print(f"    URL: {p['link']}")
+          PYEOF
