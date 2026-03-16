@@ -67,6 +67,7 @@ def bulk_post_from_csv(csv_path, default_status="draft", delay=2, dry_run=False)
         status = row.get("status", "").strip() or default_status
         category_name = row.get("category", "").strip()
         tags_str = row.get("tags", "").strip()
+        slug = row.get("slug", "").strip()
 
         if not title or not content:
             print(f"[{i}/{len(rows)}] スキップ（タイトルまたは本文が空）")
@@ -106,7 +107,7 @@ def bulk_post_from_csv(csv_path, default_status="draft", delay=2, dry_run=False)
                         tag_ids.append(tag_id)
 
         try:
-            create_post(title, content, status, category_ids or None, tag_ids or None)
+            create_post(title, content, status, category_ids or None, tag_ids or None, slug=slug or None)
             success += 1
         except Exception as e:
             print(f"  ✗ 投稿失敗: {e}")

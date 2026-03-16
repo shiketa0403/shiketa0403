@@ -371,22 +371,31 @@ def convert_vc_csv(input_path, output_path, use_ai=False):
     print(f"入力: {len(rows)} 件の案件を読み込みました")
 
     # AI処理（ジャンル判定 + 紹介文生成）
+    ai_enabled = False
     if use_ai:
         if not os.environ.get("ANTHROPIC_API_KEY"):
             print("警告: ANTHROPIC_API_KEY が未設定のためAI処理をスキップします", file=sys.stderr)
         else:
-            from ai_generator import process_rows
+            from ai_generator import process_rows, generate_slug
             print("Claude API でジャンル判定・紹介文生成を実行します...")
             rows = process_rows(rows)
+            ai_enabled = True
 
     # グループ化
     article_groups = group_programs(rows)
     print(f"記事数: {len(article_groups)} 件")
 
     output_rows = []
-    for group in article_groups:
+    for i, group in enumerate(article_groups):
         title = build_title(group)
         content = build_article_html(group)
+
+        # AIが有効な場合、タイトルからスラッグを生成
+        slug = ""
+        if ai_enabled:
+            print(f"  スラッグ生成中: {i + 1}/{len(article_groups)} - {title[:30]}...",
+                  file=sys.stderr)
+            slug = generate_slug(title)
 
         output_rows.append({
             "title": title,
@@ -394,10 +403,11 @@ def convert_vc_csv(input_path, output_path, use_ai=False):
             "status": "draft",
             "category": "",
             "tags": "",
+            "slug": slug,
         })
 
     with open(output_path, "w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=["title", "content", "status", "category", "tags"])
+        writer = csv.DictWriter(f, fieldnames=["title", "content", "status", "category", "tags", "slug"])
         writer.writeheader()
         writer.writerows(output_rows)
 

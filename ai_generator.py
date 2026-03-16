@@ -169,6 +169,55 @@ CPC報酬: {cpc or "なし"}
     return message.content[0].text.strip()
 
 
+def generate_slug(title, client=None):
+    """
+    記事タイトルからSEO用スラッグを生成する。
+
+    Args:
+        title: 記事タイトル
+        client: anthropic.Anthropic インスタンス（省略時は自動生成）
+
+    Returns:
+        英小文字+ハイフンのスラッグ（1〜3単語）
+    """
+    if client is None:
+        client = _get_client()
+
+    prompt = f"""以下の日本語タイトルから、WordPressのパーマリンク用スラッグを生成してください。
+
+【ルール】
+- タイトルに含まれるサービス名・商品名・ブランド名を英語表記で抽出する
+- 英小文字とハイフンのみ使用
+- 1〜3単語、ハイフン区切り
+- 固有名詞がある場合はそれを最優先で使う
+- 固有名詞がない場合は内容を表す英単語を使う
+
+【例】
+「DMMカード新規発行プログラムのアフィリエイトはどこのASP？」→ dmm-card
+「ブーリスチェアオンラインストア-Master Neo&Master RexのアフィリエイトはどこのASP？」→ booris-chair
+「楽天モバイルの口コミと評判まとめ」→ rakuten-mobile
+「初心者向けおすすめクレジットカード比較」→ beginner-credit-card
+
+【タイトル】
+{title}
+
+スラッグのみを出力してください。余計な説明は不要です。"""
+
+    message = client.messages.create(
+        model=MODEL,
+        max_tokens=30,
+        messages=[{"role": "user", "content": prompt}],
+    )
+    raw = message.content[0].text.strip().lower()
+
+    # 余計な文字を除去し、ハイフン区切り3単語以内に制限
+    import re
+    slug = re.sub(r'[^a-z0-9-]', '', raw)
+    slug = slug.strip('-')
+    parts = [p for p in slug.split('-') if p]
+    return '-'.join(parts[:3])
+
+
 def process_rows(rows, progress=True):
     """
     複数の案件を一括処理する。
@@ -190,6 +239,7 @@ def process_rows(rows, progress=True):
 
         row["ai_genre"] = classify_genre(row, client=client)
         row["ai_description"] = generate_description(row, client=client)
+        # スラッグはタイトル確定後に build_title で生成するため、ここでは行単位では生成しない
 
         # レートリミット対策（軽い待機）
         if i < total - 1:

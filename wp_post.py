@@ -57,7 +57,7 @@ def api_request(endpoint, method="GET", data=None):
 
 # === 記事操作 ===
 
-def create_post(title, content, status="draft", category_ids=None, tag_ids=None):
+def create_post(title, content, status="draft", category_ids=None, tag_ids=None, slug=None):
     data = {
         "title": title,
         "content": content,
@@ -67,6 +67,8 @@ def create_post(title, content, status="draft", category_ids=None, tag_ids=None)
         data["categories"] = category_ids
     if tag_ids:
         data["tags"] = tag_ids
+    if slug:
+        data["slug"] = slug
 
     result = api_request("posts", "POST", data)
     print(f"✓ 投稿成功: [{result['id']}] {result['title']['rendered']} ({result['status']})")
