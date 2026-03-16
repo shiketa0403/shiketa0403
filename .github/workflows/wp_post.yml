@@ -164,7 +164,7 @@ jobs:
             else
               echo "=== push トリガー: 変更CSVを検出中 ==="
               FOUND=0
-              for f in csv/post_*.csv; do
+              for f in $(git diff --name-only HEAD~1 HEAD -- 'csv/post_*.csv'); do
                 if [ -f "$f" ]; then
                   echo "=== $f を投稿中 ==="
                   python wp_bulk_post.py "$f" --status draft
@@ -172,7 +172,7 @@ jobs:
                 fi
               done
               if [ "$FOUND" -eq 0 ]; then
-                echo "投稿対象のCSVが見つかりませんでした"
+                echo "変更されたCSVが見つかりませんでした"
               fi
             fi
           fi
