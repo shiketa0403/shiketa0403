@@ -1,0 +1,85 @@
+name: Screenshot & Upload to WordPress
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "スクリーンショット対象URL（単体取得時）"
+        required: false
+        default: ""
+      name:
+        description: "画像名（単体取得時）"
+        required: false
+        default: ""
+      mode:
+        description: "取得モード"
+        required: true
+        default: "single"
+        type: choice
+        options:
+          - single
+          - bulk
+      upload:
+        description: "WordPress にアップロードする"
+        required: true
+        default: true
+        type: boolean
+
+jobs:
+  screenshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install playwright
+          playwright install chromium
+          playwright install-deps chromium
+
+      - name: Generate wp_config.py
+        if: ${{ inputs.upload }}
+        run: |
+          cat > wp_config.py << 'PYEOF'
+          WP_CONFIG = {
+              "site_url": "https://civichat.jp",
+              "username": "${{ secrets.WP_USERNAME }}",
+              "app_password": "${{ secrets.WP_APP_PASSWORD }}",
+          }
+          PYEOF
+
+      - name: Take screenshot (single)
+        if: ${{ inputs.mode == 'single' && inputs.url != '' }}
+        run: |
+          UPLOAD_FLAG=""
+          if [ "${{ inputs.upload }}" = "true" ]; then
+            UPLOAD_FLAG="--upload"
+          fi
+          python screenshot.py capture \
+            --url "${{ inputs.url }}" \
+            --name "${{ inputs.name }}" \
+            $UPLOAD_FLAG
+
+      - name: Take screenshots (bulk from CSV)
+        if: ${{ inputs.mode == 'bulk' }}
+        run: |
+          UPLOAD_FLAG=""
+          if [ "${{ inputs.upload }}" = "true" ]; then
+            UPLOAD_FLAG="--upload"
+          fi
+          python screenshot.py bulk \
+            --csv csv/vc_raw_utf8.csv \
+            $UPLOAD_FLAG
+
+      - name: Upload results as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: screenshots/
+          retention-days: 7
