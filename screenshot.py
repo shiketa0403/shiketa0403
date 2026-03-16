@@ -41,7 +41,7 @@ def get_auth_header(config):
     return {"Authorization": f"Basic {token}"}
 
 
-def take_screenshot(url, output_path, width=1280, height=800, wait_ms=3000):
+def take_screenshot(url, output_path, width=1280, height=800, wait_ms=8000):
     """Playwright でスクリーンショットを取得"""
     from playwright.sync_api import sync_playwright
 
@@ -51,11 +51,27 @@ def take_screenshot(url, output_path, width=1280, height=800, wait_ms=3000):
         context = browser.new_context(
             viewport={"width": width, "height": height},
             locale="ja-JP",
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         )
         page = context.new_page()
         try:
-            page.goto(url, wait_until="networkidle", timeout=30000)
+            page.goto(url, wait_until="networkidle", timeout=60000)
             page.wait_for_timeout(wait_ms)
+            # Cookie同意バナーなどを閉じる試み
+            for selector in [
+                'button:has-text("同意")', 'button:has-text("Accept")',
+                'button:has-text("OK")', 'button:has-text("閉じる")',
+                '[id*="cookie"] button', '[class*="cookie"] button',
+                '[id*="consent"] button', '[class*="consent"] button',
+            ]:
+                try:
+                    btn = page.locator(selector).first
+                    if btn.is_visible(timeout=500):
+                        btn.click()
+                        page.wait_for_timeout(1000)
+                        break
+                except Exception:
+                    continue
             page.screenshot(path=str(output_path), full_page=False)
             print(f"  保存: {output_path}")
         except Exception as e:
