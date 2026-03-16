@@ -162,7 +162,7 @@ CPC報酬: {cpc or "なし"}
 
     message = client.messages.create(
         model=MODEL,
-        max_tokens=500,
+        max_tokens=1000,
         messages=[{"role": "user", "content": prompt}],
     )
     return message.content[0].text.strip()

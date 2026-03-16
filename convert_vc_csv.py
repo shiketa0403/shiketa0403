@@ -236,6 +236,11 @@ def _build_program_description(row):
         import re
         ai_desc = re.sub(r'^.*紹介文\s*\n*', '', ai_desc, count=1)
         ai_desc = ai_desc.strip()
+        # 途切れた不完全な最終文を除去（。で終わらない場合）
+        if ai_desc and not ai_desc.rstrip().endswith('。') and not ai_desc.rstrip().endswith('す'):
+            last_period = ai_desc.rfind('。')
+            if last_period > 0:
+                ai_desc = ai_desc[:last_period + 1]
         return _add_line_breaks(ai_desc)
     program_content = _g(row, "プログラム内容")
     if not program_content:
