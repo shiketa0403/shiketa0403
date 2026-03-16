@@ -41,22 +41,41 @@ def get_auth_header(config):
     return {"Authorization": f"Basic {token}"}
 
 
-def take_screenshot(url, output_path, width=1280, height=800, wait_ms=8000):
+def take_screenshot(url, output_path, width=1280, height=800, wait_ms=10000):
     """Playwright でスクリーンショットを取得"""
     from playwright.sync_api import sync_playwright
 
     print(f"スクリーンショット取得中: {url}")
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
+        browser = p.chromium.launch(
+            headless=True,
+            args=["--disable-blink-features=AutomationControlled"],
+        )
         context = browser.new_context(
             viewport={"width": width, "height": height},
             locale="ja-JP",
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
         )
+        # ヘッドレス検出を回避
+        context.add_init_script("""
+            Object.defineProperty(navigator, 'webdriver', { get: () => false });
+        """)
         page = context.new_page()
         try:
-            page.goto(url, wait_until="networkidle", timeout=60000)
+            # domcontentloaded で待ち、その後 JS レンダリングを待つ
+            page.goto(url, wait_until="domcontentloaded", timeout=60000)
+            # networkidle も試みる（タイムアウトしても続行）
+            try:
+                page.wait_for_load_state("networkidle", timeout=15000)
+            except Exception:
+                pass
+            # JS レンダリング待機
             page.wait_for_timeout(wait_ms)
+            # スクロールで遅延読み込みをトリガー
+            page.evaluate("window.scrollTo(0, 300)")
+            page.wait_for_timeout(2000)
+            page.evaluate("window.scrollTo(0, 0)")
+            page.wait_for_timeout(1000)
             # Cookie同意バナーなどを閉じる試み
             for selector in [
                 'button:has-text("同意")', 'button:has-text("Accept")',
