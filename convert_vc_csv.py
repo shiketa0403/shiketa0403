@@ -232,6 +232,10 @@ def _build_program_description(row):
     """案件の紹介文を生成（AI生成があればそちらを優先）"""
     ai_desc = _g(row, "ai_description")
     if ai_desc:
+        # AIが「〇〇紹介文」等のタイトル行を含めた場合に除去
+        import re
+        ai_desc = re.sub(r'^.*紹介文\s*\n*', '', ai_desc, count=1)
+        ai_desc = ai_desc.strip()
         return _add_line_breaks(ai_desc)
     program_content = _g(row, "プログラム内容")
     if not program_content:
