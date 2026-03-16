@@ -3,31 +3,9 @@ name: WordPress 自動投稿
 on:
   push:
     paths:
-      - 'csv/post_*.csv'
-      - 'csv/vc_ai_request.txt'
-      - '.github/workflows/wp_post.yml'
-      - 'wp_post.py'
-      - 'wp_bulk_post.py'
+      - 'csv/post.csv'
   workflow_dispatch:
     inputs:
-      mode:
-        description: '実行モード'
-        required: true
-        default: 'csv'
-        type: choice
-        options:
-          - csv
-          - ai_convert
-      csv_file:
-        description: '【csv】投稿するCSVファイル名（例: post_001.csv）'
-        required: false
-      vc_source:
-        description: '【ai_convert】変換元のVC CSVファイル名（例: vc_raw_utf8.csv）'
-        required: false
-        default: 'vc_raw_utf8.csv'
-      ai_limit:
-        description: '【ai_convert】処理する案件数（空=全件）'
-        required: false
       status:
         description: '投稿ステータス'
         required: true
@@ -42,8 +20,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
 
       - uses: actions/setup-python@v5
         with:
@@ -56,14 +32,11 @@ jobs:
         env:
           WP_USERNAME: ${{ secrets.WP_USERNAME }}
           WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
           python3 << 'PYEOF'
           import os
           username = os.environ.get('WP_USERNAME', '')
           app_password = os.environ.get('WP_APP_PASSWORD', '')
-          print(f"Username length: {len(username)}")
-          print(f"App password length: {len(app_password)}")
           if not username or not app_password:
               print("ERROR: シークレットが設定されていません！")
               exit(1)
@@ -77,105 +50,11 @@ jobs:
           print("wp_config.py を生成しました")
           PYEOF
 
-      - name: API接続テスト
+      - name: csv/post.csv を投稿
         run: |
-          python3 << 'PYEOF'
-          from wp_config import WP_CONFIG
-          import urllib.request, urllib.error, base64, json
-          print(f"Site URL: {WP_CONFIG['site_url']}")
-          print(f"Username: {WP_CONFIG['username']}")
-          print(f"Password length: {len(WP_CONFIG['app_password'])}")
-
-          # まず認証なしでサイトにアクセス
-          try:
-              req = urllib.request.Request(f"{WP_CONFIG['site_url']}/wp-json/")
-              with urllib.request.urlopen(req) as resp:
-                  print(f"REST API (認証なし): {resp.status} OK")
-          except urllib.error.HTTPError as e:
-              print(f"REST API (認証なし): エラー {e.code}")
-              body = e.read().decode("utf-8", errors="replace")
-              print(f"  レスポンス: {body[:500]}")
-          except Exception as e:
-              print(f"REST API (認証なし): 接続エラー {e}")
-
-          # 認証ありでアクセス
-          try:
-              cred = f"{WP_CONFIG['username']}:{WP_CONFIG['app_password']}"
-              token = base64.b64encode(cred.encode()).decode()
-              req = urllib.request.Request(
-                  f"{WP_CONFIG['site_url']}/wp-json/wp/v2/posts?per_page=1",
-                  headers={"Authorization": f"Basic {token}"}
-              )
-              with urllib.request.urlopen(req) as resp:
-                  print(f"認証付きAPI: {resp.status} OK - 接続成功！")
-          except urllib.error.HTTPError as e:
-              body = e.read().decode("utf-8", errors="replace")
-              print(f"認証付きAPI: エラー {e.code}")
-              print(f"  レスポンス: {body[:500]}")
-          except Exception as e:
-              print(f"認証付きAPI: 接続エラー {e}")
-          PYEOF
-
-      - name: CSV記事を投稿
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: |
-          MODE="${{ github.event.inputs.mode }}"
           STATUS="${{ github.event.inputs.status || 'draft' }}"
-
-          if [ "$MODE" = "ai_convert" ]; then
-            # AI変換モード: VC CSV → AI生成 → 投稿
-            VC_SOURCE="csv/${{ github.event.inputs.vc_source || 'vc_raw_utf8.csv' }}"
-            LIMIT="${{ github.event.inputs.ai_limit }}"
-            echo "=== AI変換モード: $VC_SOURCE (status: $STATUS) ==="
-
-            if [ -n "$LIMIT" ]; then
-              python3 limit_csv.py "$VC_SOURCE" "$LIMIT" csv/_ai_limited.csv
-              python convert_vc_csv.py csv/_ai_limited.csv -o csv/_ai_output.csv --ai
-            else
-              python convert_vc_csv.py "$VC_SOURCE" -o csv/_ai_output.csv --ai
-            fi
-
-            echo "=== AI変換完了、投稿開始 ==="
-            python wp_bulk_post.py csv/_ai_output.csv --status "$STATUS"
-
-          elif [ -n "${{ github.event.inputs.csv_file }}" ]; then
-            # 手動CSV指定モード
-            CSV_FILE="csv/${{ github.event.inputs.csv_file }}"
-            echo "=== 手動実行: $CSV_FILE (status: $STATUS) ==="
-            python wp_bulk_post.py "$CSV_FILE" --status "$STATUS"
-          else
-            # pushトリガー
-            if [ -f "csv/vc_ai_request.txt" ]; then
-              # AI変換リクエストファイルがある場合
-              LIMIT=$(cat csv/vc_ai_request.txt | head -1)
-              echo "=== AI変換モード (pushトリガー): 件数=$LIMIT ==="
-              VC_FILE=$(cat csv/vc_ai_request.txt | sed -n '2p')
-              VC_FILE="${VC_FILE:-vc_raw_utf8.csv}"
-              echo "=== 対象ファイル: csv/$VC_FILE ==="
-              if [ -n "$LIMIT" ] && [ "$LIMIT" -gt 0 ] 2>/dev/null; then
-                python3 limit_csv.py "csv/$VC_FILE" "$LIMIT" csv/_ai_limited.csv
-                python convert_vc_csv.py csv/_ai_limited.csv -o csv/_ai_output.csv --ai
-              else
-                python convert_vc_csv.py "csv/$VC_FILE" -o csv/_ai_output.csv --ai
-              fi
-              echo "=== AI変換完了、投稿開始 ==="
-              python wp_bulk_post.py csv/_ai_output.csv --status draft
-            else
-              echo "=== push トリガー: 変更CSVを検出中 ==="
-              FOUND=0
-              for f in $(git diff --name-only HEAD~1 HEAD -- 'csv/post_*.csv'); do
-                if [ -f "$f" ]; then
-                  echo "=== $f を投稿中 ==="
-                  python wp_bulk_post.py "$f" --status draft
-                  FOUND=1
-                fi
-              done
-              if [ "$FOUND" -eq 0 ]; then
-                echo "変更されたCSVが見つかりませんでした"
-              fi
-            fi
-          fi
+          echo "=== csv/post.csv を投稿 (status: $STATUS) ==="
+          python wp_bulk_post.py csv/post.csv --status "$STATUS"
 
       - name: 投稿結果を確認
         run: |
