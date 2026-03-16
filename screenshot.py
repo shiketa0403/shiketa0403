@@ -148,7 +148,13 @@ def capture_and_upload(url, name="", output_dir="screenshots", upload=False):
     if not success:
         return None
 
-    result = {"file": str(output_path)}
+    # ファイルサイズが 20KB 未満 = ブロックされた可能性が高い（スキップ）
+    file_size = os.path.getsize(output_path)
+    if file_size < 20 * 1024:
+        print(f"  スキップ: ファイルサイズが小さすぎます ({file_size} bytes) — サイトにブロックされた可能性")
+        return {"file": str(output_path), "skipped": True, "reason": "blocked"}
+
+    result = {"file": str(output_path), "skipped": False}
 
     if upload:
         wp_result = upload_to_wordpress(output_path, title=name)
