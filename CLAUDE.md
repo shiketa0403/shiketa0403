@@ -3,6 +3,7 @@
 ## WordPress投稿
 - WordPress投稿は **GitHub Actions経由** で行う（この環境から直接 civichat.jp に接続できない）
 - `csv/post_*.csv` を **mainブランチ** にpush → `wp_post.yml` が自動実行される
+- pushトリガーでは **直前のコミットで変更があったCSVのみ** 投稿される（`git diff HEAD~1` で検出）
 - 手動実行も可能（GitHub Actions の workflow_dispatch）
 - 投稿先サイト: https://civichat.jp
 - 認証情報は GitHub Secrets に保存済み（WP_USERNAME, WP_APP_PASSWORD, ANTHROPIC_API_KEY）
