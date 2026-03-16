@@ -157,12 +157,13 @@ CPC報酬: {cpc or "なし"}
 - 誇大表現や「絶対」「必ず」などの断定は避け、事実ベースで書く
 - タイトル行（「〇〇紹介文」等）は絶対に入れない。本文のみを出力する
 - 上記の <span class="st-mymarker-s"> と <span class="hutoaka"> 以外のHTMLタグは使わない
+- 全体で500文字程度に収める。必ず文章を最後まで書ききり、途中で切れないようにする
 
 紹介文のみを出力してください。"""
 
     message = client.messages.create(
         model=MODEL,
-        max_tokens=1000,
+        max_tokens=800,
         messages=[{"role": "user", "content": prompt}],
     )
     return message.content[0].text.strip()
