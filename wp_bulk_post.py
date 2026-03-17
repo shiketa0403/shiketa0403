@@ -82,6 +82,23 @@ def insert_screenshot_into_content(content, screenshot_wp_url, case_name):
     return content.replace(marker, replacement)
 
 
+def get_existing_titles():
+    """WordPressの既存記事タイトルを全件取得する（下書き・公開すべて）"""
+    titles = set()
+    for status in ["publish", "draft", "pending", "private"]:
+        page = 1
+        while True:
+            posts = api_request(f"posts?per_page=100&page={page}&status={status}")
+            if not posts:
+                break
+            for p in posts:
+                titles.add(p["title"]["rendered"])
+            if len(posts) < 100:
+                break
+            page += 1
+    return titles
+
+
 def bulk_post_from_csv(csv_path, default_status="draft", delay=2, dry_run=False):
     with open(csv_path, encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
@@ -90,6 +107,14 @@ def bulk_post_from_csv(csv_path, default_status="draft", delay=2, dry_run=False)
     print(f"CSVから {len(rows)} 件の記事を読み込みました")
     if dry_run:
         print("=== ドライラン（実際には投稿しません） ===")
+
+    # 既存記事のタイトルを取得して重複チェックに使う
+    if not dry_run:
+        print("WordPress の既存記事を確認中...")
+        existing_titles = get_existing_titles()
+        print(f"  既存記事: {len(existing_titles)}件")
+    else:
+        existing_titles = set()
 
     success = 0
     errors = 0
@@ -109,6 +134,11 @@ def bulk_post_from_csv(csv_path, default_status="draft", delay=2, dry_run=False)
             continue
 
         print(f"\n[{i}/{len(rows)}] {title}")
+
+        # 重複チェック
+        if title in existing_titles:
+            print(f"  ⏭ スキップ（同じタイトルの記事が既に存在します）")
+            continue
 
         # スクリーンショット取得 → 記事に挿入
         if screenshot_target and not dry_run:
