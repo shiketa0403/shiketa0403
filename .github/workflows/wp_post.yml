@@ -28,6 +28,12 @@ jobs:
       - name: Python依存パッケージをインストール
         run: pip install -r requirements.txt
 
+      - name: Playwright をインストール
+        run: |
+          pip install playwright
+          playwright install chromium
+          playwright install-deps chromium
+
       - name: wp_config.py を生成
         env:
           WP_USERNAME: ${{ secrets.WP_USERNAME }}

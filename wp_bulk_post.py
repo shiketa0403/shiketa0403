@@ -22,6 +22,8 @@ CSVフォーマット:
 
 import argparse
 import csv
+import os
+import re
 import sys
 import time
 import urllib.parse
@@ -49,6 +51,37 @@ def get_or_create_tag(name):
     return None
 
 
+def capture_and_upload_screenshot(url, name):
+    """スクリーンショットを取得しWordPressにアップロード。画像URLを返す。"""
+    try:
+        from screenshot import capture_and_upload
+    except ImportError:
+        print("  ✗ screenshot.py が見つかりません。スクリーンショットをスキップします。")
+        return None
+
+    result = capture_and_upload(url, name=name, output_dir="screenshots", upload=True)
+    if result is None:
+        return None
+    if result.get("skipped"):
+        print(f"  ✗ スクリーンショットがブロックされました（{result.get('reason', 'unknown')}）")
+        return None
+    return result.get("url")
+
+
+def insert_screenshot_into_content(content, screenshot_wp_url, case_name):
+    """記事HTMLのアフィリエイト情報テーブル直前にスクリーンショットを挿入する"""
+    marker = f"<h2>{case_name}のアフィリエイト情報</h2>"
+    if marker not in content:
+        return content
+
+    img_tag = (
+        f'<img class="alignnone size-full" src="{screenshot_wp_url}" '
+        f'alt="{case_name}" width="1280" height="800" />'
+    )
+    replacement = f"{marker}\n{img_tag}"
+    return content.replace(marker, replacement)
+
+
 def bulk_post_from_csv(csv_path, default_status="draft", delay=2, dry_run=False):
     with open(csv_path, encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
@@ -68,6 +101,7 @@ def bulk_post_from_csv(csv_path, default_status="draft", delay=2, dry_run=False)
         category_name = row.get("category", "").strip()
         tags_str = row.get("tags", "").strip()
         slug = row.get("slug", "").strip()
+        screenshot_target = row.get("screenshot_url", "").strip()
 
         if not title or not content:
             print(f"[{i}/{len(rows)}] スキップ（タイトルまたは本文が空）")
@@ -75,6 +109,15 @@ def bulk_post_from_csv(csv_path, default_status="draft", delay=2, dry_run=False)
             continue
 
         print(f"\n[{i}/{len(rows)}] {title}")
+
+        # スクリーンショット取得 → 記事に挿入
+        if screenshot_target and not dry_run:
+            case_name = re.sub(r'のアフィリエイトはどこのASP？$', '', title)
+            print(f"  スクリーンショット取得中: {screenshot_target}")
+            screenshot_wp_url = capture_and_upload_screenshot(screenshot_target, name=slug or case_name)
+            if screenshot_wp_url:
+                content = insert_screenshot_into_content(content, screenshot_wp_url, case_name)
+                print(f"  ✓ スクリーンショットを記事に挿入しました")
 
         if dry_run:
             print(f"  ステータス: {status}")
