@@ -142,7 +142,7 @@ def bulk_post_from_csv(csv_path, default_status="draft", delay=2, dry_run=False)
 
         # スクリーンショット取得 → 記事に挿入
         if screenshot_target and not dry_run:
-            case_name = re.sub(r'のアフィリエイトはどこのASP？$', '', title)
+            case_name = re.sub(r'(とアフィリエイト提携できるASPはどこ？|のアフィリエイトはどこのASP？)$', '', title)
             print(f"  スクリーンショット取得中: {screenshot_target}")
             screenshot_wp_url = capture_and_upload_screenshot(screenshot_target, name=slug or case_name)
             if screenshot_wp_url:
