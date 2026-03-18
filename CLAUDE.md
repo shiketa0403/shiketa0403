@@ -15,7 +15,7 @@
 ## 記事作成の流れ
 1. `csv/vc_raw_utf8.csv`（バリューコマース案件一覧）から案件情報を取得
 2. テンプレートに案件情報を埋め込み、AI生成ルールに従って説明文を作成
-3. `csv/post.csv` に出力（フォーマット: title,content,status,category,tags,slug,screenshot_url）
+3. **`csv/post.csv` をヘッダー行＋新規記事のみにリセットして出力**（フォーマット: title,content,status,category,tags,slug,screenshot_url）
 4. commit & push → GitHub Actions が自動で スクリーンショット取得・挿入 → WordPress に投稿（デフォルト: 下書き）
 
 ## 主要ファイル
@@ -30,6 +30,7 @@
 ## 注意事項
 - この環境のネットワークはプロキシ制限があり、civichat.jp への直接接続は不可
 - 記事の投稿・確認・削除はすべて GitHub Actions 経由で実行すること
+- **csv/post.csv は毎回リセット**: 記事作成時は `csv/post.csv` を必ずヘッダー行＋今回投稿する記事のみにする。過去の記事を残すと重複投稿される
 - **重複投稿防止**: `wp_bulk_post.py` は投稿前にWordPressの既存記事タイトルを確認し、同じタイトルの記事が存在する場合は自動でスキップする
 
 ---
