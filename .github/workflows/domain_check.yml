@@ -37,10 +37,14 @@ jobs:
             cat domain_history.csv
           fi
 
-      - name: 結果CSVをアーティファクトとして保存
+      - name: 結果CSVをリポジトリにコミット
         if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: domain-history-${{ github.run_number }}
-          path: domain_history.csv
-          retention-days: 30
+        run: |
+          if [ -f domain_history.csv ]; then
+            cp domain_history.csv csv/domain_history.csv
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add csv/domain_history.csv
+            git diff --cached --quiet || git commit -m "ドメイン履歴調査結果を更新"
+            git push
+          fi
