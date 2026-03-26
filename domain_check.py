@@ -270,23 +270,35 @@ def main():
         result = check_domain(domain)
         results.append(result)
 
-    # CSV出力
+    # CSV出力（1タイトル1行）
     with open(args.output, "w", encoding="utf-8-sig", newline="") as f:
         writer = csv.writer(f)
         writer.writerow([
             "ドメイン", "ステータス", "初回アーカイブ", "最終アーカイブ",
-            "タイトル変化回数", "リダイレクト", "タイトル履歴"
+            "タイトル変化回数", "時期", "タイトル"
         ])
         for r in results:
-            writer.writerow([
-                r["domain"],
-                r["status"],
-                format_date(r["first_seen"]),
-                format_date(r["last_seen"]),
-                r["title_changes"],
-                "YES" if r["is_redirect"] else "NO",
-                r["titles"],
-            ])
+            if r["title_history"]:
+                for i, t in enumerate(r["title_history"]):
+                    writer.writerow([
+                        r["domain"] if i == 0 else "",
+                        r["status"] if i == 0 else "",
+                        format_date(r["first_seen"]) if i == 0 else "",
+                        format_date(r["last_seen"]) if i == 0 else "",
+                        r["title_changes"] if i == 0 else "",
+                        t["date"],
+                        t["title"],
+                    ])
+            else:
+                writer.writerow([
+                    r["domain"],
+                    r["status"],
+                    format_date(r["first_seen"]),
+                    format_date(r["last_seen"]),
+                    r["title_changes"],
+                    "",
+                    "(リダイレクト)" if r["is_redirect"] else "(タイトル取得失敗)",
+                ])
 
     # サマリ出力
     print(f"\n{'='*60}")
