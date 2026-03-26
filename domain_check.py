@@ -139,6 +139,27 @@ def is_redirect_status(code):
         return False
 
 
+# パーキング・無効ドメインのタイトルパターン
+PARKING_PATTERNS = [
+    "parking", "parked", "for sale", "buy this domain",
+    "domain expired", "this domain", "coming soon",
+    "under construction", "is available", "domain name",
+    "sedoparking", "hugedomains", "godaddy", "afternic",
+    "dan.com", "sav.com",
+]
+
+
+def detect_note(title):
+    """タイトルから備考（パーキング等）を判定"""
+    if not title:
+        return ""
+    lower = title.lower()
+    for pattern in PARKING_PATTERNS:
+        if pattern in lower:
+            return "パーキング"
+    return ""
+
+
 def check_domain(domain):
     """1ドメインの履歴を調査"""
     print(f"\n{'='*60}")
@@ -225,8 +246,9 @@ def check_domain(domain):
         title, _ = title_results.get(ts, (None, False))
         if title and title != prev_title:
             ym = f"{ts[:4]}-{ts[4:6]}"
-            titles_history.append({"date": ym, "title": title})
-            print(f"  {ym}: {title}")
+            note = detect_note(title)
+            titles_history.append({"date": ym, "title": title, "note": note})
+            print(f"  {ym}: {title}" + (f" [{note}]" if note else ""))
             prev_title = title
         elif not title:
             print(f"  {ts[:4]}-{ts[4:6]}: (タイトル取得失敗)")
@@ -291,7 +313,7 @@ def main():
         writer = csv.writer(f)
         writer.writerow([
             "ドメイン", "ステータス", "初回アーカイブ", "最終アーカイブ",
-            "タイトル変化回数", "時期", "タイトル"
+            "タイトル変化回数", "時期", "タイトル", "備考"
         ])
         for r in results:
             if r["title_history"]:
@@ -304,8 +326,10 @@ def main():
                         r["title_changes"] if i == 0 else "",
                         t["date"],
                         t["title"],
+                        t.get("note", ""),
                     ])
             else:
+                note = "リダイレクト" if r["is_redirect"] else "タイトル取得失敗"
                 writer.writerow([
                     r["domain"],
                     r["status"],
@@ -313,7 +337,8 @@ def main():
                     format_date(r["last_seen"]),
                     r["title_changes"],
                     "",
-                    "(リダイレクト)" if r["is_redirect"] else "(タイトル取得失敗)",
+                    "",
+                    note,
                 ])
 
     # サマリ出力
