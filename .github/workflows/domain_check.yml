@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
     inputs:
       domains:
-        description: 'ドメインリスト（カンマ区切り、例: example.com,example2.com）'
-        required: true
+        description: 'ドメインリスト（カンマ区切り）。空欄なら csv/domains.txt から読み込み'
+        required: false
         type: string
 
 permissions:
@@ -23,7 +23,17 @@ jobs:
 
       - name: ドメインリストファイルを作成
         run: |
-          echo "${{ github.event.inputs.domains }}" | tr ',' '\n' | sed 's/^ *//;s/ *$//' | grep -v '^$' > domains.txt
+          INPUT="${{ github.event.inputs.domains }}"
+          if [ -n "$INPUT" ]; then
+            echo "カンマ区切り入力からドメインリストを作成"
+            echo "$INPUT" | tr ',' '\n' | sed 's/^ *//;s/ *$//' | grep -v '^$' > domains.txt
+          elif [ -f csv/domains.txt ]; then
+            echo "csv/domains.txt からドメインリストを読み込み"
+            grep -v '^\s*#' csv/domains.txt | grep -v '^\s*$' > domains.txt
+          else
+            echo "ERROR: ドメインが指定されていません。入力欄にカンマ区切りで入力するか、csv/domains.txt を作成してください。"
+            exit 1
+          fi
           echo "=== 調査対象ドメイン ==="
           cat domains.txt
           echo "=== $(wc -l < domains.txt) 件 ==="
