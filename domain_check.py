@@ -5,7 +5,7 @@ Wayback Machine CDX API を使い、ドメインの過去のタイトル変化�
 """
 
 import csv
-import io
+import json
 import re
 import sys
 import time
@@ -13,13 +13,14 @@ import argparse
 import urllib.request
 import urllib.error
 import urllib.parse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from html.parser import HTMLParser
 
 
 CDX_API = "https://web.archive.org/cdx/search/cdx"
 WAYBACK_URL = "https://web.archive.org/web"
-REQUEST_INTERVAL = 0.3  # 秒（rate limit対策）
 MAX_RETRIES = 2
+MAX_WORKERS = 5  # 並列リクエスト数
 
 
 class TitleParser(HTMLParser):
@@ -57,7 +58,7 @@ class TitleParser(HTMLParser):
         return self._has_meta_refresh
 
 
-def fetch_url(url, timeout=15, max_bytes=50000):
+def fetch_url(url, timeout=10, max_bytes=30000):
     """URLからコンテンツを取得（リトライ付き、先頭部分のみ）"""
     for attempt in range(MAX_RETRIES):
         try:
@@ -65,14 +66,12 @@ def fetch_url(url, timeout=15, max_bytes=50000):
                 "User-Agent": "Mozilla/5.0 (domain-history-checker)"
             })
             with urllib.request.urlopen(req, timeout=timeout) as resp:
-                # <title>はhead内にあるので先頭部分だけ読む
                 data = resp.read(max_bytes)
                 return data.decode("utf-8", errors="replace"), resp.status
         except (urllib.error.URLError, urllib.error.HTTPError, OSError) as e:
             if attempt < MAX_RETRIES - 1:
-                time.sleep(2)
+                time.sleep(1)
             else:
-                print(f"  [WARN] 取得失敗: {url} ({e})")
                 return None, None
 
 
@@ -82,45 +81,38 @@ def get_snapshots(domain):
         "url": domain,
         "output": "json",
         "fl": "timestamp,statuscode,mimetype",
-        "collapse": "timestamp:6",  # 月単位で重複除去
+        "collapse": "timestamp:6",
         "filter": "mimetype:text/html",
         "limit": "5000",
     })
     url = f"{CDX_API}?{params}"
-    body, status = fetch_url(url)
+    body, status = fetch_url(url, timeout=15, max_bytes=500000)
     if not body:
         return []
 
-    rows = []
     try:
-        import json
         data = json.loads(body)
         if len(data) <= 1:
             return []
-        # data[0]はヘッダー行
-        for row in data[1:]:
-            ts, sc, _ = row
-            rows.append({"timestamp": ts, "statuscode": sc})
+        return [{"timestamp": row[0], "statuscode": row[1]} for row in data[1:]]
     except (json.JSONDecodeError, ValueError):
         return []
-
-    return rows
 
 
 def get_title_from_snapshot(domain, timestamp):
     """Wayback Machineのスナップショットからタイトルを取得"""
-    url = f"{WAYBACK_URL}/{timestamp}/{domain}"
+    url = f"{WAYBACK_URL}/{timestamp}id_/{domain}"
     html, status = fetch_url(url)
     if not html:
-        return None, False
+        return timestamp, None, False
 
     parser = TitleParser()
     try:
         parser.feed(html)
     except Exception:
-        return None, False
+        return timestamp, None, False
 
-    return parser.title if parser.title else None, parser.is_meta_refresh
+    return timestamp, parser.title if parser.title else None, parser.is_meta_refresh
 
 
 def is_redirect_status(code):
@@ -151,7 +143,7 @@ def check_domain(domain):
             "title_history": [],
         }
 
-    # リダイレクトチェック: 直近のスナップショットの大半がリダイレクトか
+    # リダイレクトチェック
     recent = snapshots[-5:] if len(snapshots) >= 5 else snapshots
     redirect_count = sum(1 for s in recent if is_redirect_status(s["statuscode"]))
     if redirect_count >= len(recent) * 0.8:
@@ -170,7 +162,7 @@ def check_domain(domain):
     # HTMLステータス200のスナップショットだけ使う
     valid_snapshots = [s for s in snapshots if s["statuscode"] == "200"]
     if not valid_snapshots:
-        print(f"  有効なスナップショットなし（全てリダイレクト等）")
+        print(f"  有効なスナップショットなし")
         return {
             "domain": domain,
             "status": "no_valid_snapshot",
@@ -182,45 +174,47 @@ def check_domain(domain):
             "title_history": [],
         }
 
-    # サンプリング: 最大10件にする（均等間隔）
-    max_samples = 10
+    # サンプリング: 最大8件（均等間隔）
+    max_samples = 8
     if len(valid_snapshots) > max_samples:
         step = len(valid_snapshots) / max_samples
         sampled = [valid_snapshots[int(i * step)] for i in range(max_samples)]
-        # 最初と最後は必ず含める
-        if sampled[0] != valid_snapshots[0]:
-            sampled[0] = valid_snapshots[0]
-        if sampled[-1] != valid_snapshots[-1]:
-            sampled[-1] = valid_snapshots[-1]
+        sampled[0] = valid_snapshots[0]
+        sampled[-1] = valid_snapshots[-1]
     else:
         sampled = valid_snapshots
 
     print(f"  スナップショット数: {len(valid_snapshots)} → サンプル: {len(sampled)}")
 
-    # タイトルを取得
-    titles_history = []
-    prev_title = None
+    # タイトルを並列取得
+    title_results = {}
     has_meta_refresh = False
 
-    for i, snap in enumerate(sampled):
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        futures = {
+            executor.submit(get_title_from_snapshot, domain, snap["timestamp"]): snap
+            for snap in sampled
+        }
+        for future in as_completed(futures):
+            ts, title, is_meta = future.result()
+            title_results[ts] = (title, is_meta)
+            if is_meta:
+                has_meta_refresh = True
+
+    # タイムスタンプ順に並べてタイトル変化を検出
+    titles_history = []
+    prev_title = None
+    for snap in sampled:
         ts = snap["timestamp"]
-        time.sleep(REQUEST_INTERVAL)
-        title, is_meta = get_title_from_snapshot(domain, ts)
-
-        if is_meta:
-            has_meta_refresh = True
-
+        title, _ = title_results.get(ts, (None, False))
         if title and title != prev_title:
             ym = f"{ts[:4]}-{ts[4:6]}"
             titles_history.append({"date": ym, "title": title})
             print(f"  {ym}: {title}")
             prev_title = title
-        elif title:
-            pass  # 同じタイトル、スキップ
-        else:
+        elif not title:
             print(f"  {ts[:4]}-{ts[4:6]}: (タイトル取得失敗)")
 
-    # meta refreshリダイレクトの場合も除外
     if has_meta_refresh and len(titles_history) <= 1:
         print(f"  meta refreshリダイレクト検出")
 
@@ -261,7 +255,6 @@ def main():
                 if d and not d.startswith("#"):
                     domains.append(d)
     except FileNotFoundError:
-        # カンマ区切りとして解釈
         domains = [d.strip() for d in args.input.split(",") if d.strip()]
 
     if not domains:
@@ -271,10 +264,8 @@ def main():
     print(f"調査対象: {len(domains)} ドメイン")
     print(f"出力先: {args.output}")
 
-    # 調査実行
     results = []
     for domain in domains:
-        # http/httpsを除去
         domain = re.sub(r'^https?://', '', domain).rstrip('/')
         result = check_domain(domain)
         results.append(result)
