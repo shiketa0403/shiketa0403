@@ -18,8 +18,8 @@ from html.parser import HTMLParser
 
 CDX_API = "https://web.archive.org/cdx/search/cdx"
 WAYBACK_URL = "https://web.archive.org/web"
-REQUEST_INTERVAL = 1.5  # 秒（rate limit対策）
-MAX_RETRIES = 3
+REQUEST_INTERVAL = 0.3  # 秒（rate limit対策）
+MAX_RETRIES = 2
 
 
 class TitleParser(HTMLParser):
@@ -57,18 +57,20 @@ class TitleParser(HTMLParser):
         return self._has_meta_refresh
 
 
-def fetch_url(url, timeout=30):
-    """URLからコンテンツを取得（リトライ付き）"""
+def fetch_url(url, timeout=15, max_bytes=50000):
+    """URLからコンテンツを取得（リトライ付き、先頭部分のみ）"""
     for attempt in range(MAX_RETRIES):
         try:
             req = urllib.request.Request(url, headers={
                 "User-Agent": "Mozilla/5.0 (domain-history-checker)"
             })
             with urllib.request.urlopen(req, timeout=timeout) as resp:
-                return resp.read().decode("utf-8", errors="replace"), resp.status
+                # <title>はhead内にあるので先頭部分だけ読む
+                data = resp.read(max_bytes)
+                return data.decode("utf-8", errors="replace"), resp.status
         except (urllib.error.URLError, urllib.error.HTTPError, OSError) as e:
             if attempt < MAX_RETRIES - 1:
-                time.sleep(2 ** (attempt + 1))
+                time.sleep(2)
             else:
                 print(f"  [WARN] 取得失敗: {url} ({e})")
                 return None, None
@@ -180,8 +182,8 @@ def check_domain(domain):
             "title_history": [],
         }
 
-    # サンプリング: 最大20件程度にする（均等間隔）
-    max_samples = 20
+    # サンプリング: 最大10件にする（均等間隔）
+    max_samples = 10
     if len(valid_snapshots) > max_samples:
         step = len(valid_snapshots) / max_samples
         sampled = [valid_snapshots[int(i * step)] for i in range(max_samples)]
