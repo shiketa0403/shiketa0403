@@ -71,7 +71,7 @@ class TitleParser(HTMLParser):
         return self._has_meta_refresh or self._has_js_redirect
 
 
-def fetch_url_bytes(url, timeout=10, max_bytes=30000):
+def fetch_url_bytes(url, timeout=20, max_bytes=30000):
     """URLからバイトデータを取得（リトライ付き、先頭部分のみ）"""
     for attempt in range(MAX_RETRIES):
         try:
@@ -88,7 +88,7 @@ def fetch_url_bytes(url, timeout=10, max_bytes=30000):
                 return None, None
 
 
-def fetch_url(url, timeout=10, max_bytes=30000):
+def fetch_url(url, timeout=20, max_bytes=30000):
     """URLからテキストを取得（UTF-8）"""
     data, status = fetch_url_bytes(url, timeout, max_bytes)
     if data is None:
@@ -295,13 +295,23 @@ def check_domain(domain):
             "title_history": [],
         }
 
-    # サンプリング: 年1回（各年から1件ずつ取得）
+    # サンプリング: 年2回（年始+年央で冗長化）
     year_map = {}
     for snap in valid_snapshots:
         year = snap["timestamp"][:4]
+        month = int(snap["timestamp"][4:6])
         if year not in year_map:
-            year_map[year] = snap  # 各年の最初のスナップショット
-    sampled = list(year_map.values())
+            year_map[year] = {"first": None, "mid": None}
+        if year_map[year]["first"] is None:
+            year_map[year]["first"] = snap
+        if month >= 6 and year_map[year]["mid"] is None:
+            year_map[year]["mid"] = snap
+    sampled = []
+    for year in sorted(year_map.keys()):
+        if year_map[year]["first"]:
+            sampled.append(year_map[year]["first"])
+        if year_map[year]["mid"] and year_map[year]["mid"] != year_map[year]["first"]:
+            sampled.append(year_map[year]["mid"])
     # 最後のスナップショットも必ず含める
     if sampled[-1] != valid_snapshots[-1]:
         sampled.append(valid_snapshots[-1])
