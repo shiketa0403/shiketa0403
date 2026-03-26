@@ -71,8 +71,8 @@ class TitleParser(HTMLParser):
         return self._has_meta_refresh or self._has_js_redirect
 
 
-def fetch_url(url, timeout=10, max_bytes=30000):
-    """URLからコンテンツを取得（リトライ付き、先頭部分のみ）"""
+def fetch_url_bytes(url, timeout=10, max_bytes=30000):
+    """URLからバイトデータを取得（リトライ付き、先頭部分のみ）"""
     for attempt in range(MAX_RETRIES):
         try:
             req = urllib.request.Request(url, headers={
@@ -80,12 +80,63 @@ def fetch_url(url, timeout=10, max_bytes=30000):
             })
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 data = resp.read(max_bytes)
-                return data.decode("utf-8", errors="replace"), resp.status
+                return data, resp.status
         except (urllib.error.URLError, urllib.error.HTTPError, OSError) as e:
             if attempt < MAX_RETRIES - 1:
                 time.sleep(1)
             else:
                 return None, None
+
+
+def fetch_url(url, timeout=10, max_bytes=30000):
+    """URLからテキストを取得（UTF-8）"""
+    data, status = fetch_url_bytes(url, timeout, max_bytes)
+    if data is None:
+        return None, None
+    return data.decode("utf-8", errors="replace"), status
+
+
+def decode_html(data):
+    """HTMLバイトデータをエンコーディング自動検出でデコード"""
+    if data is None:
+        return None
+
+    # まずHTMLからcharsetを探す
+    head = data[:2000].decode("ascii", errors="replace").lower()
+    charset = None
+
+    # <meta charset="xxx">
+    m = re.search(r'<meta[^>]+charset=["\']?([a-zA-Z0-9_-]+)', head)
+    if m:
+        charset = m.group(1)
+
+    # <meta http-equiv="Content-Type" content="text/html; charset=xxx">
+    if not charset:
+        m = re.search(r'content=["\'][^"\']*charset=([a-zA-Z0-9_-]+)', head)
+        if m:
+            charset = m.group(1)
+
+    # 検出されたcharsetで試す
+    if charset:
+        try:
+            return data.decode(charset)
+        except (UnicodeDecodeError, LookupError):
+            pass
+
+    # UTF-8を試す
+    try:
+        return data.decode("utf-8")
+    except UnicodeDecodeError:
+        pass
+
+    # 日本語エンコーディングを試す
+    for enc in ["shift_jis", "euc-jp", "iso-2022-jp", "cp932"]:
+        try:
+            return data.decode(enc)
+        except (UnicodeDecodeError, LookupError):
+            pass
+
+    return data.decode("utf-8", errors="replace")
 
 
 def get_snapshots(domain):
@@ -128,20 +179,31 @@ def get_snapshots(domain):
 
 def get_title_from_snapshot(domain, timestamp):
     """Wayback Machineのスナップショットからタイトルを取得"""
-    # http://付きでアクセス
     target = domain if domain.startswith("http") else f"http://{domain}"
-    url = f"{WAYBACK_URL}/{timestamp}id_/{target}"
-    html, status = fetch_url(url)
-    if not html:
-        return timestamp, None, False
 
-    parser = TitleParser()
-    try:
-        parser.feed(html)
-    except Exception:
-        return timestamp, None, False
+    # id_付き（軽量）を試し、失敗したらid_なしも試す
+    for url in [
+        f"{WAYBACK_URL}/{timestamp}id_/{target}",
+        f"{WAYBACK_URL}/{timestamp}/{target}",
+    ]:
+        raw, status = fetch_url_bytes(url)
+        if not raw:
+            continue
 
-    return timestamp, parser.title if parser.title else None, parser.is_redirect
+        html = decode_html(raw)
+        if not html:
+            continue
+
+        parser = TitleParser()
+        try:
+            parser.feed(html)
+        except Exception:
+            continue
+
+        if parser.title:
+            return timestamp, parser.title, parser.is_redirect
+
+    return timestamp, None, False
 
 
 def is_redirect_status(code):
