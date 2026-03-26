@@ -145,9 +145,9 @@ def get_snapshots(domain):
     if domain.startswith("http://") or domain.startswith("https://"):
         urls_to_try = [domain]
 
-    for attempt in range(2):
+    for attempt in range(3):
         if attempt > 0:
-            print(f"  CDX APIリトライ ({attempt+1}/2)... 2秒待機")
+            print(f"  CDX APIリトライ ({attempt+1}/3)... 2秒待機")
             time.sleep(2)
 
         for try_url in urls_to_try:
