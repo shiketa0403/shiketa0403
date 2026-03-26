@@ -286,15 +286,16 @@ def check_domain(domain):
             "title_history": [],
         }
 
-    # サンプリング: 最大8件（均等間隔）
-    max_samples = 8
-    if len(valid_snapshots) > max_samples:
-        step = len(valid_snapshots) / max_samples
-        sampled = [valid_snapshots[int(i * step)] for i in range(max_samples)]
-        sampled[0] = valid_snapshots[0]
-        sampled[-1] = valid_snapshots[-1]
-    else:
-        sampled = valid_snapshots
+    # サンプリング: 年1回（各年から1件ずつ取得）
+    year_map = {}
+    for snap in valid_snapshots:
+        year = snap["timestamp"][:4]
+        if year not in year_map:
+            year_map[year] = snap  # 各年の最初のスナップショット
+    sampled = list(year_map.values())
+    # 最後のスナップショットも必ず含める
+    if sampled[-1] != valid_snapshots[-1]:
+        sampled.append(valid_snapshots[-1])
 
     print(f"  スナップショット数: {len(valid_snapshots)} → サンプル: {len(sampled)}")
 
