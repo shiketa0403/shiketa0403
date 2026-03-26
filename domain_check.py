@@ -378,38 +378,9 @@ def format_date(yyyymm):
     return yyyymm
 
 
-def main():
-    parser = argparse.ArgumentParser(description="中古ドメイン履歴調査ツール")
-    parser.add_argument("input", help="ドメインリストファイル（1行1ドメイン）またはカンマ区切りドメイン")
-    parser.add_argument("-o", "--output", default="domain_history.csv", help="出力CSVファイル名")
-    args = parser.parse_args()
-
-    # ドメインリスト取得
-    domains = []
-    try:
-        with open(args.input, "r", encoding="utf-8") as f:
-            for line in f:
-                d = line.strip().strip(",").strip()
-                if d and not d.startswith("#"):
-                    domains.append(d)
-    except FileNotFoundError:
-        domains = [d.strip() for d in args.input.split(",") if d.strip()]
-
-    if not domains:
-        print("ドメインが指定されていません")
-        sys.exit(1)
-
-    print(f"調査対象: {len(domains)} ドメイン")
-    print(f"出力先: {args.output}")
-
-    results = []
-    for domain in domains:
-        domain = re.sub(r'^https?://', '', domain).rstrip('/')
-        result = check_domain(domain)
-        results.append(result)
-
-    # CSV出力（1タイトル1行）
-    with open(args.output, "w", encoding="utf-8-sig", newline="") as f:
+def write_csv(results, output_path):
+    """結果をCSVに書き出す"""
+    with open(output_path, "w", encoding="utf-8-sig", newline="") as f:
         writer = csv.writer(f)
         writer.writerow([
             "ドメイン", "ステータス", "初回アーカイブ", "最終アーカイブ",
@@ -440,6 +411,46 @@ def main():
                     "",
                     note,
                 ])
+
+
+def main():
+    parser = argparse.ArgumentParser(description="中古ドメイン履歴調査ツール")
+    parser.add_argument("input", help="ドメインリストファイル（1行1ドメイン）またはカンマ区切りドメイン")
+    parser.add_argument("-o", "--output", default="domain_history.csv", help="出力CSVファイル名")
+    args = parser.parse_args()
+
+    # ドメインリスト取得
+    domains = []
+    try:
+        with open(args.input, "r", encoding="utf-8") as f:
+            for line in f:
+                d = line.strip().strip(",").strip()
+                if d and not d.startswith("#"):
+                    domains.append(d)
+    except FileNotFoundError:
+        domains = [d.strip() for d in args.input.split(",") if d.strip()]
+
+    if not domains:
+        print("ドメインが指定されていません")
+        sys.exit(1)
+
+    print(f"調査対象: {len(domains)} ドメイン")
+    print(f"出力先: {args.output}")
+
+    results = []
+    for i, domain in enumerate(domains):
+        domain = re.sub(r'^https?://', '', domain).rstrip('/')
+        print(f"\n[{i+1}/{len(domains)}]")
+        result = check_domain(domain)
+        results.append(result)
+
+        # 10件ごと、または最後に途中結果を保存
+        if (i + 1) % 10 == 0 or (i + 1) == len(domains):
+            write_csv(results, args.output)
+            print(f"  >>> 途中結果を保存 ({i+1}/{len(domains)}件完了)")
+
+    # 最終CSV出力
+    write_csv(results, args.output)
 
     # サマリ出力
     print(f"\n{'='*60}")
