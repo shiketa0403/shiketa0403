@@ -40,7 +40,7 @@ jobs:
 
       - name: ドメイン履歴を調査
         run: python domain_check.py domains.txt -o domain_history.csv
-        timeout-minutes: 60
+        timeout-minutes: 180
 
       - name: 結果CSVを表示
         if: always()
