@@ -147,8 +147,9 @@ def get_snapshots(domain):
 
     for attempt in range(3):
         if attempt > 0:
-            print(f"  CDX APIリトライ ({attempt+1}/3)... 2秒待機")
-            time.sleep(2)
+            wait = attempt * 3
+            print(f"  CDX APIリトライ ({attempt+1}/3)... {wait}秒待機")
+            time.sleep(wait)
 
         for try_url in urls_to_try:
             params = urllib.parse.urlencode({
