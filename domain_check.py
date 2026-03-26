@@ -145,11 +145,10 @@ def get_snapshots(domain):
     if domain.startswith("http://") or domain.startswith("https://"):
         urls_to_try = [domain]
 
-    for attempt in range(3):
+    for attempt in range(2):
         if attempt > 0:
-            wait = attempt * 3
-            print(f"  CDX APIリトライ ({attempt+1}/3)... {wait}秒待機")
-            time.sleep(wait)
+            print(f"  CDX APIリトライ ({attempt+1}/2)... 2秒待機")
+            time.sleep(2)
 
         for try_url in urls_to_try:
             params = urllib.parse.urlencode({
