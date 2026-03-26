@@ -308,6 +308,9 @@ def check_domain(domain):
 
     print(f"  スナップショット数: {len(valid_snapshots)} → サンプル: {len(sampled)}")
 
+    # タイムスタンプ順にソート
+    sampled.sort(key=lambda s: s["timestamp"])
+
     # タイトルを並列取得
     title_results = {}
     has_redirect = False
