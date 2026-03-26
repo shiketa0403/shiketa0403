@@ -140,38 +140,47 @@ def decode_html(data):
 
 
 def get_snapshots(domain):
-    """CDX APIで月別スナップショット一覧を取得（http/https両方試す）"""
-    urls_to_try = [domain, f"http://{domain}", f"https://{domain}"]
+    """CDX APIで月別スナップショット一覧を取得（リトライ付き）"""
+    urls_to_try = [f"*.{domain}", domain, f"http://{domain}", f"https://{domain}"]
     if domain.startswith("http://") or domain.startswith("https://"):
         urls_to_try = [domain]
 
-    for try_url in urls_to_try:
-        params = urllib.parse.urlencode({
-            "url": try_url,
-            "output": "json",
-            "fl": "timestamp,statuscode,mimetype",
-            "collapse": "timestamp:6",
-            "filter": "mimetype:text/html",
-            "limit": "5000",
-        })
-        url = f"{CDX_API}?{params}"
-        print(f"  CDX API問い合わせ: {try_url}")
-        body, status = fetch_url(url, timeout=20, max_bytes=500000)
+    for attempt in range(3):
+        if attempt > 0:
+            wait = attempt * 3
+            print(f"  CDX APIリトライ ({attempt+1}/3)... {wait}秒待機")
+            time.sleep(wait)
 
-        if not body:
-            print(f"  CDX APIレスポンスなし（URL: {try_url}）")
-            continue
+        for try_url in urls_to_try:
+            params = urllib.parse.urlencode({
+                "url": try_url,
+                "output": "json",
+                "fl": "timestamp,statuscode,mimetype",
+                "collapse": "timestamp:6",
+                "filter": "mimetype:text/html",
+                "limit": "5000",
+            })
+            url = f"{CDX_API}?{params}"
+            print(f"  CDX API問い合わせ: {try_url}")
+            body, status = fetch_url(url, timeout=30, max_bytes=500000)
 
-        try:
-            data = json.loads(body)
-            if len(data) <= 1:
-                print(f"  スナップショットなし（URL: {try_url}）")
+            if not body:
+                print(f"  CDX APIレスポンスなし（URL: {try_url}）")
                 continue
-            print(f"  {len(data)-1}件のスナップショットを取得")
-            return [{"timestamp": row[0], "statuscode": row[1]} for row in data[1:]]
-        except (json.JSONDecodeError, ValueError) as e:
-            print(f"  JSONパースエラー: {e}")
-            print(f"  レスポンス先頭200文字: {body[:200]}")
+
+            try:
+                data = json.loads(body)
+                if len(data) <= 1:
+                    print(f"  スナップショットなし（URL: {try_url}）")
+                    continue
+                print(f"  {len(data)-1}件のスナップショットを取得")
+                return [{"timestamp": row[0], "statuscode": row[1]} for row in data[1:]]
+            except (json.JSONDecodeError, ValueError) as e:
+                print(f"  JSONパースエラー: {e}")
+                print(f"  レスポンス先頭200文字: {body[:200]}")
+                continue
+
+        # 全URLで失敗した場合、次のattemptへ
             continue
 
     return []
