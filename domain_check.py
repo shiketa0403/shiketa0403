@@ -28,12 +28,16 @@ class TitleParser(HTMLParser):
     def __init__(self):
         super().__init__()
         self._in_title = False
+        self._in_script = False
         self._title = ""
         self._has_meta_refresh = False
+        self._has_js_redirect = False
 
     def handle_starttag(self, tag, attrs):
         if tag == "title":
             self._in_title = True
+        if tag == "script":
+            self._in_script = True
         if tag == "meta":
             attrs_dict = dict(attrs)
             if attrs_dict.get("http-equiv", "").lower() == "refresh":
@@ -44,18 +48,27 @@ class TitleParser(HTMLParser):
     def handle_endtag(self, tag):
         if tag == "title":
             self._in_title = False
+        if tag == "script":
+            self._in_script = False
 
     def handle_data(self, data):
         if self._in_title:
             self._title += data
+        if self._in_script:
+            lower = data.lower()
+            if any(p in lower for p in [
+                "window.location", "location.href", "location.replace",
+                "location.assign", "document.location",
+            ]):
+                self._has_js_redirect = True
 
     @property
     def title(self):
         return self._title.strip()
 
     @property
-    def is_meta_refresh(self):
-        return self._has_meta_refresh
+    def is_redirect(self):
+        return self._has_meta_refresh or self._has_js_redirect
 
 
 def fetch_url(url, timeout=10, max_bytes=30000):
@@ -128,7 +141,7 @@ def get_title_from_snapshot(domain, timestamp):
     except Exception:
         return timestamp, None, False
 
-    return timestamp, parser.title if parser.title else None, parser.is_meta_refresh
+    return timestamp, parser.title if parser.title else None, parser.is_redirect
 
 
 def is_redirect_status(code):
@@ -225,7 +238,7 @@ def check_domain(domain):
 
     # タイトルを並列取得
     title_results = {}
-    has_meta_refresh = False
+    has_redirect = False
 
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         futures = {
@@ -233,28 +246,30 @@ def check_domain(domain):
             for snap in sampled
         }
         for future in as_completed(futures):
-            ts, title, is_meta = future.result()
-            title_results[ts] = (title, is_meta)
-            if is_meta:
-                has_meta_refresh = True
+            ts, title, is_redir = future.result()
+            title_results[ts] = (title, is_redir)
+            if is_redir:
+                has_redirect = True
 
     # タイムスタンプ順に並べてタイトル変化を検出
     titles_history = []
     prev_title = None
     for snap in sampled:
         ts = snap["timestamp"]
-        title, _ = title_results.get(ts, (None, False))
+        title, is_redir = title_results.get(ts, (None, False))
         if title and title != prev_title:
             ym = f"{ts[:4]}-{ts[4:6]}"
             note = detect_note(title)
+            if not note and is_redir:
+                note = "リダイレクト"
             titles_history.append({"date": ym, "title": title, "note": note})
             print(f"  {ym}: {title}" + (f" [{note}]" if note else ""))
             prev_title = title
         elif not title:
             print(f"  {ts[:4]}-{ts[4:6]}: (タイトル取得失敗)")
 
-    if has_meta_refresh and len(titles_history) <= 1:
-        print(f"  meta refreshリダイレクト検出")
+    if has_redirect and len(titles_history) <= 1:
+        print(f"  リダイレクト検出（meta refresh / JavaScript）")
 
     title_changes = len(titles_history)
     titles_str = " → ".join([t["title"] for t in titles_history])
@@ -265,7 +280,7 @@ def check_domain(domain):
         "first_seen": valid_snapshots[0]["timestamp"][:6],
         "last_seen": valid_snapshots[-1]["timestamp"][:6],
         "title_changes": title_changes,
-        "is_redirect": has_meta_refresh and title_changes <= 1,
+        "is_redirect": has_redirect and title_changes <= 1,
         "titles": titles_str,
         "title_history": titles_history,
     }
