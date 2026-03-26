@@ -76,32 +76,48 @@ def fetch_url(url, timeout=10, max_bytes=30000):
 
 
 def get_snapshots(domain):
-    """CDX APIで月別スナップショット一覧を取得"""
-    params = urllib.parse.urlencode({
-        "url": domain,
-        "output": "json",
-        "fl": "timestamp,statuscode,mimetype",
-        "collapse": "timestamp:6",
-        "filter": "mimetype:text/html",
-        "limit": "5000",
-    })
-    url = f"{CDX_API}?{params}"
-    body, status = fetch_url(url, timeout=15, max_bytes=500000)
-    if not body:
-        return []
+    """CDX APIで月別スナップショット一覧を取得（http/https両方試す）"""
+    urls_to_try = [domain, f"http://{domain}", f"https://{domain}"]
+    if domain.startswith("http://") or domain.startswith("https://"):
+        urls_to_try = [domain]
 
-    try:
-        data = json.loads(body)
-        if len(data) <= 1:
-            return []
-        return [{"timestamp": row[0], "statuscode": row[1]} for row in data[1:]]
-    except (json.JSONDecodeError, ValueError):
-        return []
+    for try_url in urls_to_try:
+        params = urllib.parse.urlencode({
+            "url": try_url,
+            "output": "json",
+            "fl": "timestamp,statuscode,mimetype",
+            "collapse": "timestamp:6",
+            "filter": "mimetype:text/html",
+            "limit": "5000",
+        })
+        url = f"{CDX_API}?{params}"
+        print(f"  CDX API問い合わせ: {try_url}")
+        body, status = fetch_url(url, timeout=20, max_bytes=500000)
+
+        if not body:
+            print(f"  CDX APIレスポンスなし（URL: {try_url}）")
+            continue
+
+        try:
+            data = json.loads(body)
+            if len(data) <= 1:
+                print(f"  スナップショットなし（URL: {try_url}）")
+                continue
+            print(f"  {len(data)-1}件のスナップショットを取得")
+            return [{"timestamp": row[0], "statuscode": row[1]} for row in data[1:]]
+        except (json.JSONDecodeError, ValueError) as e:
+            print(f"  JSONパースエラー: {e}")
+            print(f"  レスポンス先頭200文字: {body[:200]}")
+            continue
+
+    return []
 
 
 def get_title_from_snapshot(domain, timestamp):
     """Wayback Machineのスナップショットからタイトルを取得"""
-    url = f"{WAYBACK_URL}/{timestamp}id_/{domain}"
+    # http://付きでアクセス
+    target = domain if domain.startswith("http") else f"http://{domain}"
+    url = f"{WAYBACK_URL}/{timestamp}id_/{target}"
     html, status = fetch_url(url)
     if not html:
         return timestamp, None, False
