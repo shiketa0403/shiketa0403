@@ -1,0 +1,46 @@
+name: ドメイン履歴調査
+
+on:
+  workflow_dispatch:
+    inputs:
+      domains:
+        description: 'ドメインリスト（カンマ区切り、例: example.com,example2.com）'
+        required: true
+        type: string
+
+jobs:
+  check-domains:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: ドメインリストファイルを作成
+        run: |
+          echo "${{ github.event.inputs.domains }}" | tr ',' '\n' | sed 's/^ *//;s/ *$//' | grep -v '^$' > domains.txt
+          echo "=== 調査対象ドメイン ==="
+          cat domains.txt
+          echo "=== $(wc -l < domains.txt) 件 ==="
+
+      - name: ドメイン履歴を調査
+        run: python domain_check.py domains.txt -o domain_history.csv
+        timeout-minutes: 60
+
+      - name: 結果CSVを表示
+        if: always()
+        run: |
+          if [ -f domain_history.csv ]; then
+            echo "=== 結果CSV ==="
+            cat domain_history.csv
+          fi
+
+      - name: 結果CSVをアーティファクトとして保存
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: domain-history-${{ github.run_number }}
+          path: domain_history.csv
+          retention-days: 30
