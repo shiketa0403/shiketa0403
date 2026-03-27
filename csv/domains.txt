@@ -1,5 +1,6 @@
 # 調査対象ドメイン（1行1ドメイン）
 # #で始まる行はコメント（無視されます）
-LandCenteredCommunity.com
-ja-tohma.jp
-virtual-cinderella.jp
+bougainvillea-hino.jp
+cotton-house-aya.jp
+scallop.jp
+lachic1016.com
