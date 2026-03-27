@@ -19,8 +19,8 @@ except ImportError:
 
 CDX_API = "https://web.archive.org/cdx/search/cdx"
 WAYBACK_URL = "https://web.archive.org/web"
-CONCURRENCY = 10
-TIMEOUT_SEC = 15
+CONCURRENCY = 5
+TIMEOUT_SEC = 20
 
 PARKING_PATTERNS = [
     "parking", "parked", "for sale", "buy this domain",
@@ -107,23 +107,25 @@ def extract_title(html):
 
 async def async_get_latest_snapshot(session, domain):
     """CDX APIで最新スナップショットのタイムスタンプを取得"""
-    params = [
-        ("url", domain),
-        ("output", "json"),
-        ("fl", "timestamp,statuscode"),
-        ("filter", "statuscode:200"),
-        ("filter", "mimetype:text/html"),
-        ("limit", "1"),
-        ("fastLatest", "true"),
-    ]
-    try:
-        async with session.get(CDX_API, params=params,
-                               timeout=aiohttp.ClientTimeout(total=TIMEOUT_SEC)) as resp:
-            data = await resp.json(content_type=None)
-            if len(data) > 1:
-                return data[1][0]
-    except Exception:
-        pass
+    urls_to_try = [domain, f"http://{domain}", f"https://{domain}"]
+    for try_url in urls_to_try:
+        params = [
+            ("url", try_url),
+            ("output", "json"),
+            ("fl", "timestamp,statuscode"),
+            ("filter", "statuscode:200"),
+            ("filter", "mimetype:text/html"),
+            ("limit", "3"),
+            ("sort", "reverse"),
+        ]
+        try:
+            async with session.get(CDX_API, params=params,
+                                   timeout=aiohttp.ClientTimeout(total=TIMEOUT_SEC)) as resp:
+                data = await resp.json(content_type=None)
+                if len(data) > 1:
+                    return data[1][0]
+        except Exception:
+            continue
     return None
 
 
@@ -206,28 +208,29 @@ def sync_check_domain(domain):
     import urllib.error
     import urllib.parse
 
-    params = urllib.parse.urlencode([
-        ("url", domain),
-        ("output", "json"),
-        ("fl", "timestamp,statuscode"),
-        ("filter", "statuscode:200"),
-        ("filter", "mimetype:text/html"),
-        ("limit", "1"),
-        ("fastLatest", "true"),
-    ])
-    url = f"{CDX_API}?{params}"
-
     timestamp = None
-    try:
-        req = urllib.request.Request(url, headers={
-            "User-Agent": "Mozilla/5.0 (domain-history-checker)"
-        })
-        with urllib.request.urlopen(req, timeout=TIMEOUT_SEC) as resp:
-            data = json.loads(resp.read(100000).decode("utf-8", errors="replace"))
-            if len(data) > 1:
-                timestamp = data[1][0]
-    except Exception:
-        pass
+    for try_url in [domain, f"http://{domain}", f"https://{domain}"]:
+        params = urllib.parse.urlencode([
+            ("url", try_url),
+            ("output", "json"),
+            ("fl", "timestamp,statuscode"),
+            ("filter", "statuscode:200"),
+            ("filter", "mimetype:text/html"),
+            ("limit", "3"),
+            ("sort", "reverse"),
+        ])
+        url = f"{CDX_API}?{params}"
+        try:
+            req = urllib.request.Request(url, headers={
+                "User-Agent": "Mozilla/5.0 (domain-history-checker)"
+            })
+            with urllib.request.urlopen(req, timeout=TIMEOUT_SEC) as resp:
+                data = json.loads(resp.read(100000).decode("utf-8", errors="replace"))
+                if len(data) > 1:
+                    timestamp = data[1][0]
+                    break
+        except Exception:
+            continue
 
     if not timestamp:
         return {"domain": domain, "last_seen": "", "title": "", "note": "アーカイブなし"}
