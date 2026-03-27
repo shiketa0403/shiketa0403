@@ -38,6 +38,9 @@ jobs:
           cat domains.txt
           echo "=== $(wc -l < domains.txt) 件 ==="
 
+      - name: 依存パッケージをインストール
+        run: pip install aiohttp
+
       - name: ドメイン履歴を調査
         run: python domain_check.py domains.txt -o domain_history.csv
         timeout-minutes: 180
