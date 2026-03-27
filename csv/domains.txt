@@ -1,8 +1,9 @@
 # 調査対象ドメイン（1行1ドメイン）
 # #で始まる行はコメント（無視されます）
-boostifye.com
-DualiTythePlay.com
-fuegolacomida.com
-monkey-s.jp
-ise-wann.jp
-ohashi-motors.jp
+georgiaprintco-shop.com
+ugurlulokma.com
+buytadalisp.com
+TheLaundressLab.com
+meisei-seiyusai.jp
+shinanonouen.jp
+thibaut.tokyo
