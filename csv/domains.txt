@@ -1,3 +1,5 @@
 # 調査対象ドメイン（1行1ドメイン）
 # #で始まる行はコメント（無視されます）
-AutoFinancingSearch.com
+TrumpLandMovie.com
+MyLeatherLegacy.com
+remediosconcanela.com
