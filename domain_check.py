@@ -160,28 +160,34 @@ def get_latest_snapshot(domain):
     if domain.startswith("http"):
         urls_to_try = [domain]
 
-    for try_url in urls_to_try:
-        params = urllib.parse.urlencode({
-            "url": try_url,
-            "output": "json",
-            "fl": "timestamp,statuscode",
-            "filter": "statuscode:200",
-            "filter": "mimetype:text/html",
-            "limit": "1",
-            "sort": "reverse",
-        })
-        url = f"{CDX_API}?{params}"
-        body, status = fetch_url(url, timeout=30, max_bytes=100000)
+    for attempt in range(3):
+        if attempt > 0:
+            wait = attempt * 3
+            time.sleep(wait)
 
-        if not body:
-            continue
+        for try_url in urls_to_try:
+            # 重複キーはリストで渡す
+            params = urllib.parse.urlencode([
+                ("url", try_url),
+                ("output", "json"),
+                ("fl", "timestamp,statuscode"),
+                ("filter", "statuscode:200"),
+                ("filter", "mimetype:text/html"),
+                ("limit", "3"),
+                ("sort", "reverse"),
+            ])
+            url = f"{CDX_API}?{params}"
+            body, status = fetch_url(url, timeout=30, max_bytes=100000)
 
-        try:
-            data = json.loads(body)
-            if len(data) > 1:
-                return data[1][0]  # タイムスタンプ
-        except (json.JSONDecodeError, ValueError, IndexError):
-            continue
+            if not body:
+                continue
+
+            try:
+                data = json.loads(body)
+                if len(data) > 1:
+                    return data[1][0]  # 最新のタイムスタンプ
+            except (json.JSONDecodeError, ValueError, IndexError):
+                continue
 
     return None
 
