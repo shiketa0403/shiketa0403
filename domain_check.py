@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 中古ドメイン履歴調査ツール
-Wayback Machine CDX API を使い、ドメインの過去のタイトル変化を調査する。
+Wayback Machine CDX API を使い、ドメインの最新タイトルを一括取得する。
 """
 
 import csv
@@ -20,7 +20,7 @@ from html.parser import HTMLParser
 CDX_API = "https://web.archive.org/cdx/search/cdx"
 WAYBACK_URL = "https://web.archive.org/web"
 MAX_RETRIES = 2
-MAX_WORKERS = 5  # 並列リクエスト数
+MAX_WORKERS = 5
 
 
 class TitleParser(HTMLParser):
@@ -71,8 +71,30 @@ class TitleParser(HTMLParser):
         return self._has_meta_refresh or self._has_js_redirect
 
 
+PARKING_PATTERNS = [
+    "parking", "parked", "for sale", "buy this domain",
+    "domain expired", "this domain", "coming soon",
+    "under construction", "is available", "domain name",
+    "sedoparking", "hugedomains", "godaddy", "afternic",
+    "dan.com", "sav.com",
+]
+
+
+def detect_note(title, is_redirect=False):
+    """タイトルから備考を判定"""
+    if not title:
+        return ""
+    lower = title.lower()
+    for pattern in PARKING_PATTERNS:
+        if pattern in lower:
+            return "パーキング"
+    if is_redirect:
+        return "リダイレクト"
+    return ""
+
+
 def fetch_url_bytes(url, timeout=20, max_bytes=30000):
-    """URLからバイトデータを取得（リトライ付き、先頭部分のみ）"""
+    """URLからバイトデータを取得"""
     for attempt in range(MAX_RETRIES):
         try:
             req = urllib.request.Request(url, headers={
@@ -81,7 +103,7 @@ def fetch_url_bytes(url, timeout=20, max_bytes=30000):
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 data = resp.read(max_bytes)
                 return data, resp.status
-        except (urllib.error.URLError, urllib.error.HTTPError, OSError) as e:
+        except (urllib.error.URLError, urllib.error.HTTPError, OSError):
             if attempt < MAX_RETRIES - 1:
                 time.sleep(1)
             else:
@@ -89,7 +111,7 @@ def fetch_url_bytes(url, timeout=20, max_bytes=30000):
 
 
 def fetch_url(url, timeout=20, max_bytes=30000):
-    """URLからテキストを取得（UTF-8）"""
+    """URLからテキストを取得"""
     data, status = fetch_url_bytes(url, timeout, max_bytes)
     if data is None:
         return None, None
@@ -101,35 +123,28 @@ def decode_html(data):
     if data is None:
         return None
 
-    # まずHTMLからcharsetを探す
     head = data[:2000].decode("ascii", errors="replace").lower()
     charset = None
 
-    # <meta charset="xxx">
     m = re.search(r'<meta[^>]+charset=["\']?([a-zA-Z0-9_-]+)', head)
     if m:
         charset = m.group(1)
-
-    # <meta http-equiv="Content-Type" content="text/html; charset=xxx">
     if not charset:
         m = re.search(r'content=["\'][^"\']*charset=([a-zA-Z0-9_-]+)', head)
         if m:
             charset = m.group(1)
 
-    # 検出されたcharsetで試す
     if charset:
         try:
             return data.decode(charset)
         except (UnicodeDecodeError, LookupError):
             pass
 
-    # UTF-8を試す
     try:
         return data.decode("utf-8")
     except UnicodeDecodeError:
         pass
 
-    # 日本語エンコーディングを試す
     for enc in ["shift_jis", "euc-jp", "iso-2022-jp", "cp932"]:
         try:
             return data.decode(enc)
@@ -139,58 +154,42 @@ def decode_html(data):
     return data.decode("utf-8", errors="replace")
 
 
-def get_snapshots(domain):
-    """CDX APIで月別スナップショット一覧を取得（リトライ付き）"""
-    urls_to_try = [f"*.{domain}", domain, f"http://{domain}", f"https://{domain}"]
-    if domain.startswith("http://") or domain.startswith("https://"):
+def get_latest_snapshot(domain):
+    """CDX APIで最新のスナップショットのタイムスタンプを取得"""
+    urls_to_try = [domain, f"http://{domain}", f"https://{domain}"]
+    if domain.startswith("http"):
         urls_to_try = [domain]
 
-    for attempt in range(3):
-        if attempt > 0:
-            wait = attempt * 3
-            print(f"  CDX APIリトライ ({attempt+1}/3)... {wait}秒待機")
-            time.sleep(wait)
+    for try_url in urls_to_try:
+        params = urllib.parse.urlencode({
+            "url": try_url,
+            "output": "json",
+            "fl": "timestamp,statuscode",
+            "filter": "statuscode:200",
+            "filter": "mimetype:text/html",
+            "limit": "1",
+            "sort": "reverse",
+        })
+        url = f"{CDX_API}?{params}"
+        body, status = fetch_url(url, timeout=30, max_bytes=100000)
 
-        for try_url in urls_to_try:
-            params = urllib.parse.urlencode({
-                "url": try_url,
-                "output": "json",
-                "fl": "timestamp,statuscode,mimetype",
-                "collapse": "timestamp:6",
-                "filter": "mimetype:text/html",
-                "limit": "5000",
-            })
-            url = f"{CDX_API}?{params}"
-            print(f"  CDX API問い合わせ: {try_url}")
-            body, status = fetch_url(url, timeout=30, max_bytes=500000)
-
-            if not body:
-                print(f"  CDX APIレスポンスなし（URL: {try_url}）")
-                continue
-
-            try:
-                data = json.loads(body)
-                if len(data) <= 1:
-                    print(f"  スナップショットなし（URL: {try_url}）")
-                    continue
-                print(f"  {len(data)-1}件のスナップショットを取得")
-                return [{"timestamp": row[0], "statuscode": row[1]} for row in data[1:]]
-            except (json.JSONDecodeError, ValueError) as e:
-                print(f"  JSONパースエラー: {e}")
-                print(f"  レスポンス先頭200文字: {body[:200]}")
-                continue
-
-        # 全URLで失敗した場合、次のattemptへ
+        if not body:
             continue
 
-    return []
+        try:
+            data = json.loads(body)
+            if len(data) > 1:
+                return data[1][0]  # タイムスタンプ
+        except (json.JSONDecodeError, ValueError, IndexError):
+            continue
+
+    return None
 
 
 def get_title_from_snapshot(domain, timestamp):
     """Wayback Machineのスナップショットからタイトルを取得"""
     target = domain if domain.startswith("http") else f"http://{domain}"
 
-    # id_付き（軽量）を試し、失敗したらid_なしも試す
     for url in [
         f"{WAYBACK_URL}/{timestamp}id_/{target}",
         f"{WAYBACK_URL}/{timestamp}/{target}",
@@ -210,207 +209,65 @@ def get_title_from_snapshot(domain, timestamp):
             continue
 
         if parser.title:
-            return timestamp, parser.title, parser.is_redirect
+            return parser.title, parser.is_redirect
 
-    return timestamp, None, False
-
-
-def is_redirect_status(code):
-    """HTTPステータスがリダイレクトかどうか"""
-    try:
-        return int(code) in (301, 302, 303, 307, 308)
-    except (ValueError, TypeError):
-        return False
-
-
-# パーキング・無効ドメインのタイトルパターン
-PARKING_PATTERNS = [
-    "parking", "parked", "for sale", "buy this domain",
-    "domain expired", "this domain", "coming soon",
-    "under construction", "is available", "domain name",
-    "sedoparking", "hugedomains", "godaddy", "afternic",
-    "dan.com", "sav.com",
-]
-
-
-def detect_note(title):
-    """タイトルから備考（パーキング等）を判定"""
-    if not title:
-        return ""
-    lower = title.lower()
-    for pattern in PARKING_PATTERNS:
-        if pattern in lower:
-            return "パーキング"
-    return ""
+    return None, False
 
 
 def check_domain(domain):
-    """1ドメインの履歴を調査"""
-    print(f"\n{'='*60}")
-    print(f"調査中: {domain}")
-    print(f"{'='*60}")
-
-    snapshots = get_snapshots(domain)
-    if not snapshots:
-        print(f"  アーカイブなし")
+    """1ドメインの最新タイトルを取得"""
+    timestamp = get_latest_snapshot(domain)
+    if not timestamp:
         return {
             "domain": domain,
-            "status": "no_archive",
-            "first_seen": "",
             "last_seen": "",
-            "title_changes": 0,
-            "is_redirect": False,
-            "titles": "",
-            "title_history": [],
+            "title": "",
+            "note": "アーカイブなし",
         }
 
-    # リダイレクトチェック
-    recent = snapshots[-5:] if len(snapshots) >= 5 else snapshots
-    redirect_count = sum(1 for s in recent if is_redirect_status(s["statuscode"]))
-    if redirect_count >= len(recent) * 0.8:
-        print(f"  リダイレクトドメイン（スキップ）")
+    last_seen = f"{timestamp[:4]}-{timestamp[4:6]}"
+    title, is_redirect = get_title_from_snapshot(domain, timestamp)
+
+    if not title:
         return {
             "domain": domain,
-            "status": "redirect",
-            "first_seen": snapshots[0]["timestamp"][:6],
-            "last_seen": snapshots[-1]["timestamp"][:6],
-            "title_changes": 0,
-            "is_redirect": True,
-            "titles": "(redirect)",
-            "title_history": [],
+            "last_seen": last_seen,
+            "title": "",
+            "note": "タイトル取得失敗",
         }
 
-    # HTMLステータス200のスナップショットだけ使う
-    valid_snapshots = [s for s in snapshots if s["statuscode"] == "200"]
-    if not valid_snapshots:
-        print(f"  有効なスナップショットなし")
-        return {
-            "domain": domain,
-            "status": "no_valid_snapshot",
-            "first_seen": snapshots[0]["timestamp"][:6],
-            "last_seen": snapshots[-1]["timestamp"][:6],
-            "title_changes": 0,
-            "is_redirect": True,
-            "titles": "",
-            "title_history": [],
-        }
-
-    # サンプリング: 年2回（年始+年央で冗長化）
-    year_map = {}
-    for snap in valid_snapshots:
-        year = snap["timestamp"][:4]
-        month = int(snap["timestamp"][4:6])
-        if year not in year_map:
-            year_map[year] = {"first": None, "mid": None}
-        if year_map[year]["first"] is None:
-            year_map[year]["first"] = snap
-        if month >= 6 and year_map[year]["mid"] is None:
-            year_map[year]["mid"] = snap
-    sampled = []
-    for year in sorted(year_map.keys()):
-        if year_map[year]["first"]:
-            sampled.append(year_map[year]["first"])
-        if year_map[year]["mid"] and year_map[year]["mid"] != year_map[year]["first"]:
-            sampled.append(year_map[year]["mid"])
-    # 最後のスナップショットも必ず含める
-    if sampled[-1] != valid_snapshots[-1]:
-        sampled.append(valid_snapshots[-1])
-
-    print(f"  スナップショット数: {len(valid_snapshots)} → サンプル: {len(sampled)}")
-
-    # タイムスタンプ順にソート
-    sampled.sort(key=lambda s: s["timestamp"])
-
-    # タイトルを並列取得
-    title_results = {}
-    has_redirect = False
-
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        futures = {
-            executor.submit(get_title_from_snapshot, domain, snap["timestamp"]): snap
-            for snap in sampled
-        }
-        for future in as_completed(futures):
-            ts, title, is_redir = future.result()
-            title_results[ts] = (title, is_redir)
-            if is_redir:
-                has_redirect = True
-
-    # タイムスタンプ順に並べてタイトル変化を検出
-    titles_history = []
-    prev_title = None
-    for snap in sampled:
-        ts = snap["timestamp"]
-        title, is_redir = title_results.get(ts, (None, False))
-        if title and title != prev_title:
-            ym = f"{ts[:4]}-{ts[4:6]}"
-            note = detect_note(title)
-            if not note and is_redir:
-                note = "リダイレクト"
-            titles_history.append({"date": ym, "title": title, "note": note})
-            print(f"  {ym}: {title}" + (f" [{note}]" if note else ""))
-            prev_title = title
-        elif not title:
-            print(f"  {ts[:4]}-{ts[4:6]}: (タイトル取得失敗)")
-
-    if has_redirect and len(titles_history) <= 1:
-        print(f"  リダイレクト検出（meta refresh / JavaScript）")
-
-    title_changes = len(titles_history)
-    titles_str = " → ".join([t["title"] for t in titles_history])
+    note = detect_note(title, is_redirect)
 
     return {
         "domain": domain,
-        "status": "ok",
-        "first_seen": valid_snapshots[0]["timestamp"][:6],
-        "last_seen": valid_snapshots[-1]["timestamp"][:6],
-        "title_changes": title_changes,
-        "is_redirect": has_redirect and title_changes <= 1,
-        "titles": titles_str,
-        "title_history": titles_history,
+        "last_seen": last_seen,
+        "title": title,
+        "note": note,
     }
 
 
-def format_date(yyyymm):
-    """202603 → 2026-03"""
-    if len(yyyymm) >= 6:
-        return f"{yyyymm[:4]}-{yyyymm[4:6]}"
-    return yyyymm
+def check_domain_wrapper(args):
+    """並列実行用ラッパー"""
+    idx, total, domain = args
+    print(f"[{idx}/{total}] {domain}")
+    result = check_domain(domain)
+    status = result["note"] if result["note"] else "OK"
+    print(f"  → {result['last_seen']} | {result['title'][:50] if result['title'] else '(なし)'} | {status}")
+    return result
 
 
 def write_csv(results, output_path):
     """結果をCSVに書き出す"""
     with open(output_path, "w", encoding="utf-8-sig", newline="") as f:
         writer = csv.writer(f)
-        writer.writerow([
-            "ドメイン", "ステータス", "初回アーカイブ", "最終アーカイブ",
-            "タイトル変化回数", "時期", "タイトル", "備考"
-        ])
+        writer.writerow(["ドメイン", "最終アーカイブ", "タイトル", "備考"])
         for r in results:
-            if r["title_history"]:
-                for i, t in enumerate(r["title_history"]):
-                    writer.writerow([
-                        r["domain"] if i == 0 else "",
-                        r["status"] if i == 0 else "",
-                        format_date(r["first_seen"]) if i == 0 else "",
-                        format_date(r["last_seen"]) if i == 0 else "",
-                        r["title_changes"] if i == 0 else "",
-                        t["date"],
-                        t["title"],
-                        t.get("note", ""),
-                    ])
-            else:
-                note = "リダイレクト" if r["is_redirect"] else "タイトル取得失敗"
-                writer.writerow([
-                    r["domain"],
-                    r["status"],
-                    format_date(r["first_seen"]),
-                    format_date(r["last_seen"]),
-                    r["title_changes"],
-                    "",
-                    "",
-                    note,
-                ])
+            writer.writerow([
+                r["domain"],
+                r["last_seen"],
+                r["title"],
+                r["note"],
+            ])
 
 
 def main():
@@ -419,7 +276,6 @@ def main():
     parser.add_argument("-o", "--output", default="domain_history.csv", help="出力CSVファイル名")
     args = parser.parse_args()
 
-    # ドメインリスト取得
     domains = []
     try:
         with open(args.input, "r", encoding="utf-8") as f:
@@ -434,52 +290,43 @@ def main():
         print("ドメインが指定されていません")
         sys.exit(1)
 
+    # http/httpsを除去
+    domains = [re.sub(r'^https?://', '', d).rstrip('/') for d in domains]
+
     print(f"調査対象: {len(domains)} ドメイン")
     print(f"出力先: {args.output}")
 
     results = []
-    for i, domain in enumerate(domains):
-        domain = re.sub(r'^https?://', '', domain).rstrip('/')
-        print(f"\n[{i+1}/{len(domains)}]")
-        result = check_domain(domain)
-        results.append(result)
+    tasks = [(i + 1, len(domains), d) for i, d in enumerate(domains)]
 
-        # 10件ごと、または最後に途中結果を保存
-        if (i + 1) % 10 == 0 or (i + 1) == len(domains):
-            write_csv(results, args.output)
-            print(f"  >>> 途中結果を保存 ({i+1}/{len(domains)}件完了)")
+    # 5ドメイン並列で処理
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        futures = {executor.submit(check_domain_wrapper, t): t for t in tasks}
+        for future in as_completed(futures):
+            result = future.result()
+            results.append(result)
 
-    # 最終CSV出力
+            # 20件ごとに途中保存
+            if len(results) % 20 == 0:
+                write_csv(sorted(results, key=lambda r: r["domain"]), args.output)
+                print(f"  >>> 途中結果を保存 ({len(results)}/{len(domains)}件完了)")
+
+    # ドメイン名順にソートして最終出力
+    results.sort(key=lambda r: r["domain"])
     write_csv(results, args.output)
 
-    # サマリ出力
+    # サマリ
     print(f"\n{'='*60}")
     print(f"調査完了: {len(results)} ドメイン")
     print(f"{'='*60}")
 
-    ok_results = [r for r in results if r["status"] == "ok" and not r["is_redirect"]]
-    single_owner = [r for r in ok_results if r["title_changes"] == 1]
-    multi_owner = [r for r in ok_results if r["title_changes"] > 1]
+    ok = [r for r in results if not r["note"]]
+    parking = [r for r in results if r["note"] == "パーキング"]
+    redirect = [r for r in results if r["note"] == "リダイレクト"]
+    no_archive = [r for r in results if r["note"] == "アーカイブなし"]
+    failed = [r for r in results if r["note"] == "タイトル取得失敗"]
 
-    print(f"\n★ 1運営者候補 ({len(single_owner)}件):")
-    for r in single_owner:
-        print(f"  {r['domain']} [{format_date(r['first_seen'])}〜{format_date(r['last_seen'])}] {r['titles']}")
-
-    print(f"\n▲ 複数運営者 ({len(multi_owner)}件):")
-    for r in multi_owner:
-        print(f"  {r['domain']} (変化{r['title_changes']}回) {r['titles']}")
-
-    redirect_results = [r for r in results if r["is_redirect"]]
-    no_archive = [r for r in results if r["status"] == "no_archive"]
-    if redirect_results:
-        print(f"\n✕ リダイレクト除外 ({len(redirect_results)}件):")
-        for r in redirect_results:
-            print(f"  {r['domain']}")
-    if no_archive:
-        print(f"\n- アーカイブなし ({len(no_archive)}件):")
-        for r in no_archive:
-            print(f"  {r['domain']}")
-
+    print(f"\n  OK: {len(ok)}件 | パーキング: {len(parking)}件 | リダイレクト: {len(redirect)}件 | アーカイブなし: {len(no_archive)}件 | 取得失敗: {len(failed)}件")
     print(f"\n結果CSV: {args.output}")
 
 
