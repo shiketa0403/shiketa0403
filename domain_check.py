@@ -93,7 +93,7 @@ def detect_note(title, is_redirect=False):
     return ""
 
 
-def fetch_url_bytes(url, timeout=20, max_bytes=30000):
+def fetch_url_bytes(url, timeout=20, max_bytes=100000):
     """URLからバイトデータを取得"""
     for attempt in range(MAX_RETRIES):
         try:
@@ -110,7 +110,7 @@ def fetch_url_bytes(url, timeout=20, max_bytes=30000):
                 return None, None
 
 
-def fetch_url(url, timeout=20, max_bytes=30000):
+def fetch_url(url, timeout=20, max_bytes=100000):
     """URLからテキストを取得"""
     data, status = fetch_url_bytes(url, timeout, max_bytes)
     if data is None:
