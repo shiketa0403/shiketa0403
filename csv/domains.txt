@@ -1,6 +1,8 @@
 # 調査対象ドメイン（1行1ドメイン）
 # #で始まる行はコメント（無視されます）
-bougainvillea-hino.jp
-cotton-house-aya.jp
-scallop.jp
-lachic1016.com
+boostifye.com
+DualiTythePlay.com
+fuegolacomida.com
+monkey-s.jp
+ise-wann.jp
+ohashi-motors.jp
