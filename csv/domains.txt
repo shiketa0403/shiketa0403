@@ -1,3 +1,5 @@
 # 調査対象ドメイン（1行1ドメイン）
 # #で始まる行はコメント（無視されます）
-SweetFamilyTraditionsBakery.com
+LandCenteredCommunity.com
+ja-tohma.jp
+virtual-cinderella.jp
