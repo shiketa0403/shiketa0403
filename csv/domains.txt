@@ -1,33 +1,3 @@
 # 調査対象ドメイン（1行1ドメイン）
 # #で始まる行はコメント（無視されます）
-Avoid-Procrastination-ProVoid.com
-suonobeyongtechnology.com
-ElsaProtocol.com
-blogrecoveryex.com
-tajir404.com
-MaidFoundation.com
-miglelinkeviciute.com
-droid4d.com
-pwynselutf.com
-wisersolutionsaus.com
-restaurant-gruezi.com
-HymnDrift.com
-BeteBetMob.com
-RoughPatchApparel.com
-agenzia-pubblicitaria-e-di-consulenza.com
-ri-vello.com
-jabinalkleidung.com
-play-sprunki.com
-recibego.com
-selihomtoursandtravel.com
-derekhawnforcongress.com
-rtpfomo19langka.com
-GolfChipPagaMe.com
-hypeandhustleco.com
-KindestBedRotting.com
-tidjai888-th.com
-jabhishekrao.com
-obitodev.com
-OurBusinessClark.com
-88clbp.com
-Philippines-Sailing.com
+SweetFamilyTraditionsBakery.com
