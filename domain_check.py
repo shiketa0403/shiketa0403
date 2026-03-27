@@ -177,11 +177,13 @@ async def async_check_domain(session, sem, domain, idx, total):
 
 
 async def async_main(domains, output_path):
-    """async版メイン処理"""
+    """async版メイン処理（失敗分は自動リトライ）"""
     sem = asyncio.Semaphore(CONCURRENCY)
     headers = {"User-Agent": "Mozilla/5.0 (domain-history-checker)"}
 
     async with aiohttp.ClientSession(headers=headers) as session:
+        # 1周目
+        print(f"\n=== 1周目: {len(domains)}件 ===")
         tasks = [
             async_check_domain(session, sem, d, i + 1, len(domains))
             for i, d in enumerate(domains)
@@ -192,10 +194,41 @@ async def async_main(domains, output_path):
             result = await coro
             results.append(result)
 
-            # 20件ごとに途中保存
             if len(results) % 20 == 0:
                 write_csv(sorted(results, key=lambda r: r["domain"]), output_path)
                 print(f"  >>> 途中結果を保存 ({len(results)}/{len(domains)}件完了)")
+
+        # 1周目の結果を保存
+        write_csv(sorted(results, key=lambda r: r["domain"]), output_path)
+
+        # 2周目: 失敗分だけリトライ
+        failed = [r for r in results if r["note"] in ("アーカイブなし", "タイトル取得失敗")]
+        if failed:
+            print(f"\n=== 2周目（リトライ）: {len(failed)}件 ===")
+            ok_results = [r for r in results if r not in failed]
+
+            retry_tasks = [
+                async_check_domain(session, sem, r["domain"], i + 1, len(failed))
+                for i, r in enumerate(failed)
+            ]
+
+            retry_results = []
+            for coro in asyncio.as_completed(retry_tasks):
+                result = await coro
+                retry_results.append(result)
+
+            # リトライで成功したものだけ上書き
+            retry_map = {r["domain"]: r for r in retry_results}
+            final_results = []
+            for r in results:
+                if r["domain"] in retry_map and retry_map[r["domain"]]["note"] == "":
+                    final_results.append(retry_map[r["domain"]])
+                elif r["domain"] in retry_map and r["note"] == "アーカイブなし" and retry_map[r["domain"]]["title"]:
+                    final_results.append(retry_map[r["domain"]])
+                else:
+                    final_results.append(r)
+
+            results = final_results
 
     return results
 
