@@ -1,0 +1,49 @@
+name: Wayback Machine ページメタデータ取得
+
+on:
+  workflow_dispatch:
+    inputs:
+      domain:
+        description: '対象ドメイン（例: kanazawa-hp.com）'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 依存パッケージをインストール
+        run: pip install aiohttp
+
+      - name: Wayback Machine からページメタデータを取得
+        run: python wayback_pages.py "${{ github.event.inputs.domain }}" -o wayback_pages.csv
+        timeout-minutes: 60
+
+      - name: 結果CSVを表示
+        if: always()
+        run: |
+          if [ -f wayback_pages.csv ]; then
+            echo "=== 結果CSV ==="
+            cat wayback_pages.csv
+          fi
+
+      - name: 結果CSVをリポジトリにコミット
+        if: always()
+        run: |
+          if [ -f wayback_pages.csv ]; then
+            cp wayback_pages.csv csv/wayback_pages.csv
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add csv/wayback_pages.csv
+            git diff --cached --quiet || git commit -m "Wayback Machine ページメタデータ: ${{ github.event.inputs.domain }}"
+            git push
+          fi
