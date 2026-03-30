@@ -28,22 +28,26 @@ jobs:
         run: python wayback_pages.py "${{ github.event.inputs.domain }}" -o wayback_pages.csv
         timeout-minutes: 60
 
-      - name: 結果CSVを表示
+      - name: 結果を表示
         if: always()
         run: |
           if [ -f wayback_pages.csv ]; then
             echo "=== 結果CSV ==="
             cat wayback_pages.csv
           fi
+          if [ -f wayback_pages.md ]; then
+            echo ""
+            echo "=== 結果MD ==="
+            cat wayback_pages.md
+          fi
 
-      - name: 結果CSVをリポジトリにコミット
+      - name: 結果をリポジトリにコミット
         if: always()
         run: |
-          if [ -f wayback_pages.csv ]; then
-            cp wayback_pages.csv csv/wayback_pages.csv
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add csv/wayback_pages.csv
-            git diff --cached --quiet || git commit -m "Wayback Machine ページメタデータ: ${{ github.event.inputs.domain }}"
-            git push
-          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          [ -f wayback_pages.csv ] && cp wayback_pages.csv csv/wayback_pages.csv
+          [ -f wayback_pages.md ] && cp wayback_pages.md csv/wayback_pages.md
+          git add csv/wayback_pages.csv csv/wayback_pages.md 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "Wayback Machine ページメタデータ: ${{ github.event.inputs.domain }}"
+          git diff --cached --quiet || git push
