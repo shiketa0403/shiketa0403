@@ -2,7 +2,7 @@
 """
 Wayback Machine 全ページメタデータ取得ツール
 CDX API で過去のアーカイブ済み全URLを取得し、各ページの
-タイトル・H1・メタディスクリプションを抽出してCSV出力する。
+タイトル・メタディスクリプション・本文テキストを抽出してCSV出力する。
 """
 
 import csv
@@ -78,15 +78,6 @@ def extract_title(html):
     return ""
 
 
-def extract_h1(html):
-    """HTMLからH1タグを抽出（最初の1つ）"""
-    match = re.search(r"<h1[^>]*>(.*?)</h1>", html, re.IGNORECASE | re.DOTALL)
-    if match:
-        text = re.sub(r"<[^>]+>", "", match.group(1))
-        return re.sub(r"\s+", " ", text).strip()
-    return ""
-
-
 def extract_meta_description(html):
     """HTMLからmeta descriptionを抽出"""
     # name="description" パターン
@@ -101,6 +92,22 @@ def extract_meta_description(html):
             text = re.sub(r"\s+", " ", match.group(1)).strip()
             return text
     return ""
+
+
+def extract_body_text(html):
+    """HTMLからbody内の本文テキストを抽出（タグ除去）"""
+    text = re.sub(r"<(script|style|noscript)[^>]*>.*?</\1>", "", html, flags=re.IGNORECASE | re.DOTALL)
+    text = re.sub(r"<head[^>]*>.*?</head>", "", text, flags=re.IGNORECASE | re.DOTALL)
+    text = re.sub(r"<!--.*?-->", "", text, flags=re.DOTALL)
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"&nbsp;", " ", text)
+    text = re.sub(r"&amp;", "&", text)
+    text = re.sub(r"&lt;", "<", text)
+    text = re.sub(r"&gt;", ">", text)
+    text = re.sub(r"&quot;", '"', text)
+    text = re.sub(r"&#\d+;", "", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
 
 
 def should_skip_url(url):
@@ -160,35 +167,36 @@ async def async_fetch_metadata(session, sem, entry, idx, total):
                     print(f"  → HTTP {resp.status}")
                     return {
                         "url": url, "timestamp": timestamp,
-                        "title": "", "h1": "", "meta_description": "",
+                        "title": "", "meta_description": "", "body_text": "",
                         "note": f"HTTP {resp.status}",
                     }
-                chunk = await resp.content.read(100000)
+                chunk = await resp.content.read(200000)
                 html = decode_html(chunk)
 
                 title = extract_title(html)
-                h1 = extract_h1(html)
                 desc = extract_meta_description(html)
+                body_text = extract_body_text(html)
 
                 short = title[:50] if title else "(なし)"
-                print(f"  → title: {short}")
+                print(f"  → title: {short} | text: {len(body_text)}文字")
                 return {
                     "url": url, "timestamp": timestamp,
-                    "title": title, "h1": h1, "meta_description": desc,
+                    "title": title, "meta_description": desc,
+                    "body_text": body_text,
                     "note": "",
                 }
         except asyncio.TimeoutError:
             print(f"  → タイムアウト")
             return {
                 "url": url, "timestamp": timestamp,
-                "title": "", "h1": "", "meta_description": "",
+                "title": "", "meta_description": "", "body_text": "",
                 "note": "タイムアウト",
             }
         except Exception as e:
             print(f"  → エラー: {e}")
             return {
                 "url": url, "timestamp": timestamp,
-                "title": "", "h1": "", "meta_description": "",
+                "title": "", "meta_description": "", "body_text": "",
                 "note": str(e)[:50],
             }
 
@@ -277,19 +285,19 @@ def sync_fetch_metadata(entry):
             "User-Agent": "Mozilla/5.0 (wayback-page-metadata-checker)"
         })
         with urllib.request.urlopen(req, timeout=TIMEOUT_SEC) as resp:
-            chunk = resp.read(100000)
+            chunk = resp.read(200000)
             html = decode_html(chunk)
             return {
                 "url": url, "timestamp": timestamp,
                 "title": extract_title(html),
-                "h1": extract_h1(html),
                 "meta_description": extract_meta_description(html),
+                "body_text": extract_body_text(html),
                 "note": "",
             }
     except Exception as e:
         return {
             "url": url, "timestamp": timestamp,
-            "title": "", "h1": "", "meta_description": "",
+            "title": "", "meta_description": "", "body_text": "",
             "note": str(e)[:50],
         }
 
@@ -300,13 +308,14 @@ def write_csv(results, output_path):
     """結果をCSVに書き出す"""
     with open(output_path, "w", encoding="utf-8-sig", newline="") as f:
         writer = csv.writer(f)
-        writer.writerow(["URL", "アーカイブ日", "title", "H1", "meta_description", "備考"])
+        writer.writerow(["URL", "アーカイブ日", "title", "meta_description", "body_text", "備考"])
         for r in sorted(results, key=lambda x: x["url"]):
             ts = r["timestamp"]
             date_str = f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}" if len(ts) >= 8 else ts
             writer.writerow([
                 r["url"], date_str,
-                r["title"], r["h1"], r["meta_description"], r["note"],
+                r["title"], r["meta_description"],
+                r["body_text"], r["note"],
             ])
 
 
