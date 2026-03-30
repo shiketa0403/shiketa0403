@@ -1,33 +1,19 @@
 # 調査対象ドメイン（1行1ドメイン）
 # #で始まる行はコメント（無視されます）
-"	sanmei-shinri.jp"
-"	chiryouin-pro.jp/"
-"	lovechronicle.jp/"
-"	dokode-utteru.jp/"
-"	trendtrackers.jp/"
-"	rashiku-style.jp/"
-"	singer-audition.jp/"
-"	marumatsuseika.jp/"
-"	smartlifehacks.jp/"
-"	netsanpobiyori.jp/"
-"	financialmoney.jp/"
-"	rectavia-saiyo.jp/"
-"	pilates-lounge.jp/"
-"	reviewselection.jp/"
-"	introducingmanga.jp/"
-"	clinic-shukyaku.jp/"
-"	hoshinosasayaki.jp/"
-"	fashion-summary.jp/"
-momentummarketing.jp/
-ekao-ng.jp/
-spera.jp/
-bitra.jp/
-kinwork.jp/
-itoushika-hospital.jp/
-conju.jp/
-shinseikatsu-guide.jp/
-physio-athlete-performance.jp/
-onlinepress-gardennecklaceyokohama.jp/
-antroquinonol-onlineclinic.jp/
-kyutouki-373house.jp/
-"	ninaite-ikusei.jp/"
+sanmei-shinri.jp
+chiryouin-pro.jp
+lovechronicle.jp
+dokode-utteru.jp
+trendtrackers.jp
+rashiku-style.jp
+singer-audition.jp
+marumatsuseika.jp
+smartlifehacks.jp
+netsanpobiyori.jp
+financialmoney.jp
+rectavia-saiyo.jp
+pilates-lounge.jp
+reviewselection.jp
+introducingmanga.jp
+clinic-shukyaku.jp
+hoshinosasayaki.jp
