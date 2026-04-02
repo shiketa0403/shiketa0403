@@ -1,17 +1,7 @@
 # 調査対象ドメイン（1行1ドメイン）
 # #で始まる行はコメント（無視されます）
-absonne.jp
-ashitanojinji.jp
-dog-ginga.jp
-gwfarm.jp
 isokenkagu.jp
-jhnfa.jp
 kanagawa-ecosystem.jp
 kido-clinic.jp
 lucia-cafe.jp
 omnibus-group.jp
-sakura-kyouai-kai.jp
-seino-naika.jp
-shonanmidorigaoka.jp
-the1on1.jp
-togo-kosodateyell.jp
