@@ -1,27 +1,17 @@
 # 調査対象ドメイン（1行1ドメイン）
 # #で始まる行はコメント（無視されます）
-kido-clinic.jp
-daifukuji-hoikuen.jp
-isokenkagu.jp
-jhnfa.jp
-lucia-cafe.jp
-musashi-clinic.jp
-seino-naika.jp
-the1on1.jp
-togo-kosodateyell.jp
 absonne.jp
 ashitanojinji.jp
 dog-ginga.jp
+gwfarm.jp
+isokenkagu.jp
+jhnfa.jp
 kanagawa-ecosystem.jp
-kiyaku-bc.jp
+kido-clinic.jp
+lucia-cafe.jp
 omnibus-group.jp
 sakura-kyouai-kai.jp
+seino-naika.jp
 shonanmidorigaoka.jp
-gfhouse.jp
-gwfarm.jp
-jken-akiba.jp
-kawasaki-royal.jp
-kuroshioen.jp
-pctm-npa.jp
-s-bonita.jp
-shoni-rh-al-cl.jp
+the1on1.jp
+togo-kosodateyell.jp
