@@ -359,18 +359,30 @@ def sync_fetch_metadata(entry, domain):
 
 def write_csv(results, output_path):
     """結果をCSVに書き出す"""
+    # 発リンクの最大数を算出
+    max_links = max((len(r.get("links", [])) for r in results), default=0)
+
     with open(output_path, "w", encoding="utf-8-sig", newline="") as f:
         writer = csv.writer(f)
-        writer.writerow(["URL", "アーカイブ日", "title", "meta_description", "H1", "H2", "H3", "body_text", "備考"])
+        header = ["URL", "アーカイブ日", "title", "meta_description", "H1", "H2", "H3", "body_text", "備考"]
+        for i in range(1, max_links + 1):
+            header.append(f"発リンク{i}_URL")
+            header.append(f"発リンク{i}_テキスト")
+        writer.writerow(header)
+
         for r in sorted(results, key=lambda x: x["url"]):
             ts = r["timestamp"]
             date_str = f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}" if len(ts) >= 8 else ts
-            writer.writerow([
+            row = [
                 r["url"], date_str,
                 r["title"], r["meta_description"],
                 r["h1"], r["h2"], r["h3"],
                 r["body_text"], r["note"],
-            ])
+            ]
+            for link in r.get("links", []):
+                row.append(link["link_url"])
+                row.append(link["anchor_text"])
+            writer.writerow(row)
 
 
 # ========== Markdown出力 ==========
