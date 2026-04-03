@@ -423,8 +423,17 @@ def write_markdown(results, output_path, domain):
                 f.write(f"- **H3**: {r['h3']}\n")
             f.write("\n")
 
+            if r.get("links"):
+                f.write("<details>\n<summary>発リンク（クリックで展開）</summary>\n\n")
+                f.write("| リンク先URL | アンカーテキスト |\n")
+                f.write("|---|---|\n")
+                for link in r["links"]:
+                    link_url = link["link_url"].replace("|", "\\|")
+                    anchor = link["anchor_text"].replace("|", "\\|") if link["anchor_text"] else ""
+                    f.write(f"| {link_url} | {anchor} |\n")
+                f.write("\n</details>\n\n")
+
             if r["body_text"]:
-                # 本文は長いので先頭1000文字に制限
                 body = r["body_text"]
                 if len(body) > 1000:
                     body = body[:1000] + "..."
