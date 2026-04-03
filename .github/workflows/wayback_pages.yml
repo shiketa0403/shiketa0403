@@ -50,4 +50,5 @@ jobs:
           [ -f wayback_pages.md ] && cp wayback_pages.md csv/wayback_pages.md
           git add csv/wayback_pages.csv csv/wayback_pages.md 2>/dev/null || true
           git diff --cached --quiet || git commit -m "Wayback Machine ページメタデータ: ${{ github.event.inputs.domain }}"
-          git diff --cached --quiet || git push
+          git pull --rebase origin main || true
+          git push
