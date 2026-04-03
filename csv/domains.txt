@@ -1,7 +1,31 @@
 # 調査対象ドメイン（1行1ドメイン）
 # #で始まる行はコメント（無視されます）
-isokenkagu.jp
-kanagawa-ecosystem.jp
-kido-clinic.jp
-lucia-cafe.jp
-omnibus-group.jp
+wtc2022tokyo.org
+yomo-issyo.com
+kasamachaya.com
+fukuemon.com
+gimnasiookinawa.com
+hokkaido-dsc.com
+sakaechiken.com
+radioiine.com
+yosakoi-yosakoi.com
+rengoku-ten.com
+slowlifehakuba.com
+miyazakikochoran.com
+shintowa.com
+ohsukajp.com
+sakurado.org
+japan-resort.net
+ohkjapan.com
+elite-etsuko.com
+miyasanchi.com
+vintagedollrisa.com
+katarukai2016.com
+nsc-fukuoka.com
+michinokusdgs.com
+kou-blog.info
+esthe-kokura.net
+kagoshima-fuu.com
+amano-naika.com
+kanae-store.com
+kitayama-dai.com
