@@ -106,6 +106,30 @@ def extract_meta_description(html):
     return ""
 
 
+def extract_outbound_links(html, source_domain):
+    """HTMLから外部発リンク（アンカーテキスト+URL）を抽出"""
+    links = []
+    for match in re.finditer(r'<a\s[^>]*href=["\']([^"\']*)["\'][^>]*>(.*?)</a>', html, re.IGNORECASE | re.DOTALL):
+        href = match.group(1).strip()
+        anchor = re.sub(r"<[^>]+>", "", match.group(2))
+        anchor = re.sub(r"\s+", " ", anchor).strip()
+
+        # 空のhref、アンカー、javascript、#リンクはスキップ
+        if not href or href.startswith("#") or href.startswith("javascript:"):
+            continue
+
+        # 内部リンクを除外（同一ドメインへのリンク）
+        if source_domain in href:
+            continue
+
+        # 相対パスは内部リンクなので除外
+        if not href.startswith("http://") and not href.startswith("https://") and not href.startswith("//"):
+            continue
+
+        links.append({"link_url": href, "anchor_text": anchor})
+    return links
+
+
 def extract_body_text(html):
     """HTMLからbody内の本文テキストを抽出（タグ除去）"""
     text = re.sub(r"<(script|style|noscript)[^>]*>.*?</\1>", "", html, flags=re.IGNORECASE | re.DOTALL)
@@ -164,7 +188,7 @@ async def async_get_all_urls(session, domain):
 
 # ========== ページメタデータ取得 ==========
 
-async def async_fetch_metadata(session, sem, entry, idx, total):
+async def async_fetch_metadata(session, sem, entry, idx, total, domain):
     """Wayback Machineからページを取得し、メタデータを抽出"""
     async with sem:
         url = entry["url"]
@@ -181,7 +205,8 @@ async def async_fetch_metadata(session, sem, entry, idx, total):
                         "url": url, "timestamp": timestamp,
                         "title": "", "meta_description": "",
                         "h1": "", "h2": "", "h3": "",
-                        "body_text": "", "note": f"HTTP {resp.status}",
+                        "body_text": "", "links": [],
+                        "note": f"HTTP {resp.status}",
                     }
                 chunk = await resp.content.read(200000)
                 html = decode_html(chunk)
@@ -192,14 +217,16 @@ async def async_fetch_metadata(session, sem, entry, idx, total):
                 h2 = extract_headings(html, "h2")
                 h3 = extract_headings(html, "h3")
                 body_text = extract_body_text(html)
+                links = extract_outbound_links(html, domain)
 
                 short = title[:50] if title else "(なし)"
-                print(f"  → title: {short} | text: {len(body_text)}文字")
+                print(f"  → title: {short} | text: {len(body_text)}文字 | links: {len(links)}")
                 return {
                     "url": url, "timestamp": timestamp,
                     "title": title, "meta_description": desc,
                     "h1": h1, "h2": h2, "h3": h3,
-                    "body_text": body_text, "note": "",
+                    "body_text": body_text, "links": links,
+                    "note": "",
                 }
         except asyncio.TimeoutError:
             print(f"  → タイムアウト")
@@ -207,7 +234,8 @@ async def async_fetch_metadata(session, sem, entry, idx, total):
                 "url": url, "timestamp": timestamp,
                 "title": "", "meta_description": "",
                 "h1": "", "h2": "", "h3": "",
-                "body_text": "", "note": "タイムアウト",
+                "body_text": "", "links": [],
+                "note": "タイムアウト",
             }
         except Exception as e:
             print(f"  → エラー: {e}")
@@ -215,7 +243,8 @@ async def async_fetch_metadata(session, sem, entry, idx, total):
                 "url": url, "timestamp": timestamp,
                 "title": "", "meta_description": "",
                 "h1": "", "h2": "", "h3": "",
-                "body_text": "", "note": str(e)[:50],
+                "body_text": "", "links": [],
+                "note": str(e)[:50],
             }
 
 
@@ -238,7 +267,7 @@ async def async_main(domain, output_path):
         print(f"=== メタデータ取得中 ===")
         sem = asyncio.Semaphore(CONCURRENCY)
         tasks = [
-            async_fetch_metadata(session, sem, entry, i + 1, len(entries))
+            async_fetch_metadata(session, sem, entry, i + 1, len(entries), domain)
             for i, entry in enumerate(entries)
         ]
 
@@ -290,7 +319,7 @@ def sync_get_all_urls(domain):
         return []
 
 
-def sync_fetch_metadata(entry):
+def sync_fetch_metadata(entry, domain):
     """同期版: ページメタデータ取得"""
     import urllib.request
 
@@ -313,6 +342,7 @@ def sync_fetch_metadata(entry):
                 "h2": extract_headings(html, "h2"),
                 "h3": extract_headings(html, "h3"),
                 "body_text": extract_body_text(html),
+                "links": extract_outbound_links(html, domain),
                 "note": "",
             }
     except Exception as e:
@@ -320,7 +350,8 @@ def sync_fetch_metadata(entry):
             "url": url, "timestamp": timestamp,
             "title": "", "meta_description": "",
             "h1": "", "h2": "", "h3": "",
-            "body_text": "", "note": str(e)[:50],
+            "body_text": "", "links": [],
+            "note": str(e)[:50],
         }
 
 
@@ -340,6 +371,27 @@ def write_csv(results, output_path):
                 r["h1"], r["h2"], r["h3"],
                 r["body_text"], r["note"],
             ])
+
+
+# ========== 発リンクCSV出力 ==========
+
+def write_links_csv(results, output_path):
+    """発リンク情報をCSVに書き出す"""
+    with open(output_path, "w", encoding="utf-8-sig", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(["ページURL", "リンク先URL", "アンカーテキスト"])
+        for r in sorted(results, key=lambda x: x["url"]):
+            links = r.get("links", [])
+            if links:
+                for link in links:
+                    writer.writerow([
+                        r["url"],
+                        link["link_url"],
+                        link["anchor_text"],
+                    ])
+            else:
+                # リンクがないページも空欄で1行出力
+                writer.writerow([r["url"], "", ""])
 
 
 # ========== Markdown出力 ==========
@@ -410,7 +462,7 @@ def main():
         from concurrent.futures import ThreadPoolExecutor, as_completed
         results = []
         with ThreadPoolExecutor(max_workers=CONCURRENCY) as executor:
-            futures = {executor.submit(sync_fetch_metadata, e): e for e in entries}
+            futures = {executor.submit(sync_fetch_metadata, e, domain): e for e in entries}
             for i, future in enumerate(as_completed(futures)):
                 result = future.result()
                 results.append(result)
@@ -429,12 +481,19 @@ def main():
     md_path = args.output.rsplit(".", 1)[0] + ".md"
     write_markdown(results, md_path, domain)
 
+    # 発リンクCSV出力
+    links_path = args.output.rsplit(".", 1)[0] + "_links.csv"
+    write_links_csv(results, links_path)
+
     # サマリ
     ok = [r for r in results if not r["note"]]
     failed = [r for r in results if r["note"]]
+    total_links = sum(len(r.get("links", [])) for r in results)
     print(f"\n{'='*60}")
     print(f"完了: {len(results)} ページ（成功: {len(ok)} / 失敗: {len(failed)}）")
+    print(f"発リンク: {total_links} 件")
     print(f"結果CSV: {args.output}")
+    print(f"発リンクCSV: {links_path}")
     print(f"結果MD:  {md_path}")
     print(f"{'='*60}")
 
