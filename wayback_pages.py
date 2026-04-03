@@ -385,56 +385,6 @@ def write_csv(results, output_path):
             writer.writerow(row)
 
 
-# ========== Markdown出力 ==========
-
-def write_markdown(results, output_path, domain):
-    """結果をMarkdownファイルに書き出す"""
-    sorted_results = sorted(results, key=lambda x: x["url"])
-    with open(output_path, "w", encoding="utf-8") as f:
-        f.write(f"# {domain} 過去ページメタデータ\n\n")
-        f.write(f"Wayback Machine から取得（{len(sorted_results)} ページ）\n\n")
-        f.write("---\n\n")
-
-        for r in sorted_results:
-            ts = r["timestamp"]
-            date_str = f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}" if len(ts) >= 8 else ts
-            if r["note"] and not r["title"]:
-                continue  # 取得失敗ページはスキップ
-
-            f.write(f"## {r['title'] or r['url']}\n\n")
-            f.write(f"- **URL**: {r['url']}\n")
-            f.write(f"- **アーカイブ日**: {date_str}\n")
-            if r["meta_description"]:
-                f.write(f"- **meta description**: {r['meta_description']}\n")
-            if r["h1"]:
-                f.write(f"- **H1**: {r['h1']}\n")
-            if r["h2"]:
-                f.write(f"- **H2**: {r['h2']}\n")
-            if r["h3"]:
-                f.write(f"- **H3**: {r['h3']}\n")
-            f.write("\n")
-
-            if r.get("links"):
-                f.write("<details>\n<summary>発リンク（クリックで展開）</summary>\n\n")
-                f.write("| リンク先URL | アンカーテキスト |\n")
-                f.write("|---|---|\n")
-                for link in r["links"]:
-                    link_url = link["link_url"].replace("|", "\\|")
-                    anchor = link["anchor_text"].replace("|", "\\|") if link["anchor_text"] else ""
-                    f.write(f"| {link_url} | {anchor} |\n")
-                f.write("\n</details>\n\n")
-
-            if r["body_text"]:
-                body = r["body_text"]
-                if len(body) > 1000:
-                    body = body[:1000] + "..."
-                f.write("<details>\n<summary>本文テキスト（クリックで展開）</summary>\n\n")
-                f.write(f"{body}\n\n")
-                f.write("</details>\n\n")
-
-            f.write("---\n\n")
-
-
 def main():
     parser = argparse.ArgumentParser(description="Wayback Machine 全ページメタデータ取得")
     parser.add_argument("domain", help="対象ドメイン（例: kanazawa-hp.com）")
@@ -477,17 +427,12 @@ def main():
 
     write_csv(results, args.output)
 
-    # Markdown出力
-    md_path = args.output.rsplit(".", 1)[0] + ".md"
-    write_markdown(results, md_path, domain)
-
     # サマリ
     ok = [r for r in results if not r["note"]]
     failed = [r for r in results if r["note"]]
     print(f"\n{'='*60}")
     print(f"完了: {len(results)} ページ（成功: {len(ok)} / 失敗: {len(failed)}）")
     print(f"結果CSV: {args.output}")
-    print(f"結果MD:  {md_path}")
     print(f"{'='*60}")
 
 
