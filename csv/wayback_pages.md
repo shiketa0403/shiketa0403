@@ -157,12 +157,31 @@ Wayback Machine から取得（16 ページ）
 - **URL**: http://www.uro-fujita-clinic.jp:80/
 - **アーカイブ日**: 2011-04-04
 
+<details>
+<summary>発リンク（クリックで展開）</summary>
+
+| リンク先URL | アンカーテキスト |
+|---|---|
+| http://fujitaclinic.blog60.fc2.com/ |  |
+| http://fujitaclinic.blog60.fc2.com/ |  |
+
+</details>
+
 ---
 
 ## 医療法人龍馬 藤田クリニック
 
 - **URL**: http://www.uro-fujita-clinic.jp:80/01syoukai/syoukai.html
 - **アーカイブ日**: 2010-03-15
+
+<details>
+<summary>発リンク（クリックで展開）</summary>
+
+| リンク先URL | アンカーテキスト |
+|---|---|
+| http://fujitaclinic.blog60.fc2.com/ |  |
+
+</details>
 
 <details>
 <summary>本文テキスト（クリックで展開）</summary>
@@ -179,6 +198,15 @@ Wayback Machine から取得（16 ページ）
 - **アーカイブ日**: 2010-03-15
 
 <details>
+<summary>発リンク（クリックで展開）</summary>
+
+| リンク先URL | アンカーテキスト |
+|---|---|
+| http://fujitaclinic.blog60.fc2.com/ |  |
+
+</details>
+
+<details>
 <summary>本文テキスト（クリックで展開）</summary>
 
 ▲ 診察室 ▲待合いホール ▲透析室 1F 2F
@@ -193,6 +221,15 @@ Wayback Machine から取得（16 ページ）
 - **アーカイブ日**: 2010-03-15
 
 <details>
+<summary>発リンク（クリックで展開）</summary>
+
+| リンク先URL | アンカーテキスト |
+|---|---|
+| http://fujitaclinic.blog60.fc2.com/ |  |
+
+</details>
+
+<details>
 <summary>本文テキスト（クリックで展開）</summary>
 
 ご案内 当院西側道路は私道のため、自動車・バイクの通行はできません。 お手数ですが、当院に自動車・バイクで来院される患者様は東側道路のご利用をお願い致します。
@@ -205,6 +242,15 @@ Wayback Machine から取得（16 ページ）
 
 - **URL**: http://www.uro-fujita-clinic.jp:80/05calender/calender.html
 - **アーカイブ日**: 2010-03-14
+
+<details>
+<summary>発リンク（クリックで展開）</summary>
+
+| リンク先URL | アンカーテキスト |
+|---|---|
+| http://fujitaclinic.blog60.fc2.com/ |  |
+
+</details>
 
 ---
 
@@ -226,6 +272,16 @@ Wayback Machine から取得（16 ページ）
 
 - **URL**: http://www.uro-fujita-clinic.jp:80/index.html
 - **アーカイブ日**: 2010-03-15
+
+<details>
+<summary>発リンク（クリックで展開）</summary>
+
+| リンク先URL | アンカーテキスト |
+|---|---|
+| http://fujitaclinic.blog60.fc2.com/ |  |
+| http://fujitaclinic.blog60.fc2.com/ |  |
+
+</details>
 
 ---
 
