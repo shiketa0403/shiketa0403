@@ -373,27 +373,6 @@ def write_csv(results, output_path):
             ])
 
 
-# ========== 発リンクCSV出力 ==========
-
-def write_links_csv(results, output_path):
-    """発リンク情報をCSVに書き出す"""
-    with open(output_path, "w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.writer(f)
-        writer.writerow(["ページURL", "リンク先URL", "アンカーテキスト"])
-        for r in sorted(results, key=lambda x: x["url"]):
-            links = r.get("links", [])
-            if links:
-                for link in links:
-                    writer.writerow([
-                        r["url"],
-                        link["link_url"],
-                        link["anchor_text"],
-                    ])
-            else:
-                # リンクがないページも空欄で1行出力
-                writer.writerow([r["url"], "", ""])
-
-
 # ========== Markdown出力 ==========
 
 def write_markdown(results, output_path, domain):
@@ -490,19 +469,12 @@ def main():
     md_path = args.output.rsplit(".", 1)[0] + ".md"
     write_markdown(results, md_path, domain)
 
-    # 発リンクCSV出力
-    links_path = args.output.rsplit(".", 1)[0] + "_links.csv"
-    write_links_csv(results, links_path)
-
     # サマリ
     ok = [r for r in results if not r["note"]]
     failed = [r for r in results if r["note"]]
-    total_links = sum(len(r.get("links", [])) for r in results)
     print(f"\n{'='*60}")
     print(f"完了: {len(results)} ページ（成功: {len(ok)} / 失敗: {len(failed)}）")
-    print(f"発リンク: {total_links} 件")
     print(f"結果CSV: {args.output}")
-    print(f"発リンクCSV: {links_path}")
     print(f"結果MD:  {md_path}")
     print(f"{'='*60}")
 
