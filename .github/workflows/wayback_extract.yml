@@ -1,0 +1,118 @@
+name: Wayback 死にリンク抽出 (skyperfectv)
+
+# 手動トリガーのみ。勝手に動きません。
+on:
+  workflow_dispatch:
+    inputs:
+      year_from:
+        description: '対象開始年 (例: 2005)'
+        required: true
+        default: '2005'
+        type: string
+      year_to:
+        description: '対象終了年 (例: 2005)'
+        required: true
+        default: '2005'
+        type: string
+      max_urls_per_year:
+        description: 'Step 2 で年あたり処理するURL上限 (初回は 100〜300 推奨)'
+        required: true
+        default: '200'
+        type: string
+      domain:
+        description: '対象ドメイン'
+        required: true
+        default: 'skyperfectv.co.jp'
+        type: string
+      commit_results:
+        description: '結果をブランチにコミットするか'
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    # 暴走防止
+    timeout-minutes: 60
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 依存パッケージをインストール
+        run: pip install requests beautifulsoup4
+
+      - name: Step 1 - CDX API で過去URL一覧取得
+        run: |
+          python fetch_cdx.py \
+            --domain "${{ github.event.inputs.domain }}" \
+            --from "${{ github.event.inputs.year_from }}" \
+            --to "${{ github.event.inputs.year_to }}"
+
+      - name: Step 2 - 各年ごとに外部リンク抽出
+        run: |
+          YEAR_FROM="${{ github.event.inputs.year_from }}"
+          YEAR_TO="${{ github.event.inputs.year_to }}"
+          MAX="${{ github.event.inputs.max_urls_per_year }}"
+          DOMAIN="${{ github.event.inputs.domain }}"
+          for y in $(seq "$YEAR_FROM" "$YEAR_TO"); do
+            echo ""
+            echo "========== YEAR $y =========="
+            python fetch_links.py \
+              --year "$y" \
+              --source-domain "$DOMAIN" \
+              --max-urls "$MAX"
+          done
+
+      - name: Step 3 - 集計 & DNS判定 & 候補CSV出力
+        run: python build_candidates.py
+
+      - name: 結果サマリを表示
+        if: always()
+        run: |
+          echo "=== cdx_data ==="
+          ls -la cdx_data/ 2>/dev/null || echo "(なし)"
+          echo ""
+          echo "=== links_data ==="
+          ls -la links_data/ 2>/dev/null || echo "(なし)"
+          echo ""
+          echo "=== candidates.csv (上位30行) ==="
+          head -30 candidates.csv 2>/dev/null || echo "(なし)"
+          echo ""
+          echo "=== 行数 ==="
+          wc -l candidates.csv 2>/dev/null || true
+
+      - name: Artifacts としてアップロード
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wayback-extract-results-${{ github.event.inputs.year_from }}-${{ github.event.inputs.year_to }}
+          path: |
+            cdx_data/
+            links_data/
+            candidates.csv
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: 結果をブランチにコミット (csv/post.csv は絶対に触らない)
+        if: ${{ inputs.commit_results == true && always() }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # 安全のため post.csv 系は除外
+          git add cdx_data/ links_data/ candidates.csv 2>/dev/null || true
+          git reset -- csv/post.csv 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "コミットする変更なし"
+          else
+            git commit -m "Wayback死にリンク抽出: ${{ github.event.inputs.domain }} ${{ github.event.inputs.year_from }}-${{ github.event.inputs.year_to }}"
+            git pull --rebase origin "$GITHUB_REF_NAME" || true
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi
