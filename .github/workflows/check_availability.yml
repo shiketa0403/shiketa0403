@@ -1,0 +1,110 @@
+name: ドメイン取得可否チェック (whois)
+
+# 手動トリガーのみ
+on:
+  workflow_dispatch:
+    inputs:
+      include_alive:
+        description: '生存ドメイン (is_alive=True) もチェックするか'
+        required: true
+        default: false
+        type: boolean
+      include_subdomains:
+        description: 'サブドメイン/IPアドレスもチェックするか'
+        required: true
+        default: false
+        type: boolean
+      limit:
+        description: '処理上限 (0=無制限)'
+        required: true
+        default: '0'
+        type: string
+      sleep:
+        description: 'whois リクエスト間 sleep 秒数 (.jp 系は3秒以上推奨)'
+        required: true
+        default: '3'
+        type: string
+      commit_results:
+        description: '結果をブランチにコミットするか'
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: whois コマンドをインストール
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y whois
+
+      - name: candidates.csv の存在確認
+        run: |
+          if [ ! -f candidates.csv ]; then
+            echo "エラー: candidates.csv が見つかりません"
+            echo "先に wayback_extract ワークフローを実行してください"
+            exit 1
+          fi
+          echo "candidates.csv の行数:"
+          wc -l candidates.csv
+
+      - name: whois チェック実行
+        run: |
+          ARGS=""
+          if [ "${{ github.event.inputs.include_alive }}" = "true" ]; then
+            ARGS="$ARGS --include-alive"
+          fi
+          if [ "${{ github.event.inputs.include_subdomains }}" = "true" ]; then
+            ARGS="$ARGS --include-subdomains"
+          fi
+          python check_availability.py \
+            --input candidates.csv \
+            --output availability.csv \
+            --limit "${{ github.event.inputs.limit }}" \
+            --sleep "${{ github.event.inputs.sleep }}" \
+            $ARGS
+
+      - name: 結果サマリ
+        if: always()
+        run: |
+          echo "=== availability.csv (上位30行) ==="
+          head -30 availability.csv 2>/dev/null || echo "(なし)"
+          echo ""
+          echo "=== 取得可能ドメイン一覧 ==="
+          awk -F',' 'NR>1 && $2=="available" { print $1, "(link_count="$5")" }' availability.csv 2>/dev/null || true
+
+      - name: Artifacts としてアップロード
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: availability-results
+          path: availability.csv
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: 結果をブランチにコミット
+        if: ${{ inputs.commit_results == true && always() }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add availability.csv 2>/dev/null || true
+          git reset -- csv/post.csv 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "コミットする変更なし"
+          else
+            git commit -m "ドメイン取得可否チェック結果"
+            git pull --rebase origin "$GITHUB_REF_NAME" || true
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi
