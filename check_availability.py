@@ -233,7 +233,7 @@ def main() -> int:
 
     fieldnames = [
         "domain", "availability", "registrar", "expiry",
-        "link_count", "sample_anchor", "sample_source_url", "whois_excerpt",
+        "link_count", "years_seen", "sample_anchor", "sample_source_url", "whois_excerpt",
     ]
 
     results: list[dict] = []
@@ -259,6 +259,7 @@ def main() -> int:
             "registrar": parsed["registrar"],
             "expiry": parsed["expiry"],
             "link_count": row.get("link_count", ""),
+            "years_seen": row.get("years_seen", ""),
             "sample_anchor": row.get("sample_anchor", ""),
             "sample_source_url": row.get("sample_source_url", ""),
             "whois_excerpt": parsed["excerpt"],

@@ -34,6 +34,7 @@ def aggregate(links_dir: Path) -> dict[str, dict]:
         "last_seen": "",
         "sample_anchor": "",
         "sample_source_url": "",
+        "years_set": set(),  # 登場した年の集合
         "anchor_candidates": [],  # あとで一番長いものを sample に
     })
 
@@ -71,6 +72,10 @@ def aggregate(links_dir: Path) -> dict[str, dict]:
                 if not entry["last_seen"] or ts > entry["last_seen"]:
                     entry["last_seen"] = ts
 
+                # timestamp の先頭4桁が年
+                if len(ts) >= 4 and ts[:4].isdigit():
+                    entry["years_set"].add(ts[:4])
+
                 # 代表アンカー (空でないもの、かつ情報量があるもの)
                 if anchor and len(anchor) > len(entry["sample_anchor"]):
                     if len(anchor) < 120:  # 長すぎるのは避ける
@@ -80,6 +85,10 @@ def aggregate(links_dir: Path) -> dict[str, dict]:
                     entry["sample_source_url"] = src
 
                 total_lines += 1
+
+    # years_set を years_seen 文字列に変換
+    for info in agg.values():
+        info["years_seen"] = ",".join(sorted(info.pop("years_set")))
 
     print(f"  総リンク数: {total_lines}, ユニークドメイン: {len(agg)}")
     return dict(agg)
@@ -133,6 +142,7 @@ def main() -> int:
         rows.append({
             "domain": domain,
             "link_count": info["link_count"],
+            "years_seen": info.get("years_seen", ""),
             "first_seen": info["first_seen"],
             "last_seen": info["last_seen"],
             "sample_anchor": info["sample_anchor"],
@@ -154,12 +164,13 @@ def main() -> int:
     with open(args.output, "w", encoding="utf-8-sig", newline="") as f:
         writer = csv.writer(f)
         writer.writerow([
-            "domain", "link_count", "first_seen", "last_seen",
+            "domain", "link_count", "years_seen", "first_seen", "last_seen",
             "sample_anchor", "sample_source_url", "is_alive",
         ])
         for r in rows:
             writer.writerow([
-                r["domain"], r["link_count"], r["first_seen"], r["last_seen"],
+                r["domain"], r["link_count"], r["years_seen"],
+                r["first_seen"], r["last_seen"],
                 r["sample_anchor"], r["sample_source_url"], r["is_alive"],
             ])
 
