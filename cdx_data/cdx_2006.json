@@ -1,0 +1,5220 @@
+{
+  "domain": "skyperfectv.co.jp",
+  "year": 2006,
+  "fetched_at": "2026-04-15T01:56:01+0000",
+  "header": [
+    "timestamp",
+    "original"
+  ],
+  "count": 1302,
+  "records": [
+    {
+      "timestamp": "20060101194146",
+      "original": "http://www.skyperfectv.co.jp:80/"
+    },
+    {
+      "timestamp": "20060101202950",
+      "original": "http://www.skyperfectv.co.jp:80/adult/"
+    },
+    {
+      "timestamp": "20060104005459",
+      "original": "http://www.skyperfectv.co.jp:80/adult/campaign/"
+    },
+    {
+      "timestamp": "20060114065806",
+      "original": "http://www.skyperfectv.co.jp:80/adult/campaign/index01.html"
+    },
+    {
+      "timestamp": "20060114063542",
+      "original": "http://www.skyperfectv.co.jp:80/adult/campaign/index02.html"
+    },
+    {
+      "timestamp": "20060721203646",
+      "original": "http://www.skyperfectv.co.jp:80/adult/ex/gate/"
+    },
+    {
+      "timestamp": "20060104090834",
+      "original": "http://www.skyperfectv.co.jp:80/adult/GATE/"
+    },
+    {
+      "timestamp": "20060101212330",
+      "original": "http://www.skyperfectv.co.jp:80/anime/"
+    },
+    {
+      "timestamp": "20060104232710",
+      "original": "http://www.skyperfectv.co.jp:80/anime/jigokushoujo/"
+    },
+    {
+      "timestamp": "20060116015115",
+      "original": "http://www.skyperfectv.co.jp:80/anime/lineup/"
+    },
+    {
+      "timestamp": "20060721203713",
+      "original": "http://www.skyperfectv.co.jp:80/anime/ultraman_40th/"
+    },
+    {
+      "timestamp": "20060101205716",
+      "original": "http://www.skyperfectv.co.jp:80/BROADBAND/"
+    },
+    {
+      "timestamp": "20060101212620",
+      "original": "http://www.skyperfectv.co.jp:80/CAX/"
+    },
+    {
+      "timestamp": "20060103184530",
+      "original": "http://www.skyperfectv.co.jp:80/club_sptv/"
+    },
+    {
+      "timestamp": "20060417172016",
+      "original": "http://www.skyperfectv.co.jp:80/club_sptv/time_table.html"
+    },
+    {
+      "timestamp": "20060212170152",
+      "original": "http://www.skyperfectv.co.jp:80/copyright.html"
+    },
+    {
+      "timestamp": "20060101211925",
+      "original": "http://www.skyperfectv.co.jp:80/CUSTOMER/"
+    },
+    {
+      "timestamp": "20060618045249",
+      "original": "http://www.skyperfectv.co.jp:80/customer/guide/top.html"
+    },
+    {
+      "timestamp": "20060108191022",
+      "original": "http://www.skyperfectv.co.jp:80/DAI-KAIHOU-DAY/"
+    },
+    {
+      "timestamp": "20060110162056",
+      "original": "http://www.skyperfectv.co.jp:80/dairiten/"
+    },
+    {
+      "timestamp": "20060101204217",
+      "original": "http://www.skyperfectv.co.jp:80/drama/"
+    },
+    {
+      "timestamp": "20060304004051",
+      "original": "http://www.skyperfectv.co.jp:80/drama/24_season2/"
+    },
+    {
+      "timestamp": "20060103080643",
+      "original": "http://www.skyperfectv.co.jp:80/EMPLOY/"
+    },
+    {
+      "timestamp": "20060104082547",
+      "original": "http://www.skyperfectv.co.jp:80/en/"
+    },
+    {
+      "timestamp": "20061011031518",
+      "original": "http://www.skyperfectv.co.jp/en/footer.html"
+    },
+    {
+      "timestamp": "20060104082040",
+      "original": "http://www.skyperfectv.co.jp:80/en/guide/"
+    },
+    {
+      "timestamp": "20060824151343",
+      "original": "http://www.skyperfectv.co.jp:80/en/guide/adult/01.html"
+    },
+    {
+      "timestamp": "20060207023548",
+      "original": "http://www.skyperfectv.co.jp:80/en/guide/adult/index.html"
+    },
+    {
+      "timestamp": "20061011024838",
+      "original": "http://www.skyperfectv.co.jp/en/guide/appli/01.html"
+    },
+    {
+      "timestamp": "20060207013929",
+      "original": "http://www.skyperfectv.co.jp:80/en/guide/appli/index.html"
+    },
+    {
+      "timestamp": "20060207021951",
+      "original": "http://www.skyperfectv.co.jp:80/en/guide/appli/sample.html"
+    },
+    {
+      "timestamp": "20061011024830",
+      "original": "http://www.skyperfectv.co.jp/en/guide/header.html"
+    },
+    {
+      "timestamp": "20060101162353",
+      "original": "http://www.skyperfectv.co.jp:80/en/guide/index.html"
+    },
+    {
+      "timestamp": "20061011024910",
+      "original": "http://www.skyperfectv.co.jp/en/guide/info/01.html"
+    },
+    {
+      "timestamp": "20060209040328",
+      "original": "http://www.skyperfectv.co.jp:80/en/guide/info/02.html"
+    },
+    {
+      "timestamp": "20060207024952",
+      "original": "http://www.skyperfectv.co.jp:80/en/guide/info/index.html"
+    },
+    {
+      "timestamp": "20061011024826",
+      "original": "http://www.skyperfectv.co.jp/en/guide/left.html"
+    },
+    {
+      "timestamp": "20060401014118",
+      "original": "http://www.skyperfectv.co.jp:80/en/guide/lineup/01.html"
+    },
+    {
+      "timestamp": "20060411121446",
+      "original": "http://www.skyperfectv.co.jp:80/en/guide/lineup/02.html"
+    },
+    {
+      "timestamp": "20061011031535",
+      "original": "http://www.skyperfectv.co.jp/en/guide/lineup/03.html"
+    },
+    {
+      "timestamp": "20060405154857",
+      "original": "http://www.skyperfectv.co.jp:80/en/guide/lineup/04.html"
+    },
+    {
+      "timestamp": "20061011031455",
+      "original": "http://www.skyperfectv.co.jp/en/guide/lineup/help.html"
+    },
+    {
+      "timestamp": "20060104090339",
+      "original": "http://www.skyperfectv.co.jp:80/en/guide/lineup/index.html"
+    },
+    {
+      "timestamp": "20061011024925",
+      "original": "http://www.skyperfectv.co.jp/en/guide/map/01.html"
+    },
+    {
+      "timestamp": "20060106072403",
+      "original": "http://www.skyperfectv.co.jp:80/en/guide/map/index.html"
+    },
+    {
+      "timestamp": "20061011024821",
+      "original": "http://www.skyperfectv.co.jp/en/guide/pack/01.html"
+    },
+    {
+      "timestamp": "20061011031436",
+      "original": "http://www.skyperfectv.co.jp/en/guide/pack/02.html"
+    },
+    {
+      "timestamp": "20060104095113",
+      "original": "http://www.skyperfectv.co.jp:80/en/guide/pack/index.html"
+    },
+    {
+      "timestamp": "20061011024917",
+      "original": "http://www.skyperfectv.co.jp/en/guide/ppp/01.html"
+    },
+    {
+      "timestamp": "20061011031531",
+      "original": "http://www.skyperfectv.co.jp/en/guide/ppp/02.html"
+    },
+    {
+      "timestamp": "20060108185248",
+      "original": "http://www.skyperfectv.co.jp:80/en/guide/ppp/index.html"
+    },
+    {
+      "timestamp": "20060303065557",
+      "original": "http://www.skyperfectv.co.jp:80/en/guide/trouble/01.html"
+    },
+    {
+      "timestamp": "20060405154955",
+      "original": "http://www.skyperfectv.co.jp:80/en/guide/trouble/help.html"
+    },
+    {
+      "timestamp": "20060207020021",
+      "original": "http://www.skyperfectv.co.jp:80/en/guide/trouble/index.html"
+    },
+    {
+      "timestamp": "20061011024846",
+      "original": "http://www.skyperfectv.co.jp/en/guide/welcome/01.html"
+    },
+    {
+      "timestamp": "20061011031503",
+      "original": "http://www.skyperfectv.co.jp/en/guide/welcome/02.html"
+    },
+    {
+      "timestamp": "20060106071530",
+      "original": "http://www.skyperfectv.co.jp:80/en/guide/welcome/index.html"
+    },
+    {
+      "timestamp": "20061011031623",
+      "original": "http://www.skyperfectv.co.jp/en/howto/01.html"
+    },
+    {
+      "timestamp": "20061011031514",
+      "original": "http://www.skyperfectv.co.jp/en/howto/content.html"
+    },
+    {
+      "timestamp": "20061011031645",
+      "original": "http://www.skyperfectv.co.jp/en/howto/flow.html"
+    },
+    {
+      "timestamp": "20061011031649",
+      "original": "http://www.skyperfectv.co.jp/en/howto/header.html"
+    },
+    {
+      "timestamp": "20061011031507",
+      "original": "http://www.skyperfectv.co.jp/en/howto/index.html"
+    },
+    {
+      "timestamp": "20061011031511",
+      "original": "http://www.skyperfectv.co.jp/en/howto/menu.html"
+    },
+    {
+      "timestamp": "20060208041537",
+      "original": "http://www.skyperfectv.co.jp:80/enq/skycom/toiawaseJ.html"
+    },
+    {
+      "timestamp": "20061101043945",
+      "original": "http://www.skyperfectv.co.jp:80/enter/"
+    },
+    {
+      "timestamp": "20060101211520",
+      "original": "http://www.skyperfectv.co.jp:80/entertainment/"
+    },
+    {
+      "timestamp": "20060428164320",
+      "original": "http://www.skyperfectv.co.jp:80/entertainment/gradol/"
+    },
+    {
+      "timestamp": "20060824153037",
+      "original": "http://www.skyperfectv.co.jp:80/entertainment/gradol/summer_2006/"
+    },
+    {
+      "timestamp": "20060220105531",
+      "original": "http://www.skyperfectv.co.jp:80/entertainment/gradol/valentine_2006/"
+    },
+    {
+      "timestamp": "20061230122651",
+      "original": "http://www.skyperfectv.co.jp:80/entertainment/gradol_gp_2004/"
+    },
+    {
+      "timestamp": "20060206025613",
+      "original": "http://www.skyperfectv.co.jp:80/entertainment/okusama/"
+    },
+    {
+      "timestamp": "20060206023106",
+      "original": "http://www.skyperfectv.co.jp:80/entertainment/okusama/01.html"
+    },
+    {
+      "timestamp": "20060206025039",
+      "original": "http://www.skyperfectv.co.jp:80/entertainment/okusama/02.html"
+    },
+    {
+      "timestamp": "20060206024742",
+      "original": "http://www.skyperfectv.co.jp:80/entertainment/okusama/03.html"
+    },
+    {
+      "timestamp": "20060206031702",
+      "original": "http://www.skyperfectv.co.jp:80/entertainment/okusama/04.html"
+    },
+    {
+      "timestamp": "20060206030347",
+      "original": "http://www.skyperfectv.co.jp:80/entertainment/okusama/05.html"
+    },
+    {
+      "timestamp": "20060206031458",
+      "original": "http://www.skyperfectv.co.jp:80/entertainment/okusama/06.html"
+    },
+    {
+      "timestamp": "20060101211745",
+      "original": "http://www.skyperfectv.co.jp:80/feature2005/ikkyo/"
+    },
+    {
+      "timestamp": "20060101204812",
+      "original": "http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index.html"
+    },
+    {
+      "timestamp": "20060110182539",
+      "original": "http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html"
+    },
+    {
+      "timestamp": "20060220102654",
+      "original": "http://www.skyperfectv.co.jp:80/gaikoku/"
+    },
+    {
+      "timestamp": "20060101212247",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/"
+    },
+    {
+      "timestamp": "20060116015955",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/allstar/"
+    },
+    {
+      "timestamp": "20060112032931",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/allstar/index.html"
+    },
+    {
+      "timestamp": "20060110170736",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/bae/index.html"
+    },
+    {
+      "timestamp": "20061011025306",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/column/bae/index.html"
+    },
+    {
+      "timestamp": "20061011025322",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/column/hanryu/index.html"
+    },
+    {
+      "timestamp": "20060929043449",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/column/hanryu2/index.html"
+    },
+    {
+      "timestamp": "20061011025315",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/column/hanryu3/index.html"
+    },
+    {
+      "timestamp": "20061011025421",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/column/hanryu4/index.html"
+    },
+    {
+      "timestamp": "20060116082651",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/column/index.html"
+    },
+    {
+      "timestamp": "20060928130741",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/column/lee/index.html"
+    },
+    {
+      "timestamp": "20060619112854",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/column/naruhodo/index.html"
+    },
+    {
+      "timestamp": "20061011025257",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/column/naruhodo2/index.html"
+    },
+    {
+      "timestamp": "20060929043248",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/column/naruhodo3/index.html"
+    },
+    {
+      "timestamp": "20060926031203",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/column/naruhodo4/index.html"
+    },
+    {
+      "timestamp": "20060926184935",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/column/naruhodo5/index.html"
+    },
+    {
+      "timestamp": "20060927085416",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/column/naruhodo6/index.html"
+    },
+    {
+      "timestamp": "20060927224252",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/column/wonbin/index.html"
+    },
+    {
+      "timestamp": "20060106213833",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/column/yun/index.html"
+    },
+    {
+      "timestamp": "20061011025454",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/frontier/index.html"
+    },
+    {
+      "timestamp": "20061011025445",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/frontier/index10.html"
+    },
+    {
+      "timestamp": "20061011025503",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/frontier/index11.html"
+    },
+    {
+      "timestamp": "20061011024355",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/frontier/index12.html"
+    },
+    {
+      "timestamp": "20060717182017",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/frontier/index2.html"
+    },
+    {
+      "timestamp": "20060718223425",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/frontier/index3.html"
+    },
+    {
+      "timestamp": "20060220105459",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/frontier/index4.html"
+    },
+    {
+      "timestamp": "20060717181940",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/frontier/index5.html"
+    },
+    {
+      "timestamp": "20061011025508",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/frontier/index6.html"
+    },
+    {
+      "timestamp": "20061011025436",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/frontier/index7.html"
+    },
+    {
+      "timestamp": "20060615234935",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/frontier/index8.html"
+    },
+    {
+      "timestamp": "20060718223437",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/frontier/index9.html"
+    },
+    {
+      "timestamp": "20061011025233",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/furuya/index.html"
+    },
+    {
+      "timestamp": "20060411122657",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/furuya/index2.html"
+    },
+    {
+      "timestamp": "20060901091207",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/furuya/index3.html"
+    },
+    {
+      "timestamp": "20061011025049",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/furuya/index4.html"
+    },
+    {
+      "timestamp": "20061011031551",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/furuya/index5-2.html"
+    },
+    {
+      "timestamp": "20061011025238",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/furuya/index5.html"
+    },
+    {
+      "timestamp": "20061011031558",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/furuya/index6-2.html"
+    },
+    {
+      "timestamp": "20061011025244",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/furuya/index6.html"
+    },
+    {
+      "timestamp": "20061011025040",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/furuya/index7-2.html"
+    },
+    {
+      "timestamp": "20061011024224",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/furuya/index7.html"
+    },
+    {
+      "timestamp": "20060622091218",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/guest01/index.html"
+    },
+    {
+      "timestamp": "20060622091231",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/guest02/index.html"
+    },
+    {
+      "timestamp": "20060126211748",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/hanfes2/"
+    },
+    {
+      "timestamp": "20060215152733",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/hanfes2/index.html"
+    },
+    {
+      "timestamp": "20060117003820",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/hyunbin/"
+    },
+    {
+      "timestamp": "20060106064559",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/index.html"
+    },
+    {
+      "timestamp": "20060208042502",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/jang/index.html"
+    },
+    {
+      "timestamp": "20060206031418",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/ji/index.html"
+    },
+    {
+      "timestamp": "20060110165301",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/jiwon/index.html"
+    },
+    {
+      "timestamp": "20060115051101",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/kwon/index.html"
+    },
+    {
+      "timestamp": "20060111045828",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/lee/index.html"
+    },
+    {
+      "timestamp": "20060405154748",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/lineup/"
+    },
+    {
+      "timestamp": "20060110044244",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/lineup/index.html"
+    },
+    {
+      "timestamp": "20060102124440",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/lineup/index2.html"
+    },
+    {
+      "timestamp": "20060212113856",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/lineup/invitation/"
+    },
+    {
+      "timestamp": "20060222034044",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/lineup/pari/"
+    },
+    {
+      "timestamp": "20060104231007",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/pickup/index.html"
+    },
+    {
+      "timestamp": "20060104234743",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/pickup/index2.html"
+    },
+    {
+      "timestamp": "20060220105301",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/pickup/index3.html"
+    },
+    {
+      "timestamp": "20060220105306",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/pickup/index4.html"
+    },
+    {
+      "timestamp": "20060220105319",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/pickup/index5.html"
+    },
+    {
+      "timestamp": "20060110184004",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/pickup/index6.html"
+    },
+    {
+      "timestamp": "20060208030530",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/rain/index.html"
+    },
+    {
+      "timestamp": "20060116020514",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/song/index.html"
+    },
+    {
+      "timestamp": "20060927224134",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/spedition/06april/index.html"
+    },
+    {
+      "timestamp": "20061011025619",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/spedition/06summer/index.html"
+    },
+    {
+      "timestamp": "20061011031603",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/spedition/06summer/index2.html"
+    },
+    {
+      "timestamp": "20061011025604",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/spedition/2005/index.html"
+    },
+    {
+      "timestamp": "20060929042914",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/spedition/an/index.html"
+    },
+    {
+      "timestamp": "20061011025751",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/spedition/bae/index.html"
+    },
+    {
+      "timestamp": "20061011025716",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/spedition/bae2/index.html"
+    },
+    {
+      "timestamp": "20060626113727",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/spedition/drama/index.html"
+    },
+    {
+      "timestamp": "20060619112826",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/spedition/drama/index2.html"
+    },
+    {
+      "timestamp": "20060112032538",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/spedition/index.html"
+    },
+    {
+      "timestamp": "20061011025759",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/spedition/jang/index.html"
+    },
+    {
+      "timestamp": "20060107151703",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/spedition/jisub/"
+    },
+    {
+      "timestamp": "20061011025548",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/spedition/jisub/index.html"
+    },
+    {
+      "timestamp": "20061011025540",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/spedition/jo/index.html"
+    },
+    {
+      "timestamp": "20061011025703",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/spedition/jo/index2.html"
+    },
+    {
+      "timestamp": "20060928130601",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/spedition/jun/index.html"
+    },
+    {
+      "timestamp": "20061011025637",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/spedition/jung/index.html"
+    },
+    {
+      "timestamp": "20060111051908",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/spedition/kang/index.html"
+    },
+    {
+      "timestamp": "20060926031111",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/spedition/km/index.html"
+    },
+    {
+      "timestamp": "20061011024212",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/spedition/kntv/index.html"
+    },
+    {
+      "timestamp": "20060926184246",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/spedition/kwon/index.html"
+    },
+    {
+      "timestamp": "20060927085258",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/spedition/kwon2/index.html"
+    },
+    {
+      "timestamp": "20061011025532",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/spedition/kwon3/index.html"
+    },
+    {
+      "timestamp": "20060626113931",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/spedition/lee/index.html"
+    },
+    {
+      "timestamp": "20060117072945",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/spedition/lee2/index.html"
+    },
+    {
+      "timestamp": "20060220105925",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/spedition/music/index.html"
+    },
+    {
+      "timestamp": "20061011031607",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/spedition/music/index2.html"
+    },
+    {
+      "timestamp": "20061011025656",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/spedition/rain/index.html"
+    },
+    {
+      "timestamp": "20060102164412",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/spedition/rain2/index.html"
+    },
+    {
+      "timestamp": "20061011025628",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/spedition/shinhwa/index.html"
+    },
+    {
+      "timestamp": "20061011025902",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/spedition/sitcom/index.html"
+    },
+    {
+      "timestamp": "20060928131314",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/spedition/song/index.html"
+    },
+    {
+      "timestamp": "20060619060152",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/spedition/wonbin/index.html"
+    },
+    {
+      "timestamp": "20061011025556",
+      "original": "http://www.skyperfectv.co.jp/hang-ryu-now/spedition/yejin/index.html"
+    },
+    {
+      "timestamp": "20060619081849",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/spedition/yun/index.html"
+    },
+    {
+      "timestamp": "20060104222922",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/tashiro/index.html"
+    },
+    {
+      "timestamp": "20060113144757",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/tashiro/index2.html"
+    },
+    {
+      "timestamp": "20060113154729",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/tashiro/index3.html"
+    },
+    {
+      "timestamp": "20060113145810",
+      "original": "http://www.skyperfectv.co.jp:80/hang-ryu-now/tashiro/index4.html"
+    },
+    {
+      "timestamp": "20060110045515",
+      "original": "http://www.skyperfectv.co.jp:80/hanryu/"
+    },
+    {
+      "timestamp": "20060101084831",
+      "original": "http://www.skyperfectv.co.jp:80/hanryu/close/"
+    },
+    {
+      "timestamp": "20060101080910",
+      "original": "http://www.skyperfectv.co.jp:80/hanryu/schedule/schedule.html"
+    },
+    {
+      "timestamp": "20061011023652",
+      "original": "http://www.skyperfectv.co.jp/help/"
+    },
+    {
+      "timestamp": "20061011031710",
+      "original": "http://www.skyperfectv.co.jp/help/index.html"
+    },
+    {
+      "timestamp": "20061210041054",
+      "original": "http://www.skyperfectv.co.jp:80/ikkyo2006/f_drama/"
+    },
+    {
+      "timestamp": "20061215021404",
+      "original": "http://www.skyperfectv.co.jp:80/ikkyo2006/j_drama/"
+    },
+    {
+      "timestamp": "20061206032325",
+      "original": "http://www.skyperfectv.co.jp:80/ikkyo2006/movie/index.html"
+    },
+    {
+      "timestamp": "20060129204641",
+      "original": "http://www.skyperfectv.co.jp:80/index.html"
+    },
+    {
+      "timestamp": "20060411121037",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/baseballset/"
+    },
+    {
+      "timestamp": "20060101200156",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/channel/"
+    },
+    {
+      "timestamp": "20061011020356",
+      "original": "http://www.skyperfectv.co.jp/info_ch/channel/index.html"
+    },
+    {
+      "timestamp": "20060708035035",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/dual_accounting/"
+    },
+    {
+      "timestamp": "20061011023724",
+      "original": "http://www.skyperfectv.co.jp/info_ch/dual_accounting/description/basicpack_all/"
+    },
+    {
+      "timestamp": "20061011023755",
+      "original": "http://www.skyperfectv.co.jp/info_ch/dual_accounting/description/bluepack/"
+    },
+    {
+      "timestamp": "20061011023800",
+      "original": "http://www.skyperfectv.co.jp/info_ch/dual_accounting/description/grandpack/"
+    },
+    {
+      "timestamp": "20061011023805",
+      "original": "http://www.skyperfectv.co.jp/info_ch/dual_accounting/description/greenpack/"
+    },
+    {
+      "timestamp": "20061011023708",
+      "original": "http://www.skyperfectv.co.jp/info_ch/dual_accounting/description/hollywoodset/"
+    },
+    {
+      "timestamp": "20061011023730",
+      "original": "http://www.skyperfectv.co.jp/info_ch/dual_accounting/description/hollywoodset_max/"
+    },
+    {
+      "timestamp": "20061011023719",
+      "original": "http://www.skyperfectv.co.jp/info_ch/dual_accounting/description/hougadramajidaigekiset/"
+    },
+    {
+      "timestamp": "20061011023828",
+      "original": "http://www.skyperfectv.co.jp/info_ch/dual_accounting/description/j_sports_plus_basicpack_all/"
+    },
+    {
+      "timestamp": "20061011023815",
+      "original": "http://www.skyperfectv.co.jp/info_ch/dual_accounting/description/j_sports_plus_bluepack/"
+    },
+    {
+      "timestamp": "20061011025012",
+      "original": "http://www.skyperfectv.co.jp/info_ch/dual_accounting/description/j_sports_plus_greenpack/"
+    },
+    {
+      "timestamp": "20061011023822",
+      "original": "http://www.skyperfectv.co.jp/info_ch/dual_accounting/description/j_sports_plus_yellowpack/"
+    },
+    {
+      "timestamp": "20061011023740",
+      "original": "http://www.skyperfectv.co.jp/info_ch/dual_accounting/description/perfectpack/"
+    },
+    {
+      "timestamp": "20061011023745",
+      "original": "http://www.skyperfectv.co.jp/info_ch/dual_accounting/description/perfectpack_dx/"
+    },
+    {
+      "timestamp": "20061011023735",
+      "original": "http://www.skyperfectv.co.jp/info_ch/dual_accounting/description/skyentrypack/"
+    },
+    {
+      "timestamp": "20061011023714",
+      "original": "http://www.skyperfectv.co.jp/info_ch/dual_accounting/description/yellowpack/"
+    },
+    {
+      "timestamp": "20060101212122",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/new_basicpackset/"
+    },
+    {
+      "timestamp": "20061011021855",
+      "original": "http://www.skyperfectv.co.jp/info_ch/new_basicpackset/foxcrime_70ch.html"
+    },
+    {
+      "timestamp": "20060101215008",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/new_basicpackset/index02.html"
+    },
+    {
+      "timestamp": "20060101214311",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/"
+    },
+    {
+      "timestamp": "20060101200948",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/007.html"
+    },
+    {
+      "timestamp": "20060104232757",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/008.html"
+    },
+    {
+      "timestamp": "20060207022127",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/010.html"
+    },
+    {
+      "timestamp": "20060108195908",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/020.html"
+    },
+    {
+      "timestamp": "20060721234533",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/021.html"
+    },
+    {
+      "timestamp": "20060721203520",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/024.html"
+    },
+    {
+      "timestamp": "20060101215215",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/026.html"
+    },
+    {
+      "timestamp": "20060118061204",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/028.html"
+    },
+    {
+      "timestamp": "20060628231951",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/042.html"
+    },
+    {
+      "timestamp": "20060117075030",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/046.html"
+    },
+    {
+      "timestamp": "20060114070122",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/047.html"
+    },
+    {
+      "timestamp": "20060104230047",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/048.html"
+    },
+    {
+      "timestamp": "20060220104035",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/049.html"
+    },
+    {
+      "timestamp": "20060104223331",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/056.html"
+    },
+    {
+      "timestamp": "20060220104051",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/062.html"
+    },
+    {
+      "timestamp": "20060207023800",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/072.html"
+    },
+    {
+      "timestamp": "20060220104105",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/077.html"
+    },
+    {
+      "timestamp": "20060113053128",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/078.html"
+    },
+    {
+      "timestamp": "20060108190329",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/086.html"
+    },
+    {
+      "timestamp": "20060721203811",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/087.html"
+    },
+    {
+      "timestamp": "20060220104122",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/088.html"
+    },
+    {
+      "timestamp": "20060721203823",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/089.html"
+    },
+    {
+      "timestamp": "20060111195238",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/094.html"
+    },
+    {
+      "timestamp": "20060207024029",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/095.html"
+    },
+    {
+      "timestamp": "20060101195327",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/096.html"
+    },
+    {
+      "timestamp": "20060111184226",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/097.html"
+    },
+    {
+      "timestamp": "20060101215337",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/098.html"
+    },
+    {
+      "timestamp": "20061011022750",
+      "original": "http://www.skyperfectv.co.jp/info_ch/packset/708.html"
+    },
+    {
+      "timestamp": "20060220104207",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/A07.html"
+    },
+    {
+      "timestamp": "20060206031019",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/A16.html"
+    },
+    {
+      "timestamp": "20060220104220",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/A18.html"
+    },
+    {
+      "timestamp": "20060111200336",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/A19.html"
+    },
+    {
+      "timestamp": "20060220104233",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/A20.html"
+    },
+    {
+      "timestamp": "20060220104251",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/A21.html"
+    },
+    {
+      "timestamp": "20061011022754",
+      "original": "http://www.skyperfectv.co.jp/info_ch/packset/E03.html"
+    },
+    {
+      "timestamp": "20060721203544",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/E04.html"
+    },
+    {
+      "timestamp": "20061011022610",
+      "original": "http://www.skyperfectv.co.jp/info_ch/packset/E05.html"
+    },
+    {
+      "timestamp": "20060104225216",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/F03.html"
+    },
+    {
+      "timestamp": "20060220104258",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/F16.html"
+    },
+    {
+      "timestamp": "20060113053530",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/F20.html"
+    },
+    {
+      "timestamp": "20061011022555",
+      "original": "http://www.skyperfectv.co.jp/info_ch/packset/F45.html"
+    },
+    {
+      "timestamp": "20061011022603",
+      "original": "http://www.skyperfectv.co.jp/info_ch/packset/F46.html"
+    },
+    {
+      "timestamp": "20061011022711",
+      "original": "http://www.skyperfectv.co.jp/info_ch/packset/F47.html"
+    },
+    {
+      "timestamp": "20060104234030",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/F62.html"
+    },
+    {
+      "timestamp": "20061011020451",
+      "original": "http://www.skyperfectv.co.jp/info_ch/packset/index.html"
+    },
+    {
+      "timestamp": "20060721203847",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/packset/M18.html"
+    },
+    {
+      "timestamp": "20060111052030",
+      "original": "http://www.skyperfectv.co.jp:80/info_ch/wakuwaku_animeset/"
+    },
+    {
+      "timestamp": "20060111070249",
+      "original": "http://www.skyperfectv.co.jp:80/info_navigation/available/"
+    },
+    {
+      "timestamp": "20060101194702",
+      "original": "http://www.skyperfectv.co.jp:80/info_navigation/sitemap/"
+    },
+    {
+      "timestamp": "20060220104944",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000001.html"
+    },
+    {
+      "timestamp": "20060220104957",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000002.html"
+    },
+    {
+      "timestamp": "20060220105008",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000010.html"
+    },
+    {
+      "timestamp": "20060220105012",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000011.html"
+    },
+    {
+      "timestamp": "20060108190014",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000019.html"
+    },
+    {
+      "timestamp": "20060220105028",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000020.html"
+    },
+    {
+      "timestamp": "20060206141817",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000064.html"
+    },
+    {
+      "timestamp": "20060222130413",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000246.html"
+    },
+    {
+      "timestamp": "20060110184526",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000349.html"
+    },
+    {
+      "timestamp": "20060220105046",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000380.html"
+    },
+    {
+      "timestamp": "20060228232919",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000393.html"
+    },
+    {
+      "timestamp": "20060101214134",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000447.html"
+    },
+    {
+      "timestamp": "20060112162719",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000449.html"
+    },
+    {
+      "timestamp": "20060101212733",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000455.html"
+    },
+    {
+      "timestamp": "20060220105107",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000479.html"
+    },
+    {
+      "timestamp": "20060411122612",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000498.html"
+    },
+    {
+      "timestamp": "20060721203912",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000533.html"
+    },
+    {
+      "timestamp": "20060717031314",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000554.html"
+    },
+    {
+      "timestamp": "20061011021436",
+      "original": "http://www.skyperfectv.co.jp/info_news/000_000_000559.html"
+    },
+    {
+      "timestamp": "20060824152825",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000571.html"
+    },
+    {
+      "timestamp": "20060901091706",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000586.html"
+    },
+    {
+      "timestamp": "20061011021453",
+      "original": "http://www.skyperfectv.co.jp/info_news/000_000_000589.html"
+    },
+    {
+      "timestamp": "20061011021145",
+      "original": "http://www.skyperfectv.co.jp/info_news/000_000_000597.html"
+    },
+    {
+      "timestamp": "20061011021444",
+      "original": "http://www.skyperfectv.co.jp/info_news/000_000_000603.html"
+    },
+    {
+      "timestamp": "20061026050814",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000612.html"
+    },
+    {
+      "timestamp": "20061210040704",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000624.html"
+    },
+    {
+      "timestamp": "20061209040638",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/000_000_000626.html"
+    },
+    {
+      "timestamp": "20060108193151",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/001_000_000464.html"
+    },
+    {
+      "timestamp": "20060428010551",
+      "original": "http://www.skyperfectv.co.jp:80/info_news/united_cinema_200506/"
+    },
+    {
+      "timestamp": "20060101164507",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0508012.html"
+    },
+    {
+      "timestamp": "20060105010536",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0509027.html"
+    },
+    {
+      "timestamp": "20060104182725",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0510040.html"
+    },
+    {
+      "timestamp": "20060104183956",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0510041.html"
+    },
+    {
+      "timestamp": "20060104182816",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0510042.html"
+    },
+    {
+      "timestamp": "20060104171718",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0510043.html"
+    },
+    {
+      "timestamp": "20061230222328",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0511037.html"
+    },
+    {
+      "timestamp": "20060102101223",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0512002.html"
+    },
+    {
+      "timestamp": "20060327221229",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0512006.html"
+    },
+    {
+      "timestamp": "20060110174206",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0512054.html"
+    },
+    {
+      "timestamp": "20060220110750",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0512056.html"
+    },
+    {
+      "timestamp": "20060207021425",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0602022.html"
+    },
+    {
+      "timestamp": "20060220110759",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0602023.html"
+    },
+    {
+      "timestamp": "20060220110804",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0602038.html"
+    },
+    {
+      "timestamp": "20060209035428",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0602039.html"
+    },
+    {
+      "timestamp": "20060220110821",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0602040.html"
+    },
+    {
+      "timestamp": "20060204095352",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0602063.html"
+    },
+    {
+      "timestamp": "20060411122932",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0604026.html"
+    },
+    {
+      "timestamp": "20060411122940",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0604027.html"
+    },
+    {
+      "timestamp": "20060411122947",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0604028.html"
+    },
+    {
+      "timestamp": "20060414184054",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0604030.html"
+    },
+    {
+      "timestamp": "20060414184204",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0604053.html"
+    },
+    {
+      "timestamp": "20060619103958",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0605032.html"
+    },
+    {
+      "timestamp": "20060721035932",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/001_sports/001_0607046.html"
+    },
+    {
+      "timestamp": "20060118234856",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0504074.html"
+    },
+    {
+      "timestamp": "20060105003459",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0510002.html"
+    },
+    {
+      "timestamp": "20060105005043",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0510005.html"
+    },
+    {
+      "timestamp": "20060105004533",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0510012.html"
+    },
+    {
+      "timestamp": "20060105002241",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0510042.html"
+    },
+    {
+      "timestamp": "20060105010645",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0510043.html"
+    },
+    {
+      "timestamp": "20060105003522",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0510048.html"
+    },
+    {
+      "timestamp": "20060105002307",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0510049.html"
+    },
+    {
+      "timestamp": "20060105003711",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0510050.html"
+    },
+    {
+      "timestamp": "20060104235951",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0510051.html"
+    },
+    {
+      "timestamp": "20060105002217",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0510052.html"
+    },
+    {
+      "timestamp": "20060105001331",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0510053.html"
+    },
+    {
+      "timestamp": "20060105010315",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0510054.html"
+    },
+    {
+      "timestamp": "20060105010408",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0510055.html"
+    },
+    {
+      "timestamp": "20060105002900",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0510056.html"
+    },
+    {
+      "timestamp": "20060105005853",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0510057.html"
+    },
+    {
+      "timestamp": "20060105004057",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0510058.html"
+    },
+    {
+      "timestamp": "20060105005747",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0510059.html"
+    },
+    {
+      "timestamp": "20060105003923",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0510060.html"
+    },
+    {
+      "timestamp": "20060105010109",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0510067.html"
+    },
+    {
+      "timestamp": "20060415181456",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0511011.html"
+    },
+    {
+      "timestamp": "20060116233928",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0512002.html"
+    },
+    {
+      "timestamp": "20060113040605",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0512004.html"
+    },
+    {
+      "timestamp": "20060106063852",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0512022.html"
+    },
+    {
+      "timestamp": "20060104095507",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0601008.html"
+    },
+    {
+      "timestamp": "20060113042027",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0601009.html"
+    },
+    {
+      "timestamp": "20060104095016",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0601010.html"
+    },
+    {
+      "timestamp": "20060411122837",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0601012.html"
+    },
+    {
+      "timestamp": "20060104080302",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0601014.html"
+    },
+    {
+      "timestamp": "20060104074944",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0601015.html"
+    },
+    {
+      "timestamp": "20060104093713",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0601018.html"
+    },
+    {
+      "timestamp": "20060113034205",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0601026.html"
+    },
+    {
+      "timestamp": "20060111191850",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0601029.html"
+    },
+    {
+      "timestamp": "20060104090813",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0601030.html"
+    },
+    {
+      "timestamp": "20060118032014",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0601042.html"
+    },
+    {
+      "timestamp": "20060405160009",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602009.html"
+    },
+    {
+      "timestamp": "20060220110226",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602040.html"
+    },
+    {
+      "timestamp": "20060220110237",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602041.html"
+    },
+    {
+      "timestamp": "20060220110250",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602042.html"
+    },
+    {
+      "timestamp": "20060220110253",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602044.html"
+    },
+    {
+      "timestamp": "20060220110300",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602045.html"
+    },
+    {
+      "timestamp": "20060220110306",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602046.html"
+    },
+    {
+      "timestamp": "20060220110322",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602047.html"
+    },
+    {
+      "timestamp": "20060220110327",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602050.html"
+    },
+    {
+      "timestamp": "20060220110335",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602051.html"
+    },
+    {
+      "timestamp": "20060220110343",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602052.html"
+    },
+    {
+      "timestamp": "20060220110350",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602053.html"
+    },
+    {
+      "timestamp": "20060220110405",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602054.html"
+    },
+    {
+      "timestamp": "20060220110412",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602055.html"
+    },
+    {
+      "timestamp": "20060220110432",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602056.html"
+    },
+    {
+      "timestamp": "20060220110433",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602057.html"
+    },
+    {
+      "timestamp": "20060220110441",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602059.html"
+    },
+    {
+      "timestamp": "20060220110447",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602060.html"
+    },
+    {
+      "timestamp": "20060220110454",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602061.html"
+    },
+    {
+      "timestamp": "20060220110500",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602062.html"
+    },
+    {
+      "timestamp": "20060220110512",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602063.html"
+    },
+    {
+      "timestamp": "20060220110527",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602066.html"
+    },
+    {
+      "timestamp": "20060220110536",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602067.html"
+    },
+    {
+      "timestamp": "20060220110544",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602068.html"
+    },
+    {
+      "timestamp": "20060220110600",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602069.html"
+    },
+    {
+      "timestamp": "20060220110611",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602070.html"
+    },
+    {
+      "timestamp": "20060220110621",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602071.html"
+    },
+    {
+      "timestamp": "20060220110628",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0602072.html"
+    },
+    {
+      "timestamp": "20060411122843",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0603004.html"
+    },
+    {
+      "timestamp": "20060411122849",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0604009.html"
+    },
+    {
+      "timestamp": "20060411122855",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0604011.html"
+    },
+    {
+      "timestamp": "20060411122901",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0604012.html"
+    },
+    {
+      "timestamp": "20060411122910",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0604018.html"
+    },
+    {
+      "timestamp": "20060411122913",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0604021.html"
+    },
+    {
+      "timestamp": "20060411122919",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0604032.html"
+    },
+    {
+      "timestamp": "20060411122925",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0604035.html"
+    },
+    {
+      "timestamp": "20060824151039",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0606016.html"
+    },
+    {
+      "timestamp": "20060704213130",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0607003.html"
+    },
+    {
+      "timestamp": "20060718182653",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0607004.html"
+    },
+    {
+      "timestamp": "20060704213207",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0607010.html"
+    },
+    {
+      "timestamp": "20060704213243",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0607025.html"
+    },
+    {
+      "timestamp": "20060718182537",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0607028.html"
+    },
+    {
+      "timestamp": "20060704213231",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0607029.html"
+    },
+    {
+      "timestamp": "20060717031740",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0607031.html"
+    },
+    {
+      "timestamp": "20060704213048",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0607041.html"
+    },
+    {
+      "timestamp": "20060704213036",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0607042.html"
+    },
+    {
+      "timestamp": "20061019060521",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0607059.html"
+    },
+    {
+      "timestamp": "20061019060533",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0607062.html"
+    },
+    {
+      "timestamp": "20060704213141",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0607075.html"
+    },
+    {
+      "timestamp": "20060824153159",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0608004.html"
+    },
+    {
+      "timestamp": "20060824153201",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0608028.html"
+    },
+    {
+      "timestamp": "20060824153214",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/002_movie/002_0608029.html"
+    },
+    {
+      "timestamp": "20061011023953",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0609003.html"
+    },
+    {
+      "timestamp": "20061011023907",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0609005.html"
+    },
+    {
+      "timestamp": "20061011023902",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0609012.html"
+    },
+    {
+      "timestamp": "20061011023938",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0609018.html"
+    },
+    {
+      "timestamp": "20061011023857",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0609026.html"
+    },
+    {
+      "timestamp": "20061011023914",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0609038.html"
+    },
+    {
+      "timestamp": "20061011023850",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0609039.html"
+    },
+    {
+      "timestamp": "20061011024116",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610001.html"
+    },
+    {
+      "timestamp": "20061011021950",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610002.html"
+    },
+    {
+      "timestamp": "20061011024008",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610003.html"
+    },
+    {
+      "timestamp": "20061011023853",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610005.html"
+    },
+    {
+      "timestamp": "20061011022003",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610006.html"
+    },
+    {
+      "timestamp": "20061011023942",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610007.html"
+    },
+    {
+      "timestamp": "20061011023846",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610008.html"
+    },
+    {
+      "timestamp": "20061011024124",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610009.html"
+    },
+    {
+      "timestamp": "20061011023920",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610010.html"
+    },
+    {
+      "timestamp": "20061011024052",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610011.html"
+    },
+    {
+      "timestamp": "20061011023930",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610012.html"
+    },
+    {
+      "timestamp": "20061011024112",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610013.html"
+    },
+    {
+      "timestamp": "20061011023925",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610014.html"
+    },
+    {
+      "timestamp": "20061011024028",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610015.html"
+    },
+    {
+      "timestamp": "20061011023934",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610016.html"
+    },
+    {
+      "timestamp": "20061011024046",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610017.html"
+    },
+    {
+      "timestamp": "20061011023946",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610019.html"
+    },
+    {
+      "timestamp": "20061011024120",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610022.html"
+    },
+    {
+      "timestamp": "20061011024056",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610024.html"
+    },
+    {
+      "timestamp": "20061011024001",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610025.html"
+    },
+    {
+      "timestamp": "20061011023838",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610026.html"
+    },
+    {
+      "timestamp": "20061011024021",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610028.html"
+    },
+    {
+      "timestamp": "20061011023950",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610030.html"
+    },
+    {
+      "timestamp": "20061011024100",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610031.html"
+    },
+    {
+      "timestamp": "20061011024013",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610032.html"
+    },
+    {
+      "timestamp": "20061011021947",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610033.html"
+    },
+    {
+      "timestamp": "20061011024041",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610034.html"
+    },
+    {
+      "timestamp": "20061011024033",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610035.html"
+    },
+    {
+      "timestamp": "20061011024107",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610036.html"
+    },
+    {
+      "timestamp": "20061011024005",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610038.html"
+    },
+    {
+      "timestamp": "20061011024038",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610039.html"
+    },
+    {
+      "timestamp": "20061011021954",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610041.html"
+    },
+    {
+      "timestamp": "20061011022016",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610042.html"
+    },
+    {
+      "timestamp": "20061011021958",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610043.html"
+    },
+    {
+      "timestamp": "20061011021940",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610044.html"
+    },
+    {
+      "timestamp": "20061011022007",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610053.html"
+    },
+    {
+      "timestamp": "20061011021943",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610055.html"
+    },
+    {
+      "timestamp": "20061011022011",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610057.html"
+    },
+    {
+      "timestamp": "20061011023842",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610065.html"
+    },
+    {
+      "timestamp": "20061011024017",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610066.html"
+    },
+    {
+      "timestamp": "20061011023957",
+      "original": "http://www.skyperfectv.co.jp/info_programme/002_movie/002_0610067.html"
+    },
+    {
+      "timestamp": "20061230123046",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/003_music/003_0000024.html"
+    },
+    {
+      "timestamp": "20060102181611",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/003_music/003_0000041.html"
+    },
+    {
+      "timestamp": "20060118233632",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/003_music/003_0501019.html"
+    },
+    {
+      "timestamp": "20060326132355",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/003_music/003_0506013.html"
+    },
+    {
+      "timestamp": "20060427223152",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/003_music/003_0507001.html"
+    },
+    {
+      "timestamp": "20060106131846",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/003_music/003_0507009.html"
+    },
+    {
+      "timestamp": "20060303074032",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/003_music/003_0507018.html"
+    },
+    {
+      "timestamp": "20060104115119",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/003_music/003_0510002.html"
+    },
+    {
+      "timestamp": "20060104103712",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/003_music/003_0510003.html"
+    },
+    {
+      "timestamp": "20060104102530",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/003_music/003_0510004.html"
+    },
+    {
+      "timestamp": "20060104103055",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/003_music/003_0510005.html"
+    },
+    {
+      "timestamp": "20060104121333",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/003_music/003_0510007.html"
+    },
+    {
+      "timestamp": "20060104110517",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/003_music/003_0510009.html"
+    },
+    {
+      "timestamp": "20060104103646",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/003_music/003_0510010.html"
+    },
+    {
+      "timestamp": "20060104105107",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/003_music/003_0510011.html"
+    },
+    {
+      "timestamp": "20060104105026",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/003_music/003_0510012.html"
+    },
+    {
+      "timestamp": "20060104110345",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/003_music/003_0510015.html"
+    },
+    {
+      "timestamp": "20060130151219",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/003_music/003_0511003.html"
+    },
+    {
+      "timestamp": "20060116021318",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/003_music/003_0512005.html"
+    },
+    {
+      "timestamp": "20060107154456",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/003_music/003_0601018.html"
+    },
+    {
+      "timestamp": "20061109174918",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/003_music/003_0604007.html"
+    },
+    {
+      "timestamp": "20060824153226",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/004_anime/004_0608070.html"
+    },
+    {
+      "timestamp": "20060110170638",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/005_drama/005_0505024.html"
+    },
+    {
+      "timestamp": "20060104112359",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/005_drama/005_0510018.html"
+    },
+    {
+      "timestamp": "20060220110642",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/005_drama/005_0602003.html"
+    },
+    {
+      "timestamp": "20060220110644",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/005_drama/005_0602004.html"
+    },
+    {
+      "timestamp": "20060220110657",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/005_drama/005_0602005.html"
+    },
+    {
+      "timestamp": "20060220110658",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/005_drama/005_0602018.html"
+    },
+    {
+      "timestamp": "20060220110715",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/005_drama/005_0602019.html"
+    },
+    {
+      "timestamp": "20060220111107",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/006_entertainment/006_0000046.html"
+    },
+    {
+      "timestamp": "20060717031818",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/006_entertainment/006_0502033.html"
+    },
+    {
+      "timestamp": "20060303080718",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/006_entertainment/006_0504012.html"
+    },
+    {
+      "timestamp": "20061026213534",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/006_entertainment/006_0508008.html"
+    },
+    {
+      "timestamp": "20060703134315",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/006_entertainment/006_0508009.html"
+    },
+    {
+      "timestamp": "20060106123155",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/006_entertainment/006_0509005.html"
+    },
+    {
+      "timestamp": "20060212064041",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/006_entertainment/006_0511014.html"
+    },
+    {
+      "timestamp": "20060106071203",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/006_entertainment/006_0512010.html"
+    },
+    {
+      "timestamp": "20060113135417",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/006_entertainment/006_0601006.html"
+    },
+    {
+      "timestamp": "20060401005539",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/006_entertainment/006_0601020.html"
+    },
+    {
+      "timestamp": "20060405160323",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/006_entertainment/006_0602030.html"
+    },
+    {
+      "timestamp": "20060104061353",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/007_news/007_0510002.html"
+    },
+    {
+      "timestamp": "20060104055735",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/007_news/007_0510003.html"
+    },
+    {
+      "timestamp": "20060104055041",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/007_news/007_0510004.html"
+    },
+    {
+      "timestamp": "20060104061108",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/007_news/007_0510005.html"
+    },
+    {
+      "timestamp": "20060104060731",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/007_news/007_0510006.html"
+    },
+    {
+      "timestamp": "20060104040402",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/007_news/007_0510008.html"
+    },
+    {
+      "timestamp": "20060104055528",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/007_news/007_0510009.html"
+    },
+    {
+      "timestamp": "20060428130240",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/007_news/007_0511003.html"
+    },
+    {
+      "timestamp": "20060106195930",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/007_news/007_0601007.html"
+    },
+    {
+      "timestamp": "20060106222623",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/007_news/007_0601009.html"
+    },
+    {
+      "timestamp": "20060220105935",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/007_news/007_0602001.html"
+    },
+    {
+      "timestamp": "20060220110028",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/007_news/007_0602007.html"
+    },
+    {
+      "timestamp": "20060220110039",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/007_news/007_0602008.html"
+    },
+    {
+      "timestamp": "20060220110043",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/007_news/007_0602009.html"
+    },
+    {
+      "timestamp": "20060220110052",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/007_news/007_0602010.html"
+    },
+    {
+      "timestamp": "20060220110102",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/007_news/007_0602011.html"
+    },
+    {
+      "timestamp": "20060220110108",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/007_news/007_0602012.html"
+    },
+    {
+      "timestamp": "20061230222337",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/008_lifestyle/008_0000017.html"
+    },
+    {
+      "timestamp": "20060220110940",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/008_lifestyle/008_0509001.html"
+    },
+    {
+      "timestamp": "20060104175103",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/008_lifestyle/008_0510002.html"
+    },
+    {
+      "timestamp": "20060104185217",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/008_lifestyle/008_0510003.html"
+    },
+    {
+      "timestamp": "20060104183754",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/008_lifestyle/008_0510004.html"
+    },
+    {
+      "timestamp": "20060104184028",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/008_lifestyle/008_0510005.html"
+    },
+    {
+      "timestamp": "20060104180536",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/008_lifestyle/008_0510006.html"
+    },
+    {
+      "timestamp": "20060104183907",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/008_lifestyle/008_0510007.html"
+    },
+    {
+      "timestamp": "20060104175126",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/008_lifestyle/008_0510008.html"
+    },
+    {
+      "timestamp": "20060104173340",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/008_lifestyle/008_0510009.html"
+    },
+    {
+      "timestamp": "20060104175440",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/008_lifestyle/008_0510010.html"
+    },
+    {
+      "timestamp": "20060104183555",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/008_lifestyle/008_0510011.html"
+    },
+    {
+      "timestamp": "20060104174744",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/008_lifestyle/008_0510012.html"
+    },
+    {
+      "timestamp": "20060104181919",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/008_lifestyle/008_0510013.html"
+    },
+    {
+      "timestamp": "20060101091132",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/008_lifestyle/008_0510014.html"
+    },
+    {
+      "timestamp": "20060104182040",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/008_lifestyle/008_0510015.html"
+    },
+    {
+      "timestamp": "20060101215442",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/008_lifestyle/008_0511012.html"
+    },
+    {
+      "timestamp": "20060216104906",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/008_lifestyle/008_0601006.html"
+    },
+    {
+      "timestamp": "20061011021923",
+      "original": "http://www.skyperfectv.co.jp/info_programme/008_lifestyle/008_0610001.html"
+    },
+    {
+      "timestamp": "20061011021932",
+      "original": "http://www.skyperfectv.co.jp/info_programme/008_lifestyle/008_0610002.html"
+    },
+    {
+      "timestamp": "20060220111018",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/009_public_race/009_0512015.html"
+    },
+    {
+      "timestamp": "20060405154354",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/009_public_race/009_0601008.html"
+    },
+    {
+      "timestamp": "20060619090551",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/009_public_race/009_0605007.html"
+    },
+    {
+      "timestamp": "20060717031806",
+      "original": "http://www.skyperfectv.co.jp:80/info_programme/009_public_race/009_0607001.html"
+    },
+    {
+      "timestamp": "20060619081918",
+      "original": "http://www.skyperfectv.co.jp:80/jonen/majyu/index.html"
+    },
+    {
+      "timestamp": "20061019054659",
+      "original": "http://www.skyperfectv.co.jp:80/jonen/popup/pop12.html"
+    },
+    {
+      "timestamp": "20060706010110",
+      "original": "http://www.skyperfectv.co.jp:80/kat-tun/"
+    },
+    {
+      "timestamp": "20060705135627",
+      "original": "http://www.skyperfectv.co.jp:80/kat-tun/cm.html"
+    },
+    {
+      "timestamp": "20060705200459",
+      "original": "http://www.skyperfectv.co.jp:80/kat-tun/index.html"
+    },
+    {
+      "timestamp": "20061101043802",
+      "original": "http://www.skyperfectv.co.jp:80/kouei/"
+    },
+    {
+      "timestamp": "20060101205216",
+      "original": "http://www.skyperfectv.co.jp:80/lifestyle/"
+    },
+    {
+      "timestamp": "20060104004702",
+      "original": "http://www.skyperfectv.co.jp:80/magazine/"
+    },
+    {
+      "timestamp": "20060104000735",
+      "original": "http://www.skyperfectv.co.jp:80/MAILMAG/"
+    },
+    {
+      "timestamp": "20060210030059",
+      "original": "http://www.skyperfectv.co.jp:80/MAILMAG/regulation.html"
+    },
+    {
+      "timestamp": "20060103173246",
+      "original": "http://www.skyperfectv.co.jp:80/map/"
+    },
+    {
+      "timestamp": "20061011031706",
+      "original": "http://www.skyperfectv.co.jp/map/index.html"
+    },
+    {
+      "timestamp": "20060102100459",
+      "original": "http://www.skyperfectv.co.jp:80/movie/"
+    },
+    {
+      "timestamp": "20060105005132",
+      "original": "http://www.skyperfectv.co.jp:80/movie/campaign/"
+    },
+    {
+      "timestamp": "20060220103349",
+      "original": "http://www.skyperfectv.co.jp:80/movie/ch_negotiator/"
+    },
+    {
+      "timestamp": "20060303101100",
+      "original": "http://www.skyperfectv.co.jp:80/movie/ch_negotiator/interview.html"
+    },
+    {
+      "timestamp": "20060104084405",
+      "original": "http://www.skyperfectv.co.jp:80/movie/ppv/"
+    },
+    {
+      "timestamp": "20060104094229",
+      "original": "http://www.skyperfectv.co.jp:80/music/"
+    },
+    {
+      "timestamp": "20060208055445",
+      "original": "http://www.skyperfectv.co.jp:80/music/fes/"
+    },
+    {
+      "timestamp": "20060619202124",
+      "original": "http://www.skyperfectv.co.jp:80/music/fes/airguiter/"
+    },
+    {
+      "timestamp": "20060304070857",
+      "original": "http://www.skyperfectv.co.jp:80/music/fes/airguiter/index.html"
+    },
+    {
+      "timestamp": "20060223132734",
+      "original": "http://www.skyperfectv.co.jp:80/music/fes/cm/index.html"
+    },
+    {
+      "timestamp": "20060405154759",
+      "original": "http://www.skyperfectv.co.jp:80/music/fes/index.html"
+    },
+    {
+      "timestamp": "20060106122747",
+      "original": "http://www.skyperfectv.co.jp:80/music/fes/program/index.html"
+    },
+    {
+      "timestamp": "20060224025131",
+      "original": "http://www.skyperfectv.co.jp:80/music/fes/program2/index.html"
+    },
+    {
+      "timestamp": "20060214001912",
+      "original": "http://www.skyperfectv.co.jp:80/music/fes/report/index.html"
+    },
+    {
+      "timestamp": "20060812121553",
+      "original": "http://www.skyperfectv.co.jp:80/music/fes2006/"
+    },
+    {
+      "timestamp": "20060901091717",
+      "original": "http://www.skyperfectv.co.jp:80/music/fes2006/cm/"
+    },
+    {
+      "timestamp": "20060901091023",
+      "original": "http://www.skyperfectv.co.jp:80/music/fes2006/cm/movie/"
+    },
+    {
+      "timestamp": "20061109174227",
+      "original": "http://www.skyperfectv.co.jp:80/music/fes2006/hi-vision/"
+    },
+    {
+      "timestamp": "20061110005719",
+      "original": "http://www.skyperfectv.co.jp:80/music/fes2006/related/"
+    },
+    {
+      "timestamp": "20060824151108",
+      "original": "http://www.skyperfectv.co.jp:80/music/fes2006/schedule/"
+    },
+    {
+      "timestamp": "20060220102405",
+      "original": "http://www.skyperfectv.co.jp:80/music/liveaddict/"
+    },
+    {
+      "timestamp": "20060405154805",
+      "original": "http://www.skyperfectv.co.jp:80/music/matsuken_samba/"
+    },
+    {
+      "timestamp": "20060104095644",
+      "original": "http://www.skyperfectv.co.jp:80/news/"
+    },
+    {
+      "timestamp": "20060104231710",
+      "original": "http://www.skyperfectv.co.jp:80/pac/"
+    },
+    {
+      "timestamp": "20061011022526",
+      "original": "http://www.skyperfectv.co.jp/plus/"
+    },
+    {
+      "timestamp": "20060106063853",
+      "original": "http://www.skyperfectv.co.jp:80/ppv/"
+    },
+    {
+      "timestamp": "20061011020407",
+      "original": "http://www.skyperfectv.co.jp/ppv/index.html"
+    },
+    {
+      "timestamp": "20060103071350",
+      "original": "http://www.skyperfectv.co.jp:80/present/wallpaper/"
+    },
+    {
+      "timestamp": "20060102113756",
+      "original": "http://www.skyperfectv.co.jp:80/privacypolicy/"
+    },
+    {
+      "timestamp": "20060103083948",
+      "original": "http://www.skyperfectv.co.jp:80/privacypolicy/list/"
+    },
+    {
+      "timestamp": "20060220102511",
+      "original": "http://www.skyperfectv.co.jp:80/PRS/"
+    },
+    {
+      "timestamp": "20060104222721",
+      "original": "http://www.skyperfectv.co.jp:80/public_race/"
+    },
+    {
+      "timestamp": "20060220103550",
+      "original": "http://www.skyperfectv.co.jp:80/qupuqupu_and_kepukepu/"
+    },
+    {
+      "timestamp": "20060104072726",
+      "original": "http://www.skyperfectv.co.jp:80/redirect/channel/nickelodeon.html"
+    },
+    {
+      "timestamp": "20060106211524",
+      "original": "http://www.skyperfectv.co.jp:80/redirect/channel/ntvplus.html"
+    },
+    {
+      "timestamp": "20060104042055",
+      "original": "http://www.skyperfectv.co.jp:80/reserve_sheet/2005_09/"
+    },
+    {
+      "timestamp": "20060104231754",
+      "original": "http://www.skyperfectv.co.jp:80/reserve_sheet/2005_12/"
+    },
+    {
+      "timestamp": "20060101193201",
+      "original": "http://www.skyperfectv.co.jp:80/service/"
+    },
+    {
+      "timestamp": "20060111070854",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/"
+    },
+    {
+      "timestamp": "20060208031119",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/contact/index.html"
+    },
+    {
+      "timestamp": "20060106064003",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/cop_top.html"
+    },
+    {
+      "timestamp": "20060104100322",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/e/"
+    },
+    {
+      "timestamp": "20060116010654",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/e/frame/fr_ir_event1.html"
+    },
+    {
+      "timestamp": "20060116023944",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/e/frame/fr_press1_1.html"
+    },
+    {
+      "timestamp": "20060101084109",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/e/index.html"
+    },
+    {
+      "timestamp": "20060102181916",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/e/profile/annai5.html"
+    },
+    {
+      "timestamp": "20060116002935",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/e/sitemap_e.html"
+    },
+    {
+      "timestamp": "20060220104351",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/frame/fr_faq.html"
+    },
+    {
+      "timestamp": "20060220105211",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/frame/fr_ir_event1.html"
+    },
+    {
+      "timestamp": "20060108191404",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/frame/fr_kabuka.html"
+    },
+    {
+      "timestamp": "20060204184125",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/frame/fr_kessan.html"
+    },
+    {
+      "timestamp": "20060208003445",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/frame/fr_press1_1.html"
+    },
+    {
+      "timestamp": "20060106051205",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/frame/fr_prof1.html"
+    },
+    {
+      "timestamp": "20060106063221",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/frame/fr_prof2.html"
+    },
+    {
+      "timestamp": "20060108184236",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/frame/fr_prof3.html"
+    },
+    {
+      "timestamp": "20060204173353",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/frame/fr_prof5.html"
+    },
+    {
+      "timestamp": "20060208042336",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/frame/fr_prof6.html"
+    },
+    {
+      "timestamp": "20060104222745",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/frame/fr_prof7.html"
+    },
+    {
+      "timestamp": "20060208014147",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/frame/fr_prof8.html"
+    },
+    {
+      "timestamp": "20060108200013",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/frame/fr_prof9.html"
+    },
+    {
+      "timestamp": "20060220104642",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/frame/fr_toshi1.html"
+    },
+    {
+      "timestamp": "20060108185317",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/frame/fr_zaimu1.html"
+    },
+    {
+      "timestamp": "20060108202332",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/frame/fr_zaimu14.html"
+    },
+    {
+      "timestamp": "20060108202833",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/frame/fr_zaimu4.html"
+    },
+    {
+      "timestamp": "20060220104651",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/frame/fr_zaimu5.html"
+    },
+    {
+      "timestamp": "20060208042342",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/index.html"
+    },
+    {
+      "timestamp": "20060220102433",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/kabu/jigyouhoukoku.html"
+    },
+    {
+      "timestamp": "20060206022051",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/kabu/kabusikijimu.html"
+    },
+    {
+      "timestamp": "20060106052749",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/profile/comprof2005/business_f.html"
+    },
+    {
+      "timestamp": "20060204163134",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/profile/comprof2005/corpdata_f.html"
+    },
+    {
+      "timestamp": "20060208040102",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/profile/comprof2005/customerctr_f.html"
+    },
+    {
+      "timestamp": "20060208024152",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/profile/comprof2005/enkaku.html"
+    },
+    {
+      "timestamp": "20060204110730",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/profile/comprof2005/ftth_f.html"
+    },
+    {
+      "timestamp": "20060208014648",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/profile/comprof2005/mediactr_f.html"
+    },
+    {
+      "timestamp": "20060208041448",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/profile/comprof2005/president_f.html"
+    },
+    {
+      "timestamp": "20060108193101",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/profile/comprof2005/role_f.html"
+    },
+    {
+      "timestamp": "20060208015001",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/profile/comprof2005/value_f.html"
+    },
+    {
+      "timestamp": "20060214041509",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/profile/m_annai1.html"
+    },
+    {
+      "timestamp": "20060101215746",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/profile/m_annai5.html"
+    },
+    {
+      "timestamp": "20060618204101",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/profile/m_keieijin.html"
+    },
+    {
+      "timestamp": "20060104224355",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/profile/m_saiyou.html"
+    },
+    {
+      "timestamp": "20060710091959",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/profile/m_saiyou2.html"
+    },
+    {
+      "timestamp": "20060710092153",
+      "original": "http://www.skyperfectv.co.jp:80/skycom/profile/m_saiyou_fresh.html"
+    },
+    {
+      "timestamp": "20060101203037",
+      "original": "http://www.skyperfectv.co.jp:80/sports/"
+    },
+    {
+      "timestamp": "20060116094203",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/"
+    },
+    {
+      "timestamp": "20060114062203",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/index.html"
+    },
+    {
+      "timestamp": "20060616182824",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/MLBguide.html"
+    },
+    {
+      "timestamp": "20060411122731",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/MLBguide_04.html"
+    },
+    {
+      "timestamp": "20060621091747",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/MLBguide_05.html"
+    },
+    {
+      "timestamp": "20060621091839",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/MLBguide_06.html"
+    },
+    {
+      "timestamp": "20060220104405",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/packset/"
+    },
+    {
+      "timestamp": "20060701055942",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/pro/"
+    },
+    {
+      "timestamp": "20060626024518",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/baffaloes.html"
+    },
+    {
+      "timestamp": "20060626024335",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/baystars.html"
+    },
+    {
+      "timestamp": "20060626023955",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/carp.html"
+    },
+    {
+      "timestamp": "20060411122824",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/dragons.html"
+    },
+    {
+      "timestamp": "20060620114526",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/dragons_07.html"
+    },
+    {
+      "timestamp": "20060626024219",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/eagles.html"
+    },
+    {
+      "timestamp": "20060626024344",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/fighters.html"
+    },
+    {
+      "timestamp": "20060411122809",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/giants.html"
+    },
+    {
+      "timestamp": "20060411122750",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/hawks.html"
+    },
+    {
+      "timestamp": "20060411122800",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/index.html"
+    },
+    {
+      "timestamp": "20060424172210",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/index_04.html"
+    },
+    {
+      "timestamp": "20060626024400",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/index_07.html"
+    },
+    {
+      "timestamp": "20061012011435",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/index_10.html"
+    },
+    {
+      "timestamp": "20060626024111",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/lions.html"
+    },
+    {
+      "timestamp": "20060626023855",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/marines.html"
+    },
+    {
+      "timestamp": "20061018121331",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/p_off.html"
+    },
+    {
+      "timestamp": "20061012134927",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/c_10.html"
+    },
+    {
+      "timestamp": "20060211055914",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/c_4.html"
+    },
+    {
+      "timestamp": "20060303053352",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/c_7.html"
+    },
+    {
+      "timestamp": "20061018121725",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/c_8.html"
+    },
+    {
+      "timestamp": "20060303053419",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/c_9.html"
+    },
+    {
+      "timestamp": "20060223042256",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/central/hanshin10.html"
+    },
+    {
+      "timestamp": "20060301063255",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/central/hanshin5.html"
+    },
+    {
+      "timestamp": "20060327050657",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/central/hanshin6.html"
+    },
+    {
+      "timestamp": "20061018122120",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/central/hanshin7.html"
+    },
+    {
+      "timestamp": "20061109035015",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/central/hanshin8.html"
+    },
+    {
+      "timestamp": "20060212144634",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/central/hanshin9.html"
+    },
+    {
+      "timestamp": "20060210193116",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/central/hiroshima5.html"
+    },
+    {
+      "timestamp": "20061018122054",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/central/kyojin8.html"
+    },
+    {
+      "timestamp": "20061110125608",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/central/kyojin9.html"
+    },
+    {
+      "timestamp": "20061018115907",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/central/yakult7.html"
+    },
+    {
+      "timestamp": "20061107235430",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/central/yakult8.html"
+    },
+    {
+      "timestamp": "20060214025422",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/cp_5.html"
+    },
+    {
+      "timestamp": "20061017170345",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/cp_6.html"
+    },
+    {
+      "timestamp": "20061012012307",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/p_10.html"
+    },
+    {
+      "timestamp": "20060211055848",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/p_4.html"
+    },
+    {
+      "timestamp": "20060303053423",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/p_7.html"
+    },
+    {
+      "timestamp": "20061012135405",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/p_8.html"
+    },
+    {
+      "timestamp": "20060303053408",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/p_9.html"
+    },
+    {
+      "timestamp": "20061018122043",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/pacific/lotte7.html"
+    },
+    {
+      "timestamp": "20061108210737",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/pacific/lotte8.html"
+    },
+    {
+      "timestamp": "20061012012329",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/pacific/nipp_h8.html"
+    },
+    {
+      "timestamp": "20061018122107",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/pacific/nipp_h9.html"
+    },
+    {
+      "timestamp": "20061012134915",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/pacific/rakuten9.html"
+    },
+    {
+      "timestamp": "20060102115734",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/schedule/pacific/soft_b5.html"
+    },
+    {
+      "timestamp": "20060626024412",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/swallows.html"
+    },
+    {
+      "timestamp": "20060411122811",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/tigers.html"
+    },
+    {
+      "timestamp": "20060720115946",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/schedule/tigers_08.html"
+    },
+    {
+      "timestamp": "20061012011951",
+      "original": "http://www.skyperfectv.co.jp:80/sports/baseball/sw/astros.html"
+    },
+    {
+      "timestamp": "20060102092605",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/"
+    },
+    {
+      "timestamp": "20060118034806",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/"
+    },
+    {
+      "timestamp": "20061011023448",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000001.html"
+    },
+    {
+      "timestamp": "20061011023509",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000002.html"
+    },
+    {
+      "timestamp": "20061011023140",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000003.html"
+    },
+    {
+      "timestamp": "20061011023514",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000004.html"
+    },
+    {
+      "timestamp": "20061011023504",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000005.html"
+    },
+    {
+      "timestamp": "20061011023338",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000006.html"
+    },
+    {
+      "timestamp": "20061011023303",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000007.html"
+    },
+    {
+      "timestamp": "20061011023432",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000008.html"
+    },
+    {
+      "timestamp": "20061011023442",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000009.html"
+    },
+    {
+      "timestamp": "20061011023219",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000010.html"
+    },
+    {
+      "timestamp": "20061011023315",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000011.html"
+    },
+    {
+      "timestamp": "20061011023152",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000012.html"
+    },
+    {
+      "timestamp": "20061011023157",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000013.html"
+    },
+    {
+      "timestamp": "20061011023459",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000014.html"
+    },
+    {
+      "timestamp": "20061011023321",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000015.html"
+    },
+    {
+      "timestamp": "20061011023454",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000016.html"
+    },
+    {
+      "timestamp": "20061011023232",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000017.html"
+    },
+    {
+      "timestamp": "20061011023356",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000018.html"
+    },
+    {
+      "timestamp": "20061011023333",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000019.html"
+    },
+    {
+      "timestamp": "20061011023413",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000020.html"
+    },
+    {
+      "timestamp": "20061011023214",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000021.html"
+    },
+    {
+      "timestamp": "20061011023121",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000022.html"
+    },
+    {
+      "timestamp": "20061011023206",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000023.html"
+    },
+    {
+      "timestamp": "20061011023519",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000024.html"
+    },
+    {
+      "timestamp": "20061011023236",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000025.html"
+    },
+    {
+      "timestamp": "20061011023346",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000026.html"
+    },
+    {
+      "timestamp": "20061011023401",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000027.html"
+    },
+    {
+      "timestamp": "20061011023240",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000028.html"
+    },
+    {
+      "timestamp": "20061011023113",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000029.html"
+    },
+    {
+      "timestamp": "20061011023255",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000030.html"
+    },
+    {
+      "timestamp": "20060209143030",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000031.html"
+    },
+    {
+      "timestamp": "20061011023437",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000032.html"
+    },
+    {
+      "timestamp": "20061011023259",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000033.html"
+    },
+    {
+      "timestamp": "20061011023202",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000034.html"
+    },
+    {
+      "timestamp": "20061011023227",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000035.html"
+    },
+    {
+      "timestamp": "20060719203945",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000036.html"
+    },
+    {
+      "timestamp": "20061011023126",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000037.html"
+    },
+    {
+      "timestamp": "20061011023418",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000038.html"
+    },
+    {
+      "timestamp": "20061011023223",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000039.html"
+    },
+    {
+      "timestamp": "20061011023350",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000040.html"
+    },
+    {
+      "timestamp": "20060304225204",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000041.html"
+    },
+    {
+      "timestamp": "20060304225214",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000042.html"
+    },
+    {
+      "timestamp": "20060214022133",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000043.html"
+    },
+    {
+      "timestamp": "20061011023427",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000044.html"
+    },
+    {
+      "timestamp": "20061011023407",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000045.html"
+    },
+    {
+      "timestamp": "20061011023250",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000046.html"
+    },
+    {
+      "timestamp": "20060618131543",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000047.html"
+    },
+    {
+      "timestamp": "20061011023210",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000048.html"
+    },
+    {
+      "timestamp": "20061011023130",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000049.html"
+    },
+    {
+      "timestamp": "20061011023135",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000050.html"
+    },
+    {
+      "timestamp": "20061011021912",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000051.html"
+    },
+    {
+      "timestamp": "20061011021120",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/kakuryo_yasuda/kakuryo_yasuda_000052.html"
+    },
+    {
+      "timestamp": "20060130151039",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/koji_huse/koji_huse_000001.html"
+    },
+    {
+      "timestamp": "20061011022204",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000002.html"
+    },
+    {
+      "timestamp": "20061011022351",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000003.html"
+    },
+    {
+      "timestamp": "20061011022057",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000004.html"
+    },
+    {
+      "timestamp": "20061011022155",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000005.html"
+    },
+    {
+      "timestamp": "20061011022144",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000006.html"
+    },
+    {
+      "timestamp": "20061011022228",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000007.html"
+    },
+    {
+      "timestamp": "20061011022408",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000008.html"
+    },
+    {
+      "timestamp": "20061011022431",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000009.html"
+    },
+    {
+      "timestamp": "20061011022112",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000010.html"
+    },
+    {
+      "timestamp": "20061011022209",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000011.html"
+    },
+    {
+      "timestamp": "20061011022330",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000012.html"
+    },
+    {
+      "timestamp": "20061011022256",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000013.html"
+    },
+    {
+      "timestamp": "20061011022251",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000014.html"
+    },
+    {
+      "timestamp": "20061011022312",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000015.html"
+    },
+    {
+      "timestamp": "20061011022053",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000016.html"
+    },
+    {
+      "timestamp": "20061011022241",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000017.html"
+    },
+    {
+      "timestamp": "20061011022334",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000018.html"
+    },
+    {
+      "timestamp": "20061011022421",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000019.html"
+    },
+    {
+      "timestamp": "20061011022117",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000020.html"
+    },
+    {
+      "timestamp": "20061011022213",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000021.html"
+    },
+    {
+      "timestamp": "20061011022136",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000022.html"
+    },
+    {
+      "timestamp": "20061011022343",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000023.html"
+    },
+    {
+      "timestamp": "20061011022302",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000024.html"
+    },
+    {
+      "timestamp": "20061011022140",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000025.html"
+    },
+    {
+      "timestamp": "20061011022127",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000026.html"
+    },
+    {
+      "timestamp": "20061011022245",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000027.html"
+    },
+    {
+      "timestamp": "20061011022440",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000028.html"
+    },
+    {
+      "timestamp": "20061011022149",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000029.html"
+    },
+    {
+      "timestamp": "20061011022326",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000030.html"
+    },
+    {
+      "timestamp": "20061011022107",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000031.html"
+    },
+    {
+      "timestamp": "20061011022102",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000032.html"
+    },
+    {
+      "timestamp": "20061011022359",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000033.html"
+    },
+    {
+      "timestamp": "20061011022307",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000034.html"
+    },
+    {
+      "timestamp": "20061011022236",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000035.html"
+    },
+    {
+      "timestamp": "20061011022219",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000036.html"
+    },
+    {
+      "timestamp": "20061011022403",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000037.html"
+    },
+    {
+      "timestamp": "20061011022132",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000038.html"
+    },
+    {
+      "timestamp": "20061011022436",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000039.html"
+    },
+    {
+      "timestamp": "20061011022448",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000040.html"
+    },
+    {
+      "timestamp": "20061011022317",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000041.html"
+    },
+    {
+      "timestamp": "20061011022444",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000042.html"
+    },
+    {
+      "timestamp": "20060304225106",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/koji_huse/koji_huse_000043.html"
+    },
+    {
+      "timestamp": "20060304225119",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/koji_huse/koji_huse_000044.html"
+    },
+    {
+      "timestamp": "20060214022033",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/koji_huse/koji_huse_000045.html"
+    },
+    {
+      "timestamp": "20060220111139",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/koji_huse/koji_huse_000046.html"
+    },
+    {
+      "timestamp": "20061011022417",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000047.html"
+    },
+    {
+      "timestamp": "20060423190923",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/koji_huse/koji_huse_000048.html"
+    },
+    {
+      "timestamp": "20061011022355",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000049.html"
+    },
+    {
+      "timestamp": "20061011022321",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000050.html"
+    },
+    {
+      "timestamp": "20061011022122",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000051.html"
+    },
+    {
+      "timestamp": "20061011022232",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000052.html"
+    },
+    {
+      "timestamp": "20061011021916",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000053.html"
+    },
+    {
+      "timestamp": "20061011020928",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000054.html"
+    },
+    {
+      "timestamp": "20061109112149",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/koji_huse/koji_huse_000055.html"
+    },
+    {
+      "timestamp": "20061011022835",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000001.html"
+    },
+    {
+      "timestamp": "20061011022913",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000002.html"
+    },
+    {
+      "timestamp": "20061011022844",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000003.html"
+    },
+    {
+      "timestamp": "20061011023031",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000004.html"
+    },
+    {
+      "timestamp": "20061011022955",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000005.html"
+    },
+    {
+      "timestamp": "20061011023017",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000006.html"
+    },
+    {
+      "timestamp": "20061011022923",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000007.html"
+    },
+    {
+      "timestamp": "20061011022856",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000008.html"
+    },
+    {
+      "timestamp": "20061011022909",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000009.html"
+    },
+    {
+      "timestamp": "20061011023026",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000010.html"
+    },
+    {
+      "timestamp": "20061011023044",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000011.html"
+    },
+    {
+      "timestamp": "20061011023035",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000012.html"
+    },
+    {
+      "timestamp": "20061011022827",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000013.html"
+    },
+    {
+      "timestamp": "20061011022946",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000014.html"
+    },
+    {
+      "timestamp": "20061011023056",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000015.html"
+    },
+    {
+      "timestamp": "20061011022904",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000016.html"
+    },
+    {
+      "timestamp": "20061011022951",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000017.html"
+    },
+    {
+      "timestamp": "20061011022927",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000018.html"
+    },
+    {
+      "timestamp": "20061011022839",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000019.html"
+    },
+    {
+      "timestamp": "20061011023008",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000020.html"
+    },
+    {
+      "timestamp": "20060211020722",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/takeshi_abe/takeshi_abe_000021.html"
+    },
+    {
+      "timestamp": "20061011022936",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000022.html"
+    },
+    {
+      "timestamp": "20061011023004",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000023.html"
+    },
+    {
+      "timestamp": "20061011022932",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000024.html"
+    },
+    {
+      "timestamp": "20061011022940",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000025.html"
+    },
+    {
+      "timestamp": "20061011023050",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000026.html"
+    },
+    {
+      "timestamp": "20061011023000",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000027.html"
+    },
+    {
+      "timestamp": "20061011023022",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000028.html"
+    },
+    {
+      "timestamp": "20061011023013",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000029.html"
+    },
+    {
+      "timestamp": "20060304225126",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/takeshi_abe/takeshi_abe_000030.html"
+    },
+    {
+      "timestamp": "20060304225131",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/takeshi_abe/takeshi_abe_000031.html"
+    },
+    {
+      "timestamp": "20060214022152",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/takeshi_abe/takeshi_abe_000032.html"
+    },
+    {
+      "timestamp": "20060220111253",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/takeshi_abe/takeshi_abe_000033.html"
+    },
+    {
+      "timestamp": "20061011022852",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000034.html"
+    },
+    {
+      "timestamp": "20061011021101",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/takeshi_abe/takeshi_abe_000035.html"
+    },
+    {
+      "timestamp": "20061011020857",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/yukiyo_matumoto/yukiyo_matumoto_000001.html"
+    },
+    {
+      "timestamp": "20061011020604",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/yukiyo_matumoto/yukiyo_matumoto_000002.html"
+    },
+    {
+      "timestamp": "20061011020700",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/yukiyo_matumoto/yukiyo_matumoto_000003.html"
+    },
+    {
+      "timestamp": "20061011020655",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/yukiyo_matumoto/yukiyo_matumoto_000004.html"
+    },
+    {
+      "timestamp": "20061011020651",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/yukiyo_matumoto/yukiyo_matumoto_000005.html"
+    },
+    {
+      "timestamp": "20061011020805",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/yukiyo_matumoto/yukiyo_matumoto_000006.html"
+    },
+    {
+      "timestamp": "20061011020647",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/yukiyo_matumoto/yukiyo_matumoto_000007.html"
+    },
+    {
+      "timestamp": "20061011020958",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/yukiyo_matumoto/yukiyo_matumoto_000008.html"
+    },
+    {
+      "timestamp": "20060304225232",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/yukiyo_matumoto/yukiyo_matumoto_000009.html"
+    },
+    {
+      "timestamp": "20060304225238",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/yukiyo_matumoto/yukiyo_matumoto_000010.html"
+    },
+    {
+      "timestamp": "20060214022103",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/yukiyo_matumoto/yukiyo_matumoto_000011.html"
+    },
+    {
+      "timestamp": "20061011021042",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/yukiyo_matumoto/yukiyo_matumoto_000012.html"
+    },
+    {
+      "timestamp": "20061011020845",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/yukiyo_matumoto/yukiyo_matumoto_000013.html"
+    },
+    {
+      "timestamp": "20061011020608",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/yukiyo_matumoto/yukiyo_matumoto_000014.html"
+    },
+    {
+      "timestamp": "20061011020600",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/yukiyo_matumoto/yukiyo_matumoto_000015.html"
+    },
+    {
+      "timestamp": "20061011020941",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/yukiyo_matumoto/yukiyo_matumoto_000016.html"
+    },
+    {
+      "timestamp": "20061011020630",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/yukiyo_matumoto/yukiyo_matumoto_000017.html"
+    },
+    {
+      "timestamp": "20060928130500",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/yukiyo_matumoto/yukiyo_matumoto_000018.html"
+    },
+    {
+      "timestamp": "20061011020737",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/yukiyo_matumoto/yukiyo_matumoto_000019.html"
+    },
+    {
+      "timestamp": "20061011015445",
+      "original": "http://www.skyperfectv.co.jp/sports/battle/column/yukiyo_matumoto/yukiyo_matumoto_000020.html"
+    },
+    {
+      "timestamp": "20061110010855",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/column/yukiyo_matumoto/yukiyo_matumoto_000021.html"
+    },
+    {
+      "timestamp": "20060114070145",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/index.html"
+    },
+    {
+      "timestamp": "20060101203135",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/lineup/"
+    },
+    {
+      "timestamp": "20060405155622",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/pride_gp_2004_final/"
+    },
+    {
+      "timestamp": "20060114054149",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/set/"
+    },
+    {
+      "timestamp": "20060101210403",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/wwe/"
+    },
+    {
+      "timestamp": "20060209001736",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/wwe/basic.html"
+    },
+    {
+      "timestamp": "20060209001819",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/wwe/column/"
+    },
+    {
+      "timestamp": "20060212032251",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/wwe/column/clm_0311.html"
+    },
+    {
+      "timestamp": "20060623184410",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/wwe/column/index.html"
+    },
+    {
+      "timestamp": "20060623184211",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/wwe/fanatic/gwso80s.html"
+    },
+    {
+      "timestamp": "20060623184303",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/wwe/fun/"
+    },
+    {
+      "timestamp": "20060209001829",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/wwe/fun/no001.html"
+    },
+    {
+      "timestamp": "20060116012852",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/wwe/fun/no002.html"
+    },
+    {
+      "timestamp": "20060209001652",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/wwe/index.html"
+    },
+    {
+      "timestamp": "20060209001727",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/wwe/outline/"
+    },
+    {
+      "timestamp": "20060212032257",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/wwe/outline/ol_200303.html"
+    },
+    {
+      "timestamp": "20060211012956",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/wwe/outline/ol_200308.html"
+    },
+    {
+      "timestamp": "20060112161746",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/wwe/outline/ol_200309.html"
+    },
+    {
+      "timestamp": "20060212003753",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/wwe/outline/ol_200312.html"
+    },
+    {
+      "timestamp": "20060211024457",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/wwe/outline/ol_2005p06.html"
+    },
+    {
+      "timestamp": "20060212025103",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/wwe/outline/ol_2005p11.html"
+    },
+    {
+      "timestamp": "20060623184420",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/wwe/preview/2006p06.html"
+    },
+    {
+      "timestamp": "20060209001722",
+      "original": "http://www.skyperfectv.co.jp:80/sports/battle/wwe/stars.html"
+    },
+    {
+      "timestamp": "20060104225022",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/"
+    },
+    {
+      "timestamp": "20061110124651",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/column/01.html"
+    },
+    {
+      "timestamp": "20060104175027",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/column_050330.html"
+    },
+    {
+      "timestamp": "20060104183435",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/column_050406.html"
+    },
+    {
+      "timestamp": "20060104181025",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/column_050526.html"
+    },
+    {
+      "timestamp": "20060104181051",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/column_050609.html"
+    },
+    {
+      "timestamp": "20060105000840",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/column_050630.html"
+    },
+    {
+      "timestamp": "20060104183531",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/column_050811.html"
+    },
+    {
+      "timestamp": "20060105001527",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/column_050818.html"
+    },
+    {
+      "timestamp": "20060104172246",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/column_051013.html"
+    },
+    {
+      "timestamp": "20060130151016",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/column_051020.html"
+    },
+    {
+      "timestamp": "20060206163427",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/column_index.html"
+    },
+    {
+      "timestamp": "20060206163525",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/contents.html"
+    },
+    {
+      "timestamp": "20060115050746",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/index.html"
+    },
+    {
+      "timestamp": "20061011023105",
+      "original": "http://www.skyperfectv.co.jp/sports/golf/news/20060925-01.html"
+    },
+    {
+      "timestamp": "20061011023109",
+      "original": "http://www.skyperfectv.co.jp/sports/golf/news/20060925-02.html"
+    },
+    {
+      "timestamp": "20060824152336",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/oa/index.html"
+    },
+    {
+      "timestamp": "20061011023101",
+      "original": "http://www.skyperfectv.co.jp/sports/golf/pickup/index.html"
+    },
+    {
+      "timestamp": "20060105011013",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/program_lesson.html"
+    },
+    {
+      "timestamp": "20060106204812",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/program_tour.html"
+    },
+    {
+      "timestamp": "20060105001728",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/program_variety.html"
+    },
+    {
+      "timestamp": "20060104183819",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/schedule_euro.html"
+    },
+    {
+      "timestamp": "20060104172223",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/schedule_jlpga.html"
+    },
+    {
+      "timestamp": "20060105011053",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/schedule_lpga.html"
+    },
+    {
+      "timestamp": "20061011020550",
+      "original": "http://www.skyperfectv.co.jp/sports/golf/template/menu.html"
+    },
+    {
+      "timestamp": "20061011020545",
+      "original": "http://www.skyperfectv.co.jp/sports/golf/template/right_contents.html"
+    },
+    {
+      "timestamp": "20060414184232",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/usopen2005/us_playbackpre.html"
+    },
+    {
+      "timestamp": "20060927085359",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/women/ai_miyasato.html"
+    },
+    {
+      "timestamp": "20060411122625",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/women/course.html"
+    },
+    {
+      "timestamp": "20061230122722",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/women/gaiyo.html"
+    },
+    {
+      "timestamp": "20061230122207",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/women/index.html"
+    },
+    {
+      "timestamp": "20061230121853",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/women/interview_masaru.html"
+    },
+    {
+      "timestamp": "20061231054129",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/women/interview_oda.html"
+    },
+    {
+      "timestamp": "20060411122830",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/women/interview_yoshiro.html"
+    },
+    {
+      "timestamp": "20061230121929",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/women/midokoro.html"
+    },
+    {
+      "timestamp": "20061230221742",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/women/players.html"
+    },
+    {
+      "timestamp": "20061230123006",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/women/sakura_yokomine.html"
+    },
+    {
+      "timestamp": "20061231054433",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/womensworldcup/"
+    },
+    {
+      "timestamp": "20060105004413",
+      "original": "http://www.skyperfectv.co.jp:80/sports/golf/womensworldcup/wwc_column03.html"
+    },
+    {
+      "timestamp": "20061011020554",
+      "original": "http://www.skyperfectv.co.jp/sports/index.html"
+    },
+    {
+      "timestamp": "20060102122636",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/"
+    },
+    {
+      "timestamp": "20060303110918",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/8tai05_midokoro.html"
+    },
+    {
+      "timestamp": "20060220104410",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/column.html"
+    },
+    {
+      "timestamp": "20060619103949",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/column200511_02.html"
+    },
+    {
+      "timestamp": "20060622034305",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/column200511_03.html"
+    },
+    {
+      "timestamp": "20060622034233",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/column_index.html"
+    },
+    {
+      "timestamp": "20060220104612",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/contents.html"
+    },
+    {
+      "timestamp": "20060203042405",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/index.html"
+    },
+    {
+      "timestamp": "20060411122455",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/intro_ama.html"
+    },
+    {
+      "timestamp": "20060104000427",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/intro_f1gp.html"
+    },
+    {
+      "timestamp": "20060116230346",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/intro_f3.html"
+    },
+    {
+      "timestamp": "20060112040940",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/intro_motogp.html"
+    },
+    {
+      "timestamp": "20060126232817",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/intro_supergt.html"
+    },
+    {
+      "timestamp": "20060112023447",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/intro_trials.html"
+    },
+    {
+      "timestamp": "20060411122500",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/intro_wrc.html"
+    },
+    {
+      "timestamp": "20060411122541",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/intro_wtcc.html"
+    },
+    {
+      "timestamp": "20060303062820",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/lemans05_midokoro.html"
+    },
+    {
+      "timestamp": "20060303062943",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/lemans05_team.html"
+    },
+    {
+      "timestamp": "20060926184609",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/midokoro.html"
+    },
+    {
+      "timestamp": "20060220105519",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/midokoro_f1legend.html"
+    },
+    {
+      "timestamp": "20060102121234",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/program.html"
+    },
+    {
+      "timestamp": "20060321060837",
+      "original": "http://www.skyperfectv.co.jp:80/sports/motor/takuma05_interview.html"
+    },
+    {
+      "timestamp": "20061116033332",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebare/"
+    },
+    {
+      "timestamp": "20061119171907",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebare/country_w.html"
+    },
+    {
+      "timestamp": "20061119171947",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebare/midokoro.html"
+    },
+    {
+      "timestamp": "20060715182009",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/"
+    },
+    {
+      "timestamp": "20061011030526",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/column/01.html"
+    },
+    {
+      "timestamp": "20061011030550",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/column/02.html"
+    },
+    {
+      "timestamp": "20061011030554",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/column/03.html"
+    },
+    {
+      "timestamp": "20061011030542",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/column/04.html"
+    },
+    {
+      "timestamp": "20061011030530",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/column/05.html"
+    },
+    {
+      "timestamp": "20061011030546",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/column/06.html"
+    },
+    {
+      "timestamp": "20061011030538",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/column/07.html"
+    },
+    {
+      "timestamp": "20061011030559",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/column/08.html"
+    },
+    {
+      "timestamp": "20061011030534",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/column/09.html"
+    },
+    {
+      "timestamp": "20061011030603",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/column/10.html"
+    },
+    {
+      "timestamp": "20061011024717",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/column/index.html"
+    },
+    {
+      "timestamp": "20060622091208",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/frame_right.html"
+    },
+    {
+      "timestamp": "20061011024645",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/glossary/glossary_a.html"
+    },
+    {
+      "timestamp": "20061011030400",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/glossary/glossary_ha.html"
+    },
+    {
+      "timestamp": "20061011030415",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/glossary/glossary_ka.html"
+    },
+    {
+      "timestamp": "20061011030404",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/glossary/glossary_ma.html"
+    },
+    {
+      "timestamp": "20061011030407",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/glossary/glossary_ra.html"
+    },
+    {
+      "timestamp": "20061011030357",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/glossary/glossary_sa.html"
+    },
+    {
+      "timestamp": "20061011030411",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/glossary/glossary_ta.html"
+    },
+    {
+      "timestamp": "20060619151026",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/history/index.html"
+    },
+    {
+      "timestamp": "20060619231955",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/index.html"
+    },
+    {
+      "timestamp": "20060901014549",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/japan/index.html"
+    },
+    {
+      "timestamp": "20061011030429",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/japan/interview01.html"
+    },
+    {
+      "timestamp": "20061011030501",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/japan/interview02.html"
+    },
+    {
+      "timestamp": "20060901014521",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/japan/interview03.html"
+    },
+    {
+      "timestamp": "20061011030442",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/japan/interview04.html"
+    },
+    {
+      "timestamp": "20061011030433",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/japan/member.html"
+    },
+    {
+      "timestamp": "20061011030438",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/japan/midokoro.html"
+    },
+    {
+      "timestamp": "20060719060541",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/menu.html"
+    },
+    {
+      "timestamp": "20061011030752",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060515-01.html"
+    },
+    {
+      "timestamp": "20061011030934",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060522-01.html"
+    },
+    {
+      "timestamp": "20061011031047",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060629-01.html"
+    },
+    {
+      "timestamp": "20061011031001",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060630-01.html"
+    },
+    {
+      "timestamp": "20061011030618",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060703-01.html"
+    },
+    {
+      "timestamp": "20061011030702",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060704-01.html"
+    },
+    {
+      "timestamp": "20061011031212",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060706-01.html"
+    },
+    {
+      "timestamp": "20061011031107",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060713-01.html"
+    },
+    {
+      "timestamp": "20061011030721",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060714-01.html"
+    },
+    {
+      "timestamp": "20061011030914",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060716-01.html"
+    },
+    {
+      "timestamp": "20061011030658",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060716-02.html"
+    },
+    {
+      "timestamp": "20061011030810",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060720-01.html"
+    },
+    {
+      "timestamp": "20061011031059",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060721-01.html"
+    },
+    {
+      "timestamp": "20061011030806",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060722-01.html"
+    },
+    {
+      "timestamp": "20061011030857",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060722-02.html"
+    },
+    {
+      "timestamp": "20061011031005",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060722-03.html"
+    },
+    {
+      "timestamp": "20061011031149",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060726-01.html"
+    },
+    {
+      "timestamp": "20061011030946",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060728-01.html"
+    },
+    {
+      "timestamp": "20061011030835",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060801-01.html"
+    },
+    {
+      "timestamp": "20061011030813",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060801-02.html"
+    },
+    {
+      "timestamp": "20061011031208",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060803-01.html"
+    },
+    {
+      "timestamp": "20061011030922",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060804-01.html"
+    },
+    {
+      "timestamp": "20061011030840",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060804-02.html"
+    },
+    {
+      "timestamp": "20061011031010",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060805-01.html"
+    },
+    {
+      "timestamp": "20061011030930",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060807-01.html"
+    },
+    {
+      "timestamp": "20061011030647",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060808-01.html"
+    },
+    {
+      "timestamp": "20061011031051",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060809-01.html"
+    },
+    {
+      "timestamp": "20061011031023",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060809-02.html"
+    },
+    {
+      "timestamp": "20061011031039",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060809-03.html"
+    },
+    {
+      "timestamp": "20060830223234",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/news/20060809-04.html"
+    },
+    {
+      "timestamp": "20061011031200",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060811-01.html"
+    },
+    {
+      "timestamp": "20060824153050",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/news/20060812-01.html"
+    },
+    {
+      "timestamp": "20061011031035",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060812-02.html"
+    },
+    {
+      "timestamp": "20061011030938",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060813-01.html"
+    },
+    {
+      "timestamp": "20061011030818",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060814-01.html"
+    },
+    {
+      "timestamp": "20061011030848",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060815-01.html"
+    },
+    {
+      "timestamp": "20061011030651",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060816-01.html"
+    },
+    {
+      "timestamp": "20061011030822",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060816-02.html"
+    },
+    {
+      "timestamp": "20061011030643",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060817-01.html"
+    },
+    {
+      "timestamp": "20061011031228",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060817-02.html"
+    },
+    {
+      "timestamp": "20061011030926",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060818-01.html"
+    },
+    {
+      "timestamp": "20061011031156",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060819-01.html"
+    },
+    {
+      "timestamp": "20061011030801",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060819-02.html"
+    },
+    {
+      "timestamp": "20061011030905",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060819-03.html"
+    },
+    {
+      "timestamp": "20061011030725",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060819-04.html"
+    },
+    {
+      "timestamp": "20061011030737",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060819-05.html"
+    },
+    {
+      "timestamp": "20061011030706",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060819-06.html"
+    },
+    {
+      "timestamp": "20061011031137",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060819-07.html"
+    },
+    {
+      "timestamp": "20061011030826",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060820-01.html"
+    },
+    {
+      "timestamp": "20061011030505",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060820-02.html"
+    },
+    {
+      "timestamp": "20061011031153",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060820-03.html"
+    },
+    {
+      "timestamp": "20061011031141",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060820-04.html"
+    },
+    {
+      "timestamp": "20061011030831",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060820-05.html"
+    },
+    {
+      "timestamp": "20061011030718",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060820-06.html"
+    },
+    {
+      "timestamp": "20061011030756",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060820-07.html"
+    },
+    {
+      "timestamp": "20061011031114",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060820-08.html"
+    },
+    {
+      "timestamp": "20061011031111",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060821-01.html"
+    },
+    {
+      "timestamp": "20061011030748",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060821-02.html"
+    },
+    {
+      "timestamp": "20061011030733",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060821-03.html"
+    },
+    {
+      "timestamp": "20061011030510",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060821-04.html"
+    },
+    {
+      "timestamp": "20061011030942",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060822-01.html"
+    },
+    {
+      "timestamp": "20061011030713",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060822-02.html"
+    },
+    {
+      "timestamp": "20061011030853",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060822-03.html"
+    },
+    {
+      "timestamp": "20061011030419",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060822-04.html"
+    },
+    {
+      "timestamp": "20061011030745",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060822-05.html"
+    },
+    {
+      "timestamp": "20061011031145",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060822-06.html"
+    },
+    {
+      "timestamp": "20061011031220",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060822-07.html"
+    },
+    {
+      "timestamp": "20061011030730",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060823-01.html"
+    },
+    {
+      "timestamp": "20061011030901",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060823-02.html"
+    },
+    {
+      "timestamp": "20061011030910",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060823-03.html"
+    },
+    {
+      "timestamp": "20061011031122",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060823-04.html"
+    },
+    {
+      "timestamp": "20061011030639",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060823-05.html"
+    },
+    {
+      "timestamp": "20061011031224",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060823-06.html"
+    },
+    {
+      "timestamp": "20061011030457",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060823-07.html"
+    },
+    {
+      "timestamp": "20061011030917",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060823-08.html"
+    },
+    {
+      "timestamp": "20061011031055",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060824-01.html"
+    },
+    {
+      "timestamp": "20061011031216",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060824-02.html"
+    },
+    {
+      "timestamp": "20061011031128",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060824-03.html"
+    },
+    {
+      "timestamp": "20061011031133",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060824-04.html"
+    },
+    {
+      "timestamp": "20061011031118",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060824-05.html"
+    },
+    {
+      "timestamp": "20061011031015",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060824-06.html"
+    },
+    {
+      "timestamp": "20061011031031",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060824-07.html"
+    },
+    {
+      "timestamp": "20061011030423",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060824-08.html"
+    },
+    {
+      "timestamp": "20061011031019",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060825-01.html"
+    },
+    {
+      "timestamp": "20061011030950",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060825-02.html"
+    },
+    {
+      "timestamp": "20061011030958",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060826-01.html"
+    },
+    {
+      "timestamp": "20061011030610",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060826-02.html"
+    },
+    {
+      "timestamp": "20061011030623",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060826-03.html"
+    },
+    {
+      "timestamp": "20061011030844",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060826-04.html"
+    },
+    {
+      "timestamp": "20061011030741",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060827-01.html"
+    },
+    {
+      "timestamp": "20061011031042",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060827-02.html"
+    },
+    {
+      "timestamp": "20060901014508",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/news/20060827-03.html"
+    },
+    {
+      "timestamp": "20061011030655",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060827-04.html"
+    },
+    {
+      "timestamp": "20061011030615",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060828-01.html"
+    },
+    {
+      "timestamp": "20060901014626",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/news/20060828-02.html"
+    },
+    {
+      "timestamp": "20061011031027",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060829-01.html"
+    },
+    {
+      "timestamp": "20061011031103",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060829-02.html"
+    },
+    {
+      "timestamp": "20061011024524",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060830-01.html"
+    },
+    {
+      "timestamp": "20060901200652",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/news/20060830-02.html"
+    },
+    {
+      "timestamp": "20061011024543",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060831-01.html"
+    },
+    {
+      "timestamp": "20061011024440",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060831-02.html"
+    },
+    {
+      "timestamp": "20061011024536",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060901-01.html"
+    },
+    {
+      "timestamp": "20061011024626",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060901-02.html"
+    },
+    {
+      "timestamp": "20061011024504",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060902-01.html"
+    },
+    {
+      "timestamp": "20061011024608",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060902-02.html"
+    },
+    {
+      "timestamp": "20061011024603",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060903-01.html"
+    },
+    {
+      "timestamp": "20061011024448",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/news/20060903-02.html"
+    },
+    {
+      "timestamp": "20060622090817",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/news/index.html"
+    },
+    {
+      "timestamp": "20060622091620",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/outline/index.html"
+    },
+    {
+      "timestamp": "20060719060414",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/player/player_01.html"
+    },
+    {
+      "timestamp": "20060719060346",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/player/player_02.html"
+    },
+    {
+      "timestamp": "20060719060518",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/player/player_03.html"
+    },
+    {
+      "timestamp": "20060717031607",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/player/player_04.html"
+    },
+    {
+      "timestamp": "20060717031623",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/player/player_05.html"
+    },
+    {
+      "timestamp": "20060719060334",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/player/player_06.html"
+    },
+    {
+      "timestamp": "20060717031635",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/player/player_07.html"
+    },
+    {
+      "timestamp": "20060717031647",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/player/player_08.html"
+    },
+    {
+      "timestamp": "20061011030110",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/player/player_09.html"
+    },
+    {
+      "timestamp": "20060901015016",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/result/0819.html"
+    },
+    {
+      "timestamp": "20060901091605",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/result/0820.html"
+    },
+    {
+      "timestamp": "20061011030101",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/result/0821.html"
+    },
+    {
+      "timestamp": "20061011030142",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/result/0822.html"
+    },
+    {
+      "timestamp": "20061011030008",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/result/0823.html"
+    },
+    {
+      "timestamp": "20061011030035",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/result/0824.html"
+    },
+    {
+      "timestamp": "20061011025948",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/result/0826.html"
+    },
+    {
+      "timestamp": "20061011030154",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/result/0827.html"
+    },
+    {
+      "timestamp": "20061011030044",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/result/0829.html"
+    },
+    {
+      "timestamp": "20061011030130",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/result/0830.html"
+    },
+    {
+      "timestamp": "20061011030220",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/result/0831.html"
+    },
+    {
+      "timestamp": "20061011030057",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/result/0901.html"
+    },
+    {
+      "timestamp": "20061011025952",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/result/0902.html"
+    },
+    {
+      "timestamp": "20061011024549",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/result/0903.html"
+    },
+    {
+      "timestamp": "20061011024554",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/result/date.html"
+    },
+    {
+      "timestamp": "20061011024713",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/rule/index.html"
+    },
+    {
+      "timestamp": "20060901014615",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/rule/rule.html"
+    },
+    {
+      "timestamp": "20060720163401",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/schedule/final.html"
+    },
+    {
+      "timestamp": "20060719095141",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/schedule/group_b.html"
+    },
+    {
+      "timestamp": "20060719060745",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/schedule/group_c.html"
+    },
+    {
+      "timestamp": "20060720163036",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/schedule/group_d.html"
+    },
+    {
+      "timestamp": "20060622092009",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/schedule/index.html"
+    },
+    {
+      "timestamp": "20060901014142",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/sebasuman_jr/index.html"
+    },
+    {
+      "timestamp": "20061011024621",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/skyperfectv/index.html"
+    },
+    {
+      "timestamp": "20060719094741",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/ang.html"
+    },
+    {
+      "timestamp": "20060717030908",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/arg.html"
+    },
+    {
+      "timestamp": "20060717030922",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/aus.html"
+    },
+    {
+      "timestamp": "20060717030934",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/bra.html"
+    },
+    {
+      "timestamp": "20060717030945",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/chn.html"
+    },
+    {
+      "timestamp": "20060717030958",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/esp.html"
+    },
+    {
+      "timestamp": "20060717031010",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/fra.html"
+    },
+    {
+      "timestamp": "20060717031021",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/ger.html"
+    },
+    {
+      "timestamp": "20060717031033",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/gre.html"
+    },
+    {
+      "timestamp": "20060719060642",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/index.html"
+    },
+    {
+      "timestamp": "20060717031045",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/ita.html"
+    },
+    {
+      "timestamp": "20060717031057",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/jpn.html"
+    },
+    {
+      "timestamp": "20060719094756",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/lib.html"
+    },
+    {
+      "timestamp": "20060717031111",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/ltu.html"
+    },
+    {
+      "timestamp": "20060719094810",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/ngr.html"
+    },
+    {
+      "timestamp": "20060719094821",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/nzl.html"
+    },
+    {
+      "timestamp": "20060717031123",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/pan.html"
+    },
+    {
+      "timestamp": "20060717031135",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/pur.html"
+    },
+    {
+      "timestamp": "20060717031147",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/qat.html"
+    },
+    {
+      "timestamp": "20060717031159",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/scg.html"
+    },
+    {
+      "timestamp": "20060717031213",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/sen.html"
+    },
+    {
+      "timestamp": "20060719094912",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/slo.html"
+    },
+    {
+      "timestamp": "20060719094925",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/tur.html"
+    },
+    {
+      "timestamp": "20060717031225",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/usa.html"
+    },
+    {
+      "timestamp": "20060717025827",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/team/ven.html"
+    },
+    {
+      "timestamp": "20060717030843",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/tv/cast.html"
+    },
+    {
+      "timestamp": "20060618195243",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/tv/index.html"
+    },
+    {
+      "timestamp": "20060824152837",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/tv/qualify.html"
+    },
+    {
+      "timestamp": "20060901091408",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/tv_schedule/final.html"
+    },
+    {
+      "timestamp": "20061011030245",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/tv_schedule/group_b.html"
+    },
+    {
+      "timestamp": "20061011030256",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/tv_schedule/group_c.html"
+    },
+    {
+      "timestamp": "20061011030300",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/tv_schedule/group_d.html"
+    },
+    {
+      "timestamp": "20061011024558",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/tv_schedule/index.html"
+    },
+    {
+      "timestamp": "20060901014107",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/waza/alley-oop.html"
+    },
+    {
+      "timestamp": "20060717031700",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/waza/behind-pass.html"
+    },
+    {
+      "timestamp": "20060717031542",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/waza/cross-over.html"
+    },
+    {
+      "timestamp": "20061011030349",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/waza/double-clutch.html"
+    },
+    {
+      "timestamp": "20061011030332",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/waza/dribble-spin.html"
+    },
+    {
+      "timestamp": "20061011030341",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/waza/fade-away-shot.html"
+    },
+    {
+      "timestamp": "20060717031339",
+      "original": "http://www.skyperfectv.co.jp:80/sports/sebasu/waza/index.html"
+    },
+    {
+      "timestamp": "20061011030353",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/waza/no-look.html"
+    },
+    {
+      "timestamp": "20061011030328",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/waza/pickandroll.html"
+    },
+    {
+      "timestamp": "20061011030320",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/waza/pump-fake.html"
+    },
+    {
+      "timestamp": "20061011030345",
+      "original": "http://www.skyperfectv.co.jp/sports/sebasu/waza/screen.html"
+    },
+    {
+      "timestamp": "20060102130959",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/"
+    },
+    {
+      "timestamp": "20060114063515",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/"
+    },
+    {
+      "timestamp": "20060212121407",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/kenji_nishibe/kenji_nishibe_000004.html"
+    },
+    {
+      "timestamp": "20060102041909",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/kenji_nishibe/kenji_nishibe_000005.html"
+    },
+    {
+      "timestamp": "20060102040455",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/kenji_nishibe/kenji_nishibe_000007.html"
+    },
+    {
+      "timestamp": "20060209022545",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/kenji_nishibe/kenji_nishibe_000008.html"
+    },
+    {
+      "timestamp": "20060208100055",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/kenji_nishibe/kenji_nishibe_000009.html"
+    },
+    {
+      "timestamp": "20060114072301",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/kenji_nishibe/kenji_nishibe_000010.html"
+    },
+    {
+      "timestamp": "20060212032321",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/kenji_nishibe/kenji_nishibe_000011.html"
+    },
+    {
+      "timestamp": "20060628141936",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/kenji_nishibe/kenji_nishibe_000013.html"
+    },
+    {
+      "timestamp": "20060102033143",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/kiwamu_kabe/kiwamu_kabe_000001.html"
+    },
+    {
+      "timestamp": "20060211024523",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/koichi_yamazaki/koichi_yamazaki_000018.html"
+    },
+    {
+      "timestamp": "20060102034803",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/koichi_yamazaki/koichi_yamazaki_000039.html"
+    },
+    {
+      "timestamp": "20060102025514",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/koichi_yamazaki/koichi_yamazaki_000054.html"
+    },
+    {
+      "timestamp": "20060102041744",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/koichi_yamazaki/koichi_yamazaki_000055.html"
+    },
+    {
+      "timestamp": "20060102034934",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/koichi_yamazaki/koichi_yamazaki_000056.html"
+    },
+    {
+      "timestamp": "20060102032244",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/koichi_yamazaki/koichi_yamazaki_000057.html"
+    },
+    {
+      "timestamp": "20060102024033",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/koichi_yamazaki/koichi_yamazaki_000058.html"
+    },
+    {
+      "timestamp": "20060114070932",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/koichi_yamazaki/koichi_yamazaki_000060.html"
+    },
+    {
+      "timestamp": "20060212032206",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/koichi_yamazaki/koichi_yamazaki_000061.html"
+    },
+    {
+      "timestamp": "20060628142001",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/koichi_yamazaki/koichi_yamazaki_000063.html"
+    },
+    {
+      "timestamp": "20060220111527",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/takashi_odajima/takashi_odajima_000001.html"
+    },
+    {
+      "timestamp": "20060405160451",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/takeo_goto/takeo_goto_000012.html"
+    },
+    {
+      "timestamp": "20060212121350",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/takeo_goto/takeo_goto_000048.html"
+    },
+    {
+      "timestamp": "20060210211057",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/takeo_goto/takeo_goto_000049.html"
+    },
+    {
+      "timestamp": "20060102035541",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/takeo_goto/takeo_goto_000051.html"
+    },
+    {
+      "timestamp": "20060326132438",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/takeo_goto/takeo_goto_000053.html"
+    },
+    {
+      "timestamp": "20060102035312",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/takeo_goto/takeo_goto_000055.html"
+    },
+    {
+      "timestamp": "20060102035044",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/takeo_goto/takeo_goto_000056.html"
+    },
+    {
+      "timestamp": "20060105225917",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/takeo_goto/takeo_goto_000057.html"
+    },
+    {
+      "timestamp": "20060102045404",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/takeo_goto/takeo_goto_000058.html"
+    },
+    {
+      "timestamp": "20060130151128",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/takeo_goto/takeo_goto_000059.html"
+    },
+    {
+      "timestamp": "20060104013558",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/takeo_goto/takeo_goto_000060.html"
+    },
+    {
+      "timestamp": "20060212032312",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/takeo_goto/takeo_goto_000061.html"
+    },
+    {
+      "timestamp": "20060628141827",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/takeo_goto/takeo_goto_000063.html"
+    },
+    {
+      "timestamp": "20060212121424",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/yoichi_togashi/yoichi_togashi_000047.html"
+    },
+    {
+      "timestamp": "20060102044952",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/yoichi_togashi/yoichi_togashi_000049.html"
+    },
+    {
+      "timestamp": "20060118235435",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/yoshiyuki_osumi/yoshiyuki_osumi_000048.html"
+    },
+    {
+      "timestamp": "20060302204402",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/yoshiyuki_osumi/yoshiyuki_osumi_000052.html"
+    },
+    {
+      "timestamp": "20060102044852",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/yoshiyuki_osumi/yoshiyuki_osumi_000055.html"
+    },
+    {
+      "timestamp": "20060102032843",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/yoshiyuki_osumi/yoshiyuki_osumi_000056.html"
+    },
+    {
+      "timestamp": "20060102034602",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/yoshiyuki_osumi/yoshiyuki_osumi_000058.html"
+    },
+    {
+      "timestamp": "20060210074328",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/yoshiyuki_osumi/yoshiyuki_osumi_000059.html"
+    },
+    {
+      "timestamp": "20060220111540",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/yoshiyuki_osumi/yoshiyuki_osumi_000060.html"
+    },
+    {
+      "timestamp": "20060112023900",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/yoshiyuki_osumi/yoshiyuki_osumi_000061.html"
+    },
+    {
+      "timestamp": "20060222090245",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/yoshiyuki_osumi/yoshiyuki_osumi_000062.html"
+    },
+    {
+      "timestamp": "20060628142013",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/yoshiyuki_osumi/yoshiyuki_osumi_000063.html"
+    },
+    {
+      "timestamp": "20060105002423",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/yuichi_handa/yuichi_handa_000003.html"
+    },
+    {
+      "timestamp": "20060628141835",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/column/yuichi_handa/yuichi_handa_000005.html"
+    },
+    {
+      "timestamp": "20060130091034",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/index.html"
+    },
+    {
+      "timestamp": "20060205042456",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/jnight/"
+    },
+    {
+      "timestamp": "20060619112908",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/jnight/index.html"
+    },
+    {
+      "timestamp": "20060112031410",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/nakata/"
+    },
+    {
+      "timestamp": "20060103072315",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/packset/"
+    },
+    {
+      "timestamp": "20060206054525",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/soccer_hihyo/"
+    },
+    {
+      "timestamp": "20060118233821",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/soccer_hihyo/ucl_0405/ucl_0405_00002.html"
+    },
+    {
+      "timestamp": "20060119000657",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/soccer_hihyo/ucl_0405/ucl_0405_00013.html"
+    },
+    {
+      "timestamp": "20060118234404",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/soccer_hihyo/ucl_0405/ucl_0405_00017.html"
+    },
+    {
+      "timestamp": "20060215191838",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/soccer_hihyo_confederations_cup_2005/"
+    },
+    {
+      "timestamp": "20060627075716",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/soccer_hihyo_confederations_cup_2005/confederations_cup_2005/confede_2005_00001.html"
+    },
+    {
+      "timestamp": "20060627075730",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/soccer_hihyo_confederations_cup_2005/confederations_cup_2005/confede_2005_00002.html"
+    },
+    {
+      "timestamp": "20060627075742",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/soccer_hihyo_confederations_cup_2005/confederations_cup_2005/confede_2005_00003.html"
+    },
+    {
+      "timestamp": "20060627075755",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/soccer_hihyo_confederations_cup_2005/confederations_cup_2005/confede_2005_00004.html"
+    },
+    {
+      "timestamp": "20060215191900",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/soccer_hihyo_confederations_cup_2005/confederations_cup_2005/confede_2005_00005.html"
+    },
+    {
+      "timestamp": "20060627075819",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/soccer_hihyo_confederations_cup_2005/confederations_cup_2005/confede_2005_00006.html"
+    },
+    {
+      "timestamp": "20060627075834",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/soccer_hihyo_confederations_cup_2005/confederations_cup_2005/confede_2005_00007.html"
+    },
+    {
+      "timestamp": "20060627075846",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/soccer_hihyo_confederations_cup_2005/confederations_cup_2005/confede_2005_00008.html"
+    },
+    {
+      "timestamp": "20060627075859",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/soccer_hihyo_confederations_cup_2005/confederations_cup_2005/confede_2005_00009.html"
+    },
+    {
+      "timestamp": "20060627075912",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/soccer_hihyo_confederations_cup_2005/confederations_cup_2005/confede_2005_00010.html"
+    },
+    {
+      "timestamp": "20060112030100",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/ucl/"
+    },
+    {
+      "timestamp": "20060701055916",
+      "original": "http://www.skyperfectv.co.jp:80/sports/soccer/ucl/index.html"
+    },
+    {
+      "timestamp": "20060101210159",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/"
+    },
+    {
+      "timestamp": "20060106065657",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/campaign/index.html"
+    },
+    {
+      "timestamp": "20060104233249",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/campaign/omakase.html"
+    },
+    {
+      "timestamp": "20060111072434",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/howto/put/02.html"
+    },
+    {
+      "timestamp": "20060104110025",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/howto/put/index.html"
+    },
+    {
+      "timestamp": "20060114054815",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/index.html"
+    },
+    {
+      "timestamp": "20061011021637",
+      "original": "http://www.skyperfectv.co.jp/welcome/netscape.html"
+    },
+    {
+      "timestamp": "20061011021613",
+      "original": "http://www.skyperfectv.co.jp/welcome/noplugin.html"
+    },
+    {
+      "timestamp": "20060101002758",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/special/"
+    },
+    {
+      "timestamp": "20060106064903",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step0/0-1.html"
+    },
+    {
+      "timestamp": "20060220103847",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step0/0-1m.html"
+    },
+    {
+      "timestamp": "20060102114023",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step0/0-2.html"
+    },
+    {
+      "timestamp": "20060130150927",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step0/0-2m.html"
+    },
+    {
+      "timestamp": "20060108203847",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step0/0-3.html"
+    },
+    {
+      "timestamp": "20060220103859",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step0/0-3m.html"
+    },
+    {
+      "timestamp": "20060103173048",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step0/index.html"
+    },
+    {
+      "timestamp": "20060106060938",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step1/1-1.html"
+    },
+    {
+      "timestamp": "20060220103906",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step1/1-1m.html"
+    },
+    {
+      "timestamp": "20060106070612",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step1/1-2.html"
+    },
+    {
+      "timestamp": "20060708034903",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step1/1-2m.html"
+    },
+    {
+      "timestamp": "20060102101419",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step1/1-4.html"
+    },
+    {
+      "timestamp": "20060102121121",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step1/1-4m.html"
+    },
+    {
+      "timestamp": "20060704212812",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step1/area06_main.html"
+    },
+    {
+      "timestamp": "20061011021640",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/foot.html"
+    },
+    {
+      "timestamp": "20060102103012",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step1/head.html"
+    },
+    {
+      "timestamp": "20060102101349",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step1/index.html"
+    },
+    {
+      "timestamp": "20061011031236",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/kana.html"
+    },
+    {
+      "timestamp": "20061011031310",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/kana01.html"
+    },
+    {
+      "timestamp": "20061011031315",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/kana01_head.html"
+    },
+    {
+      "timestamp": "20061011031255",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/kana02.html"
+    },
+    {
+      "timestamp": "20061011031259",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/kana02_head.html"
+    },
+    {
+      "timestamp": "20061011031232",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/kana03.html"
+    },
+    {
+      "timestamp": "20061011031240",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/kana03_head.html"
+    },
+    {
+      "timestamp": "20061011031336",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/kana04.html"
+    },
+    {
+      "timestamp": "20061011031341",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/kana04_head.html"
+    },
+    {
+      "timestamp": "20061011031327",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/kana05.html"
+    },
+    {
+      "timestamp": "20061011031332",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/kana05_head.html"
+    },
+    {
+      "timestamp": "20061011031354",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/kana06.html"
+    },
+    {
+      "timestamp": "20061011031358",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/kana06_head.html"
+    },
+    {
+      "timestamp": "20061011031346",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/kana07.html"
+    },
+    {
+      "timestamp": "20061011031350",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/kana07_head.html"
+    },
+    {
+      "timestamp": "20061011031319",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/kana08.html"
+    },
+    {
+      "timestamp": "20061011031322",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/kana08_head.html"
+    },
+    {
+      "timestamp": "20061011031303",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/kana09.html"
+    },
+    {
+      "timestamp": "20061011031307",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/kana09_head.html"
+    },
+    {
+      "timestamp": "20061011031244",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/kana10.html"
+    },
+    {
+      "timestamp": "20061011031251",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/kana10_head.html"
+    },
+    {
+      "timestamp": "20060102122136",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step1/map.html"
+    },
+    {
+      "timestamp": "20061011031247",
+      "original": "http://www.skyperfectv.co.jp/welcome/step1/nodata.html"
+    },
+    {
+      "timestamp": "20060709224100",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step1/search01.html"
+    },
+    {
+      "timestamp": "20060709223828",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step1/search02.html"
+    },
+    {
+      "timestamp": "20060209030426",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step2/2-1.html"
+    },
+    {
+      "timestamp": "20060104085851",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step2/2-2.html"
+    },
+    {
+      "timestamp": "20060114054921",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step2/2-2f.html"
+    },
+    {
+      "timestamp": "20060220103911",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step2/2-2m.html"
+    },
+    {
+      "timestamp": "20060108202622",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step2/2-3.html"
+    },
+    {
+      "timestamp": "20060220103917",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step2/2-3m.html"
+    },
+    {
+      "timestamp": "20061011021818",
+      "original": "http://www.skyperfectv.co.jp/welcome/step2/foot.html"
+    },
+    {
+      "timestamp": "20061011021821",
+      "original": "http://www.skyperfectv.co.jp/welcome/step2/head.html"
+    },
+    {
+      "timestamp": "20060103180018",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step2/index.html"
+    },
+    {
+      "timestamp": "20060411122516",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step2/map-head.html"
+    },
+    {
+      "timestamp": "20060104075752",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step2/map.html"
+    },
+    {
+      "timestamp": "20061011021832",
+      "original": "http://www.skyperfectv.co.jp/welcome/step2/put/01.html"
+    },
+    {
+      "timestamp": "20061011021427",
+      "original": "http://www.skyperfectv.co.jp/welcome/step2/put/02.html"
+    },
+    {
+      "timestamp": "20061011021836",
+      "original": "http://www.skyperfectv.co.jp/welcome/step2/put/foot.html"
+    },
+    {
+      "timestamp": "20061011021828",
+      "original": "http://www.skyperfectv.co.jp/welcome/step2/put/head.html"
+    },
+    {
+      "timestamp": "20060103184504",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step2/put/index.html"
+    },
+    {
+      "timestamp": "20061011031657",
+      "original": "http://www.skyperfectv.co.jp/welcome/step2/put/index2.html"
+    },
+    {
+      "timestamp": "20060108194142",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step2/put/index5.html"
+    },
+    {
+      "timestamp": "20061011024749",
+      "original": "http://www.skyperfectv.co.jp/welcome/step2/put/index6.html"
+    },
+    {
+      "timestamp": "20060717031351",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step2/put/index7.html"
+    },
+    {
+      "timestamp": "20061011031414",
+      "original": "http://www.skyperfectv.co.jp/welcome/step2/put/noplugin.html"
+    },
+    {
+      "timestamp": "20060103182053",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step3/index.html"
+    },
+    {
+      "timestamp": "20060103185925",
+      "original": "http://www.skyperfectv.co.jp:80/welcome/step4/index.html"
+    }
+  ]
+}
