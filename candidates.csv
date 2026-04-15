@@ -1,116 +1,176 @@
-﻿domain,link_count,first_seen,last_seen,sample_anchor,sample_source_url,is_alive
-korea-net.co.jp,90,20050101003521,20061011031607,,http://www.skyperfectv.co.jp:80/hang-ryu-now/,False
-skyperfectv110.jp,76,20050102022333,20061011031607,,http://www.skyperfectv.co.jp:80/info_ch/channel/,False
-eigeki.co.jp,52,20050101003521,20051208030457,Ch.362 ホームドラマチャンネル,http://www.skyperfectv.co.jp:80/hang-ryu-now/,False
-spbb.jp,34,20050107030219,20051027005410,,http://www.skyperfectv.co.jp:80/,False
-ppvj.co.jp,23,20050103013428,20061011025532,ÄÚ uACht@CvÁÊÒ uª¢ÁÏ¢IIvuRXÁ¿á¤¼v,http://www.skyperfectv.co.jp:80/adult/ex/gate/,False
-kntv.co.jp,22,20050318062554,20061011025902,Ch.331 KNerW@8/6 16F30`,http://www.skyperfectv.co.jp:80/hang-ryu-now/column/naruhodo6/index.html,False
-tv-asahi-channel.com,12,20050109031414,20051212072805,Ch.717 テレ朝チャンネル,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/,False
-opticast.jp,9,20061011020356,20061011022754,,http://www.skyperfectv.co.jp/info_ch/channel/index.html,False
-skyperfectv.dynamicweb.jp,9,20061011020356,20061011022754,éÆEIRîñ,http://www.skyperfectv.co.jp/info_ch/channel/index.html,False
-homepage3.nifty.com,8,20061011022057,20061011022431,http://homepage3.nifty.com/wb-fuse/,http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000002.html,False
-nihon-eiga.com,7,20050328154126,20061011023407,¬qDq@L[eB[K[@ü­{E[ë@ê­I,http://www.skyperfectv.co.jp:80/endwar_60th/index01.html,False
-foxjapan.com,6,20050105035445,20051212072805,24 -TWENTY FOUR- シーズン1,http://www.skyperfectv.co.jp:80/drama/,False
-toei-group.co.jp,6,20050105035445,20051212072805,¢Æ¤ ¢±@Donft@Stop@Me@NowI,http://www.skyperfectv.co.jp:80/drama/,False
-owarai.cn,5,20050105041437,20050111020226,スカパー ！ お笑いカーニバル2004,http://www.skyperfectv.co.jp:80/,False
-bb.skyperfectbb.jp,4,20050101003521,20050217014309,,http://www.skyperfectv.co.jp:80/hang-ryu-now/,False
-clubdam.com,4,20050109031414,20051212072737,MEGUMI@¼ CG[Lu@Tokyo@Live@performance`LOVE`,http://www.skyperfectv.co.jp:80/entertainment/gradol_gp_2004/lineup/index_gp.html,False
-jidaigeki.com,4,20050105035445,20051210022400,NHK大河ドラマ「徳川家康」「武田信玄」一挙放送！,http://www.skyperfectv.co.jp:80/drama/,False
-csadult.tv,3,20050125011824,20050125011824,http://csadult.tv/,http://www.skyperfectv.co.jp:80/cs_campaign_2004/,False
-home.cherrybomb.co.jp,3,20050103013428,20050103013428,,http://www.skyperfectv.co.jp:80/adult/ex/gate/,False
-jsports.co.jp,3,20051212083539,20051212083539,"J SPORTS 1,2,3",http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,False
-opcas.jp,3,20050102022333,20050111020226,,http://www.skyperfectv.co.jp:80/info_ch/channel/,False
-at-x.com,2,20050317050220,20051212072805,なんと！液晶テレビ、iPodなど賞品総額３００万円相当が当たる豪華プレゼント番組「ＧＯＬＤＥＮ ＴＩＭＥ ２００５」！,http://www.skyperfectv.co.jp:80/anime/index.html,False
-j-korea.tv,2,20050310204119,20050527181725,Ch.790 TV J-Korea,http://www.skyperfectv.co.jp:80/hang-ryu-now/lineup/,False
-medianox.co.jp,2,20050103013428,20050103013428,,http://www.skyperfectv.co.jp:80/adult/ex/gate/,False
-pbj.co.jp,2,20050103013428,20050103013428,,http://www.skyperfectv.co.jp:80/adult/ex/gate/,False
-spoinc.jp,2,20050317023615,20050322070759,www.spoinc.jp,http://www.skyperfectv.co.jp:80/hang-ryu-now/hanfes/,False
-access-tv.net,1,20051212083539,20051212083539,e-天気.net,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,False
-cartoonnetwork.co.jp,1,20051212072805,20051212072805,カートゥーン ネットワーク,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,False
-cinema-r.com,1,20050103013428,20050103013428,,http://www.skyperfectv.co.jp:80/adult/ex/gate/,False
-classica-jp.com,1,20051212072737,20051212072737,クラシカ・ジャパン,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index03.html,False
-daiwa766.jp,1,20051212083539,20051212083539,ダイワ・証券情報　TV,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,False
-dentoubunka.co.jp,1,20051212072805,20051212072805,歌舞伎チャンネル,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,False
-entame.express.jp,1,20051212072805,20051212072805,EXエンタテイメント,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,False
-fandango.co.jp,1,20051212072805,20051212072805,ヨシモトファンダンゴTV,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,False
-gch.jrao.ne.jp,1,20050111020226,20050111020226,グリーンチャンネルデータステーション（データ放送）における３連単情報の 表示について,http://www.skyperfectv.co.jp:80/,False
-home.milk906.jp,1,20050103013428,20050103013428,,http://www.skyperfectv.co.jp:80/adult/ex/gate/,False
-horror-tv.jp,1,20051210022400,20051210022400,ホラーTV,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/,False
-japan.discovery.com,1,20051212083539,20051212083539,ディスカバリーチャンネル,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,False
-karaoke-ch.com,1,20051212072737,20051212072737,カラオケチャンネル,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index03.html,False
-manzox.ch,1,20050103013428,20050103013428,,http://www.skyperfectv.co.jp:80/adult/ex/gate/,False
-nikkei-cnbc.co.jp,1,20051212083539,20051212083539,日経CNBC,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,False
-pikaper.jp,1,20060101200156,20060101200156,,http://www.skyperfectv.co.jp:80/info_ch/channel/,False
-reality-tv.jp,1,20051212072805,20051212072805,リアリティTV,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,False
-samurai-tv.co.jp,1,20051212083539,20051212083539,FIGHTING TV サムライ,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,False
-sports-i.co.jp,1,20051212083539,20051212083539,スポーツ・アイ ESPN,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,False
-sptvshop.com,1,20050111020226,20050111020226,,http://www.skyperfectv.co.jp:80/,False
-www016.upp.so-net.ne.jp,1,20050310204119,20050310204119,Ch.319 V☆パラ,http://www.skyperfectv.co.jp:80/hang-ryu-now/lineup/,False
-k-plaza.com,90,20050101003521,20061011031607,,http://www.skyperfectv.co.jp:80/hang-ryu-now/,True
-61.206.118.105,59,20050107031955,20050310204119,Ch.331 KNテレビジョン,http://www.skyperfectv.co.jp:80/hang-ryu-now/an/index.html,True
-so-net.ne.jp,44,20050101003521,20061011025619,Ch.749 So-net`l749,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,True
-tbs.co.jp,38,20050101003521,20051212083539,¬rhq@12lÌuACh¤vêoêXyVI,http://www.skyperfectv.co.jp:80/drama/,True
-lala.tv,24,20050105035445,20051210022400,SEX AND THE CITY,http://www.skyperfectv.co.jp:80/drama/,True
-eigeki.com,23,20050309065431,20061011025902,Ch.372 Ch.313,http://www.skyperfectv.co.jp:80/endwar_60th/index01.html,True
-fujitv.co.jp,22,20050109030621,20051212083539,[é©à`à@ü­HîbDuÀ àR¼E¬rhqE²¡]q,http://www.skyperfectv.co.jp:80/entertainment/gradol_gp_2004/,True
-crp.jp,14,20050102025308,20061011022754,これで放送日時を忘れない！『番組お知らせメール』に今すぐ登録！,http://www.skyperfectv.co.jp:80/anime/,True
-vpara.com,10,20050107030219,20051210022400,Ch.319 Vp,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/,True
-spmb.jp,8,20061011020356,20061011022754,,http://www.skyperfectv.co.jp/info_ch/channel/index.html,True
-fami-geki.com,6,20050105035445,20051212072805,「信長 KING OF ZIPANGU」,http://www.skyperfectv.co.jp:80/drama/,True
-han-ryu.net,6,20050317023615,20051108145819,±¿ç¨,http://www.skyperfectv.co.jp:80/hang-ryu-now/hanfes/,True
-mystery.co.jp,6,20050105035445,20051210022400,Ch.728 ~Xe`l,http://www.skyperfectv.co.jp:80/drama/,True
-mondo21.net,5,20050328154126,20051212083539,ìè¢¹@OrAÌü­,http://www.skyperfectv.co.jp:80/entertainment/gradol_gp_2004/lineup/index_gp.html,True
-star-ch.co.jp,5,20051108152917,20051210022400,スター･チャンネル クラシック,http://www.skyperfectv.co.jp:80/endwar_60th/index01.html,True
-axn.co.jp,4,20050105035445,20051210022400,CSI：科学捜査班　シーズン1,http://www.skyperfectv.co.jp:80/drama/,True
-necoweb.com,4,20050103013428,20051212072805,チャンネルNECO,http://www.skyperfectv.co.jp:80/adult/ex/gate/,True
-paris-koi.com,4,20050101003521,20050215104804,,http://www.skyperfectv.co.jp:80/hang-ryu-now/,True
-super-ch.com,4,20050105035445,20051210022400,「犯罪捜査官ネイビーファイル」 第6シーズン,http://www.skyperfectv.co.jp:80/drama/,True
-cs371.com,3,20050328154126,20051212072805,c~q@CtA[uCutBlueTVv,http://www.skyperfectv.co.jp:80/entertainment/gradol_gp_2004/lineup/index_gp.html,True
-disney.co.jp,3,20050102025308,20050105041437,スカパー！加入者だけのオリジナル特典！ディズニー・チャンネルをデスクトップで楽しもう！！,http://www.skyperfectv.co.jp:80/anime/,True
-e-station.org,3,20050103013428,20050103013428,,http://www.skyperfectv.co.jp:80/adult/ex/gate/,True
-eighties.jp,3,20050105035445,20050111020226,東京エイティーズWEBがオープンしました！,http://www.skyperfectv.co.jp:80/,True
-jigokushoujo.com,3,20051027005410,20051027005410,http://www.jigokushoujo.com/,http://www.skyperfectv.co.jp:80/anime/jigokushoujo/,True
-v-music.ch,3,20050210173322,20051212072737,http://www.v-music.ch,http://www.skyperfectv.co.jp:80/en/guide/lineup/01.html,True
-animax.co.jp,2,20051027005007,20051212072805,http://animax.co.jp/,http://www.skyperfectv.co.jp:80/prog/channel/724.html,True
-cinefil-imagica.com,2,20051108152917,20051210022400,洋画★シネフィル・イマジカ,http://www.skyperfectv.co.jp:80/endwar_60th/index01.html,True
-disneychannel.jp,2,20051212072805,20051212072805,ディズニー・チャンネル,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,True
-foodies-tv.com,2,20050109031414,20051212083539,Ch.281グルメ旅★Foodies TV,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
-imbc.com,2,20050205072123,20050214224510,http://www.imbc.com/broad/tv/ent/event/2004singer/index.html,http://www.skyperfectv.co.jp:80/hang-ryu-now/kayosai/,True
-jamtv.jp,2,20050103013428,20050103013428,,http://www.skyperfectv.co.jp:80/adult/ex/gate/,True
-mjtv123.com,2,20051212072737,20051212072737,"Music 
+﻿domain,link_count,years_seen,first_seen,last_seen,sample_anchor,sample_source_url,is_alive
+e2sptv.jp,203,2007,20070406182257,20071116103403,e2 ÁüÄà,http://www.skyperfectv.co.jp:80/sports/golf/program/,False
+opticast.jp,198,"2006,2007",20061011020356,20071116103403,,http://www.skyperfectv.co.jp/info_ch/channel/index.html,False
+korea-net.co.jp,90,"2005,2006",20050101003521,20061011031607,,http://www.skyperfectv.co.jp:80/hang-ryu-now/,False
+skyperfectv110.jp,77,"2005,2006,2007",20050102022333,20070104100405,,http://www.skyperfectv.co.jp:80/info_ch/channel/,False
+eigeki.co.jp,52,2005,20050101003521,20051208030457,Ch.362 ホームドラマチャンネル,http://www.skyperfectv.co.jp:80/hang-ryu-now/,False
+ppvj.co.jp,40,"2005,2006,2007",20050103013428,20071021021126,ÄÚ uACht@CvÁÊÒ uª¢ÁÏ¢IIvuRXÁ¿á¤¼v,http://www.skyperfectv.co.jp:80/adult/ex/gate/,False
+spbb.jp,34,2005,20050107030219,20051027005410,,http://www.skyperfectv.co.jp:80/,False
+kntv.co.jp,23,"2005,2006,2007",20050318062554,20070419012543,Ch.331 KNerW@8/6 16F30`,http://www.skyperfectv.co.jp:80/hang-ryu-now/column/naruhodo6/index.html,False
+tv-asahi-channel.com,12,2005,20050109031414,20051212072805,Ch.717 テレ朝チャンネル,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/,False
+skyperfectv.dynamicweb.jp,10,"2006,2007",20061011020356,20070104100405,éÆEIRîñ,http://www.skyperfectv.co.jp/info_ch/channel/index.html,False
+homepage3.nifty.com,8,2006,20061011022057,20061011022431,http://homepage3.nifty.com/wb-fuse/,http://www.skyperfectv.co.jp/sports/battle/column/koji_huse/koji_huse_000002.html,False
+nihon-eiga.com,8,"2005,2006,2007",20050328154126,20070428043355,¬qDq@L[eB[K[@ü­{E[ë@ê­I,http://www.skyperfectv.co.jp:80/endwar_60th/index01.html,False
+foxjapan.com,7,"2005,2007",20050105035445,20070427013537,http://www.foxjapan.com/tv/,http://www.skyperfectv.co.jp:80/drama/,False
+jsports.co.jp,7,"2005,2007",20051212083539,20070518195232,http://www.jsports.co.jp/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,False
+clubdam.com,6,"2005,2007",20050109031414,20070521194418,MEGUMI@¼ CG[Lu@Tokyo@Live@performance`LOVE`,http://www.skyperfectv.co.jp:80/entertainment/gradol_gp_2004/lineup/index_gp.html,False
+han-ryu.net,6,2005,20050317023615,20051108145819,±¿ç¨,http://www.skyperfectv.co.jp:80/hang-ryu-now/hanfes/,False
+toei-group.co.jp,6,2005,20050105035445,20051212072805,¢Æ¤ ¢±@Donft@Stop@Me@NowI,http://www.skyperfectv.co.jp:80/drama/,False
+jidaigeki.com,5,"2005,2007",20050105035445,20070509052804,NHK大河ドラマ「徳川家康」「武田信玄」一挙放送！,http://www.skyperfectv.co.jp:80/drama/,False
+owarai.cn,5,2005,20050105041437,20050111020226,スカパー ！ お笑いカーニバル2004,http://www.skyperfectv.co.jp:80/,False
+pbj.co.jp,5,"2005,2007",20050103013428,20070423001422,http://www.pbj.co.jp/ruby/index.html,http://www.skyperfectv.co.jp:80/adult/ex/gate/,False
+bb.skyperfectbb.jp,4,2005,20050101003521,20050217014309,,http://www.skyperfectv.co.jp:80/hang-ryu-now/,False
+medianox.co.jp,4,"2005,2007",20050103013428,20070510155706,http://www.medianox.co.jp/queenbee/index.html,http://www.skyperfectv.co.jp:80/adult/ex/gate/,False
+at-x.com,3,"2005,2007",20050317050220,20070409102107,なんと！液晶テレビ、iPodなど賞品総額３００万円相当が当たる豪華プレゼント番組「ＧＯＬＤＥＮ ＴＩＭＥ ２００５」！,http://www.skyperfectv.co.jp:80/anime/index.html,False
+csadult.tv,3,2005,20050125011824,20050125011824,http://csadult.tv/,http://www.skyperfectv.co.jp:80/cs_campaign_2004/,False
+gch.jrao.ne.jp,3,"2005,2007",20050111020226,20071010163609,グリーンチャンネルデータステーション（データ放送）における３連単情報の 表示について,http://www.skyperfectv.co.jp:80/,False
+home.cherrybomb.co.jp,3,2005,20050103013428,20050103013428,,http://www.skyperfectv.co.jp:80/adult/ex/gate/,False
+ipctv.co.jp,3,2007,20070420092319,20070423002339,http://www.ipctv.co.jp/332/index.html,http://www.skyperfectv.co.jp:80/prog/channel/332.html,False
+japan.discovery.com,3,"2005,2007",20051212083539,20070428092328,http://japan.discovery.com/animal-planet/index.html,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,False
+opcas.jp,3,2005,20050102022333,20050111020226,,http://www.skyperfectv.co.jp:80/info_ch/channel/,False
+access-tv.net,2,"2005,2007",20051212083539,20070521192902,http://www.access-tv.net/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,False
+cinema-r.com,2,"2005,2007",20050103013428,20070509012858,http://www.CINEMA-R.com/,http://www.skyperfectv.co.jp:80/adult/ex/gate/,False
+classica-jp.com,2,"2005,2007",20051212072737,20070420090550,http://www.classica-jp.com/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index03.html,False
+daiwa766.jp,2,"2005,2007",20051212083539,20070820091304,http://daiwa766.jp/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,False
+dentoubunka.co.jp,2,"2005,2007",20051212072805,20070716091256,http://www.dentoubunka.co.jp/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,False
+entame.express.jp,2,"2005,2007",20051212072805,20070509052730,http://entame.express.jp,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,False
+fandango.co.jp,2,"2005,2007",20051212072805,20070430031542,http://www.fandango.co.jp/yftv/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,False
+home.milk906.jp,2,"2005,2007",20050103013428,20070427013605,http://home.milk906.jp,http://www.skyperfectv.co.jp:80/adult/ex/gate/,False
+horror-tv.jp,2,"2005,2007",20051210022400,20070621001831,http://www.horror-tv.jp/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/,False
+j-korea.tv,2,2005,20050310204119,20050527181725,Ch.790 TV J-Korea,http://www.skyperfectv.co.jp:80/hang-ryu-now/lineup/,False
+manzox.ch,2,"2005,2007",20050103013428,20070410193027,http://www.manzox.ch/,http://www.skyperfectv.co.jp:80/adult/ex/gate/,False
+nikkei-cnbc.co.jp,2,"2005,2007",20051212083539,20070512211135,http://www.nikkei-cnbc.co.jp/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,False
+rakutentv.co.jp,2,2007,20070518094206,20071010164000,http://www.rakutentv.co.jp/,http://www.skyperfectv.co.jp/prog/channel/216.html,False
+reality-tv.jp,2,"2005,2007",20051212072805,20070501030235,http://www.reality-tv.jp/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,False
+samurai-tv.co.jp,2,"2005,2007",20051212083539,20070520022456,http://www.samurai-tv.co.jp,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,False
+spoinc.jp,2,2005,20050317023615,20050322070759,www.spoinc.jp,http://www.skyperfectv.co.jp:80/hang-ryu-now/hanfes/,False
+u-air.ac.jp,2,2007,20071023191942,20071023195116,http://www.u-air.ac.jp/,http://www.skyperfectv.co.jp:80/prog/channel/205.html,False
+0120142142.com,1,2007,20070716090848,20070716090848,http://www.0120142142.com,http://www.skyperfectv.co.jp:80/prog/channel/244.html,False
+241ch.jp,1,2007,20070518185429,20070518185429,http://www.241ch.jp/,http://www.skyperfectv.co.jp:80/prog/channel/241.html,False
+759ch.tv,1,2007,20070420180340,20070420180340,http://759ch.tv/,http://www.skyperfectv.co.jp:80/prog/channel/759.html,False
+cartoonnetwork.co.jp,1,2005,20051212072805,20051212072805,カートゥーン ネットワーク,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,False
+cinefil.co.jp,1,2007,20070428043341,20070428043341,http://www.cinefil.co.jp/,http://www.skyperfectv.co.jp:80/prog/channel/260.html,False
+csgyao.jp,1,2007,20070419014032,20070419014032,http://csgyao.jp/,http://www.skyperfectv.co.jp:80/prog/channel/720.html,False
+e-tenki.net,1,2007,20070907150517,20070907150517,http://www.e-tenki.net/,http://www.skyperfectv.co.jp:80/prog/channel/254.html,False
+instructv.co.jp,1,2007,20071023195000,20071023195000,http://www.instructv.co.jp/,http://www.skyperfectv.co.jp:80/prog/channel/340.html,False
+iryoufukushi.com,1,2007,20070716090300,20070716090300,http://www.iryoufukushi.com/,http://www.skyperfectv.co.jp:80/prog/channel/774.html,False
+joy224.jp,1,2007,20070422182842,20070422182842,http://joy224.jp,http://www.skyperfectv.co.jp:80/prog/channel/224.html,False
+karaoke-ch.com,1,2005,20051212072737,20051212072737,カラオケチャンネル,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index03.html,False
+kojima.net,1,2007,20070421201701,20070421201701,http://www.kojima.net/,http://www.skyperfectv.co.jp:80/prog/channel/223.html,False
+motv.co.jp,1,2007,20070716090719,20070716090719,http://www.motv.co.jp/,http://www.skyperfectv.co.jp:80/prog/channel/221.html,False
+neb.co.jp,1,2007,20070503045246,20070503045246,http://neb.co.jp,http://www.skyperfectv.co.jp:80/prog/channel/765.html,False
+news24.jp,1,2007,20070419182216,20070419182216,http://www.news24.jp/index.html,http://www.skyperfectv.co.jp:80/prog/channel/745.html,False
+nitteleplus.com,1,2007,20070504222914,20070504222914,http://www.nitteleplus.com/,http://www.skyperfectv.co.jp:80/prog/channel/278.html,False
+pikaper.jp,1,2006,20060101200156,20060101200156,,http://www.skyperfectv.co.jp:80/info_ch/channel/,False
+shop240.jp,1,2007,20070523201820,20070523201820,http://www.shop240.jp/,http://www.skyperfectv.co.jp:80/prog/channel/240.html,False
+sports-i.co.jp,1,2005,20051212083539,20051212083539,スポーツ・アイ ESPN,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,False
+sports.express.jp,1,2007,20070419155323,20070419155323,http://sports.express.jp,http://www.skyperfectv.co.jp:80/prog/channel/282.html,False
+sptvshop.com,1,2005,20050111020226,20050111020226,,http://www.skyperfectv.co.jp:80/,False
+stv-japan.jp,1,2007,20070420092401,20070420092401,http://www.stv-japan.jp/,http://www.skyperfectv.co.jp:80/prog/channel/781.html,False
+toei.co.jp,1,2007,20070420195041,20070420195041,http://www.toei.co.jp/cs/,http://www.skyperfectv.co.jp:80/prog/channel/708.html,False
+toondisney.jp,1,2007,20070513101011,20070513101011,http://www.toondisney.jp/,http://www.skyperfectv.co.jp:80/prog/channel/746.html,False
+tv-asahi-channel.jp,1,2007,20070501032105,20070501032105,http://tv-asahi-channel.jp/,http://www.skyperfectv.co.jp:80/prog/channel/717.html,False
+v135.com,1,2007,20070503023620,20070503023620,http://www.v135.com/,http://www.skyperfectv.co.jp:80/prog/channel/135.html,False
+victory-ch.tv,1,2007,20070715013801,20070715013801,http://www.victory-ch.tv/,http://www.skyperfectv.co.jp:80/prog/channel/218.html,False
+www016.upp.so-net.ne.jp,1,2005,20050310204119,20050310204119,Ch.319 V☆パラ,http://www.skyperfectv.co.jp:80/hang-ryu-now/lineup/,False
+www2.winsphil.co.jp,1,2007,20070421090529,20070421090529,http://www2.winsphil.co.jp/filipino_channel/channel_lite.html,http://www.skyperfectv.co.jp:80/prog/channel/787.html,False
+k-plaza.com,90,"2005,2006",20050101003521,20061011031607,,http://www.skyperfectv.co.jp:80/hang-ryu-now/,True
+61.206.118.105,59,2005,20050107031955,20050310204119,Ch.331 KNテレビジョン,http://www.skyperfectv.co.jp:80/hang-ryu-now/an/index.html,True
+so-net.ne.jp,45,"2005,2006,2007",20050101003521,20070409020159,http://www.so-net.ne.jp/So-netchannel/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,True
+tbs.co.jp,40,"2005,2007",20050101003521,20070503045300,¬rhq@12lÌuACh¤vêoêXyVI,http://www.skyperfectv.co.jp:80/drama/,True
+lala.tv,25,"2005,2007",20050105035445,20070409020252,http://www.lala.tv/,http://www.skyperfectv.co.jp:80/drama/,True
+eigeki.com,24,"2005,2006,2007",20050309065431,20070419014122,http://www.eigeki.com/,http://www.skyperfectv.co.jp:80/endwar_60th/index01.html,True
+fujitv.co.jp,22,2005,20050109030621,20051212083539,[é©à`à@ü­HîbDuÀ àR¼E¬rhqE²¡]q,http://www.skyperfectv.co.jp:80/entertainment/gradol_gp_2004/,True
+crp.jp,15,"2005,2006,2007",20050102025308,20070104100405,これで放送日時を忘れない！『番組お知らせメール』に今すぐ登録！,http://www.skyperfectv.co.jp:80/anime/,True
+vpara.com,11,"2005,2007",20050107030219,20070626114935,http://www.vpara.com/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/,True
+spmb.jp,9,"2006,2007",20061011020356,20070104100405,,http://www.skyperfectv.co.jp/info_ch/channel/index.html,True
+star-ch.co.jp,8,"2005,2007",20051108152917,20070421090808,http://www.star-ch.co.jp/pc/star,http://www.skyperfectv.co.jp:80/endwar_60th/index01.html,True
+fami-geki.com,7,"2005,2007",20050105035445,20070421090735,http://www.fami-geki.com/,http://www.skyperfectv.co.jp:80/drama/,True
+mystery.co.jp,7,"2005,2007",20050105035445,20070423000834,Ch.728 ~Xe`l,http://www.skyperfectv.co.jp:80/drama/,True
+powerplats.co.jp,7,"2005,2007",20050103013428,20071028093814,http://www.powerplats.co.jp/,http://www.skyperfectv.co.jp:80/adult/ex/gate/,True
+jlc.ne.jp,6,2007,20070421090722,20071023195025,http://www.jlc.ne.jp,http://www.skyperfectv.co.jp/prog/channel/385.html,True
+mondo21.net,6,"2005,2007",20050328154126,20070508192735,ìè¢¹@OrAÌü­,http://www.skyperfectv.co.jp:80/entertainment/gradol_gp_2004/lineup/index_gp.html,True
+speedchannel.co.jp,6,2007,20071010163643,20071023195106,http://www.speedchannel.co.jp,http://www.skyperfectv.co.jp/prog/channel/390.html,True
+axn.co.jp,5,"2005,2007",20050105035445,20070419155510,http://axn.co.jp,http://www.skyperfectv.co.jp:80/drama/,True
+e-station.org,5,"2005,2007",20050103013428,20070410193016,http://www.e-station.org/,http://www.skyperfectv.co.jp:80/adult/ex/gate/,True
+necoweb.com,5,"2005,2007",20050103013428,20070420092345,http://www.necoweb.com/,http://www.skyperfectv.co.jp:80/adult/ex/gate/,True
+cs371.com,4,"2005,2007",20050328154126,20070514045052,c~q@CtA[uCutBlueTVv,http://www.skyperfectv.co.jp:80/entertainment/gradol_gp_2004/lineup/index_gp.html,True
+paris-koi.com,4,2005,20050101003521,20050215104804,,http://www.skyperfectv.co.jp:80/hang-ryu-now/,True
+super-ch.com,4,2005,20050105035445,20051210022400,「犯罪捜査官ネイビーファイル」 第6シーズン,http://www.skyperfectv.co.jp:80/drama/,True
+v-music.ch,4,"2005,2007",20050210173322,20070410111844,http://www.v-music.ch/,http://www.skyperfectv.co.jp:80/en/guide/lineup/01.html,True
+animax.co.jp,3,"2005,2007",20051027005007,20070509071108,http://animax.co.jp/,http://www.skyperfectv.co.jp:80/prog/channel/724.html,True
+disney.co.jp,3,2005,20050102025308,20050105041437,スカパー！加入者だけのオリジナル特典！ディズニー・チャンネルをデスクトップで楽しもう！！,http://www.skyperfectv.co.jp:80/anime/,True
+disneychannel.jp,3,"2005,2007",20051212072805,20070512211217,http://www.disneychannel.jp/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,True
+eighties.jp,3,2005,20050105035445,20050111020226,東京エイティーズWEBがオープンしました！,http://www.skyperfectv.co.jp:80/,True
+foodies-tv.com,3,"2005,2007",20050109031414,20070513101004,http://www.foodies-tv.com/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
+jctv.co.jp,3,"2005,2007",20051212083539,20070420084402,http://www.jctv.co.jp/tgc/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
+jigokushoujo.com,3,2005,20051027005410,20051027005410,http://www.jigokushoujo.com/,http://www.skyperfectv.co.jp:80/anime/jigokushoujo/,True
+movieplus.jp,3,"2005,2007",20050310204119,20070423002409,http://www.movieplus.jp/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/,True
+mtvjapan.com,3,"2005,2007",20051212072737,20070509052747,http://www.mtvjapan.com/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index03.html,True
+spaceshowertv.com,3,"2005,2007",20051212072737,20070421201553,http://www.spaceshowertv.com/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index03.html,True
+tabi-ch.net,3,"2005,2007",20050310204119,20070513101019,http://tabi-ch.net,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
+actontv.com,2,"2005,2007",20051212083539,20070513101058,http://www.actontv.com/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
+asahi-newstar.com,2,"2005,2007",20051212083539,20070512211116,http://asahi-newstar.com/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
+bbcworld-japan.com,2,"2005,2007",20051212083539,20070512210821,http://www.bbcworld-japan.com/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
+bloomberg.co.jp,2,2007,20070519194622,20070616160948,http://www.bloomberg.co.jp/,http://www.skyperfectv.co.jp:80/prog/channel/250.html,True
+cctvdf.com,2,2007,20070512210743,20070713212858,http://www.cctvdf.com/,http://www.skyperfectv.co.jp:80/prog/channel/782.html,True
+cinefil-imagica.com,2,2005,20051108152917,20051210022400,洋画★シネフィル・イマジカ,http://www.skyperfectv.co.jp:80/endwar_60th/index01.html,True
+fujitvcs.jp,2,2007,20070428043527,20070509202730,http://www.fujitvcs.jp/,http://www.skyperfectv.co.jp:80/prog/channel/721.html,True
+gaora.co.jp,2,"2005,2007",20051212083539,20070428043449,http://www.gaora.co.jp/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
+golfnetwork.co.jp,2,"2005,2007",20051212083539,20070420092018,http://www.golfnetwork.co.jp/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
+historychannel.co.jp,2,"2005,2007",20051212083539,20070512211046,http://www.historychannel.co.jp/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
+imbc.com,2,2005,20050205072123,20050214224510,http://www.imbc.com/broad/tv/ent/event/2004singer/index.html,http://www.skyperfectv.co.jp:80/hang-ryu-now/kayosai/,True
+jamtv.jp,2,2005,20050103013428,20050103013428,,http://www.skyperfectv.co.jp:80/adult/ex/gate/,True
+kbsworld.ne.jp,2,"2006,2007",20061011024821,20070408211048,http://www.kbsworld.ne.jp/,http://www.skyperfectv.co.jp/en/guide/pack/01.html,True
+kids-station.com,2,"2005,2007",20051212072805,20070408211102,http://www.kids-station.com/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,True
+kyoto-channel.com,2,"2005,2007",20051212072805,20070612125334,http://www.kyoto-channel.com/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,True
+m-on.jp,2,"2005,2007",20051212072737,20070409015706,http://www.m-on.jp,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index03.html,True
+mjtv123.com,2,2005,20051212072737,20051212072737,"Music 
 Japan TV",http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index03.html,True
-movieplus.jp,2,20050310204119,20051210022400,Ch.312 ムービープラス,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/,True
-mtvjapan.com,2,20051212072737,20051212072737,MTV,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index03.html,True
-powerplats.co.jp,2,20050103013428,20051210022400,パワープラッツ,http://www.skyperfectv.co.jp:80/adult/ex/gate/,True
-spaceshowertv.com,2,20051212072737,20051212072737,スペースシャワーTV,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index03.html,True
-tabi-ch.net,2,20050310204119,20051212083539,Ch.277 旅チャンネル,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
-actontv.com,1,20051212083539,20051212083539,Act On TV,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
-adobe.co.jp,1,20050102022333,20050102022333,,http://www.skyperfectv.co.jp:80/adult/,True
-asahi-newstar.com,1,20051212083539,20051212083539,朝日ニュースター,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
-bbcworld-japan.com,1,20051212083539,20051212083539,BBCワールド,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
-cs-tv.net,1,20051210022400,20051210022400,カミングスーンTV,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/,True
-dramaset.com,1,20050105035445,20050105035445,ドラマセット,http://www.skyperfectv.co.jp:80/drama/,True
-gaora.co.jp,1,20051212083539,20051212083539,GAORA,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
-golfnetwork.co.jp,1,20051212083539,20051212083539,ゴルフネットワーク,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
-hello7.jp,1,20061011031558,20061011031558,SE7ENÌú{ItBVz[y[W,http://www.skyperfectv.co.jp/hang-ryu-now/furuya/index6-2.html,True
-historychannel.co.jp,1,20051212083539,20051212083539,ヒストリーチャンネル,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
-imagica.com,1,20061011024821,20061011024821,http://www.imagica.com,http://www.skyperfectv.co.jp/en/guide/pack/01.html,True
-jctv.co.jp,1,20051212083539,20051212083539,CNNj,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
-kbsworld.ne.jp,1,20061011024821,20061011024821,http://www.kbsworld.ne.jp,http://www.skyperfectv.co.jp/en/guide/pack/01.html,True
-kids-station.com,1,20051212072805,20051212072805,キッズステーション,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,True
-kyoto-channel.com,1,20051212072805,20051212072805,関西テレビ☆京都チャンネル,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,True
-m-on.jp,1,20051212072737,20051212072737,MUSIC ON! TV,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index03.html,True
-mnetjapan.com,1,20061011025532,20061011025532,Ch.792 Mnet,http://www.skyperfectv.co.jp/hang-ryu-now/spedition/kwon3/index.html,True
-musicair.econ-net.or.jp,1,20051212072737,20051212072737,ミュージック・エア・ネットワーク,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index03.html,True
-ngcjapan.com,1,20051212083539,20051212083539,ナショナルジオグラフィック,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
-nickjapan.com,1,20051212072805,20051212072805,二コロデオン/アニメ・子どもTV,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,True
-nnn24.com,1,20051212083539,20051212083539,日テレNews24,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
-ntv.co.jp,1,20051212083539,20051212083539,G + SPORTS＆NEWS,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
-paradisetv.co.jp,1,20050103013428,20050103013428,,http://www.skyperfectv.co.jp:80/adult/ex/gate/,True
-sc-tabletennis.com,1,20051212083539,20051212083539,卓球・バドミントンTV,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
-seirin.org,1,20050102022333,20050102022333,ＣＳ放送成人番組倫理委員会,http://www.skyperfectv.co.jp:80/adult/,True
-server-jp.imrworldwide.com,1,20050317050220,20050317050220,,http://www.skyperfectv.co.jp:80/anime/index.html,True
-sky-a.co.jp,1,20051212083539,20051212083539,スカイ・A,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
-sonymusic.co.jp,1,20051027005410,20051027005410,AjvbNX,http://www.skyperfectv.co.jp:80/anime/jigokushoujo/,True
-theatertv.co.jp,1,20051212072805,20051212072805,シアター・テレビジョン,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,True
-tv-asahi.co.jp,1,20061011024821,20061011024821,http://www.tv-asahi.co.jp/privacy/,http://www.skyperfectv.co.jp/en/guide/pack/01.html,True
+mnetjapan.com,2,"2006,2007",20061011025532,20070410113045,http://www.mnetjapan.com/,http://www.skyperfectv.co.jp/hang-ryu-now/spedition/kwon3/index.html,True
+musicair.econ-net.or.jp,2,"2005,2007",20051212072737,20070423002007,http://musicair.econ-net.or.jp/index.html,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index03.html,True
+ngcjapan.com,2,"2005,2007",20051212083539,20070421085853,http://www.ngcjapan.com/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
+nickjapan.com,2,"2005,2007",20051212072805,20070419014930,http://www.nickjapan.com/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,True
+ntv.co.jp,2,"2005,2007",20051212083539,20070428042932,http://www.ntv.co.jp/G/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
+sky-a.co.jp,2,"2005,2007",20051212083539,20070419155207,http://www.sky-a.co.jp/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
+theatertv.co.jp,2,"2005,2007",20051212072805,20070421085943,http://www.theatertv.co.jp/,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index02.html,True
+xcity.jp,2,2007,20070428005604,20070428005711,http://xcity.jp/cherryb/index2.html,http://www.skyperfectv.co.jp:80/prog/channel/905.html,True
+adobe.co.jp,1,2005,20050102022333,20050102022333,,http://www.skyperfectv.co.jp:80/adult/,True
+apmh.co.jp,1,2007,20070714222623,20070714222623,http://www.apmh.co.jp/,http://www.skyperfectv.co.jp:80/prog/channel/785.html,True
+bbt757.co.jp,1,2007,20070616135640,20070616135640,http://www.bbt757.co.jp/,http://www.skyperfectv.co.jp:80/prog/channel/757.html,True
+benesse.co.jp,1,2007,20070513101039,20070513101039,http://www.benesse.co.jp/channel/,http://www.skyperfectv.co.jp:80/prog/channel/248.html,True
+carenet.com,1,2007,20071011051328,20071011051328,http://www.carenet.com,http://www.skyperfectv.co.jp/prog/channel/772.html,True
+cartoon.co.jp,1,2007,20070423002104,20070423002104,http://www.cartoon.co.jp/,http://www.skyperfectv.co.jp:80/prog/channel/274.html,True
+chuoh.co.jp,1,2007,20070716091610,20070716091610,http://www.chuoh.co.jp/cs/,http://www.skyperfectv.co.jp:80/prog/channel/762.html,True
+cs-tv.net,1,2005,20051210022400,20051210022400,カミングスーンTV,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/,True
+d-deltanet.com,1,2007,20070502183338,20070502183338,http://www.d-deltanet.com/,http://www.skyperfectv.co.jp:80/prog/channel/777.html,True
+dramaset.com,1,2005,20050105035445,20050105035445,ドラマセット,http://www.skyperfectv.co.jp:80/drama/,True
+exciting-gp.com,1,2007,20070705224903,20070705224903,http://exciting-gp.com/,http://www.skyperfectv.co.jp:80/prog/channel/709.html,True
+fishing-v.co.jp,1,2007,20070513101046,20070513101046,http://www.fishing-v.co.jp/,http://www.skyperfectv.co.jp:80/prog/channel/753.html,True
+foxcrime.jp,1,2007,20070504180422,20070504180422,http://www.foxcrime.jp/,http://www.skyperfectv.co.jp:80/prog/channel/723.html,True
+gemstv.com,1,2007,20071116103403,20071116103403,http://www.gemstv.com,http://www.skyperfectv.co.jp:80/prog/channel/243.html,True
+glc.co.jp,1,2007,20070707065644,20070707065644,http://www.glc.co.jp/cgi-bin/index.cgi,http://www.skyperfectv.co.jp:80/prog/channel/343.html,True
+hello7.jp,1,2006,20061011031558,20061011031558,SE7ENÌú{ItBVz[y[W,http://www.skyperfectv.co.jp/hang-ryu-now/furuya/index6-2.html,True
+homedrama-ch.com,1,2007,20070429104914,20070429104914,http://www.homedrama-ch.com/,http://www.skyperfectv.co.jp:80/prog/channel/362.html,True
+igoshogi.net,1,2007,20070420092353,20070420092353,http://www.igoshogi.net/,http://www.skyperfectv.co.jp:80/prog/channel/320.html,True
+imagica.com,1,2006,20061011024821,20061011024821,http://www.imagica.com,http://www.skyperfectv.co.jp/en/guide/pack/01.html,True
+japanet.co.jp,1,2007,20070621042149,20070621042149,http://www.japanet.co.jp/,http://www.skyperfectv.co.jp:80/prog/channel/242.html,True
+kayopops.jp,1,2007,20070423002314,20070423002314,http://www.kayopops.jp/,http://www.skyperfectv.co.jp:80/prog/channel/266.html,True
+mjtv.jp,1,2007,20070419015001,20070419015001,http://www.mjtv.jp/,http://www.skyperfectv.co.jp:80/prog/channel/269.html,True
+nnn24.com,1,2005,20051212083539,20051212083539,日テレNews24,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
+paradisetv.co.jp,1,2005,20050103013428,20050103013428,,http://www.skyperfectv.co.jp:80/adult/ex/gate/,True
+paradisetv.jp,1,2007,20070501032206,20070501032206,http://www.paradisetv.jp/,http://www.skyperfectv.co.jp:80/prog/channel/913.html,True
+qvc.jp,1,2007,20070716090547,20070716090547,http://qvc.jp/,http://www.skyperfectv.co.jp:80/prog/channel/222.html,True
+rainbow-ch.com,1,2007,20070410192941,20070410192941,http://www.rainbow-ch.com,http://www.skyperfectv.co.jp:80/prog/channel/901.html,True
+rakuraku.co.jp,1,2007,20070512211310,20070512211310,http://www.rakuraku.co.jp/,http://www.skyperfectv.co.jp:80/prog/channel/784.html,True
+sc-tabletennis.com,1,2005,20051212083539,20051212083539,卓球・バドミントンTV,http://www.skyperfectv.co.jp:80/feature2005/ikkyo/index04.html,True
+seirin.org,1,2005,20050102022333,20050102022333,ＣＳ放送成人番組倫理委員会,http://www.skyperfectv.co.jp:80/adult/,True
+server-jp.imrworldwide.com,1,2005,20050317050220,20050317050220,,http://www.skyperfectv.co.jp:80/anime/index.html,True
+shopch.jp,1,2007,20070420092201,20070420092201,http://www.shopch.jp/,http://www.skyperfectv.co.jp:80/prog/channel/220.html,True
+sonymusic.co.jp,1,2005,20051027005410,20051027005410,AjvbNX,http://www.skyperfectv.co.jp:80/anime/jigokushoujo/,True
+stardigio.com,1,2007,20070420092054,20070420092054,http://www.stardigio.com,http://www.skyperfectv.co.jp:80/prog/channel/400.html,True
+superdramatv.com,1,2007,20070423000528,20070423000528,http://www.superdramatv.com/,http://www.skyperfectv.co.jp:80/prog/channel/360.html,True
+thecinema.jp,1,2007,20070505014543,20070505014543,http://www.thecinema.jp/,http://www.skyperfectv.co.jp:80/prog/channel/706.html,True
+tv-asahi.co.jp,1,2006,20061011024821,20061011024821,http://www.tv-asahi.co.jp/privacy/,http://www.skyperfectv.co.jp/en/guide/pack/01.html,True
+weathernews.jp,1,2007,20070607143926,20070607143926,http://weathernews.jp/,http://www.skyperfectv.co.jp:80/prog/channel/744.html,True
+wowow.co.jp,1,2007,20070419181735,20070419181735,http://www.wowow.co.jp/,http://www.skyperfectv.co.jp:80/prog/channel/330.html,True
