@@ -7,7 +7,7 @@ on:
       domain:
         description: '対象ドメイン (例: skincare-univ.com)'
         required: true
-        default: 'skincare-univ.com'
+        default: 'ueno.co.jp'
         type: string
       year_from:
         description: '対象開始年 (例: 2014)'
