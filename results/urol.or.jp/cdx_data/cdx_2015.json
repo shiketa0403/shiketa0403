@@ -1,0 +1,704 @@
+{
+  "domain": "urol.or.jp",
+  "year": 2015,
+  "fetched_at": "2026-04-16T06:11:43+0000",
+  "header": [
+    "timestamp",
+    "original"
+  ],
+  "count": 173,
+  "records": [
+    {
+      "timestamp": "20150101222041",
+      "original": "http://www.urol.or.jp:80/"
+    },
+    {
+      "timestamp": "20150131171927",
+      "original": "http://www2.urol.or.jp:80/avj18/01.html"
+    },
+    {
+      "timestamp": "20150202052226",
+      "original": "http://www.urol.or.jp:80/en/index.html"
+    },
+    {
+      "timestamp": "20150202052231",
+      "original": "http://www.urol.or.jp:80/index.html"
+    },
+    {
+      "timestamp": "20150129074810",
+      "original": "http://www.urol.or.jp:80/info/guideline/"
+    },
+    {
+      "timestamp": "20150129014855",
+      "original": "http://www.urol.or.jp:80/info/guideline/index.html"
+    },
+    {
+      "timestamp": "20150515063434",
+      "original": "http://www.urol.or.jp:80/info/guideline/reprint.html"
+    },
+    {
+      "timestamp": "20150502064119",
+      "original": "http://www.urol.or.jp:80/info/index.html"
+    },
+    {
+      "timestamp": "20150515000044",
+      "original": "http://www.urol.or.jp:80/info/info-shift.html"
+    },
+    {
+      "timestamp": "20150515000056",
+      "original": "http://www.urol.or.jp:80/info/medical-society.html"
+    },
+    {
+      "timestamp": "20150508105308",
+      "original": "http://www.urol.or.jp:80/info/ministries.html"
+    },
+    {
+      "timestamp": "20150515000101",
+      "original": "http://www.urol.or.jp:80/info/recommen/index.html"
+    },
+    {
+      "timestamp": "20150515000119",
+      "original": "http://www.urol.or.jp:80/info/society/index.html"
+    },
+    {
+      "timestamp": "20150508115125",
+      "original": "http://www.urol.or.jp:80/journal/iju.html"
+    },
+    {
+      "timestamp": "20150502064220",
+      "original": "http://www.urol.or.jp:80/journal/index.html"
+    },
+    {
+      "timestamp": "20150508110454",
+      "original": "http://www.urol.or.jp:80/journal/urol-journal.html"
+    },
+    {
+      "timestamp": "20150102012118",
+      "original": "http://www.urol.or.jp:80/meeting/general.html"
+    },
+    {
+      "timestamp": "20150102005843",
+      "original": "http://www.urol.or.jp:80/meeting/index.html"
+    },
+    {
+      "timestamp": "20150508105818",
+      "original": "http://www.urol.or.jp:80/meeting/related.html"
+    },
+    {
+      "timestamp": "20150129074815",
+      "original": "http://www2.urol.or.jp:80/movie/05.html"
+    },
+    {
+      "timestamp": "20150129074840",
+      "original": "http://www2.urol.or.jp:80/movie/07.html"
+    },
+    {
+      "timestamp": "20150129074909",
+      "original": "http://www2.urol.or.jp:80/movie/cancer.html"
+    },
+    {
+      "timestamp": "20150202052246",
+      "original": "http://www.urol.or.jp:80/other/approval_howto.html"
+    },
+    {
+      "timestamp": "20150222110626",
+      "original": "http://www.urol.or.jp:80/other/calendar.html"
+    },
+    {
+      "timestamp": "20150501131312",
+      "original": "http://www.urol.or.jp:80/other/faq.html"
+    },
+    {
+      "timestamp": "20150503235723",
+      "original": "http://www.urol.or.jp:80/other/glossary.html"
+    },
+    {
+      "timestamp": "20150131171932",
+      "original": "http://www.urol.or.jp:80/other/inspection_system.html"
+    },
+    {
+      "timestamp": "20150226090229",
+      "original": "http://www.urol.or.jp:80/other/postgraduate.html"
+    },
+    {
+      "timestamp": "20150502063957",
+      "original": "http://www.urol.or.jp:80/other/sitepolicy.html"
+    },
+    {
+      "timestamp": "20151202092449",
+      "original": "http://www.urol.or.jp:80/public/100th.html"
+    },
+    {
+      "timestamp": "20151128124428",
+      "original": "http://www.urol.or.jp:80/public/busines_entry.html"
+    },
+    {
+      "timestamp": "20150201063448",
+      "original": "http://www.urol.or.jp:80/public/index.html"
+    },
+    {
+      "timestamp": "20151202093931",
+      "original": "http://www.urol.or.jp:80/public/kidney-trade.html"
+    },
+    {
+      "timestamp": "20151202093006",
+      "original": "http://www.urol.or.jp:80/public/pca/america-prophylactic.html"
+    },
+    {
+      "timestamp": "20151202092455",
+      "original": "http://www.urol.or.jp:80/public/pca/news.html"
+    },
+    {
+      "timestamp": "20150429103447",
+      "original": "https://www.urol.or.jp/public/pca/psa-exam.html"
+    },
+    {
+      "timestamp": "20151202092500",
+      "original": "http://www.urol.or.jp:80/public/seminar.html"
+    },
+    {
+      "timestamp": "20150102012124",
+      "original": "http://www.urol.or.jp:80/public/symptom/"
+    },
+    {
+      "timestamp": "20150718075321",
+      "original": "http://www.urol.or.jp:80/public/symptom/01.html"
+    },
+    {
+      "timestamp": "20150102165018",
+      "original": "http://www.urol.or.jp:80/public/symptom/03.html"
+    },
+    {
+      "timestamp": "20151024055649",
+      "original": "http://www.urol.or.jp:80/public/symptom/09.html"
+    },
+    {
+      "timestamp": "20151128124238",
+      "original": "http://www.urol.or.jp:80/public/symptom/index.html"
+    },
+    {
+      "timestamp": "20151202093210",
+      "original": "http://www.urol.or.jp:80/public/wnlog.html"
+    },
+    {
+      "timestamp": "20150515000125",
+      "original": "http://www.urol.or.jp:80/shinsai/index.html"
+    },
+    {
+      "timestamp": "20150202052306",
+      "original": "http://www.urol.or.jp:80/sitemap.html"
+    },
+    {
+      "timestamp": "20150517062320",
+      "original": "http://www.urol.or.jp:80/society/about/history-annals.html"
+    },
+    {
+      "timestamp": "20150517062324",
+      "original": "http://www.urol.or.jp:80/society/about/history.html"
+    },
+    {
+      "timestamp": "20150702183757",
+      "original": "http://www.urol.or.jp:80/society/about/logo.html"
+    },
+    {
+      "timestamp": "20150517062329",
+      "original": "http://www.urol.or.jp:80/society/about/members.html"
+    },
+    {
+      "timestamp": "20150202052313",
+      "original": "http://www.urol.or.jp:80/society/about/office.html"
+    },
+    {
+      "timestamp": "20150517062334",
+      "original": "http://www.urol.or.jp:80/society/coi/appli.html"
+    },
+    {
+      "timestamp": "20150517062340",
+      "original": "http://www.urol.or.jp:80/society/coi/bylow.html"
+    },
+    {
+      "timestamp": "20150331093918",
+      "original": "http://www.urol.or.jp:80/society/coi/guideline.html"
+    },
+    {
+      "timestamp": "20150517062345",
+      "original": "http://www.urol.or.jp:80/society/gender/about.html"
+    },
+    {
+      "timestamp": "20150502064225",
+      "original": "http://www.urol.or.jp:80/society/gender/rule.html"
+    },
+    {
+      "timestamp": "20150227213609",
+      "original": "http://www.urol.or.jp:80/society/index.html"
+    },
+    {
+      "timestamp": "20150501131322",
+      "original": "http://www.urol.or.jp:80/society/link.html"
+    },
+    {
+      "timestamp": "20150518034259",
+      "original": "http://www.urol.or.jp:80/society/list/anzen.html"
+    },
+    {
+      "timestamp": "20150520020607",
+      "original": "http://www.urol.or.jp:80/society/list/avj.html"
+    },
+    {
+      "timestamp": "20150520020611",
+      "original": "http://www.urol.or.jp:80/society/list/coi.html"
+    },
+    {
+      "timestamp": "20150520021127",
+      "original": "http://www.urol.or.jp:80/society/list/gakujyutsu.html"
+    },
+    {
+      "timestamp": "20150520021132",
+      "original": "http://www.urol.or.jp:80/society/list/gantoroku.html"
+    },
+    {
+      "timestamp": "20150520020616",
+      "original": "http://www.urol.or.jp:80/society/list/ganyakubutsu.html"
+    },
+    {
+      "timestamp": "20150518034324",
+      "original": "http://www.urol.or.jp:80/society/list/genome.html"
+    },
+    {
+      "timestamp": "20150516025928",
+      "original": "http://www.urol.or.jp:80/society/list/hensyu.html"
+    },
+    {
+      "timestamp": "20150520021137",
+      "original": "http://www.urol.or.jp:80/society/list/hoken.html"
+    },
+    {
+      "timestamp": "20150516010908",
+      "original": "http://www.urol.or.jp:80/society/list/index.html"
+    },
+    {
+      "timestamp": "20150520020621",
+      "original": "http://www.urol.or.jp:80/society/list/it.html"
+    },
+    {
+      "timestamp": "20150520020626",
+      "original": "http://www.urol.or.jp:80/society/list/kaisoku.html"
+    },
+    {
+      "timestamp": "20150520021142",
+      "original": "http://www.urol.or.jp:80/society/list/koho.html"
+    },
+    {
+      "timestamp": "20150520020631",
+      "original": "http://www.urol.or.jp:80/society/list/kokusai.html"
+    },
+    {
+      "timestamp": "20150520020636",
+      "original": "http://www.urol.or.jp:80/society/list/kyoiku.html"
+    },
+    {
+      "timestamp": "20150520020641",
+      "original": "http://www.urol.or.jp:80/society/list/laparo.html"
+    },
+    {
+      "timestamp": "20150516025933",
+      "original": "http://www.urol.or.jp:80/society/list/representative.html"
+    },
+    {
+      "timestamp": "20150516030158",
+      "original": "http://www.urol.or.jp:80/society/list/riji.html"
+    },
+    {
+      "timestamp": "20150520021052",
+      "original": "http://www.urol.or.jp:80/society/list/rinri.html"
+    },
+    {
+      "timestamp": "20150520021055",
+      "original": "http://www.urol.or.jp:80/society/list/ryoiki.html"
+    },
+    {
+      "timestamp": "20150520021101",
+      "original": "http://www.urol.or.jp:80/society/list/senkyo.html"
+    },
+    {
+      "timestamp": "20150520021147",
+      "original": "http://www.urol.or.jp:80/society/list/senmoni.html"
+    },
+    {
+      "timestamp": "20150520021106",
+      "original": "http://www.urol.or.jp:80/society/list/shidoi.html"
+    },
+    {
+      "timestamp": "20150520021152",
+      "original": "http://www.urol.or.jp:80/society/list/shinryo.html"
+    },
+    {
+      "timestamp": "20150520021111",
+      "original": "http://www.urol.or.jp:80/society/list/sokai.html"
+    },
+    {
+      "timestamp": "20150520021157",
+      "original": "http://www.urol.or.jp:80/society/list/somu.html"
+    },
+    {
+      "timestamp": "20150520021202",
+      "original": "http://www.urol.or.jp:80/society/list/sotsugo.html"
+    },
+    {
+      "timestamp": "20150520021116",
+      "original": "http://www.urol.or.jp:80/society/list/syorai.html"
+    },
+    {
+      "timestamp": "20150520021208",
+      "original": "http://www.urol.or.jp:80/society/list/woman.html"
+    },
+    {
+      "timestamp": "20150520021213",
+      "original": "http://www.urol.or.jp:80/society/list/yogo.html"
+    },
+    {
+      "timestamp": "20150520021121",
+      "original": "http://www.urol.or.jp:80/society/list/zaimu.html"
+    },
+    {
+      "timestamp": "20150516030028",
+      "original": "http://www.urol.or.jp:80/society/message.html"
+    },
+    {
+      "timestamp": "20150517062350",
+      "original": "http://www.urol.or.jp:80/society/prize/gakkai.html"
+    },
+    {
+      "timestamp": "20150517062355",
+      "original": "http://www.urol.or.jp:80/society/prize/sakaguchi.html"
+    },
+    {
+      "timestamp": "20150517062401",
+      "original": "http://www.urol.or.jp:80/society/prize/sokai.html"
+    },
+    {
+      "timestamp": "20150517062405",
+      "original": "http://www.urol.or.jp:80/society/prize/subsidy.html"
+    },
+    {
+      "timestamp": "20150517062411",
+      "original": "http://www.urol.or.jp:80/society/prize/young-research.html"
+    },
+    {
+      "timestamp": "20150517062415",
+      "original": "http://www.urol.or.jp:80/society/report.html"
+    },
+    {
+      "timestamp": "20150517062441",
+      "original": "http://www.urol.or.jp:80/society/rule/index.html"
+    },
+    {
+      "timestamp": "20151219004537",
+      "original": "http://www.urol.or.jp:80/society/rule/laparo.html"
+    },
+    {
+      "timestamp": "20150502064001",
+      "original": "http://www.urol.or.jp:80/specialist/appli/facility.html"
+    },
+    {
+      "timestamp": "20150101222948",
+      "original": "http://www.urol.or.jp:80/specialist/appli/index.html"
+    },
+    {
+      "timestamp": "20150502064006",
+      "original": "http://www.urol.or.jp:80/specialist/appli/procedure.html"
+    },
+    {
+      "timestamp": "20150501131327",
+      "original": "http://www.urol.or.jp:80/specialist/index.html"
+    },
+    {
+      "timestamp": "20150430162438",
+      "original": "http://www.urol.or.jp:80/specialist/inst/chugoku.html"
+    },
+    {
+      "timestamp": "20150403002128",
+      "original": "https://www.urol.or.jp/specialist/inst/hokkaido.html"
+    },
+    {
+      "timestamp": "20150429190828",
+      "original": "http://www.urol.or.jp:80/specialist/inst/index.html"
+    },
+    {
+      "timestamp": "20150501131333",
+      "original": "http://www.urol.or.jp:80/specialist/inst/kansai.html"
+    },
+    {
+      "timestamp": "20150429190833",
+      "original": "http://www.urol.or.jp:80/specialist/inst/kanto.html"
+    },
+    {
+      "timestamp": "20150501131338",
+      "original": "http://www.urol.or.jp:80/specialist/inst/kyusyu.html"
+    },
+    {
+      "timestamp": "20150501131355",
+      "original": "http://www.urol.or.jp:80/specialist/inst/tohoku.html"
+    },
+    {
+      "timestamp": "20150501131438",
+      "original": "http://www.urol.or.jp:80/specialist/inst/tokai.html"
+    },
+    {
+      "timestamp": "20150502064350",
+      "original": "http://www.urol.or.jp:80/specialist/laparo.html"
+    },
+    {
+      "timestamp": "20150129014932",
+      "original": "http://www2.urol.or.jp:80/specialist/list/"
+    },
+    {
+      "timestamp": "20150129022434",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?"
+    },
+    {
+      "timestamp": "20151202092505",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E4%B8%89%E9%87%8D%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093016",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E4%BA%AC%E9%83%BD%E5%BA%9C"
+    },
+    {
+      "timestamp": "20151202093951",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E4%BD%90%E8%B3%80%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093956",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E5%85%B5%E5%BA%AB%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202094001",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E5%8C%97%E6%B5%B7%E9%81%93"
+    },
+    {
+      "timestamp": "20151202093220",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E5%8D%83%E8%91%89%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093021",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E5%92%8C%E6%AD%8C%E5%B1%B1%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202094006",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E5%9F%BC%E7%8E%89%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093226",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E5%A4%A7%E5%88%86%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202094214",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E5%A4%A7%E9%98%AA%E5%BA%9C"
+    },
+    {
+      "timestamp": "20151202094217",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E5%AE%AE%E5%9F%8E%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093026",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E5%AE%AE%E5%B4%8E%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093031",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E5%AF%8C%E5%B1%B1%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202092510",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E5%B1%B1%E5%8F%A3%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093037",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E5%B1%B1%E5%BD%A2%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093230",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E5%B1%B1%E6%A2%A8%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202094222",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E5%B2%90%E9%98%9C%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093043",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E5%B2%A1%E5%B1%B1%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093539",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E5%B2%A9%E6%89%8B%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093544",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E5%B3%B6%E6%A0%B9%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202094227",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E5%BA%83%E5%B3%B6%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093549",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E5%BE%B3%E5%B3%B6%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202092819",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E6%84%9B%E5%AA%9B%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093554",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E6%84%9B%E7%9F%A5%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202092824",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E6%96%B0%E6%BD%9F%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093600",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E6%9D%B1%E4%BA%AC%E9%83%BD"
+    },
+    {
+      "timestamp": "20151202093048",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E6%A0%83%E6%9C%A8%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093053",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E6%BB%8B%E8%B3%80%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202094232",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E7%86%8A%E6%9C%AC%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202094237",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E7%9F%B3%E5%B7%9D%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093604",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E7%A6%8F%E4%BA%95%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202092828",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E7%A6%8F%E5%B2%A1%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093609",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E7%A6%8F%E5%B3%B6%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202094242",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E7%A7%8B%E7%94%B0%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093614",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E7%BE%A4%E9%A6%AC%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202092833",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E8%8C%A8%E5%9F%8E%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202094348",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E9%95%B7%E5%B4%8E%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093619",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E9%95%B7%E9%87%8E%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093058",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E9%9D%92%E6%A3%AE%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202092840",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E9%9D%99%E5%B2%A1%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202092911",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E9%A6%99%E5%B7%9D%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093103",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E9%AB%98%E7%9F%A5%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093624",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E9%B3%A5%E5%8F%96%E7%9C%8C"
+    },
+    {
+      "timestamp": "20151202093140",
+      "original": "http://www2.urol.or.jp:80/specialist/list/index.php?spref=%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C"
+    },
+    {
+      "timestamp": "20150502064237",
+      "original": "http://www.urol.or.jp:80/specialist/system/about.html"
+    },
+    {
+      "timestamp": "20151003233232",
+      "original": "http://www.urol.or.jp:80/specialist/system/about_new.html"
+    },
+    {
+      "timestamp": "20150502064011",
+      "original": "http://www.urol.or.jp:80/specialist/system/acquisition.html"
+    },
+    {
+      "timestamp": "20150502064243",
+      "original": "http://www.urol.or.jp:80/specialist/system/info.html"
+    },
+    {
+      "timestamp": "20150502064355",
+      "original": "http://www.urol.or.jp:80/specialist/system/rule.html"
+    },
+    {
+      "timestamp": "20150502064017",
+      "original": "http://www.urol.or.jp:80/specialist/system/unit.html"
+    },
+    {
+      "timestamp": "20150502064400",
+      "original": "http://www.urol.or.jp:80/specialist/test/guide.html"
+    },
+    {
+      "timestamp": "20150502064248",
+      "original": "http://www.urol.or.jp:80/specialist/test/guideline.html"
+    },
+    {
+      "timestamp": "20150502064438",
+      "original": "http://www.urol.or.jp:80/specialist/test/info.html"
+    },
+    {
+      "timestamp": "20150502064323",
+      "original": "http://www.urol.or.jp:80/specialist/test/past-question.html"
+    },
+    {
+      "timestamp": "20150502064023",
+      "original": "http://www.urol.or.jp:80/specialist/training/guide.html"
+    },
+    {
+      "timestamp": "20150502064027",
+      "original": "http://www.urol.or.jp:80/specialist/training/info.html"
+    },
+    {
+      "timestamp": "20150515122257",
+      "original": "http://www.urol.or.jp:80/student/aim.html"
+    },
+    {
+      "timestamp": "20150502001232",
+      "original": "http://www.urol.or.jp:80/student/index.html"
+    },
+    {
+      "timestamp": "20150515122034",
+      "original": "http://www.urol.or.jp:80/student/movie.html"
+    },
+    {
+      "timestamp": "20150515050459",
+      "original": "http://www.urol.or.jp:80/student/recruit/index.html"
+    },
+    {
+      "timestamp": "20150102005923",
+      "original": "http://www.urol.or.jp:80/top.html"
+    }
+  ]
+}
