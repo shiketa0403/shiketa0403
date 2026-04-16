@@ -46,7 +46,8 @@ def build_cdx_params(domain: str, year: int) -> list[tuple[str, str]]:
     (同じキーを2回書くために必要)。
     """
     return [
-        ("url", f"{domain}/*"),
+        ("url", domain),
+        ("matchType", "domain"),
         ("output", "json"),
         ("fl", "timestamp,original"),
         ("filter", "statuscode:200"),
