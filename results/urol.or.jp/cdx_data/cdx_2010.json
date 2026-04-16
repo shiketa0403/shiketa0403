@@ -1,0 +1,312 @@
+{
+  "domain": "urol.or.jp",
+  "year": 2010,
+  "fetched_at": "2026-04-16T05:06:12+0000",
+  "header": [
+    "timestamp",
+    "original"
+  ],
+  "count": 75,
+  "records": [
+    {
+      "timestamp": "20100310221418",
+      "original": "http://www.urol.or.jp:80/"
+    },
+    {
+      "timestamp": "20100501181558",
+      "original": "http://www.urol.or.jp:80/en/index.html"
+    },
+    {
+      "timestamp": "20100501181603",
+      "original": "http://www.urol.or.jp:80/iryo/index.html"
+    },
+    {
+      "timestamp": "20100711002111",
+      "original": "http://www.urol.or.jp:80/iryo/meeting/general-meeting.html"
+    },
+    {
+      "timestamp": "20100501192629",
+      "original": "http://www.urol.or.jp:80/javascript.html"
+    },
+    {
+      "timestamp": "20100118071819",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/hainyo_seido.html"
+    },
+    {
+      "timestamp": "20100127103336",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/suo-wuof_conf.html"
+    },
+    {
+      "timestamp": "20100127103355",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/suo-wuof_conf3.html"
+    },
+    {
+      "timestamp": "20100127103400",
+      "original": "http://www.urol.or.jp:80/kankeisya/past/21st_DDS.html"
+    },
+    {
+      "timestamp": "20100210031238",
+      "original": "http://www.urol.or.jp:80/kankeisya/past/4th_kanto_hormone.html"
+    },
+    {
+      "timestamp": "20100125171955",
+      "original": "http://www.urol.or.jp:80/kankeisya/past/pastcongress.htm"
+    },
+    {
+      "timestamp": "20100323075844",
+      "original": "http://www.urol.or.jp:80/kankeisya/senmon_i/kisoku.html"
+    },
+    {
+      "timestamp": "20100322203536",
+      "original": "http://www.urol.or.jp:80/kankeisya/senmon_i/saisoku2008.html"
+    },
+    {
+      "timestamp": "20100322203630",
+      "original": "http://www.urol.or.jp:80/kankeisya/senmon_i/senmoni_seido.html"
+    },
+    {
+      "timestamp": "20100315091218",
+      "original": "http://www.urol.or.jp:80/menu.html"
+    },
+    {
+      "timestamp": "20100501181608",
+      "original": "http://www.urol.or.jp:80/shimin/access.html"
+    },
+    {
+      "timestamp": "20100501192634",
+      "original": "http://www.urol.or.jp:80/shimin/doctor.html"
+    },
+    {
+      "timestamp": "20100806192945",
+      "original": "http://www.urol.or.jp:80/shimin/doctor/doctor-a.html"
+    },
+    {
+      "timestamp": "20101130140635",
+      "original": "http://www.urol.or.jp:80/shimin/doctor/doctor-ha.html"
+    },
+    {
+      "timestamp": "20100627140530",
+      "original": "http://www.urol.or.jp:80/shimin/doctor/doctor-sa.html"
+    },
+    {
+      "timestamp": "20100313154241",
+      "original": "http://www.urol.or.jp:80/shimin/H19business_report.html"
+    },
+    {
+      "timestamp": "20100313154246",
+      "original": "http://www.urol.or.jp:80/shimin/H19hojyokin.html"
+    },
+    {
+      "timestamp": "20100313154251",
+      "original": "http://www.urol.or.jp:80/shimin/H20business_report.html"
+    },
+    {
+      "timestamp": "20100313154256",
+      "original": "http://www.urol.or.jp:80/shimin/H21business_plan.html"
+    },
+    {
+      "timestamp": "20100501192640",
+      "original": "http://www.urol.or.jp:80/shimin/history-annals.html"
+    },
+    {
+      "timestamp": "20100327191918",
+      "original": "http://www.urol.or.jp:80/shimin/history.html"
+    },
+    {
+      "timestamp": "20100501192645",
+      "original": "http://www.urol.or.jp:80/shimin/hospital.html"
+    },
+    {
+      "timestamp": "20101107025635",
+      "original": "http://www.urol.or.jp:80/shimin/hospital/hospital-chugoku.html"
+    },
+    {
+      "timestamp": "20101107104347",
+      "original": "http://www.urol.or.jp:80/shimin/hospital/hospital-hokkaido.html"
+    },
+    {
+      "timestamp": "20101107050325",
+      "original": "http://www.urol.or.jp:80/shimin/hospital/hospital-kansai.html"
+    },
+    {
+      "timestamp": "20101107025645",
+      "original": "http://www.urol.or.jp:80/shimin/hospital/hospital-kyusyu.html"
+    },
+    {
+      "timestamp": "20101107050339",
+      "original": "http://www.urol.or.jp:80/shimin/hospital/hospital-tohoku.html"
+    },
+    {
+      "timestamp": "20101105160247",
+      "original": "http://www.urol.or.jp:80/shimin/hospital/hospital-tokai.html"
+    },
+    {
+      "timestamp": "20100501192650",
+      "original": "http://www.urol.or.jp:80/shimin/info-log.html"
+    },
+    {
+      "timestamp": "20100311182534",
+      "original": "http://www.urol.or.jp:80/shimin/info.html"
+    },
+    {
+      "timestamp": "20100501181614",
+      "original": "http://www.urol.or.jp:80/shimin/link.html"
+    },
+    {
+      "timestamp": "20100501192655",
+      "original": "http://www.urol.or.jp:80/shimin/list.html"
+    },
+    {
+      "timestamp": "20100711053324",
+      "original": "http://www.urol.or.jp:80/shimin/list/list-anzen.html"
+    },
+    {
+      "timestamp": "20100711052939",
+      "original": "http://www.urol.or.jp:80/shimin/list/list-avj.html"
+    },
+    {
+      "timestamp": "20100711052948",
+      "original": "http://www.urol.or.jp:80/shimin/list/list-gakujyutu.html"
+    },
+    {
+      "timestamp": "20100711053330",
+      "original": "http://www.urol.or.jp:80/shimin/list/list-genom.html"
+    },
+    {
+      "timestamp": "20100711052954",
+      "original": "http://www.urol.or.jp:80/shimin/list/list-hensyu.html"
+    },
+    {
+      "timestamp": "20100814034141",
+      "original": "http://www.urol.or.jp:80/shimin/list/list-hoken.html"
+    },
+    {
+      "timestamp": "20100711053000",
+      "original": "http://www.urol.or.jp:80/shimin/list/list-kaisoku.html"
+    },
+    {
+      "timestamp": "20100711053004",
+      "original": "http://www.urol.or.jp:80/shimin/list/list-kokusai.html"
+    },
+    {
+      "timestamp": "20100711053335",
+      "original": "http://www.urol.or.jp:80/shimin/list/list-kouhou.html"
+    },
+    {
+      "timestamp": "20100711053340",
+      "original": "http://www.urol.or.jp:80/shimin/list/list-kyouiku.html"
+    },
+    {
+      "timestamp": "20100711053345",
+      "original": "http://www.urol.or.jp:80/shimin/list/list-laparoscopy.html"
+    },
+    {
+      "timestamp": "20100711053350",
+      "original": "http://www.urol.or.jp:80/shimin/list/list-member.html"
+    },
+    {
+      "timestamp": "20100711053356",
+      "original": "http://www.urol.or.jp:80/shimin/list/list-rinri.html"
+    },
+    {
+      "timestamp": "20100711053009",
+      "original": "http://www.urol.or.jp:80/shimin/list/list-ryoiki.html"
+    },
+    {
+      "timestamp": "20100711053400",
+      "original": "http://www.urol.or.jp:80/shimin/list/list-seido.html"
+    },
+    {
+      "timestamp": "20100711053014",
+      "original": "http://www.urol.or.jp:80/shimin/list/list-soumu.html"
+    },
+    {
+      "timestamp": "20100711053405",
+      "original": "http://www.urol.or.jp:80/shimin/list/list-syorai.html"
+    },
+    {
+      "timestamp": "20100711053410",
+      "original": "http://www.urol.or.jp:80/shimin/list/list-yougo.html"
+    },
+    {
+      "timestamp": "20100711053415",
+      "original": "http://www.urol.or.jp:80/shimin/list/list-zaimu.html"
+    },
+    {
+      "timestamp": "20100501181622",
+      "original": "http://www.urol.or.jp:80/shimin/magazine/bulletin/bulletin.html"
+    },
+    {
+      "timestamp": "20100501181627",
+      "original": "http://www.urol.or.jp:80/shimin/magazine/iju/iju.html"
+    },
+    {
+      "timestamp": "20100501192700",
+      "original": "http://www.urol.or.jp:80/shimin/message.html"
+    },
+    {
+      "timestamp": "20100313154300",
+      "original": "http://www.urol.or.jp:80/shimin/news060615.html"
+    },
+    {
+      "timestamp": "20100501192705",
+      "original": "http://www.urol.or.jp:80/shimin/patent.html"
+    },
+    {
+      "timestamp": "20100501192710",
+      "original": "http://www.urol.or.jp:80/shimin/report.html"
+    },
+    {
+      "timestamp": "20100731144511",
+      "original": "http://www.urol.or.jp:80/shimin/report/report-h22.html"
+    },
+    {
+      "timestamp": "20100501192715",
+      "original": "http://www.urol.or.jp:80/shimin/rule.html"
+    },
+    {
+      "timestamp": "20100731144636",
+      "original": "http://www.urol.or.jp:80/shimin/rule/rule-seido.html"
+    },
+    {
+      "timestamp": "20100501192720",
+      "original": "http://www.urol.or.jp:80/shimin/seminar.html"
+    },
+    {
+      "timestamp": "20100501192737",
+      "original": "http://www.urol.or.jp:80/shimin/sitemap.html"
+    },
+    {
+      "timestamp": "20100330033614",
+      "original": "http://www.urol.or.jp:80/shimin/soshiki.html"
+    },
+    {
+      "timestamp": "20100313154306",
+      "original": "http://www.urol.or.jp:80/shimin/statement080724.html"
+    },
+    {
+      "timestamp": "20100313154311",
+      "original": "http://www.urol.or.jp:80/shimin/statement_kensin.html"
+    },
+    {
+      "timestamp": "20100501192742",
+      "original": "http://www.urol.or.jp:80/shimin/symptom.html"
+    },
+    {
+      "timestamp": "20100313154317",
+      "original": "http://www.urol.or.jp:80/shimin/transplant.html"
+    },
+    {
+      "timestamp": "20100501192757",
+      "original": "http://www.urol.or.jp:80/shimin/wn-log.html"
+    },
+    {
+      "timestamp": "20100501192803",
+      "original": "http://www.urol.or.jp:80/shimin/woman/about.html"
+    },
+    {
+      "timestamp": "20100501192837",
+      "original": "http://www.urol.or.jp:80/shimin/woman/rule.html"
+    }
+  ]
+}

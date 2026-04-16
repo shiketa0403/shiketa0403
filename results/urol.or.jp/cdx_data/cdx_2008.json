@@ -1,0 +1,228 @@
+{
+  "domain": "urol.or.jp",
+  "year": 2008,
+  "fetched_at": "2026-04-16T05:05:42+0000",
+  "header": [
+    "timestamp",
+    "original"
+  ],
+  "count": 54,
+  "records": [
+    {
+      "timestamp": "20080120195140",
+      "original": "http://www.urol.or.jp:80/"
+    },
+    {
+      "timestamp": "20080104042336",
+      "original": "http://www.urol.or.jp:80/english/index-e.html"
+    },
+    {
+      "timestamp": "20080105103404",
+      "original": "http://www.urol.or.jp:80/index.html"
+    },
+    {
+      "timestamp": "20080925173456",
+      "original": "http://www.urol.or.jp:80/kankeisya/iju/manuscript_mv.html"
+    },
+    {
+      "timestamp": "20080925173501",
+      "original": "http://www.urol.or.jp:80/kankeisya/iju/newsletter.html"
+    },
+    {
+      "timestamp": "20080925173507",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/3rdmenshealth.html"
+    },
+    {
+      "timestamp": "20080925173512",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/96thsankahi.html"
+    },
+    {
+      "timestamp": "20080925173517",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/acu2008.html"
+    },
+    {
+      "timestamp": "20080925173522",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/anzensei_hokoku.html"
+    },
+    {
+      "timestamp": "20080925173527",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/clinical_trial.html"
+    },
+    {
+      "timestamp": "20080925173532",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/collectionCD.html"
+    },
+    {
+      "timestamp": "20080925173537",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/fukusayo_taio.html"
+    },
+    {
+      "timestamp": "20080510152138",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/heparin_recall.html"
+    },
+    {
+      "timestamp": "20080925173547",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/igakukai_43.html"
+    },
+    {
+      "timestamp": "20080108083152",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/kisoku2006.html"
+    },
+    {
+      "timestamp": "20080925173552",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/kodoiryo.html"
+    },
+    {
+      "timestamp": "20080514214109",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/MVA_info.html"
+    },
+    {
+      "timestamp": "20080925145110",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/prostate_exam.html"
+    },
+    {
+      "timestamp": "20080925165325",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/prostate_exam2.html"
+    },
+    {
+      "timestamp": "20080925173558",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/qsh_kyodo.html"
+    },
+    {
+      "timestamp": "20080108083158",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/saisoku2006.html"
+    },
+    {
+      "timestamp": "20080514231554",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/seidokaitei05.html"
+    },
+    {
+      "timestamp": "20080515035216",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/senmoni_seido.html"
+    },
+    {
+      "timestamp": "20080925173603",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/sutent_info.html"
+    },
+    {
+      "timestamp": "20080520033343",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/tanni2007.html"
+    },
+    {
+      "timestamp": "20080925165331",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/training_regist.html"
+    },
+    {
+      "timestamp": "20080115155435",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/training_regist2007.html"
+    },
+    {
+      "timestamp": "20080803081619",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/training_regist2008.html"
+    },
+    {
+      "timestamp": "20080925173612",
+      "original": "http://www.urol.or.jp:80/kankeisya/past/pastcongress.htm"
+    },
+    {
+      "timestamp": "20080925173618",
+      "original": "http://www.urol.or.jp:80/kankeisya/senmon_i/kisoku.html"
+    },
+    {
+      "timestamp": "20080925173623",
+      "original": "http://www.urol.or.jp:80/kankeisya/senmon_i/saisoku2008.html"
+    },
+    {
+      "timestamp": "20080925165336",
+      "original": "http://www.urol.or.jp:80/kankeisya/senmon_i/senmoni_seido.html"
+    },
+    {
+      "timestamp": "20080125173603",
+      "original": "http://www.urol.or.jp:80/menu.html"
+    },
+    {
+      "timestamp": "20080123133030",
+      "original": "http://www.urol.or.jp/robots.txt"
+    },
+    {
+      "timestamp": "20080216203935",
+      "original": "http://www.urol.or.jp:80/shimin/H17business_report.html"
+    },
+    {
+      "timestamp": "20080216201757",
+      "original": "http://www.urol.or.jp:80/shimin/H18business_report.html"
+    },
+    {
+      "timestamp": "20080128220627",
+      "original": "http://www.urol.or.jp:80/shimin/H19business_plan.html"
+    },
+    {
+      "timestamp": "20080624230339",
+      "original": "http://www.urol.or.jp:80/shimin/H19business_report.html"
+    },
+    {
+      "timestamp": "20080624230343",
+      "original": "http://www.urol.or.jp:80/shimin/H20business_plan.html"
+    },
+    {
+      "timestamp": "20080120195145",
+      "original": "http://www.urol.or.jp:80/shimin/history.html"
+    },
+    {
+      "timestamp": "20080624230348",
+      "original": "http://www.urol.or.jp:80/shimin/info.html"
+    },
+    {
+      "timestamp": "20080102101028",
+      "original": "http://www.urol.or.jp:80/shimin/laparo.html"
+    },
+    {
+      "timestamp": "20080612040348",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/fukuoka.html"
+    },
+    {
+      "timestamp": "20080122111627",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/hokkaido.html"
+    },
+    {
+      "timestamp": "20080117044945",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/ibaraki.html"
+    },
+    {
+      "timestamp": "20080102091758",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/kumamoto.html"
+    },
+    {
+      "timestamp": "20080117044954",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/map.html"
+    },
+    {
+      "timestamp": "20080227115514",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/niigata.html"
+    },
+    {
+      "timestamp": "20080226102938",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/saitama.html"
+    },
+    {
+      "timestamp": "20080128220622",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/tokyo.html"
+    },
+    {
+      "timestamp": "20080216203133",
+      "original": "http://www.urol.or.jp:80/shimin/shisetsu/alljapan_c.html"
+    },
+    {
+      "timestamp": "20081014032054",
+      "original": "http://www.urol.or.jp:80/shimin/shisetsu/chugoku.html"
+    },
+    {
+      "timestamp": "20080125041206",
+      "original": "http://www.urol.or.jp:80/shimin/shisetsu/hokkaido06.html"
+    },
+    {
+      "timestamp": "20080217061221",
+      "original": "http://www.urol.or.jp:80/shimin/soshiki.html"
+    }
+  ]
+}
