@@ -159,6 +159,9 @@ def fetch_wayback_html(
             backoff *= 2
         except requests.RequestException as e:
             return None, f"error: {e}"
+        except Exception as e:
+            # urllib3.ProtocolError 等、requests でラップされないエラー対策
+            return None, f"error: {e}"
 
     return None, "retry exhausted"
 

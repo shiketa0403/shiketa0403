@@ -57,6 +57,7 @@ jobs:
             --to "${{ github.event.inputs.year_to }}"
 
       - name: Step 2 - 各年ごとに外部リンク抽出
+        continue-on-error: true
         run: |
           YEAR_FROM="${{ github.event.inputs.year_from }}"
           YEAR_TO="${{ github.event.inputs.year_to }}"
