@@ -1,0 +1,740 @@
+{
+  "domain": "ueno.co.jp",
+  "year": 2005,
+  "fetched_at": "2026-04-16T02:26:44+0000",
+  "header": [
+    "timestamp",
+    "original"
+  ],
+  "count": 182,
+  "records": [
+    {
+      "timestamp": "20050112084556",
+      "original": "http://www.ueno.co.jp:80/"
+    },
+    {
+      "timestamp": "20050205230312",
+      "original": "http://www.ueno.co.jp:80/?ad_id=100"
+    },
+    {
+      "timestamp": "20050307004930",
+      "original": "http://www.ueno.co.jp:80/cgi-bin/inquiry-c/index.cgi"
+    },
+    {
+      "timestamp": "20050212010232",
+      "original": "http://www.ueno.co.jp:80/cgi-bin/reservation-c/index.cgi"
+    },
+    {
+      "timestamp": "20050112103636",
+      "original": "http://www.ueno.co.jp:80/cgi-bin/reservation-c/yoyaku.cgi"
+    },
+    {
+      "timestamp": "20050206145056",
+      "original": "http://ueno.co.jp:80/content/ansin/24.html"
+    },
+    {
+      "timestamp": "20050104023841",
+      "original": "http://www.ueno.co.jp:80/content/ansin/best.html"
+    },
+    {
+      "timestamp": "20050108174738",
+      "original": "http://ueno.co.jp:80/content/ansin/care.html"
+    },
+    {
+      "timestamp": "20050206151600",
+      "original": "http://ueno.co.jp:80/content/ansin/credit.html"
+    },
+    {
+      "timestamp": "20050206162233",
+      "original": "http://ueno.co.jp:80/content/ansin/dansei.html"
+    },
+    {
+      "timestamp": "20050206163745",
+      "original": "http://ueno.co.jp:80/content/ansin/gensyu.html"
+    },
+    {
+      "timestamp": "20050206163916",
+      "original": "http://ueno.co.jp:80/content/ansin/hosyo.html"
+    },
+    {
+      "timestamp": "20050206174909",
+      "original": "http://www.ueno.co.jp:80/content/ansin/index.html"
+    },
+    {
+      "timestamp": "20050206164930",
+      "original": "http://ueno.co.jp:80/content/ansin/kanzen.html"
+    },
+    {
+      "timestamp": "20050308155603",
+      "original": "http://www.ueno.co.jp:80/content/clinic/dr/dr_chiba.html"
+    },
+    {
+      "timestamp": "20050311102055",
+      "original": "http://www.ueno.co.jp:80/content/clinic/dr/dr_fukuoka.html"
+    },
+    {
+      "timestamp": "20050311102510",
+      "original": "http://www.ueno.co.jp:80/content/clinic/dr/dr_fukuoka_tenjin.html"
+    },
+    {
+      "timestamp": "20050311102837",
+      "original": "http://www.ueno.co.jp:80/content/clinic/dr/dr_kagoshima.html"
+    },
+    {
+      "timestamp": "20050311103210",
+      "original": "http://www.ueno.co.jp:80/content/clinic/dr/dr_kyoto.html"
+    },
+    {
+      "timestamp": "20050311103455",
+      "original": "http://www.ueno.co.jp:80/content/clinic/dr/dr_nagoya.html"
+    },
+    {
+      "timestamp": "20050311103843",
+      "original": "http://www.ueno.co.jp:80/content/clinic/dr/dr_nagoya_sakae.html"
+    },
+    {
+      "timestamp": "20050311104127",
+      "original": "http://www.ueno.co.jp:80/content/clinic/dr/dr_niigata.html"
+    },
+    {
+      "timestamp": "20050311104416",
+      "original": "http://www.ueno.co.jp:80/content/clinic/dr/dr_ohsaka_kita.html"
+    },
+    {
+      "timestamp": "20050311000851",
+      "original": "http://www.ueno.co.jp:80/content/clinic/dr/dr_sapporo.html"
+    },
+    {
+      "timestamp": "20050311104932",
+      "original": "http://www.ueno.co.jp:80/content/clinic/dr/dr_shinjuku.html"
+    },
+    {
+      "timestamp": "20050307004834",
+      "original": "http://www.ueno.co.jp:80/content/clinic/dr/dr_ueno.html"
+    },
+    {
+      "timestamp": "20050308161539",
+      "original": "http://www.ueno.co.jp:80/content/clinic/dr/dr_yaesu.html"
+    },
+    {
+      "timestamp": "20050311105343",
+      "original": "http://www.ueno.co.jp:80/content/clinic/dr/dr_yokohyama.html"
+    },
+    {
+      "timestamp": "20050119012326",
+      "original": "http://www.ueno.co.jp:80/content/clinic/index.html"
+    },
+    {
+      "timestamp": "20050228023541",
+      "original": "http://www.ueno.co.jp:80/content/clinic/map_chiba.html"
+    },
+    {
+      "timestamp": "20050228024040",
+      "original": "http://www.ueno.co.jp:80/content/clinic/map_fukuoka.html"
+    },
+    {
+      "timestamp": "20050228024221",
+      "original": "http://www.ueno.co.jp:80/content/clinic/map_fukuoka_tenjin.html"
+    },
+    {
+      "timestamp": "20050228024627",
+      "original": "http://www.ueno.co.jp:80/content/clinic/map_hiroshima.html"
+    },
+    {
+      "timestamp": "20050228024820",
+      "original": "http://www.ueno.co.jp:80/content/clinic/map_kagoshima.html"
+    },
+    {
+      "timestamp": "20050228025218",
+      "original": "http://www.ueno.co.jp:80/content/clinic/map_kyoto.html"
+    },
+    {
+      "timestamp": "20050228025623",
+      "original": "http://www.ueno.co.jp:80/content/clinic/map_nagoya.html"
+    },
+    {
+      "timestamp": "20050228025810",
+      "original": "http://www.ueno.co.jp:80/content/clinic/map_nagoya_sakae.html"
+    },
+    {
+      "timestamp": "20050228030228",
+      "original": "http://www.ueno.co.jp:80/content/clinic/map_niigata.html"
+    },
+    {
+      "timestamp": "20050228030529",
+      "original": "http://www.ueno.co.jp:80/content/clinic/map_ohsaka_kita.html"
+    },
+    {
+      "timestamp": "20050227173554",
+      "original": "http://www.ueno.co.jp:80/content/clinic/map_ohsaka_minami.html"
+    },
+    {
+      "timestamp": "20050227174419",
+      "original": "http://www.ueno.co.jp:80/content/clinic/map_okayama.html"
+    },
+    {
+      "timestamp": "20050227174854",
+      "original": "http://www.ueno.co.jp:80/content/clinic/map_oumiya.html"
+    },
+    {
+      "timestamp": "20050227175347",
+      "original": "http://www.ueno.co.jp:80/content/clinic/map_sapporo.html"
+    },
+    {
+      "timestamp": "20050227175819",
+      "original": "http://www.ueno.co.jp:80/content/clinic/map_sendai.html"
+    },
+    {
+      "timestamp": "20050227180009",
+      "original": "http://www.ueno.co.jp:80/content/clinic/map_shibuya.html"
+    },
+    {
+      "timestamp": "20050227180608",
+      "original": "http://www.ueno.co.jp:80/content/clinic/map_shinjuku.html"
+    },
+    {
+      "timestamp": "20050228124120",
+      "original": "http://www.ueno.co.jp:80/content/clinic/map_shizuoka.html"
+    },
+    {
+      "timestamp": "20050129031903",
+      "original": "http://www.ueno.co.jp:80/content/clinic/map_ueno.html"
+    },
+    {
+      "timestamp": "20050212014316",
+      "original": "http://www.ueno.co.jp:80/content/clinic/map_yaesu.html"
+    },
+    {
+      "timestamp": "20050227181154",
+      "original": "http://www.ueno.co.jp:80/content/clinic/map_yokohyama.html"
+    },
+    {
+      "timestamp": "20050204055734",
+      "original": "http://www.ueno.co.jp:80/content/ed/"
+    },
+    {
+      "timestamp": "20050125025224",
+      "original": "http://www.ueno.co.jp:80/content/ed/ed1.html"
+    },
+    {
+      "timestamp": "20050130023020",
+      "original": "http://www.ueno.co.jp:80/content/ed/ed2.html"
+    },
+    {
+      "timestamp": "20050126010810",
+      "original": "http://www.ueno.co.jp:80/content/ed/ed3.html"
+    },
+    {
+      "timestamp": "20050112105334",
+      "original": "http://www.ueno.co.jp:80/content/ed/index.html"
+    },
+    {
+      "timestamp": "20050307221736",
+      "original": "http://www.ueno.co.jp:80/content/ed/index.html?ad_id=9"
+    },
+    {
+      "timestamp": "20051105093602",
+      "original": "http://www.ueno.co.jp:80/content/faq/"
+    },
+    {
+      "timestamp": "20050102024742",
+      "original": "http://www.ueno.co.jp:80/content/faq/index.html"
+    },
+    {
+      "timestamp": "20050115014417",
+      "original": "http://www.ueno.co.jp:80/content/hospital/index.html"
+    },
+    {
+      "timestamp": "20050126014347",
+      "original": "http://www.ueno.co.jp:80/content/medical/index.html"
+    },
+    {
+      "timestamp": "20050102025725",
+      "original": "http://www.ueno.co.jp:80/content/money/index.html"
+    },
+    {
+      "timestamp": "20050112113722",
+      "original": "http://www.ueno.co.jp:80/content/phimotic/index.html"
+    },
+    {
+      "timestamp": "20050228124614",
+      "original": "http://www.ueno.co.jp:80/content/phimotic/index.html?ad_id=6"
+    },
+    {
+      "timestamp": "20050115021328",
+      "original": "http://www.ueno.co.jp:80/content/phimotic/phimotic1.html"
+    },
+    {
+      "timestamp": "20050112120647",
+      "original": "http://www.ueno.co.jp:80/content/phimotic/phimotic2.html"
+    },
+    {
+      "timestamp": "20050112121213",
+      "original": "http://www.ueno.co.jp:80/content/phimotic/phimotic3.html"
+    },
+    {
+      "timestamp": "20050204060712",
+      "original": "http://www.ueno.co.jp:80/content/power/"
+    },
+    {
+      "timestamp": "20050112123528",
+      "original": "http://www.ueno.co.jp:80/content/power/index.html"
+    },
+    {
+      "timestamp": "20050228125108",
+      "original": "http://www.ueno.co.jp:80/content/power/index.html?ad_id=8"
+    },
+    {
+      "timestamp": "20050115024447",
+      "original": "http://www.ueno.co.jp:80/content/power/power1.html"
+    },
+    {
+      "timestamp": "20050102031822",
+      "original": "http://www.ueno.co.jp:80/content/power/power2.html"
+    },
+    {
+      "timestamp": "20050126034747",
+      "original": "http://www.ueno.co.jp:80/content/power/power3.html"
+    },
+    {
+      "timestamp": "20050121012755",
+      "original": "http://www.ueno.co.jp:80/content/request/index.html"
+    },
+    {
+      "timestamp": "20050321180128",
+      "original": "http://www.ueno.co.jp:80/content/request/request_m01.html?banner_id=1"
+    },
+    {
+      "timestamp": "20050307013416",
+      "original": "http://www.ueno.co.jp:80/content/reservation/index.html"
+    },
+    {
+      "timestamp": "20050110011841",
+      "original": "http://www.ueno.co.jp:80/content/reservation/inquiry/index.html"
+    },
+    {
+      "timestamp": "20050306141923",
+      "original": "http://www.ueno.co.jp:80/content/std/"
+    },
+    {
+      "timestamp": "20050105024417",
+      "original": "http://www.ueno.co.jp:80/content/std/index.html"
+    },
+    {
+      "timestamp": "20050228125601",
+      "original": "http://www.ueno.co.jp:80/content/std/index.html?ad_id=7"
+    },
+    {
+      "timestamp": "20050115032310",
+      "original": "http://www.ueno.co.jp:80/content/std/std1.html"
+    },
+    {
+      "timestamp": "20050122023913",
+      "original": "http://www.ueno.co.jp:80/content/std/std2.html"
+    },
+    {
+      "timestamp": "20050206193404",
+      "original": "http://www.ueno.co.jp:80/content/std/std3.html"
+    },
+    {
+      "timestamp": "20050209192353",
+      "original": "http://www.ueno.co.jp:80/hwii/basyo.html"
+    },
+    {
+      "timestamp": "20050209192449",
+      "original": "http://www.ueno.co.jp:80/hwii/dr.html"
+    },
+    {
+      "timestamp": "20050115033727",
+      "original": "http://www.ueno.co.jp:80/hwii/gmenu.html"
+    },
+    {
+      "timestamp": "20050115034857",
+      "original": "http://www.ueno.co.jp:80/hwii/his.html"
+    },
+    {
+      "timestamp": "20050210011054",
+      "original": "http://www.ueno.co.jp:80/hwii/inch.html"
+    },
+    {
+      "timestamp": "20050115040431",
+      "original": "http://www.ueno.co.jp:80/hwii/indexh.html"
+    },
+    {
+      "timestamp": "20050210011159",
+      "original": "http://www.ueno.co.jp:80/hwii/inf.html"
+    },
+    {
+      "timestamp": "20050210011238",
+      "original": "http://www.ueno.co.jp:80/hwii/iriguchi.html"
+    },
+    {
+      "timestamp": "20050210011345",
+      "original": "http://www.ueno.co.jp:80/hwii/kuruma.html"
+    },
+    {
+      "timestamp": "20050115043024",
+      "original": "http://www.ueno.co.jp:80/hwii/link.html"
+    },
+    {
+      "timestamp": "20050115044247",
+      "original": "http://www.ueno.co.jp:80/hwii/medd.html"
+    },
+    {
+      "timestamp": "20050210011451",
+      "original": "http://www.ueno.co.jp:80/hwii/medleft.html"
+    },
+    {
+      "timestamp": "20050210011531",
+      "original": "http://www.ueno.co.jp:80/hwii/medu.html"
+    },
+    {
+      "timestamp": "20050115045050",
+      "original": "http://www.ueno.co.jp:80/hwii/menu.html"
+    },
+    {
+      "timestamp": "20050115051517",
+      "original": "http://www.ueno.co.jp:80/hwii/obagibluepeel.html"
+    },
+    {
+      "timestamp": "20050210082555",
+      "original": "http://www.ueno.co.jp:80/hwii/obagiNuDerm.html"
+    },
+    {
+      "timestamp": "20050210083618",
+      "original": "http://www.ueno.co.jp:80/hwii/propesia.html"
+    },
+    {
+      "timestamp": "20050210005615",
+      "original": "http://www.ueno.co.jp:80/hwii/rentogen.html"
+    },
+    {
+      "timestamp": "20050210005634",
+      "original": "http://www.ueno.co.jp:80/hwii/saijitu.html"
+    },
+    {
+      "timestamp": "20050210005823",
+      "original": "http://www.ueno.co.jp:80/hwii/shinsatu.html"
+    },
+    {
+      "timestamp": "20050210005839",
+      "original": "http://www.ueno.co.jp:80/hwii/ski.html"
+    },
+    {
+      "timestamp": "20050209193312",
+      "original": "http://www.ueno.co.jp:80/hwii/syokai.html"
+    },
+    {
+      "timestamp": "20050209193425",
+      "original": "http://www.ueno.co.jp:80/hwii/tokucyo.html"
+    },
+    {
+      "timestamp": "20050210010022",
+      "original": "http://www.ueno.co.jp:80/hwii/uketuke.html"
+    },
+    {
+      "timestamp": "20050210083841",
+      "original": "http://www.ueno.co.jp:80/hwii/vai1.html"
+    },
+    {
+      "timestamp": "20050210083904",
+      "original": "http://www.ueno.co.jp:80/hwii/xenical.html"
+    },
+    {
+      "timestamp": "20050314034404",
+      "original": "http://www.ueno.co.jp:80/hwii/zyban.html"
+    },
+    {
+      "timestamp": "20050924001900",
+      "original": "http://ueno.co.jp:80/index.htm"
+    },
+    {
+      "timestamp": "20050102033302",
+      "original": "http://www.ueno.co.jp:80/index.html"
+    },
+    {
+      "timestamp": "20050206194603",
+      "original": "http://www.ueno.co.jp:80/index.html?ad_id=10"
+    },
+    {
+      "timestamp": "20050503090248",
+      "original": "http://www.ueno.co.jp:80/index.html?ad_id=31"
+    },
+    {
+      "timestamp": "20050109204630",
+      "original": "http://www.ueno.co.jp:80/index.html?ad_id=34"
+    },
+    {
+      "timestamp": "20050214101607",
+      "original": "http://www.ueno.co.jp:80/index.html?ad_id=69"
+    },
+    {
+      "timestamp": "20051025043829",
+      "original": "http://www.ueno.co.jp:80/main/ansin/best.html"
+    },
+    {
+      "timestamp": "20051025045022",
+      "original": "http://www.ueno.co.jp:80/main/ansin/care.html"
+    },
+    {
+      "timestamp": "20051025045225",
+      "original": "http://www.ueno.co.jp:80/main/ansin/dansei.html"
+    },
+    {
+      "timestamp": "20051025042355",
+      "original": "http://www.ueno.co.jp:80/main/ansin/gensyu.html"
+    },
+    {
+      "timestamp": "20050724015658",
+      "original": "http://www.ueno.co.jp:80/main/ansin/index.html"
+    },
+    {
+      "timestamp": "20050630030702",
+      "original": "http://www.ueno.co.jp:80/main/clinic/index.html"
+    },
+    {
+      "timestamp": "20051130020806",
+      "original": "http://www.ueno.co.jp:80/main/clinic/map_ohsaka_minami.html"
+    },
+    {
+      "timestamp": "20051025044413",
+      "original": "http://www.ueno.co.jp:80/main/clinic/map_shizuoka.html"
+    },
+    {
+      "timestamp": "20050703012134",
+      "original": "http://www.ueno.co.jp:80/main/clinic/map_ueno.html"
+    },
+    {
+      "timestamp": "20051025044029",
+      "original": "http://www.ueno.co.jp:80/main/dr/profile.html"
+    },
+    {
+      "timestamp": "20050805235249",
+      "original": "http://www.ueno.co.jp:80/main/ed/index.html"
+    },
+    {
+      "timestamp": "20051025043423",
+      "original": "http://www.ueno.co.jp:80/main/faq/index.html"
+    },
+    {
+      "timestamp": "20051129015349",
+      "original": "http://www.ueno.co.jp:80/main/hospital/index.html"
+    },
+    {
+      "timestamp": "20050629232251",
+      "original": "http://www.ueno.co.jp:80/main/index.html"
+    },
+    {
+      "timestamp": "20051025042709",
+      "original": "http://www.ueno.co.jp:80/main/medical/index.html"
+    },
+    {
+      "timestamp": "20050715021738",
+      "original": "http://www.ueno.co.jp:80/main/money/index.html"
+    },
+    {
+      "timestamp": "20050715023906",
+      "original": "http://www.ueno.co.jp:80/main/phimotic/index.html"
+    },
+    {
+      "timestamp": "20050731013832",
+      "original": "http://www.ueno.co.jp:80/main/phimotic/phimotic1.html"
+    },
+    {
+      "timestamp": "20051025071122",
+      "original": "http://www.ueno.co.jp:80/main/phimotic/phimotic2.html"
+    },
+    {
+      "timestamp": "20051025044259",
+      "original": "http://www.ueno.co.jp:80/main/phimotic/phimotic3.html"
+    },
+    {
+      "timestamp": "20050731015152",
+      "original": "http://www.ueno.co.jp:80/main/power/index.html"
+    },
+    {
+      "timestamp": "20050731015758",
+      "original": "http://www.ueno.co.jp:80/main/power/power1.html"
+    },
+    {
+      "timestamp": "20051216114206",
+      "original": "http://www.ueno.co.jp:80/main/power/power2.html"
+    },
+    {
+      "timestamp": "20050724015822",
+      "original": "http://www.ueno.co.jp:80/main/sitemap.html"
+    },
+    {
+      "timestamp": "20050714033839",
+      "original": "http://www.ueno.co.jp:80/main/std/index.html"
+    },
+    {
+      "timestamp": "20051025042241",
+      "original": "http://ueno.co.jp:80/main/std/std1.html"
+    },
+    {
+      "timestamp": "20050803003357",
+      "original": "http://www.ueno.co.jp:80/main/std/std2.html"
+    },
+    {
+      "timestamp": "20050713005318",
+      "original": "http://www.ueno.co.jp:80/main/std/std3.html"
+    },
+    {
+      "timestamp": "20050311134513",
+      "original": "http://www.ueno.co.jp:80/uenopage/access/access.html"
+    },
+    {
+      "timestamp": "20050211110933",
+      "original": "http://www.ueno.co.jp:80/uenopage/access/fuku.html"
+    },
+    {
+      "timestamp": "20050211111029",
+      "original": "http://www.ueno.co.jp:80/uenopage/access/hama.html"
+    },
+    {
+      "timestamp": "20050211111107",
+      "original": "http://www.ueno.co.jp:80/uenopage/access/hiros.html"
+    },
+    {
+      "timestamp": "20050211111154",
+      "original": "http://www.ueno.co.jp:80/uenopage/access/kago.html"
+    },
+    {
+      "timestamp": "20050211111429",
+      "original": "http://www.ueno.co.jp:80/uenopage/access/mina.html"
+    },
+    {
+      "timestamp": "20050211111517",
+      "original": "http://www.ueno.co.jp:80/uenopage/access/nago.html"
+    },
+    {
+      "timestamp": "20050228130141",
+      "original": "http://www.ueno.co.jp:80/uenopage/access/nagosaka.html"
+    },
+    {
+      "timestamp": "20050211102712",
+      "original": "http://www.ueno.co.jp:80/uenopage/access/niig.html"
+    },
+    {
+      "timestamp": "20050211102926",
+      "original": "http://www.ueno.co.jp:80/uenopage/access/okay.html"
+    },
+    {
+      "timestamp": "20050211102948",
+      "original": "http://www.ueno.co.jp:80/uenopage/access/oomi.html"
+    },
+    {
+      "timestamp": "20050211103119",
+      "original": "http://www.ueno.co.jp:80/uenopage/access/sapp.html"
+    },
+    {
+      "timestamp": "20050211103132",
+      "original": "http://www.ueno.co.jp:80/uenopage/access/send.html"
+    },
+    {
+      "timestamp": "20050211103340",
+      "original": "http://www.ueno.co.jp:80/uenopage/access/sinj.html"
+    },
+    {
+      "timestamp": "20050211103426",
+      "original": "http://www.ueno.co.jp:80/uenopage/access/tenjin.html"
+    },
+    {
+      "timestamp": "20050211103512",
+      "original": "http://www.ueno.co.jp:80/uenopage/access/tiba.html"
+    },
+    {
+      "timestamp": "20050211103624",
+      "original": "http://www.ueno.co.jp:80/uenopage/access/toky.html"
+    },
+    {
+      "timestamp": "20050211103715",
+      "original": "http://www.ueno.co.jp:80/uenopage/access/ueno.html"
+    },
+    {
+      "timestamp": "20050211103751",
+      "original": "http://www.ueno.co.jp:80/uenopage/access/yoko.html"
+    },
+    {
+      "timestamp": "20050228130628",
+      "original": "http://www.ueno.co.jp:80/uenopage/chart_ex/questions/q01.html"
+    },
+    {
+      "timestamp": "20050228131201",
+      "original": "http://www.ueno.co.jp:80/uenopage/consult/consult.html"
+    },
+    {
+      "timestamp": "20050305054421",
+      "original": "http://www.ueno.co.jp:80/uenopage/datumo/datumo.html"
+    },
+    {
+      "timestamp": "20050211055333",
+      "original": "http://www.ueno.co.jp:80/uenopage/demand/demand.html"
+    },
+    {
+      "timestamp": "20050114055854",
+      "original": "http://www.ueno.co.jp:80/uenopage/demand/index.html"
+    },
+    {
+      "timestamp": "20050210035529",
+      "original": "http://www.ueno.co.jp:80/uenopage/head/head.html"
+    },
+    {
+      "timestamp": "20050104182542",
+      "original": "http://www.ueno.co.jp:80/uenopage/houkei/"
+    },
+    {
+      "timestamp": "20050206195134",
+      "original": "http://www.ueno.co.jp:80/uenopage/houkei/hou_p1.html"
+    },
+    {
+      "timestamp": "20050420035939",
+      "original": "http://www.ueno.co.jp:80/uenopage/houkei/hou_p2.html"
+    },
+    {
+      "timestamp": "20050420040151",
+      "original": "http://www.ueno.co.jp:80/uenopage/houkei/hou_p3.html"
+    },
+    {
+      "timestamp": "20050209212414",
+      "original": "http://www.ueno.co.jp:80/uenopage/houkei/index.html"
+    },
+    {
+      "timestamp": "20050210035605",
+      "original": "http://www.ueno.co.jp:80/uenopage/menu/menu.html"
+    },
+    {
+      "timestamp": "20050211055439",
+      "original": "http://www.ueno.co.jp:80/uenopage/online/step1.html"
+    },
+    {
+      "timestamp": "20050420040302",
+      "original": "http://www.ueno.co.jp:80/uenopage/ope/ope.html"
+    },
+    {
+      "timestamp": "20050228131812",
+      "original": "http://www.ueno.co.jp:80/uenopage/powerup/power_p1.html"
+    },
+    {
+      "timestamp": "20050211055557",
+      "original": "http://www.ueno.co.jp:80/uenopage/seibyou/sei_p1.html"
+    },
+    {
+      "timestamp": "20050211103832",
+      "original": "http://www.ueno.co.jp:80/uenopage/seibyou/sei_p2.html"
+    },
+    {
+      "timestamp": "20050211103925",
+      "original": "http://www.ueno.co.jp:80/uenopage/seibyou/sei_p3.html"
+    },
+    {
+      "timestamp": "20050206195647",
+      "original": "http://www.ueno.co.jp:80/uenopage/shokumo/index.html"
+    },
+    {
+      "timestamp": "20050228132239",
+      "original": "http://www.ueno.co.jp:80/uenopage/shokumo/shokumo.html"
+    }
+  ]
+}
