@@ -31,7 +31,7 @@ CDX_API = "https://web.archive.org/cdx/search/cdx"
 DEFAULT_DOMAIN = "skyperfectv.co.jp"
 DEFAULT_FROM_YEAR = 2005
 DEFAULT_TO_YEAR = 2015
-DEFAULT_OUTPUT_DIR = Path("./cdx_data")
+DEFAULT_RESULTS_DIR = Path("./results")  # 下に {domain}/cdx_data/ を作る
 
 SLEEP_BETWEEN_REQUESTS = 2.0  # 秒
 REQUEST_TIMEOUT = 120  # CDX は重いことがあるので長め
@@ -177,10 +177,17 @@ def parse_args() -> argparse.Namespace:
         help=f"取得終了年 (default: {DEFAULT_TO_YEAR})",
     )
     parser.add_argument(
+        "--results-dir",
+        type=Path,
+        default=DEFAULT_RESULTS_DIR,
+        help=f"結果ルートディレクトリ (default: {DEFAULT_RESULTS_DIR}). "
+             f"下に {{domain}}/cdx_data/ を作る",
+    )
+    parser.add_argument(
         "--output-dir",
         type=Path,
-        default=DEFAULT_OUTPUT_DIR,
-        help=f"出力ディレクトリ (default: {DEFAULT_OUTPUT_DIR})",
+        default=None,
+        help="CDX 出力先 (上書き指定。未指定なら results-dir/{domain}/cdx_data)",
     )
     parser.add_argument(
         "--force",
@@ -198,7 +205,10 @@ def main() -> int:
         return 2
 
     domain = re.sub(r"^https?://", "", args.domain.strip()).rstrip("/")
-    output_dir: Path = args.output_dir
+    if args.output_dir is None:
+        output_dir: Path = args.results_dir / domain / "cdx_data"
+    else:
+        output_dir = args.output_dir
     output_dir.mkdir(parents=True, exist_ok=True)
 
     years = list(range(args.from_year, args.to_year + 1))

@@ -184,9 +184,13 @@ def is_valid_domain(d: str) -> bool:
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="ドメイン取得可否チェック")
-    p.add_argument("--input", type=Path, default=Path("./candidates.csv"),
-                   help="入力 CSV (candidates.csv) もしくは ドメインリスト .txt")
-    p.add_argument("--output", type=Path, default=Path("./availability.csv"))
+    p.add_argument("--source-domain", default=None,
+                   help="ソースドメイン (results/{domain}/ 以下を対象にする)")
+    p.add_argument("--results-dir", type=Path, default=Path("./results"))
+    p.add_argument("--input", type=Path, default=None,
+                   help="入力 CSV (未指定なら results-dir/{domain}/candidates.csv)")
+    p.add_argument("--output", type=Path, default=None,
+                   help="出力 CSV (未指定なら results-dir/{domain}/availability.csv)")
     p.add_argument("--include-alive", action="store_true",
                    help="is_alive=True のドメインもチェックする (デフォルト: Falseのみ)")
     p.add_argument("--include-subdomains", action="store_true",
@@ -198,6 +202,17 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
+
+    if args.source_domain:
+        src = re.sub(r"^https?://", "", args.source_domain.strip()).rstrip("/")
+        if args.input is None:
+            args.input = args.results_dir / src / "candidates.csv"
+        if args.output is None:
+            args.output = args.results_dir / src / "availability.csv"
+    else:
+        if args.input is None or args.output is None:
+            print("エラー: --source-domain か --input + --output を指定してください", file=sys.stderr)
+            return 2
 
     if not args.input.exists():
         print(f"エラー: 入力ファイルが見つかりません: {args.input}", file=sys.stderr)
@@ -233,7 +248,8 @@ def main() -> int:
 
     fieldnames = [
         "domain", "availability", "registrar", "expiry",
-        "link_count", "years_seen", "sample_anchor", "sample_source_url", "whois_excerpt",
+        "link_count", "years_seen", "genre", "memo",
+        "sample_anchor", "sample_source_url", "whois_excerpt",
     ]
 
     results: list[dict] = []
@@ -260,6 +276,8 @@ def main() -> int:
             "expiry": parsed["expiry"],
             "link_count": row.get("link_count", ""),
             "years_seen": row.get("years_seen", ""),
+            "genre": row.get("genre", ""),
+            "memo": row.get("memo", ""),
             "sample_anchor": row.get("sample_anchor", ""),
             "sample_source_url": row.get("sample_source_url", ""),
             "whois_excerpt": parsed["excerpt"],

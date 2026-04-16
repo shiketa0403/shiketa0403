@@ -108,14 +108,35 @@ def check_alive(domain: str) -> bool:
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Step 3: ドメイン集計 + 生死判定 + CSV出力")
-    p.add_argument("--links-dir", type=Path, default=Path("./links_data"))
-    p.add_argument("--output", type=Path, default=Path("./candidates.csv"))
+    p.add_argument("--source-domain", default=None,
+                   help="ソースドメイン (results/{domain}/ を探す)")
+    p.add_argument("--results-dir", type=Path, default=Path("./results"))
+    p.add_argument("--links-dir", type=Path, default=None,
+                   help="links_data ディレクトリ (未指定なら results-dir/{domain}/links_data)")
+    p.add_argument("--output", type=Path, default=None,
+                   help="candidates.csv 出力先 (未指定なら results-dir/{domain}/candidates.csv)")
     p.add_argument("--skip-dns", action="store_true", help="DNS チェックをスキップ (is_alive は全て空)")
     return p.parse_args()
 
 
 def main() -> int:
     args = parse_args()
+
+    if args.source_domain:
+        import re as _re
+        domain = _re.sub(r"^https?://", "", args.source_domain.strip()).rstrip("/")
+        links_dir = args.links_dir or (args.results_dir / domain / "links_data")
+        output = args.output or (args.results_dir / domain / "candidates.csv")
+    else:
+        if not args.links_dir or not args.output:
+            print("エラー: --source-domain か --links-dir + --output を指定してください", file=sys.stderr)
+            return 2
+        links_dir = args.links_dir
+        output = args.output
+
+    # 以降の args 参照箇所のため上書きしておく
+    args.links_dir = links_dir
+    args.output = output
 
     print("=" * 60)
     print(f"入力ディレクトリ: {args.links_dir}")
@@ -148,6 +169,8 @@ def main() -> int:
             "sample_anchor": info["sample_anchor"],
             "sample_source_url": info["sample_source_url"],
             "is_alive": alive,
+            "genre": "",  # 後から手動記入用 (空で出力)
+            "memo": "",   # 自由記入欄
         })
 
     # ソート: is_alive=False を上、次に link_count 降順
@@ -161,17 +184,35 @@ def main() -> int:
 
     print(f"\n[3/3] CSV 書き出し: {args.output}")
     args.output.parent.mkdir(parents=True, exist_ok=True)
+    # 既存ファイルから genre / memo を引き継ぐ (手動記入を保持)
+    existing_meta: dict[str, dict[str, str]] = {}
+    if args.output.exists():
+        try:
+            with open(args.output, "r", encoding="utf-8-sig", newline="") as f:
+                for row in csv.DictReader(f):
+                    existing_meta[row.get("domain", "")] = {
+                        "genre": row.get("genre", ""),
+                        "memo": row.get("memo", ""),
+                    }
+        except Exception:
+            pass
+
+    args.output.parent.mkdir(parents=True, exist_ok=True)
     with open(args.output, "w", encoding="utf-8-sig", newline="") as f:
         writer = csv.writer(f)
         writer.writerow([
             "domain", "link_count", "years_seen", "first_seen", "last_seen",
-            "sample_anchor", "sample_source_url", "is_alive",
+            "sample_anchor", "sample_source_url", "is_alive", "genre", "memo",
         ])
         for r in rows:
+            meta = existing_meta.get(r["domain"], {})
+            genre = meta.get("genre") or r["genre"]
+            memo = meta.get("memo") or r["memo"]
             writer.writerow([
                 r["domain"], r["link_count"], r["years_seen"],
                 r["first_seen"], r["last_seen"],
                 r["sample_anchor"], r["sample_source_url"], r["is_alive"],
+                genre, memo,
             ])
 
     dead = sum(1 for r in rows if r["is_alive"] is False)

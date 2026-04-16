@@ -35,12 +35,16 @@ REQUEST_TIMEOUT = 45
 MAX_RETRIES = 3
 MAX_HTML_BYTES = 500_000  # 取り込み上限 (巨大ページ対策)
 
-# 外部リンクが多そうなパス (優先度高いものが先)
+# 外部リンクが多そうなパス (優先度高いものが先)。ドメイン非依存の一般パターン
 PRIORITY_PATH_PATTERNS = [
-    re.compile(r"^https?://[^/]*skyperfectv\.co\.jp/?$", re.IGNORECASE),  # トップ
+    re.compile(r"^https?://[^/]+/?(index\.html?)?$", re.IGNORECASE),  # トップ
+    re.compile(r"/article/", re.IGNORECASE),
+    re.compile(r"/column/", re.IGNORECASE),
     re.compile(r"/program/", re.IGNORECASE),
     re.compile(r"/channel/", re.IGNORECASE),
     re.compile(r"/special/", re.IGNORECASE),
+    re.compile(r"/category/", re.IGNORECASE),
+    re.compile(r"/feature/", re.IGNORECASE),
     re.compile(r"/link", re.IGNORECASE),
     re.compile(r"/info/", re.IGNORECASE),
 ]
@@ -188,8 +192,12 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Step 2: アーカイブHTMLから外部リンク抽出")
     parser.add_argument("--year", type=int, required=True, help="対象年 (cdx_{year}.json を読む)")
     parser.add_argument("--source-domain", default="skyperfectv.co.jp", help="ソースドメイン")
-    parser.add_argument("--cdx-dir", type=Path, default=Path("./cdx_data"))
-    parser.add_argument("--output-dir", type=Path, default=Path("./links_data"))
+    parser.add_argument("--results-dir", type=Path, default=Path("./results"),
+                        help="結果ルートディレクトリ。下に {source-domain}/ を掘る")
+    parser.add_argument("--cdx-dir", type=Path, default=None,
+                        help="CDX 読込先 (未指定なら results-dir/{domain}/cdx_data)")
+    parser.add_argument("--output-dir", type=Path, default=None,
+                        help="links 出力先 (未指定なら results-dir/{domain}/links_data)")
     parser.add_argument("--max-urls", type=int, default=300, help="処理URL件数上限 (デフォルト 300)")
     return parser.parse_args()
 
@@ -197,14 +205,18 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
 
-    cdx_path = args.cdx_dir / f"cdx_{args.year}.json"
+    domain = re.sub(r"^https?://", "", args.source_domain.strip()).rstrip("/")
+    cdx_dir = args.cdx_dir or (args.results_dir / domain / "cdx_data")
+    output_dir = args.output_dir or (args.results_dir / domain / "links_data")
+
+    cdx_path = cdx_dir / f"cdx_{args.year}.json"
     if not cdx_path.exists():
         print(f"エラー: {cdx_path} が見つかりません。先に fetch_cdx.py を実行してください", file=sys.stderr)
         return 2
 
-    args.output_dir.mkdir(parents=True, exist_ok=True)
-    links_path = args.output_dir / f"links_{args.year}.jsonl"
-    processed_path = args.output_dir / f"processed_{args.year}.txt"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    links_path = output_dir / f"links_{args.year}.jsonl"
+    processed_path = output_dir / f"processed_{args.year}.txt"
 
     # 既処理 URL 読み込み
     processed: set[str] = set()
@@ -213,7 +225,7 @@ def main() -> int:
 
     print("=" * 60)
     print(f"対象年        : {args.year}")
-    print(f"ソースドメイン: {args.source_domain}")
+    print(f"ソースドメイン: {domain}")
     print(f"CDX入力       : {cdx_path}")
     print(f"リンク出力    : {links_path}")
     print(f"最大処理URL数 : {args.max_urls}")
@@ -258,7 +270,7 @@ def main() -> int:
                 time.sleep(SLEEP_BETWEEN_REQUESTS)
                 continue
 
-            links = extract_external_links(html, original, args.source_domain)
+            links = extract_external_links(html, original, domain)
             print(f"  → 外部リンク: {len(links)} 件")
 
             for l in links:
