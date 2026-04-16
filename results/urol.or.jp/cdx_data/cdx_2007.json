@@ -1,0 +1,196 @@
+{
+  "domain": "urol.or.jp",
+  "year": 2007,
+  "fetched_at": "2026-04-16T04:40:00+0000",
+  "header": [
+    "timestamp",
+    "original"
+  ],
+  "count": 46,
+  "records": [
+    {
+      "timestamp": "20070205042305",
+      "original": "http://www.urol.or.jp:80/"
+    },
+    {
+      "timestamp": "20070206022011",
+      "original": "http://www.urol.or.jp:80/english/index-e.html"
+    },
+    {
+      "timestamp": "20070208135642",
+      "original": "http://www.urol.or.jp:80/index.html"
+    },
+    {
+      "timestamp": "20070102075442",
+      "original": "http://urol.or.jp:80/kankeisya/info/8thACU.html"
+    },
+    {
+      "timestamp": "20071029131301",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/chubu.html"
+    },
+    {
+      "timestamp": "20071127030625",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/collectionCD.html"
+    },
+    {
+      "timestamp": "20070824103308",
+      "original": "http://www.urol.or.jp/kankeisya/info/jshc_kosyu.html"
+    },
+    {
+      "timestamp": "20070102063415",
+      "original": "http://urol.or.jp:80/kankeisya/info/kensyu.html"
+    },
+    {
+      "timestamp": "20070706143808",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/kensyu_mokuhyo.html"
+    },
+    {
+      "timestamp": "20070102075249",
+      "original": "http://urol.or.jp:80/kankeisya/info/kisoku2006.html"
+    },
+    {
+      "timestamp": "20070102075401",
+      "original": "http://urol.or.jp:80/kankeisya/info/manuscript.html"
+    },
+    {
+      "timestamp": "20070824103139",
+      "original": "http://www.urol.or.jp/kankeisya/info/manuscript_mv.html"
+    },
+    {
+      "timestamp": "20070102063423",
+      "original": "http://urol.or.jp:80/kankeisya/info/MVA_info.html"
+    },
+    {
+      "timestamp": "20070824103215",
+      "original": "http://www.urol.or.jp/kankeisya/info/nichu_1st.html"
+    },
+    {
+      "timestamp": "20071027103928",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/prostate_exam.html"
+    },
+    {
+      "timestamp": "20070102063238",
+      "original": "http://urol.or.jp:80/kankeisya/info/saisoku2006.html"
+    },
+    {
+      "timestamp": "20070102075515",
+      "original": "http://urol.or.jp:80/kankeisya/info/seidokaitei05.html"
+    },
+    {
+      "timestamp": "20070824103342",
+      "original": "http://www.urol.or.jp/kankeisya/info/senmoni_seido.html"
+    },
+    {
+      "timestamp": "20070102063456",
+      "original": "http://urol.or.jp:80/kankeisya/info/training_regist.html"
+    },
+    {
+      "timestamp": "20070824103707",
+      "original": "http://www.urol.or.jp/kankeisya/info/training_regist2007.html"
+    },
+    {
+      "timestamp": "20070102063431",
+      "original": "http://urol.or.jp:80/kankeisya/past/21st_DDS.html"
+    },
+    {
+      "timestamp": "20070102075551",
+      "original": "http://urol.or.jp:80/kankeisya/past/4th_kanto_hormone.html"
+    },
+    {
+      "timestamp": "20070102063304",
+      "original": "http://urol.or.jp:80/kankeisya/past/pastcongress.htm"
+    },
+    {
+      "timestamp": "20070102075256",
+      "original": "http://urol.or.jp:80/menu.html"
+    },
+    {
+      "timestamp": "20070215092445",
+      "original": "http://www.urol.or.jp/robots.txt"
+    },
+    {
+      "timestamp": "20070102075432",
+      "original": "http://urol.or.jp:80/shimin/citizen.html"
+    },
+    {
+      "timestamp": "20070208094050",
+      "original": "http://www.urol.or.jp:80/shimin/H17business_report.html"
+    },
+    {
+      "timestamp": "20070208135844",
+      "original": "http://www.urol.or.jp:80/shimin/H18business_plan.html"
+    },
+    {
+      "timestamp": "20070708030102",
+      "original": "http://www.urol.or.jp:80/shimin/H18business_report.html"
+    },
+    {
+      "timestamp": "20070708030131",
+      "original": "http://www.urol.or.jp:80/shimin/H19business_plan.html"
+    },
+    {
+      "timestamp": "20070206174323",
+      "original": "http://www.urol.or.jp:80/shimin/history.html"
+    },
+    {
+      "timestamp": "20070102063410",
+      "original": "http://urol.or.jp:80/shimin/info.html"
+    },
+    {
+      "timestamp": "20070102075531",
+      "original": "http://urol.or.jp:80/shimin/laparo.html"
+    },
+    {
+      "timestamp": "20070307173501",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/aomori.html"
+    },
+    {
+      "timestamp": "20071018022822",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/ibaraki.html"
+    },
+    {
+      "timestamp": "20070208094105",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/map.html"
+    },
+    {
+      "timestamp": "20070703113242",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/tokyo.html"
+    },
+    {
+      "timestamp": "20070102063310",
+      "original": "http://urol.or.jp:80/shimin/shisetsu/alljapan_c.html"
+    },
+    {
+      "timestamp": "20070612165226",
+      "original": "http://www.urol.or.jp:80/shimin/shisetsu/chugoku06.html"
+    },
+    {
+      "timestamp": "20070612165141",
+      "original": "http://www.urol.or.jp:80/shimin/shisetsu/hokkaido06.html"
+    },
+    {
+      "timestamp": "20070612162105",
+      "original": "http://www.urol.or.jp:80/shimin/shisetsu/kansai06.html"
+    },
+    {
+      "timestamp": "20070612161748",
+      "original": "http://www.urol.or.jp:80/shimin/shisetsu/kanto06.html"
+    },
+    {
+      "timestamp": "20070612165302",
+      "original": "http://www.urol.or.jp:80/shimin/shisetsu/kyusyu06.html"
+    },
+    {
+      "timestamp": "20070612165421",
+      "original": "http://www.urol.or.jp:80/shimin/shisetsu/tohoku06.html"
+    },
+    {
+      "timestamp": "20070612165332",
+      "original": "http://www.urol.or.jp:80/shimin/shisetsu/tokai06.html"
+    },
+    {
+      "timestamp": "20070102075611",
+      "original": "http://urol.or.jp:80/shimin/soshiki.html"
+    }
+  ]
+}
