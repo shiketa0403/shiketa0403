@@ -1,0 +1,700 @@
+{
+  "domain": "urol.or.jp",
+  "year": 2011,
+  "fetched_at": "2026-04-16T05:29:54+0000",
+  "header": [
+    "timestamp",
+    "original"
+  ],
+  "count": 172,
+  "records": [
+    {
+      "timestamp": "20110715220243",
+      "original": "http://www.urol.or.jp/"
+    },
+    {
+      "timestamp": "20111118013953",
+      "original": "http://www.urol.or.jp/99sokai-message.html"
+    },
+    {
+      "timestamp": "20110513032514",
+      "original": "http://www.urol.or.jp:80/en/about.html"
+    },
+    {
+      "timestamp": "20110512055649",
+      "original": "http://www.urol.or.jp:80/en/contact.html"
+    },
+    {
+      "timestamp": "20110305025812",
+      "original": "http://www.urol.or.jp:80/en/greeting.html"
+    },
+    {
+      "timestamp": "20110305025850",
+      "original": "http://www.urol.or.jp:80/en/guideline.html"
+    },
+    {
+      "timestamp": "20110127041105",
+      "original": "http://www.urol.or.jp:80/en/index.html"
+    },
+    {
+      "timestamp": "20110513032519",
+      "original": "http://www.urol.or.jp:80/en/info.html"
+    },
+    {
+      "timestamp": "20110513032528",
+      "original": "http://www.urol.or.jp:80/en/journal.html"
+    },
+    {
+      "timestamp": "20110513032533",
+      "original": "http://www.urol.or.jp:80/en/link.html"
+    },
+    {
+      "timestamp": "20110510134738",
+      "original": "http://www.urol.or.jp:80/en/meeting.html"
+    },
+    {
+      "timestamp": "20111118013827",
+      "original": "http://www.urol.or.jp/en/message-2011.html"
+    },
+    {
+      "timestamp": "20110512055654",
+      "original": "http://www.urol.or.jp:80/en/news.html"
+    },
+    {
+      "timestamp": "20110513032558",
+      "original": "http://www.urol.or.jp:80/en/pro.html"
+    },
+    {
+      "timestamp": "20110513032603",
+      "original": "http://www.urol.or.jp:80/en/scholarship.html"
+    },
+    {
+      "timestamp": "20110512055723",
+      "original": "http://www.urol.or.jp:80/en/sitemap.html"
+    },
+    {
+      "timestamp": "20110924103215",
+      "original": "http://www.urol.or.jp/index.html"
+    },
+    {
+      "timestamp": "20110127143500",
+      "original": "http://www.urol.or.jp:80/iryo/guideline/guideline.html"
+    },
+    {
+      "timestamp": "20111118031718",
+      "original": "http://www.urol.or.jp/iryo/info/20110506.html"
+    },
+    {
+      "timestamp": "20111010103749",
+      "original": "http://www.urol.or.jp/iryo/info/20110715.html"
+    },
+    {
+      "timestamp": "20110127142059",
+      "original": "http://www.urol.or.jp:80/iryo/meeting/branch-meeting.html"
+    },
+    {
+      "timestamp": "20110125144407",
+      "original": "http://www.urol.or.jp:80/iryo/meeting/international-meeting.html"
+    },
+    {
+      "timestamp": "20111029050756",
+      "original": "http://www.urol.or.jp:80/iryo/meeting/local-meeting-fukuoka.html"
+    },
+    {
+      "timestamp": "20111118002036",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-gunma.html"
+    },
+    {
+      "timestamp": "20111118002510",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-hiroshima.html"
+    },
+    {
+      "timestamp": "20111118001640",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-hokkaido.html"
+    },
+    {
+      "timestamp": "20111118003706",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-hokuriku.html"
+    },
+    {
+      "timestamp": "20111118001634",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-ibaragi.html"
+    },
+    {
+      "timestamp": "20111118002012",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-kanagawa.html"
+    },
+    {
+      "timestamp": "20111029050730",
+      "original": "http://www.urol.or.jp:80/iryo/meeting/local-meeting-kansai.html"
+    },
+    {
+      "timestamp": "20111118005918",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-kumamoto.html"
+    },
+    {
+      "timestamp": "20111118002146",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-miyazaki.html"
+    },
+    {
+      "timestamp": "20111118001836",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-nagasaki.html"
+    },
+    {
+      "timestamp": "20111118005110",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-nigata.html"
+    },
+    {
+      "timestamp": "20111118005438",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-oita.html"
+    },
+    {
+      "timestamp": "20111118004601",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-okayama.html"
+    },
+    {
+      "timestamp": "20111118004452",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-okinawa.html"
+    },
+    {
+      "timestamp": "20111118001653",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-saga.html"
+    },
+    {
+      "timestamp": "20111118002419",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-saitama.html"
+    },
+    {
+      "timestamp": "20111118003430",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-sanin.html"
+    },
+    {
+      "timestamp": "20111118005520",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-shikoku.html"
+    },
+    {
+      "timestamp": "20111118005337",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-shinsyu.html"
+    },
+    {
+      "timestamp": "20111118005914",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-tochigi.html"
+    },
+    {
+      "timestamp": "20111118003631",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-tohoku.html"
+    },
+    {
+      "timestamp": "20111118001738",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-tokai.html"
+    },
+    {
+      "timestamp": "20111118001947",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-tokyo.html"
+    },
+    {
+      "timestamp": "20111118005813",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-yamaguchi.html"
+    },
+    {
+      "timestamp": "20111118003831",
+      "original": "http://www.urol.or.jp/iryo/meeting/local-meeting-yamanashi.html"
+    },
+    {
+      "timestamp": "20110127143510",
+      "original": "http://www.urol.or.jp:80/iryo/meeting/local-meeting.html"
+    },
+    {
+      "timestamp": "20110127142750",
+      "original": "http://www.urol.or.jp:80/iryo/meeting/past-general.html"
+    },
+    {
+      "timestamp": "20110127142113",
+      "original": "http://www.urol.or.jp:80/iryo/meeting/past-international.html"
+    },
+    {
+      "timestamp": "20110127142118",
+      "original": "http://www.urol.or.jp:80/iryo/meeting/past-related.html"
+    },
+    {
+      "timestamp": "20110127142140",
+      "original": "http://www.urol.or.jp:80/iryo/meeting/past-sub.html"
+    },
+    {
+      "timestamp": "20110127143908",
+      "original": "http://www.urol.or.jp:80/iryo/meeting/related-meeting.html"
+    },
+    {
+      "timestamp": "20111118014400",
+      "original": "http://www.urol.or.jp/iryo/meeting/siu-japan-history.html"
+    },
+    {
+      "timestamp": "20111118034625",
+      "original": "http://www.urol.or.jp/iryo/meeting/siu-japan-member.html"
+    },
+    {
+      "timestamp": "20111118034325",
+      "original": "http://www.urol.or.jp/iryo/meeting/siu-japan-newsletter.html"
+    },
+    {
+      "timestamp": "20110127142145",
+      "original": "http://www.urol.or.jp:80/iryo/meeting/siu-japan.html"
+    },
+    {
+      "timestamp": "20111010103805",
+      "original": "http://www.urol.or.jp/iryo/ministries/info.html"
+    },
+    {
+      "timestamp": "20110127142809",
+      "original": "http://www.urol.or.jp:80/iryo/system/about.html"
+    },
+    {
+      "timestamp": "20110127143914",
+      "original": "http://www.urol.or.jp:80/iryo/system/appli.html"
+    },
+    {
+      "timestamp": "20110127143919",
+      "original": "http://www.urol.or.jp:80/iryo/system/facility.html"
+    },
+    {
+      "timestamp": "20110127143537",
+      "original": "http://www.urol.or.jp:80/iryo/system/get.html"
+    },
+    {
+      "timestamp": "20111117202406",
+      "original": "http://www.urol.or.jp/iryo/system/info-20070416.html"
+    },
+    {
+      "timestamp": "20111117202705",
+      "original": "http://www.urol.or.jp/iryo/system/info-20080128.html"
+    },
+    {
+      "timestamp": "20111117202116",
+      "original": "http://www.urol.or.jp/iryo/system/info-20100609.html"
+    },
+    {
+      "timestamp": "20111117202055",
+      "original": "http://www.urol.or.jp/iryo/system/info-20110512.html"
+    },
+    {
+      "timestamp": "20110127142609",
+      "original": "http://www.urol.or.jp:80/iryo/system/info.html"
+    },
+    {
+      "timestamp": "20110127143542",
+      "original": "http://www.urol.or.jp:80/iryo/system/point.html"
+    },
+    {
+      "timestamp": "20110127143934",
+      "original": "http://www.urol.or.jp:80/iryo/system/procedure.html"
+    },
+    {
+      "timestamp": "20110127143949",
+      "original": "http://www.urol.or.jp:80/iryo/system/unit.html"
+    },
+    {
+      "timestamp": "20110127142814",
+      "original": "http://www.urol.or.jp:80/iryo/test/guideline.html"
+    },
+    {
+      "timestamp": "20110127142625",
+      "original": "http://www.urol.or.jp:80/iryo/test/info-cd.html"
+    },
+    {
+      "timestamp": "20110127143343",
+      "original": "http://www.urol.or.jp:80/iryo/test/info.html"
+    },
+    {
+      "timestamp": "20110127143611",
+      "original": "http://www.urol.or.jp:80/iryo/test/note.html"
+    },
+    {
+      "timestamp": "20110127142630",
+      "original": "http://www.urol.or.jp:80/iryo/toroku/annai.html"
+    },
+    {
+      "timestamp": "20110127143954",
+      "original": "http://www.urol.or.jp:80/iryo/toroku/info.html"
+    },
+    {
+      "timestamp": "20110222075558",
+      "original": "http://www.urol.or.jp:80/javascript.html"
+    },
+    {
+      "timestamp": "20111118003846",
+      "original": "https://www.urol.or.jp/login.aspx?ReturnUrl=%2fmember%2findex.html"
+    },
+    {
+      "timestamp": "20111118005743",
+      "original": "https://www.urol.or.jp/login.aspx?ReturnUrl=%2fmember%2fmovie%2findex.html"
+    },
+    {
+      "timestamp": "20111118064124",
+      "original": "https://www.urol.or.jp/login.aspx?ReturnUrl=%2fmember%2fwoman%2fmember.html"
+    },
+    {
+      "timestamp": "20111118025956",
+      "original": "https://www.urol.or.jp/login.aspx?ReturnUrl=%2fmember%2fwoman%2freport.html"
+    },
+    {
+      "timestamp": "20111010084203",
+      "original": "http://www.urol.or.jp:80/shimin/100th.html"
+    },
+    {
+      "timestamp": "20111007071928",
+      "original": "http://www.urol.or.jp:80/shimin/access.html"
+    },
+    {
+      "timestamp": "20111006160333",
+      "original": "http://www.urol.or.jp:80/shimin/doctor.html"
+    },
+    {
+      "timestamp": "20110222075520",
+      "original": "http://www.urol.or.jp:80/shimin/history-annals.html"
+    },
+    {
+      "timestamp": "20111010092126",
+      "original": "http://www.urol.or.jp/shimin/hospital.html"
+    },
+    {
+      "timestamp": "20111117224339",
+      "original": "http://www.urol.or.jp/shimin/hospital/hospital-chugoku.html"
+    },
+    {
+      "timestamp": "20111117225221",
+      "original": "http://www.urol.or.jp/shimin/hospital/hospital-hokkaido.html"
+    },
+    {
+      "timestamp": "20111117225343",
+      "original": "http://www.urol.or.jp/shimin/hospital/hospital-kansai.html"
+    },
+    {
+      "timestamp": "20110225211751",
+      "original": "http://www.urol.or.jp:80/shimin/hospital/hospital-kanto.html"
+    },
+    {
+      "timestamp": "20111117225710",
+      "original": "http://www.urol.or.jp/shimin/hospital/hospital-kyusyu.html"
+    },
+    {
+      "timestamp": "20111117225819",
+      "original": "http://www.urol.or.jp/shimin/hospital/hospital-tohoku.html"
+    },
+    {
+      "timestamp": "20111117224232",
+      "original": "http://www.urol.or.jp/shimin/hospital/hospital-tokai.html"
+    },
+    {
+      "timestamp": "20111010084218",
+      "original": "http://www.urol.or.jp:80/shimin/laparo.html"
+    },
+    {
+      "timestamp": "20110303000357",
+      "original": "http://www.urol.or.jp:80/shimin/link.html"
+    },
+    {
+      "timestamp": "20111010083918",
+      "original": "http://www.urol.or.jp:80/shimin/list.html"
+    },
+    {
+      "timestamp": "20111118002431",
+      "original": "http://www.urol.or.jp/shimin/list/list-100th.html"
+    },
+    {
+      "timestamp": "20111118001742",
+      "original": "http://www.urol.or.jp/shimin/list/list-anzen.html"
+    },
+    {
+      "timestamp": "20111118001938",
+      "original": "http://www.urol.or.jp/shimin/list/list-avj.html"
+    },
+    {
+      "timestamp": "20111118014815",
+      "original": "http://www.urol.or.jp/shimin/list/list-gakujyutu.html"
+    },
+    {
+      "timestamp": "20111118005633",
+      "original": "http://www.urol.or.jp/shimin/list/list-gan.html"
+    },
+    {
+      "timestamp": "20111118004114",
+      "original": "http://www.urol.or.jp/shimin/list/list-genom.html"
+    },
+    {
+      "timestamp": "20111118001604",
+      "original": "http://www.urol.or.jp/shimin/list/list-guideline.html"
+    },
+    {
+      "timestamp": "20111118014015",
+      "original": "http://www.urol.or.jp/shimin/list/list-hensyu.html"
+    },
+    {
+      "timestamp": "20111118015240",
+      "original": "http://www.urol.or.jp/shimin/list/list-hoken.html"
+    },
+    {
+      "timestamp": "20111118002001",
+      "original": "http://www.urol.or.jp/shimin/list/list-houjinka.html"
+    },
+    {
+      "timestamp": "20111118002410",
+      "original": "http://www.urol.or.jp/shimin/list/list-it.html"
+    },
+    {
+      "timestamp": "20111118002016",
+      "original": "http://www.urol.or.jp/shimin/list/list-kaisoku.html"
+    },
+    {
+      "timestamp": "20111118005646",
+      "original": "http://www.urol.or.jp/shimin/list/list-kokusai.html"
+    },
+    {
+      "timestamp": "20111118002058",
+      "original": "http://www.urol.or.jp/shimin/list/list-kokusaikouryu.html"
+    },
+    {
+      "timestamp": "20111118004107",
+      "original": "http://www.urol.or.jp/shimin/list/list-kouhou.html"
+    },
+    {
+      "timestamp": "20111118003827",
+      "original": "http://www.urol.or.jp/shimin/list/list-kyouiku.html"
+    },
+    {
+      "timestamp": "20111118002237",
+      "original": "http://www.urol.or.jp/shimin/list/list-laparoscopy.html"
+    },
+    {
+      "timestamp": "20111118005259",
+      "original": "http://www.urol.or.jp/shimin/list/list-member.html"
+    },
+    {
+      "timestamp": "20111118005909",
+      "original": "http://www.urol.or.jp/shimin/list/list-rieki.html"
+    },
+    {
+      "timestamp": "20111118003201",
+      "original": "http://www.urol.or.jp/shimin/list/list-rinri.html"
+    },
+    {
+      "timestamp": "20111118001830",
+      "original": "http://www.urol.or.jp/shimin/list/list-rinshou.html"
+    },
+    {
+      "timestamp": "20111118015042",
+      "original": "http://www.urol.or.jp/shimin/list/list-seido.html"
+    },
+    {
+      "timestamp": "20111118005141",
+      "original": "http://www.urol.or.jp/shimin/list/list-senkyo.html"
+    },
+    {
+      "timestamp": "20111118004439",
+      "original": "http://www.urol.or.jp/shimin/list/list-sidoui.html"
+    },
+    {
+      "timestamp": "20111118002154",
+      "original": "http://www.urol.or.jp/shimin/list/list-siu.html"
+    },
+    {
+      "timestamp": "20111118001933",
+      "original": "http://www.urol.or.jp/shimin/list/list-sotugo.html"
+    },
+    {
+      "timestamp": "20111118003253",
+      "original": "http://www.urol.or.jp/shimin/list/list-soumu.html"
+    },
+    {
+      "timestamp": "20111118001849",
+      "original": "http://www.urol.or.jp/shimin/list/list-syorai.html"
+    },
+    {
+      "timestamp": "20111118003906",
+      "original": "http://www.urol.or.jp/shimin/list/list-yakubutu.html"
+    },
+    {
+      "timestamp": "20111118001707",
+      "original": "http://www.urol.or.jp/shimin/list/list-yougo.html"
+    },
+    {
+      "timestamp": "20111118003426",
+      "original": "http://www.urol.or.jp/shimin/list/list-zaimu.html"
+    },
+    {
+      "timestamp": "20110312083541",
+      "original": "http://www.urol.or.jp:80/shimin/magazine/bulletin/bulletin.html"
+    },
+    {
+      "timestamp": "20111118030724",
+      "original": "http://www.urol.or.jp/shimin/magazine/iju/iju-backnumber.html"
+    },
+    {
+      "timestamp": "20110303060013",
+      "original": "http://www.urol.or.jp:80/shimin/magazine/iju/iju.html"
+    },
+    {
+      "timestamp": "20110127143348",
+      "original": "http://www.urol.or.jp:80/shimin/number.html"
+    },
+    {
+      "timestamp": "20110218062217",
+      "original": "http://www.urol.or.jp:80/shimin/patent.html"
+    },
+    {
+      "timestamp": "20110127143424",
+      "original": "http://www.urol.or.jp:80/shimin/report/report.html"
+    },
+    {
+      "timestamp": "20110220030322",
+      "original": "http://www.urol.or.jp:80/shimin/rule.html"
+    },
+    {
+      "timestamp": "20111118063021",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-avj.html"
+    },
+    {
+      "timestamp": "20111118061606",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-gakujyutu.html"
+    },
+    {
+      "timestamp": "20111118063015",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-genome.html"
+    },
+    {
+      "timestamp": "20111118070609",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-hensyu.html"
+    },
+    {
+      "timestamp": "20111118070025",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-hoken.html"
+    },
+    {
+      "timestamp": "20111118061648",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-kaisoku.html"
+    },
+    {
+      "timestamp": "20111118014409",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-kiho.html"
+    },
+    {
+      "timestamp": "20111118064819",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-kokusai.html"
+    },
+    {
+      "timestamp": "20111118072914",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-kouhou.html"
+    },
+    {
+      "timestamp": "20111118065610",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-kyoiku.html"
+    },
+    {
+      "timestamp": "20111118064358",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-kyoiku_k.html"
+    },
+    {
+      "timestamp": "20111118014451",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-laparo.html"
+    },
+    {
+      "timestamp": "20111118071306",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-rinri.html"
+    },
+    {
+      "timestamp": "20111118064408",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-ryoiki.html"
+    },
+    {
+      "timestamp": "20111118070543",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-safe.html"
+    },
+    {
+      "timestamp": "20111117222115",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-saisoku.html"
+    },
+    {
+      "timestamp": "20110226001622",
+      "original": "http://www.urol.or.jp:80/shimin/rule/rule-seido.html"
+    },
+    {
+      "timestamp": "20110226001627",
+      "original": "http://www.urol.or.jp:80/shimin/rule/rule-seido_s.html"
+    },
+    {
+      "timestamp": "20111118064308",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-senkyo.html"
+    },
+    {
+      "timestamp": "20111118065546",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-sensyutu.html"
+    },
+    {
+      "timestamp": "20111118061900",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-sikaku.html"
+    },
+    {
+      "timestamp": "20111118071435",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-sokaisyo.html"
+    },
+    {
+      "timestamp": "20111118062236",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-soumu.html"
+    },
+    {
+      "timestamp": "20111118061905",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-syorai.html"
+    },
+    {
+      "timestamp": "20111117223119",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-teikan.html"
+    },
+    {
+      "timestamp": "20111118065532",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-yougo.html"
+    },
+    {
+      "timestamp": "20111118071508",
+      "original": "http://www.urol.or.jp/shimin/rule/rule-zaimu.html"
+    },
+    {
+      "timestamp": "20110222194517",
+      "original": "http://www.urol.or.jp:80/shimin/seminar.html"
+    },
+    {
+      "timestamp": "20110218065241",
+      "original": "http://www.urol.or.jp:80/shimin/sitemap.html"
+    },
+    {
+      "timestamp": "20110218062248",
+      "original": "http://www.urol.or.jp:80/shimin/symptom.html"
+    },
+    {
+      "timestamp": "20110127144016",
+      "original": "http://www.urol.or.jp:80/shimin/woman/about.html"
+    },
+    {
+      "timestamp": "20110127144021",
+      "original": "http://www.urol.or.jp:80/shimin/woman/rule.html"
+    },
+    {
+      "timestamp": "20110317011833",
+      "original": "http://www.urol.or.jp:80/shimin/zenritsu.html"
+    },
+    {
+      "timestamp": "20111010094547",
+      "original": "http://www.urol.or.jp/sinsai/special-measures.html"
+    },
+    {
+      "timestamp": "20110127075325",
+      "original": "http://www.urol.or.jp:80/student/index.html"
+    },
+    {
+      "timestamp": "20111117231811",
+      "original": "http://www.urol.or.jp/student/mezasou.html"
+    },
+    {
+      "timestamp": "20111117230134",
+      "original": "http://www.urol.or.jp/student/sitemap.html"
+    }
+  ]
+}
