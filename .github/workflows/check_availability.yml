@@ -4,6 +4,11 @@ name: ドメイン取得可否チェック (whois)
 on:
   workflow_dispatch:
     inputs:
+      domain:
+        description: '対象ドメイン (候補CSVの場所 results/{domain}/candidates.csv)'
+        required: true
+        default: 'skincare-univ.com'
+        type: string
       include_alive:
         description: '生存ドメイン (is_alive=True) もチェックするか'
         required: true
@@ -52,13 +57,15 @@ jobs:
 
       - name: candidates.csv の存在確認
         run: |
-          if [ ! -f candidates.csv ]; then
-            echo "エラー: candidates.csv が見つかりません"
-            echo "先に wayback_extract ワークフローを実行してください"
+          DOMAIN="${{ github.event.inputs.domain }}"
+          TARGET="results/$DOMAIN/candidates.csv"
+          if [ ! -f "$TARGET" ]; then
+            echo "エラー: $TARGET が見つかりません"
+            echo "先に wayback_extract ワークフローを $DOMAIN で実行してください"
             exit 1
           fi
-          echo "candidates.csv の行数:"
-          wc -l candidates.csv
+          echo "$TARGET の行数:"
+          wc -l "$TARGET"
 
       - name: whois チェック実行
         run: |
@@ -70,8 +77,7 @@ jobs:
             ARGS="$ARGS --include-subdomains"
           fi
           python check_availability.py \
-            --input candidates.csv \
-            --output availability.csv \
+            --source-domain "${{ github.event.inputs.domain }}" \
             --limit "${{ github.event.inputs.limit }}" \
             --sleep "${{ github.event.inputs.sleep }}" \
             $ARGS
@@ -79,32 +85,35 @@ jobs:
       - name: 結果サマリ
         if: always()
         run: |
-          echo "=== availability.csv (上位30行) ==="
-          head -30 availability.csv 2>/dev/null || echo "(なし)"
+          DOMAIN="${{ github.event.inputs.domain }}"
+          TARGET="results/$DOMAIN/availability.csv"
+          echo "=== $TARGET (上位30行) ==="
+          head -30 "$TARGET" 2>/dev/null || echo "(なし)"
           echo ""
           echo "=== 取得可能ドメイン一覧 ==="
-          awk -F',' 'NR>1 && $2=="available" { print $1, "(link_count="$5")" }' availability.csv 2>/dev/null || true
+          awk -F',' 'NR>1 && $2=="available" { print $1, "(link_count="$5")" }' "$TARGET" 2>/dev/null || true
 
       - name: Artifacts としてアップロード
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: availability-results
-          path: availability.csv
+          name: availability-${{ github.event.inputs.domain }}
+          path: results/${{ github.event.inputs.domain }}/availability.csv
           if-no-files-found: warn
           retention-days: 14
 
       - name: 結果をブランチにコミット
         if: ${{ inputs.commit_results == true && always() }}
         run: |
+          DOMAIN="${{ github.event.inputs.domain }}"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add availability.csv 2>/dev/null || true
+          git add "results/$DOMAIN/availability.csv" 2>/dev/null || true
           git reset -- csv/post.csv 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "コミットする変更なし"
           else
-            git commit -m "ドメイン取得可否チェック結果"
+            git commit -m "whois可否チェック: $DOMAIN"
             git pull --rebase origin "$GITHUB_REF_NAME" || true
             git push origin "HEAD:$GITHUB_REF_NAME"
           fi

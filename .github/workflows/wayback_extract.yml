@@ -1,28 +1,28 @@
-name: Wayback 死にリンク抽出 (skyperfectv)
+name: Wayback 死にリンク抽出 (汎用)
 
 # 手動トリガーのみ。勝手に動きません。
 on:
   workflow_dispatch:
     inputs:
-      year_from:
-        description: '対象開始年 (例: 2005)'
+      domain:
+        description: '対象ドメイン (例: skincare-univ.com)'
         required: true
-        default: '2005'
+        default: 'skincare-univ.com'
+        type: string
+      year_from:
+        description: '対象開始年 (例: 2014)'
+        required: true
+        default: '2014'
         type: string
       year_to:
-        description: '対象終了年 (例: 2005)'
+        description: '対象終了年 (例: 2014)'
         required: true
-        default: '2005'
+        default: '2014'
         type: string
       max_urls_per_year:
         description: 'Step 2 で年あたり処理するURL上限 (初回は 100〜300 推奨)'
         required: true
         default: '200'
-        type: string
-      domain:
-        description: '対象ドメイン'
-        required: true
-        default: 'skyperfectv.co.jp'
         type: string
       commit_results:
         description: '結果をブランチにコミットするか'
@@ -72,47 +72,47 @@ jobs:
           done
 
       - name: Step 3 - 集計 & DNS判定 & 候補CSV出力
-        run: python build_candidates.py
+        run: |
+          python build_candidates.py --source-domain "${{ github.event.inputs.domain }}"
 
       - name: 結果サマリを表示
         if: always()
         run: |
-          echo "=== cdx_data ==="
-          ls -la cdx_data/ 2>/dev/null || echo "(なし)"
+          DOMAIN="${{ github.event.inputs.domain }}"
+          echo "=== results/$DOMAIN/cdx_data ==="
+          ls -la "results/$DOMAIN/cdx_data/" 2>/dev/null || echo "(なし)"
           echo ""
-          echo "=== links_data ==="
-          ls -la links_data/ 2>/dev/null || echo "(なし)"
+          echo "=== results/$DOMAIN/links_data ==="
+          ls -la "results/$DOMAIN/links_data/" 2>/dev/null || echo "(なし)"
           echo ""
           echo "=== candidates.csv (上位30行) ==="
-          head -30 candidates.csv 2>/dev/null || echo "(なし)"
+          head -30 "results/$DOMAIN/candidates.csv" 2>/dev/null || echo "(なし)"
           echo ""
           echo "=== 行数 ==="
-          wc -l candidates.csv 2>/dev/null || true
+          wc -l "results/$DOMAIN/candidates.csv" 2>/dev/null || true
 
       - name: Artifacts としてアップロード
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: wayback-extract-results-${{ github.event.inputs.year_from }}-${{ github.event.inputs.year_to }}
-          path: |
-            cdx_data/
-            links_data/
-            candidates.csv
+          name: wayback-extract-${{ github.event.inputs.domain }}-${{ github.event.inputs.year_from }}-${{ github.event.inputs.year_to }}
+          path: results/${{ github.event.inputs.domain }}/
           if-no-files-found: warn
           retention-days: 14
 
       - name: 結果をブランチにコミット (csv/post.csv は絶対に触らない)
         if: ${{ inputs.commit_results == true && always() }}
         run: |
+          DOMAIN="${{ github.event.inputs.domain }}"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           # 安全のため post.csv 系は除外
-          git add cdx_data/ links_data/ candidates.csv 2>/dev/null || true
+          git add "results/$DOMAIN/" 2>/dev/null || true
           git reset -- csv/post.csv 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "コミットする変更なし"
           else
-            git commit -m "Wayback死にリンク抽出: ${{ github.event.inputs.domain }} ${{ github.event.inputs.year_from }}-${{ github.event.inputs.year_to }}"
+            git commit -m "Wayback抽出: $DOMAIN ${{ github.event.inputs.year_from }}-${{ github.event.inputs.year_to }}"
             git pull --rebase origin "$GITHUB_REF_NAME" || true
             git push origin "HEAD:$GITHUB_REF_NAME"
           fi
