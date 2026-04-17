@@ -1,0 +1,696 @@
+{
+  "domain": "jiaa.org",
+  "year": 2004,
+  "fetched_at": "2026-04-17T13:31:24+0000",
+  "header": [
+    "timestamp",
+    "original"
+  ],
+  "count": 171,
+  "records": [
+    {
+      "timestamp": "20040209103813",
+      "original": "http://jiaa.org:80/"
+    },
+    {
+      "timestamp": "20040203105313",
+      "original": "http://www.jiaa.org:80/aboutjiaa/aboutjiaa.html"
+    },
+    {
+      "timestamp": "20040203105845",
+      "original": "http://www.jiaa.org:80/aboutjiaa/articles.html"
+    },
+    {
+      "timestamp": "20040203111249",
+      "original": "http://www.jiaa.org:80/aboutjiaa/entrance.html"
+    },
+    {
+      "timestamp": "20040203112100",
+      "original": "http://www.jiaa.org:80/aboutjiaa/map.html"
+    },
+    {
+      "timestamp": "20040218130616",
+      "original": "http://www.jiaa.org:80/aboutjiaa/map_02.html"
+    },
+    {
+      "timestamp": "20040203112645",
+      "original": "http://www.jiaa.org:80/aboutjiaa/memberlist.html"
+    },
+    {
+      "timestamp": "20040409123213",
+      "original": "http://jiaa.org:80/aboutjiaa/officerlist.html"
+    },
+    {
+      "timestamp": "20040217083956",
+      "original": "http://www.jiaa.org:80/aboutjiaa/organization.html"
+    },
+    {
+      "timestamp": "20040217084837",
+      "original": "http://www.jiaa.org:80/aboutjiaa/prospectus.html"
+    },
+    {
+      "timestamp": "20040404035743",
+      "original": "http://jiaa.org:80/activity/activity.html"
+    },
+    {
+      "timestamp": "20040217100108",
+      "original": "http://www.jiaa.org:80/activity/committee.html"
+    },
+    {
+      "timestamp": "20040217101341",
+      "original": "http://www.jiaa.org:80/activity/discription.html"
+    },
+    {
+      "timestamp": "20040904082906",
+      "original": "http://jiaa.org:80/activity/publish.html"
+    },
+    {
+      "timestamp": "20040217101721",
+      "original": "http://www.jiaa.org:80/activity/result.html"
+    },
+    {
+      "timestamp": "20040217102544",
+      "original": "http://www.jiaa.org:80/activity/taskforce.html"
+    },
+    {
+      "timestamp": "20040612091139",
+      "original": "http://www.jiaa.org:80/cgi-local/system/members/membersIndex.cgi"
+    },
+    {
+      "timestamp": "20040612092114",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrBody.cgi"
+    },
+    {
+      "timestamp": "20040612093730",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoDet.cgi"
+    },
+    {
+      "timestamp": "20040612094056",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoEditForm.cgi"
+    },
+    {
+      "timestamp": "20040612095227",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoEntryForm.cgi"
+    },
+    {
+      "timestamp": "20040612174419",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoEntryForm.cgi?cosbc=&select="
+    },
+    {
+      "timestamp": "20040612174644",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoEntryForm.cgi?cosbc=1&select=1"
+    },
+    {
+      "timestamp": "20040617205412",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoEntryForm.cgi?cosbc=1&select=10"
+    },
+    {
+      "timestamp": "20040612234303",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoEntryForm.cgi?cosbc=1&select=11"
+    },
+    {
+      "timestamp": "20040612234534",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoEntryForm.cgi?cosbc=1&select=2"
+    },
+    {
+      "timestamp": "20040612234916",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoEntryForm.cgi?cosbc=1&select=3"
+    },
+    {
+      "timestamp": "20040613004905",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoEntryForm.cgi?cosbc=1&select=4"
+    },
+    {
+      "timestamp": "20040613005419",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoEntryForm.cgi?cosbc=1&select=5"
+    },
+    {
+      "timestamp": "20040613012358",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoEntryForm.cgi?cosbc=1&select=6"
+    },
+    {
+      "timestamp": "20040613012639",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoEntryForm.cgi?cosbc=1&select=7"
+    },
+    {
+      "timestamp": "20040613013311",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoEntryForm.cgi?cosbc=1&select=8"
+    },
+    {
+      "timestamp": "20040612221328",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoEntryForm.cgi?cosbc=1&select=9"
+    },
+    {
+      "timestamp": "20040612221810",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoEntryForm.cgi?cosbc=2&select=1"
+    },
+    {
+      "timestamp": "20040613064822",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoEntryForm.cgi?cosbc=2&select=10"
+    },
+    {
+      "timestamp": "20040613024240",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoEntryForm.cgi?cosbc=2&select=2"
+    },
+    {
+      "timestamp": "20040613031348",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoEntryForm.cgi?cosbc=2&select=6"
+    },
+    {
+      "timestamp": "20040614064123",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoEntryForm.cgi?cosbc=2&select=7"
+    },
+    {
+      "timestamp": "20040613065518",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoEntryForm.cgi?cosbc=2&select=8"
+    },
+    {
+      "timestamp": "20040613065706",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoEntryForm.cgi?cosbc=2&select=9"
+    },
+    {
+      "timestamp": "20040612100705",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi"
+    },
+    {
+      "timestamp": "20040612174847",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=&select="
+    },
+    {
+      "timestamp": "20040612175253",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=1&select=1"
+    },
+    {
+      "timestamp": "20040612175413",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=1&select=10"
+    },
+    {
+      "timestamp": "20040612175614",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=1&select=11"
+    },
+    {
+      "timestamp": "20040612175826",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=1&select=2"
+    },
+    {
+      "timestamp": "20040612180130",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=1&select=3"
+    },
+    {
+      "timestamp": "20040612180345",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=1&select=4"
+    },
+    {
+      "timestamp": "20040612180543",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=1&select=5"
+    },
+    {
+      "timestamp": "20040612180800",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=1&select=6"
+    },
+    {
+      "timestamp": "20040612180912",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=1&select=7"
+    },
+    {
+      "timestamp": "20040612181115",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=1&select=8"
+    },
+    {
+      "timestamp": "20040612181352",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=1&select=9"
+    },
+    {
+      "timestamp": "20040612181608",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=2&select=1"
+    },
+    {
+      "timestamp": "20040612222427",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=2&select=10"
+    },
+    {
+      "timestamp": "20040612222530",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=2&select=11"
+    },
+    {
+      "timestamp": "20040612222826",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=2&select=2"
+    },
+    {
+      "timestamp": "20040612223306",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=2&select=3"
+    },
+    {
+      "timestamp": "20040612223440",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=2&select=4"
+    },
+    {
+      "timestamp": "20040612223939",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=2&select=5"
+    },
+    {
+      "timestamp": "20040612224233",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=2&select=6"
+    },
+    {
+      "timestamp": "20040612232644",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=2&select=7"
+    },
+    {
+      "timestamp": "20040612233023",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=2&select=8"
+    },
+    {
+      "timestamp": "20040612233306",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrCoList.cgi?cosbc=2&select=9"
+    },
+    {
+      "timestamp": "20040612101928",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrFrame.cgi"
+    },
+    {
+      "timestamp": "20040612102948",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrGiEntryForm.cgi"
+    },
+    {
+      "timestamp": "20040612181813",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrGiList.cgi"
+    },
+    {
+      "timestamp": "20040612104733",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrGrpEntryForm2.cgi"
+    },
+    {
+      "timestamp": "20040612182159",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrGrpList.cgi"
+    },
+    {
+      "timestamp": "20040612105922",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrGrpMbList.cgi"
+    },
+    {
+      "timestamp": "20040612110739",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrGrpStafEntryConf.cgi"
+    },
+    {
+      "timestamp": "20040612112410",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrGrpStafEntryFin.cgi"
+    },
+    {
+      "timestamp": "20040612113158",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrGrpStafEntryForm.cgi"
+    },
+    {
+      "timestamp": "20040612113347",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrGrpStafList.cgi"
+    },
+    {
+      "timestamp": "20040612121446",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbDet.cgi"
+    },
+    {
+      "timestamp": "20040612122647",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm.cgi"
+    },
+    {
+      "timestamp": "20040612123300",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi"
+    },
+    {
+      "timestamp": "20040612182454",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi?cosbc=&select="
+    },
+    {
+      "timestamp": "20040612182750",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi?cosbc=1&select=1"
+    },
+    {
+      "timestamp": "20040612233900",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi?cosbc=1&select=10"
+    },
+    {
+      "timestamp": "20040612233940",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi?cosbc=1&select=11"
+    },
+    {
+      "timestamp": "20040612234311",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi?cosbc=1&select=2"
+    },
+    {
+      "timestamp": "20040612200055",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi?cosbc=1&select=3"
+    },
+    {
+      "timestamp": "20040612234459",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi?cosbc=1&select=4"
+    },
+    {
+      "timestamp": "20040612200153",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi?cosbc=1&select=5"
+    },
+    {
+      "timestamp": "20040612234842",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi?cosbc=1&select=6"
+    },
+    {
+      "timestamp": "20040613004831",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi?cosbc=1&select=7"
+    },
+    {
+      "timestamp": "20040613005430",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi?cosbc=1&select=8"
+    },
+    {
+      "timestamp": "20040613012606",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi?cosbc=1&select=9"
+    },
+    {
+      "timestamp": "20040612200525",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi?cosbc=2&select=1"
+    },
+    {
+      "timestamp": "20040625064125",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi?cosbc=2&select=10"
+    },
+    {
+      "timestamp": "20040619170306",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi?cosbc=2&select=2"
+    },
+    {
+      "timestamp": "20040613034958",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi?cosbc=2&select=4"
+    },
+    {
+      "timestamp": "20040613035243",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi?cosbc=2&select=5"
+    },
+    {
+      "timestamp": "20040613035354",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi?cosbc=2&select=6"
+    },
+    {
+      "timestamp": "20040613035701",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi?cosbc=2&select=7"
+    },
+    {
+      "timestamp": "20040613035836",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi?cosbc=2&select=8"
+    },
+    {
+      "timestamp": "20040625043651",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbEntryForm2.cgi?cosbc=2&select=9"
+    },
+    {
+      "timestamp": "20040612124048",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi"
+    },
+    {
+      "timestamp": "20040612182909",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=&select="
+    },
+    {
+      "timestamp": "20040612183140",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=1&select=1"
+    },
+    {
+      "timestamp": "20040612183246",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=1&select=10"
+    },
+    {
+      "timestamp": "20040612183549",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=1&select=11"
+    },
+    {
+      "timestamp": "20040612170646",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=1&select=2"
+    },
+    {
+      "timestamp": "20040612171041",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=1&select=3"
+    },
+    {
+      "timestamp": "20040612171241",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=1&select=4"
+    },
+    {
+      "timestamp": "20040612171501",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=1&select=5"
+    },
+    {
+      "timestamp": "20040612171812",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=1&select=6"
+    },
+    {
+      "timestamp": "20040612171836",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=1&select=7"
+    },
+    {
+      "timestamp": "20040612173651",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=1&select=8"
+    },
+    {
+      "timestamp": "20040612173855",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=1&select=9"
+    },
+    {
+      "timestamp": "20040612174316",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=2&select=1"
+    },
+    {
+      "timestamp": "20040612201119",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=2&select=10"
+    },
+    {
+      "timestamp": "20040612201149",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=2&select=11"
+    },
+    {
+      "timestamp": "20040612201735",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=2&select=2"
+    },
+    {
+      "timestamp": "20040612202229",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=2&select=3"
+    },
+    {
+      "timestamp": "20040612202431",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=2&select=4"
+    },
+    {
+      "timestamp": "20040612202612",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=2&select=5"
+    },
+    {
+      "timestamp": "20040612202934",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=2&select=6"
+    },
+    {
+      "timestamp": "20040612203239",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=2&select=7"
+    },
+    {
+      "timestamp": "20040612203736",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=2&select=8"
+    },
+    {
+      "timestamp": "20040612204054",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList.cgi?cosbc=2&select=9"
+    },
+    {
+      "timestamp": "20040612125220",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList2.cgi"
+    },
+    {
+      "timestamp": "20040612130015",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi"
+    },
+    {
+      "timestamp": "20040612174401",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=1&select=1"
+    },
+    {
+      "timestamp": "20040612174557",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=1&select=10"
+    },
+    {
+      "timestamp": "20040612174852",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=1&select=11"
+    },
+    {
+      "timestamp": "20040612175234",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=1&select=2"
+    },
+    {
+      "timestamp": "20040612175448",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=1&select=3"
+    },
+    {
+      "timestamp": "20040612175722",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=1&select=4"
+    },
+    {
+      "timestamp": "20040612175813",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=1&select=5"
+    },
+    {
+      "timestamp": "20040612180030",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=1&select=6"
+    },
+    {
+      "timestamp": "20040612180301",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=1&select=7"
+    },
+    {
+      "timestamp": "20040612180450",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=1&select=8"
+    },
+    {
+      "timestamp": "20040612180652",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=1&select=9"
+    },
+    {
+      "timestamp": "20040612180916",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=2&select=1"
+    },
+    {
+      "timestamp": "20040613013314",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=2&select=10"
+    },
+    {
+      "timestamp": "20040612221202",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=2&select=11"
+    },
+    {
+      "timestamp": "20040612221650",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=2&select=2"
+    },
+    {
+      "timestamp": "20040612221944",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=2&select=3"
+    },
+    {
+      "timestamp": "20040612222255",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=2&select=4"
+    },
+    {
+      "timestamp": "20040612222519",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=2&select=5"
+    },
+    {
+      "timestamp": "20040612222945",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=2&select=6"
+    },
+    {
+      "timestamp": "20040612223124",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=2&select=7"
+    },
+    {
+      "timestamp": "20040612223643",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=2&select=8"
+    },
+    {
+      "timestamp": "20040612223913",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMbList3.cgi?grp_c=&grp_in_seq=&cosbc=2&select=9"
+    },
+    {
+      "timestamp": "20040612181155",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMenu.cgi"
+    },
+    {
+      "timestamp": "20040612115327",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMLSendConf.cgi"
+    },
+    {
+      "timestamp": "20040612120943",
+      "original": "http://www.jiaa.org:80/cgi-local/system/secretariat/scrMLSendForm.cgi"
+    },
+    {
+      "timestamp": "20040130200145",
+      "original": "http://www.jiaa.org:80/enq/monitoring/thanks.html"
+    },
+    {
+      "timestamp": "20040216115123",
+      "original": "http://www.jiaa.org:80/index.html"
+    },
+    {
+      "timestamp": "20040209175427",
+      "original": "http://jiaa.org:80/release/030522/index.html"
+    },
+    {
+      "timestamp": "20040904170936",
+      "original": "http://jiaa.org:80/release/business/index.html"
+    },
+    {
+      "timestamp": "20040618060809",
+      "original": "http://www.jiaa.org:80/release/declaration/"
+    },
+    {
+      "timestamp": "20040404045939",
+      "original": "http://jiaa.org:80/release/declaration/index.html"
+    },
+    {
+      "timestamp": "20040528090020",
+      "original": "http://www.jiaa.org:80/release/guideline/"
+    },
+    {
+      "timestamp": "20040209203051",
+      "original": "http://jiaa.org:80/release/guideline/index.html"
+    },
+    {
+      "timestamp": "20040209204126",
+      "original": "http://jiaa.org:80/release/measurement/index.html"
+    },
+    {
+      "timestamp": "20040209204516",
+      "original": "http://jiaa.org:80/release/traffic/index.html"
+    },
+    {
+      "timestamp": "20040410134653",
+      "original": "http://jiaa.org:80/release/traffic/jiaatrafficmanual/21.html"
+    },
+    {
+      "timestamp": "20040210141005",
+      "original": "http://jiaa.org:80/release/traffic/jiaatrafficmanual/31.html"
+    },
+    {
+      "timestamp": "20040210141318",
+      "original": "http://jiaa.org:80/release/traffic/jiaatrafficmanual/32.html"
+    },
+    {
+      "timestamp": "20040410135037",
+      "original": "http://jiaa.org:80/release/traffic/jiaatrafficmanual/33.html"
+    },
+    {
+      "timestamp": "20040209204941",
+      "original": "http://jiaa.org:80/release/traffic/jiaatrafficmanual/traffic.html"
+    },
+    {
+      "timestamp": "20040409071431",
+      "original": "http://jiaa.org:80/release/traffic/jiaatrafficmanual/traffic_main.html"
+    },
+    {
+      "timestamp": "20040210103417",
+      "original": "http://jiaa.org:80/release/traffic/jiaatrafficmanual/traffic_menu.html"
+    },
+    {
+      "timestamp": "20040608192106",
+      "original": "http://www.jiaa.org:80/release/words/"
+    },
+    {
+      "timestamp": "20040209205159",
+      "original": "http://jiaa.org:80/release/words/index.html"
+    },
+    {
+      "timestamp": "20040217104742",
+      "original": "http://www.jiaa.org:80/release/words/words_vol2.html"
+    },
+    {
+      "timestamp": "20040605014859",
+      "original": "http://www.jiaa.org:80/seminar/200406_17.html"
+    },
+    {
+      "timestamp": "20041016045058",
+      "original": "http://www.jiaa.org:80/seminar/seminar_jiaa5.html"
+    }
+  ]
+}
