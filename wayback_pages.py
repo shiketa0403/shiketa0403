@@ -168,22 +168,47 @@ async def async_get_all_urls(session, domain):
         ("collapse", "urlkey"),  # URLごとに最新1件だけ
         ("limit", "5000"),
     ]
-    try:
-        async with session.get(CDX_API, params=params,
-                               timeout=aiohttp.ClientTimeout(total=60)) as resp:
-            data = await resp.json(content_type=None)
-            if not data or len(data) <= 1:
-                return []
-            # data[0] はヘッダ行
-            results = []
-            for row in data[1:]:
-                original, timestamp, status, mimetype = row[0], row[1], row[2], row[3]
-                if not should_skip_url(original):
-                    results.append({"url": original, "timestamp": timestamp})
-            return results
-    except Exception as e:
-        print(f"  CDX API エラー: {e}")
-        return []
+    # リトライ付き（2秒、4秒、8秒待機）
+    last_error = None
+    for attempt in range(3):
+        if attempt > 0:
+            wait = 2 ** attempt
+            print(f"  {wait}秒待機してリトライ ({attempt + 1}/3)...")
+            await asyncio.sleep(wait)
+        try:
+            async with session.get(CDX_API, params=params,
+                                   timeout=aiohttp.ClientTimeout(total=60)) as resp:
+                if resp.status != 200:
+                    text = await resp.text()
+                    last_error = f"HTTP {resp.status}: {text[:100]}"
+                    print(f"  CDX API HTTP {resp.status}（試行 {attempt + 1}/3）")
+                    continue
+                text = await resp.text()
+                if not text.strip():
+                    last_error = "空のレスポンス"
+                    print(f"  CDX API 空レスポンス（試行 {attempt + 1}/3）")
+                    continue
+                try:
+                    data = json.loads(text)
+                except json.JSONDecodeError as e:
+                    last_error = f"JSONパースエラー: {e}"
+                    print(f"  CDX API JSONパースエラー（試行 {attempt + 1}/3）")
+                    continue
+                if not data or len(data) <= 1:
+                    return []
+                # data[0] はヘッダ行
+                results = []
+                for row in data[1:]:
+                    original, timestamp, status, mimetype = row[0], row[1], row[2], row[3]
+                    if not should_skip_url(original):
+                        results.append({"url": original, "timestamp": timestamp})
+                return results
+        except Exception as e:
+            last_error = str(e)
+            print(f"  CDX API エラー（試行 {attempt + 1}/3）: {e}")
+            continue
+    print(f"  CDX API 最終エラー: {last_error}")
+    return []
 
 
 # ========== ページメタデータ取得 ==========
@@ -286,9 +311,10 @@ async def async_main(domain, output_path):
 # ========== sync版フォールバック ==========
 
 def sync_get_all_urls(domain):
-    """同期版: CDX APIで全URL取得"""
+    """同期版: CDX APIで全URL取得（リトライ付き）"""
     import urllib.request
     import urllib.parse
+    import time
 
     params = urllib.parse.urlencode([
         ("url", f"{domain}/*"),
@@ -300,23 +326,43 @@ def sync_get_all_urls(domain):
         ("limit", "5000"),
     ])
     url = f"{CDX_API}?{params}"
-    try:
-        req = urllib.request.Request(url, headers={
-            "User-Agent": "Mozilla/5.0 (wayback-page-metadata-checker)"
-        })
-        with urllib.request.urlopen(req, timeout=60) as resp:
-            data = json.loads(resp.read().decode("utf-8", errors="replace"))
-            if not data or len(data) <= 1:
-                return []
-            results = []
-            for row in data[1:]:
-                original, timestamp = row[0], row[1]
-                if not should_skip_url(original):
-                    results.append({"url": original, "timestamp": timestamp})
-            return results
-    except Exception as e:
-        print(f"CDX API エラー: {e}")
-        return []
+
+    last_error = None
+    for attempt in range(3):
+        if attempt > 0:
+            wait = 2 ** attempt
+            print(f"  {wait}秒待機してリトライ ({attempt + 1}/3)...")
+            time.sleep(wait)
+        try:
+            req = urllib.request.Request(url, headers={
+                "User-Agent": "Mozilla/5.0 (wayback-page-metadata-checker)"
+            })
+            with urllib.request.urlopen(req, timeout=60) as resp:
+                text = resp.read().decode("utf-8", errors="replace")
+                if not text.strip():
+                    last_error = "空のレスポンス"
+                    print(f"  CDX API 空レスポンス（試行 {attempt + 1}/3）")
+                    continue
+                try:
+                    data = json.loads(text)
+                except json.JSONDecodeError as e:
+                    last_error = f"JSONパースエラー: {e}"
+                    print(f"  CDX API JSONパースエラー（試行 {attempt + 1}/3）")
+                    continue
+                if not data or len(data) <= 1:
+                    return []
+                results = []
+                for row in data[1:]:
+                    original, timestamp = row[0], row[1]
+                    if not should_skip_url(original):
+                        results.append({"url": original, "timestamp": timestamp})
+                return results
+        except Exception as e:
+            last_error = str(e)
+            print(f"  CDX API エラー（試行 {attempt + 1}/3）: {e}")
+            continue
+    print(f"  CDX API 最終エラー: {last_error}")
+    return []
 
 
 def sync_fetch_metadata(entry, domain):
