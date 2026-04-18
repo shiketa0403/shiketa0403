@@ -1,0 +1,928 @@
+{
+  "domain": "jiaa.org",
+  "year": 2019,
+  "fetched_at": "2026-04-18T05:35:24+0000",
+  "header": [
+    "timestamp",
+    "original"
+  ],
+  "count": 229,
+  "records": [
+    {
+      "timestamp": "20190105030454",
+      "original": "http://jiaa.org:80/"
+    },
+    {
+      "timestamp": "20190106084049",
+      "original": "http://jiaa.org:80/about/aboutjiaa.html"
+    },
+    {
+      "timestamp": "20190109025804",
+      "original": "http://jiaa.org:80/about/articles.html"
+    },
+    {
+      "timestamp": "20190106084054",
+      "original": "http://jiaa.org:80/about/code.html"
+    },
+    {
+      "timestamp": "20190106084100",
+      "original": "http://jiaa.org:80/about/disclosure.html"
+    },
+    {
+      "timestamp": "20190105030459",
+      "original": "http://jiaa.org:80/about/index.html"
+    },
+    {
+      "timestamp": "20190106084104",
+      "original": "http://jiaa.org:80/about/map.html"
+    },
+    {
+      "timestamp": "20190106084110",
+      "original": "http://jiaa.org:80/about/memberlist.html"
+    },
+    {
+      "timestamp": "20190106084114",
+      "original": "http://jiaa.org:80/about/officerlist.html"
+    },
+    {
+      "timestamp": "20190106084119",
+      "original": "http://jiaa.org:80/about/organization.html"
+    },
+    {
+      "timestamp": "20190106123227",
+      "original": "http://jiaa.org:80/activity/activity.html"
+    },
+    {
+      "timestamp": "20190105030517",
+      "original": "http://jiaa.org:80/activity/index.html"
+    },
+    {
+      "timestamp": "20190106123232",
+      "original": "http://jiaa.org:80/activity/policy.html"
+    },
+    {
+      "timestamp": "20190106084125",
+      "original": "http://jiaa.org:80/activity/publish/business.html"
+    },
+    {
+      "timestamp": "20190630131501",
+      "original": "http://jiaa.org:80/activity/publish/guideline_jitsumu.html"
+    },
+    {
+      "timestamp": "20190109025808",
+      "original": "http://jiaa.org:80/activity/publish/index.html"
+    },
+    {
+      "timestamp": "20190718171358",
+      "original": "http://www.jiaa.org:80/activity/publish/tiaa_annual2009.html"
+    },
+    {
+      "timestamp": "20190709174723",
+      "original": "http://www.jiaa.org:80/activity/publish/tiaa_annual2010.html"
+    },
+    {
+      "timestamp": "20190709174805",
+      "original": "http://www.jiaa.org:80/activity/publish/tiaa_annual2011.html"
+    },
+    {
+      "timestamp": "20190125082545",
+      "original": "http://www.jiaa.org:80/archive/addimpcnt.html"
+    },
+    {
+      "timestamp": "20190112162114",
+      "original": "http://www.jiaa.org:80/archive/bta_guideline.html"
+    },
+    {
+      "timestamp": "20190726194858",
+      "original": "http://www.jiaa.org:80/archive/download.html"
+    },
+    {
+      "timestamp": "20190109025813",
+      "original": "http://jiaa.org:80/archive/index.html"
+    },
+    {
+      "timestamp": "20190628161610",
+      "original": "http://www.jiaa.org:80/archive/info_110323.html"
+    },
+    {
+      "timestamp": "20190222173147",
+      "original": "http://www.jiaa.org:80/archive/release/2003/2003_jiaameasurement.html"
+    },
+    {
+      "timestamp": "20190630163323",
+      "original": "http://www.jiaa.org:80/archive/release/index.html"
+    },
+    {
+      "timestamp": "20190222173152",
+      "original": "http://www.jiaa.org:80/archive/release/release_2004.html"
+    },
+    {
+      "timestamp": "20190222173157",
+      "original": "http://www.jiaa.org:80/archive/release/release_2005.html"
+    },
+    {
+      "timestamp": "20190512142557",
+      "original": "http://www.jiaa.org/archive/s_guideline.html"
+    },
+    {
+      "timestamp": "20190921053641",
+      "original": "http://www.jiaa.org:80/archive/traffic_manual.html"
+    },
+    {
+      "timestamp": "20190130041938",
+      "original": "http://www.jiaa.org:80/cgi-bin/html/search.cgi"
+    },
+    {
+      "timestamp": "20191209213755",
+      "original": "https://www.jiaa.org/gdl_siryo/"
+    },
+    {
+      "timestamp": "20191209203645",
+      "original": "https://www.jiaa.org/gdl_siryo/gdl/"
+    },
+    {
+      "timestamp": "20191209221249",
+      "original": "https://www.jiaa.org/gdl_siryo/gdl/adfraud_statement/"
+    },
+    {
+      "timestamp": "20191209213405",
+      "original": "https://www.jiaa.org/gdl_siryo/gdl/brandsafe_gdl/"
+    },
+    {
+      "timestamp": "20191209210426",
+      "original": "https://www.jiaa.org/gdl_siryo/gdl/brandsafe_statement/"
+    },
+    {
+      "timestamp": "20191209204619",
+      "original": "https://www.jiaa.org/gdl_siryo/gdl/bta/"
+    },
+    {
+      "timestamp": "20191209202507",
+      "original": "https://www.jiaa.org/gdl_siryo/gdl/keisaikijun/"
+    },
+    {
+      "timestamp": "20191209212645",
+      "original": "https://www.jiaa.org/gdl_siryo/gdl/native/"
+    },
+    {
+      "timestamp": "20191209213841",
+      "original": "https://www.jiaa.org/gdl_siryo/gdl/privacy/"
+    },
+    {
+      "timestamp": "20191209213118",
+      "original": "https://www.jiaa.org/gdl_siryo/gdl/viewable_guidance/"
+    },
+    {
+      "timestamp": "20191209203358",
+      "original": "https://www.jiaa.org/gdl_siryo/gdl/viewable_statement/"
+    },
+    {
+      "timestamp": "20191209202806",
+      "original": "https://www.jiaa.org/gdl_siryo/kankobutu/"
+    },
+    {
+      "timestamp": "20191209202437",
+      "original": "https://www.jiaa.org/gdl_siryo/kankobutu/gdl_jitumu/"
+    },
+    {
+      "timestamp": "20191209202527",
+      "original": "https://www.jiaa.org/gdl_siryo/kankobutu/shoseki_hikkei/"
+    },
+    {
+      "timestamp": "20191209210224",
+      "original": "https://www.jiaa.org/gdl_siryo/page/2/"
+    },
+    {
+      "timestamp": "20191209202924",
+      "original": "https://www.jiaa.org/gdl_siryo/siryo/"
+    },
+    {
+      "timestamp": "20191209204756",
+      "original": "https://www.jiaa.org/gdl_siryo/siryo/20180607_2018ronbun/"
+    },
+    {
+      "timestamp": "20191209205345",
+      "original": "https://www.jiaa.org/gdl_siryo/siryo/2018_viewable_chosa_rpt/"
+    },
+    {
+      "timestamp": "20191209211538",
+      "original": "https://www.jiaa.org/gdl_siryo/siryo/2019_na_chosa_rpt/"
+    },
+    {
+      "timestamp": "20190106082439",
+      "original": "http://jiaa.org:80/guideline.html"
+    },
+    {
+      "timestamp": "20190514050236",
+      "original": "http://www.jiaa.org:80/html/about/aboutjiaa.html"
+    },
+    {
+      "timestamp": "20190514050248",
+      "original": "http://www.jiaa.org:80/html/about/articles.html"
+    },
+    {
+      "timestamp": "20190514050305",
+      "original": "http://www.jiaa.org:80/html/about/code.html"
+    },
+    {
+      "timestamp": "20190514050226",
+      "original": "http://www.jiaa.org:80/html/about/disclosure.html"
+    },
+    {
+      "timestamp": "20190423101006",
+      "original": "http://www.jiaa.org:80/html/about/index.html"
+    },
+    {
+      "timestamp": "20190514050310",
+      "original": "http://www.jiaa.org:80/html/about/map.html"
+    },
+    {
+      "timestamp": "20190512144930",
+      "original": "http://www.jiaa.org:80/html/about/memberlist.html"
+    },
+    {
+      "timestamp": "20190514050337",
+      "original": "http://www.jiaa.org:80/html/about/officerlist.html"
+    },
+    {
+      "timestamp": "20190514050231",
+      "original": "http://www.jiaa.org:80/html/about/organization.html"
+    },
+    {
+      "timestamp": "20190423101011",
+      "original": "http://www.jiaa.org:80/html/activity/index.html"
+    },
+    {
+      "timestamp": "20190423101016",
+      "original": "http://www.jiaa.org:80/html/activity/publish/business.html"
+    },
+    {
+      "timestamp": "20190630083928",
+      "original": "http://www.jiaa.org:80/html/activity/publish/guideline_jitsumu.html"
+    },
+    {
+      "timestamp": "20190423075350",
+      "original": "http://www.jiaa.org:80/html/activity/publish/index.html"
+    },
+    {
+      "timestamp": "20190423101021",
+      "original": "http://www.jiaa.org:80/html/archive/index.html"
+    },
+    {
+      "timestamp": "20190423075355",
+      "original": "http://www.jiaa.org:80/html/index.html"
+    },
+    {
+      "timestamp": "20190423101031",
+      "original": "http://www.jiaa.org:80/html/jiaa/index.html"
+    },
+    {
+      "timestamp": "20190130044530",
+      "original": "http://www.jiaa.org:80/html/new_member/index.html"
+    },
+    {
+      "timestamp": "20190423101036",
+      "original": "http://www.jiaa.org:80/html/release/20170609_JIAA_charter.html"
+    },
+    {
+      "timestamp": "20190630121655",
+      "original": "http://www.jiaa.org:80/html/release/jiaa_h30release_180607.html"
+    },
+    {
+      "timestamp": "20190628131025",
+      "original": "http://www.jiaa.org:80/html/release/jiaa_r1release_190606.html"
+    },
+    {
+      "timestamp": "20190423101041",
+      "original": "http://www.jiaa.org:80/html/release/release_10years_100603.html"
+    },
+    {
+      "timestamp": "20190423101046",
+      "original": "http://www.jiaa.org:80/html/release/release_10years_100708.html"
+    },
+    {
+      "timestamp": "20190423101051",
+      "original": "http://www.jiaa.org:80/html/release/release_bta_100624.html"
+    },
+    {
+      "timestamp": "20190423101056",
+      "original": "http://www.jiaa.org:80/html/release/release_guide_140324.html"
+    },
+    {
+      "timestamp": "20190423101101",
+      "original": "http://www.jiaa.org:80/html/release/release_policy_110610.html"
+    },
+    {
+      "timestamp": "20190423101106",
+      "original": "http://www.jiaa.org:80/html/release/release_policy_120607.html"
+    },
+    {
+      "timestamp": "20190423101111",
+      "original": "http://www.jiaa.org:80/html/release/release_policy_130606.html"
+    },
+    {
+      "timestamp": "20190423101116",
+      "original": "http://www.jiaa.org:80/html/release/release_policy_140605.html"
+    },
+    {
+      "timestamp": "20190423101121",
+      "original": "http://www.jiaa.org:80/html/release/release_policy_150604.html"
+    },
+    {
+      "timestamp": "20190423101126",
+      "original": "http://www.jiaa.org:80/html/release/release_policy_170609.html"
+    },
+    {
+      "timestamp": "20190423101131",
+      "original": "http://www.jiaa.org:80/html/sitemap.html"
+    },
+    {
+      "timestamp": "20190423101136",
+      "original": "http://www.jiaa.org:80/html/topics/10years.html"
+    },
+    {
+      "timestamp": "20190423101142",
+      "original": "http://www.jiaa.org:80/html/topics/180509_viewabile.html"
+    },
+    {
+      "timestamp": "20190423101147",
+      "original": "http://www.jiaa.org:80/html/topics/adfraud_statement.html"
+    },
+    {
+      "timestamp": "20190423101152",
+      "original": "http://www.jiaa.org:80/html/topics/brand_safety01.html"
+    },
+    {
+      "timestamp": "20190421004917",
+      "original": "http://www.jiaa.org:80/html/topics/brand_safety_statement.html"
+    },
+    {
+      "timestamp": "20190423093559",
+      "original": "http://www.jiaa.org:80/html/topics/index.html"
+    },
+    {
+      "timestamp": "20190423101157",
+      "original": "http://www.jiaa.org:80/html/topics/jiaa_2018ronbun_180607.html"
+    },
+    {
+      "timestamp": "20190423101202",
+      "original": "http://www.jiaa.org:80/html/topics/ronbun_boshu_170424.html"
+    },
+    {
+      "timestamp": "20190423101207",
+      "original": "http://www.jiaa.org:80/html/topics/viewability.html"
+    },
+    {
+      "timestamp": "20190423101215",
+      "original": "http://www.jiaa.org:80/html/topics/viewable_guidance.html"
+    },
+    {
+      "timestamp": "20190109025819",
+      "original": "http://jiaa.org:80/index.html"
+    },
+    {
+      "timestamp": "20190720114228",
+      "original": "http://www.jiaa.org/info/2008.html"
+    },
+    {
+      "timestamp": "20190630144927",
+      "original": "http://www.jiaa.org:80/info/2009.html"
+    },
+    {
+      "timestamp": "20190630130153",
+      "original": "http://www.jiaa.org:80/info/2010.html"
+    },
+    {
+      "timestamp": "20190628135836",
+      "original": "http://www.jiaa.org:80/info/2011.html"
+    },
+    {
+      "timestamp": "20190628141350",
+      "original": "http://www.jiaa.org:80/info/2012.html"
+    },
+    {
+      "timestamp": "20190921054851",
+      "original": "http://jiaa.org:80/info/2019aut.html"
+    },
+    {
+      "timestamp": "20190628134236",
+      "original": "http://www.jiaa.org:80/info/cannes_entry.html"
+    },
+    {
+      "timestamp": "20190630160217",
+      "original": "http://www.jiaa.org:80/info/cannes_entry11.html"
+    },
+    {
+      "timestamp": "20190629014532",
+      "original": "http://www.jiaa.org:80/info/cannes_entry12.html"
+    },
+    {
+      "timestamp": "20190720120940",
+      "original": "http://www.jiaa.org/info/cannes_entry13.html"
+    },
+    {
+      "timestamp": "20190720120235",
+      "original": "http://www.jiaa.org/info/cannes_results.html"
+    },
+    {
+      "timestamp": "20191019070540",
+      "original": "http://jiaa.org/info/coda-jaa-jaaa-jiaa_information_190930.html"
+    },
+    {
+      "timestamp": "20190105030533",
+      "original": "http://jiaa.org:80/info/index.html"
+    },
+    {
+      "timestamp": "20190106174026",
+      "original": "http://jiaa.org:80/info/index@index=021.html"
+    },
+    {
+      "timestamp": "20190106180402",
+      "original": "http://jiaa.org:80/info/index@index=041.html"
+    },
+    {
+      "timestamp": "20190106174030",
+      "original": "http://jiaa.org:80/info/index@index=061.html"
+    },
+    {
+      "timestamp": "20190630150255",
+      "original": "http://www.jiaa.org:80/info/info_150604.html"
+    },
+    {
+      "timestamp": "20190628151814",
+      "original": "http://www.jiaa.org:80/info/info_160609.html"
+    },
+    {
+      "timestamp": "20190628133902",
+      "original": "http://www.jiaa.org:80/info/info_2007.html"
+    },
+    {
+      "timestamp": "20190106123237",
+      "original": "http://jiaa.org:80/info/jaa-jaaa-jiaa_information_180608.html"
+    },
+    {
+      "timestamp": "20190628135607",
+      "original": "http://www.jiaa.org:80/info/jiaa_100330.html"
+    },
+    {
+      "timestamp": "20190720112832",
+      "original": "http://www.jiaa.org/info/jiaa_information_170116.html"
+    },
+    {
+      "timestamp": "20190106123242",
+      "original": "http://jiaa.org:80/info/jiaa_information_180608.html"
+    },
+    {
+      "timestamp": "20190808062505",
+      "original": "http://www.jiaa.org:80/info/jiaa_information_koukokutaiousaku_190724.html"
+    },
+    {
+      "timestamp": "20190108124916",
+      "original": "http://www.jiaa.org:80/jiaa/"
+    },
+    {
+      "timestamp": "20191209211120",
+      "original": "https://www.jiaa.org/jiaa/access/"
+    },
+    {
+      "timestamp": "20191209215934",
+      "original": "https://www.jiaa.org/jiaa/code/"
+    },
+    {
+      "timestamp": "20191209210654",
+      "original": "https://www.jiaa.org/jiaa/disclosure/"
+    },
+    {
+      "timestamp": "20191209212848",
+      "original": "https://www.jiaa.org/jiaa/gaiyo/"
+    },
+    {
+      "timestamp": "20191209211313",
+      "original": "https://www.jiaa.org/jiaa/hosin/"
+    },
+    {
+      "timestamp": "20190105024704",
+      "original": "http://jiaa.org:80/jiaa/index.html"
+    },
+    {
+      "timestamp": "20191209205825",
+      "original": "https://www.jiaa.org/jiaa/kaiin/"
+    },
+    {
+      "timestamp": "20191209203624",
+      "original": "https://www.jiaa.org/jiaa/nyukai/"
+    },
+    {
+      "timestamp": "20191209210953",
+      "original": "https://www.jiaa.org/jiaa/teikan/"
+    },
+    {
+      "timestamp": "20191209215845",
+      "original": "https://www.jiaa.org/jiaa/yakuin/"
+    },
+    {
+      "timestamp": "20191209202534",
+      "original": "https://www.jiaa.org/login_21498?action=lostpassword"
+    },
+    {
+      "timestamp": "20191209204936",
+      "original": "https://www.jiaa.org/login_21498?redirect_to=https%3A%2F%2Fwww.jiaa.org%2Fm%2F&reauth=1"
+    },
+    {
+      "timestamp": "20190331184939",
+      "original": "http://www.jiaa.org/mem/calendar/"
+    },
+    {
+      "timestamp": "20190106123247",
+      "original": "http://jiaa.org:80/native_ad/activity.html"
+    },
+    {
+      "timestamp": "20190109025824",
+      "original": "http://jiaa.org:80/native_ad/index.html"
+    },
+    {
+      "timestamp": "20190817072648",
+      "original": "http://www.jiaa.org:80/native_ad/native_ad.html"
+    },
+    {
+      "timestamp": "20190111143201",
+      "original": "http://www.jiaa.org:80/native_ad/nativead_words.html"
+    },
+    {
+      "timestamp": "20190626040141",
+      "original": "http://www.jiaa.org:80/new_member/"
+    },
+    {
+      "timestamp": "20190105030614",
+      "original": "http://jiaa.org:80/new_member/index.html"
+    },
+    {
+      "timestamp": "20191209212654",
+      "original": "https://www.jiaa.org/news/"
+    },
+    {
+      "timestamp": "20190106082520",
+      "original": "http://jiaa.org:80/news.html"
+    },
+    {
+      "timestamp": "20191209211949",
+      "original": "https://www.jiaa.org/news/event/"
+    },
+    {
+      "timestamp": "20191209211149",
+      "original": "https://www.jiaa.org/news/event/20191127_20th_sympo/"
+    },
+    {
+      "timestamp": "20191209205529",
+      "original": "https://www.jiaa.org/news/oshirase/"
+    },
+    {
+      "timestamp": "20191209202514",
+      "original": "https://www.jiaa.org/news/oshirase/20180608_3dantai_info/"
+    },
+    {
+      "timestamp": "20191209214028",
+      "original": "https://www.jiaa.org/news/oshirase/20180608_jiaa_info/"
+    },
+    {
+      "timestamp": "20191209202459",
+      "original": "https://www.jiaa.org/news/oshirase/20190729_jiaa_info/"
+    },
+    {
+      "timestamp": "20191209221119",
+      "original": "https://www.jiaa.org/news/oshirase/20190930_coda-jaa-jaaa-jiaa_info/"
+    },
+    {
+      "timestamp": "20191209202451",
+      "original": "https://www.jiaa.org/news/release/"
+    },
+    {
+      "timestamp": "20191209202520",
+      "original": "https://www.jiaa.org/news/release/20190606_r01_sokai/"
+    },
+    {
+      "timestamp": "20190107211023",
+      "original": "http://jiaa.org:80/news_letter/9th_NEWSLETTER_Vol1.html"
+    },
+    {
+      "timestamp": "20190107211029",
+      "original": "http://jiaa.org:80/news_letter/9th_NEWSLETTER_Vol2.html"
+    },
+    {
+      "timestamp": "20190107211033",
+      "original": "http://jiaa.org:80/news_letter/9th_NEWSLETTER_Vol3.html"
+    },
+    {
+      "timestamp": "20190107211039",
+      "original": "http://jiaa.org:80/news_letter/9th_NEWSLETTER_Vol4.html"
+    },
+    {
+      "timestamp": "20190107211104",
+      "original": "http://jiaa.org:80/news_letter/9th_NEWSLETTER_Vol5.html"
+    },
+    {
+      "timestamp": "20190106082625",
+      "original": "http://jiaa.org:80/news_letter/index.html"
+    },
+    {
+      "timestamp": "20190331184457",
+      "original": "https://www.jiaa.org/piwik/"
+    },
+    {
+      "timestamp": "20190331184512",
+      "original": "http://www.jiaa.org/piwik/piwik.php?idsite=1"
+    },
+    {
+      "timestamp": "20190222173202",
+      "original": "http://www.jiaa.org:80/release/060602_1_report.html"
+    },
+    {
+      "timestamp": "20190222173207",
+      "original": "http://www.jiaa.org:80/release/060602_2_policy.html"
+    },
+    {
+      "timestamp": "20190222173212",
+      "original": "http://www.jiaa.org:80/release/070529_1_report.html"
+    },
+    {
+      "timestamp": "20190222173217",
+      "original": "http://www.jiaa.org:80/release/070529_2_policy.html"
+    },
+    {
+      "timestamp": "20190222173222",
+      "original": "http://www.jiaa.org:80/release/080528_policy.html"
+    },
+    {
+      "timestamp": "20190109025829",
+      "original": "http://jiaa.org:80/release/20170609_JIAA_charter.html"
+    },
+    {
+      "timestamp": "20190112045849",
+      "original": "http://www.jiaa.org:80/release/cannes_results11.html"
+    },
+    {
+      "timestamp": "20190222173232",
+      "original": "http://www.jiaa.org:80/release/cannes_results12.html"
+    },
+    {
+      "timestamp": "20190222173237",
+      "original": "http://www.jiaa.org:80/release/cannes_results13.html"
+    },
+    {
+      "timestamp": "20190222173242",
+      "original": "http://www.jiaa.org:80/release/icm_release_070713.html"
+    },
+    {
+      "timestamp": "20190109025912",
+      "original": "http://jiaa.org:80/release/index.html"
+    },
+    {
+      "timestamp": "20190207182712",
+      "original": "http://www.jiaa.org:80/release/index@index=011.html"
+    },
+    {
+      "timestamp": "20190628143503",
+      "original": "http://www.jiaa.org:80/release/index@index=021.html"
+    },
+    {
+      "timestamp": "20190629015713",
+      "original": "http://www.jiaa.org:80/release/index@index=031.html"
+    },
+    {
+      "timestamp": "20190628125925",
+      "original": "http://www.jiaa.org:80/release/index@index=041.html"
+    },
+    {
+      "timestamp": "20190630131904",
+      "original": "http://www.jiaa.org:80/release/index@index=051.html"
+    },
+    {
+      "timestamp": "20190222173247",
+      "original": "http://www.jiaa.org:80/release/jiaa_award5_release_070308.html"
+    },
+    {
+      "timestamp": "20190222173252",
+      "original": "http://www.jiaa.org:80/release/jiaa_award5_result_release.html"
+    },
+    {
+      "timestamp": "20190222173227",
+      "original": "http://www.jiaa.org:80/release/JIAA_awards5_release.html"
+    },
+    {
+      "timestamp": "20190222173257",
+      "original": "http://www.jiaa.org:80/release/jiaa_awards6_result_release.html"
+    },
+    {
+      "timestamp": "20190106123308",
+      "original": "http://jiaa.org:80/release/jiaa_h30release_180607.html"
+    },
+    {
+      "timestamp": "20190222173302",
+      "original": "http://www.jiaa.org:80/release/jiaa_publicad_060809.html"
+    },
+    {
+      "timestamp": "20190615160441",
+      "original": "http://www.jiaa.org:80/release/jiaa_r1release_190606.html"
+    },
+    {
+      "timestamp": "20190320155443",
+      "original": "http://www.jiaa.org:80/release/nativead_survey_release_190312.html"
+    },
+    {
+      "timestamp": "20190222173307",
+      "original": "http://www.jiaa.org:80/release/release_090330.html"
+    },
+    {
+      "timestamp": "20190106084130",
+      "original": "http://jiaa.org:80/release/release_10years_100603.html"
+    },
+    {
+      "timestamp": "20190106084135",
+      "original": "http://jiaa.org:80/release/release_10years_100708.html"
+    },
+    {
+      "timestamp": "20190106084140",
+      "original": "http://jiaa.org:80/release/release_bta_100624.html"
+    },
+    {
+      "timestamp": "20190106084145",
+      "original": "http://jiaa.org:80/release/release_guide_140324.html"
+    },
+    {
+      "timestamp": "20190117005723",
+      "original": "http://www.jiaa.org:80/release/release_i-icon_141224.html"
+    },
+    {
+      "timestamp": "20190215001553",
+      "original": "http://www.jiaa.org:80/release/release_iab_140821.html"
+    },
+    {
+      "timestamp": "20190120233730",
+      "original": "http://www.jiaa.org:80/release/release_iab_170201.html"
+    },
+    {
+      "timestamp": "20190222173312",
+      "original": "http://www.jiaa.org:80/release/release_mobile_080714.html"
+    },
+    {
+      "timestamp": "20190119212820",
+      "original": "http://www.jiaa.org:80/release/release_nativead_140728.html"
+    },
+    {
+      "timestamp": "20190522061317",
+      "original": "http://www.jiaa.org/release/release_nativead_150318.html"
+    },
+    {
+      "timestamp": "20190222173318",
+      "original": "http://www.jiaa.org:80/release/release_policy_090527.html"
+    },
+    {
+      "timestamp": "20190222173323",
+      "original": "http://www.jiaa.org:80/release/release_policy_100603.html"
+    },
+    {
+      "timestamp": "20190106084150",
+      "original": "http://jiaa.org:80/release/release_policy_110610.html"
+    },
+    {
+      "timestamp": "20190106084155",
+      "original": "http://jiaa.org:80/release/release_policy_120607.html"
+    },
+    {
+      "timestamp": "20190106084200",
+      "original": "http://jiaa.org:80/release/release_policy_130606.html"
+    },
+    {
+      "timestamp": "20190106084205",
+      "original": "http://jiaa.org:80/release/release_policy_140605.html"
+    },
+    {
+      "timestamp": "20190106084210",
+      "original": "http://jiaa.org:80/release/release_policy_150604.html"
+    },
+    {
+      "timestamp": "20190119213021",
+      "original": "http://www.jiaa.org:80/release/release_policy_160609.html"
+    },
+    {
+      "timestamp": "20190106084215",
+      "original": "http://jiaa.org:80/release/release_policy_170609.html"
+    },
+    {
+      "timestamp": "20190222173328",
+      "original": "http://www.jiaa.org:80/release/release_tiaa_081204.html"
+    },
+    {
+      "timestamp": "20190222173333",
+      "original": "http://www.jiaa.org:80/release/release_tiaa_090430.html"
+    },
+    {
+      "timestamp": "20190222173338",
+      "original": "http://www.jiaa.org:80/release/release_tiaa_100201.html"
+    },
+    {
+      "timestamp": "20190222173343",
+      "original": "http://www.jiaa.org:80/release/release_tiaa_100506.html"
+    },
+    {
+      "timestamp": "20190222173348",
+      "original": "http://www.jiaa.org:80/release/release_tiaa_120723.html"
+    },
+    {
+      "timestamp": "20190101223532",
+      "original": "http://www.jiaa.org:80/release/release_tiaa_120731.html"
+    },
+    {
+      "timestamp": "20190731210615",
+      "original": "http://www.jiaa.org:80/release/release_tiaa_140515.html"
+    },
+    {
+      "timestamp": "20190222173353",
+      "original": "http://www.jiaa.org:80/release/release_tiaa_20120227.html"
+    },
+    {
+      "timestamp": "20190112165809",
+      "original": "http://www.jiaa.org:80/release/release_tiaa_20120612.html"
+    },
+    {
+      "timestamp": "20190222173358",
+      "original": "http://www.jiaa.org:80/release/tiaa_6th_release_071129.html"
+    },
+    {
+      "timestamp": "20190222173403",
+      "original": "http://www.jiaa.org:80/release/tiaa_9th_NEWSLETTER_Vol1.html"
+    },
+    {
+      "timestamp": "20190222173408",
+      "original": "http://www.jiaa.org:80/release/tiaa_9th_NEWSLETTER_Vol2.html"
+    },
+    {
+      "timestamp": "20190222173413",
+      "original": "http://www.jiaa.org:80/release/tiaa_9th_NEWSLETTER_Vol3.html"
+    },
+    {
+      "timestamp": "20190222173531",
+      "original": "http://www.jiaa.org:80/release/tiaa_9th_NEWSLETTER_Vol4.html"
+    },
+    {
+      "timestamp": "20190222173650",
+      "original": "http://www.jiaa.org:80/release/tiaa_9th_NEWSLETTER_Vol5.html"
+    },
+    {
+      "timestamp": "20190824235338",
+      "original": "http://www.jiaa.org:80/seminar/161025.html"
+    },
+    {
+      "timestamp": "20190106084220",
+      "original": "http://jiaa.org:80/seminar/index.html"
+    },
+    {
+      "timestamp": "20190109025918",
+      "original": "http://jiaa.org:80/sitemap.html"
+    },
+    {
+      "timestamp": "20190106084225",
+      "original": "http://jiaa.org:80/topics/10years.html"
+    },
+    {
+      "timestamp": "20190109033928",
+      "original": "http://jiaa.org:80/topics/180509_viewabile.html"
+    },
+    {
+      "timestamp": "20190106084231",
+      "original": "http://jiaa.org:80/topics/adfraud_statement.html"
+    },
+    {
+      "timestamp": "20190628161827",
+      "original": "http://jiaa.org:80/topics/brand_safety01.html"
+    },
+    {
+      "timestamp": "20190106084236",
+      "original": "http://jiaa.org:80/topics/brand_safety_statement.html"
+    },
+    {
+      "timestamp": "20190105024815",
+      "original": "http://jiaa.org:80/topics/index.html"
+    },
+    {
+      "timestamp": "20190102165138",
+      "original": "http://www.jiaa.org:80/topics/jiaa_2018ronbun_180607.html"
+    },
+    {
+      "timestamp": "20190106084241",
+      "original": "http://jiaa.org:80/topics/ronbun_boshu_170424.html"
+    },
+    {
+      "timestamp": "20190106084246",
+      "original": "http://jiaa.org:80/topics/viewability.html"
+    },
+    {
+      "timestamp": "20190106084251",
+      "original": "http://jiaa.org:80/topics/viewable_guidance.html"
+    },
+    {
+      "timestamp": "20190106084256",
+      "original": "http://jiaa.org:80/yc/"
+    }
+  ]
+}
