@@ -1,0 +1,188 @@
+{
+  "domain": "jiaa.org",
+  "year": 2007,
+  "fetched_at": "2026-04-18T03:46:57+0000",
+  "header": [
+    "timestamp",
+    "original"
+  ],
+  "count": 44,
+  "records": [
+    {
+      "timestamp": "20070101045057",
+      "original": "http://www.jiaa.org:80/"
+    },
+    {
+      "timestamp": "20070104164638",
+      "original": "http://www.jiaa.org:80/aboutjiaa/aboutjiaa.html"
+    },
+    {
+      "timestamp": "20070101045632",
+      "original": "http://www.jiaa.org:80/aboutjiaa/articles.html"
+    },
+    {
+      "timestamp": "20070101045531",
+      "original": "http://www.jiaa.org:80/aboutjiaa/entrance.html"
+    },
+    {
+      "timestamp": "20070106022233",
+      "original": "http://www.jiaa.org:80/aboutjiaa/map.html"
+    },
+    {
+      "timestamp": "20070916121252",
+      "original": "http://www.jiaa.org:80/aboutjiaa/map_02.html"
+    },
+    {
+      "timestamp": "20070102125149",
+      "original": "http://www.jiaa.org:80/aboutjiaa/memberlist.html"
+    },
+    {
+      "timestamp": "20070607161858",
+      "original": "http://www.jiaa.org:80/aboutjiaa/memberlistH14_1210.html"
+    },
+    {
+      "timestamp": "20070102125024",
+      "original": "http://www.jiaa.org:80/aboutjiaa/officerlist.html"
+    },
+    {
+      "timestamp": "20070102125538",
+      "original": "http://www.jiaa.org:80/aboutjiaa/organization.html"
+    },
+    {
+      "timestamp": "20070104203617",
+      "original": "http://www.jiaa.org:80/aboutjiaa/prospectus.html"
+    },
+    {
+      "timestamp": "20070101045356",
+      "original": "http://www.jiaa.org:80/activity/activity.html"
+    },
+    {
+      "timestamp": "20070219215654",
+      "original": "http://www.jiaa.org:80/activity/addimpcnt.html"
+    },
+    {
+      "timestamp": "20070101045513",
+      "original": "http://www.jiaa.org:80/activity/discription.html"
+    },
+    {
+      "timestamp": "20070101045731",
+      "original": "http://www.jiaa.org:80/activity/publish.html"
+    },
+    {
+      "timestamp": "20070104203626",
+      "original": "http://www.jiaa.org:80/activity/result.html"
+    },
+    {
+      "timestamp": "20070101045814",
+      "original": "http://www.jiaa.org:80/index.html"
+    },
+    {
+      "timestamp": "20070220033619",
+      "original": "http://www.jiaa.org:80/news.html"
+    },
+    {
+      "timestamp": "20070313211435",
+      "original": "http://www.jiaa.org:80/news/020325.html"
+    },
+    {
+      "timestamp": "20070220033533",
+      "original": "http://www.jiaa.org:80/release.html"
+    },
+    {
+      "timestamp": "20070102125057",
+      "original": "http://www.jiaa.org:80/release/business/index.html"
+    },
+    {
+      "timestamp": "20070417212212",
+      "original": "http://jiaa.org:80/release/declaration/index.html"
+    },
+    {
+      "timestamp": "20070102124503",
+      "original": "http://www.jiaa.org:80/release/guideline/index.html"
+    },
+    {
+      "timestamp": "20070823072726",
+      "original": "http://www.jiaa.org:80/release/icm/icm_release_070713.html"
+    },
+    {
+      "timestamp": "20070224141233",
+      "original": "http://www.jiaa.org:80/release/measurement/index.html"
+    },
+    {
+      "timestamp": "20070304183539",
+      "original": "http://www.jiaa.org:80/release/traffic/jiaatrafficmanual/20.html"
+    },
+    {
+      "timestamp": "20070304235412",
+      "original": "http://www.jiaa.org:80/release/traffic/jiaatrafficmanual/21.html"
+    },
+    {
+      "timestamp": "20070304183247",
+      "original": "http://www.jiaa.org:80/release/traffic/jiaatrafficmanual/31.html"
+    },
+    {
+      "timestamp": "20070304235231",
+      "original": "http://www.jiaa.org:80/release/traffic/jiaatrafficmanual/32.html"
+    },
+    {
+      "timestamp": "20070304183548",
+      "original": "http://www.jiaa.org:80/release/traffic/jiaatrafficmanual/33.html"
+    },
+    {
+      "timestamp": "20070219103110",
+      "original": "http://www.jiaa.org:80/release/traffic/jiaatrafficmanual/traffic.html"
+    },
+    {
+      "timestamp": "20070302101654",
+      "original": "http://www.jiaa.org:80/release/traffic/jiaatrafficmanual/traffic_main.html"
+    },
+    {
+      "timestamp": "20071025044546",
+      "original": "http://www.jiaa.org:80/release/words/"
+    },
+    {
+      "timestamp": "20070616012038",
+      "original": "http://www.jiaa.org:80/release/words/index.html"
+    },
+    {
+      "timestamp": "20070507061908",
+      "original": "http://www.jiaa.org:80/release/words/words_vol2.html"
+    },
+    {
+      "timestamp": "20070822231245",
+      "original": "http://www.jiaa.org:80/traffic/"
+    },
+    {
+      "timestamp": "20070220102412",
+      "original": "http://www.jiaa.org:80/traffic/20.html"
+    },
+    {
+      "timestamp": "20070220102421",
+      "original": "http://www.jiaa.org:80/traffic/21.html"
+    },
+    {
+      "timestamp": "20070220102819",
+      "original": "http://www.jiaa.org:80/traffic/31.html"
+    },
+    {
+      "timestamp": "20070220102534",
+      "original": "http://www.jiaa.org:80/traffic/32.html"
+    },
+    {
+      "timestamp": "20070220102525",
+      "original": "http://www.jiaa.org:80/traffic/33.html"
+    },
+    {
+      "timestamp": "20070514111248",
+      "original": "http://www.jiaa.org:80/traffic/index.html"
+    },
+    {
+      "timestamp": "20070208105025",
+      "original": "http://www.jiaa.org:80/traffic/traffic.html"
+    },
+    {
+      "timestamp": "20070218121932",
+      "original": "http://www.jiaa.org:80/traffic/traffic_main.html"
+    }
+  ]
+}
