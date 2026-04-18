@@ -1,0 +1,1444 @@
+{
+  "domain": "japan-affiliate.org",
+  "year": 2016,
+  "fetched_at": "2026-04-18T06:37:50+0000",
+  "header": [
+    "timestamp",
+    "original"
+  ],
+  "count": 358,
+  "records": [
+    {
+      "timestamp": "20160101154405",
+      "original": "http://www.japan-affiliate.org/"
+    },
+    {
+      "timestamp": "20160208145332",
+      "original": "http://www.japan-affiliate.org:80/about/"
+    },
+    {
+      "timestamp": "20160206071637",
+      "original": "http://www.japan-affiliate.org:80/calendar/"
+    },
+    {
+      "timestamp": "20160304185220",
+      "original": "http://www.japan-affiliate.org:80/category/member/"
+    },
+    {
+      "timestamp": "20160304175252",
+      "original": "http://www.japan-affiliate.org:80/category/news/"
+    },
+    {
+      "timestamp": "20160708231133",
+      "original": "http://www.japan-affiliate.org:80/category/news/page/2/"
+    },
+    {
+      "timestamp": "20161116192717",
+      "original": "http://www.japan-affiliate.org/category/regular/"
+    },
+    {
+      "timestamp": "20160130124516",
+      "original": "http://www.japan-affiliate.org:80/category/regular/page/2/"
+    },
+    {
+      "timestamp": "20160202164344",
+      "original": "http://www.japan-affiliate.org:80/category/topics/"
+    },
+    {
+      "timestamp": "20160304172324",
+      "original": "http://www.japan-affiliate.org:80/faq/"
+    },
+    {
+      "timestamp": "20160208145336",
+      "original": "http://www.japan-affiliate.org:80/information/"
+    },
+    {
+      "timestamp": "20160204185257",
+      "original": "http://www.japan-affiliate.org:80/join/"
+    },
+    {
+      "timestamp": "20160725185018",
+      "original": "http://www.japan-affiliate.org:80/join/jyouhousyouzai/"
+    },
+    {
+      "timestamp": "20160304175302",
+      "original": "http://www.japan-affiliate.org:80/login/"
+    },
+    {
+      "timestamp": "20160206071645",
+      "original": "http://www.japan-affiliate.org:80/mail/"
+    },
+    {
+      "timestamp": "20160306052223",
+      "original": "http://www.japan-affiliate.org:80/member/150930/"
+    },
+    {
+      "timestamp": "20160406040354",
+      "original": "http://www.japan-affiliate.org/member/20150531/"
+    },
+    {
+      "timestamp": "20160306142438",
+      "original": "http://www.japan-affiliate.org:80/member/20150731/"
+    },
+    {
+      "timestamp": "20160306142642",
+      "original": "http://www.japan-affiliate.org:80/member/20150831/"
+    },
+    {
+      "timestamp": "20160306142649",
+      "original": "http://www.japan-affiliate.org:80/member/20151030/"
+    },
+    {
+      "timestamp": "20160306142707",
+      "original": "http://www.japan-affiliate.org:80/member/20151130/"
+    },
+    {
+      "timestamp": "20160304185229",
+      "original": "http://www.japan-affiliate.org:80/member/20151228/"
+    },
+    {
+      "timestamp": "20160304185243",
+      "original": "http://www.japan-affiliate.org:80/member/20160131/"
+    },
+    {
+      "timestamp": "20160706075320",
+      "original": "http://www.japan-affiliate.org/member/20160229/"
+    },
+    {
+      "timestamp": "20160819084606",
+      "original": "http://www.japan-affiliate.org:80/member/20160331/"
+    },
+    {
+      "timestamp": "20160821002617",
+      "original": "http://www.japan-affiliate.org:80/member/20160430/"
+    },
+    {
+      "timestamp": "20160819084611",
+      "original": "http://www.japan-affiliate.org:80/member/20160531/"
+    },
+    {
+      "timestamp": "20160714214744",
+      "original": "http://www.japan-affiliate.org:80/member/20160630/"
+    },
+    {
+      "timestamp": "20160819084616",
+      "original": "http://www.japan-affiliate.org:80/member/20160729/"
+    },
+    {
+      "timestamp": "20160918035450",
+      "original": "http://www.japan-affiliate.org:80/member/20160831/"
+    },
+    {
+      "timestamp": "20161218220541",
+      "original": "http://www.japan-affiliate.org/member/20160930/"
+    },
+    {
+      "timestamp": "20160421201658",
+      "original": "http://www.japan-affiliate.org/member/aboutgenteipg/"
+    },
+    {
+      "timestamp": "20160514100730",
+      "original": "http://www.japan-affiliate.org:80/member/kensaku1506repo/"
+    },
+    {
+      "timestamp": "20160405202136",
+      "original": "http://www.japan-affiliate.org/member/magazine20130630/"
+    },
+    {
+      "timestamp": "20160618233943",
+      "original": "http://www.japan-affiliate.org/member/magazine20140630/"
+    },
+    {
+      "timestamp": "20160511021816",
+      "original": "http://www.japan-affiliate.org/member/magazine20141229/"
+    },
+    {
+      "timestamp": "20160316073507",
+      "original": "http://www.japan-affiliate.org:80/member/nenmatsu2013paf/"
+    },
+    {
+      "timestamp": "20160607065940",
+      "original": "http://www.japan-affiliate.org/member/netadlaw2015repo/"
+    },
+    {
+      "timestamp": "20160124024730",
+      "original": "http://www.japan-affiliate.org/members/"
+    },
+    {
+      "timestamp": "20160521120413",
+      "original": "http://www.japan-affiliate.org:80/news/"
+    },
+    {
+      "timestamp": "20160706234153",
+      "original": "http://www.japan-affiliate.org/news/121126_manabukai/"
+    },
+    {
+      "timestamp": "20160809233749",
+      "original": "http://www.japan-affiliate.org:80/news/121130_manabukai/"
+    },
+    {
+      "timestamp": "20160807191403",
+      "original": "http://www.japan-affiliate.org:80/news/121203_jasrac/"
+    },
+    {
+      "timestamp": "20160316073514",
+      "original": "http://www.japan-affiliate.org:80/news/1stkouza201310/"
+    },
+    {
+      "timestamp": "20160807033419",
+      "original": "http://www.japan-affiliate.org/news/1stkouza201402/"
+    },
+    {
+      "timestamp": "20160514065104",
+      "original": "http://www.japan-affiliate.org:80/news/1stkouza201406/"
+    },
+    {
+      "timestamp": "20160411235350",
+      "original": "http://www.japan-affiliate.org/news/1stkouza201408/"
+    },
+    {
+      "timestamp": "20160426102940",
+      "original": "http://www.japan-affiliate.org:80/news/1stkouza201409/"
+    },
+    {
+      "timestamp": "20160827164002",
+      "original": "http://www.japan-affiliate.org:80/news/1stkouza201410/"
+    },
+    {
+      "timestamp": "20160514083744",
+      "original": "http://www.japan-affiliate.org:80/news/1stkouza201411/"
+    },
+    {
+      "timestamp": "20160208152705",
+      "original": "http://www.japan-affiliate.org/news/1stkouza201501/"
+    },
+    {
+      "timestamp": "20160406040052",
+      "original": "http://www.japan-affiliate.org/news/1stkouza201506/"
+    },
+    {
+      "timestamp": "20160714211841",
+      "original": "http://www.japan-affiliate.org:80/news/1stkouza201508/"
+    },
+    {
+      "timestamp": "20160827190814",
+      "original": "http://www.japan-affiliate.org:80/news/1stkouza201509/"
+    },
+    {
+      "timestamp": "20160827191518",
+      "original": "http://www.japan-affiliate.org:80/news/1stkouza201511/"
+    },
+    {
+      "timestamp": "20160325102129",
+      "original": "http://www.japan-affiliate.org:80/news/1stkouza201601/"
+    },
+    {
+      "timestamp": "20160202164352",
+      "original": "http://www.japan-affiliate.org:80/news/1stkouza201602/"
+    },
+    {
+      "timestamp": "20160202164334",
+      "original": "http://www.japan-affiliate.org:80/news/1stkouza201603/"
+    },
+    {
+      "timestamp": "20160323142152",
+      "original": "http://www.japan-affiliate.org:80/news/1stkouza201604/"
+    },
+    {
+      "timestamp": "20160603172600",
+      "original": "http://www.japan-affiliate.org:80/news/1stkouza201606a/"
+    },
+    {
+      "timestamp": "20160627205935",
+      "original": "http://www.japan-affiliate.org:80/news/1stkouza201606b/"
+    },
+    {
+      "timestamp": "20160709224306",
+      "original": "http://www.japan-affiliate.org:80/news/1stkouza201607/"
+    },
+    {
+      "timestamp": "20160807191414",
+      "original": "http://www.japan-affiliate.org:80/news/1stkouza201608/"
+    },
+    {
+      "timestamp": "20160917221557",
+      "original": "http://www.japan-affiliate.org:80/news/1stkouza201609/"
+    },
+    {
+      "timestamp": "20160926135953",
+      "original": "http://www.japan-affiliate.org:80/news/1stkouza201610/"
+    },
+    {
+      "timestamp": "20161218211108",
+      "original": "http://www.japan-affiliate.org/news/1stkouza201611/"
+    },
+    {
+      "timestamp": "20161220174636",
+      "original": "http://www.japan-affiliate.org:80/news/1stkouza201612/"
+    },
+    {
+      "timestamp": "20160827191523",
+      "original": "http://www.japan-affiliate.org:80/news/2ndseminar/"
+    },
+    {
+      "timestamp": "20160111100131",
+      "original": "http://www.japan-affiliate.org:80/news/afkakutei2016/"
+    },
+    {
+      "timestamp": "20160429234617",
+      "original": "http://www.japan-affiliate.org/news/afmeeting1411/"
+    },
+    {
+      "timestamp": "20160208040103",
+      "original": "http://www.japan-affiliate.org/news/afmeeting1501/"
+    },
+    {
+      "timestamp": "20160520105807",
+      "original": "http://www.japan-affiliate.org/news/afmeeting1508/"
+    },
+    {
+      "timestamp": "20160923120911",
+      "original": "http://www.japan-affiliate.org:80/news/afmeeting1610/"
+    },
+    {
+      "timestamp": "20160120040843",
+      "original": "http://www.japan-affiliate.org:80/news/attention/"
+    },
+    {
+      "timestamp": "20160709224318",
+      "original": "http://www.japan-affiliate.org:80/news/chiba1607/"
+    },
+    {
+      "timestamp": "20160305113128",
+      "original": "http://www.japan-affiliate.org:80/news/eckouza201309/"
+    },
+    {
+      "timestamp": "20160222070029",
+      "original": "http://www.japan-affiliate.org:80/news/ecm1602/"
+    },
+    {
+      "timestamp": "20160710153553",
+      "original": "http://www.japan-affiliate.org:80/news/ecm1607/"
+    },
+    {
+      "timestamp": "20160624202158",
+      "original": "http://www.japan-affiliate.org/news/hikikomori1511/"
+    },
+    {
+      "timestamp": "20160620232105",
+      "original": "http://www.japan-affiliate.org/news/honki2011/"
+    },
+    {
+      "timestamp": "20160322062924",
+      "original": "http://www.japan-affiliate.org/news/honki2011detail/"
+    },
+    {
+      "timestamp": "20160506100740",
+      "original": "http://www.japan-affiliate.org/news/honki2011syouhi/"
+    },
+    {
+      "timestamp": "20160318002619",
+      "original": "http://www.japan-affiliate.org/news/honki2012/"
+    },
+    {
+      "timestamp": "20160305113133",
+      "original": "http://www.japan-affiliate.org:80/news/honki2013/"
+    },
+    {
+      "timestamp": "20160316042655",
+      "original": "http://www.japan-affiliate.org:80/news/honki2014/"
+    },
+    {
+      "timestamp": "20160511033554",
+      "original": "http://www.japan-affiliate.org/news/honki2014live/"
+    },
+    {
+      "timestamp": "20160112144558",
+      "original": "http://www.japan-affiliate.org:80/news/honki2015/"
+    },
+    {
+      "timestamp": "20161105001010",
+      "original": "http://www.japan-affiliate.org:80/news/honki2016/"
+    },
+    {
+      "timestamp": "20161218221444",
+      "original": "http://www.japan-affiliate.org/news/honki2016pre/"
+    },
+    {
+      "timestamp": "20160622002423",
+      "original": "http://www.japan-affiliate.org:80/news/kaiseki1606jao/"
+    },
+    {
+      "timestamp": "20160514083717",
+      "original": "http://www.japan-affiliate.org:80/news/kansaikouryuu1409/"
+    },
+    {
+      "timestamp": "20160314071625",
+      "original": "http://www.japan-affiliate.org/news/kensaku1506/"
+    },
+    {
+      "timestamp": "20160227103643",
+      "original": "http://www.japan-affiliate.org:80/news/koukoku1602/"
+    },
+    {
+      "timestamp": "20160521120141",
+      "original": "http://www.japan-affiliate.org:80/news/koukoku1604/"
+    },
+    {
+      "timestamp": "20160620080520",
+      "original": "http://www.japan-affiliate.org:80/news/koukoku1606/"
+    },
+    {
+      "timestamp": "20160912140106",
+      "original": "http://www.japan-affiliate.org/news/koukoku1609/"
+    },
+    {
+      "timestamp": "20161218222753",
+      "original": "http://www.japan-affiliate.org/news/kumagaya1611/"
+    },
+    {
+      "timestamp": "20161218225329",
+      "original": "http://www.japan-affiliate.org/news/kyotoshohi1611/"
+    },
+    {
+      "timestamp": "20160315153316",
+      "original": "http://www.japan-affiliate.org:80/news/kyougikai201210/"
+    },
+    {
+      "timestamp": "20160105055954",
+      "original": "http://www.japan-affiliate.org:80/news/minisite1408/"
+    },
+    {
+      "timestamp": "20160104180333",
+      "original": "http://www.japan-affiliate.org:80/news/minisite1601/"
+    },
+    {
+      "timestamp": "20160814173432",
+      "original": "http://www.japan-affiliate.org:80/news/nagoya2016/"
+    },
+    {
+      "timestamp": "20160916105404",
+      "original": "http://www.japan-affiliate.org:80/news/nagoya2016plus/"
+    },
+    {
+      "timestamp": "20160913004743",
+      "original": "http://www.japan-affiliate.org/news/nenmatsu2013/"
+    },
+    {
+      "timestamp": "20160319202033",
+      "original": "http://www.japan-affiliate.org:80/news/newriji201304/"
+    },
+    {
+      "timestamp": "20160521094601",
+      "original": "http://www.japan-affiliate.org:80/news/oomiya1605/"
+    },
+    {
+      "timestamp": "20160304175245",
+      "original": "http://www.japan-affiliate.org:80/news/osaka2016/"
+    },
+    {
+      "timestamp": "20160306142725",
+      "original": "http://www.japan-affiliate.org:80/news/osaka2016kyousann/"
+    },
+    {
+      "timestamp": "20160316042700",
+      "original": "http://www.japan-affiliate.org:80/news/photot201411/"
+    },
+    {
+      "timestamp": "20160315154822",
+      "original": "http://www.japan-affiliate.org:80/news/prkyousan201205/"
+    },
+    {
+      "timestamp": "20160206071711",
+      "original": "http://www.japan-affiliate.org:80/news/rightafl/"
+    },
+    {
+      "timestamp": "20160708070301",
+      "original": "http://www.japan-affiliate.org:80/news/seikaup1606/"
+    },
+    {
+      "timestamp": "20160712100821",
+      "original": "http://www.japan-affiliate.org:80/news/seikaup1607plus/"
+    },
+    {
+      "timestamp": "20161002003133",
+      "original": "http://www.japan-affiliate.org:80/news/seminar1609/"
+    },
+    {
+      "timestamp": "20160516190834",
+      "original": "http://www.japan-affiliate.org:80/news/shibuya1606/"
+    },
+    {
+      "timestamp": "20160521120424",
+      "original": "http://www.japan-affiliate.org:80/news/shizuoka1606/"
+    },
+    {
+      "timestamp": "20160820123403",
+      "original": "http://www.japan-affiliate.org:80/news/shizuoka1608/"
+    },
+    {
+      "timestamp": "20161218222443",
+      "original": "http://www.japan-affiliate.org/news/shizuoka1611/"
+    },
+    {
+      "timestamp": "20160804062509",
+      "original": "http://www.japan-affiliate.org:80/news/snsen1212/"
+    },
+    {
+      "timestamp": "20160119165251",
+      "original": "http://www.japan-affiliate.org:80/news/survey201307/"
+    },
+    {
+      "timestamp": "20160121102215",
+      "original": "http://www.japan-affiliate.org:80/news/survey2014/"
+    },
+    {
+      "timestamp": "20160309073016",
+      "original": "http://www.japan-affiliate.org/news/survey2015/"
+    },
+    {
+      "timestamp": "20160913184117",
+      "original": "http://www.japan-affiliate.org/news/tohoku201307/"
+    },
+    {
+      "timestamp": "20160606231447",
+      "original": "http://www.japan-affiliate.org/news/tohoku201307support/"
+    },
+    {
+      "timestamp": "20160621220343",
+      "original": "http://www.japan-affiliate.org:80/news/wakayama1606/"
+    },
+    {
+      "timestamp": "20160711035950",
+      "original": "http://www.japan-affiliate.org:80/news/wakayama1606seo/"
+    },
+    {
+      "timestamp": "20160827183651",
+      "original": "http://www.japan-affiliate.org:80/news/wct2015bronze/"
+    },
+    {
+      "timestamp": "20160304172329",
+      "original": "http://www.japan-affiliate.org:80/news/yokohama1603/"
+    },
+    {
+      "timestamp": "20160421201727",
+      "original": "http://www.japan-affiliate.org:80/news/yokohama1604/"
+    },
+    {
+      "timestamp": "20160608030825",
+      "original": "http://www.japan-affiliate.org:80/news/yokohama1606/"
+    },
+    {
+      "timestamp": "20160813042100",
+      "original": "http://www.japan-affiliate.org:80/news/yokohama1608/"
+    },
+    {
+      "timestamp": "20160926141017",
+      "original": "http://www.japan-affiliate.org:80/news/yokohama1610/"
+    },
+    {
+      "timestamp": "20161222142346",
+      "original": "http://www.japan-affiliate.org/news/yokohama1610/embed/"
+    },
+    {
+      "timestamp": "20160208150023",
+      "original": "http://www.japan-affiliate.org:80/policy/"
+    },
+    {
+      "timestamp": "20160206043144",
+      "original": "http://www.japan-affiliate.org:80/registration/"
+    },
+    {
+      "timestamp": "20160507005756",
+      "original": "http://www.japan-affiliate.org/regular/11kaigofuku/"
+    },
+    {
+      "timestamp": "20160612094956",
+      "original": "http://www.japan-affiliate.org:80/regular/abistudio/"
+    },
+    {
+      "timestamp": "20160711120154",
+      "original": "http://www.japan-affiliate.org:80/regular/adbomber/"
+    },
+    {
+      "timestamp": "20160711120157",
+      "original": "http://www.japan-affiliate.org:80/regular/atoriecocoro/"
+    },
+    {
+      "timestamp": "20160504123719",
+      "original": "http://www.japan-affiliate.org:80/regular/ayapi/"
+    },
+    {
+      "timestamp": "20160711120202",
+      "original": "http://www.japan-affiliate.org:80/regular/bellemaison/"
+    },
+    {
+      "timestamp": "20160711120207",
+      "original": "http://www.japan-affiliate.org:80/regular/belluna/"
+    },
+    {
+      "timestamp": "20160429214804",
+      "original": "http://www.japan-affiliate.org/regular/chimowa/"
+    },
+    {
+      "timestamp": "20160711120401",
+      "original": "http://www.japan-affiliate.org:80/regular/cottoncotton/"
+    },
+    {
+      "timestamp": "20160303100807",
+      "original": "http://www.japan-affiliate.org:80/regular/crocs/"
+    },
+    {
+      "timestamp": "20160205122655",
+      "original": "http://www.japan-affiliate.org:80/regular/crossworklasai/"
+    },
+    {
+      "timestamp": "20160419042855",
+      "original": "http://www.japan-affiliate.org:80/regular/deepimpact/"
+    },
+    {
+      "timestamp": "20160507104541",
+      "original": "http://www.japan-affiliate.org/regular/e-click/"
+    },
+    {
+      "timestamp": "20160711120232",
+      "original": "http://www.japan-affiliate.org:80/regular/egg-to-communication/"
+    },
+    {
+      "timestamp": "20160322224017",
+      "original": "http://www.japan-affiliate.org/regular/esprit/"
+    },
+    {
+      "timestamp": "20160505193750",
+      "original": "http://www.japan-affiliate.org/regular/fashiontuusin/"
+    },
+    {
+      "timestamp": "20160711120411",
+      "original": "http://www.japan-affiliate.org:80/regular/fullspeed/"
+    },
+    {
+      "timestamp": "20160711120417",
+      "original": "http://www.japan-affiliate.org:80/regular/goodnotepc/"
+    },
+    {
+      "timestamp": "20160711120422",
+      "original": "http://www.japan-affiliate.org:80/regular/gulliver/"
+    },
+    {
+      "timestamp": "20160618235912",
+      "original": "http://www.japan-affiliate.org/regular/happyclover/"
+    },
+    {
+      "timestamp": "20160507085747",
+      "original": "http://www.japan-affiliate.org/regular/harublog/"
+    },
+    {
+      "timestamp": "20160711120239",
+      "original": "http://www.japan-affiliate.org:80/regular/hbfas/"
+    },
+    {
+      "timestamp": "20160711120437",
+      "original": "http://www.japan-affiliate.org:80/regular/hiv-aids-kensa/"
+    },
+    {
+      "timestamp": "20160718041351",
+      "original": "http://www.japan-affiliate.org:80/regular/houtoku/"
+    },
+    {
+      "timestamp": "20160711120243",
+      "original": "http://www.japan-affiliate.org:80/regular/junkword/"
+    },
+    {
+      "timestamp": "20160711120442",
+      "original": "http://www.japan-affiliate.org:80/regular/kirimarunaomi/"
+    },
+    {
+      "timestamp": "20160214043050",
+      "original": "http://www.japan-affiliate.org/regular/kittys/"
+    },
+    {
+      "timestamp": "20160111202653",
+      "original": "http://www.japan-affiliate.org:80/regular/ko-harubiyori/"
+    },
+    {
+      "timestamp": "20160711120247",
+      "original": "http://www.japan-affiliate.org:80/regular/kodawari-lab/"
+    },
+    {
+      "timestamp": "20160711120447",
+      "original": "http://www.japan-affiliate.org:80/regular/kossori/"
+    },
+    {
+      "timestamp": "20160711120454",
+      "original": "http://www.japan-affiliate.org:80/regular/kuchikomi-life/"
+    },
+    {
+      "timestamp": "20160608140757",
+      "original": "http://www.japan-affiliate.org/regular/kuchikomihouse/"
+    },
+    {
+      "timestamp": "20160507020910",
+      "original": "http://www.japan-affiliate.org/regular/linkshare/"
+    },
+    {
+      "timestamp": "20160620210744",
+      "original": "http://www.japan-affiliate.org:80/regular/millioncom/"
+    },
+    {
+      "timestamp": "20160120044235",
+      "original": "http://www.japan-affiliate.org/regular/mimiyoli/"
+    },
+    {
+      "timestamp": "20160213041622",
+      "original": "http://www.japan-affiliate.org/regular/mmayu/"
+    },
+    {
+      "timestamp": "20160711120503",
+      "original": "http://www.japan-affiliate.org:80/regular/moshimo/"
+    },
+    {
+      "timestamp": "20160713195352",
+      "original": "http://www.japan-affiliate.org:80/regular/mybook/"
+    },
+    {
+      "timestamp": "20160209110427",
+      "original": "http://www.japan-affiliate.org/regular/narusencp/"
+    },
+    {
+      "timestamp": "20160711120310",
+      "original": "http://www.japan-affiliate.org:80/regular/nattyan/"
+    },
+    {
+      "timestamp": "20160711120508",
+      "original": "http://www.japan-affiliate.org:80/regular/netoge-usepc/"
+    },
+    {
+      "timestamp": "20160411223128",
+      "original": "http://www.japan-affiliate.org/regular/nikoniko/"
+    },
+    {
+      "timestamp": "20160203040157",
+      "original": "http://www.japan-affiliate.org/regular/norari/"
+    },
+    {
+      "timestamp": "20160711120513",
+      "original": "http://www.japan-affiliate.org:80/regular/papinen/"
+    },
+    {
+      "timestamp": "20160711120518",
+      "original": "http://www.japan-affiliate.org:80/regular/petit-mall/"
+    },
+    {
+      "timestamp": "20160314160637",
+      "original": "http://www.japan-affiliate.org:80/regular/proactiv/"
+    },
+    {
+      "timestamp": "20160711120315",
+      "original": "http://www.japan-affiliate.org:80/regular/reebird/"
+    },
+    {
+      "timestamp": "20160711120523",
+      "original": "http://www.japan-affiliate.org:80/regular/seedinc/"
+    },
+    {
+      "timestamp": "20160711120601",
+      "original": "http://www.japan-affiliate.org:80/regular/seker/"
+    },
+    {
+      "timestamp": "20160711120320",
+      "original": "http://www.japan-affiliate.org:80/regular/shouten-ph/"
+    },
+    {
+      "timestamp": "20160711120325",
+      "original": "http://www.japan-affiliate.org:80/regular/singoro/"
+    },
+    {
+      "timestamp": "20160711120330",
+      "original": "http://www.japan-affiliate.org:80/regular/therapysasa/"
+    },
+    {
+      "timestamp": "20160406092616",
+      "original": "http://www.japan-affiliate.org/regular/toshihiro/"
+    },
+    {
+      "timestamp": "20160711120335",
+      "original": "http://www.japan-affiliate.org:80/regular/tunka/"
+    },
+    {
+      "timestamp": "20160711120340",
+      "original": "http://www.japan-affiliate.org:80/regular/usapyonpyon/"
+    },
+    {
+      "timestamp": "20160119075527",
+      "original": "http://www.japan-affiliate.org:80/regular/wolf-blog/"
+    },
+    {
+      "timestamp": "20160507100427",
+      "original": "http://www.japan-affiliate.org/regular/xmax/"
+    },
+    {
+      "timestamp": "20160807191900",
+      "original": "http://www.japan-affiliate.org:80/tag/%E3%81%88%E3%82%93/"
+    },
+    {
+      "timestamp": "20160918085404",
+      "original": "http://www.japan-affiliate.org:80/tag/%E3%81%95%E3%81%84%E3%81%9F%E3%81%BE%E5%B8%82/"
+    },
+    {
+      "timestamp": "20160627210051",
+      "original": "http://www.japan-affiliate.org/tag/%e3%81%be%e3%81%a8%e3%82%81/"
+    },
+    {
+      "timestamp": "20160827175505",
+      "original": "http://www.japan-affiliate.org:80/tag/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E8%A7%A3%E6%9E%90/"
+    },
+    {
+      "timestamp": "20160827184621",
+      "original": "http://www.japan-affiliate.org:80/tag/%E3%82%A2%E3%83%8A%E3%83%AA%E3%83%86%E3%82%A3%E3%82%AF%E3%82%B9/"
+    },
+    {
+      "timestamp": "20160314225750",
+      "original": "http://www.japan-affiliate.org:80/tag/%E3%82%A2%E3%83%95%E3%82%A3%E3%83%AA%E3%82%A8%E3%82%A4%E3%82%BF%E3%83%BC/"
+    },
+    {
+      "timestamp": "20160314231216",
+      "original": "http://www.japan-affiliate.org:80/tag/%E3%82%A2%E3%83%95%E3%82%A3%E3%83%AA%E3%82%A8%E3%82%A4%E3%83%88/"
+    },
+    {
+      "timestamp": "20160610082245",
+      "original": "http://www.japan-affiliate.org/tag/%e3%82%a2%e3%83%95%e3%82%a3%e3%83%aa%e3%82%a8%e3%82%a4%e3%83%88%e3%83%9f%e3%83%bc%e3%83%86%e3%82%a3%e3%83%b3%e3%82%b0/"
+    },
+    {
+      "timestamp": "20160325063050",
+      "original": "http://www.japan-affiliate.org:80/tag/%E3%82%A2%E3%83%95%E3%82%A3%E3%83%AA%E3%82%A8%E3%82%A4%E3%83%88/page/2/"
+    },
+    {
+      "timestamp": "20160325142124",
+      "original": "http://www.japan-affiliate.org:80/tag/%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/"
+    },
+    {
+      "timestamp": "20160825010356",
+      "original": "http://www.japan-affiliate.org:80/tag/%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3/"
+    },
+    {
+      "timestamp": "20160407195754",
+      "original": "http://www.japan-affiliate.org/tag/%e3%82%aa%e3%83%bc%e3%82%bd%e3%83%aa%e3%83%86%e3%82%a3%e3%83%bc/"
+    },
+    {
+      "timestamp": "20160325102145",
+      "original": "http://www.japan-affiliate.org:80/tag/%E3%82%B3%E3%83%B3%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9%E6%A8%AA%E6%B5%9C/"
+    },
+    {
+      "timestamp": "20160323142338",
+      "original": "http://www.japan-affiliate.org:80/tag/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC/"
+    },
+    {
+      "timestamp": "20160325102154",
+      "original": "http://www.japan-affiliate.org:80/tag/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC/page/2/"
+    },
+    {
+      "timestamp": "20160714214811",
+      "original": "http://www.japan-affiliate.org:80/tag/%E3%83%81%E3%83%A9%E3%82%B7/"
+    },
+    {
+      "timestamp": "20160714140840",
+      "original": "http://www.japan-affiliate.org:80/tag/%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9/"
+    },
+    {
+      "timestamp": "20160918081137",
+      "original": "http://www.japan-affiliate.org:80/tag/%E3%83%93%E3%83%BC%E3%83%88%E3%83%AB%E3%83%93%E3%83%AB/"
+    },
+    {
+      "timestamp": "20160711050328",
+      "original": "http://www.japan-affiliate.org:80/tag/%E3%83%96%E3%83%AD%E3%82%AC%E3%83%BC/"
+    },
+    {
+      "timestamp": "20160822085114",
+      "original": "http://www.japan-affiliate.org:80/tag/%E3%83%96%E3%83%AD%E3%82%B0/"
+    },
+    {
+      "timestamp": "20160714211020",
+      "original": "http://www.japan-affiliate.org:80/tag/%E3%83%9E%E3%83%AB%E3%83%81/"
+    },
+    {
+      "timestamp": "20160822085118",
+      "original": "http://www.japan-affiliate.org:80/tag/%E3%83%9F%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0/"
+    },
+    {
+      "timestamp": "20160711043808",
+      "original": "http://www.japan-affiliate.org:80/tag/%E4%BA%8B%E4%BE%8B/"
+    },
+    {
+      "timestamp": "20160610114900",
+      "original": "http://www.japan-affiliate.org/tag/%e4%ba%a4%e6%b5%81/"
+    },
+    {
+      "timestamp": "20160325063153",
+      "original": "http://www.japan-affiliate.org:80/tag/%E4%BA%A4%E6%B5%81%E4%BC%9A/"
+    },
+    {
+      "timestamp": "20160918034034",
+      "original": "http://www.japan-affiliate.org:80/tag/%E4%BA%A4%E6%B5%81%E4%BC%9A/page/2/"
+    },
+    {
+      "timestamp": "20160827182351",
+      "original": "http://www.japan-affiliate.org:80/tag/%E4%BB%A3%E7%90%86%E5%BA%97/"
+    },
+    {
+      "timestamp": "20160325102200",
+      "original": "http://www.japan-affiliate.org:80/tag/%E4%BC%81%E6%A5%AD/"
+    },
+    {
+      "timestamp": "20160610103636",
+      "original": "http://www.japan-affiliate.org/tag/%e4%bc%9a%e5%93%a1/"
+    },
+    {
+      "timestamp": "20160325102206",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%80%8B%E4%BA%BA/"
+    },
+    {
+      "timestamp": "20160627192217",
+      "original": "http://www.japan-affiliate.org/tag/%e5%80%8b%e4%ba%ba%e4%ba%8b%e6%a5%ad%e4%b8%bb/"
+    },
+    {
+      "timestamp": "20160325102525",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%80%99%E8%A3%9C/"
+    },
+    {
+      "timestamp": "20160816080815",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%81%A5%E5%BA%B7%E5%A2%97%E9%80%B2%E6%B3%95/"
+    },
+    {
+      "timestamp": "20160815220044",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%81%A5%E5%BA%B7%E9%A3%9F%E5%93%81/"
+    },
+    {
+      "timestamp": "20160325102530",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%85%88%E8%BC%A9/"
+    },
+    {
+      "timestamp": "20160316072647",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%88%9D%E5%BF%83%E8%80%85/"
+    },
+    {
+      "timestamp": "20160325102535",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%88%A9%E7%94%A8/"
+    },
+    {
+      "timestamp": "20160325063044",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%89%AF%E5%8F%8E%E5%85%A5/"
+    },
+    {
+      "timestamp": "20160325024115",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%89%AF%E6%A5%AD/"
+    },
+    {
+      "timestamp": "20160408095540",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%8B%89%E5%BC%B7%E4%BC%9A/"
+    },
+    {
+      "timestamp": "20160714204540",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%8D%83%E8%91%89/"
+    },
+    {
+      "timestamp": "20160918000847",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%8D%94%E5%8A%9B/"
+    },
+    {
+      "timestamp": "20160325102216",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%8D%94%E8%B3%9B/"
+    },
+    {
+      "timestamp": "20160325142433",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%8F%82%E5%8A%A0/"
+    },
+    {
+      "timestamp": "20160315155408",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%8F%8E%E5%85%A5/"
+    },
+    {
+      "timestamp": "20160710001524",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%8F%96%E5%BC%95%E6%B3%95/"
+    },
+    {
+      "timestamp": "20160918000704",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%90%8D%E5%8F%A4%E5%B1%8B/"
+    },
+    {
+      "timestamp": "20160827185721",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%92%8C%E6%AD%8C%E5%B1%B1/"
+    },
+    {
+      "timestamp": "20160105121604",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%92%8C%E7%94%B0%E4%BA%9C%E5%B8%8C%E5%AD%90/"
+    },
+    {
+      "timestamp": "20160325142512",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B/"
+    },
+    {
+      "timestamp": "20160714211825",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%9B%BD%E6%B0%91%E7%94%9F%E6%B4%BB%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC/"
+    },
+    {
+      "timestamp": "20160325102540",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%9F%BA%E6%9C%AC/"
+    },
+    {
+      "timestamp": "20160325102545",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%9F%BA%E7%A4%8E/"
+    },
+    {
+      "timestamp": "20160714213059",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%A4%A7%E5%AD%A6%E7%94%9F/"
+    },
+    {
+      "timestamp": "20160918081148",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%A4%A7%E5%AE%AE/"
+    },
+    {
+      "timestamp": "20160102105709",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%A4%A7%E9%98%AA/"
+    },
+    {
+      "timestamp": "20160514100725",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%A4%A7%E9%98%AA/page/2/"
+    },
+    {
+      "timestamp": "20160622002827",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%AE%9F%E8%B7%B5/"
+    },
+    {
+      "timestamp": "20160315155857",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%B8%82%E5%A0%B4%E8%AA%BF%E6%9F%BB/"
+    },
+    {
+      "timestamp": "20160710002943",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%BA%83%E5%91%8A/"
+    },
+    {
+      "timestamp": "20160314225756",
+      "original": "http://www.japan-affiliate.org:80/tag/%E5%BA%83%E5%91%8A%E4%B8%BB/"
+    },
+    {
+      "timestamp": "20160502144216",
+      "original": "http://www.japan-affiliate.org/tag/%e5%bf%98%e5%b9%b4%e4%bc%9a/"
+    },
+    {
+      "timestamp": "20160610102305",
+      "original": "http://www.japan-affiliate.org/tag/%e6%83%85%e5%a0%b1%e4%ba%a4%e6%8f%9b/"
+    },
+    {
+      "timestamp": "20160325102227",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%84%8F%E8%A6%8B%E4%BA%A4%E6%8F%9B%E4%BC%9A/"
+    },
+    {
+      "timestamp": "20160711041008",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%88%90%E6%9E%9C/"
+    },
+    {
+      "timestamp": "20160325102550",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%8A%95%E7%A5%A8/"
+    },
+    {
+      "timestamp": "20160325102232",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%8B%85%E5%BD%93%E8%80%85/"
+    },
+    {
+      "timestamp": "20160710002947",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%94%B9%E6%AD%A3/"
+    },
+    {
+      "timestamp": "20160827175530",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%96%B0%E5%AE%BF/"
+    },
+    {
+      "timestamp": "20160314231221",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%97%A5%E6%9C%AC%E3%82%A2%E3%83%95%E3%82%A3%E3%83%AA%E3%82%A8%E3%82%A4%E3%83%88%E5%8D%94%E8%AD%B0%E4%BC%9A/"
+    },
+    {
+      "timestamp": "20160815220408",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%99%AF%E5%93%81%E8%A1%A8%E7%A4%BA%E6%B3%95/"
+    },
+    {
+      "timestamp": "20161217201730",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%9C%AC%E6%B0%97%E3%81%A7%E3%82%A2%E3%83%95%E3%82%A3%E3%83%AA%E3%82%A8%E3%82%A4%E3%83%88%E3%82%92%E5%AD%A6%E3%81%B6%E4%BC%9A/"
+    },
+    {
+      "timestamp": "20160316073522",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%9D%B1%E4%BA%AC/"
+    },
+    {
+      "timestamp": "20160827190621",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%9D%B1%E4%BA%AC/page/2/"
+    },
+    {
+      "timestamp": "20160918000712",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%9D%B1%E6%B5%B7/"
+    },
+    {
+      "timestamp": "20160407200400",
+      "original": "http://www.japan-affiliate.org/tag/%e6%a4%9c%e7%b4%a2/"
+    },
+    {
+      "timestamp": "20160316072724",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%A5%AD%E7%95%8C%E5%9B%A3%E4%BD%93/"
+    },
+    {
+      "timestamp": "20160325102555",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%A8%AA%E6%B5%9C/"
+    },
+    {
+      "timestamp": "20160827181732",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%AD%A3%E4%BC%9A%E5%93%A1/"
+    },
+    {
+      "timestamp": "20160710001540",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%B2%A2%E7%94%B0%E7%99%BB%E5%BF%97%E5%AD%90/"
+    },
+    {
+      "timestamp": "20160827183714",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%B3%95%E4%BA%BA/"
+    },
+    {
+      "timestamp": "20160710002955",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%B3%95%E5%BE%8B/"
+    },
+    {
+      "timestamp": "20160714214854",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%B3%A8%E6%84%8F%E5%96%9A%E8%B5%B7/"
+    },
+    {
+      "timestamp": "20160714204617",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%B5%A6%E5%AE%89/"
+    },
+    {
+      "timestamp": "20160710003021",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%B6%88%E8%B2%BB%E8%80%85/"
+    },
+    {
+      "timestamp": "20160708070256",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%B6%88%E8%B2%BB%E8%80%85%E5%A5%91%E7%B4%84%E6%B3%95/"
+    },
+    {
+      "timestamp": "20160815214832",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%B6%88%E8%B2%BB%E8%80%85%E5%BA%81/"
+    },
+    {
+      "timestamp": "20160822085207",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%B8%8B%E8%B0%B7/"
+    },
+    {
+      "timestamp": "20160710001545",
+      "original": "http://www.japan-affiliate.org:80/tag/%E6%BA%96%E5%89%87/"
+    },
+    {
+      "timestamp": "20160314225817",
+      "original": "http://www.japan-affiliate.org:80/tag/%E7%84%A1%E6%96%99/"
+    },
+    {
+      "timestamp": "20160827170344",
+      "original": "http://www.japan-affiliate.org:80/tag/%E7%84%A1%E6%96%99%E4%BC%9A%E5%93%A1/"
+    },
+    {
+      "timestamp": "20160827191840",
+      "original": "http://www.japan-affiliate.org:80/tag/%E7%94%B3%E3%81%97%E8%BE%BC%E3%81%BF/"
+    },
+    {
+      "timestamp": "20160827183719",
+      "original": "http://www.japan-affiliate.org:80/tag/%E7%99%BB%E9%8C%B2/"
+    },
+    {
+      "timestamp": "20160714211856",
+      "original": "http://www.japan-affiliate.org:80/tag/%E7%9B%B8%E8%AB%87/"
+    },
+    {
+      "timestamp": "20160325144138",
+      "original": "http://www.japan-affiliate.org:80/tag/%E7%A2%BA%E5%AE%9A%E7%94%B3%E5%91%8A/"
+    },
+    {
+      "timestamp": "20160815220545",
+      "original": "http://www.japan-affiliate.org:80/tag/%E7%A5%9E%E5%A5%88%E5%B7%9D/"
+    },
+    {
+      "timestamp": "20160714213104",
+      "original": "http://www.japan-affiliate.org:80/tag/%E8%8B%A5%E5%B9%B4%E5%B1%A4/"
+    },
+    {
+      "timestamp": "20160714211029",
+      "original": "http://www.japan-affiliate.org:80/tag/%E8%A2%AB%E5%AE%B3/"
+    },
+    {
+      "timestamp": "20160815220051",
+      "original": "http://www.japan-affiliate.org:80/tag/%E8%A9%95%E4%BE%A1/"
+    },
+    {
+      "timestamp": "20160316073529",
+      "original": "http://www.japan-affiliate.org:80/tag/%E8%AC%9B%E5%BA%A7/"
+    },
+    {
+      "timestamp": "20160502130038",
+      "original": "http://www.japan-affiliate.org/tag/%e8%ac%9b%e6%bc%94/"
+    },
+    {
+      "timestamp": "20160325024122",
+      "original": "http://www.japan-affiliate.org:80/tag/%E8%AC%9B%E7%BF%92/"
+    },
+    {
+      "timestamp": "20160325102600",
+      "original": "http://www.japan-affiliate.org:80/tag/%E8%AC%9B%E7%BF%92%E4%BC%9A/"
+    },
+    {
+      "timestamp": "20160827164032",
+      "original": "http://www.japan-affiliate.org:80/tag/%E8%AC%9B%E7%BF%92%E4%BC%9A/page/2/"
+    },
+    {
+      "timestamp": "20160918081153",
+      "original": "http://www.japan-affiliate.org:80/tag/%E8%B2%B8%E4%BC%9A%E8%AD%B0%E5%AE%A4/"
+    },
+    {
+      "timestamp": "20160315155910",
+      "original": "http://www.japan-affiliate.org:80/tag/%E8%B3%87%E6%96%99/"
+    },
+    {
+      "timestamp": "20160325142132",
+      "original": "http://www.japan-affiliate.org:80/tag/%E9%80%A3%E7%B5%A1/"
+    },
+    {
+      "timestamp": "20160325102606",
+      "original": "http://www.japan-affiliate.org:80/tag/%E9%81%8B%E7%94%A8/"
+    },
+    {
+      "timestamp": "20160624060930",
+      "original": "http://www.japan-affiliate.org:80/tag/%E9%88%B4%E6%9C%A8%E7%8F%A0%E4%B8%96/"
+    },
+    {
+      "timestamp": "20160710001601",
+      "original": "http://www.japan-affiliate.org:80/tag/%E9%9B%BB%E5%AD%90%E5%95%86%E5%8F%96%E5%BC%95/"
+    },
+    {
+      "timestamp": "20160325144235",
+      "original": "http://www.japan-affiliate.org:80/tag/%E9%9D%92%E8%89%B2%E7%94%B3%E5%91%8A/"
+    },
+    {
+      "timestamp": "20160822095242",
+      "original": "http://www.japan-affiliate.org:80/tag/%E9%9D%99%E5%B2%A1/"
+    },
+    {
+      "timestamp": "20160815214910",
+      "original": "http://www.japan-affiliate.org:80/tag/%E9%A3%B2%E3%81%BF%E4%BC%9A/"
+    },
+    {
+      "timestamp": "20160325063053",
+      "original": "http://www.japan-affiliate.org:80/tag/2%E6%9C%88/"
+    },
+    {
+      "timestamp": "20160502145429",
+      "original": "http://www.japan-affiliate.org/tag/2012/"
+    },
+    {
+      "timestamp": "20160404193830",
+      "original": "http://www.japan-affiliate.org/tag/2013/"
+    },
+    {
+      "timestamp": "20160801094018",
+      "original": "http://www.japan-affiliate.org/tag/2014/"
+    },
+    {
+      "timestamp": "20160514091726",
+      "original": "http://www.japan-affiliate.org:80/tag/2014%E5%B9%B4/"
+    },
+    {
+      "timestamp": "20160315155938",
+      "original": "http://www.japan-affiliate.org:80/tag/2015/"
+    },
+    {
+      "timestamp": "20160325102238",
+      "original": "http://www.japan-affiliate.org:80/tag/2015%E5%B9%B4/"
+    },
+    {
+      "timestamp": "20160918000717",
+      "original": "http://www.japan-affiliate.org:80/tag/2016/"
+    },
+    {
+      "timestamp": "20160325024128",
+      "original": "http://www.japan-affiliate.org:80/tag/2016%E5%B9%B4/"
+    },
+    {
+      "timestamp": "20161007152559",
+      "original": "http://www.japan-affiliate.org:80/tag/2016%E5%B9%B410%E6%9C%88/"
+    },
+    {
+      "timestamp": "20160325102243",
+      "original": "http://www.japan-affiliate.org:80/tag/3%E6%9C%88/"
+    },
+    {
+      "timestamp": "20160918085426",
+      "original": "http://www.japan-affiliate.org:80/tag/4%E6%9C%88/"
+    },
+    {
+      "timestamp": "20160407222410",
+      "original": "http://www.japan-affiliate.org/tag/6%e6%9c%88/"
+    },
+    {
+      "timestamp": "20160918085431",
+      "original": "http://www.japan-affiliate.org:80/tag/6f/"
+    },
+    {
+      "timestamp": "20160314225822",
+      "original": "http://www.japan-affiliate.org:80/tag/asp/"
+    },
+    {
+      "timestamp": "20160710001606",
+      "original": "http://www.japan-affiliate.org:80/tag/ec%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/"
+    },
+    {
+      "timestamp": "20160407213257",
+      "original": "http://www.japan-affiliate.org/tag/google/"
+    },
+    {
+      "timestamp": "20160325063219",
+      "original": "http://www.japan-affiliate.org:80/tag/mvp/"
+    },
+    {
+      "timestamp": "20160315153321",
+      "original": "http://www.japan-affiliate.org:80/tag/ng/"
+    },
+    {
+      "timestamp": "20160918085457",
+      "original": "http://www.japan-affiliate.org:80/tag/seo/"
+    },
+    {
+      "timestamp": "20160809203752",
+      "original": "http://www.japan-affiliate.org:80/tag/sns/"
+    },
+    {
+      "timestamp": "20160325102304",
+      "original": "http://www.japan-affiliate.org:80/tag/vp/"
+    },
+    {
+      "timestamp": "20160827184754",
+      "original": "http://www.japan-affiliate.org:80/tag/web%E6%8B%85%E5%BD%93/"
+    },
+    {
+      "timestamp": "20160304175511",
+      "original": "http://www.japan-affiliate.org:80/teikan/"
+    },
+    {
+      "timestamp": "20160121122243",
+      "original": "http://www.japan-affiliate.org/topics/1stkouzamain/"
+    },
+    {
+      "timestamp": "20160111135138",
+      "original": "http://www.japan-affiliate.org:80/topics/afmeeting/"
+    },
+    {
+      "timestamp": "20160306052228",
+      "original": "http://www.japan-affiliate.org:80/topics/ekkyou1601/"
+    },
+    {
+      "timestamp": "20160306052242",
+      "original": "http://www.japan-affiliate.org:80/topics/honki2015asp/"
+    },
+    {
+      "timestamp": "20160306142625",
+      "original": "http://www.japan-affiliate.org:80/topics/honki2015books/"
+    },
+    {
+      "timestamp": "20160105204626",
+      "original": "http://www.japan-affiliate.org:80/topics/honki2015ecpanel/"
+    },
+    {
+      "timestamp": "20160520110520",
+      "original": "http://www.japan-affiliate.org/topics/honki2015google/"
+    },
+    {
+      "timestamp": "20160112144611",
+      "original": "http://www.japan-affiliate.org:80/topics/honki2015jao/"
+    },
+    {
+      "timestamp": "20160520110051",
+      "original": "http://www.japan-affiliate.org/topics/honki2015law/"
+    },
+    {
+      "timestamp": "20160306052247",
+      "original": "http://www.japan-affiliate.org:80/topics/honki2015live/"
+    },
+    {
+      "timestamp": "20160424135418",
+      "original": "http://www.japan-affiliate.org:80/topics/jaosanka1604/"
+    },
+    {
+      "timestamp": "20160204194349",
+      "original": "http://www.japan-affiliate.org:80/topics/kakutei/"
+    },
+    {
+      "timestamp": "20160821001114",
+      "original": "http://www.japan-affiliate.org:80/topics/keishicho1607/"
+    },
+    {
+      "timestamp": "20160526203433",
+      "original": "http://www.japan-affiliate.org/topics/kensaku1506fin/"
+    },
+    {
+      "timestamp": "20160105115638",
+      "original": "http://www.japan-affiliate.org:80/topics/minisite1408repo/"
+    },
+    {
+      "timestamp": "20160305113158",
+      "original": "http://www.japan-affiliate.org:80/topics/mvp2010/"
+    },
+    {
+      "timestamp": "20160305113246",
+      "original": "http://www.japan-affiliate.org:80/topics/mvp2011/"
+    },
+    {
+      "timestamp": "20160506081637",
+      "original": "http://www.japan-affiliate.org/topics/mvp2011touhyou/"
+    },
+    {
+      "timestamp": "20160305113641",
+      "original": "http://www.japan-affiliate.org:80/topics/mvp2012/"
+    },
+    {
+      "timestamp": "20160421204554",
+      "original": "http://www.japan-affiliate.org/topics/mvp2012touhyou/"
+    },
+    {
+      "timestamp": "20160303100838",
+      "original": "http://www.japan-affiliate.org:80/topics/mvp2013/"
+    },
+    {
+      "timestamp": "20160305113854",
+      "original": "http://www.japan-affiliate.org:80/topics/mvp2014/"
+    },
+    {
+      "timestamp": "20160303100615",
+      "original": "http://www.japan-affiliate.org:80/topics/mvp2014kouho/"
+    },
+    {
+      "timestamp": "20160315154903",
+      "original": "http://www.japan-affiliate.org:80/topics/mvp2015/"
+    },
+    {
+      "timestamp": "20160325063058",
+      "original": "http://www.japan-affiliate.org:80/topics/mvp2015kouho/"
+    },
+    {
+      "timestamp": "20160304185249",
+      "original": "http://www.japan-affiliate.org:80/topics/mvp2015touhyou/"
+    },
+    {
+      "timestamp": "20160201101230",
+      "original": "http://www.japan-affiliate.org:80/topics/rankinghikaku/"
+    },
+    {
+      "timestamp": "20160306052420",
+      "original": "http://www.japan-affiliate.org:80/topics/seminarnegai/"
+    },
+    {
+      "timestamp": "20160418065946",
+      "original": "http://www.japan-affiliate.org/topics/yokohama/"
+    }
+  ]
+}
