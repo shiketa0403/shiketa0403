@@ -1,0 +1,488 @@
+{
+  "domain": "jiaa.org",
+  "year": 2010,
+  "fetched_at": "2026-04-18T04:19:03+0000",
+  "header": [
+    "timestamp",
+    "original"
+  ],
+  "count": 119,
+  "records": [
+    {
+      "timestamp": "20100115232807",
+      "original": "http://www.jiaa.org:80/"
+    },
+    {
+      "timestamp": "20100127051009",
+      "original": "http://www.jiaa.org:80/about/aboutjiaa.html"
+    },
+    {
+      "timestamp": "20100129032736",
+      "original": "http://www.jiaa.org:80/about/articles.html"
+    },
+    {
+      "timestamp": "20100129215249",
+      "original": "http://www.jiaa.org:80/about/index.html"
+    },
+    {
+      "timestamp": "20100129024232",
+      "original": "http://www.jiaa.org:80/about/map.html"
+    },
+    {
+      "timestamp": "20100118112812",
+      "original": "http://www.jiaa.org:80/about/memberlist.html"
+    },
+    {
+      "timestamp": "20100126155227",
+      "original": "http://www.jiaa.org:80/about/officerlist.html"
+    },
+    {
+      "timestamp": "20100127055329",
+      "original": "http://www.jiaa.org:80/about/organization.html"
+    },
+    {
+      "timestamp": "20100125100102",
+      "original": "http://www.jiaa.org:80/about/prospectus.html"
+    },
+    {
+      "timestamp": "20100126145304",
+      "original": "http://www.jiaa.org:80/activity/activity.html"
+    },
+    {
+      "timestamp": "20100131111816",
+      "original": "http://www.jiaa.org:80/activity/discription.html"
+    },
+    {
+      "timestamp": "20100201005833",
+      "original": "http://www.jiaa.org:80/activity/index.html"
+    },
+    {
+      "timestamp": "20100124122747",
+      "original": "http://www.jiaa.org:80/activity/publish/business.html"
+    },
+    {
+      "timestamp": "20100128021545",
+      "original": "http://www.jiaa.org:80/activity/publish/guideline.html"
+    },
+    {
+      "timestamp": "20100129042832",
+      "original": "http://www.jiaa.org:80/activity/publish/index.html"
+    },
+    {
+      "timestamp": "20100102050349",
+      "original": "http://www.jiaa.org:80/activity/publish/jiaa_annual.html"
+    },
+    {
+      "timestamp": "20100129024237",
+      "original": "http://www.jiaa.org:80/activity/result/act_result_1999.html"
+    },
+    {
+      "timestamp": "20100417051128",
+      "original": "http://www.jiaa.org:80/activity/result/act_result_2000.html"
+    },
+    {
+      "timestamp": "20100417051201",
+      "original": "http://www.jiaa.org:80/activity/result/act_result_2002.html"
+    },
+    {
+      "timestamp": "20100130025036",
+      "original": "http://www.jiaa.org:80/activity/result/act_result_2003.html"
+    },
+    {
+      "timestamp": "20100417051344",
+      "original": "http://www.jiaa.org:80/activity/result/act_result_2004.html"
+    },
+    {
+      "timestamp": "20100417051349",
+      "original": "http://www.jiaa.org:80/activity/result/act_result_2005.html"
+    },
+    {
+      "timestamp": "20100417051425",
+      "original": "http://www.jiaa.org:80/activity/result/act_result_2006.html"
+    },
+    {
+      "timestamp": "20100417032426",
+      "original": "http://www.jiaa.org:80/activity/result/act_result_2007.html"
+    },
+    {
+      "timestamp": "20100415145744",
+      "original": "http://www.jiaa.org:80/activity/result/act_result_2008.html"
+    },
+    {
+      "timestamp": "20100716181331",
+      "original": "http://www.jiaa.org:80/activity/result/act_result_2009.html"
+    },
+    {
+      "timestamp": "20100129063358",
+      "original": "http://www.jiaa.org:80/activity/result/index.html"
+    },
+    {
+      "timestamp": "20100409000830",
+      "original": "http://www.jiaa.org:80/archive/addimpcnt.html"
+    },
+    {
+      "timestamp": "20100130060644",
+      "original": "http://www.jiaa.org:80/archive/arhive_download.html"
+    },
+    {
+      "timestamp": "20100128011319",
+      "original": "http://www.jiaa.org:80/archive/index.html"
+    },
+    {
+      "timestamp": "20100129035021",
+      "original": "http://www.jiaa.org:80/archive/release/2002/index.html"
+    },
+    {
+      "timestamp": "20100129072639",
+      "original": "http://www.jiaa.org:80/archive/release/2002/release_20030522.html"
+    },
+    {
+      "timestamp": "20100129045954",
+      "original": "http://www.jiaa.org:80/archive/release/index.html"
+    },
+    {
+      "timestamp": "20100121075741",
+      "original": "http://www.jiaa.org:80/archive/release/release_2003.html"
+    },
+    {
+      "timestamp": "20100121075751",
+      "original": "http://www.jiaa.org:80/archive/release/release_2004.html"
+    },
+    {
+      "timestamp": "20100121080052",
+      "original": "http://www.jiaa.org:80/archive/release/release_2005.html"
+    },
+    {
+      "timestamp": "20100127042409",
+      "original": "http://www.jiaa.org:80/archive/result/index.html"
+    },
+    {
+      "timestamp": "20100402011354",
+      "original": "http://www.jiaa.org:80/archive/result/result_1999.html"
+    },
+    {
+      "timestamp": "20100402011400",
+      "original": "http://www.jiaa.org:80/archive/result/result_2000.html"
+    },
+    {
+      "timestamp": "20100402011208",
+      "original": "http://www.jiaa.org:80/archive/result/result_2001.html"
+    },
+    {
+      "timestamp": "20100402011405",
+      "original": "http://www.jiaa.org:80/archive/result/result_2002.html"
+    },
+    {
+      "timestamp": "20100128120835",
+      "original": "http://www.jiaa.org:80/archive/result/result_2003.html"
+    },
+    {
+      "timestamp": "20100402011412",
+      "original": "http://www.jiaa.org:80/archive/result/result_2004.html"
+    },
+    {
+      "timestamp": "20100402011416",
+      "original": "http://www.jiaa.org:80/archive/result/result_2005.html"
+    },
+    {
+      "timestamp": "20100402011243",
+      "original": "http://www.jiaa.org:80/archive/result/result_2006.html"
+    },
+    {
+      "timestamp": "20100402011422",
+      "original": "http://www.jiaa.org:80/archive/result/result_2007.html"
+    },
+    {
+      "timestamp": "20100331130218",
+      "original": "http://www.jiaa.org:80/archive/result/result_2008.html"
+    },
+    {
+      "timestamp": "20100128022011",
+      "original": "http://www.jiaa.org:80/archive/traffic_manual.html"
+    },
+    {
+      "timestamp": "20100123210933",
+      "original": "http://www.jiaa.org:80/cgi-bin/html/search.cgi"
+    },
+    {
+      "timestamp": "20100129024106",
+      "original": "http://www.jiaa.org:80/contents/seminar/btaforum.html"
+    },
+    {
+      "timestamp": "20100426030032",
+      "original": "http://www.jiaa.org:80/contents/seminar/fro_100224.html"
+    },
+    {
+      "timestamp": "20100129071150",
+      "original": "http://www.jiaa.org:80/contents/seminar/jaro_jiaa.html"
+    },
+    {
+      "timestamp": "20100128010214",
+      "original": "http://www.jiaa.org:80/contents/seminar/study09.html"
+    },
+    {
+      "timestamp": "20100613005355",
+      "original": "http://www.jiaa.org:80/contents/seminar/study10.html"
+    },
+    {
+      "timestamp": "20100129063722",
+      "original": "http://www.jiaa.org:80/contents/seminar/studytour_cannes0906.html"
+    },
+    {
+      "timestamp": "20100305204435",
+      "original": "http://www.jiaa.org:80/contents/seminar/tiaa2008.html"
+    },
+    {
+      "timestamp": "20100512003736",
+      "original": "http://www.jiaa.org:80/contents/tiaa_8th_list.html"
+    },
+    {
+      "timestamp": "20100126145423",
+      "original": "http://www.jiaa.org:80/entrance_guidance.html"
+    },
+    {
+      "timestamp": "20100129073930",
+      "original": "http://www.jiaa.org:80/form/index.html"
+    },
+    {
+      "timestamp": "20100103014232",
+      "original": "http://www.jiaa.org:80/html/about/index.html"
+    },
+    {
+      "timestamp": "20100103014237",
+      "original": "http://www.jiaa.org:80/html/activity/index.html"
+    },
+    {
+      "timestamp": "20100129061002",
+      "original": "http://www.jiaa.org:80/html/activity/publish/guideline.html"
+    },
+    {
+      "timestamp": "20100103014256",
+      "original": "http://www.jiaa.org:80/html/archive/index.html"
+    },
+    {
+      "timestamp": "20100126150143",
+      "original": "http://www.jiaa.org:80/html/archive/result/result_2000.html"
+    },
+    {
+      "timestamp": "20100102042119",
+      "original": "http://www.jiaa.org:80/html/archive/traffic_manual.html"
+    },
+    {
+      "timestamp": "20100106190121",
+      "original": "http://www.jiaa.org:80/html/entrance_guidance.html"
+    },
+    {
+      "timestamp": "20100102235847",
+      "original": "http://www.jiaa.org:80/html/index.html"
+    },
+    {
+      "timestamp": "20100103014301",
+      "original": "http://www.jiaa.org:80/html/jiaa/index.html"
+    },
+    {
+      "timestamp": "20100129072851",
+      "original": "http://www.jiaa.org:80/html/release/release_tiaa_090430.html"
+    },
+    {
+      "timestamp": "20100103014332",
+      "original": "http://www.jiaa.org:80/html/sitemap.html"
+    },
+    {
+      "timestamp": "20100103145159",
+      "original": "http://www.jiaa.org:80/html/topics/10years.html"
+    },
+    {
+      "timestamp": "20100103024243",
+      "original": "http://www.jiaa.org:80/html/topics/index.html"
+    },
+    {
+      "timestamp": "20100129195618",
+      "original": "http://www.jiaa.org:80/index.html"
+    },
+    {
+      "timestamp": "20100905104437",
+      "original": "http://www.jiaa.org:80/info/10th_recruit.html"
+    },
+    {
+      "timestamp": "20100322211237",
+      "original": "http://www.jiaa.org:80/info/cannes_entry.html"
+    },
+    {
+      "timestamp": "20100426004639",
+      "original": "http://www.jiaa.org:80/info/cannes_results.html"
+    },
+    {
+      "timestamp": "20100129063951",
+      "original": "http://www.jiaa.org:80/info/index.html"
+    },
+    {
+      "timestamp": "20100426030038",
+      "original": "http://www.jiaa.org:80/info/info_2007.html"
+    },
+    {
+      "timestamp": "20100426030043",
+      "original": "http://www.jiaa.org:80/info/info_385.html"
+    },
+    {
+      "timestamp": "20100426030048",
+      "original": "http://www.jiaa.org:80/info/info_598.html"
+    },
+    {
+      "timestamp": "20100908140607",
+      "original": "http://www.jiaa.org:80/info/info_884.html"
+    },
+    {
+      "timestamp": "20100426030104",
+      "original": "http://www.jiaa.org:80/info/info_renewal.html"
+    },
+    {
+      "timestamp": "20100424172103",
+      "original": "http://www.jiaa.org:80/info/jiaa_100330.html"
+    },
+    {
+      "timestamp": "20100128002128",
+      "original": "http://jiaa.org:80/jiaa/"
+    },
+    {
+      "timestamp": "20100129051154",
+      "original": "http://www.jiaa.org:80/jiaa/index.html"
+    },
+    {
+      "timestamp": "20100129050612",
+      "original": "http://www.jiaa.org:80/news.html"
+    },
+    {
+      "timestamp": "20100517094936",
+      "original": "http://www.jiaa.org:80/pub_contents/adimpression_count_ver1_1.htm"
+    },
+    {
+      "timestamp": "20100126150814",
+      "original": "http://www.jiaa.org:80/release/060602_1_report.html"
+    },
+    {
+      "timestamp": "20100121080057",
+      "original": "http://www.jiaa.org:80/release/060602_2_policy.html"
+    },
+    {
+      "timestamp": "20100121080103",
+      "original": "http://www.jiaa.org:80/release/070529_1_report.html"
+    },
+    {
+      "timestamp": "20100126145459",
+      "original": "http://www.jiaa.org:80/release/070529_2_policy.html"
+    },
+    {
+      "timestamp": "20100121075758",
+      "original": "http://www.jiaa.org:80/release/080528_policy.html"
+    },
+    {
+      "timestamp": "20100128094842",
+      "original": "http://www.jiaa.org:80/release/addimpcnt.html"
+    },
+    {
+      "timestamp": "20100110220458",
+      "original": "http://www.jiaa.org:80/release/icm_release_070713.html"
+    },
+    {
+      "timestamp": "20100128130849",
+      "original": "http://www.jiaa.org:80/release/index.html"
+    },
+    {
+      "timestamp": "20100513003149",
+      "original": "http://www.jiaa.org:80/release/jiaa_award5_release_070308.html"
+    },
+    {
+      "timestamp": "20100121080127",
+      "original": "http://www.jiaa.org:80/release/jiaa_award5_result_release.html"
+    },
+    {
+      "timestamp": "20100513002852",
+      "original": "http://www.jiaa.org:80/release/JIAA_awards5_release.html"
+    },
+    {
+      "timestamp": "20100513002910",
+      "original": "http://www.jiaa.org:80/release/jiaa_awards6_result_release.html"
+    },
+    {
+      "timestamp": "20100121080137",
+      "original": "http://www.jiaa.org:80/release/jiaa_publicad_060809.html"
+    },
+    {
+      "timestamp": "20100128012510",
+      "original": "http://www.jiaa.org:80/release/release_090330.html"
+    },
+    {
+      "timestamp": "20100615194454",
+      "original": "http://www.jiaa.org:80/release/release_10years_100603.html"
+    },
+    {
+      "timestamp": "20100513002915",
+      "original": "http://www.jiaa.org:80/release/release_addimpcnt.html"
+    },
+    {
+      "timestamp": "20100628030339",
+      "original": "http://www.jiaa.org:80/release/release_bta_100624.html"
+    },
+    {
+      "timestamp": "20100129072907",
+      "original": "http://www.jiaa.org:80/release/release_mobile_080714.html"
+    },
+    {
+      "timestamp": "20100124002832",
+      "original": "http://www.jiaa.org:80/release/release_policy_090527.html"
+    },
+    {
+      "timestamp": "20100630011632",
+      "original": "http://www.jiaa.org:80/release/release_policy_100603.html"
+    },
+    {
+      "timestamp": "20100817082010",
+      "original": "http://www.jiaa.org:80/release/release_tiaa_081204.html"
+    },
+    {
+      "timestamp": "20100311214305",
+      "original": "http://www.jiaa.org:80/release/release_tiaa_090430.html"
+    },
+    {
+      "timestamp": "20100305204500",
+      "original": "http://www.jiaa.org:80/release/release_tiaa_100201.html"
+    },
+    {
+      "timestamp": "20100510014705",
+      "original": "http://www.jiaa.org:80/release/release_tiaa_100506.html"
+    },
+    {
+      "timestamp": "20100121075824",
+      "original": "http://www.jiaa.org:80/release/tiaa_6th_release_071129.html"
+    },
+    {
+      "timestamp": "20100123210942",
+      "original": "http://www.jiaa.org:80/sitemap.html"
+    },
+    {
+      "timestamp": "20100114120423",
+      "original": "http://www.jiaa.org:80/topics/10years.html"
+    },
+    {
+      "timestamp": "20100130032953",
+      "original": "http://www.jiaa.org:80/topics/index.html"
+    },
+    {
+      "timestamp": "20100128193835",
+      "original": "http://jiaa.org:80/topics/topics_496.html"
+    },
+    {
+      "timestamp": "20101005011627",
+      "original": "http://www.jiaa.org:80/traffic/index.html"
+    },
+    {
+      "timestamp": "20100127055036",
+      "original": "http://www.jiaa.org:80/traffic/traffic.html"
+    },
+    {
+      "timestamp": "20100125203114",
+      "original": "http://jiaa.org:80/traffic/traffic_main.html"
+    }
+  ]
+}
