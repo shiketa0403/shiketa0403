@@ -1,0 +1,280 @@
+{
+  "domain": "starcat.co.jp",
+  "year": 2000,
+  "fetched_at": "2026-04-21T10:58:49+0000",
+  "header": [
+    "timestamp",
+    "original"
+  ],
+  "count": 67,
+  "records": [
+    {
+      "timestamp": "20000229152831",
+      "original": "http://www.starcat.co.jp:80/"
+    },
+    {
+      "timestamp": "20000524185402",
+      "original": "http://www.starcat.co.jp:80/10anniversary/gaora2/index.html"
+    },
+    {
+      "timestamp": "20000602145701",
+      "original": "http://www.starcat.co.jp:80/10anniversary/golfnet/index.html"
+    },
+    {
+      "timestamp": "20000118093142",
+      "original": "http://www.starcat.co.jp:80/10anniversary/index.html"
+    },
+    {
+      "timestamp": "20000118104513",
+      "original": "http://www.starcat.co.jp:80/bell/index.html"
+    },
+    {
+      "timestamp": "20000518225201",
+      "original": "http://www.starcat.co.jp:80/catv/basic_channel/yuryou.html"
+    },
+    {
+      "timestamp": "20000303195405",
+      "original": "http://www.starcat.co.jp:80/catv/faq/index.html"
+    },
+    {
+      "timestamp": "20000118115520",
+      "original": "http://www.starcat.co.jp:80/catv/index.html"
+    },
+    {
+      "timestamp": "20000518184333",
+      "original": "http://www.starcat.co.jp:80/catv/option/index.html"
+    },
+    {
+      "timestamp": "20000303220059",
+      "original": "http://www.starcat.co.jp:80/catv/osiete/index.html"
+    },
+    {
+      "timestamp": "20000304005944",
+      "original": "http://www.starcat.co.jp:80/catv/ryoukin/index.html"
+    },
+    {
+      "timestamp": "20000614003200",
+      "original": "http://www.starcat.co.jp:80/catv/sikumi/index.html"
+    },
+    {
+      "timestamp": "20000301044721",
+      "original": "http://www.starcat.co.jp:80/catv_inet/index.html"
+    },
+    {
+      "timestamp": "20000304015155",
+      "original": "http://www.starcat.co.jp:80/catv_inet/sikumii/index.html"
+    },
+    {
+      "timestamp": "20000304045646",
+      "original": "http://www.starcat.co.jp:80/cgi/formhandler/formhandler.cgi"
+    },
+    {
+      "timestamp": "20001027221237",
+      "original": "http://www.starcat.co.jp:80/cgi/jump/jump.cgi?"
+    },
+    {
+      "timestamp": "20000304072231",
+      "original": "http://www.starcat.co.jp:80/cgi/superch/f_mailer.cgi"
+    },
+    {
+      "timestamp": "20000118200720",
+      "original": "http://www.starcat.co.jp:80/channel/index.html"
+    },
+    {
+      "timestamp": "20000118234008",
+      "original": "http://www.starcat.co.jp:80/contact/bangumi/index.html"
+    },
+    {
+      "timestamp": "20000119032608",
+      "original": "http://www.starcat.co.jp:80/contact/catv/index.html"
+    },
+    {
+      "timestamp": "20000301123423",
+      "original": "http://www.starcat.co.jp:80/contact/index.html"
+    },
+    {
+      "timestamp": "20000301150756",
+      "original": "http://www.starcat.co.jp:80/contact/internet/index.html"
+    },
+    {
+      "timestamp": "20000301173517",
+      "original": "http://www.starcat.co.jp:80/contact/siryou/index.html"
+    },
+    {
+      "timestamp": "20000919054338",
+      "original": "http://www.starcat.co.jp:80/i/"
+    },
+    {
+      "timestamp": "20000524231941",
+      "original": "http://www.starcat.co.jp:80/index.html"
+    },
+    {
+      "timestamp": "20000304143325",
+      "original": "http://www.starcat.co.jp:80/index2.html"
+    },
+    {
+      "timestamp": "20000304162836",
+      "original": "http://www.starcat.co.jp:80/index_main.html"
+    },
+    {
+      "timestamp": "20000602192527",
+      "original": "http://www.starcat.co.jp:80/index_top.html"
+    },
+    {
+      "timestamp": "20000708233646",
+      "original": "http://www.starcat.co.jp:80/infomation/index.html"
+    },
+    {
+      "timestamp": "20000205021636",
+      "original": "http://www.starcat.co.jp:80/infomation/shop/index.html"
+    },
+    {
+      "timestamp": "20001109121800",
+      "original": "http://www.starcat.co.jp:80/join/catv/index.html"
+    },
+    {
+      "timestamp": "20000519030858",
+      "original": "http://www.starcat.co.jp:80/kaisya/access/index.html"
+    },
+    {
+      "timestamp": "20000518232636",
+      "original": "http://www.starcat.co.jp:80/kaisya/ayumi/index.html"
+    },
+    {
+      "timestamp": "20000118010532",
+      "original": "http://www.starcat.co.jp:80/kaisya/index.html"
+    },
+    {
+      "timestamp": "20000525035042",
+      "original": "http://www.starcat.co.jp:80/kaisya/jigyou/index.html"
+    },
+    {
+      "timestamp": "20000525003203",
+      "original": "http://www.starcat.co.jp:80/kaisya/kaisya/index.html"
+    },
+    {
+      "timestamp": "20000304193845",
+      "original": "http://www.starcat.co.jp:80/link/catv/catv_chubu.html"
+    },
+    {
+      "timestamp": "20000602205602",
+      "original": "http://www.starcat.co.jp:80/link/catv/catv_chugoku.html"
+    },
+    {
+      "timestamp": "20000529220227",
+      "original": "http://www.starcat.co.jp:80/link/catv/catv_hokkai.html"
+    },
+    {
+      "timestamp": "20000709014239",
+      "original": "http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html"
+    },
+    {
+      "timestamp": "20000519041504",
+      "original": "http://www.starcat.co.jp:80/link/catv/catv_shikoku.html"
+    },
+    {
+      "timestamp": "20000616104456",
+      "original": "http://www.starcat.co.jp:80/link/catv/index.html"
+    },
+    {
+      "timestamp": "20000302013408",
+      "original": "http://www.starcat.co.jp:80/link/index.html"
+    },
+    {
+      "timestamp": "20000519002926",
+      "original": "http://www.starcat.co.jp:80/link/local/index.html"
+    },
+    {
+      "timestamp": "20001028202022",
+      "original": "http://www.starcat.co.jp:80/main.html"
+    },
+    {
+      "timestamp": "20000525045103",
+      "original": "http://www.starcat.co.jp:80/pickup/dis/index.html"
+    },
+    {
+      "timestamp": "20000202093236",
+      "original": "http://www.starcat.co.jp:80/present/book/index.html"
+    },
+    {
+      "timestamp": "20001207213400",
+      "original": "http://www.starcat.co.jp:80/present/index.html"
+    },
+    {
+      "timestamp": "20001207214300",
+      "original": "http://www.starcat.co.jp:80/starcat_web/53ch/index.html"
+    },
+    {
+      "timestamp": "20001207214900",
+      "original": "http://www.starcat.co.jp:80/starcat_web/58ch/index.html"
+    },
+    {
+      "timestamp": "20001207220700",
+      "original": "http://www.starcat.co.jp:80/starcat_web/58ch/time_table/index10.html"
+    },
+    {
+      "timestamp": "20001207221100",
+      "original": "http://www.starcat.co.jp:80/starcat_web/58ch/time_table/index11.html"
+    },
+    {
+      "timestamp": "20001207222000",
+      "original": "http://www.starcat.co.jp:80/starcat_web/58ch/time_table/index2.html"
+    },
+    {
+      "timestamp": "20001207222600",
+      "original": "http://www.starcat.co.jp:80/starcat_web/58ch/time_table/index3.html"
+    },
+    {
+      "timestamp": "20001109122100",
+      "original": "http://www.starcat.co.jp:80/starcat_web/58ch/time_table/index4.html"
+    },
+    {
+      "timestamp": "20001207224100",
+      "original": "http://www.starcat.co.jp:80/starcat_web/58ch/time_table/index5.html"
+    },
+    {
+      "timestamp": "20001207225700",
+      "original": "http://www.starcat.co.jp:80/starcat_web/58ch/time_table/index6.html"
+    },
+    {
+      "timestamp": "20001207230300",
+      "original": "http://www.starcat.co.jp:80/starcat_web/58ch/time_table/index7.html"
+    },
+    {
+      "timestamp": "20001207230900",
+      "original": "http://www.starcat.co.jp:80/starcat_web/58ch/time_table/index8.html"
+    },
+    {
+      "timestamp": "20001207231900",
+      "original": "http://www.starcat.co.jp:80/starcat_web/58ch/time_table/index9.html"
+    },
+    {
+      "timestamp": "20000112192044",
+      "original": "http://www.starcat.co.jp:80/starch/index.html"
+    },
+    {
+      "timestamp": "20000127060433",
+      "original": "http://www.starcat.co.jp:80/starch/mych/anime/index.html"
+    },
+    {
+      "timestamp": "20000529230912",
+      "original": "http://www.starcat.co.jp:80/starch/mych/culture/index.html"
+    },
+    {
+      "timestamp": "20000519052111",
+      "original": "http://www.starcat.co.jp:80/starch/mych/joho/index.html"
+    },
+    {
+      "timestamp": "20000525081057",
+      "original": "http://www.starcat.co.jp:80/starch/mych/sports/index.html"
+    },
+    {
+      "timestamp": "20001028205443",
+      "original": "http://www.starcat.co.jp:80/top.html"
+    },
+    {
+      "timestamp": "20001028213707",
+      "original": "http://www.starcat.co.jp:80/under.html"
+    }
+  ]
+}
