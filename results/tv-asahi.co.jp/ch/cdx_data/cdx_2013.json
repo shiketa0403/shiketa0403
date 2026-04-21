@@ -1,0 +1,2524 @@
+{
+  "domain": "tv-asahi.co.jp/ch",
+  "year": 2013,
+  "fetched_at": "2026-04-21T06:26:11+0000",
+  "header": [
+    "timestamp",
+    "original"
+  ],
+  "count": 628,
+  "records": [
+    {
+      "timestamp": "20130325120922",
+      "original": "http://www.tv-asahi.co.jp:80/ch/"
+    },
+    {
+      "timestamp": "20130329120820",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/"
+    },
+    {
+      "timestamp": "20130329144510",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0001/"
+    },
+    {
+      "timestamp": "20130330233000",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0003/"
+    },
+    {
+      "timestamp": "20130330233005",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0004/"
+    },
+    {
+      "timestamp": "20130331001611",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0005/"
+    },
+    {
+      "timestamp": "20130331001617",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0006/"
+    },
+    {
+      "timestamp": "20130330233010",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0007/"
+    },
+    {
+      "timestamp": "20130330233015",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0008/"
+    },
+    {
+      "timestamp": "20130328065027",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0009/"
+    },
+    {
+      "timestamp": "20130330233020",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0010/"
+    },
+    {
+      "timestamp": "20130331001626",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0011/"
+    },
+    {
+      "timestamp": "20130331001631",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0012/"
+    },
+    {
+      "timestamp": "20130330233025",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0013/"
+    },
+    {
+      "timestamp": "20130331001636",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0014/"
+    },
+    {
+      "timestamp": "20130330233030",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0015/"
+    },
+    {
+      "timestamp": "20130331001641",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0016/"
+    },
+    {
+      "timestamp": "20130331001647",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0017/"
+    },
+    {
+      "timestamp": "20130331001652",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0018/"
+    },
+    {
+      "timestamp": "20130506021511",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0020/"
+    },
+    {
+      "timestamp": "20130331001657",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0021/"
+    },
+    {
+      "timestamp": "20130330233035",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0022/"
+    },
+    {
+      "timestamp": "20130330233040",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0023/"
+    },
+    {
+      "timestamp": "20130330233045",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0024/"
+    },
+    {
+      "timestamp": "20130330233050",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0025/"
+    },
+    {
+      "timestamp": "20130330233055",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0026/"
+    },
+    {
+      "timestamp": "20130331001704",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0027/"
+    },
+    {
+      "timestamp": "20130331001707",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0028/"
+    },
+    {
+      "timestamp": "20130331001712",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0029/"
+    },
+    {
+      "timestamp": "20130331001717",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0030/"
+    },
+    {
+      "timestamp": "20130330233100",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0031/"
+    },
+    {
+      "timestamp": "20130331001723",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0032/"
+    },
+    {
+      "timestamp": "20130329144253",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0033/"
+    },
+    {
+      "timestamp": "20130330233105",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0034/"
+    },
+    {
+      "timestamp": "20130331001730",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0035/"
+    },
+    {
+      "timestamp": "20130329144258",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0036/"
+    },
+    {
+      "timestamp": "20130330233110",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0037/"
+    },
+    {
+      "timestamp": "20130410063742",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0038/"
+    },
+    {
+      "timestamp": "20130410063402",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0039/"
+    },
+    {
+      "timestamp": "20130522075209",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0040/"
+    },
+    {
+      "timestamp": "20130517132233",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0041/"
+    },
+    {
+      "timestamp": "20130506041835",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0042/"
+    },
+    {
+      "timestamp": "20130618170151",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0043/"
+    },
+    {
+      "timestamp": "20130507164547",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0044/"
+    },
+    {
+      "timestamp": "20130705081826",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0045/"
+    },
+    {
+      "timestamp": "20130703052856",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0046/"
+    },
+    {
+      "timestamp": "20130703023322",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0047/"
+    },
+    {
+      "timestamp": "20130718081933",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0048/"
+    },
+    {
+      "timestamp": "20130627071736",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0049/"
+    },
+    {
+      "timestamp": "20130626151842",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0050/"
+    },
+    {
+      "timestamp": "20130703023412",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0051/"
+    },
+    {
+      "timestamp": "20130627071220",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0052/"
+    },
+    {
+      "timestamp": "20130627071741",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0053/"
+    },
+    {
+      "timestamp": "20130703051540",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0054/"
+    },
+    {
+      "timestamp": "20130629021020",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0055/"
+    },
+    {
+      "timestamp": "20130730040546",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0056/"
+    },
+    {
+      "timestamp": "20130825112102",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0057/"
+    },
+    {
+      "timestamp": "20131001234019",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0058/"
+    },
+    {
+      "timestamp": "20130825091619",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0059/"
+    },
+    {
+      "timestamp": "20131201100506",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0060/"
+    },
+    {
+      "timestamp": "20131201100518",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0061/"
+    },
+    {
+      "timestamp": "20131130162916",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0062/"
+    },
+    {
+      "timestamp": "20131125023702",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0063/"
+    },
+    {
+      "timestamp": "20131130172747",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0064/"
+    },
+    {
+      "timestamp": "20131130081906",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0068/"
+    },
+    {
+      "timestamp": "20131130054246",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0080/"
+    },
+    {
+      "timestamp": "20131229235053",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0083/"
+    },
+    {
+      "timestamp": "20131230145145",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/0086/"
+    },
+    {
+      "timestamp": "20130408034639",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/anime/index.html"
+    },
+    {
+      "timestamp": "20130329122950",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/"
+    },
+    {
+      "timestamp": "20130331001733",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0001/"
+    },
+    {
+      "timestamp": "20130330233115",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0003/"
+    },
+    {
+      "timestamp": "20130330233120",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0005/"
+    },
+    {
+      "timestamp": "20130331001738",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0006/"
+    },
+    {
+      "timestamp": "20130330233125",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0007/"
+    },
+    {
+      "timestamp": "20130330233130",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0008/"
+    },
+    {
+      "timestamp": "20130330233135",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0009/"
+    },
+    {
+      "timestamp": "20130331001743",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0010/"
+    },
+    {
+      "timestamp": "20130330233140",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0011/"
+    },
+    {
+      "timestamp": "20130331001755",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0012/"
+    },
+    {
+      "timestamp": "20130330233145",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0013/"
+    },
+    {
+      "timestamp": "20130330233150",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0014/"
+    },
+    {
+      "timestamp": "20130331001800",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0015/"
+    },
+    {
+      "timestamp": "20130330233155",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0016/"
+    },
+    {
+      "timestamp": "20130331001803",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0017/"
+    },
+    {
+      "timestamp": "20130331001809",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0018/"
+    },
+    {
+      "timestamp": "20130331001814",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0019/"
+    },
+    {
+      "timestamp": "20130331001818",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0020/"
+    },
+    {
+      "timestamp": "20130331001824",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0021/"
+    },
+    {
+      "timestamp": "20130331001829",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0022/"
+    },
+    {
+      "timestamp": "20130330233201",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0023/"
+    },
+    {
+      "timestamp": "20130331001836",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0024/"
+    },
+    {
+      "timestamp": "20130330233206",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0025/"
+    },
+    {
+      "timestamp": "20130331001841",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0026/"
+    },
+    {
+      "timestamp": "20130329144303",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0027/"
+    },
+    {
+      "timestamp": "20130329144519",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0028/"
+    },
+    {
+      "timestamp": "20130331001844",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0029/"
+    },
+    {
+      "timestamp": "20130331001849",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0030/"
+    },
+    {
+      "timestamp": "20130330233211",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0031/"
+    },
+    {
+      "timestamp": "20130331001855",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0032/"
+    },
+    {
+      "timestamp": "20130330233216",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0033/"
+    },
+    {
+      "timestamp": "20130330233221",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0034/"
+    },
+    {
+      "timestamp": "20130330233226",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0035/"
+    },
+    {
+      "timestamp": "20130330235911",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0036/"
+    },
+    {
+      "timestamp": "20130330235915",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0037/"
+    },
+    {
+      "timestamp": "20130331001900",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0038/"
+    },
+    {
+      "timestamp": "20130331001139",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0039/"
+    },
+    {
+      "timestamp": "20130331001143",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0040/"
+    },
+    {
+      "timestamp": "20130331001905",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0041/"
+    },
+    {
+      "timestamp": "20130331001909",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0042/"
+    },
+    {
+      "timestamp": "20130331001915",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0043/"
+    },
+    {
+      "timestamp": "20130331001919",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0044/"
+    },
+    {
+      "timestamp": "20130331001925",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0045/"
+    },
+    {
+      "timestamp": "20130513193618",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0046/"
+    },
+    {
+      "timestamp": "20130522165718",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0047/"
+    },
+    {
+      "timestamp": "20130517124834",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0048/"
+    },
+    {
+      "timestamp": "20130513123726",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0049/"
+    },
+    {
+      "timestamp": "20130517131040",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0050/"
+    },
+    {
+      "timestamp": "20130517132238",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0051/"
+    },
+    {
+      "timestamp": "20130513140223",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0052/"
+    },
+    {
+      "timestamp": "20130522075549",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0053/"
+    },
+    {
+      "timestamp": "20130517125154",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0054/"
+    },
+    {
+      "timestamp": "20130517124839",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0055/"
+    },
+    {
+      "timestamp": "20130514014623",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0056/"
+    },
+    {
+      "timestamp": "20130705050928",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0058/"
+    },
+    {
+      "timestamp": "20130618214452",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0059/"
+    },
+    {
+      "timestamp": "20130619084052",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0060/"
+    },
+    {
+      "timestamp": "20130627071751",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0061/"
+    },
+    {
+      "timestamp": "20130619015039",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0062/"
+    },
+    {
+      "timestamp": "20130706032739",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0063/"
+    },
+    {
+      "timestamp": "20130710065014",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0064/"
+    },
+    {
+      "timestamp": "20130627072412",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0065/"
+    },
+    {
+      "timestamp": "20130826100215",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0066/"
+    },
+    {
+      "timestamp": "20130703051720",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0067/"
+    },
+    {
+      "timestamp": "20130825091623",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0069/"
+    },
+    {
+      "timestamp": "20130802131515",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0072/"
+    },
+    {
+      "timestamp": "20130802131942",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0073/"
+    },
+    {
+      "timestamp": "20131003130313",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0074/"
+    },
+    {
+      "timestamp": "20131001233915",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0075/"
+    },
+    {
+      "timestamp": "20131006112746",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0078/"
+    },
+    {
+      "timestamp": "20131006112751",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0079/"
+    },
+    {
+      "timestamp": "20131006105757",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0080/"
+    },
+    {
+      "timestamp": "20131006113015",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0081/"
+    },
+    {
+      "timestamp": "20131006113019",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0082/"
+    },
+    {
+      "timestamp": "20131130173434",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0083/"
+    },
+    {
+      "timestamp": "20131229235557",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0084/"
+    },
+    {
+      "timestamp": "20131130181142",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0085/"
+    },
+    {
+      "timestamp": "20131201100410",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0086/"
+    },
+    {
+      "timestamp": "20131011040510",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0092/"
+    },
+    {
+      "timestamp": "20131130081901",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0093/"
+    },
+    {
+      "timestamp": "20131130181204",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0094/"
+    },
+    {
+      "timestamp": "20131115033835",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0097/"
+    },
+    {
+      "timestamp": "20131229215828",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0098/"
+    },
+    {
+      "timestamp": "20131229235057",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0102/"
+    },
+    {
+      "timestamp": "20131230040003",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0103/"
+    },
+    {
+      "timestamp": "20131208224252",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0108/"
+    },
+    {
+      "timestamp": "20131215011436",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/0109/"
+    },
+    {
+      "timestamp": "20130503101932",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/drama/index.html"
+    },
+    {
+      "timestamp": "20130329144523",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/info/"
+    },
+    {
+      "timestamp": "20130331015710",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/info/0002/"
+    },
+    {
+      "timestamp": "20130331015715",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/info/0003/"
+    },
+    {
+      "timestamp": "20130331015722",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/info/0005/"
+    },
+    {
+      "timestamp": "20130331015726",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/info/0007/"
+    },
+    {
+      "timestamp": "20130331015732",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/info/0008/"
+    },
+    {
+      "timestamp": "20130331015736",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/info/0009/"
+    },
+    {
+      "timestamp": "20130331015741",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/info/0010/"
+    },
+    {
+      "timestamp": "20130331015747",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/info/0011/"
+    },
+    {
+      "timestamp": "20130331015752",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/info/0012/"
+    },
+    {
+      "timestamp": "20130331015757",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/info/0013/"
+    },
+    {
+      "timestamp": "20130331015802",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/info/0014/"
+    },
+    {
+      "timestamp": "20130331015807",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/info/0015/"
+    },
+    {
+      "timestamp": "20130331015812",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/info/0016/"
+    },
+    {
+      "timestamp": "20130331015816",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/info/0017/"
+    },
+    {
+      "timestamp": "20130331015822",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/info/0018/"
+    },
+    {
+      "timestamp": "20131121040034",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/info/0020/"
+    },
+    {
+      "timestamp": "20130329144527",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/news/"
+    },
+    {
+      "timestamp": "20130331001148",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/news/0003/"
+    },
+    {
+      "timestamp": "20130331001930",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/news/0004/"
+    },
+    {
+      "timestamp": "20130331001200",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/news/0005/"
+    },
+    {
+      "timestamp": "20130331001935",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/news/0006/"
+    },
+    {
+      "timestamp": "20130331001204",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/news/0007/"
+    },
+    {
+      "timestamp": "20130331001941",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/news/0008/"
+    },
+    {
+      "timestamp": "20130331001211",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/news/0009/"
+    },
+    {
+      "timestamp": "20131121013316",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/news/0011/"
+    },
+    {
+      "timestamp": "20130329144309",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/oshirase/0001/"
+    },
+    {
+      "timestamp": "20130622085334",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/oshirase/0005/"
+    },
+    {
+      "timestamp": "20130503102909",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/oshirase/0006/"
+    },
+    {
+      "timestamp": "20130609211825",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/oshirase/0010/"
+    },
+    {
+      "timestamp": "20130614022729",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/oshirase/0012/"
+    },
+    {
+      "timestamp": "20131014145315",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/oshirase/0026/"
+    },
+    {
+      "timestamp": "20130329144533",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/osusume/ch1/"
+    },
+    {
+      "timestamp": "20130412012729",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/osusume/ch1/next.html"
+    },
+    {
+      "timestamp": "20130331015827",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/osusume/ch2/"
+    },
+    {
+      "timestamp": "20130329120839",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/"
+    },
+    {
+      "timestamp": "20130329144538",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0003/"
+    },
+    {
+      "timestamp": "20130329144314",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0004/"
+    },
+    {
+      "timestamp": "20130331001214",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0005/"
+    },
+    {
+      "timestamp": "20130331001946",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0006/"
+    },
+    {
+      "timestamp": "20130329144318",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0007/"
+    },
+    {
+      "timestamp": "20130331001220",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0008/"
+    },
+    {
+      "timestamp": "20130331001951",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0009/"
+    },
+    {
+      "timestamp": "20130330092856",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0010/"
+    },
+    {
+      "timestamp": "20130331001225",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0011/"
+    },
+    {
+      "timestamp": "20130331001956",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0012/"
+    },
+    {
+      "timestamp": "20130331001230",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0013/"
+    },
+    {
+      "timestamp": "20130407022005",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0014/"
+    },
+    {
+      "timestamp": "20130331002001",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0015/"
+    },
+    {
+      "timestamp": "20130331002006",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0016/"
+    },
+    {
+      "timestamp": "20130331001237",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0017/"
+    },
+    {
+      "timestamp": "20130331002011",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0018/"
+    },
+    {
+      "timestamp": "20130331001240",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0019/"
+    },
+    {
+      "timestamp": "20130331002017",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0020/"
+    },
+    {
+      "timestamp": "20130331002021",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0021/"
+    },
+    {
+      "timestamp": "20130329144543",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0022/"
+    },
+    {
+      "timestamp": "20130406044414",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0023/"
+    },
+    {
+      "timestamp": "20130402043307",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0024/"
+    },
+    {
+      "timestamp": "20130609211835",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0025/"
+    },
+    {
+      "timestamp": "20130712195331",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0027/"
+    },
+    {
+      "timestamp": "20130609072813",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0028/"
+    },
+    {
+      "timestamp": "20130619062913",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0029/"
+    },
+    {
+      "timestamp": "20130510023227",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0030/"
+    },
+    {
+      "timestamp": "20131121013432",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0031/"
+    },
+    {
+      "timestamp": "20130712195115",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0033/"
+    },
+    {
+      "timestamp": "20130721071207",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0038/"
+    },
+    {
+      "timestamp": "20130721133442",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0039/"
+    },
+    {
+      "timestamp": "20130627071758",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0040/"
+    },
+    {
+      "timestamp": "20130627014635",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0042/"
+    },
+    {
+      "timestamp": "20130705225001",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0043/"
+    },
+    {
+      "timestamp": "20130721032107",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0044/"
+    },
+    {
+      "timestamp": "20130721071212",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0045/"
+    },
+    {
+      "timestamp": "20131122014442",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0046/"
+    },
+    {
+      "timestamp": "20130711022001",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0047/"
+    },
+    {
+      "timestamp": "20130901031943",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0050/"
+    },
+    {
+      "timestamp": "20130916073530",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0051/"
+    },
+    {
+      "timestamp": "20130721071225",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0052/"
+    },
+    {
+      "timestamp": "20131122015230",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0057/"
+    },
+    {
+      "timestamp": "20131121200855",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0058/"
+    },
+    {
+      "timestamp": "20130920160741",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0059/"
+    },
+    {
+      "timestamp": "20131122141136",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0060/"
+    },
+    {
+      "timestamp": "20131121013437",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0061/"
+    },
+    {
+      "timestamp": "20130929004102",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0062/"
+    },
+    {
+      "timestamp": "20131023113234",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0065/"
+    },
+    {
+      "timestamp": "20131121200722",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0067/"
+    },
+    {
+      "timestamp": "20131122014452",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0068/"
+    },
+    {
+      "timestamp": "20131209121402",
+      "original": "http://www.tv-asahi.co.jp/ch/contents/sports/0073/"
+    },
+    {
+      "timestamp": "20131122140137",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0074/"
+    },
+    {
+      "timestamp": "20131126103037",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/0075/"
+    },
+    {
+      "timestamp": "20130426053353",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/sports/index.html"
+    },
+    {
+      "timestamp": "20130331024648",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1303_5.html"
+    },
+    {
+      "timestamp": "20130404014608",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1304_1.html"
+    },
+    {
+      "timestamp": "20130416030655",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1304_2.html"
+    },
+    {
+      "timestamp": "20130423101159",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1304_3.html"
+    },
+    {
+      "timestamp": "20130428000215",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1304_4.html"
+    },
+    {
+      "timestamp": "20130430075736",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1304_5.html"
+    },
+    {
+      "timestamp": "20130428014316",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1305_1.html"
+    },
+    {
+      "timestamp": "20130428014428",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1305_2.html"
+    },
+    {
+      "timestamp": "20130504013505",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1305_3.html"
+    },
+    {
+      "timestamp": "20130504013211",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1305_4.html"
+    },
+    {
+      "timestamp": "20130504013231",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1305_5.html"
+    },
+    {
+      "timestamp": "20130607230315",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1306_1.html"
+    },
+    {
+      "timestamp": "20130608123206",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1306_2.html"
+    },
+    {
+      "timestamp": "20130609072415",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1306_3.html"
+    },
+    {
+      "timestamp": "20130609210215",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1306_4.html"
+    },
+    {
+      "timestamp": "20130616133313",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1306_5.html"
+    },
+    {
+      "timestamp": "20130703023536",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1307_1.html"
+    },
+    {
+      "timestamp": "20130706032816",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1307_2.html"
+    },
+    {
+      "timestamp": "20130706035337",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1307_3.html"
+    },
+    {
+      "timestamp": "20130706030131",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1307_4.html"
+    },
+    {
+      "timestamp": "20130706032826",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1307_5.html"
+    },
+    {
+      "timestamp": "20130729183256",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1308_1.html"
+    },
+    {
+      "timestamp": "20130823033059",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1308_4.html"
+    },
+    {
+      "timestamp": "20130829050907",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1308_5.html"
+    },
+    {
+      "timestamp": "20130911141746",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1309_2.html"
+    },
+    {
+      "timestamp": "20130928063504",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1309_5.html"
+    },
+    {
+      "timestamp": "20131006112837",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1309_6.html"
+    },
+    {
+      "timestamp": "20131006111451",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1310_1.html"
+    },
+    {
+      "timestamp": "20131027084026",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1310_4.html"
+    },
+    {
+      "timestamp": "20131120061435",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1311_3.html"
+    },
+    {
+      "timestamp": "20131128162751",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1311_5.html"
+    },
+    {
+      "timestamp": "20131228115542",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch1/bangumi/1312_5.html"
+    },
+    {
+      "timestamp": "20130402041538",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1303_5.html"
+    },
+    {
+      "timestamp": "20130404012841",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1304_1.html"
+    },
+    {
+      "timestamp": "20130407022039",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1304_2.html"
+    },
+    {
+      "timestamp": "20130407022059",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1304_3.html"
+    },
+    {
+      "timestamp": "20130407022120",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1304_4.html"
+    },
+    {
+      "timestamp": "20130407022138",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1304_5.html"
+    },
+    {
+      "timestamp": "20130510021918",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1305_2.html"
+    },
+    {
+      "timestamp": "20130618220550",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1305_3.html"
+    },
+    {
+      "timestamp": "20130608042528",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1305_4.html"
+    },
+    {
+      "timestamp": "20130607225939",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1306_1.html"
+    },
+    {
+      "timestamp": "20130613033953",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1306_2.html"
+    },
+    {
+      "timestamp": "20130613034333",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1306_3.html"
+    },
+    {
+      "timestamp": "20130618180703",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1306_4.html"
+    },
+    {
+      "timestamp": "20130618194732",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1306_5.html"
+    },
+    {
+      "timestamp": "20130711010402",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1307_1.html"
+    },
+    {
+      "timestamp": "20130711010645",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1307_2.html"
+    },
+    {
+      "timestamp": "20130719015248",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1307_3.html"
+    },
+    {
+      "timestamp": "20130722072009",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1307_4.html"
+    },
+    {
+      "timestamp": "20130723152010",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1307_5.html"
+    },
+    {
+      "timestamp": "20131122015248",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1310_4.html"
+    },
+    {
+      "timestamp": "20131122015259",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1311_1.html"
+    },
+    {
+      "timestamp": "20131124041522",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1311_2.html"
+    },
+    {
+      "timestamp": "20131119114926",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1311_3.html"
+    },
+    {
+      "timestamp": "20131122014524",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1311_4.html"
+    },
+    {
+      "timestamp": "20131122015939",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/timetable/ch2/bangumi/1311_5.html"
+    },
+    {
+      "timestamp": "20130328050001",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/"
+    },
+    {
+      "timestamp": "20130331001245",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0001/"
+    },
+    {
+      "timestamp": "20130328050005",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0002/"
+    },
+    {
+      "timestamp": "20130402043313",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0003/"
+    },
+    {
+      "timestamp": "20130404183448",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0004/"
+    },
+    {
+      "timestamp": "20130406021147",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0005/"
+    },
+    {
+      "timestamp": "20130406021152",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0006/"
+    },
+    {
+      "timestamp": "20130404030131",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0007/"
+    },
+    {
+      "timestamp": "20130406021202",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0008/"
+    },
+    {
+      "timestamp": "20130405030948",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0009/"
+    },
+    {
+      "timestamp": "20130405022219",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0010/"
+    },
+    {
+      "timestamp": "20130402183207",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0012/"
+    },
+    {
+      "timestamp": "20130331024649",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0013/"
+    },
+    {
+      "timestamp": "20130406021207",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0014/"
+    },
+    {
+      "timestamp": "20130611101231",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0014/backnumber.html"
+    },
+    {
+      "timestamp": "20130405025155",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0015/"
+    },
+    {
+      "timestamp": "20130405025200",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0016/"
+    },
+    {
+      "timestamp": "20130403003112",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0017/"
+    },
+    {
+      "timestamp": "20130331024927",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0018/"
+    },
+    {
+      "timestamp": "20130403112551",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0019/"
+    },
+    {
+      "timestamp": "20130331002835",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0020/"
+    },
+    {
+      "timestamp": "20130404030136",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0021/"
+    },
+    {
+      "timestamp": "20130406021223",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0021/backnumber.html"
+    },
+    {
+      "timestamp": "20130328064734",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0022/"
+    },
+    {
+      "timestamp": "20130417175323",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0024/"
+    },
+    {
+      "timestamp": "20130506031814",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0025/"
+    },
+    {
+      "timestamp": "20130417130843",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0026/"
+    },
+    {
+      "timestamp": "20130615042141",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0027/"
+    },
+    {
+      "timestamp": "20130412012837",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0028/"
+    },
+    {
+      "timestamp": "20130506031819",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0029/"
+    },
+    {
+      "timestamp": "20130517131049",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0030/"
+    },
+    {
+      "timestamp": "20130607225525",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0031/"
+    },
+    {
+      "timestamp": "20130609042427",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0032/"
+    },
+    {
+      "timestamp": "20130730052128",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0033/"
+    },
+    {
+      "timestamp": "20130729123750",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0034/"
+    },
+    {
+      "timestamp": "20130622013103",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0035/"
+    },
+    {
+      "timestamp": "20130826114914",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0036/"
+    },
+    {
+      "timestamp": "20131006112724",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0037/"
+    },
+    {
+      "timestamp": "20131003125442",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0038/"
+    },
+    {
+      "timestamp": "20130826115006",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0039/"
+    },
+    {
+      "timestamp": "20131130115943",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0041/"
+    },
+    {
+      "timestamp": "20131023114007",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0042/"
+    },
+    {
+      "timestamp": "20131029195720",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0043/"
+    },
+    {
+      "timestamp": "20131129195748",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0044/"
+    },
+    {
+      "timestamp": "20131130162953",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0045/"
+    },
+    {
+      "timestamp": "20131108235318",
+      "original": "http://www.tv-asahi.co.jp/ch/contents/variety/0046/"
+    },
+    {
+      "timestamp": "20131201100539",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0047/"
+    },
+    {
+      "timestamp": "20131201100415",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0048/"
+    },
+    {
+      "timestamp": "20131228085403",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/0050/"
+    },
+    {
+      "timestamp": "20130404012843",
+      "original": "http://www.tv-asahi.co.jp:80/ch/contents/variety/index.html"
+    },
+    {
+      "timestamp": "20130924064936",
+      "original": "http://www.tv-asahi.co.jp:80/ch/dreamfestival/"
+    },
+    {
+      "timestamp": "20131219044739",
+      "original": "http://www.tv-asahi.co.jp:80/ch/dreamfestival/index.html"
+    },
+    {
+      "timestamp": "20130524204225",
+      "original": "http://www.tv-asahi.co.jp/ch/i/jump/renewal.html"
+    },
+    {
+      "timestamp": "20131025031129",
+      "original": "http://www.tv-asahi.co.jp:80/ch/jump/nikodo.html"
+    },
+    {
+      "timestamp": "20130329231914",
+      "original": "http://www.tv-asahi.co.jp/ch/jump/renewal.html"
+    },
+    {
+      "timestamp": "20130404030141",
+      "original": "http://www.tv-asahi.co.jp:80/ch/jump/youtube.html"
+    },
+    {
+      "timestamp": "20130331001250",
+      "original": "http://www.tv-asahi.co.jp:80/ch/method/"
+    },
+    {
+      "timestamp": "20130401090557",
+      "original": "http://www.tv-asahi.co.jp:80/ch/method/catv.html"
+    },
+    {
+      "timestamp": "20130502005713",
+      "original": "http://www.tv-asahi.co.jp:80/ch/method/skyperectv_ch2_campaign.html"
+    },
+    {
+      "timestamp": "20130331025229",
+      "original": "http://www.tv-asahi.co.jp:80/ch/method/skyperfectv.html"
+    },
+    {
+      "timestamp": "20130402011358",
+      "original": "http://www.tv-asahi.co.jp:80/ch/method/skyperfectv_hd.html"
+    },
+    {
+      "timestamp": "20130402011517",
+      "original": "http://www.tv-asahi.co.jp:80/ch/method/skyperfectv_hikari.html"
+    },
+    {
+      "timestamp": "20131229013243",
+      "original": "http://www.tv-asahi.co.jp:80/ch/momoclo/"
+    },
+    {
+      "timestamp": "20131028003233",
+      "original": "http://www.tv-asahi.co.jp/ch/parts/aside.html"
+    },
+    {
+      "timestamp": "20130920034725",
+      "original": "http://www.tv-asahi.co.jp/ch/parts/footer.html"
+    },
+    {
+      "timestamp": "20130920034724",
+      "original": "http://www.tv-asahi.co.jp/ch/parts/footersub.html"
+    },
+    {
+      "timestamp": "20131028003232",
+      "original": "http://www.tv-asahi.co.jp/ch/parts/header.html"
+    },
+    {
+      "timestamp": "20130920034724",
+      "original": "http://www.tv-asahi.co.jp/ch/parts/load.php?fm=sys/movie_genre&t=201309201247"
+    },
+    {
+      "timestamp": "20130920034724",
+      "original": "http://www.tv-asahi.co.jp/ch/parts/load.php?fm=sys/movie_recommend&t=201309201247"
+    },
+    {
+      "timestamp": "20130920034724",
+      "original": "http://www.tv-asahi.co.jp/ch/parts/load.php?fm=sys/taste_genre&t=201309201247"
+    },
+    {
+      "timestamp": "20130920034725",
+      "original": "http://www.tv-asahi.co.jp/ch/parts/load.php?fm=sys/variety_genre&t=201309201247"
+    },
+    {
+      "timestamp": "20131028003232",
+      "original": "http://www.tv-asahi.co.jp/ch/parts/load.php?fm=sys/variety_genre&t=201310280932"
+    },
+    {
+      "timestamp": "20130920034726",
+      "original": "http://www.tv-asahi.co.jp/ch/parts/load.php?fm=sys/variety_recommend&t=201309201247"
+    },
+    {
+      "timestamp": "20131028003232",
+      "original": "http://www.tv-asahi.co.jp/ch/parts/load.php?fm=sys/variety_recommend&t=201310280932"
+    },
+    {
+      "timestamp": "20130920034724",
+      "original": "http://www.tv-asahi.co.jp/ch/parts/nav.html"
+    },
+    {
+      "timestamp": "20130608074355",
+      "original": "http://www.tv-asahi.co.jp:80/ch/qa/"
+    },
+    {
+      "timestamp": "20130402041902",
+      "original": "http://www.tv-asahi.co.jp:80/ch/seibu/"
+    },
+    {
+      "timestamp": "20131203234423",
+      "original": "http://www.tv-asahi.co.jp/ch/sphone/trick/present.html"
+    },
+    {
+      "timestamp": "20130611101237",
+      "original": "http://www.tv-asahi.co.jp:80/ch/sphone/variety/0013/"
+    },
+    {
+      "timestamp": "20130716213527",
+      "original": "http://www.tv-asahi.co.jp:80/ch/superheromax/"
+    },
+    {
+      "timestamp": "20130716213532",
+      "original": "http://www.tv-asahi.co.jp:80/ch/superheromax/index.html"
+    },
+    {
+      "timestamp": "20130716172330",
+      "original": "http://www.tv-asahi.co.jp:80/ch/superheromax/index_02.html"
+    },
+    {
+      "timestamp": "20130716213537",
+      "original": "http://www.tv-asahi.co.jp:80/ch/superheromax/index_03.html"
+    },
+    {
+      "timestamp": "20131204003106",
+      "original": "http://www.tv-asahi.co.jp/ch/trick/present.html"
+    },
+    {
+      "timestamp": "20130815215635",
+      "original": "http://www.tv-asahi.co.jp:80/ch/wrestling/"
+    },
+    {
+      "timestamp": "20130115143118",
+      "original": "http://www.tv-asahi.co.jp/channel/"
+    },
+    {
+      "timestamp": "20130208110917",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/"
+    },
+    {
+      "timestamp": "20130126131815",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0027/"
+    },
+    {
+      "timestamp": "20130301162228",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0028/"
+    },
+    {
+      "timestamp": "20130108162521",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0029/"
+    },
+    {
+      "timestamp": "20130114200705",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0030/"
+    },
+    {
+      "timestamp": "20130104021443",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0031/"
+    },
+    {
+      "timestamp": "20130114181630",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0033/"
+    },
+    {
+      "timestamp": "20130102013111",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0036/"
+    },
+    {
+      "timestamp": "20130212020731",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0037/"
+    },
+    {
+      "timestamp": "20130202012546",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0038/"
+    },
+    {
+      "timestamp": "20130102013116",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0039/"
+    },
+    {
+      "timestamp": "20130102013121",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0040/"
+    },
+    {
+      "timestamp": "20130118084502",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0043/"
+    },
+    {
+      "timestamp": "20130110045636",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0044/"
+    },
+    {
+      "timestamp": "20130109014523",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0045/"
+    },
+    {
+      "timestamp": "20130114181635",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0046/"
+    },
+    {
+      "timestamp": "20130102013126",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0047/"
+    },
+    {
+      "timestamp": "20130111031640",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0048/"
+    },
+    {
+      "timestamp": "20130102013521",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0094/"
+    },
+    {
+      "timestamp": "20130212190226",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0128/"
+    },
+    {
+      "timestamp": "20130212194344",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0130/"
+    },
+    {
+      "timestamp": "20130102013131",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0154/"
+    },
+    {
+      "timestamp": "20130216232242",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0216/"
+    },
+    {
+      "timestamp": "20130127070818",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0244/"
+    },
+    {
+      "timestamp": "20130102013527",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0255/"
+    },
+    {
+      "timestamp": "20130201173919",
+      "original": "http://www.tv-asahi.co.jp/channel/contents/anime/0256/"
+    },
+    {
+      "timestamp": "20130103014541",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0259/"
+    },
+    {
+      "timestamp": "20130102013136",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0260/"
+    },
+    {
+      "timestamp": "20130108101448",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0266/"
+    },
+    {
+      "timestamp": "20130102013142",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0272/"
+    },
+    {
+      "timestamp": "20130102013632",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0273/"
+    },
+    {
+      "timestamp": "20130307142748",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0274/"
+    },
+    {
+      "timestamp": "20130306053351",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0275/"
+    },
+    {
+      "timestamp": "20130129223843",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0276/"
+    },
+    {
+      "timestamp": "20130307142753",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0277/"
+    },
+    {
+      "timestamp": "20130306043626",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0279/"
+    },
+    {
+      "timestamp": "20130307143307",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0280/"
+    },
+    {
+      "timestamp": "20130114080255",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0281/"
+    },
+    {
+      "timestamp": "20130124122423",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0282/"
+    },
+    {
+      "timestamp": "20130203070349",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0283/"
+    },
+    {
+      "timestamp": "20130102063100",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0285/"
+    },
+    {
+      "timestamp": "20130102062733",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0286/"
+    },
+    {
+      "timestamp": "20130109014528",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0287/"
+    },
+    {
+      "timestamp": "20130102062140",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0288/"
+    },
+    {
+      "timestamp": "20130127023553",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0289/"
+    },
+    {
+      "timestamp": "20130108013936",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0290/"
+    },
+    {
+      "timestamp": "20130306052206",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0291/"
+    },
+    {
+      "timestamp": "20130309053207",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0292/"
+    },
+    {
+      "timestamp": "20130302105400",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/anime/0295/"
+    },
+    {
+      "timestamp": "20130127062037",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/"
+    },
+    {
+      "timestamp": "20130207032743",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0056/"
+    },
+    {
+      "timestamp": "20130218085302",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0079/"
+    },
+    {
+      "timestamp": "20130127063257",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0080/"
+    },
+    {
+      "timestamp": "20130102063105",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0418/"
+    },
+    {
+      "timestamp": "20130114080530",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0419/"
+    },
+    {
+      "timestamp": "20130124122428",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0423/"
+    },
+    {
+      "timestamp": "20130103063448",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0424/"
+    },
+    {
+      "timestamp": "20130212115043",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0425/"
+    },
+    {
+      "timestamp": "20130121132412",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0426/"
+    },
+    {
+      "timestamp": "20130206193919",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0427/"
+    },
+    {
+      "timestamp": "20130114080301",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0433/"
+    },
+    {
+      "timestamp": "20130102224928",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0441/"
+    },
+    {
+      "timestamp": "20130206213641",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0442/"
+    },
+    {
+      "timestamp": "20130114181640",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0443/"
+    },
+    {
+      "timestamp": "20130202015500",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0449/"
+    },
+    {
+      "timestamp": "20130114080541",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0450/"
+    },
+    {
+      "timestamp": "20130212190244",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0451/"
+    },
+    {
+      "timestamp": "20130123005815",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0452/"
+    },
+    {
+      "timestamp": "20130102062153",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0453/"
+    },
+    {
+      "timestamp": "20130102063134",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0454/"
+    },
+    {
+      "timestamp": "20130207044633",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0456/"
+    },
+    {
+      "timestamp": "20130114080306",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0457/"
+    },
+    {
+      "timestamp": "20130212115133",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0458/"
+    },
+    {
+      "timestamp": "20130114080313",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0462/"
+    },
+    {
+      "timestamp": "20130102062741",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0463/"
+    },
+    {
+      "timestamp": "20130103014609",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0467/"
+    },
+    {
+      "timestamp": "20130102233053",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0468/"
+    },
+    {
+      "timestamp": "20130102233100",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0469/"
+    },
+    {
+      "timestamp": "20130114080339",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0470/"
+    },
+    {
+      "timestamp": "20130102033653",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0473/"
+    },
+    {
+      "timestamp": "20130102062203",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0474/"
+    },
+    {
+      "timestamp": "20130102062806",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0475/"
+    },
+    {
+      "timestamp": "20130114080344",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0476/"
+    },
+    {
+      "timestamp": "20130124054838",
+      "original": "http://www.tv-asahi.co.jp/channel/contents/dorama/0477/"
+    },
+    {
+      "timestamp": "20130124054845",
+      "original": "http://www.tv-asahi.co.jp/channel/contents/dorama/0478/"
+    },
+    {
+      "timestamp": "20130102010245",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0479/"
+    },
+    {
+      "timestamp": "20130102010251",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0480/"
+    },
+    {
+      "timestamp": "20130102062208",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0481/"
+    },
+    {
+      "timestamp": "20130114080549",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0482/"
+    },
+    {
+      "timestamp": "20130124054842",
+      "original": "http://www.tv-asahi.co.jp/channel/contents/dorama/0483/"
+    },
+    {
+      "timestamp": "20130306052211",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0486/"
+    },
+    {
+      "timestamp": "20130302105407",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0488/"
+    },
+    {
+      "timestamp": "20130207032747",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0489/"
+    },
+    {
+      "timestamp": "20130308071900",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/dorama/0490/"
+    },
+    {
+      "timestamp": "20130208111252",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/info/"
+    },
+    {
+      "timestamp": "20130202165840",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/info/0032/"
+    },
+    {
+      "timestamp": "20130212190252",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/info/0068/"
+    },
+    {
+      "timestamp": "20130122071513",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/info/0070/"
+    },
+    {
+      "timestamp": "20130101045345",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/info/0108/"
+    },
+    {
+      "timestamp": "20130101043321",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/info/0114/"
+    },
+    {
+      "timestamp": "20130114080601",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/info/0119/"
+    },
+    {
+      "timestamp": "20130202165846",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/info/0120/"
+    },
+    {
+      "timestamp": "20130102033521",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/info/0121/"
+    },
+    {
+      "timestamp": "20130128102257",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/info/0122/"
+    },
+    {
+      "timestamp": "20130208111310",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/movie/"
+    },
+    {
+      "timestamp": "20130111091923",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/movie/0225/"
+    },
+    {
+      "timestamp": "20130111091928",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/movie/0229/"
+    },
+    {
+      "timestamp": "20130111072149",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/movie/0232/"
+    },
+    {
+      "timestamp": "20130111092146",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/movie/0235/"
+    },
+    {
+      "timestamp": "20130101044200",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/movie/0237/"
+    },
+    {
+      "timestamp": "20130111091934",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/movie/0239/"
+    },
+    {
+      "timestamp": "20130111091938",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/movie/0240/"
+    },
+    {
+      "timestamp": "20130224065611",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/movie/0242/"
+    },
+    {
+      "timestamp": "20130225153608",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/movie/index.html"
+    },
+    {
+      "timestamp": "20130208110929",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/music/"
+    },
+    {
+      "timestamp": "20130321004727",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/music/0016/"
+    },
+    {
+      "timestamp": "20130126120306",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/music/0022/"
+    },
+    {
+      "timestamp": "20130321004748",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/music/0046/"
+    },
+    {
+      "timestamp": "20130106052735",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/music/0049/"
+    },
+    {
+      "timestamp": "20130321004802",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/music/0054/"
+    },
+    {
+      "timestamp": "20130131041516",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/music/0061/"
+    },
+    {
+      "timestamp": "20130225105524",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/music/0063/"
+    },
+    {
+      "timestamp": "20130207175213",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/music/0067/"
+    },
+    {
+      "timestamp": "20130106231623",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/music/0073/"
+    },
+    {
+      "timestamp": "20130126105544",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/music/0077/"
+    },
+    {
+      "timestamp": "20130317075500",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/music/0080/"
+    },
+    {
+      "timestamp": "20130127023558",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/music/0081/"
+    },
+    {
+      "timestamp": "20130127010834",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/music/index.html"
+    },
+    {
+      "timestamp": "20130320010310",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/music/index2.html"
+    },
+    {
+      "timestamp": "20130211010650",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/sports/"
+    },
+    {
+      "timestamp": "20130108045750",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/sports/0023/"
+    },
+    {
+      "timestamp": "20130102092210",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/sports/0048/"
+    },
+    {
+      "timestamp": "20130224013948",
+      "original": "http://www.tv-asahi.co.jp/channel/contents/sports/0107/"
+    },
+    {
+      "timestamp": "20130114080606",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/taste/0007/"
+    },
+    {
+      "timestamp": "20130214081231",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/taste/0008/"
+    },
+    {
+      "timestamp": "20130102033658",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/taste/0009/"
+    },
+    {
+      "timestamp": "20130126043356",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/taste/0010/"
+    },
+    {
+      "timestamp": "20130123005643",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/taste/0017/"
+    },
+    {
+      "timestamp": "20130102062811",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/timetable/html/bangumi/1301_2.html"
+    },
+    {
+      "timestamp": "20130102062217",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/timetable/html/bangumi/1301_3.html"
+    },
+    {
+      "timestamp": "20130102063158",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/timetable/html/bangumi/1301_4.html"
+    },
+    {
+      "timestamp": "20130103065339",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/timetable/html/bangumi/1301_5.html"
+    },
+    {
+      "timestamp": "20130129041624",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/timetable/html/bangumi/1302_1.html"
+    },
+    {
+      "timestamp": "20130212122943",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/timetable/html/bangumi/1302_2.html"
+    },
+    {
+      "timestamp": "20130212125416",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/timetable/html/bangumi/1302_3.html"
+    },
+    {
+      "timestamp": "20130204222404",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/timetable/html/bangumi/1302_4.html"
+    },
+    {
+      "timestamp": "20130204222233",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/timetable/html/bangumi/1302_5.html"
+    },
+    {
+      "timestamp": "20130224064834",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/timetable/html/bangumi/1303_1.html"
+    },
+    {
+      "timestamp": "20130307141257",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/timetable/html/bangumi/1303_2.html"
+    },
+    {
+      "timestamp": "20130314035236",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/timetable/html/bangumi/1303_3.html"
+    },
+    {
+      "timestamp": "20130208221213",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/"
+    },
+    {
+      "timestamp": "20130218203328",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0021/"
+    },
+    {
+      "timestamp": "20130124054856",
+      "original": "http://www.tv-asahi.co.jp/channel/contents/variety/0030/"
+    },
+    {
+      "timestamp": "20130212011938",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0034/"
+    },
+    {
+      "timestamp": "20130302205937",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0042/"
+    },
+    {
+      "timestamp": "20130213180713",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0042/backnumber.html"
+    },
+    {
+      "timestamp": "20130213180718",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0051/"
+    },
+    {
+      "timestamp": "20130104011050",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0057/"
+    },
+    {
+      "timestamp": "20130117215710",
+      "original": "http://www.tv-asahi.co.jp/channel/contents/variety/0069/"
+    },
+    {
+      "timestamp": "20130205180113",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0074/"
+    },
+    {
+      "timestamp": "20130217062609",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0075/"
+    },
+    {
+      "timestamp": "20130120033842",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0086/"
+    },
+    {
+      "timestamp": "20130214013133",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0087/"
+    },
+    {
+      "timestamp": "20130123080256",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0090/"
+    },
+    {
+      "timestamp": "20130301010147",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0094/"
+    },
+    {
+      "timestamp": "20130118041442",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0100/"
+    },
+    {
+      "timestamp": "20130317095222",
+      "original": "http://www.tv-asahi.co.jp/channel/contents/variety/0101/"
+    },
+    {
+      "timestamp": "20130123111647",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0106/"
+    },
+    {
+      "timestamp": "20130104173751",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0107/"
+    },
+    {
+      "timestamp": "20130114181645",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0108/"
+    },
+    {
+      "timestamp": "20130102063202",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0109/"
+    },
+    {
+      "timestamp": "20130117151130",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0110/"
+    },
+    {
+      "timestamp": "20130102062347",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0111/"
+    },
+    {
+      "timestamp": "20130101045025",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0112/"
+    },
+    {
+      "timestamp": "20130307141522",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0114/"
+    },
+    {
+      "timestamp": "20130307141310",
+      "original": "http://www.tv-asahi.co.jp:80/channel/contents/variety/0115/"
+    },
+    {
+      "timestamp": "20130312084919",
+      "original": "http://www.tv-asahi.co.jp/channel/contents/variety/index.html"
+    },
+    {
+      "timestamp": "20130305154439",
+      "original": "http://www.tv-asahi.co.jp:80/channel/dora_24sp/index.html"
+    },
+    {
+      "timestamp": "20130306053355",
+      "original": "http://www.tv-asahi.co.jp:80/channel/dora_24sp/index02.html"
+    },
+    {
+      "timestamp": "20130307143316",
+      "original": "http://www.tv-asahi.co.jp:80/channel/dora_24sp/index03.html"
+    },
+    {
+      "timestamp": "20130306035358",
+      "original": "http://www.tv-asahi.co.jp:80/channel/dora_24sp/popup.html"
+    },
+    {
+      "timestamp": "20130312084856",
+      "original": "http://www.tv-asahi.co.jp/channel/index.html"
+    },
+    {
+      "timestamp": "20130101042459",
+      "original": "http://www.tv-asahi.co.jp:80/channel/jump_shinnichi.html"
+    },
+    {
+      "timestamp": "20130114232144",
+      "original": "http://www.tv-asahi.co.jp/channel/melon_present/index.html"
+    },
+    {
+      "timestamp": "20130301012243",
+      "original": "http://www.tv-asahi.co.jp:80/channel/oshirase.html"
+    },
+    {
+      "timestamp": "20130314035241",
+      "original": "http://www.tv-asahi.co.jp:80/channel/shinhensei/"
+    },
+    {
+      "timestamp": "20130125072105",
+      "original": "http://www.tv-asahi.co.jp:80/channel/uedach/pop.html"
+    },
+    {
+      "timestamp": "20130102010259",
+      "original": "http://www.tv-asahi.co.jp:80/chart/"
+    },
+    {
+      "timestamp": "20130104173756",
+      "original": "http://www.tv-asahi.co.jp:80/chart/default/b_sp.html"
+    },
+    {
+      "timestamp": "20130104174025",
+      "original": "http://www.tv-asahi.co.jp:80/chart/default/rectangle.html"
+    },
+    {
+      "timestamp": "20130107235942",
+      "original": "http://www.tv-asahi.co.jp:80/chart/popup/index.html"
+    },
+    {
+      "timestamp": "20130123090015",
+      "original": "http://www.tv-asahi.co.jp/chii_tsuitou/"
+    },
+    {
+      "timestamp": "20130522073754",
+      "original": "http://www.tv-asahi.co.jp:80/chikyu-kiki/index.html"
+    },
+    {
+      "timestamp": "20130428183359",
+      "original": "http://www.tv-asahi.co.jp/chikyukazoku/"
+    },
+    {
+      "timestamp": "20130612004032",
+      "original": "http://www.tv-asahi.co.jp:80/chikyukazoku_2003/contents/program/017/"
+    },
+    {
+      "timestamp": "20130101042937",
+      "original": "http://www.tv-asahi.co.jp:80/chikyukazoku_2003/contents/program/026/index.html"
+    },
+    {
+      "timestamp": "20130619133601",
+      "original": "http://www.tv-asahi.co.jp:80/chikyukazoku_2003/contents/program/046/"
+    },
+    {
+      "timestamp": "20130420202932",
+      "original": "http://www.tv-asahi.co.jp/chikyukazoku_2003/contents/program/046/index.html"
+    },
+    {
+      "timestamp": "20130618225021",
+      "original": "http://www.tv-asahi.co.jp:80/chikyukazoku_2003/contents/program/048/"
+    },
+    {
+      "timestamp": "20130314034842",
+      "original": "http://www.tv-asahi.co.jp/chikyukazoku_2003/contents/program/057/index.html"
+    },
+    {
+      "timestamp": "20130421233949",
+      "original": "http://www.tv-asahi.co.jp:80/chikyukazoku_2003/contents/program/063/"
+    },
+    {
+      "timestamp": "20130328093035",
+      "original": "http://www.tv-asahi.co.jp/chikyukazoku_2003/contents/program/069/index.html"
+    },
+    {
+      "timestamp": "20130317005211",
+      "original": "http://www.tv-asahi.co.jp/chikyukazoku_2003/contents/program/072/index.html"
+    },
+    {
+      "timestamp": "20130127071356",
+      "original": "http://www.tv-asahi.co.jp:80/chikyukazoku_2003/contents/program/backnumber.html"
+    },
+    {
+      "timestamp": "20130114230603",
+      "original": "http://www.tv-asahi.co.jp/chizu/"
+    },
+    {
+      "timestamp": "20130228213410",
+      "original": "http://www.tv-asahi.co.jp/chizu/cast/01.html"
+    },
+    {
+      "timestamp": "20130228213417",
+      "original": "http://www.tv-asahi.co.jp/chizu/cast/02.html"
+    },
+    {
+      "timestamp": "20130228213414",
+      "original": "http://www.tv-asahi.co.jp/chizu/cast/03.html"
+    },
+    {
+      "timestamp": "20130228213430",
+      "original": "http://www.tv-asahi.co.jp/chizu/cast/04.html"
+    },
+    {
+      "timestamp": "20130228213427",
+      "original": "http://www.tv-asahi.co.jp/chizu/cast/05.html"
+    },
+    {
+      "timestamp": "20130228213420",
+      "original": "http://www.tv-asahi.co.jp/chizu/cast/06.html"
+    },
+    {
+      "timestamp": "20130228213433",
+      "original": "http://www.tv-asahi.co.jp/chizu/cast/07.html"
+    },
+    {
+      "timestamp": "20130228213423",
+      "original": "http://www.tv-asahi.co.jp/chizu/cast/08.html"
+    },
+    {
+      "timestamp": "20130228213436",
+      "original": "http://www.tv-asahi.co.jp/chizu/cast/09.html"
+    },
+    {
+      "timestamp": "20130117042011",
+      "original": "http://www.tv-asahi.co.jp/chizu/cast/index.html"
+    },
+    {
+      "timestamp": "20130117042017",
+      "original": "http://www.tv-asahi.co.jp/chizu/index.html"
+    },
+    {
+      "timestamp": "20130117042007",
+      "original": "http://www.tv-asahi.co.jp/chizu/intro/index.html"
+    },
+    {
+      "timestamp": "20130117041933",
+      "original": "http://www.tv-asahi.co.jp/chizu/music_staff/index.html"
+    },
+    {
+      "timestamp": "20130117041936",
+      "original": "http://www.tv-asahi.co.jp/chizu/news/01.html"
+    },
+    {
+      "timestamp": "20130117042004",
+      "original": "http://www.tv-asahi.co.jp/chizu/news/03.html"
+    },
+    {
+      "timestamp": "20130117041939",
+      "original": "http://www.tv-asahi.co.jp/chizu/news/04.html"
+    },
+    {
+      "timestamp": "20130117041950",
+      "original": "http://www.tv-asahi.co.jp/chizu/news/05.html"
+    },
+    {
+      "timestamp": "20130117041946",
+      "original": "http://www.tv-asahi.co.jp/chizu/news/06.html"
+    },
+    {
+      "timestamp": "20130117041954",
+      "original": "http://www.tv-asahi.co.jp/chizu/news/07.html"
+    },
+    {
+      "timestamp": "20130117041943",
+      "original": "http://www.tv-asahi.co.jp/chizu/news/09.html"
+    },
+    {
+      "timestamp": "20130117042014",
+      "original": "http://www.tv-asahi.co.jp/chizu/news/index.html"
+    },
+    {
+      "timestamp": "20130228213407",
+      "original": "http://www.tv-asahi.co.jp/chizu/news/jump01.html"
+    },
+    {
+      "timestamp": "20130117041957",
+      "original": "http://www.tv-asahi.co.jp/chizu/opinion/index.html"
+    },
+    {
+      "timestamp": "20130529235743",
+      "original": "http://www.tv-asahi.co.jp:80/chizu/story/06.html"
+    },
+    {
+      "timestamp": "20130228212711",
+      "original": "http://www.tv-asahi.co.jp/chizu/story/07.html"
+    },
+    {
+      "timestamp": "20130117042001",
+      "original": "http://www.tv-asahi.co.jp/chizu/story/index.html"
+    },
+    {
+      "timestamp": "20130113020409",
+      "original": "http://www.tv-asahi.co.jp:80/chojosp/"
+    },
+    {
+      "timestamp": "20130116120647",
+      "original": "http://www.tv-asahi.co.jp/chojosp/movie/movie.html"
+    },
+    {
+      "timestamp": "20130711074234",
+      "original": "http://www.tv-asahi.co.jp:80/chousensha/"
+    },
+    {
+      "timestamp": "20131212114647",
+      "original": "http://www.tv-asahi.co.jp/chousensha/banner01.html"
+    },
+    {
+      "timestamp": "20130611194316",
+      "original": "http://www.tv-asahi.co.jp:80/chousensha/bk/100213.html"
+    },
+    {
+      "timestamp": "20130403152128",
+      "original": "http://www.tv-asahi.co.jp:80/chushingura/"
+    }
+  ]
+}
