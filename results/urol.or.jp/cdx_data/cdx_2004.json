@@ -1,0 +1,324 @@
+{
+  "domain": "urol.or.jp",
+  "year": 2004,
+  "fetched_at": "2026-04-21T03:44:40+0000",
+  "header": [
+    "timestamp",
+    "original"
+  ],
+  "count": 78,
+  "records": [
+    {
+      "timestamp": "20040205055637",
+      "original": "http://www.urol.or.jp:80/"
+    },
+    {
+      "timestamp": "20040205204055",
+      "original": "http://www.urol.or.jp:80/english/index-e.html"
+    },
+    {
+      "timestamp": "20040206042156",
+      "original": "http://www.urol.or.jp:80/index.html"
+    },
+    {
+      "timestamp": "20040211195638",
+      "original": "http://urol.or.jp:80/kankeisya/info/4thAOCA.html"
+    },
+    {
+      "timestamp": "20040211195826",
+      "original": "http://urol.or.jp:80/kankeisya/info/7thACU.html"
+    },
+    {
+      "timestamp": "20040411112404",
+      "original": "http://urol.or.jp:80/kankeisya/info/fair2004.html"
+    },
+    {
+      "timestamp": "20040211220154",
+      "original": "http://urol.or.jp:80/kankeisya/info/hainyo_info.html"
+    },
+    {
+      "timestamp": "20040211220302",
+      "original": "http://urol.or.jp:80/kankeisya/info/hainyo_kosyu.html"
+    },
+    {
+      "timestamp": "20040211220554",
+      "original": "http://urol.or.jp:80/kankeisya/info/hainyo_seido.html"
+    },
+    {
+      "timestamp": "20040609054546",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/Iodine5.html"
+    },
+    {
+      "timestamp": "20041027002553",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/jscbd2004.html"
+    },
+    {
+      "timestamp": "20040411160626",
+      "original": "http://urol.or.jp:80/kankeisya/info/kensyu.html"
+    },
+    {
+      "timestamp": "20040608235238",
+      "original": "http://www.urol.or.jp:80/kankeisya/info/manuscript.html"
+    },
+    {
+      "timestamp": "20040411111329",
+      "original": "http://urol.or.jp:80/kankeisya/info/MVA_info.html"
+    },
+    {
+      "timestamp": "20040225201423",
+      "original": "http://urol.or.jp:80/kankeisya/past/pastcongress.htm"
+    },
+    {
+      "timestamp": "20040402050917",
+      "original": "http://urol.or.jp:80/menu.html"
+    },
+    {
+      "timestamp": "20040830030325",
+      "original": "http://www.urol.or.jp/robots.txt"
+    },
+    {
+      "timestamp": "20040402052326",
+      "original": "http://urol.or.jp:80/shimin/citizen.html"
+    },
+    {
+      "timestamp": "20040206043026",
+      "original": "http://www.urol.or.jp:80/shimin/info.html"
+    },
+    {
+      "timestamp": "20040420054319",
+      "original": "http://urol.or.jp:80/shimin/senmoni/aichi.html"
+    },
+    {
+      "timestamp": "20040206070838",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/akita.html"
+    },
+    {
+      "timestamp": "20040420055244",
+      "original": "http://urol.or.jp:80/shimin/senmoni/aomori.html"
+    },
+    {
+      "timestamp": "20040206071726",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/chiba.html"
+    },
+    {
+      "timestamp": "20040206072352",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/ehime.html"
+    },
+    {
+      "timestamp": "20040420074252",
+      "original": "http://urol.or.jp:80/shimin/senmoni/fukui.html"
+    },
+    {
+      "timestamp": "20040206073423",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/fukuoka.html"
+    },
+    {
+      "timestamp": "20040206074225",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/fukusima.html"
+    },
+    {
+      "timestamp": "20040206074753",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/gifu.html"
+    },
+    {
+      "timestamp": "20040206074934",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/gunma.html"
+    },
+    {
+      "timestamp": "20040206075528",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/hirosima.html"
+    },
+    {
+      "timestamp": "20040206075814",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/hokkaido.html"
+    },
+    {
+      "timestamp": "20040206080512",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/hyogo.html"
+    },
+    {
+      "timestamp": "20040206081037",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/ibaraki.html"
+    },
+    {
+      "timestamp": "20040206081500",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/isikawa.html"
+    },
+    {
+      "timestamp": "20040206081933",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/iwate.html"
+    },
+    {
+      "timestamp": "20040406141057",
+      "original": "http://urol.or.jp:80/shimin/senmoni/kagawa.html"
+    },
+    {
+      "timestamp": "20040206082740",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/kagosima.html"
+    },
+    {
+      "timestamp": "20040206083342",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/kanagawa.html"
+    },
+    {
+      "timestamp": "20040206083442",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/kochi.html"
+    },
+    {
+      "timestamp": "20040406143405",
+      "original": "http://urol.or.jp:80/shimin/senmoni/kumamoto.html"
+    },
+    {
+      "timestamp": "20040206084547",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/kyoto.html"
+    },
+    {
+      "timestamp": "20040206043636",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/map.html"
+    },
+    {
+      "timestamp": "20040206085037",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/mie.html"
+    },
+    {
+      "timestamp": "20040206085615",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/miyagi.html"
+    },
+    {
+      "timestamp": "20040206085911",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/miyazaki.html"
+    },
+    {
+      "timestamp": "20040206090354",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/nagano.html"
+    },
+    {
+      "timestamp": "20040206090707",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/nagasaki.html"
+    },
+    {
+      "timestamp": "20040220084410",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/nara.html"
+    },
+    {
+      "timestamp": "20040220085105",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/niigata.html"
+    },
+    {
+      "timestamp": "20040220085405",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/oita.html"
+    },
+    {
+      "timestamp": "20040220085930",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/okayama.html"
+    },
+    {
+      "timestamp": "20040220090253",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/okinawa.html"
+    },
+    {
+      "timestamp": "20040427204903",
+      "original": "http://urol.or.jp:80/shimin/senmoni/osaka.html"
+    },
+    {
+      "timestamp": "20040220091158",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/saga.html"
+    },
+    {
+      "timestamp": "20040220091749",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/saitama.html"
+    },
+    {
+      "timestamp": "20040220092032",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/shiga.html"
+    },
+    {
+      "timestamp": "20040220103508",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/simane.html"
+    },
+    {
+      "timestamp": "20040427213015",
+      "original": "http://urol.or.jp:80/shimin/senmoni/sizuoka.html"
+    },
+    {
+      "timestamp": "20040206070338",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/tochigi.html"
+    },
+    {
+      "timestamp": "20040206070721",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/tokusima.html"
+    },
+    {
+      "timestamp": "20040427194329",
+      "original": "http://urol.or.jp:80/shimin/senmoni/tokyo.html"
+    },
+    {
+      "timestamp": "20040427195513",
+      "original": "http://urol.or.jp:80/shimin/senmoni/tottori.html"
+    },
+    {
+      "timestamp": "20040206072617",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/toyama.html"
+    },
+    {
+      "timestamp": "20040206072953",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/wakayama.html"
+    },
+    {
+      "timestamp": "20040206073418",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/yamagata.html"
+    },
+    {
+      "timestamp": "20040206074222",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/yamaguti.html"
+    },
+    {
+      "timestamp": "20040206074708",
+      "original": "http://www.urol.or.jp:80/shimin/senmoni/yamanasi.html"
+    },
+    {
+      "timestamp": "20040206044340",
+      "original": "http://www.urol.or.jp:80/shimin/shisetsu/alljapan.html"
+    },
+    {
+      "timestamp": "20040818000915",
+      "original": "http://www.urol.or.jp:80/shimin/shisetsu/alljapan_c.html"
+    },
+    {
+      "timestamp": "20040406090032",
+      "original": "http://urol.or.jp:80/shimin/shisetsu/chugoku.html"
+    },
+    {
+      "timestamp": "20040206113147",
+      "original": "http://www.urol.or.jp:80/shimin/shisetsu/hokkaido.html"
+    },
+    {
+      "timestamp": "20040206114029",
+      "original": "http://www.urol.or.jp:80/shimin/shisetsu/kansai.html"
+    },
+    {
+      "timestamp": "20040206114140",
+      "original": "http://www.urol.or.jp:80/shimin/shisetsu/kanto.html"
+    },
+    {
+      "timestamp": "20040206114700",
+      "original": "http://www.urol.or.jp:80/shimin/shisetsu/kyushu.html"
+    },
+    {
+      "timestamp": "20040206115041",
+      "original": "http://www.urol.or.jp:80/shimin/shisetsu/tohoku.html"
+    },
+    {
+      "timestamp": "20040206115545",
+      "original": "http://www.urol.or.jp:80/shimin/shisetsu/toukai.html"
+    },
+    {
+      "timestamp": "20040313035322",
+      "original": "http://urol.or.jp:80/shimin/shishunki/shishunki2002.htm"
+    },
+    {
+      "timestamp": "20040206044542",
+      "original": "http://www.urol.or.jp:80/shimin/soshiki.html"
+    }
+  ]
+}
