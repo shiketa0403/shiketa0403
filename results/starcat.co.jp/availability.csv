@@ -1,55 +1,561 @@
 ﻿domain,availability,registrar,expiry,link_count,years_seen,genre,memo,sample_anchor,sample_source_url,whois_excerpt
+embassy.kcom.ne.jp,available,,,48,"2001,2002",,,GWvgEAu¤aågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,[ JPRS database provides information on network administration. Its use is    ]
+jcom.co.jp,unknown,,,36,"2000,2001,2002",,,"WFCRÃì 
+                                    ¡òÇ",http://www.starcat.co.jp:80/link/catv/catv_chugoku.html,[ JPRS database provides information on network administration. Its use is    ]
+mofa.go.jp,unknown,,,18,"2001,2002",,,BGgiú{ågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,[ JPRS database provides information on network administration. Its use is    ]
+nhk.or.jp,unknown,,,12,"2001,2002,2003",,,http://www.nhk.or.jp/,http://www.starcat.co.jp:80/link/life/index.html,[ JPRS database provides information on network administration. Its use is    ]
+www1.ocn.ne.jp,available,,,11,"2000,2001,2002",,,CE[üpÙ,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
+wkiwki.net,available,,,10,2002,,,¡mÁÄ¾·éÁIîñÄñ±àè!©ÄÊ¢E¾·éFñÈz[y[WðÐîµÜ·B,http://www.starcat.co.jp:80/,"No match for domain ""WKIWKI.NET""."
+catv.or.jp,unknown,,,7,"2000,2001,2002",,,iÐjú{P[uA¿,http://www.starcat.co.jp:80/link/catv/index.html,[ JPRS database provides information on network administration. Its use is    ]
+cartoonnetwork.co.jp,unknown,,,6,"2001,2002,2003",,,http://www.cartoonnetwork.co.jp/,http://www.starcat.co.jp:80/link/broadcast/cs/index.html,[ JPRS database provides information on network administration. Its use is    ]
+csn1.co.jp,available,,,6,"2001,2002,2003",,,CSN1[r[`l,http://www.starcat.co.jp:80/link/broadcast/cs/index.html,[ JPRS database provides information on network administration. Its use is    ]
+herald-nagoya.co.jp,available,,,6,"2001,2002,2003",,,pRÙ8KZ`[Vl},http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+sado.co.jp,unknown,,,6,"2000,2001,2002",,,²nerW,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
+sunsite.sut.ac.jp,available,,,6,"2001,2002",,,xlYGågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,[ JPRS database provides information on network administration. Its use is    ]
+tc.kawai-juku.ac.jp,available,,,6,"2001,2002",,,gCfgzeT[rXÆêåwZ,http://www.starcat.co.jp:80/link/index.html,[ JPRS database provides information on network administration. Its use is    ]
+tcp-ip.or.jp,unknown,,,6,"2001,2002",,,¤m§§túäZ,http://www.starcat.co.jp:80/link/school/high/highs_ken.html,[ JPRS database provides information on network administration. Its use is    ]
+titus.co.jp,unknown,,,6,"2000,2001",,,^C^XER~jP[VY¼Z^[,http://www.starcat.co.jp:80/link/catv/catv_hokkai.html,[ JPRS database provides information on network administration. Its use is    ]
+village.infoweb.ne.jp,available,,,6,"2000,2001,2002",,,{èP[uer,http://www.starcat.co.jp:80/link/catv/catv_shikoku.html,[ JPRS database provides information on network administration. Its use is    ]
+atmusic.avexnet.or.jp,available,,,5,"2001,2002",,,MUSIC,http://www.starcat.co.jp:80/link/entertainment/music/broadband.html,[ JPRS database provides information on network administration. Its use is    ]
+comlink.ne.jp,unknown,,,5,"2000,2001,2002",,,ÍûÎLüerú,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
+geocities.co.jp,unknown,,,5,"2001,2002",,,YahooIWIVeB[Y,http://www.starcat.co.jp:80/link/communication/index.html,[ JPRS database provides information on network administration. Its use is    ]
+media-tv.hi-ho.ne.jp,available,,,5,"2001,2002",,,"Hi-HO 
+                                    Media TV",http://www.starcat.co.jp:80/link/broad/net/index.html,[ JPRS database provides information on network administration. Its use is    ]
+bs-i.co.jp,available,,,4,"2001,2002,2003",,,http://www.bs-I.co.jp/,http://www.starcat.co.jp:80/link/broadcast/cs/index.html,[ JPRS database provides information on network administration. Its use is    ]
+bs-j.co.jp,unknown,,,4,"2001,2002,2003",,,http://www.bs-j.co.jp/,http://www.starcat.co.jp:80/link/broadcast/cs/index.html,[ JPRS database provides information on network administration. Its use is    ]
+catv-kobe.co.jp,unknown,,,4,"2001,2002",,,P[uR~jP[V°®,http://www.starcat.co.jp:80/link/catv/catv_kinki.html,[ JPRS database provides information on network administration. Its use is    ]
+catvmics.ne.jp,unknown,,,4,"2000,2001,2002",,,¼OÍj[erú,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
+cdnow.co.jp,available,,,4,"2001,2002",,,"CDNOW 
+                                    JAPAN",http://www.starcat.co.jp:80/link/entertainment/music/information.html,[ JPRS database provides information on network administration. Its use is    ]
+cns-tv.co.jp,unknown,,,4,"2000,2001,2002",,,P[ulbgé­,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
+ctechcorp.co.jp,unknown,,,4,"2000,2001,2002",,,R~jeBlbg[N/CCNet,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
+ctk.ne.jp,unknown,,,4,"2000,2001,2002",,,P[uerÂ,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
+gate.nanzan.ac.jp,available,,,4,"2001,2002",,,ìRZq,http://www.starcat.co.jp:80/link/school/high/highs_wa.html,[ JPRS database provides information on network administration. Its use is    ]
+hidaweb.ne.jp,available,,,4,"2000,2001,2002",,,{¬Lüerú,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
+himawari.co.jp,unknown,,,4,"2000,2001,2002",,,ÐÜíèlbg[N,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
+i-younet.ne.jp,unknown,,,4,"2000,2001,2002",,,É¤}P[ulbg[N,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
+ict.ne.jp,unknown,,,4,"2000,2001,2002",,,ÉêãìP[uer,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
+ise-ics.co.jp,unknown,,,4,"2000,2001,2002",,,Ñì¬P[uVXe,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
+joho.ehime-iinet.or.jp,available,,,4,"2001,2002",,,¤Q§ðj¶»¨Ù,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+koala-tv.co.jp,available,,,4,"2001,2002",,,RAer,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+listen.co.jp,unknown,,,4,"2001,2002",,,"Listen 
+                                    Japan",http://www.starcat.co.jp:80/link/entertainment/music/information.html,[ JPRS database provides information on network administration. Its use is    ]
+meitetsu.co.jp,unknown,,,4,"2001,2002",,,¼Sz[y[W,http://www.starcat.co.jp:80/link/arts/science_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+museum.pref.mie.jp,available,,,4,"2001,2002",,,Od§§üpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+nava21.co.jp,unknown,,,4,"2000,2001,2002",,,¼£21¢IP[uerW,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
+ogaki-tv.co.jp,unknown,,,4,"2000,2001,2002",,,å_P[uer,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
+ohotuku26.or.jp,available,,,4,"2000,2001",,,¼»ºR~jP[Vlbg[N,http://www.starcat.co.jp:80/link/catv/catv_hokkai.html,[ JPRS database provides information on network administration. Its use is    ]
+pref.miyazaki.jp,unknown,,,4,"2001,2002",,,{è§§üpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+qvcjp.com,taken,MarkMonitor Inc.,2027-06-16T14:18:44Z,4,"2001,2002,2003",,,http://www.qvcjp.com/,http://www.starcat.co.jp:80/link/broadcast/cs/index.html,Domain Name: QVCJP.COM
+tees.ne.jp,unknown,,,4,"2000,2001,2002",,,L´P[ulbg[N,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
+u-air.ac.jp,available,,,4,"2001,2002,2003",,,http://www.u-air.ac.jp/hp/,http://www.starcat.co.jp:80/link/broadcast/cs/index.html,[ JPRS database provides information on network administration. Its use is    ]
+wakayama.go.jp,unknown,,,4,"2001,2002",,,aÌR§§ßãüpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+waw.ne.jp,available,,,4,"2001,2002",,,ïÐ¶ÌF,http://www.starcat.co.jp:80/link/business/business.html,[ JPRS database provides information on network administration. Its use is    ]
+www2.shizuokanet.ne.jp,available,,,4,"2000,2001,2002",,,É¤Lüerú,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
+www4.ocn.ne.jp,available,,,4,"2001,2002",,,GtG¬,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+ztv.co.jp,unknown,,,4,"2000,2001,2002",,,ÃP[uer,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
+aaapc.co.jp,available,,,3,"2001,2002",,,Dy}CZüpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+amb-jpn.be,unknown,,,3,"2001,2002",,,xM[ú{ågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,Domain:	amb-jpn.be
+ambafrance-jp.org,taken,Nameshield SAS,2026-12-20T14:52:21Z,3,"2001,2002",,,tXågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,Domain Name: ambafrance-jp.org
+ambasciatajp.it,unknown,,,3,"2001,2002",,,C^Aú{ågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,Domain:             ambasciatajp.it
+amigo.ne.jp,unknown,,,3,"2001,2002",,,É¨P[ulbg[N,http://www.starcat.co.jp:80/link/catv/catv_tokai.html,[ JPRS database provides information on network administration. Its use is    ]
+angelcafe.gr.jp,unknown,,,3,"2001,2002",,,Angel@Cafe,http://www.starcat.co.jp:80/link/business/index.html,[ JPRS database provides information on network administration. Its use is    ]
+art-museum.city.yokohama.jp,available,,,3,"2001,2002",,,¡lüpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+art-museum.pref.yamanashi.jp,available,,,3,"2001,2002",,,R§§üpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+avis.ne.jp,unknown,,,3,"2000,2001,2002",,,MBP[uerW,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
+banban.co.jp,unknown,,,3,"2001,2002",,,ÁÃì¤HJ­,http://www.starcat.co.jp:80/link/catv/catv_kinki.html,[ JPRS database provides information on network administration. Its use is    ]
+biztech.nikkeibp.co.jp,available,,,3,"2001,2002",,,BizTech,http://www.starcat.co.jp:80/link/news/pc.html,[ JPRS database provides information on network administration. Its use is    ]
+brasemb.or.jp,available,,,3,"2001,2002",,,uWågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,[ JPRS database provides information on network administration. Its use is    ]
+c-d-k.ne.jp,unknown,,,3,"2001,2002",,,ACEV[EV[,http://www.starcat.co.jp:80/link/catv/catv_tokai.html,[ JPRS database provides information on network administration. Its use is    ]
+cable-net.co.jp,unknown,,,3,"2001,2002",,, êP[ulbg[N,http://www.starcat.co.jp:80/link/catv/catv_kinki.html,[ JPRS database provides information on network administration. Its use is    ]
+canadanet.or.jp,available,,,3,"2001,2002",,,Ji_ågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,[ JPRS database provides information on network administration. Its use is    ]
+cao.go.jp,unknown,,,3,"2001,2002",,,àt{,http://www.starcat.co.jp:80/link/news/government.html,[ JPRS database provides information on network administration. Its use is    ]
+catv-aichi.co.jp,available,,,3,"2001,2002",,,b`su¤m,http://www.starcat.co.jp:80/link/catv/catv_tokai.html,[ JPRS database provides information on network administration. Its use is    ]
+catv-niihama.co.jp,available,,,3,"2000,2001,2002",,,Vlerlbg[N,http://www.starcat.co.jp:80/link/catv/catv_shikoku.html,[ JPRS database provides information on network administration. Its use is    ]
+catv.yuge.ac.jp,available,,,3,"2000,2001,2002",,,|í¬b`su,http://www.starcat.co.jp:80/link/catv/catv_shikoku.html,[ JPRS database provides information on network administration. Its use is    ]
+cc22.ne.jp,unknown,,,3,"2000,2001,2002",,,P[uVeBQQ,http://www.starcat.co.jp:80/link/catv/catv_chugoku.html,[ JPRS database provides information on network administration. Its use is    ]
+charamix.com,available,,,3,"2001,2002",,,CHARAMIX.com,http://www.starcat.co.jp:80/link/arts/index.html,"No match for domain ""CHARAMIX.COM""."
+city.akita.akita.jp,unknown,,,3,"2001,2002",,,Hcs§çHüpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+city.fukui.fukui.jp,unknown,,,3,"2001,2002",,,äsüpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+city.kawasaki.jp,unknown,,,3,"2001,2002",,,ª{¾YüpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+city.kitakyushu.jp,unknown,,,3,"2001,2002",,,kãBs§üpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+city.okayama.okayama.jp,available,,,3,"2001,2002",,,ªRs§IGgüpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+cty-net.ne.jp,unknown,,,3,"2001,2002",,,V[EeB[EC,http://www.starcat.co.jp:80/link/catv/catv_tokai.html,[ JPRS database provides information on network administration. Its use is    ]
+cwo.co.jp,unknown,,,3,"2001,2002",,,VeBEF[u¨¨³©,http://www.starcat.co.jp:80/link/catv/catv_kinki.html,[ JPRS database provides information on network administration. Its use is    ]
 d-booktv.com,available,,,3,2000,,,z[y[WÍ±¿çII,http://www.starcat.co.jp:80/starch/mych/joho/index.html,"No match for domain ""D-BOOKTV.COM""."
-ohotuku26.or.jp,available,,,2,2000,,,¼»ºR~jP[Vlbg[N,http://www.starcat.co.jp:80/link/catv/catv_hokkai.html,[ JPRS database provides information on network administration. Its use is    ]
-catv-hako.co.jp,available,,,1,2000,,,ÙP[uerú,http://www.starcat.co.jp:80/link/catv/catv_hokkai.html,[ JPRS database provides information on network administration. Its use is    ]
-catv-niihama.co.jp,available,,,1,2000,,,Vlerlbg[N,http://www.starcat.co.jp:80/link/catv/catv_shikoku.html,[ JPRS database provides information on network administration. Its use is    ]
-catv.yuge.ac.jp,available,,,1,2000,,,|í¬b`su,http://www.starcat.co.jp:80/link/catv/catv_shikoku.html,[ JPRS database provides information on network administration. Its use is    ]
-hidaweb.ne.jp,available,,,1,2000,,,{¬Lüerú,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
-homech.co.jp,available,,,1,2000,,,z[`l,http://www.starcat.co.jp:80/channel/index.html,[ JPRS database provides information on network administration. Its use is    ]
-jah.or.jp,available,,,1,2000,,,(c)1997 Takeshi Iwanami,http://www.starcat.co.jp:80/cgi/superch/f_mailer.cgi,[ JPRS database provides information on network administration. Its use is    ]
-kagawa-net.or.jp,available,,,1,2000,,,OLP[uerú,http://www.starcat.co.jp:80/link/catv/catv_shikoku.html,[ JPRS database provides information on network administration. Its use is    ]
-scn-tv.co.jp,available,,,1,2000,,,ÃªP[ulbg[N,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
-town.kushibiki.yamagata.jp,available,,,1,2000,,,ùø¬P[uerW,http://www.starcat.co.jp:80/link/catv/catv_hokkai.html,[ JPRS database provides information on network administration. Its use is    ]
-town.nagao.kagawa.jp,available,,,1,2000,,,·ö¬b`sulbg[N,http://www.starcat.co.jp:80/link/catv/catv_shikoku.html,[ JPRS database provides information on network administration. Its use is    ]
-town.yatsuo.toyama.jp,available,,,1,2000,,,P[uerªö,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
-vill.yanagida.ishikawa.jp,available,,,1,2000,,,öcºLüerú,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
-village.infoweb.ne.jp,available,,,1,2000,,,{èP[uer,http://www.starcat.co.jp:80/link/catv/catv_shikoku.html,[ JPRS database provides information on network administration. Its use is    ]
-www1.ocn.ne.jp,available,,,1,2000,,,Ûqerú,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
-www2.shizuokanet.ne.jp,available,,,1,2000,,,É¤Lüerú,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
-comlink.ne.jp,unknown,,,2,2000,,,ÍûÎLüerú,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
-sado.co.jp,unknown,,,2,2000,,,²nerW,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
-avis.ne.jp,unknown,,,1,2000,,,MBP[uerW,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
-catv.or.jp,unknown,,,1,2000,,,iÐjú{P[uA¿,http://www.starcat.co.jp:80/link/catv/index.html,[ JPRS database provides information on network administration. Its use is    ]
-catvmics.ne.jp,unknown,,,1,2000,,,¼OÍj[erú,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
-catvy.ne.jp,unknown,,,1,2000,,,P[uerR`,http://www.starcat.co.jp:80/link/catv/catv_hokkai.html,[ JPRS database provides information on network administration. Its use is    ]
-cc22.ne.jp,unknown,,,1,2000,,,P[uVeBQQ,http://www.starcat.co.jp:80/link/catv/catv_chugoku.html,[ JPRS database provides information on network administration. Its use is    ]
-cns-tv.co.jp,unknown,,,1,2000,,,P[ulbgé­,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
-ctechcorp.co.jp,unknown,,,1,2000,,,R~jeBlbg[N/CCNet,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
-ctk.ne.jp,unknown,,,1,2000,,,P[uerÂ,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
+denmark.or.jp,available,,,3,"2001,2002",,,f}[NågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,[ JPRS database provides information on network administration. Its use is    ]
+e-gov.go.jp,unknown,,,3,"2001,2002",,,s­îñÌÄàT[rX,http://www.starcat.co.jp:80/link/news/politics.html,[ JPRS database provides information on network administration. Its use is    ]
+edu.pref.ibaraki.jp,available,,,3,"2001,2002",,,ïé§ßãüpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+embargentina.or.jp,unknown,,,3,"2001,2002",,,A[`ågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,[ JPRS database provides information on network administration. Its use is    ]
+embjapan.at,available,,,3,"2001,2002",,,I[XgAú{ågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,available
+embjapan.ch,unknown,,,3,"2001,2002",,,XCXú{ågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,Requests of this client are not permitted. Please use https://www.nic.ch/whois/ for queries.
+embjapan.or.id,available,,,3,"2001,2002",,,ChlVAú{ågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,The queried object does not exist: DOMAIN NOT FOUND
+embjapan.org.my,taken,Yeahhost Sdn Bhd,2026-09-02T02:08:48.921Z,3,"2001,2002",,,}[VAú{ågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,Domain Name: embjapan.org.my
+env.go.jp,unknown,,,3,"2001,2002",,,Â«È,http://www.starcat.co.jp:80/link/news/government.html,[ JPRS database provides information on network administration. Its use is    ]
+eojmongolia.mn,available,,,3,"2001,2002",,,Sú{ågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,Domain not found.
+fctv.co.jp,unknown,,,3,"2000,2001,2002",,,äP[uer,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
+find-job.net,taken,MarkMonitor Inc.,2027-04-06T04:00:00Z,3,"2001,2002",,,ei,http://www.starcat.co.jp:80/link/business/job.html,Domain Name: FIND-JOB.NET
+fureai-ch.ne.jp,unknown,,,3,"2000,2001,2002",,,Óê ¢`l,http://www.starcat.co.jp:80/link/catv/catv_chugoku.html,[ JPRS database provides information on network administration. Its use is    ]
+germanembassy-japan.org,taken,Gname 430 Inc,2027-03-29T15:15:21Z,3,"2001,2002",,,hCcAM¤aågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,Domain Name: germanembassy-japan.org
+gifu-art-museum-unet.ocn.ne.jp,available,,,3,"2001,2002",,,ò§üpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+gunmanet.or.jp,unknown,,,3,"2001,2002",,,Rc©Ü¿ÊfbTüpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+hbs.ne.jp,unknown,,,3,"2000,2001,2002",,,LP[urW,http://www.starcat.co.jp:80/link/catv/catv_chugoku.html,[ JPRS database provides information on network administration. Its use is    ]
+hicat.ne.jp,unknown,,,3,"2000,2001,2002",,,LVeBP[uer,http://www.starcat.co.jp:80/link/catv/catv_chugoku.html,[ JPRS database provides information on network administration. Its use is    ]
+htm-museum.co.jp,available,,,3,"2001,2002",,,òËRüpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+hyper-tv.co.jp,available,,,3,"2001,2002",,,HYPER-TV,http://www.starcat.co.jp:80/link/broad/net/index.html,[ JPRS database provides information on network administration. Its use is    ]
+iceland.or.jp,available,,,3,"2001,2002",,,ACXh¤aÌÙ,http://www.starcat.co.jp:80/link/news/embassy.html,[ JPRS database provides information on network administration. Its use is    ]
+ishibashi-museum.gr.jp,unknown,,,3,"2001,2002",,,Î´üpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+islands.ne.jp,unknown,,,3,"2000,2001,2002",,,ºP[uerW,http://www.starcat.co.jp:80/link/catv/catv_shikoku.html,[ JPRS database provides information on network administration. Its use is    ]
+it.nikkei.co.jp,available,,,3,"2001,2002",,,"NIKKEI 
+                                    NET",http://www.starcat.co.jp:80/link/news/pc.html,[ JPRS database provides information on network administration. Its use is    ]
+izumicommunitynow.net,available,,,3,"2001,2002",,,aòR~jeB[iE,http://www.starcat.co.jp:80/link/catv/catv_kinki.html,"No match for domain ""IZUMICOMMUNITYNOW.NET""."
+japan-emb.org.sg,available,,,3,"2001,2002",,,VK|[ú{ågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,Not found: japan-emb.org.sg
+japan-embassy.hu,available,,,3,"2001,2002",,,nK[ú{ågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,Nincs talalat / No match
+japan.org.au,available,,,3,"2001,2002",,,I[XgAú{ågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,Domain not found.
+japan.org.hk,unknown,,,3,"2001,2002",,,`ú{ÌÙ,http://www.starcat.co.jp:80/link/news/embassy.html,The domain has not been registered.
+japancg-toronto.org,available,,,3,"2001,2002",,,Ýggú{ÌÙ,http://www.starcat.co.jp:80/link/news/embassy.html,Domain not found.
+japanem.or.kr,available,,,3,"2001,2002",,,åØ¯ú{ågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,query : japanem.or.kr
+japanemb.org.pk,unknown,,,3,"2001,2002",,,pLX^ú{ågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,Domain: japanemb.org.pk
+japao.org.br,available,,,3,"2001,2002",,,uWú{ågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,available
+jda.go.jp,available,,,3,"2001,2002",,,hq¡,http://www.starcat.co.jp:80/link/news/government.html,[ JPRS database provides information on network administration. Its use is    ]
+jinji.admix.go.jp,available,,,3,"2001,2002",,,l@,http://www.starcat.co.jp:80/link/news/government.html,[ JPRS database provides information on network administration. Its use is    ]
+jjj.gr.jp,available,,,3,"2001,2002",,,iii,http://www.starcat.co.jp:80/link/business/job.html,[ JPRS database provides information on network administration. Its use is    ]
+kcb.co.jp,unknown,,,3,"2000,2001,2002",,,mP[uer,http://www.starcat.co.jp:80/link/catv/catv_shikoku.html,[ JPRS database provides information on network administration. Its use is    ]
+kctpc.ab.psiweb.com,available,,,3,"2001,2002",,,Llbg,http://www.starcat.co.jp:80/link/catv/catv_kinki.html,"No match for ""KCTPC.AB.PSIWEB.COM""."
+kctv.co.jp,unknown,,,3,"2001,2002",,,túä¬qP[uR~jP[Ver,http://www.starcat.co.jp:80/link/catv/catv_tokai.html,[ JPRS database provides information on network administration. Its use is    ]
+knet.np.to,unknown,,,3,"2001,2002",,,mTCg,http://www.starcat.co.jp:80/link/business/job.html,getaddrinfo(whois.tonic.to): Name or service not known
+kobe-catv.ne.jp,unknown,,,3,"2001,2002",,,P[uer_Ë,http://www.starcat.co.jp:80/link/catv/catv_kinki.html,[ JPRS database provides information on network administration. Its use is    ]
+kunaicho.go.jp,unknown,,,3,"2001,2002",,,{à¡,http://www.starcat.co.jp:80/link/news/government.html,[ JPRS database provides information on network administration. Its use is    ]
+kuronekoyamato.co.jp,unknown,,,3,"2001,2002",,,}g^A,http://www.starcat.co.jp:80/link/life/index.html,[ JPRS database provides information on network administration. Its use is    ]
+lantecweb.com,available,,,3,"2001,2002",,,ûu÷LOÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,"No match for domain ""LANTECWEB.COM""."
+maff.go.jp,unknown,,,3,"2001,2002",,,_ÑYÈ,http://www.starcat.co.jp:80/link/news/government.html,[ JPRS database provides information on network administration. Its use is    ]
+mcat.co.jp,unknown,,,3,"2000,2001,2002",,,O´erú,http://www.starcat.co.jp:80/link/catv/catv_chugoku.html,[ JPRS database provides information on network administration. Its use is    ]
+mctv.ne.jp,unknown,,,3,"2001,2002",,,¼ãP[uerXe[V,http://www.starcat.co.jp:80/link/catv/catv_tokai.html,[ JPRS database provides information on network administration. Its use is    ]
+meti.go.jp,unknown,,,3,"2001,2002",,,oÏYÆÈ,http://www.starcat.co.jp:80/link/news/government.html,[ JPRS database provides information on network administration. Its use is    ]
+mext.go.jp,unknown,,,3,"2001,2002",,,¶ÈwÈ,http://www.starcat.co.jp:80/link/news/government.html,[ JPRS database provides information on network administration. Its use is    ]
+mhlw.go.jp,unknown,,,3,"2001,2002",,,ú¶J­È,http://www.starcat.co.jp:80/link/news/government.html,[ JPRS database provides information on network administration. Its use is    ]
+miyavision.co.jp,available,,,3,"2001,2002",,,sP[uR~jP[VY,http://www.starcat.co.jp:80/link/catv/catv_kinki.html,[ JPRS database provides information on network administration. Its use is    ]
+mlit.go.jp,unknown,,,3,"2001,2002",,,yðÊÈ,http://www.starcat.co.jp:80/link/news/government.html,[ JPRS database provides information on network administration. Its use is    ]
+mof.go.jp,unknown,,,3,"2001,2002",,,à±È,http://www.starcat.co.jp:80/link/news/government.html,[ JPRS database provides information on network administration. Its use is    ]
+moj.go.jp,unknown,,,3,"2001,2002",,,@±È,http://www.starcat.co.jp:80/link/news/government.html,[ JPRS database provides information on network administration. Its use is    ]
+museum.senri-i.or.jp,available,,,3,"2001,2002",,,ÞÇ§§üpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+nagoya-boston.or.jp,available,,,3,"2001,2002",,,¼Ã®{XgüpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+nankai.co.jp,unknown,,,3,"2001,2002",,,ìCdCS¹,http://www.starcat.co.jp:80/link/catv/catv_kinki.html,[ JPRS database provides information on network administration. Its use is    ]
+ne.jp,unknown,,,3,"2001,2002",,,ºWçüpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+net-tv.co.jp,available,,,3,"2001,2002",,,Net-TV,http://www.starcat.co.jp:80/link/broad/net/index.html,[ JPRS database provides information on network administration. Its use is    ]
+netwave.or.jp,unknown,,,3,"2000,2001,2002",,,P[ufBAl,http://www.starcat.co.jp:80/link/catv/catv_shikoku.html,[ JPRS database provides information on network administration. Its use is    ]
+nezu-muse.or.jp,unknown,,,3,"2001,2002",,,ªÃüpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+nns-catv.co.jp,unknown,,,3,"2000,2001,2002",,,ú{lbg[NT[rX,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
+norway.or.jp,available,,,3,"2001,2002",,,mEF[¤ågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,[ JPRS database provides information on network administration. Its use is    ]
+npa.go.jp,unknown,,,3,"2001,2002",,,x@¡,http://www.starcat.co.jp:80/link/news/government.html,[ JPRS database provides information on network administration. Its use is    ]
+oranda.or.jp,available,,,3,"2001,2002",,,I_ågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,[ JPRS database provides information on network administration. Its use is    ]
+ozone.ne.jp,available,,,3,"2001,2002",,,ÊìßãüpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+pcweb.mycom.co.jp,available,,,3,"2001,2002",,,"MYCOM 
+                                    PC WEB",http://www.starcat.co.jp:80/link/news/pc.html,[ JPRS database provides information on network administration. Its use is    ]
+pluto.dti.ne.jp,available,,,3,2002,,,T[}EOLÌóÌòÑ©½\pO_C_[îñ,http://www.starcat.co.jp:80/link/sports/sky.html,[ JPRS database provides information on network administration. Its use is    ]
+pref.aichi.jp,unknown,,,3,2001,,,¤m§©¥¿Ù,http://www.starcat.co.jp:80/link/arts/science_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+ric.or.jp,unknown,,,3,"2001,2002",,,ZbAChP[urW,http://www.starcat.co.jp:80/link/catv/catv_kinki.html,[ JPRS database provides information on network administration. Its use is    ]
+roc-taiwan.or.jp,available,,,3,"2001,2002",,,Ø¯,http://www.starcat.co.jp:80/link/news/embassy.html,[ JPRS database provides information on network administration. Its use is    ]
+s-cnet.ne.jp,unknown,,,3,"2001,2002",,,ÃªP[ulbg[N,http://www.starcat.co.jp:80/link/catv/catv_tokai.html,[ JPRS database provides information on network administration. Its use is    ]
+seiji.gr.jp,available,,,3,"2001,2002",,,Seiji.gr.jp,http://www.starcat.co.jp:80/link/news/politics.html,[ JPRS database provides information on network administration. Its use is    ]
+setagayaartmuseum.or.jp,unknown,,,3,"2001,2002",,,¢cJüpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+shinshu.online.co.jp,available,,,3,"2001,2002",,,E@üpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+siscom.or.jp,available,,,3,"2001,2002",,,ºÖs§üpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+soumu.go.jp,unknown,,,3,"2001,2002",,,±È,http://www.starcat.co.jp:80/link/news/government.html,[ JPRS database provides information on network administration. Its use is    ]
+sutv.co.jp,available,,,3,"2001,2002",,,cP[uerW,http://www.starcat.co.jp:80/link/catv/catv_kinki.html,[ JPRS database provides information on network administration. Its use is    ]
+tac-net.co.jp,unknown,,,3,"2001,2002",,,Æ±Èßj[er,http://www.starcat.co.jp:80/link/catv/catv_tokai.html,[ JPRS database provides information on network administration. Its use is    ]
+taki-hj.ac.jp,unknown,,,3,"2001,2002",,,åwt®Z,http://www.starcat.co.jp:80/link/school/high/highs_wa.html,[ JPRS database provides information on network administration. Its use is    ]
+tcct.co.jp,available,,,3,"2001,2002",,,LR~jeB[P[u,http://www.starcat.co.jp:80/link/catv/catv_kinki.html,[ JPRS database provides information on network administration. Its use is    ]
+tctvnet.co.jp,unknown,,,3,"2001,2002",,,¼P[uer,http://www.starcat.co.jp:80/link/catv/catv_tokai.html,[ JPRS database provides information on network administration. Its use is    ]
+tcup.com,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2026-08-07T04:00:00Z,3,"2001,2002",,,TeaCupCommunication,http://www.starcat.co.jp:80/link/communication/web.html,Domain Name: TCUP.COM
+tokai-tv.co.jp,unknown,,,3,"2001,2003",,,http://www.tokai-tv.co.jp/,http://www.starcat.co.jp:80/link/broadcast/tv/index.html,[ JPRS database provides information on network administration. Its use is    ]
+toptower.co.jp,unknown,,,3,"2001,2002",,,îòV[G[eBB,http://www.starcat.co.jp:80/link/catv/catv_tokai.html,[ JPRS database provides information on network administration. Its use is    ]
+town.goshiki.hyogo.jp,available,,,3,"2001,2002",,,WHÜFP[uer,http://www.starcat.co.jp:80/link/catv/catv_kinki.html,[ JPRS database provides information on network administration. Its use is    ]
+town.nagao.kagawa.jp,available,,,3,"2000,2001,2002",,,·ö¬b`sulbg[N,http://www.starcat.co.jp:80/link/catv/catv_shikoku.html,[ JPRS database provides information on network administration. Its use is    ]
+town.sekinomiya.hyogo.jp,available,,,3,"2001,2002",,,Ö{¬LüerW,http://www.starcat.co.jp:80/link/catv/catv_kinki.html,[ JPRS database provides information on network administration. Its use is    ]
+town.takino.hyogo.jp,unknown,,,3,"2001,2002",,,êìP[uR~jP[V,http://www.starcat.co.jp:80/link/catv/catv_kinki.html,[ JPRS database provides information on network administration. Its use is    ]
+town.yatsuo.toyama.jp,available,,,3,"2000,2001,2002",,,P[uerªö,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
+tvm.co.jp,unknown,,,3,"2000,2001,2002",,,er¼{P[urW,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
+tvt.ne.jp,unknown,,,3,"2000,2001,2002",,,erÃR,http://www.starcat.co.jp:80/link/catv/catv_chugoku.html,[ JPRS database provides information on network administration. Its use is    ]
+uknow.or.jp,available,,,3,"2001,2002",,,CMXågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,[ JPRS database provides information on network administration. Its use is    ]
+vill.yanagida.ishikawa.jp,available,,,3,"2000,2001,2002",,,öcºLüerú,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
+wajima-city.or.jp,unknown,,,3,"2001,2002",,,Îì§Ö½|üpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+wbc-tv.com,available,,,3,"2001,2002",,,[hErWlXE`l,http://www.starcat.co.jp:80/link/broad/net/index.html,"No match for domain ""WBC-TV.COM""."
+web.infoweb.ne.jp,available,,,3,"2001,2002",,,ÛTsF·êY»ãüpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+www2.justnet.ne.jp,available,,,3,"2001,2002",,,"Art 
+                                    Navi",http://www.starcat.co.jp:80/link/arts/index.html,[ JPRS database provides information on network administration. Its use is    ]
+www2.pref.shimane.jp,available,,,3,"2001,2002",,,ª§§üpÙ,http://www.starcat.co.jp:80/link/arts/art_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+26cluster.ne.jp,available,,,2,"2001,2002",,,Iz[cNV·,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+accs.or.jp,unknown,,,2,"2001,2002",,,¤wssR~jeB[P[uT[rX,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+adachi.ne.jp,unknown,,,2,"2001,2002",,,P[uer«§,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+aichi-edu.ac.jp,unknown,,,2,"2001,2002",,,¤m³çåw,http://www.starcat.co.jp:80/link/school/college/college_k.html,[ JPRS database provides information on network administration. Its use is    ]
+aichi-fam-u.ac.jp,unknown,,,2,"2001,2002",,,¤m§§|påw,http://www.starcat.co.jp:80/link/school/college/college_k.html,[ JPRS database provides information on network administration. Its use is    ]
+aichi-nurs.ac.jp,available,,,2,"2001,2002",,,¤m§§Åìåw,http://www.starcat.co.jp:80/link/school/college/college_k.html,[ JPRS database provides information on network administration. Its use is    ]
+aichi-pu.ac.jp,unknown,,,2,"2001,2002",,,¤m§§åw,http://www.starcat.co.jp:80/link/school/college/college_k.html,[ JPRS database provides information on network administration. Its use is    ]
+aichi-th.aichi-c.ed.jp,available,,,2,"2001,2002",,,¤m§§¤mHÆZ,http://www.starcat.co.jp:80/link/school/high/highs_ken.html,[ JPRS database provides information on network administration. Its use is    ]
+antinos-r.co.jp,available,,,2,"2001,2002",,,AeBmXR[h,http://www.starcat.co.jp:80/link/entertainment/music/company.html,[ JPRS database provides information on network administration. Its use is    ]
+aod.starcat.ne.jp,available,,,2,2002,,,PC\tgRezMÀ±,http://www.starcat.co.jp:80/,[ JPRS database provides information on network administration. Its use is    ]
+awa.or.jp,unknown,,,2,"2001,2002",,,[úV·,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+ayu.ne.jp,unknown,,,2,"2001,2002",,,úØÉ¨´P[ulbg[N,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+baynet.ne.jp,unknown,,,2,"2001,2002",,,xClbg[N,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+bcap.co.jp,unknown,,,2,"2001,2002",,, êñmV·,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+bit.sonymusic.co.jp,available,,,2,"2001,2002",,,bitmusic,http://www.starcat.co.jp:80/link/entertainment/music/broadband.html,[ JPRS database provides information on network administration. Its use is    ]
+biz.ascii24.com,available,,,2,"2001,2002",,,ASCIIQS,http://www.starcat.co.jp:80/link/business/index.html,"No match for ""BIZ.ASCII24.COM""."
+c2m-jp.com,available,,,2,"2001,2002",,,"alf 
+                                      t@nEX",http://www.starcat.co.jp:80/link/entertainment/music/company.html,"No match for domain ""C2M-JP.COM""."
+cablenet.co.jp,unknown,,,2,"2001,2002",,,P[ulbgéÊ,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+card.biglobe.ne.jp,available,,,2,"2001,2002",,,BIGLOBEO[eBOJ[h,http://www.starcat.co.jp:80/link/pc/card.html,[ JPRS database provides information on network administration. Its use is    ]
+catv-hako.co.jp,available,,,2,"2000,2001",,,ÙP[uerú,http://www.starcat.co.jp:80/link/catv/catv_hokkai.html,[ JPRS database provides information on network administration. Its use is    ]
+catv.ksky.ne.jp,available,,,2,"2001,2002",,,FJP[uer,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+catv.ne.jp,unknown,,,2,"2001,2002",,,}P[uerW,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+catv296.co.jp,unknown,,,2,"2001,2002",,,ÖP[uerñãZ,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+catvy.ne.jp,unknown,,,2,"2000,2001",,,P[uerR`,http://www.starcat.co.jp:80/link/catv/catv_hokkai.html,[ JPRS database provides information on network administration. Its use is    ]
+caty.co.jp,available,,,2,"2001,2002",,,V[G[eB[r[¡{ê,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+cc9.ne.jp,unknown,,,2,"2001,2002",,,ÈØP[uer,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+ccn.ne.jp,available,,,2,"2001,2002",,,VeBP[ulbg,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+cdn-japan.com,taken,"Japan Registry Services Co., Ltd.",2027-03-23T00:30:05Z,2,2002,,,,http://www.starcat.co.jp:80/,Domain Name: CDN-JAPAN.COM
+channel.goo.ne.jp,available,,,2,"2001,2002",,,è¢`l,http://www.starcat.co.jp:80/link/fortune/index.html,[ JPRS database provides information on network administration. Its use is    ]
+chizumaru.com,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2026-09-05T04:25:10Z,2,"2001,2002",,,¿¸Û,http://www.starcat.co.jp:80/link/life/map.html,Domain Name: CHIZUMARU.COM
+chuspo.chunichi.co.jp,available,,,2,"2001,2002",,,úX|[c,http://www.starcat.co.jp:80/link/news/sports.html,[ JPRS database provides information on network administration. Its use is    ]
+city.takarazuka.hyogo.jp,unknown,,,2,"2001,2002",,,èË¡LOÙ,http://www.starcat.co.jp:80/link/arts/memorial_hall.html,[ JPRS database provides information on network administration. Its use is    ]
+classica-jp.com,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2026-08-07T09:27:42Z,2,"2001,2002",,,NVJEWp,http://www.starcat.co.jp:80/link/entertainment/music/bs_cs.html,Domain Name: CLASSICA-JP.COM
+cnc.co.jp,unknown,,,2,"2001,2002",,,P[ulbg[Nçt,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+crownrecord.co.jp,unknown,,,2,"2001,2002",,,ú{NE,http://www.starcat.co.jp:80/link/entertainment/music/company.html,[ JPRS database provides information on network administration. Its use is    ]
+cstv.co.jp,available,,,2,"2001,2002",,,J~OX[TV,http://www.starcat.co.jp:80/link/entertainment/movie/bs_cs.html,[ JPRS database provides information on network administration. Its use is    ]
+ctb.ne.jp,unknown,,,2,"2001,2002",,,P[uerWÊ{,http://www.starcat.co.jp:80/link/catv/catv_kyuoki.html,[ JPRS database provides information on network administration. Its use is    ]
+ctktv.co.jp,available,,,2,"2001,2002",,,VeBeR©Èªí,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+ctn.co.jp,available,,,2,"2001,2002",,,VeBerì,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+daiei.tokuma.com,available,,,2,"2001,2002",,,åf,http://www.starcat.co.jp:80/link/entertainment/movie/company.html,"No match for ""DAIEI.TOKUMA.COM""."
+discovery-ch.co.jp,available,,,2,"2001,2002",,,fBXJo[`l,http://www.starcat.co.jp:80/link/broadcast/cs/index.html,[ JPRS database provides information on network administration. Its use is    ]
+doho.ac.jp,unknown,,,2,2001,,,¼Ã®¢`|påw,http://www.starcat.co.jp:80/link/school/college/college_s.html,[ JPRS database provides information on network administration. Its use is    ]
+dotto-koi.com,unknown,,,2,"2001,2002",,,àÁÄ¯D_,http://www.starcat.co.jp:80/link/pc/hp/tool.html,timeout
+douspo.aurora-net.or.jp,available,,,2,"2001,2002",,,¹VX|[c,http://www.starcat.co.jp:80/link/news/sports.html,[ JPRS database provides information on network administration. Its use is    ]
+edonagasaki.ne.jp,available,,,2,"2001,2002",,,üÃ¬Lüer,http://www.starcat.co.jp:80/link/catv/catv_kyuoki.html,[ JPRS database provides information on network administration. Its use is    ]
+eionnet.com,available,,,2,"2001,2002",,,S¯úNW,http://www.starcat.co.jp:80/link/broadcast/index.html,"No match for domain ""EIONNET.COM""."
+eki.joy.ne.jp,available,,,2,"2001,2002",,,¦«©ç\,http://www.starcat.co.jp:80/link/life/map.html,[ JPRS database provides information on network administration. Its use is    ]
+ergo.co.jp,unknown,,,2,"2001,2002",,,z[y[Wfr[,http://www.starcat.co.jp:80/link/pc/hp/soft.html,[ JPRS database provides information on network administration. Its use is    ]
+fandango.co.jp,unknown,,,2,2003,,,http://www.fandango.co.jp/,http://tv.starcat.co.jp:80/channel/index/0996/,[ JPRS database provides information on network administration. Its use is    ]
+forest.impress.co.jp,available,,,2,2002,,,ÑçÌm,http://www.starcat.co.jp:80/link/pc/main.html,[ JPRS database provides information on network administration. Its use is    ]
+foxjapan.com,taken,"GoDaddy Corporate Domains, LLC",2026-11-19T05:00:00Z,2,"2001,2002",,,20¢ItHbNX,http://www.starcat.co.jp:80/link/entertainment/movie/company.html,Domain Name: FOXJAPAN.COM
+gaga.co.jp,unknown,,,2,"2001,2002",,,MKER~jP[VY,http://www.starcat.co.jp:80/link/entertainment/movie/company.html,[ JPRS database provides information on network administration. Its use is    ]
+gch.jrao.ne.jp,available,,,2,"2001,2002",,,O[`l,http://www.starcat.co.jp:80/link/broadcast/cs/index.html,[ JPRS database provides information on network administration. Its use is    ]
+gendai.net,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2027-04-30T04:00:00Z,2,"2001,2002",,,ú§Q_C,http://www.starcat.co.jp:80/link/news/sports.html,Domain Name: GENDAI.NET
+haginet.ne.jp,unknown,,,2,"2001,2002",,,P[ulbg[N,http://www.starcat.co.jp:80/link/catv/catv_tyugoku.html,[ JPRS database provides information on network administration. Its use is    ]
+herald.co.jp,unknown,,,2,"2001,2002",,,ú{whfæ,http://www.starcat.co.jp:80/link/entertainment/movie/company.html,[ JPRS database provides information on network administration. Its use is    ]
+hi-nobori.net,taken,"Japan Registry Services Co., Ltd.",2028-07-18T23:53:29Z,2,"2001,2002",,,TCY,http://www.starcat.co.jp:80/link/entertainment/anime/company.html,Domain Name: HI-NOBORI.NET
+hinocatv.ne.jp,unknown,,,2,"2001,2002",,,úìP[uer,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+home.aichi-h.ed.jp,available,,,2,"2001,2002",,,¤mZ,http://www.starcat.co.jp:80/link/school/high/highs_wa.html,[ JPRS database provides information on network administration. Its use is    ]
+homepage1.nifty.com,available,,,2,"2001,2002",,,LITTLE HOUSE,http://www.starcat.co.jp:80/link/pc/hp/tool.html,"No match for ""HOMEPAGE1.NIFTY.COM""."
+hs.kinjo-u.ac.jp,available,,,2,"2001,2002",,,àéw@Z,http://www.starcat.co.jp:80/link/school/high/highs_wa.html,[ JPRS database provides information on network administration. Its use is    ]
+hypermedia.or.jp,available,,,2,2002,,,ÛãÃÇêåwZ,http://www.starcat.co.jp:80/link/school/senmon_go.html,[ JPRS database provides information on network administration. Its use is    ]
+ichigo-tv.com,available,,,2,"2001,2002",,,^ªP[uer,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,"No match for domain ""ICHIGO-TV.COM""."
+icntv.ne.jp,unknown,,,2,"2001,2002",,,¢¿ÍçP[uer,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+iki-nitiniti.com,available,,,2,"2001,2002",,,ëòúXV·,http://www.starcat.co.jp:80/link/news/newspaper.html,Domain Name: IKI-NITINITI.COM
+intertv.or.jp,unknown,,,2,"2001,2002",,,"Inter 
+                                    TV",http://www.starcat.co.jp:80/link/broadcast/timetable.html,[ JPRS database provides information on network administration. Its use is    ]
+jartic.or.jp,unknown,,,2,"2001,2002",,,JARTIC@ú{¹HðÊîñZ^[,http://www.starcat.co.jp:80/link/life/map.html,[ JPRS database provides information on network administration. Its use is    ]
+jmdb.ne.jp,unknown,,,2,"2001,2002",,,ú{fæf[^x[X,http://www.starcat.co.jp:80/link/entertainment/movie/cinema.html,[ JPRS database provides information on network administration. Its use is    ]
+johsei.okazaki.aichi.jp,unknown,,,2,"2001,2002",,,ªèé¼Z,http://www.starcat.co.jp:80/link/school/high/highs_wa.html,[ JPRS database provides information on network administration. Its use is    ]
+jp.bluemountain.com,available,,,2,"2001,2002",,,"GLTCg 
+                                    u[}Ee",http://www.starcat.co.jp:80/link/pc/card.html,"No match for ""JP.BLUEMOUNTAIN.COM""."
+jp.bol.com,available,,,2,"2001,2002",,,BOL@JAPAN,http://www.starcat.co.jp:80/link/entertainment/book.html,"No match for ""JP.BOL.COM""."
+jreast.co.jp,unknown,,,2,"2001,2002",,,iqú{,http://www.starcat.co.jp:80/link/life/map.html,[ JPRS database provides information on network administration. Its use is    ]
+justnet.ne.jp,unknown,,,2,"2001,2002",,,z[y[Wì¬¿â,http://www.starcat.co.jp:80/link/pc/hp/tool.html,[ JPRS database provides information on network administration. Its use is    ]
+kadokawa.net,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2026-12-15T02:35:45Z,2,"2001,2002",,,"KADOKAWA 
+                                    MYSTERY EXPRESS",http://www.starcat.co.jp:80/link/entertainment/book.html,Domain Name: KADOKAWA.NET
+kanagawa-np.co.jp,unknown,,,2,"2001,2002",,,_ÞìV·Ð,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+kappa.cplaza.ne.jp,available,,,2,"2001,2002",,,õ¶ÐdqX,http://www.starcat.co.jp:80/link/entertainment/book.html,[ JPRS database provides information on network administration. Its use is    ]
+karaoke-ch.com,available,,,2,2003,,,http://www.karaoke-ch.com/,http://tv.starcat.co.jp:80/channel/index/0967/,"No match for domain ""KARAOKE-CH.COM""."
+kid.ne.jp,unknown,,,2,"2001,2002",,,¼{´£LOÙ,http://www.starcat.co.jp:80/link/arts/memorial_hall.html,[ JPRS database provides information on network administration. Its use is    ]
+kingrecords.co.jp,unknown,,,2,"2001,2002",,,LOR[h,http://www.starcat.co.jp:80/link/entertainment/music/company.html,[ JPRS database provides information on network administration. Its use is    ]
+kintetsu.co.jp,unknown,,,2,"2001,2002",,,"ßSz[y[W-K's 
+                                    PLAZA",http://www.starcat.co.jp:80/link/life/map.html,[ JPRS database provides information on network administration. Its use is    ]
+kitanet.co.jp,unknown,,,2,"2001,2002",,,kP[ulbg[N,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+kumanichi.co.jp,unknown,,,2,"2001,2002",,,F{úúV·,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+lawsonticket.com,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2027-03-15T08:49:42Z,2,"2001,2002",,,[\`Pbg,http://www.starcat.co.jp:80/link/entertainment/ticket.html,Domain Name: LAWSONTICKET.COM
+linernet.co.jp,available,,,2,"2001,2002",,,®ì^CX,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+magnet.ne.jp,available,,,2,"2001,2002",,,}O|Xg,http://www.starcat.co.jp:80/link/pc/card.html,[ JPRS database provides information on network administration. Its use is    ]
+mapoo.or.jp,available,,,2,"2001,2002",,,MAPOO,http://www.starcat.co.jp:80/link/life/map.html,[ JPRS database provides information on network administration. Its use is    ]
+maruzen.co.jp,unknown,,,2,"2001,2002",,,ÛPC^[lbgVbsO,http://www.starcat.co.jp:80/link/entertainment/book.html,[ JPRS database provides information on network administration. Its use is    ]
+media.gr.jp,available,,,2,"2001,2002",,,G[,http://www.starcat.co.jp:80/link/pc/card.html,[ JPRS database provides information on network administration. Its use is    ]
+meigaku.ac.jp,unknown,,,2,"2001,2002",,,¼Ã®Z,http://www.starcat.co.jp:80/link/school/high/highs_wa.html,[ JPRS database provides information on network administration. Its use is    ]
+members.nbci.com,available,,,2,"2001,2002",,,ú{z[fæf[^x[X,http://www.starcat.co.jp:80/link/entertainment/movie/cinema.html,"No match for ""MEMBERS.NBCI.COM""."
+minaminippon.co.jp,unknown,,,2,"2001,2002",,,ìú{V·Ð,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+mitsui-sports.co.jp,available,,,2,2002,,,"Dynastar 
+      - XL[",http://www.starcat.co.jp:80/link/sports/winter.html,[ JPRS database provides information on network administration. Its use is    ]
+mmcatv.co.jp,available,,,2,"2001,2002",,, ìOéP[uer,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+movienet.co.jp,available,,,2,"2001,2002",,,"movie 
+                                    net",http://www.starcat.co.jp:80/link/entertainment/movie/broadband.html,[ JPRS database provides information on network administration. Its use is    ]
+music.denon.co.jp,available,,,2,"2001,2002",,,ú{RrA,http://www.starcat.co.jp:80/link/entertainment/music/company.html,[ JPRS database provides information on network administration. Its use is    ]
+musicwatch.impress.co.jp,available,,,2,"2001,2002",,,"Music 
+                                    Contact",http://www.starcat.co.jp:80/link/entertainment/music/broadband.html,[ JPRS database provides information on network administration. Its use is    ]
+musicweb.ne.jp,available,,,2,"2001,2002",,,MusicWeb,http://www.starcat.co.jp:80/link/entertainment/music/broadband.html,[ JPRS database provides information on network administration. Its use is    ]
+mytown.asahi.com,available,,,2,"2001,2002",,,R`ATqER,http://www.starcat.co.jp:80/link/news/newspaper.html,"No match for ""MYTOWN.ASAHI.COM""."
+nagoya-u.ac.jp,unknown,,,2,"2001,2002",,,¼Ã®åw,http://www.starcat.co.jp:80/link/school/college/college_k.html,[ JPRS database provides information on network administration. Its use is    ]
+nagoya1-h.ed.jp,available,,,2,"2001,2002",,,¼Ã®æêZ,http://www.starcat.co.jp:80/link/school/high/highs_wa.html,[ JPRS database provides information on network administration. Its use is    ]
+nanzan-kokusai.ed.jp,unknown,,,2,"2001,2002",,,ìRÛZ,http://www.starcat.co.jp:80/link/school/high/highs_wa.html,[ JPRS database provides information on network administration. Its use is    ]
+nara-shimbun.com,taken,"eNom, LLC",2026-10-15T13:03:26Z,2,"2001,2002",,,ÞÇV·,http://www.starcat.co.jp:80/link/news/newspaper.html,Domain Name: NARA-SHIMBUN.COM
+ncv-y.co.jp,unknown,,,2,"2000,2001",,,j[fBAÄò,http://www.starcat.co.jp:80/link/catv/catv_hokkai.html,[ JPRS database provides information on network administration. Its use is    ]
+net123.co.jp,available,,,2,"2001,2002",,, È½ÌXÌa@Eã@îñ,http://www.starcat.co.jp:80/link/health/index.html,[ JPRS database provides information on network administration. Its use is    ]
+netcard.ne.jp,unknown,,,2,"2001,2002",,,"Net 
+                                    CARD",http://www.starcat.co.jp:80/link/pc/card.html,[ JPRS database provides information on network administration. Its use is    ]
+netship.ne.jp,available,,,2,"2001,2002",,,"Netship 
+                                    Post Office",http://www.starcat.co.jp:80/link/pc/card.html,[ JPRS database provides information on network administration. Its use is    ]
+niigata.cool.ne.jp,available,,,2,"2001,2002",,,|Vu°X,http://www.starcat.co.jp:80/link/entertainment/book.html,[ JPRS database provides information on network administration. Its use is    ]
+nikkei.co.jp,unknown,,,2,"2001,2002",,,"NIKKEI 
+                                    NET",http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+nikkeivi.co.jp,unknown,,,2,"2001,2002",,,úoCNBC,http://www.starcat.co.jp:80/link/broadcast/cs/index.html,[ JPRS database provides information on network administration. Its use is    ]
+nissin-noodles.com,taken,MarkMonitor Inc.,2027-02-25T02:55:10Z,2,"2001,2002",,,CX^g[­¾LOÙ,http://www.starcat.co.jp:80/link/arts/memorial_hall.html,Domain Name: NISSIN-NOODLES.COM
+nitech.ac.jp,unknown,,,2,"2001,2002",,,¼Ã®HÆåw,http://www.starcat.co.jp:80/link/school/college/college_k.html,[ JPRS database provides information on network administration. Its use is    ]
+nna.asia.ne.jp,available,,,2,"2001,2002",,,NNA,http://www.starcat.co.jp:80/link/news/news.html,[ JPRS database provides information on network administration. Its use is    ]
+noby.plaza.gaiax.com,available,,,2,"2001,2002",,,JX}»è,http://www.starcat.co.jp:80/link/fortune/index.html,"No match for ""NOBY.PLAZA.GAIAX.COM""."
+oct-net.ne.jp,unknown,,,2,"2001,2002",,,åªP[uerú,http://www.starcat.co.jp:80/link/catv/catv_kyuoki.html,fgets: Connection reset by peer
+octv.ne.jp,unknown,,,2,"2000,2001",,,ÑLVeB[P[u,http://www.starcat.co.jp:80/link/catv/catv_hokkai.html,[ JPRS database provides information on network administration. Its use is    ]
+ocv.ne.jp,available,,,2,"2001,2002",,,¬c}P[urW,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+odawara15ch.co.jp,available,,,2,"2001,2002",,,¬c´P[uer,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+oitaweb.ne.jp,available,,,2,"2001,2002",,,åªcnV·,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+okanichi.co.jp,available,,,2,"2001,2002",,,ªRúúV·,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+okazakigakuen-h.ed.jp,available,,,2,"2001,2002",,,ªèwZ,http://www.starcat.co.jp:80/link/school/high/highs_wa.html,[ JPRS database provides information on network administration. Its use is    ]
+ozekigakuen-h.ed.jp,available,,,2,"2001,2002",,,öÖwZ,http://www.starcat.co.jp:80/link/school/high/highs_wa.html,[ JPRS database provides information on network administration. Its use is    ]
+pldc.co.jp,available,,,2,"2001,2002",,,pCIjALDC,http://www.starcat.co.jp:80/link/entertainment/music/company.html,[ JPRS database provides information on network administration. Its use is    ]
+pref.fukui.jp,unknown,,,2,2001,,,ä§§¨Ù,http://www.starcat.co.jp:80/link/arts/science_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+rcn.ne.jp,unknown,,,2,"2001,2002",,,äìP[ulbg[N,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
+realguide-jp.real.com,available,,,2,"2001,2002",,,"Real 
+                                    Jukebox Guide",http://www.starcat.co.jp:80/link/entertainment/music/broadband.html,"No match for ""REALGUIDE-JP.REAL.COM""."
+rosenet.ne.jp,unknown,,,2,"2001,2002",,,P[uerW,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+ryu2.plaza.gaiax.com,available,,,2,"2001,2002",,,¸_NîÓè,http://www.starcat.co.jp:80/link/fortune/index.html,"No match for ""RYU2.PLAZA.GAIAX.COM""."
+ryukyushimpo.co.jp,unknown,,,2,"2001,2002",,,®Vñ,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+sagawa-exp.co.jp,unknown,,,2,"2001,2002",,,²ì}Ö^À\,http://www.starcat.co.jp:80/link/life/takuhai.html,[ JPRS database provides information on network administration. Its use is    ]
+sakigake.co.jp,unknown,,,2,"2001,2002",,,Hc@VñÐ,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+sakura-catv.co.jp,available,,,2,"2001,2002",,,³­çP[uer,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+sankei.co.jp,unknown,,,2,"2001,2002",,,YoV·,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+sanseido-publ.co.jp,unknown,,,2,"2001,2002",,,OÈ°,http://www.starcat.co.jp:80/link/entertainment/book.html,[ JPRS database provides information on network administration. Its use is    ]
+sanyo.oni.co.jp,available,,,2,"2001,2002",,,RzV·Ð,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+sapporotimes.co.jp,available,,,2,"2001,2002",,,Dy^CX,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+sbs-np.co.jp,available,,,2,"2001,2002",,,ÃªV·,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+sctv.ne.jp,available,,,2,"2001,2002",,,²ìP[uer,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+seaple-n.icc.ne.jp,available,,,2,"2001,2002",,,^EerKuì,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+seino.co.jp,unknown,,,2,"2001,2002",,,¼Z^A,http://www.starcat.co.jp:80/link/life/takuhai.html,[ JPRS database provides information on network administration. Its use is    ]
+setolink.ne.jp,unknown,,,2,"2001,2002",,,Æ¤ß¢V·,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+shinshu.co.jp,unknown,,,2,"2001,2002",,,kMBlbg,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+shopchannel.co.jp,unknown,,,2,"2001,2002",,,Vbv`l,http://www.starcat.co.jp:80/link/broadcast/cs/index.html,[ JPRS database provides information on network administration. Its use is    ]
+snu.ne.jp,available,,,2,"2001,2002",,,X[p[lbg[N[,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+sports-i.co.jp,available,,,2,"2001,2002",,,X|[cEAC|ESPN,http://www.starcat.co.jp:80/link/broadcast/cs/index.html,[ JPRS database provides information on network administration. Its use is    ]
+spy.or.jp,available,,,2,"2001,2002",,,RVñ,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+sunfield.ne.jp,unknown,,,2,"2001,2002",,,ØÍçµäYLOÙ,http://www.starcat.co.jp:80/link/arts/memorial_hall.html,[ JPRS database provides information on network administration. Its use is    ]
+sv.sankyo-g.co.jp,available,,,2,"2001,2002",,,X^[`Ch,http://www.starcat.co.jp:80/link/entertainment/anime/company.html,[ JPRS database provides information on network administration. Its use is    ]
+sys.gr.jp,available,,,2,"2001,2002",,,üè¢ï`Pbgîñ,http://www.starcat.co.jp:80/link/entertainment/ticket.html,[ JPRS database provides information on network administration. Its use is    ]
+tcat.co.jp,available,,,2,"2001,2002",,,evRP[uer,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+tcn-catv.co.jp,unknown,,,2,"2001,2002",,,P[ulbg[N,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+tctv.co.jp,available,,,2,"2001,2002",,,ékj[fBA,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+tcv.or.jp,available,,,2,"2001,2002",,,P[urW,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+tfsd.co.jp,available,,,2,"2001,2002",,,g\tBiVZLeBf[^,http://www.starcat.co.jp:80/link/business/shouken.html,[ JPRS database provides information on network administration. Its use is    ]
+tms-e.com,taken,"Japan Registry Services Co., Ltd.",2026-05-26T08:24:15Z,2,"2001,2002",,,[r[,http://www.starcat.co.jp:80/link/entertainment/anime/company.html,Domain Name: TMS-E.COM
+tobuyomiuri.co.jp,unknown,,,2,"2001,2002",,,æÝ¤è,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+toei.co.jp,unknown,,,2,"2001,2002",,,f,http://www.starcat.co.jp:80/link/entertainment/movie/company.html,[ JPRS database provides information on network administration. Its use is    ]
+toho.co.jp,unknown,,,2,"2001,2002",,,óG^[eCg,http://www.starcat.co.jp:80/link/entertainment/movie/company.html,[ JPRS database provides information on network administration. Its use is    ]
+town.kushibiki.yamagata.jp,available,,,2,"2000,2001",,,ùø¬P[uerW,http://www.starcat.co.jp:80/link/catv/catv_hokkai.html,[ JPRS database provides information on network administration. Its use is    ]
+town.oyama.oita.jp,available,,,2,"2001,2002",,,åR¬Lüer,http://www.starcat.co.jp:80/link/catv/catv_kyuoki.html,[ JPRS database provides information on network administration. Its use is    ]
+toysfactory.co.jp,unknown,,,2,"2001,2002",,,"TOY'S 
+                                      FACTORY",http://www.starcat.co.jp:80/link/entertainment/music/company.html,[ JPRS database provides information on network administration. Its use is    ]
+tr.abz.jp,available,,,2,2003,,,http://tr.abz.jp/gametown/flashgame.htm,http://tv.starcat.co.jp:80/series/program/netstyle/topic/,[ JPRS database provides information on network administration. Its use is    ]
+ttv.ne.jp,unknown,,,2,"2001,2002",,,½er,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+tulipnet.co.jp,unknown,,,2,"2000,2001",,,P[ulbgV,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
+ubenichi.co.jp,available,,,2,"2001,2002",,,Exj`V·,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+ucatv.ne.jp,unknown,,,2,"2001,2002",,,Fs{P[uer,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+urawa.cabletv.ne.jp,available,,,2,"2001,2002",,,YaP[uerlbg[N,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+usembassy.state.gov,available,,,2,"2001,2002",,,AJOågÙ,http://www.starcat.co.jp:80/link/news/embassy.html,Nameserver not found.
+usiwakamaru.or.jp,unknown,,,2,"2001,2002",,,¤m§§túäìZ,http://www.starcat.co.jp:80/link/school/high/highs_ken.html,[ JPRS database provides information on network administration. Its use is    ]
+ux01.so-net.ne.jp,available,,,2,"2001,2002",,,R~jeB,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+v6.starcat.ne.jp,available,,,2,2002,,,IPv6ÀØÀ±,http://www.starcat.co.jp:80/,[ JPRS database provides information on network administration. Its use is    ]
+vcnet.fukui.fukui.jp,unknown,,,2,"2001,2002",,,äV·,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+westjr.co.jp,unknown,,,2,"2001,2002",,,iq¼ú{,http://www.starcat.co.jp:80/link/life/map.html,[ JPRS database provides information on network administration. Its use is    ]
+wind.co.jp,unknown,,,2,2001,,,"el 
+                                    OZE",http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+wni.co.jp,unknown,,,2,"2001,2002",,,¨VC`l,http://www.starcat.co.jp:80/link/broadcast/cs/index.html,[ JPRS database provides information on network administration. Its use is    ]
+world-reader.ne.jp,available,,,2,"2001,2002",,,"World 
+                                    Reader",http://www.starcat.co.jp:80/link/news/news.html,[ JPRS database provides information on network administration. Its use is    ]
+wowow.jp,taken,WOWOW INC.,,2,2003,,,http://www.wowow.jp/,http://tv.starcat.co.jp:80/channel/index/0017/,[ JPRS database provides information on network administration. Its use is    ]
+www1.pref.tottori.jp,available,,,2,2001,,,¹æ§§¨Ù,http://www.starcat.co.jp:80/link/arts/science_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+www2.pref.oita.jp,available,,,2,2001,,,åª§§ðj¨Ù,http://www.starcat.co.jp:80/link/arts/science_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+www2.yamaha.co.jp,available,,,2,"2001,2002",,,midmail,http://www.starcat.co.jp:80/link/pc/card.html,[ JPRS database provides information on network administration. Its use is    ]
+www5.ocn.ne.jp,available,,,2,"2002,2003",,,@¥êåwZ,http://www.starcat.co.jp:80/link/school/senmon_kei.html,[ JPRS database provides information on network administration. Its use is    ]
+ynot.co.jp,unknown,,,2,"2001,2002",,,"Ynot 
+                                    e-Card",http://www.starcat.co.jp:80/link/pc/card.html,[ JPRS database provides information on network administration. Its use is    ]
+ytv.ne.jp,available,,,2,"2001,2002",,,¡lerÇ,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+yujiro-kinenkan.com,taken,"GoDaddy.com, LLC",2026-06-24T05:31:09Z,2,"2001,2002",,,Î´TYLOÙ,http://www.starcat.co.jp:80/link/arts/memorial_hall.html,Domain Name: YUJIRO-KINENKAN.COM
+21yamaha.com,available,,,1,2003,,,http://www.21yamaha.com/mc/papercraft/,http://tv.starcat.co.jp:80/series/program/netstyle/topic/,"No match for domain ""21YAMAHA.COM""."
+761.web.co.jp,available,,,1,2001,,,"City 
+                                    FM",http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+771fm.com,available,,,1,2001,,,"RAINBOW 
+                                    FM",http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,"No match for domain ""771FM.COM""."
+aac.pref.aichi.jp,available,,,1,2002,,,http://www.aac.pref.aichi.jp/,http://www.starcat.co.jp:80/petit/special/0208/02.html,[ JPRS database provides information on network administration. Its use is    ]
+abu.ac.jp,unknown,,,1,2001,,,¤m¶³åw,http://www.starcat.co.jp:80/link/school/college/college_s.html,[ JPRS database provides information on network administration. Its use is    ]
+acekogyo.co.jp,available,,,1,2002,,,ß{[^[X|[ch,http://www.starcat.co.jp:80/link/sports/kart.html,[ JPRS database provides information on network administration. Its use is    ]
+aichi-gakuin.ac.jp,unknown,,,1,2001,,,¤mw@åw,http://www.starcat.co.jp:80/link/school/college/college_s.html,[ JPRS database provides information on network administration. Its use is    ]
+aichi-u.ac.jp,unknown,,,1,2001,,,¤måw,http://www.starcat.co.jp:80/link/school/college/college_s.html,[ JPRS database provides information on network administration. Its use is    ]
+aikis.or.jp,unknown,,,1,2001,,,r[`Xe[V,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+aim-school.co.jp,available,,,1,2001,,,b`cAJf~[EGC,http://www.starcat.co.jp:80/link/index.html,[ JPRS database provides information on network administration. Its use is    ]
+amkobe.co.jp,available,,,1,2001,,,AM_Ë,http://www.starcat.co.jp:80/link/broadcast/radio/am.html,[ JPRS database provides information on network administration. Its use is    ]
+apes.co.jp,available,,,1,2001,,,h©ç­è¨Ù,http://www.starcat.co.jp:80/link/arts/science_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+artown.net,available,,,1,2001,,,artown\A[gÆG^[eCgÌX,http://www.starcat.co.jp:80/link/entertainment/index.html,"No match for domain ""ARTOWN.NET""."
+ascii24.com,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2034-10-20T04:00:00Z,1,2001,,,ASCIIQS,http://www.starcat.co.jp:80/link/news/index.html,Domain Name: ASCII24.COM
+aspir.co.jp,unknown,,,1,2002,,,,http://www.starcat.co.jp:80/ir/link.html,[ JPRS database provides information on network administration. Its use is    ]
+baobab.or.jp,unknown,,,1,2001,,,´nðjÙ,http://www.starcat.co.jp:80/link/arts/science_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+bbs.otd.co.jp,available,,,1,2001,,,OTD BBS,http://www.starcat.co.jp:80/link/pc/hp/server.html,[ JPRS database provides information on network administration. Its use is    ]
+beachfm.co.jp,unknown,,,1,2001,,,Ãìr[`el,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+bfm.co.jp,available,,,1,2001,,,FM-BIZAN,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+book.tezuka.jp,available,,,1,2003,,,http://book.tezuka.jp/,http://tv.starcat.co.jp:80/series/program/netstyle/topic/,[ JPRS database provides information on network administration. Its use is    ]
+ceres.dti.ne.jp,available,,,1,2001,,,¬¿Ù,http://www.starcat.co.jp:80/link/arts/science_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+charame.com,available,,,1,2001,,,LbZ[W,http://www.starcat.co.jp:80/link/pc/messenger.html,"No match for domain ""CHARAME.COM""."
+chubu-jr.ac.jp,available,,,1,2002,,,åwZp¶»êåwZ,http://www.starcat.co.jp:80/link/school/senmon_kei.html,[ JPRS database provides information on network administration. Its use is    ]
+chujo-u.ac.jp,available,,,1,2001,,,qåw,http://www.starcat.co.jp:80/link/school/college/college_s.html,[ JPRS database provides information on network administration. Its use is    ]
+chukakunet.pref.kagoshima.jp,available,,,1,2001,,,­§,http://www.starcat.co.jp:80/link/news/local_government.html,[ JPRS database provides information on network administration. Its use is    ]
+chukyo-u.ac.jp,unknown,,,1,2001,,,åw,http://www.starcat.co.jp:80/link/school/college/college_s.html,[ JPRS database provides information on network administration. Its use is    ]
+chukyo.ed.jp,unknown,,,1,2002,,,åwt®Z,http://www.starcat.co.jp:80/link/school/highs_wa.html,[ JPRS database provides information on network administration. Its use is    ]
+chuo-h.nagoya-c.ed.jp,available,,,1,2001,,,¼Ã®s§Z,http://www.starcat.co.jp:80/link/school/high/highs_ngy.html,[ JPRS database provides information on network administration. Its use is    ]
+city.ashiya.hyogo.jp,unknown,,,1,2001,,,°®s§üp¨Ù,http://www.starcat.co.jp:80/link/arts/science_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+city.gamagori.aichi.jp,unknown,,,1,2002,,,Ss§\tBAÅìêåwZ,http://www.starcat.co.jp:80/link/school/senmon_spo.html,[ JPRS database provides information on network administration. Its use is    ]
+city.gifu.gifu.jp,unknown,,,1,2001,,,CxgCtH[V,http://www.starcat.co.jp:80/link/arts/science_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+city.hamamatsu.shizuoka.jp,unknown,,,1,2001,,,l¼syí¨Ù,http://www.starcat.co.jp:80/link/arts/science_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+city.hikone.shiga.jp,unknown,,,1,2001,,,Fªé¨Ù,http://www.starcat.co.jp:80/link/arts/science_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+city.nagoya.jp,unknown,,,1,2001,,,¼Ã®s,http://www.starcat.co.jp:80/link/culture/index.html,[ JPRS database provides information on network administration. Its use is    ]
+city77.co.jp,available,,,1,2001,,,"CITY 
+                                    FM77",http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+city791.fm,available,,,1,2001,,,F{CityFM791,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,The queried object does not exist: DOMAIN NOT FOUND
+cityfujisawa.ne.jp,unknown,,,1,2001,,,¡òP[uer,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+cjn.or.jp,available,,,1,2001,,,sRIS[Ù,http://www.starcat.co.jp:80/link/arts/science_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+clubdam.com,taken,"Japan Registry Services Co., Ltd.",2027-04-19T14:23:58Z,1,2001,,,clubDAM.com,http://www.starcat.co.jp:80/link/entertainment/music/karaoke.html,Domain Name: CLUBDAM.COM
+cool.ne.jp,unknown,,,1,2001,,,COOL ONLINE,http://www.starcat.co.jp:80/link/pc/hp/server.html,[ JPRS database provides information on network administration. Its use is    ]
+crash.ne.jp,available,,,1,2002,,,crash.net,http://www.starcat.co.jp:80/link/sports/kart.html,[ JPRS database provides information on network administration. Its use is    ]
+csweb.co.jp,available,,,1,2002,,,Câs,http://www.starcat.co.jp:80/link/business/bank.html,[ JPRS database provides information on network administration. Its use is    ]
 cty.co.jp,unknown,,,1,2000,,,V[EeB[EC,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
+dai2kogyo-th.nagoya-c.ed.jp,available,,,1,2001,,,¼Ã®sæñHÆZ,http://www.starcat.co.jp:80/link/school/high/highs_ngy.html,[ JPRS database provides information on network administration. Its use is    ]
+daido-it.ac.jp,unknown,,,1,2001,,,å¯HÆåw,http://www.starcat.co.jp:80/link/school/college/college_s.html,[ JPRS database provides information on network administration. Its use is    ]
+danvo.co.jp,available,,,1,2001,,,"el 
+                                    c`mun",http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+digitalid.verisign.com,available,,,1,2003,,,,http://web2.starcat.co.jp:80/,"No match for ""DIGITALID.VERISIGN.COM""."
+dokodemobank.ne.jp,unknown,,,1,2002,,,Ç±ÅàoN,http://www.starcat.co.jp:80/link/business/bank.html,[ JPRS database provides information on network administration. Its use is    ]
+e-somu.com,taken,"Japan Registry Services Co., Ltd.",2027-03-24T10:03:08Z,1,2002,,,e-somu.com,http://www.starcat.co.jp:80/link/business/keiei.html,Domain Name: E-SOMU.COM
+eal.or.jp,unknown,,,1,2001,,,"ELECTRIC 
+                                    AMAZELAND",http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+edogawa.com,taken,Kagoya Japan Inc.,2026-09-22T04:00:00Z,1,2001,,,]ËìP[uer,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,Domain Name: EDOGAWA.COM
+edu-c.pref.akita.jp,available,,,1,2001,,,Hc§§¨Ù,http://www.starcat.co.jp:80/link/arts/science_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+enc.or.jp,available,,,1,2002,,,C^[lbgðp·é½ßÌ[&}i[W,http://www.starcat.co.jp:80/link/pc/main.html,[ JPRS database provides information on network administration. Its use is    ]
 eolas-net.ne.jp,unknown,,,1,2000,,,®ìP[uer,http://www.starcat.co.jp:80/link/catv/catv_hokkai.html,[ JPRS database provides information on network administration. Its use is    ]
-fctv.co.jp,unknown,,,1,2000,,,äP[uer,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
-fureai-ch.ne.jp,unknown,,,1,2000,,,Óê ¢`l,http://www.starcat.co.jp:80/link/catv/catv_chugoku.html,[ JPRS database provides information on network administration. Its use is    ]
-hbs.ne.jp,unknown,,,1,2000,,,LP[urW,http://www.starcat.co.jp:80/link/catv/catv_chugoku.html,[ JPRS database provides information on network administration. Its use is    ]
-hicat.ne.jp,unknown,,,1,2000,,,LVeBP[uer,http://www.starcat.co.jp:80/link/catv/catv_chugoku.html,[ JPRS database provides information on network administration. Its use is    ]
-himawari.co.jp,unknown,,,1,2000,,,ÐÜíèlbg[N,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
-i-younet.ne.jp,unknown,,,1,2000,,,É¤}P[ulbg[N,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
-ict.ne.jp,unknown,,,1,2000,,,ÉêãìP[uer,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
-ise-ics.co.jp,unknown,,,1,2000,,,Ñì¬P[uVXe,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
-islands.ne.jp,unknown,,,1,2000,,,ºP[uerW,http://www.starcat.co.jp:80/link/catv/catv_shikoku.html,[ JPRS database provides information on network administration. Its use is    ]
-jcom.co.jp,unknown,,,1,2000,,,P[ulbgºÖ,http://www.starcat.co.jp:80/link/catv/catv_chugoku.html,[ JPRS database provides information on network administration. Its use is    ]
+eolas.co.jp,unknown,,,1,2001,,,OY»qLO¶wÙ,http://www.starcat.co.jp:80/link/arts/science_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+epoca-inc.com,available,,,1,2001,,,¼Ã®WG[fUCXN[,http://www.starcat.co.jp:80/link/index.html,"No match for domain ""EPOCA-INC.COM""."
+epsondirect.co.jp,unknown,,,1,2002,,,Gv\_CNg,http://www.starcat.co.jp:80/link/pc/maker.html,[ JPRS database provides information on network administration. Its use is    ]
+f-net.ne.jp,unknown,,,1,2001,,,{NVO`[E[,http://www.starcat.co.jp:80/link/index.html,[ JPRS database provides information on network administration. Its use is    ]
+fm-champla.co.jp,available,,,1,2001,,,"FM 
+                                    Champla!",http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+fm-iruma.co.jp,available,,,1,2001,,,el¢éÜ,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+fm-kyoto.co.jp,unknown,,,1,2001,,,GtGs,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+fm-nakakyushu.co.jp,available,,,1,2001,,,GtGãB,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+fm-pw.co.jp,unknown,,,1,2001,,,"PORT 
+                                    WAVE 76.8WEB",http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,fgets: Connection reset by peer
+fm837.co.jp,unknown,,,1,2001,,,FMè[×é,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+fmbell.ne.jp,available,,,1,2001,,,el×é,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+fmfuji.co.jp,unknown,,,1,2001,,,"el-FUJI 
+                                    ON NET",http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+fmfukui.co.jp,unknown,,,1,2001,,,GtGä,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+fmgunma.com,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2027-02-15T05:00:00Z,1,2001,,,fmgunma.com,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,Domain Name: FMGUNMA.COM
+fmmarino.co.jp,available,,,1,2001,,,"FM 
+                                    MARINO 78.0",http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+fmmie.co.jp,unknown,,,1,2001,,,FMOd,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+fmnagano.co.jp,unknown,,,1,2001,,,"FM 
+                                    NAGANO.CO.JO",http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+fmnagaoka.co.jp,available,,,1,2001,,,FMÈª¨©,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+fmoita.co.jp,unknown,,,1,2001,,,"FM 
+                                    OITA!",http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+fmpst.co.jp,available,,,1,2001,,,"ÐëµÜ 
+                                    P-Station",http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+fmsaga.co.jp,unknown,,,1,2001,,,FMSAGA,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+fmsakudaira.co.jp,unknown,,,1,2001,,,"FM 
+                                    SAKUDAIRA",http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+fmyao.co.jp,available,,,1,2001,,,FM¿á¨,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+fmyokohama.co.jp,unknown,,,1,2001,,,el¡l,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+foods.co.jp,unknown,,,1,2001,,,Food'sFoo,http://www.starcat.co.jp:80/link/life/cook.html,[ JPRS database provides information on network administration. Its use is    ]
+freeweb.ne.jp,unknown,,,1,2001,,,freeweb,http://www.starcat.co.jp:80/link/pc/hp/server.html,[ JPRS database provides information on network administration. Its use is    ]
+fujiko-pro.co.jp,unknown,,,1,2001,,,h¦àñ,http://www.starcat.co.jp:80/link/entertainment/anime/contents.html,[ JPRS database provides information on network administration. Its use is    ]
+fujitsu.com,taken,SafeBrands SAS,2027-03-23T04:00:00Z,1,2002,,,xmÊ®ïÐ,http://www.starcat.co.jp:80/link/pc/maker.html,Domain Name: FUJITSU.COM
+gakusen.ac.jp,unknown,,,1,2001,,,¤mwòåw,http://www.starcat.co.jp:80/link/school/college/college_s.html,[ JPRS database provides information on network administration. Its use is    ]
+gw2k.co.jp,available,,,1,2002,,,ú{Q[gEFC,http://www.starcat.co.jp:80/link/pc/maker.html,[ JPRS database provides information on network administration. Its use is    ]
+h-atti.com,available,,,1,2002,,,{¯P[uer,http://www.starcat.co.jp:80/link/catv/kantou.html,"No match for domain ""H-ATTI.COM""."
+hamoriclub.net,available,,,1,2001,,,näy,http://www.starcat.co.jp:80/link/entertainment/music/karaoke.html,"No match for domain ""HAMORICLUB.NET""."
+heartland.freegate.co.jp,available,,,1,2003,,,HeartLandStudio,http://tv.starcat.co.jp:80/series/program/htv/,[ JPRS database provides information on network administration. Its use is    ]
+hfa.co.jp,available,,,1,2003,,,http://www.hfa.co.jp/,http://tv.starcat.co.jp:80/series/program/sugo6navi/archive/2003/04/11/,[ JPRS database provides information on network administration. Its use is    ]
+hibiyakadan.com,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2026-12-24T17:57:55Z,1,2003,,,http://www.hibiyakadan.com/,http://tv.starcat.co.jp:80/series/program/sugo6navi/archive/2003/04/11/,Domain Name: HIBIYAKADAN.COM
+hiroshima-fm.co.jp,unknown,,,1,2001,,,HIROSIMA-FM,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+hiroshima-home-tv.co.jp,available,,,1,2001,,,Lz[er,http://www.starcat.co.jp:80/link/broadcast/tv/index.html,[ JPRS database provides information on network administration. Its use is    ]
+hiroshima-htv.co.jp,available,,,1,2001,,,Ler,http://www.starcat.co.jp:80/link/broadcast/tv/index.html,[ JPRS database provides information on network administration. Its use is    ]
+home.highway.ne.jp,available,,,1,2002,,,l`PbgðÎ¢òÎ¹,http://www.starcat.co.jp:80/link/pc/main.html,[ JPRS database provides information on network administration. Its use is    ]
+homech.co.jp,available,,,1,2000,,,z[`l,http://www.starcat.co.jp:80/channel/index.html,[ JPRS database provides information on network administration. Its use is    ]
+honda.co.jp,unknown,,,1,2002,,,"Honda Motor 
+      Sports",http://www.starcat.co.jp:80/link/sports/kart.html,[ JPRS database provides information on network administration. Its use is    ]
+honjo.ne.jp,available,,,1,2001,,,{¯P[uer,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+i-port.ne.jp,unknown,,,1,2001,,,WIÎª,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+i-tokai.co.jp,available,,,1,2001,,,GtGªè,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+ibs-radio.com,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2026-05-30T07:23:36Z,1,2001,,,ïéú,http://www.starcat.co.jp:80/link/broadcast/radio/am.html,Domain Name: IBS-RADIO.COM
+ictnet.co.jp,unknown,,,1,2001,,,âèP[uerW,http://www.starcat.co.jp:80/link/catv/catv_touhoku.html,[ JPRS database provides information on network administration. Its use is    ]
+iimt-ce.ac.jp,available,,,1,2002,,,ÛãwZpêåwZ,http://www.starcat.co.jp:80/link/school/senmon_spo.html,[ JPRS database provides information on network administration. Its use is    ]
+info.edinet.go.jp,available,,,1,2002,,,EDINET,http://www.starcat.co.jp:80/ir/link.html,[ JPRS database provides information on network administration. Its use is    ]
+infoaomori.ne.jp,unknown,,,1,2001,,,¢¬§¨Ù,http://www.starcat.co.jp:80/link/arts/science_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+infoqshu.ne.jp,available,,,1,2002,,,ArXpª,http://www.starcat.co.jp:80/link/sports/soccer.html,[ JPRS database provides information on network administration. Its use is    ]
+ioream.com,available,,,1,2003,,,http://www.ioream.com/,http://tv.starcat.co.jp:80/series/program/machikadoballoon/archives/20030125/,"No match for domain ""IOREAM.COM""."
+j-league.or.jp,unknown,,,1,2002,,,i[Oö®TCg,http://www.starcat.co.jp:80/link/sports/soccer.html,[ JPRS database provides information on network administration. Its use is    ]
+j-walker.nedox.co.jp,available,,,1,2001,,,GtG½,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+ja-f.tezuka.co.jp,available,,,1,2003,,,http://ja-f.tezuka.co.jp/,http://tv.starcat.co.jp:80/series/program/netstyle/topic/,[ JPRS database provides information on network administration. Its use is    ]
+jade.dti.ne.jp,available,,,1,2002,,,LfUCêåwZ,http://www.starcat.co.jp:80/link/school/senmon_mas.html,[ JPRS database provides information on network administration. Its use is    ]
+jah.or.jp,available,,,1,2000,,,(c)1997 Takeshi Iwanami,http://www.starcat.co.jp:80/cgi/superch/f_mailer.cgi,[ JPRS database provides information on network administration. Its use is    ]
+japannetbank.co.jp,unknown,,,1,2002,,,Wplbgâs,http://www.starcat.co.jp:80/link/business/bank.html,[ JPRS database provides information on network administration. Its use is    ]
+jfa.or.jp,unknown,,,1,2002,,,ú{TbJ[¦ï,http://www.starcat.co.jp:80/link/sports/soccer.html,[ JPRS database provides information on network administration. Its use is    ]
 joetsu.co.jp,unknown,,,1,2000,,,ãzP[urW,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
-kcb.co.jp,unknown,,,1,2000,,,mP[uer,http://www.starcat.co.jp:80/link/catv/catv_shikoku.html,[ JPRS database provides information on network administration. Its use is    ]
-mcat.co.jp,unknown,,,1,2000,,,O´erú,http://www.starcat.co.jp:80/link/catv/catv_chugoku.html,[ JPRS database provides information on network administration. Its use is    ]
-nava21.co.jp,unknown,,,1,2000,,,¼£21¢IP[uerW,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
-ncv-y.co.jp,unknown,,,1,2000,,,j[fBAÄò,http://www.starcat.co.jp:80/link/catv/catv_hokkai.html,[ JPRS database provides information on network administration. Its use is    ]
-netwave.or.jp,unknown,,,1,2000,,,P[ufBAl,http://www.starcat.co.jp:80/link/catv/catv_shikoku.html,[ JPRS database provides information on network administration. Its use is    ]
-nns-catv.co.jp,unknown,,,1,2000,,,ú{lbg[NT[rX,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
-octv.ne.jp,unknown,,,1,2000,,,ÑLVeB[P[u,http://www.starcat.co.jp:80/link/catv/catv_hokkai.html,[ JPRS database provides information on network administration. Its use is    ]
-ogaki-tv.co.jp,unknown,,,1,2000,,,å_P[uer,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
-tees.ne.jp,unknown,,,1,2000,,,L´P[ulbg[N,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
-titus.co.jp,unknown,,,1,2000,,,^C^XEXLbg,http://www.starcat.co.jp:80/link/catv/catv_hokkai.html,[ JPRS database provides information on network administration. Its use is    ]
-tulipnet.co.jp,unknown,,,1,2000,,,P[ulbgV,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
-tvm.co.jp,unknown,,,1,2000,,,er¼{P[urW,http://www.starcat.co.jp:80/link/catv/catv_hokuriku.html,[ JPRS database provides information on network administration. Its use is    ]
-tvt.ne.jp,unknown,,,1,2000,,,erÃR,http://www.starcat.co.jp:80/link/catv/catv_chugoku.html,[ JPRS database provides information on network administration. Its use is    ]
-ztv.co.jp,unknown,,,1,2000,,,ÃP[uer,http://www.starcat.co.jp:80/link/catv/catv_chubu.html,[ JPRS database provides information on network administration. Its use is    ]
+jp.dell.com,available,,,1,2002,,,fRs[^,http://www.starcat.co.jp:80/link/pc/maker.html,"No match for ""JP.DELL.COM""."
+jsda.or.jp,unknown,,,1,2002,,,ú{ØÆ¦ï,http://www.starcat.co.jp:80/ir/link.html,[ JPRS database provides information on network administration. Its use is    ]
+jttk.zaq.ne.jp,available,,,1,2001,,,n~OFMóË,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,[ JPRS database provides information on network administration. Its use is    ]
+kagawa-net.or.jp,available,,,1,2000,,,OLP[uerú,http://www.starcat.co.jp:80/link/catv/catv_shikoku.html,[ JPRS database provides information on network administration. Its use is    ]
+kagome.co.jp,unknown,,,1,2001,,,JS,http://www.starcat.co.jp:80/link/life/cook.html,[ JPRS database provides information on network administration. Its use is    ]
+kanji.tokio.co.jp,available,,,1,2003,,,http://kanji.tokio.co.jp,http://tv.starcat.co.jp:80/series/program/netstyle/topic/,[ JPRS database provides information on network administration. Its use is    ]
+kansaitech.co.jp,available,,,1,2001,,,ÎP[ulbg[N,http://www.starcat.co.jp:80/link/catv/catv_kinki.html,[ JPRS database provides information on network administration. Its use is    ]
+kdn.gr.jp,available,,,1,2003,,,http://www.kdn.gr.jp/~shii/index-jp.shtml,http://tv.starcat.co.jp:80/series/program/netstyle/topic/,[ JPRS database provides information on network administration. Its use is    ]
+kepco.co.jp,unknown,,,1,2003,,,http://www.kepco.co.jp/,http://tv.starcat.co.jp:80/series/program/netstyle/topic/,[ JPRS database provides information on network administration. Its use is    ]
+kikuzato-h.nagoya-c.ed.jp,available,,,1,2001,,,¼Ã®s§e¢Z,http://www.starcat.co.jp:80/link/school/high/highs_ngy.html,[ JPRS database provides information on network administration. Its use is    ]
+kita-h.nagoya-c.ed.jp,available,,,1,2001,,,¼Ã®s§kZ,http://www.starcat.co.jp:80/link/school/high/highs_ngy.html,[ JPRS database provides information on network administration. Its use is    ]
+kodansha.cplaza.ne.jp,available,,,1,2003,,,http://kodansha.cplaza.ne.jp/uranai/sushi/,http://tv.starcat.co.jp:80/series/program/netstyle/topic/,[ JPRS database provides information on network administration. Its use is    ]
+kogei-th.nagoya-c.ed.jp,available,,,1,2001,,,¼Ã®s§H|Z,http://www.starcat.co.jp:80/link/school/high/highs_ngy.html,[ JPRS database provides information on network administration. Its use is    ]
+kogyo-th.nagoya-c.ed.jp,available,,,1,2001,,,¼Ã®s§HÆZ,http://www.starcat.co.jp:80/link/school/high/highs_ngy.html,[ JPRS database provides information on network administration. Its use is    ]
+koyo-h.nagoya-c.ed.jp,available,,,1,2001,,,¼Ã®s§üzZ,http://www.starcat.co.jp:80/link/school/high/highs_ngy.html,[ JPRS database provides information on network administration. Its use is    ]
+ktn.co.jp,unknown,,,1,2001,,,er·è,http://www.starcat.co.jp:80/link/broadcast/tv/index.html,[ JPRS database provides information on network administration. Its use is    ]
+lalabit.com,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2027-01-06T05:00:00Z,1,2001,,,LaLaBit,http://www.starcat.co.jp:80/link/life/kids.html,Domain Name: LALABIT.COM
+laluz.com,taken,"Network Solutions, LLC",2026-05-24T04:00:00Z,1,2001,,,"Studio 
+                                    laLUZ",http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,Domain Name: LALUZ.COM
+loopit.ne.jp,available,,,1,2001,,,LOOPiT,http://www.starcat.co.jp:80/link/pc/messenger.html,[ JPRS database provides information on network administration. Its use is    ]
+m-net.ne.jp,unknown,,,1,2002,,,}CEer,http://www.starcat.co.jp:80/link/catv/kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+mail.cocode.ne.jp,available,,,1,2001,,,"CoCode 
+                                      Mail",http://www.starcat.co.jp:80/link/pc/magazine.html,[ JPRS database provides information on network administration. Its use is    ]
+mainichi.co.jp,unknown,,,1,2001,,,úV·,http://www.starcat.co.jp:80/link/news/newspaper.html,[ JPRS database provides information on network administration. Its use is    ]
+mars.dti.ne.jp,available,,,1,2001,,,L§§ðj¨Ù,http://www.starcat.co.jp:80/link/arts/science_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+matsu-take.net,available,,,1,2003,,,まつたけちゃんねるは 名古屋市長公式ホームページでもご覧いただけます。,http://tv.starcat.co.jp:80/series/program/matsutakech/,"No match for domain ""MATSU-TAKE.NET""."
+mc.ccnw.ne.jp,available,,,1,2003,,,http://www.mc.ccnw.ne.jp/kawahata/,http://tv.starcat.co.jp:80/series/program/sugo6navi/archive/2003/04/04/,[ JPRS database provides information on network administration. Its use is    ]
+meijo-u.ac.jp,unknown,,,1,2001,,,¼éåw,http://www.starcat.co.jp:80/link/school/college/college_s.html,[ JPRS database provides information on network administration. Its use is    ]
+meisan.ac.jp,available,,,1,2002,,,¼Ã®îñYÆêåwZ,http://www.starcat.co.jp:80/link/school/senmon_kei.html,[ JPRS database provides information on network administration. Its use is    ]
+meito-h.nagoya-c.ed.jp,available,,,1,2001,,,¼Ã®s§¼Z,http://www.starcat.co.jp:80/link/school/high/highs_ngy.html,[ JPRS database provides information on network administration. Its use is    ]
+messenger.goo.ne.jp,available,,,1,2001,,,goobZW[,http://www.starcat.co.jp:80/link/pc/messenger.html,[ JPRS database provides information on network administration. Its use is    ]
+messenger.msn.co.jp,available,,,1,2001,,,"MSN 
+                                      Messenger Service",http://www.starcat.co.jp:80/link/pc/messenger.html,[ JPRS database provides information on network administration. Its use is    ]
+messenger.yahoo.co.jp,available,,,1,2001,,,Yahoo!bZW[,http://www.starcat.co.jp:80/link/pc/messenger.html,[ JPRS database provides information on network administration. Its use is    ]
+metro.tokyo.jp,unknown,,,1,2001,,,s,http://www.starcat.co.jp:80/link/news/local_government.html,[ JPRS database provides information on network administration. Its use is    ]
+minoh.fm,available,,,1,2001,,,TACKEY816,http://www.starcat.co.jp:80/link/broadcast/radio/fm.html,The queried object does not exist: DOMAIN NOT FOUND
+minpaku.ac.jp,unknown,,,1,2001,,,§¯°w¨Ù,http://www.starcat.co.jp:80/link/arts/science_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+miyazaki-catv.co.jp,unknown,,,1,2001,,,{èP[uer,http://www.starcat.co.jp:80/link/catv/catv_kyuoki.html,[ JPRS database provides information on network administration. Its use is    ]
+mrt-miyazaki.co.jp,unknown,,,1,2001,,,{èú,http://www.starcat.co.jp:80/link/broadcast/radio/am.html,[ JPRS database provides information on network administration. Its use is    ]
+museum.pref.gifu.jp,available,,,1,2001,,,ò§¨Ù,http://www.starcat.co.jp:80/link/arts/science_museum.html,[ JPRS database provides information on network administration. Its use is    ]
+mytv.co.jp,unknown,,,1,2001,,,}CEer,http://www.starcat.co.jp:80/link/catv/catv_kantou.html,[ JPRS database provides information on network administration. Its use is    ]
+n-fukushi.ac.jp,unknown,,,1,2001,,,ú{åw,http://www.starcat.co.jp:80/link/school/college/college_s.html,[ JPRS database provides information on network administration. Its use is    ]
+nagoya-bc.ac.jp,available,,,1,2002,,,¼Ã®rWlXêåwZ,http://www.starcat.co.jp:80/link/school/senmon_kei.html,[ JPRS database provides information on network administration. Its use is    ]
+nagoya-bunri.ac.jp,unknown,,,1,2001,,,¼Ã®¶åw,http://www.starcat.co.jp:80/link/school/college/college_s.html,[ JPRS database provides information on network administration. Its use is    ]
+nagoya-ch.ed.jp,unknown,,,1,2001,,,¼Ã®s§¼Ã®¤ÆZ,http://www.starcat.co.jp:80/link/school/high/highs_ngy.html,[ JPRS database provides information on network administration. Its use is    ]
+nagoya-grampus-eight.co.jp,unknown,,,1,2002,,,¼Ã®OpXGCg,http://www.starcat.co.jp:80/link/sports/soccer.html,[ JPRS database provides information on network administration. Its use is    ]
+nagoya-su.ac.jp,unknown,,,1,2001,,,¼Ã®YÆåw,http://www.starcat.co.jp:80/link/school/college/college_s.html,[ JPRS database provides information on network administration. Its use is    ]
+nagoya-toho.ac.jp,available,,,1,2001,,,Mwåw,http://www.starcat.co.jp:80/link/school/college/college_s.html,[ JPRS database provides information on network administration. Its use is    ]
