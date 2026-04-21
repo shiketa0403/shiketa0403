@@ -97,7 +97,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: availability-${{ github.event.inputs.domain }}
+          name: availability-${{ github.run_id }}
           path: results/${{ github.event.inputs.domain }}/availability.csv
           if-no-files-found: warn
           retention-days: 14
