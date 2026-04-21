@@ -44,10 +44,19 @@ def build_cdx_params(domain: str, year: int) -> list[tuple[str, str]]:
 
     filter は複数指定したいので、requests の params は list[tuple] 形式で渡す
     (同じキーを2回書くために必要)。
+
+    domain にパスが含まれる場合 (例: tv-asahi.co.jp/ch) は
+    そのディレクトリ以下のみを検索する (matchType なし、url=.../* 形式)。
     """
-    return [
-        ("url", domain),
-        ("matchType", "domain"),
+    # パスが含まれているかで分岐
+    if "/" in domain:
+        # ディレクトリ指定: tv-asahi.co.jp/ch → url=tv-asahi.co.jp/ch/*
+        params = [("url", f"{domain}/*")]
+    else:
+        # ドメイン全体: urol.or.jp → matchType=domain
+        params = [("url", domain), ("matchType", "domain")]
+
+    params += [
         ("output", "json"),
         ("fl", "timestamp,original"),
         ("filter", "statuscode:200"),
@@ -56,6 +65,7 @@ def build_cdx_params(domain: str, year: int) -> list[tuple[str, str]]:
         ("from", f"{year}0101000000"),
         ("to", f"{year}1231235959"),
     ]
+    return params
 
 
 def fetch_cdx_for_year(
