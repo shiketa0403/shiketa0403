@@ -95,8 +95,10 @@ jobs:
       - name: Artifacts としてアップロード
         if: always()
         uses: actions/upload-artifact@v4
+        env:
+          SAFE_NAME: ${{ github.event.inputs.domain }}
         with:
-          name: wayback-extract-${{ github.event.inputs.domain }}-${{ github.event.inputs.year_from }}-${{ github.event.inputs.year_to }}
+          name: wayback-extract-${{ github.run_id }}
           path: results/${{ github.event.inputs.domain }}/
           if-no-files-found: warn
           retention-days: 14
