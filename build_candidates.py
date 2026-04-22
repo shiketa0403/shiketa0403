@@ -100,7 +100,7 @@ def check_alive(domain: str) -> bool:
         socket.setdefaulttimeout(DNS_TIMEOUT)
         socket.gethostbyname(domain)
         return True
-    except (socket.gaierror, socket.herror, OSError):
+    except Exception:
         return False
     finally:
         socket.setdefaulttimeout(None)
