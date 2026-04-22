@@ -1,0 +1,656 @@
+{
+  "domain": "eiseihoso.org",
+  "year": 2008,
+  "fetched_at": "2026-04-22T11:09:54+0000",
+  "header": [
+    "timestamp",
+    "original"
+  ],
+  "count": 161,
+  "records": [
+    {
+      "timestamp": "20080514085026",
+      "original": "http://www.eiseihoso.org/"
+    },
+    {
+      "timestamp": "20080513022323",
+      "original": "http://www.eiseihoso.org/about/001.html"
+    },
+    {
+      "timestamp": "20080705143102",
+      "original": "http://www.eiseihoso.org/about/002-01.html"
+    },
+    {
+      "timestamp": "20080509160448",
+      "original": "http://www.eiseihoso.org/about/index.html"
+    },
+    {
+      "timestamp": "20080513173109",
+      "original": "http://www.eiseihoso.org/about/member.html"
+    },
+    {
+      "timestamp": "20080212144553",
+      "original": "http://www.eiseihoso.org:80/about/member_a.html"
+    },
+    {
+      "timestamp": "20081004231852",
+      "original": "http://www.eiseihoso.org:80/about/member_ha.html"
+    },
+    {
+      "timestamp": "20080705143454",
+      "original": "http://www.eiseihoso.org/about/member_ka.html"
+    },
+    {
+      "timestamp": "20080520015442",
+      "original": "http://www.eiseihoso.org:80/about/member_ma.html"
+    },
+    {
+      "timestamp": "20081004231902",
+      "original": "http://www.eiseihoso.org:80/about/member_na.html"
+    },
+    {
+      "timestamp": "20080829153819",
+      "original": "http://www.eiseihoso.org/about/member_ra.html"
+    },
+    {
+      "timestamp": "20080705143206",
+      "original": "http://www.eiseihoso.org/about/member_sa.html"
+    },
+    {
+      "timestamp": "20080905082256",
+      "original": "http://www.eiseihoso.org/about/member_ta.html"
+    },
+    {
+      "timestamp": "20081004231916",
+      "original": "http://www.eiseihoso.org:80/about/member_wa.html"
+    },
+    {
+      "timestamp": "20080905083732",
+      "original": "http://www.eiseihoso.org/about/member_ya.html"
+    },
+    {
+      "timestamp": "20080620163029",
+      "original": "http://www.eiseihoso.org:80/actionreport/02.html"
+    },
+    {
+      "timestamp": "20080620163036",
+      "original": "http://www.eiseihoso.org:80/actionreport/03.html"
+    },
+    {
+      "timestamp": "20080620163041",
+      "original": "http://www.eiseihoso.org:80/actionreport/04.html"
+    },
+    {
+      "timestamp": "20080620163046",
+      "original": "http://www.eiseihoso.org:80/actionreport/2006/zoom/zoom008.html"
+    },
+    {
+      "timestamp": "20080620163051",
+      "original": "http://www.eiseihoso.org:80/actionreport/2006/zoom/zoom009.html"
+    },
+    {
+      "timestamp": "20080620163059",
+      "original": "http://www.eiseihoso.org:80/actionreport/2006/zoom/zoom010.html"
+    },
+    {
+      "timestamp": "20080620163112",
+      "original": "http://www.eiseihoso.org:80/actionreport/2006/zoom/zoom030.html"
+    },
+    {
+      "timestamp": "20080620163127",
+      "original": "http://www.eiseihoso.org:80/actionreport/2006/zoom/zoom031.html"
+    },
+    {
+      "timestamp": "20080620163133",
+      "original": "http://www.eiseihoso.org:80/actionreport/2006/zoom/zoom032.html"
+    },
+    {
+      "timestamp": "20080620163149",
+      "original": "http://www.eiseihoso.org:80/actionreport/2006/zoom/zoom033.html"
+    },
+    {
+      "timestamp": "20080215202344",
+      "original": "http://www.eiseihoso.org:80/actionreport/index.html"
+    },
+    {
+      "timestamp": "20080215212848",
+      "original": "http://www.eiseihoso.org:80/announce/index.html"
+    },
+    {
+      "timestamp": "20080109041710",
+      "original": "http://www.eiseihoso.org:80/cgi-bin/csch/list.cgi?action=post&key=%83X%83J%83p%81[%82o%82o%82u"
+    },
+    {
+      "timestamp": "20080303044737",
+      "original": "http://www.eiseihoso.org:80/cgi-bin/csch/list.cgi?action=post&key=%83X%83J%83p%81[%8AC%8AO%83h%83%89%83%7D%81E%83o%83%89%83G%83e%83B"
+    },
+    {
+      "timestamp": "20080109041715",
+      "original": "http://www.eiseihoso.org:80/cgi-bin/csch/list.cgi?action=post&key=e2by%83h%83L%83%85%83%81%83%93%83%5E%83%8A%81["
+    },
+    {
+      "timestamp": "20080109041727",
+      "original": "http://www.eiseihoso.org:80/cgi-bin/csch/list.cgi?action=post&key=e2by%89f%89%E6"
+    },
+    {
+      "timestamp": "20080329213211",
+      "original": "http://www.eiseihoso.org:80/channelcafe/"
+    },
+    {
+      "timestamp": "20080315233016",
+      "original": "http://www.eiseihoso.org:80/channelcafe/index.html"
+    },
+    {
+      "timestamp": "20080330015904",
+      "original": "http://www.eiseihoso.org:80/channelcafe/map.html"
+    },
+    {
+      "timestamp": "20080330151404",
+      "original": "http://www.eiseihoso.org:80/channelcafe/schedule.html"
+    },
+    {
+      "timestamp": "20080511224006",
+      "original": "http://www.eiseihoso.org/contents/anime.html"
+    },
+    {
+      "timestamp": "20080214122858",
+      "original": "http://www.eiseihoso.org:80/contents/drama.html"
+    },
+    {
+      "timestamp": "20080109020818",
+      "original": "http://www.eiseihoso.org:80/contents/education.html"
+    },
+    {
+      "timestamp": "20080109020823",
+      "original": "http://www.eiseihoso.org:80/contents/ent_hobby.html"
+    },
+    {
+      "timestamp": "20080512200325",
+      "original": "http://www.eiseihoso.org/contents/index.html"
+    },
+    {
+      "timestamp": "20080511222936",
+      "original": "http://www.eiseihoso.org/contents/movie.html"
+    },
+    {
+      "timestamp": "20080511223707",
+      "original": "http://www.eiseihoso.org/contents/music.html"
+    },
+    {
+      "timestamp": "20080109020831",
+      "original": "http://www.eiseihoso.org:80/contents/news_docu.html"
+    },
+    {
+      "timestamp": "20080109020837",
+      "original": "http://www.eiseihoso.org:80/contents/sports.html"
+    },
+    {
+      "timestamp": "20080106071520",
+      "original": "http://www.eiseihoso.org:80/csprog/"
+    },
+    {
+      "timestamp": "20080514151254",
+      "original": "http://www.eiseihoso.org/csprog/index.html"
+    },
+    {
+      "timestamp": "20080206101255",
+      "original": "http://www.eiseihoso.org:80/data/002.html"
+    },
+    {
+      "timestamp": "20080118140219",
+      "original": "http://www.eiseihoso.org:80/data/index.html"
+    },
+    {
+      "timestamp": "20081217114311",
+      "original": "http://www.eiseihoso.org:80/family/index.html"
+    },
+    {
+      "timestamp": "20080512195803",
+      "original": "http://www.eiseihoso.org/form/form.html"
+    },
+    {
+      "timestamp": "20080113140138",
+      "original": "http://www.eiseihoso.org:80/fukyu/index.html"
+    },
+    {
+      "timestamp": "20080705143142",
+      "original": "http://www.eiseihoso.org/fukyu/summary.html"
+    },
+    {
+      "timestamp": "20080108091939",
+      "original": "http://www.eiseihoso.org:80/guide/che2by.html"
+    },
+    {
+      "timestamp": "20080108091944",
+      "original": "http://www.eiseihoso.org:80/guide/che2by001.html"
+    },
+    {
+      "timestamp": "20080109062853",
+      "original": "http://www.eiseihoso.org:80/guide/che2by002.html"
+    },
+    {
+      "timestamp": "20080109062859",
+      "original": "http://www.eiseihoso.org:80/guide/che2by003.html"
+    },
+    {
+      "timestamp": "20080109062904",
+      "original": "http://www.eiseihoso.org:80/guide/che2by004.html"
+    },
+    {
+      "timestamp": "20080109062909",
+      "original": "http://www.eiseihoso.org:80/guide/che2by005.html"
+    },
+    {
+      "timestamp": "20080109062914",
+      "original": "http://www.eiseihoso.org:80/guide/che2by006.html"
+    },
+    {
+      "timestamp": "20080109062919",
+      "original": "http://www.eiseihoso.org:80/guide/che2by007.html"
+    },
+    {
+      "timestamp": "20080109062924",
+      "original": "http://www.eiseihoso.org:80/guide/che2by008.html"
+    },
+    {
+      "timestamp": "20080109062929",
+      "original": "http://www.eiseihoso.org:80/guide/che2by009.html"
+    },
+    {
+      "timestamp": "20080108091949",
+      "original": "http://www.eiseihoso.org:80/guide/che2by010.html"
+    },
+    {
+      "timestamp": "20080109062948",
+      "original": "http://www.eiseihoso.org:80/guide/che2by011.html"
+    },
+    {
+      "timestamp": "20080109063007",
+      "original": "http://www.eiseihoso.org:80/guide/che2by012.html"
+    },
+    {
+      "timestamp": "20080513173125",
+      "original": "http://www.eiseihoso.org/guide/chskyptv.html"
+    },
+    {
+      "timestamp": "20080705143558",
+      "original": "http://www.eiseihoso.org/guide/chskyptv001.html"
+    },
+    {
+      "timestamp": "20080705143526",
+      "original": "http://www.eiseihoso.org/guide/chskyptv002.html"
+    },
+    {
+      "timestamp": "20080302035322",
+      "original": "http://www.eiseihoso.org:80/guide/chskyptv003.html"
+    },
+    {
+      "timestamp": "20080705143654",
+      "original": "http://www.eiseihoso.org/guide/chskyptv004.html"
+    },
+    {
+      "timestamp": "20080705142926",
+      "original": "http://www.eiseihoso.org/guide/chskyptv005.html"
+    },
+    {
+      "timestamp": "20080705142934",
+      "original": "http://www.eiseihoso.org/guide/chskyptv006.html"
+    },
+    {
+      "timestamp": "20080705143646",
+      "original": "http://www.eiseihoso.org/guide/chskyptv007.html"
+    },
+    {
+      "timestamp": "20080705143734",
+      "original": "http://www.eiseihoso.org/guide/chskyptv008.html"
+    },
+    {
+      "timestamp": "20080108091954",
+      "original": "http://www.eiseihoso.org:80/guide/chskyptv009.html"
+    },
+    {
+      "timestamp": "20080705144102",
+      "original": "http://www.eiseihoso.org/guide/chskyptv010.html"
+    },
+    {
+      "timestamp": "20080705143414",
+      "original": "http://www.eiseihoso.org/guide/chskyptv011.html"
+    },
+    {
+      "timestamp": "20080705143350",
+      "original": "http://www.eiseihoso.org/guide/chskyptv012.html"
+    },
+    {
+      "timestamp": "20080705144118",
+      "original": "http://www.eiseihoso.org/guide/chskyptv013.html"
+    },
+    {
+      "timestamp": "20080705143510",
+      "original": "http://www.eiseihoso.org/guide/chskyptv014.html"
+    },
+    {
+      "timestamp": "20080705143958",
+      "original": "http://www.eiseihoso.org/guide/chskyptv015.html"
+    },
+    {
+      "timestamp": "20080705144030",
+      "original": "http://www.eiseihoso.org/guide/chskyptv016.html"
+    },
+    {
+      "timestamp": "20080705143502",
+      "original": "http://www.eiseihoso.org/guide/chskyptv017.html"
+    },
+    {
+      "timestamp": "20080509121701",
+      "original": "http://www.eiseihoso.org/guide/index.html"
+    },
+    {
+      "timestamp": "20080109020905",
+      "original": "http://www.eiseihoso.org:80/guide/index00.html"
+    },
+    {
+      "timestamp": "20080513212820",
+      "original": "http://www.eiseihoso.org/guide/roadcatv.html"
+    },
+    {
+      "timestamp": "20080108092002",
+      "original": "http://www.eiseihoso.org:80/guide/roade2by.html"
+    },
+    {
+      "timestamp": "20080302002811",
+      "original": "http://www.eiseihoso.org:80/guide/roadskyptv.html"
+    },
+    {
+      "timestamp": "20080514151621",
+      "original": "http://www.eiseihoso.org/help/index.html"
+    },
+    {
+      "timestamp": "20081223102213",
+      "original": "http://www.eiseihoso.org:80/help/q1.shtml"
+    },
+    {
+      "timestamp": "20081223104041",
+      "original": "http://www.eiseihoso.org:80/help/q10.shtml"
+    },
+    {
+      "timestamp": "20081223101842",
+      "original": "http://www.eiseihoso.org:80/help/q11.shtml"
+    },
+    {
+      "timestamp": "20081223102938",
+      "original": "http://www.eiseihoso.org:80/help/q12.shtml"
+    },
+    {
+      "timestamp": "20081223104046",
+      "original": "http://www.eiseihoso.org:80/help/q13.shtml"
+    },
+    {
+      "timestamp": "20081223104914",
+      "original": "http://www.eiseihoso.org:80/help/q2.shtml"
+    },
+    {
+      "timestamp": "20081223102735",
+      "original": "http://www.eiseihoso.org:80/help/q3.shtml"
+    },
+    {
+      "timestamp": "20081223104920",
+      "original": "http://www.eiseihoso.org:80/help/q4.shtml"
+    },
+    {
+      "timestamp": "20081223104625",
+      "original": "http://www.eiseihoso.org:80/help/q5.shtml"
+    },
+    {
+      "timestamp": "20081223103501",
+      "original": "http://www.eiseihoso.org:80/help/q6.shtml"
+    },
+    {
+      "timestamp": "20081223104828",
+      "original": "http://www.eiseihoso.org:80/help/q7.shtml"
+    },
+    {
+      "timestamp": "20081223100349",
+      "original": "http://www.eiseihoso.org:80/help/q8.shtml"
+    },
+    {
+      "timestamp": "20081223104443",
+      "original": "http://www.eiseihoso.org:80/help/q9.shtml"
+    },
+    {
+      "timestamp": "20081201122336",
+      "original": "http://www.eiseihoso.org/history/"
+    },
+    {
+      "timestamp": "20080513204332",
+      "original": "http://www.eiseihoso.org/history/002.html"
+    },
+    {
+      "timestamp": "20080509121710",
+      "original": "http://www.eiseihoso.org/history/index.html"
+    },
+    {
+      "timestamp": "20080302223717",
+      "original": "http://www.eiseihoso.org:80/howto/cable.html"
+    },
+    {
+      "timestamp": "20080509072442",
+      "original": "http://www.eiseihoso.org/howto/index.html"
+    },
+    {
+      "timestamp": "20080112134659",
+      "original": "http://www.eiseihoso.org:80/index.html"
+    },
+    {
+      "timestamp": "20081013045417",
+      "original": "http://www.eiseihoso.org:80/life/index.html"
+    },
+    {
+      "timestamp": "20080314074027",
+      "original": "http://www.eiseihoso.org:80/life/style01.html"
+    },
+    {
+      "timestamp": "20080312174522",
+      "original": "http://www.eiseihoso.org:80/life/style02.html"
+    },
+    {
+      "timestamp": "20080314074036",
+      "original": "http://www.eiseihoso.org:80/life/style03.html"
+    },
+    {
+      "timestamp": "20080514150912",
+      "original": "http://www.eiseihoso.org/link/index.html"
+    },
+    {
+      "timestamp": "20080705143910",
+      "original": "http://www.eiseihoso.org/news/2007_1.html"
+    },
+    {
+      "timestamp": "20080705143518",
+      "original": "http://www.eiseihoso.org/news/2007_10.html"
+    },
+    {
+      "timestamp": "20080705143950",
+      "original": "http://www.eiseihoso.org/news/2007_11.html"
+    },
+    {
+      "timestamp": "20080705144054",
+      "original": "http://www.eiseihoso.org/news/2007_12.html"
+    },
+    {
+      "timestamp": "20080705143822",
+      "original": "http://www.eiseihoso.org/news/2007_2.html"
+    },
+    {
+      "timestamp": "20080705143334",
+      "original": "http://www.eiseihoso.org/news/2007_3.html"
+    },
+    {
+      "timestamp": "20080705143934",
+      "original": "http://www.eiseihoso.org/news/2007_4.html"
+    },
+    {
+      "timestamp": "20080705143222",
+      "original": "http://www.eiseihoso.org/news/2007_5.html"
+    },
+    {
+      "timestamp": "20080705143238",
+      "original": "http://www.eiseihoso.org/news/2007_6.html"
+    },
+    {
+      "timestamp": "20080705143926",
+      "original": "http://www.eiseihoso.org/news/2007_7.html"
+    },
+    {
+      "timestamp": "20080705144046",
+      "original": "http://www.eiseihoso.org/news/2007_8.html"
+    },
+    {
+      "timestamp": "20080705143438",
+      "original": "http://www.eiseihoso.org/news/2007_9.html"
+    },
+    {
+      "timestamp": "20080705143710",
+      "original": "http://www.eiseihoso.org/news/2008_1.html"
+    },
+    {
+      "timestamp": "20080705143726",
+      "original": "http://www.eiseihoso.org/news/2008_2.html"
+    },
+    {
+      "timestamp": "20080705143134",
+      "original": "http://www.eiseihoso.org/news/2008_3.html"
+    },
+    {
+      "timestamp": "20080705143750",
+      "original": "http://www.eiseihoso.org/news/2008_4.html"
+    },
+    {
+      "timestamp": "20080905220309",
+      "original": "http://www.eiseihoso.org/news/2008_5.html"
+    },
+    {
+      "timestamp": "20080923234212",
+      "original": "http://www.eiseihoso.org:80/news/2008_6.html"
+    },
+    {
+      "timestamp": "20080923235143",
+      "original": "http://www.eiseihoso.org:80/news/2008_7.html"
+    },
+    {
+      "timestamp": "20080923235203",
+      "original": "http://www.eiseihoso.org:80/news/2008_8.html"
+    },
+    {
+      "timestamp": "20080109020916",
+      "original": "http://www.eiseihoso.org:80/news/index.html"
+    },
+    {
+      "timestamp": "20080705143830",
+      "original": "http://www.eiseihoso.org/platform/01.html"
+    },
+    {
+      "timestamp": "20080705143902",
+      "original": "http://www.eiseihoso.org/platform/02.html"
+    },
+    {
+      "timestamp": "20080705143310",
+      "original": "http://www.eiseihoso.org/platform/03.html"
+    },
+    {
+      "timestamp": "20080518104333",
+      "original": "http://www.eiseihoso.org/platform/04.html"
+    },
+    {
+      "timestamp": "20080217034517",
+      "original": "http://www.eiseihoso.org:80/platform/index.html"
+    },
+    {
+      "timestamp": "20080113140144",
+      "original": "http://www.eiseihoso.org:80/platgl/index.html"
+    },
+    {
+      "timestamp": "20080902073115",
+      "original": "http://www.eiseihoso.org:80/pr/earth08.html"
+    },
+    {
+      "timestamp": "20080529062322",
+      "original": "http://www.eiseihoso.org:80/pr/stop_copy/08.html"
+    },
+    {
+      "timestamp": "20080113140154",
+      "original": "http://www.eiseihoso.org:80/pr/stop_copy07.html"
+    },
+    {
+      "timestamp": "20080803072005",
+      "original": "http://www.eiseihoso.org:80/pr/stop_copy08.html"
+    },
+    {
+      "timestamp": "20080109091002",
+      "original": "http://www.eiseihoso.org:80/pr/stop_drink/07cm/07cm.html"
+    },
+    {
+      "timestamp": "20081011001128",
+      "original": "http://www.eiseihoso.org/pr/stop_drink06.html"
+    },
+    {
+      "timestamp": "20081201092316",
+      "original": "http://www.eiseihoso.org/pr/stop_drink07.html"
+    },
+    {
+      "timestamp": "20081219110731",
+      "original": "http://www.eiseihoso.org:80/pr/stop_drink08.html"
+    },
+    {
+      "timestamp": "20080214102454",
+      "original": "http://www.eiseihoso.org:80/pr/stop_warming/01.html"
+    },
+    {
+      "timestamp": "20080514002829",
+      "original": "http://www.eiseihoso.org/pr/stop_warming07.html"
+    },
+    {
+      "timestamp": "20081218232838",
+      "original": "http://www.eiseihoso.org:80/pr/stop_warming08.html"
+    },
+    {
+      "timestamp": "20080215202349",
+      "original": "http://www.eiseihoso.org:80/sitemap/index.html"
+    },
+    {
+      "timestamp": "20080518031819",
+      "original": "http://www.eiseihoso.org/topics/2005.html"
+    },
+    {
+      "timestamp": "20080511200208",
+      "original": "http://www.eiseihoso.org/topics/2006.html"
+    },
+    {
+      "timestamp": "20080509061641",
+      "original": "http://www.eiseihoso.org/topics/index.html"
+    },
+    {
+      "timestamp": "20080705143838",
+      "original": "http://www.eiseihoso.org/topics/kaiken20050325.html"
+    },
+    {
+      "timestamp": "20080705142958",
+      "original": "http://www.eiseihoso.org/topics/kaiken20050602.html"
+    },
+    {
+      "timestamp": "20080516005705",
+      "original": "http://www.eiseihoso.org/topics/kaiken20060113.html"
+    },
+    {
+      "timestamp": "20080516005736",
+      "original": "http://www.eiseihoso.org/topics/kaiken20070115.html"
+    },
+    {
+      "timestamp": "20080516005721",
+      "original": "http://www.eiseihoso.org/topics/kaiken20070319.html"
+    },
+    {
+      "timestamp": "20080511200558",
+      "original": "http://www.eiseihoso.org/topics/kaiken20080108.html"
+    }
+  ]
+}
