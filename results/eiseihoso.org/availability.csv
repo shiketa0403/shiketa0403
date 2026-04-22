@@ -1,57 +1,88 @@
 ﻿domain,availability,registrar,expiry,link_count,years_seen,genre,memo,sample_anchor,sample_source_url,whois_excerpt
-ppvj.co.jp,available,,,49,2002,,,http://www.ppvj.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/001ppv/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
-home.cherrybomb.co.jp,available,,,4,2002,,,http://home.cherrybomb.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/014adult/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
-ipctv.co.jp,available,,,4,2002,,,http://www.ipctv.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/011fl/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
-japan.discovery.com,available,,,4,2002,,,http://www.japan.discovery.com,http://www.eiseihoso.org:80/cgi-bin/cs/007ent/top.cgi,"No match for ""JAPAN.DISCOVERY.COM""."
-gch.jrao.ne.jp,available,,,3,2002,,,http://www.gch.jrao.ne.jp,http://www.eiseihoso.org:80/cgi-bin/cs/013games/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
-instructv.co.jp,available,,,3,2002,,,http://www.instructv.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/010learn/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+ppvj.co.jp,available,,,148,"2002,2003,2004,2005",,,http://www.ppvj.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/001ppv/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+home.cherrybomb.co.jp,available,,,19,"2002,2003,2004,2005",,,http://home.cherrybomb.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/014adult/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+ipctv.co.jp,available,,,16,"2002,2003,2004,2005",,,http://www.ipctv.co.jp/332/index.html,http://www.eiseihoso.org:80/cgi-bin/cs/011fl/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+japan.discovery.com,available,,,15,"2002,2003,2004,2005",,,http://japan.discovery.com/animal-planet/,http://www.eiseihoso.org:80/cgi-bin/cs/007ent/top.cgi,"No match for ""JAPAN.DISCOVERY.COM""."
+megaport.ne.jp,available,,,14,"2002,2003,2004,2005",,,http://www.megaport.ne.jp/cs900/index.html@,http://www.eiseihoso.org:80/bsdchlu/main.html,[ JPRS database provides information on network administration. Its use is    ]
+pbj.co.jp,available,,,14,"2002,2003,2004,2005",,,http://www.pbj.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/014adult/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+medianox.co.jp,available,,,12,"2002,2003,2004,2005",,,http://www.medianox.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/014adult/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+rakutentv.co.jp,available,,,11,"2002,2003,2004,2005",,,http://www.rakutentv.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs/009hobby/top.cgi?start=10&key=,[ JPRS database provides information on network administration. Its use is    ]
+bs-i.co.jp,available,,,10,"2002,2003,2004,2005",,,http://www.bs-i.co.jp/,http://www.eiseihoso.org:80/bsdchlu/main.html,[ JPRS database provides information on network administration. Its use is    ]
+samurai-tv.co.jp,available,,,9,"2002,2003,2004,2005",,,http://www.samurai-tv.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/005sports/top.cgi?start=10&key=,[ JPRS database provides information on network administration. Its use is    ]
+gch.jrao.ne.jp,available,,,8,"2002,2003,2004,2005",,,http://www.gch.jrao.ne.jp,http://www.eiseihoso.org:80/cgi-bin/cs/013games/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+instructv.co.jp,available,,,8,"2002,2003,2004,2005",,,http://www.instructv.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/010learn/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+music272.tv,available,,,8,"2002,2003,2004,2005",,,http://www.music272.tv,http://www.eiseihoso.org:80/cgi-bin/cs/006music/top.cgi,No Data Found
+sports-i.co.jp,available,,,8,"2002,2003,2004",,,http://www.sports-i.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs/005sports/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+u-air.ac.jp,available,,,8,"2002,2003,2004",,,http://www.u-air.ac.jp/hp,http://www.eiseihoso.org:80/cgi-bin/cs/010learn/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+759ch.tv,available,,,7,"2002,2003,2004,2005",,,http://759ch.tv/,http://www.eiseihoso.org:80/cgi-bin/cs/009hobby/top.cgi?start=10&key=,No Data Found
+active-sports.tv,available,,,7,"2002,2003,2004,2005",,,http://www.active-sports.tv/@,http://www.eiseihoso.org:80/cgi-bin/member/top.cgi,No Data Found
+cab-j.co.jp,available,,,7,"2002,2003,2004,2005",,,q¯erL¦cïiCAB-Jj,http://www.eiseihoso.org:80/aboutus/main005.html,[ JPRS database provides information on network administration. Its use is    ]
+travelers-tv.com,available,,,7,"2002,2003,2004,2005",,,http://www.travelers-tv.com,http://www.eiseihoso.org:80/cgi-bin/cs/007ent/top.cgi,"No match for domain ""TRAVELERS-TV.COM""."
+ch-bb.jp,available,,,6,"2002,2003,2004,2005",,,http://www.ch-bb.jp/,http://www.eiseihoso.org:80/cgi-bin/cs/009hobby/top.cgi?start=10&key=,[ JPRS database provides information on network administration. Its use is    ]
+cs-wowow.co.jp,available,,,6,"2003,2004,2005",,,http://www.cs-wowow.co.jp/@,http://www.eiseihoso.org:80/cgi-bin/cs03/005ppv/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+dentoubunka.co.jp,available,,,6,"2002,2003,2004,2005",,,http://www.dentoubunka.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs/007ent/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+karaoke-ch.com,available,,,6,"2003,2004,2005",,,http://www.karaoke-ch.com/,http://www.eiseihoso.org:80/cgi-bin/cs01/006music/top.cgi,"No match for domain ""KARAOKE-CH.COM""."
+motv.co.jp,available,,,6,"2002,2003,2004,2005",,,http://www.motv.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/012shopping/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+tampa.co.jp,available,,,6,"2002,2003,2004",,,http://www.tampa.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs/015radio/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+csn1.co.jp,available,,,5,"2002,2003,2004",,,http://www.csn1.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs/002cinema/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+home.milk906.jp,available,,,5,"2002,2003,2004,2005",,,http://home.milk906.jp,http://www.eiseihoso.org:80/cgi-bin/cs/014adult/top.cgi?start=10&key=,[ JPRS database provides information on network administration. Its use is    ]
+victory-ch.tv,available,,,5,"2002,2003,2004,2005",,,http://www.victory-ch.tv,http://www.eiseihoso.org:80/cgi-bin/member/top.cgi?start=60&key=,No Data Found
+winsphil.co.jp,available,,,5,"2002,2003,2004,2005",,,http://www.winsphil.co.jp/filipino_channel/channel_lite.html,http://www.eiseihoso.org:80/cgi-bin/cs/011fl/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+bs-com.com,available,,,4,"2002,2003,2004,2005",,,http://www.bs-com.com/,http://www.eiseihoso.org:80/bsdchlu/main.html,"No match for domain ""BS-COM.COM""."
+epb.co.jp,available,,,4,"2002,2003,2004,2005",,,http://www.epb.co.jp,http://www.eiseihoso.org:80/cgi-bin/member/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+i-hits.co.jp,available,,,4,"2004,2005",,,http://www.i-hits.co.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+mserve.co.jp,available,,,4,"2002,2003,2004,2005",,,https://www.mserve.co.jp/,http://www.eiseihoso.org:80/bsdchlu/main.html,[ JPRS database provides information on network administration. Its use is    ]
+plus.skyperfectv.co.jp,available,,,4,"2003,2004",,,http://www.plus.skyperfectv.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs01/005sports/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+vitv.co.jp,available,,,4,"2004,2005",,,http://vitv.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs01/007ent/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+cinema-r.com,available,,,3,"2003,2004,2005",,,http://www.CINEMA-R.com,http://www.eiseihoso.org:80/cgi-bin/cs01/001ppv/top.cgi,"No match for domain ""CINEMA-R.COM""."
+cs-kyouiku.tv,available,,,3,"2003,2004",,,http://www.cs-kyouiku.tv/,http://www.eiseihoso.org:80/cgi-bin/cs03/009culture/top.cgi,No Data Found
+epep.jp,available,,,3,"2003,2004",,,http://www.epep.jp/,http://www.eiseihoso.org:80/links/main001.html,[ JPRS database provides information on network administration. Its use is    ]
 powermovie.co.jp,available,,,3,2002,,,http://www.powermovie.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/002cinema/top.cgi?start=20&key=,[ JPRS database provides information on network administration. Its use is    ]
-bs-i.co.jp,available,,,2,2002,,,http://www.bs-i.co.jp/,http://www.eiseihoso.org:80/bsdchlu/main.html,[ JPRS database provides information on network administration. Its use is    ]
-csn1.co.jp,available,,,2,2002,,,http://www.csn1.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs/002cinema/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+reform-ch.jp,available,,,3,2003,,,http://www.reform-ch.jp,http://www.eiseihoso.org:80/cgi-bin/cs/009hobby/top.cgi?start=10&key=,[ JPRS database provides information on network administration. Its use is    ]
+spaceyacht.co.jp,available,,,3,"2002,2003,2004",,,http://www.spaceyacht.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/009hobby/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+www2.winsphil.co.jp,available,,,3,"2003,2004,2005",,,http://www2.winsphil.co.jp/filipino_channel/channel_lite.html,http://www.eiseihoso.org:80/cgi-bin/cs01/011fl/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+ch777.jp,available,,,2,"2004,2005",,,http://www.ch777.jp/,http://www.eiseihoso.org:80/cgi-bin/cs01/009hobby/top.cgi?start=10&key=,[ JPRS database provides information on network administration. Its use is    ]
+club.carenet.co.jp,available,,,2,"2002,2003",,,http://club.carenet.co.jp/tv/guide/,http://www.eiseihoso.org:80/cgi-bin/member/top.cgi?start=30&key=,[ JPRS database provides information on network administration. Its use is    ]
+favoritv.com,available,,,2,"2003,2004",,,http://www.favoritv.com/,http://www.eiseihoso.org:80/cgi-bin/cs02/006entertainment/top.cgi,"No match for domain ""FAVORITV.COM""."
+home.netscape.com,available,,,2,"2002,2004",,,,http://www.eiseihoso.org:80/notes/index.html,"No match for ""HOME.NETSCAPE.COM""."
 homech.co.jp,available,,,2,2002,,,http://www.homech.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/009hobby/top.cgi?start=10&key=,[ JPRS database provides information on network administration. Its use is    ]
 j2am.co.jp,available,,,2,2002,,,http://www.j2am.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/014adult/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
-medianox.co.jp,available,,,2,2002,,,http://medianox.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/014adult/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
-music272.tv,available,,,2,2002,,,http://www.music272.tv,http://www.eiseihoso.org:80/cgi-bin/cs/006music/top.cgi,No Data Found
+johotsusintokei.soumu.go.jp,available,,,2,2005,,,http://www.johotsusintokei.soumu.go.jp/,http://www.eiseihoso.org:80/link/index.html,[ JPRS database provides information on network administration. Its use is    ]
+nhk-jn.co.jp,available,,,2,"2004,2005",,,http://www.nhk-jn.co.jp/index.htm,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 ohotuku26.or.jp,available,,,2,2002,,,http://www.ohotuku26.or.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-pbj.co.jp,available,,,2,2002,,,http://www.pbj.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/014adult/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
-rakutentv.co.jp,available,,,2,2002,,,http://www.rakutentv.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs/009hobby/top.cgi?start=10&key=,[ JPRS database provides information on network administration. Its use is    ]
-samurai-tv.co.jp,available,,,2,2002,,,http://www.samurai-tv.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/005sports/top.cgi?start=10&key=,[ JPRS database provides information on network administration. Its use is    ]
+peace-channel.co.jp,available,,,2,2004,,,http://www.peace-channel.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs01/015document/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+radio-nikkei.co.jp,available,,,2,2004,,,http://www.radio-nikkei.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs01/016bussiness/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
 shoku-chan.com,available,,,2,2002,,,http://www.shoku-chan.com,http://www.eiseihoso.org:80/cgi-bin/member/top.cgi?start=10&key=,"No match for domain ""SHOKU-CHAN.COM""."
-sports-i.co.jp,available,,,2,2002,,,http://www.sports-i.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs/005sports/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
-tampa.co.jp,available,,,2,2002,,,http://tampa.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/015radio/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
-travelers-tv.com,available,,,2,2002,,,http://www.travelers-tv.com,http://www.eiseihoso.org:80/cgi-bin/cs/007ent/top.cgi,"No match for domain ""TRAVELERS-TV.COM""."
-u-air.ac.jp,available,,,2,2002,,,http://www.u-air.ac.jp/hp,http://www.eiseihoso.org:80/cgi-bin/cs/010learn/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
-winsphil.co.jp,available,,,2,2002,,,http://www.winsphil.co.jp/filipino_channel/channel_lite.html,http://www.eiseihoso.org:80/cgi-bin/cs/011fl/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+shop240.jp,available,,,2,"2004,2005",,,http://www.shop240.jp,http://www.eiseihoso.org:80/cgi-bin/cs01/012shopping/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+stgiga.co.jp,available,,,2,"2002,2003",,,http://www.stgiga.co.jp/,http://www.eiseihoso.org:80/bsdchlu/main.html,[ JPRS database provides information on network administration. Its use is    ]
+winj.jp,available,,,2,"2004,2005",,,http://www.winj.jp/,http://www.eiseihoso.org:80/bsdchlu/main.html,[ JPRS database provides information on network administration. Its use is    ]
 www1.ocn.ne.jp,available,,,2,2002,,,http://www1.ocn.ne.jp/~marukotv,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-759ch.tv,available,,,1,2002,,,http://759ch.tv/,http://www.eiseihoso.org:80/cgi-bin/cs/009hobby/top.cgi?start=10&key=,No Data Found
-active-sports.tv,available,,,1,2002,,,http://www.active-sports.tv,http://www.eiseihoso.org:80/cgi-bin/member/top.cgi,No Data Found
+zenpachi.tv,available,,,2,"2004,2005",,,http://www.zenpachi.tv/,http://www.eiseihoso.org:80/cgi-bin/cs01/009hobby/top.cgi,No Data Found
 alphanetwortv.com,available,,,1,2002,,,http://www.alphanetwortv.com,http://www.eiseihoso.org:80/cgi-bin/cs/011fl/top.cgi,"No match for domain ""ALPHANETWORTV.COM""."
-bs-com.com,available,,,1,2002,,,http://www.bs-com.com/,http://www.eiseihoso.org:80/bsdchlu/main.html,"No match for domain ""BS-COM.COM""."
+bbc-japan.com,available,,,1,2005,,,http://www.bbc-japan.com,http://www.eiseihoso.org:80/cgi-bin/cs02/006entertainment/top.cgi,"No match for domain ""BBC-JAPAN.COM""."
 c3yokohama.co.jp,available,,,1,2002,,,http://www.C3YOKOHAMA.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-cab-j.co.jp,available,,,1,2002,,,http://www.cab-j.co.jp/,http://www.eiseihoso.org:80/aboutus/main005.html,[ JPRS database provides information on network administration. Its use is    ]
 catv-aichi.co.jp,available,,,1,2002,,,http://www.catv-aichi.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 catv-niihama.co.jp,available,,,1,2002,,,http://www.catv-niihama.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 catv.ksky.ne.jp,available,,,1,2002,,,http://catv.ksky.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 catv.yuge.ac.jp,available,,,1,2002,,,http://catv.yuge.ac.jp/~yuge-catv/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 caty.co.jp,available,,,1,2002,,,http://www.caty.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 ccn.ne.jp,available,,,1,2002,,,http://www.ccn.ne.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-ch-bb.jp,available,,,1,2002,,,http://www.ch-bb.jp,http://www.eiseihoso.org:80/cgi-bin/cs/009hobby/top.cgi?start=10&key=,[ JPRS database provides information on network administration. Its use is    ]
 chofucable.co.jp,available,,,1,2002,,,http://www.chofucable.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-club.carenet.co.jp,available,,,1,2002,,,http://club.carenet.co.jp/tv/guide/,http://www.eiseihoso.org:80/cgi-bin/member/top.cgi?start=30&key=,[ JPRS database provides information on network administration. Its use is    ]
+cinefil.co.jp,available,,,1,2003,,,http://www.cinefil.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs02/001movie/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
 cny.ne.jp,available,,,1,2002,,,http://www.cny.ne.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+cs110.nihon-eiga.com,available,,,1,2003,,,http://www.cs110.nihon-eiga.com/,http://www.eiseihoso.org:80/cgi-bin/cs02/001movie/top.cgi,"No match for ""CS110.NIHON-EIGA.COM""."
 ctktv.co.jp,available,,,1,2002,,,http://www.ctktv.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 ctn.co.jp,available,,,1,2002,,,http://www.ctn.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 d-booktv.com,available,,,1,2002,,,http://www.d-booktv.com,http://www.eiseihoso.org:80/cgi-bin/member/top.cgi?start=60&key=,"No match for domain ""D-BOOKTV.COM""."
-dentoubunka.co.jp,available,,,1,2002,,,http://www.dentoubunka.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs/007ent/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+daiwa766.jp,available,,,1,2005,,,http://daiwa766.jp/,http://www.eiseihoso.org:80/cgi-bin/cs01/016bussiness/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
 digicube.co.jp,available,,,1,2002,,,http://www.digicube.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs/007ent/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
 edonagasaki.ne.jp,available,,,1,2002,,,http://www.edonagasaki.ne.jp/ mitsushima,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-epb.co.jp,available,,,1,2002,,,http://www.epb.co.jp,http://www.eiseihoso.org:80/cgi-bin/member/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+entame.express.jp,available,,,1,2005,,,http://entame.express.jp,http://www.eiseihoso.org:80/cgi-bin/cs01/007ent/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
 exd.city.kobe.jp,available,,,1,2002,,,http://www.exd.city.kobe.jp/ck/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 fcncatv.ne.jp,available,,,1,2002,,,http://www.fcncatv.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+fu-ku-shi.com,available,,,1,2003,,,"@ http://jbs.tv/""",http://www.eiseihoso.org:80/cgi-bin/member/top.cgi?start=80&key=,"No match for domain ""FU-KU-SHI.COM""."
 go-kaku.co.jp,available,,,1,2002,,,http://www.go-kaku.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs/010learn/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
 hidaweb.ne.jp,available,,,1,2002,,,http://www.hidaweb.ne.jp/kokufu/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-home.milk906.jp,available,,,1,2002,,,http://home.milk906.jp,http://www.eiseihoso.org:80/cgi-bin/cs/014adult/top.cgi?start=10&key=,[ JPRS database provides information on network administration. Its use is    ]
-home.netscape.com,available,,,1,2002,,,,http://www.eiseihoso.org:80/notes/index.html,"No match for ""HOME.NETSCAPE.COM""."
 honjo.ne.jp,available,,,1,2002,,,http://www.honjo.ne.jp/hp/h-catv/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 ichigo-tv.com,available,,,1,2002,,,http://www.ichigo-tv.com,http://www.eiseihoso.org:80/guide/main003-02.html,"No match for domain ""ICHIGO-TV.COM""."
 ir21.co.jp,available,,,1,2002,,,http://www.ir21.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs/009hobby/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
@@ -60,21 +91,21 @@ k-cable.ne.jp,available,,,1,2002,,,http://www.k-cable.ne.jp,http://www.eiseihoso
 kitajima-catv.co.jp,available,,,1,2002,,,http://www.kitajima-catv.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 koala-tv.co.jp,available,,,1,2002,,,http://www.koaLa-tv.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 kobe-catv.co.jp,available,,,1,2002,,,http://www.kobe-catv.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-megaport.ne.jp,available,,,1,2002,,,http://www.megaport.ne.jp,http://www.eiseihoso.org:80/bsdchlu/main.html,[ JPRS database provides information on network administration. Its use is    ]
 miyavision.co.jp,available,,,1,2002,,,http://www.miyavision.co.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 mmcatv.co.jp,available,,,1,2002,,,http://www.mmcatv.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-motv.co.jp,available,,,1,2002,,,http://www.motv.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/012shopping/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
-mserve.co.jp,available,,,1,2002,,,https://www.mserve.co.jp/,http://www.eiseihoso.org:80/bsdchlu/main.html,[ JPRS database provides information on network administration. Its use is    ]
+nep21.co.jp,available,,,1,2004,,,http://www.nep21.co.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 nthk.co.jp,available,,,1,2002,,,http://www.nthk.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 ocv.ne.jp,available,,,1,2002,,,http://www.ocv.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 odawara15ch.co.jp,available,,,1,2002,,,http://www.odawara15ch.co.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+prime365.tv,available,,,1,2005,,,http://www.prime365.tv/,http://www.eiseihoso.org:80/cgi-bin/cs02/008shopping/top.cgi,No Data Found
+punchclub.cs371.com,available,,,1,2005,,,http://punchclub.cs371.com/,http://www.eiseihoso.org:80/cgi-bin/cs02/006entertainment/top.cgi,"No match for ""PUNCHCLUB.CS371.COM""."
 sakura-catv.co.jp,available,,,1,2002,,,http://www.sakura-catv.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 sctv.ne.jp,available,,,1,2002,,,http://www.sctv.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 seaple-n.icc.ne.jp,available,,,1,2002,,,http://www.seaple-n.icc.ne.jp/~ttn,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+skyperfectv2.jp,available,,,1,2003,,,http://www.skyperfectv2.jp/,http://www.eiseihoso.org:80/links/main001.html,[ JPRS database provides information on network administration. Its use is    ]
 snu.ne.jp,available,,,1,2002,,,http://www.snu.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-spaceyacht.co.jp,available,,,1,2002,,,http://www.spaceyacht.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/009hobby/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
-stgiga.co.jp,available,,,1,2002,,,http://www.stgiga.co.jp/,http://www.eiseihoso.org:80/bsdchlu/main.html,[ JPRS database provides information on network administration. Its use is    ]
 sutv.co.jp,available,,,1,2002,,,http://www.sutv.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+tamagotoji.jp,available,,,1,2003,,,http://www.tamagotoji.jp/@,http://www.eiseihoso.org:80/cgi-bin/cs02/010data/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
 tcat.co.jp,available,,,1,2002,,,http://www.tcat.co.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 tcct.co.jp,available,,,1,2002,,,http://www.tcct.co.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 tctv.co.jp,available,,,1,2002,,,http://www.tctv.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
@@ -90,7 +121,6 @@ town.sekinomiya.hyogo.jp,available,,,1,2002,,,http://www.town.sekinomiya.hyogo.j
 town.yatsuo.toyama.jp,available,,,1,2002,,,http://www.town.yatsuo.toyama.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 townkiss.co.jp,available,,,1,2002,,,http://www.townkiss.co.jp/ sotetsu_group/YCV/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 uincnet.ne.jp,available,,,1,2002,,,http://www.uincnet.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-victory-ch.tv,available,,,1,2002,,,http://www.victory-ch.tv,http://www.eiseihoso.org:80/cgi-bin/member/top.cgi?start=60&key=,No Data Found
 vill.yanagida.ishikawa.jp,available,,,1,2002,,,http://www.vill.yanagida.ishikawa.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 wombat.or.jp,available,,,1,2002,,,http://www.wombat.or.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 www2.shizuokanet.ne.jp,available,,,1,2002,,,http://www2.shizuokanet.ne.jp/ izu_east/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
@@ -98,19 +128,51 @@ www3.ocn.ne.jp,available,,,1,2002,,,http://www3.ocn.ne.jp/~kbctv/,http://www.eis
 ytv.ne.jp,available,,,1,2002,,,http://www.ytv.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 yytv.co.jp,available,,,1,2002,,,http://www.yytv.co.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 jcom.co.jp,unknown,,,18,2002,,,http://www.jcom.co.jp/shimonoseki,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+nhk.or.jp,unknown,,,15,"2002,2003,2004,2005",,,http://www.nhk.or.jp/digital/,http://www.eiseihoso.org:80/bsdchlu/main.html,[ JPRS database provides information on network administration. Its use is    ]
+catv.or.jp,unknown,,,13,"2002,2003,2004,2005",,,http://www.catv.or.jp/renmei/renmeihome.htm,http://www.eiseihoso.org:80/aboutus/main005.html,[ JPRS database provides information on network administration. Its use is    ]
+soumu.go.jp,unknown,,,12,"2002,2003,2004,2005",,,http://www.soumu.go.jp/joho_tsusin/joho_tsusin.html,http://www.eiseihoso.org:80/aboutus/main005.html,[ JPRS database provides information on network administration. Its use is    ]
+cartoonnetwork.co.jp,unknown,,,11,"2002,2003,2004,2005",,,http://www.cartoonnetwork.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/004anime/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+wni.co.jp,unknown,,,11,"2002,2003,2004,2005",,,http://www.wni.co.jp/cww/,http://www.eiseihoso.org:80/bsdchlu/main.html,[ JPRS database provides information on network administration. Its use is    ]
+bs-j.co.jp,unknown,,,10,"2002,2003,2004,2005",,,http://www.bs-j.co.jp/,http://www.eiseihoso.org:80/bsdchlu/main.html,[ JPRS database provides information on network administration. Its use is    ]
+nikkei-cnbc.co.jp,unknown,,,10,"2002,2003,2004,2005",,,http://www.nikkei-cnbc.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs/008news/top.cgi?start=10&key=,[ JPRS database provides information on network administration. Its use is    ]
+toei.co.jp,unknown,,,10,"2002,2003,2004,2005",,,http://www.toei.co.jp/cs/,http://www.eiseihoso.org:80/cgi-bin/cs/002cinema/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+jsports.co.jp,unknown,,,8,"2004,2005",,,http://www.jsports.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs01/005sports/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+manzox.ch,unknown,,,8,"2002,2003,2004,2005",,,http://www.manzox.ch,http://www.eiseihoso.org:80/cgi-bin/cs/014adult/top.cgi?start=10&key=,Requests of this client are not permitted. Please use https://www.nic.ch/whois/ for queries.
+jeita.or.jp,unknown,,,7,"2002,2003,2004,2005",,,iÐjdqîñZpYÆ¦ïiJEITAj,http://www.eiseihoso.org:80/aboutus/main005.html,[ JPRS database provides information on network administration. Its use is    ]
+shopchannel.co.jp,unknown,,,7,"2002,2003,2004,2005",,,http://www.shopchannel.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs/012shopping/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
 titus.co.jp,unknown,,,7,2002,,,http://www.titus.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-cartoonnetwork.co.jp,unknown,,,3,2002,,,http://www.cartoonnetwork.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/004anime/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
-nhk.or.jp,unknown,,,3,2002,,,http://www.nhk.or.jp/digital/,http://www.eiseihoso.org:80/bsdchlu/main.html,[ JPRS database provides information on network administration. Its use is    ]
-wni.co.jp,unknown,,,3,2002,,,http://www.wni.co.jp/cww/,http://www.eiseihoso.org:80/bsdchlu/main.html,[ JPRS database provides information on network administration. Its use is    ]
-bs-j.co.jp,unknown,,,2,2002,,,http://www.bs-j.co.jp/,http://www.eiseihoso.org:80/bsdchlu/main.html,[ JPRS database provides information on network administration. Its use is    ]
+toshin.ac.jp,unknown,,,6,"2002,2003,2004",,,http://www.toshin.ac.jp,http://www.eiseihoso.org:80/cgi-bin/cs/010learn/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+fandango.co.jp,unknown,,,5,"2002,2003,2004,2005",,,http://www.fandango.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs/007ent/top.cgi?start=10&key=,[ JPRS database provides information on network administration. Its use is    ]
+super-ch.com@,unknown,,,5,"2002,2003,2004",,,http://www.super-ch.com@,http://www.eiseihoso.org:80/cgi-bin/cs/003drama/top.cgi,No whois server is known for this kind of object.
+daiwa.co.jp,unknown,,,4,"2002,2003,2004",,,http://www.daiwa.co.jp/daiwa766/,http://www.eiseihoso.org:80/cgi-bin/cs/009hobby/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+fdd.tv,unknown,,,4,"2004,2005",,,http://www.fdd.tv/,http://www.eiseihoso.org:80/cgi-bin/cs01/012shopping/top.cgi,Reserved Domain Name
+jam.jp,unknown,,,4,2003,,,http://www.jam.jp,http://www.eiseihoso.org:80/cgi-bin/cs/014adult/top.cgi,<JPRS WHOIS HELP>
+jpc.co.jp,unknown,,,4,"2002,2003,2004,2005",,,http://www.jpc.co.jp/whatjpc.html,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+jvc-victor.co.jp,unknown,,,4,"2002,2003,2004,2005",,,http://www.jvc-victor.co.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+matsushita.co.jp,unknown,,,4,"2002,2003,2004,2005",,,http://www.matsushita.co.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+miharu.co.jp,unknown,,,4,"2002,2003,2004,2005",,,http://www.miharu.co.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+nec.co.jp,unknown,,,4,"2002,2003,2004,2005",,,http://www.nec.co.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+nhk-sw.co.jp,unknown,,,4,"2002,2003,2004,2005",,,http://www.nhk-sw.co.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+dkkaraoke.co.jp,unknown,,,3,"2002,2003,2004",,,http://www.dkkaraoke.co.jp/,http://www.eiseihoso.org:80/cgi-bin/member/top.cgi?start=60&key=,[ JPRS database provides information on network administration. Its use is    ]
+iijnet.or.jp,unknown,,,3,"2002,2003,2004",,,http://www.iijnet.or.jp/JSAT/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+itochu.co.jp,unknown,,,3,"2003,2004,2005",,,http://www.itochu.co.jp/main/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+kit-manzox.co.jp,unknown,,,3,"2002,2003",,,http://www.kit-manzox.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/007ent/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+omp.co.jp,unknown,,,3,"2002,2003,2004",,,http://www.omp.co.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+toppan.co.jp,unknown,,,3,"2002,2003",,,http://www.toppan.co.jp/multimedia/cs/,http://www.eiseihoso.org:80/cgi-bin/cs/008news/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
 catv-kobe.co.jp,unknown,,,2,2002,,,http://www.catv-kobe.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-daiwa.co.jp,unknown,,,2,2002,,,http://www.daiwa.co.jp/daiwa766/,http://www.eiseihoso.org:80/cgi-bin/cs/009hobby/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
-manzox.ch,unknown,,,2,2002,,,http://www.manzox.ch,http://www.eiseihoso.org:80/cgi-bin/cs/014adult/top.cgi?start=10&key=,Requests of this client are not permitted. Please use https://www.nic.ch/whois/ for queries.
+dentsu.co.jp,unknown,,,2,"2004,2005",,,http://www.dentsu.co.jp/idx-swf.html,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+foxjapan.com@,unknown,,,2,"2003,2004",,,http://www.foxjapan.com@,http://www.eiseihoso.org:80/cgi-bin/member/top.cgi?start=80&key=,No whois server is known for this kind of object.
+jcl.or.jp,unknown,,,2,2005,,,http://www.jcl.or.jp/index.html,http://www.eiseihoso.org:80/link/index.html,[ JPRS database provides information on network administration. Its use is    ]
+jdserve.co.jp,unknown,,,2,2005,,,http://www.jdserve.co.jp/,http://www.eiseihoso.org:80/link/index.html,[ JPRS database provides information on network administration. Its use is    ]
+kandenko.co.jp,unknown,,,2,"2004,2005",,,http://www.kandenko.co.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+nhkitec.co.jp,unknown,,,2,"2004,2005",,,http://www.nhkitec.co.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 sado.co.jp,unknown,,,2,2002,,,http://www.sado.co.jp/st-net/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-soumu.go.jp,unknown,,,2,2002,,,http://www.soumu.go.jp/joho_tsusin/joho_tsusin.html,http://www.eiseihoso.org:80/aboutus/main005.html,[ JPRS database provides information on network administration. Its use is    ]
-toei.co.jp,unknown,,,2,2002,,,http://www.toei.co.jp/cs/,http://www.eiseihoso.org:80/cgi-bin/cs/002cinema/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
-toppan.co.jp,unknown,,,2,2002,,,http://www.toppan.co.jp/multimedia/cs/,http://www.eiseihoso.org:80/cgi-bin/cs/008news/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
-toshin.ac.jp,unknown,,,2,2002,,,http://www.toshin.ac.jp,http://www.eiseihoso.org:80/cgi-bin/cs/010learn/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+sarc.or.jp,unknown,,,2,2005,,,àc@lq¯úZLeBZ^[,http://www.eiseihoso.org:80/link/index.html,[ JPRS database provides information on network administration. Its use is    ]
+sumitomocorp.co.jp,unknown,,,2,"2004,2005",,,http://www.sumitomocorp.co.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+toho.co.jp,unknown,,,2,"2004,2005",,,http://www.toho.co.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+tokyu-agc.co.jp,unknown,,,2,"2004,2005",,,http://www.tokyu-agc.co.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+usen.co.jp,unknown,,,2,"2003,2004",,,http://www.usen.co.jp/,http://www.eiseihoso.org:80/cgi-bin/member/top.cgi?start=100&key=,[ JPRS database provides information on network administration. Its use is    ]
+weather-service.co.jp,unknown,,,2,"2004,2005",,,http://www.weather-service.co.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 accs.or.jp,unknown,,,1,2002,,,http://www.accs.or.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 adachi.ne.jp,unknown,,,1,2002,,,http://www.adachi.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 amigo.ne.jp,unknown,,,1,2002,,,http://www.amigo.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
@@ -118,6 +180,7 @@ avis.ne.jp,unknown,,,1,2002,,,http://www.avis.ne.jp/~scv-tv,http://www.eiseihoso
 ayu.ne.jp,unknown,,,1,2002,,,http://www.ayu.ne.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 banban.co.jp,unknown,,,1,2002,,,http://www.banban.co.jp/ banbantv.htm/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 baynet.ne.jp,unknown,,,1,2002,,,http://www.baynet.ne.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+baz.tv,unknown,,,1,2003,,,http://www.baz.tv/@,http://www.eiseihoso.org:80/cgi-bin/cs02/010data/top.cgi,Reserved Domain Name
 bc9.ne.jp,unknown,,,1,2002,,,http://www.bc9.ne.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 btvm.ne.jp,unknown,,,1,2002,,,http://www.btvm.ne.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 c-d-k.ne.jp,unknown,,,1,2002,,,http://www.c-d-k.ne.jp/icc/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
@@ -126,7 +189,6 @@ cable-net.ne.jp,unknown,,,1,2002,,,http://www.cable-net.ne.jp,http://www.eiseiho
 cablenet.co.jp,unknown,,,1,2002,,,http://www.cablenet.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 cat-v.co.jp,unknown,,,1,2002,,,http://www.cat-v.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 catv.ne.jp,unknown,,,1,2002,,,http://www.catv.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-catv.or.jp,unknown,,,1,2002,,,http://www.catv.or.jp/renmei/renmeihome.htm,http://www.eiseihoso.org:80/aboutus/main005.html,[ JPRS database provides information on network administration. Its use is    ]
 catv296.co.jp,unknown,,,1,2002,,,http://www.catv296.co.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 catvmics.ne.jp,unknown,,,1,2002,,,http://www.catvmics.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 catvy.ne.jp,unknown,,,1,2002,,,http://www.catvy.ne.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
@@ -143,8 +205,6 @@ ctk.ne.jp,unknown,,,1,2002,,,http://www.CTK.ne.jp,http://www.eiseihoso.org:80/gu
 cty-net.ne.jp,unknown,,,1,2002,,,http://www.cty-net.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 cvc.co.jp,unknown,,,1,2002,,,http://www.cvc.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 cwo.co.jp,unknown,,,1,2002,,,http://www.cwo.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-dkkaraoke.co.jp,unknown,,,1,2002,,,http://www.dkkaraoke.co.jp/,http://www.eiseihoso.org:80/cgi-bin/member/top.cgi?start=60&key=,[ JPRS database provides information on network administration. Its use is    ]
-fandango.co.jp,unknown,,,1,2002,,,http://www.fandango.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs/007ent/top.cgi?start=10&key=,[ JPRS database provides information on network administration. Its use is    ]
 fctv.co.jp,unknown,,,1,2002,,,http://www.fctv.co.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 fureai-ch.ne.jp,unknown,,,1,2002,,,http://www.fureai-ch.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 haginet.ne.jp,unknown,,,1,2002,,,http://www.haginet.ne.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
@@ -161,51 +221,39 @@ ict.ne.jp,unknown,,,1,2002,,,http://www.ict.ne.jp,http://www.eiseihoso.org:80/gu
 ictnet.co.jp,unknown,,,1,2002,,,http://www.ictnet.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 ictv.ne.jp,unknown,,,1,2002,,,http://www.ictv.ne.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 icv.ne.jp,unknown,,,1,2002,,,http://www.icv.ne.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-iijnet.or.jp,unknown,,,1,2002,,,http://www.iijnet.or.jp/JSAT/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 ise-ics.co.jp,unknown,,,1,2002,,,http://www.ise-ics.co.jp/ hometown/iinan/ciao.html,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 islands.ne.jp,unknown,,,1,2002,,,http://www.islands.ne.jp/ uoshima/catv.html,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-jeita.or.jp,unknown,,,1,2002,,,http://www.jeita.or.jp/,http://www.eiseihoso.org:80/aboutus/main005.html,[ JPRS database provides information on network administration. Its use is    ]
-jpc.co.jp,unknown,,,1,2002,,,http://www.jpc.co.jp/whatjpc.html,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-jvc-victor.co.jp,unknown,,,1,2002,,,http://www.jvc-victor.co.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+jbs.tv,unknown,,,1,2003,,,"http://jbs.tv/""",http://www.eiseihoso.org:80/cgi-bin/member/top.cgi?start=80&key=,Reserved Domain Name
 kawaguchiko.ne.jp,unknown,,,1,2002,,,http://www.kawaguchiko.ne.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 kcb.co.jp,unknown,,,1,2002,,,http://www.kcb.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 kcn-tv.ne.jp,unknown,,,1,2002,,,http://www.kcn-tv.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 kctv.co.jp,unknown,,,1,2002,,,http://www.kctv.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 kinet-tv.ne.jp,unknown,,,1,2002,,,http://www.kinet-tv.ne.jp/top.html,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-kit-manzox.co.jp,unknown,,,1,2002,,,http://www.kit-manzox.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/007ent/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
 kitanet.co.jp,unknown,,,1,2002,,,http://www.kitanet.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 kumin.ne.jp,unknown,,,1,2002,,,http://www.kumin.ne.jp/kumin,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 mable.co.jp,unknown,,,1,2002,,,http://www.mable.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-matsushita.co.jp,unknown,,,1,2002,,,http://www.matsushita.co.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 mcat.co.jp,unknown,,,1,2002,,,http://www.mcat.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 mct.ne.jp,unknown,,,1,2002,,,http://www.mct.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 mctv.ne.jp,unknown,,,1,2002,,,http://www.mctv.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 melco.co.jp,unknown,,,1,2002,,,http://www.melco.co.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-miharu.co.jp,unknown,,,1,2002,,,http://www.miharu.co.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 mytv.co.jp,unknown,,,1,2002,,,http://www.mytv.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 nankai.co.jp,unknown,,,1,2002,,,http://www.nankai.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 nava21.co.jp,unknown,,,1,2002,,,http://www.nava21.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 nctv.co.jp,unknown,,,1,2002,,,http://www.nctv.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 ncv-y.co.jp,unknown,,,1,2002,,,http://www.ncv-y.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 ncv.ne.jp,unknown,,,1,2002,,,http://www.ncv.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-nec.co.jp,unknown,,,1,2002,,,http://www.nec.co.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-nhk-sw.co.jp,unknown,,,1,2002,,,http://www.nhk-sw.co.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-nikkei-cnbc.co.jp,unknown,,,1,2002,,,http://www.nikkei-cnbc.co.jp,http://www.eiseihoso.org:80/cgi-bin/cs/008news/top.cgi?start=10&key=,[ JPRS database provides information on network administration. Its use is    ]
 nns-catv.co.jp,unknown,,,1,2002,,,http://www.nns-catv.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 oct-net.ne.jp,unknown,,,1,2002,,,http://www.oct-net.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 octv.ne.jp,unknown,,,1,2002,,,http://www.octv.ne.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 ogaki-tv.co.jp,unknown,,,1,2002,,,http://www.ogaki-tv.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-omp.co.jp,unknown,,,1,2002,,,http://www.omp.co.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 rcn.ne.jp,unknown,,,1,2002,,,http://www.rcn.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 rosenet.ne.jp,unknown,,,1,2002,,,http://www.rosenet.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 s-cnet.ne.jp,unknown,,,1,2002,,,http://www.s-cnet.ne.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 scatv.ne.jp,unknown,,,1,2002,,,http://www.scatv.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 shimabara.ne.jp,unknown,,,1,2002,,,http://www.shimabara.ne.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 shoku-chan.com@,unknown,,,1,2002,,,http://www.shoku-chan.com@,http://www.eiseihoso.org:80/cgi-bin/cs/009hobby/top.cgi,No whois server is known for this kind of object.
-shopchannel.co.jp,unknown,,,1,2002,,,http://www.shopchannel.co.jp/,http://www.eiseihoso.org:80/cgi-bin/cs/012shopping/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
 spaceshowertv.com@,unknown,,,1,2002,,,http://www.spaceshowertv.com@,http://www.eiseihoso.org:80/cgi-bin/member/top.cgi?start=60&key=,No whois server is known for this kind of object.
 starcat.co.jp,unknown,,,1,2002,,,http://www.starcat.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-super-ch.com@,unknown,,,1,2002,,,http://www.super-ch.com@,http://www.eiseihoso.org:80/cgi-bin/cs/003drama/top.cgi,No whois server is known for this kind of object.
 t-catv.co.jp,unknown,,,1,2002,,,http://www.t-catv.co.jp/.,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 t-net.ne.jp,unknown,,,1,2002,,,http://www.t-net.ne.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 tac-net.co.jp,unknown,,,1,2002,,,http://www.tac-net.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
@@ -230,18 +278,25 @@ watv.ne.jp,unknown,,,1,2002,,,http://www.watv.ne.jp/,http://www.eiseihoso.org:80
 web-sanin.co.jp,unknown,,,1,2002,,,http://www.web-sanin.co.jp/ local/nita/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 winknet.ne.jp,unknown,,,1,2002,,,http://www.winknet.ne.jp/,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
 ztv.co.jp,unknown,,,1,2002,,,http://www.ztv.co.jp,http://www.eiseihoso.org:80/guide/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
-jskysports.com,taken,MarkMonitor Inc.,2026-11-04T11:58:46Z,5,2002,,,http://www.jskysports.com,http://www.eiseihoso.org:80/cgi-bin/cs/005sports/top.cgi,Domain Name: JSKYSPORTS.COM
-v135.com,taken,"eName Technology Co., Ltd.",2026-10-28T02:59:30Z,3,2002,,,http://www.v135.com,http://www.eiseihoso.org:80/cgi-bin/cs/001ppv/top.cgi?start=30&key=,Domain Name: V135.COM
-access-tv.net,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2026-05-10T08:53:17Z,2,2002,,,http://www.access-tv.net,http://www.eiseihoso.org:80/cgi-bin/cs/008news/top.cgi,Domain Name: ACCESS-TV.NET
-classica-jp.com,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2026-08-07T09:27:42Z,2,2002,,,http://www.classica-jp.com,http://www.eiseihoso.org:80/cgi-bin/cs/006music/top.cgi,Domain Name: CLASSICA-JP.COM
-clubdam.com,taken,"Japan Registry Services Co., Ltd.",2027-04-19T14:23:58Z,2,2002,,,http://www.clubdam.com/starkaraoke,http://www.eiseihoso.org:80/cgi-bin/cs/006music/top.cgi,Domain Name: CLUBDAM.COM
-e-tenki.net,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2027-02-28T06:27:55Z,2,2002,,,http://www.e-tenki.net,http://www.eiseihoso.org:80/cgi-bin/cs/008news/top.cgi,Domain Name: E-TENKI.NET
-foxjapan.com,taken,"GoDaddy Corporate Domains, LLC",2026-11-19T05:00:00Z,2,2002,,,http://www.foxjapan.com,http://www.eiseihoso.org:80/cgi-bin/cs/007ent/top.cgi?start=10&key=,Domain Name: FOXJAPAN.COM
-investation.com,taken,"GoDaddy.com, LLC",2026-11-04T19:33:41Z,2,2002,,,http://www.investation.com,http://www.eiseihoso.org:80/cgi-bin/cs/008news/top.cgi,Domain Name: INVESTATION.COM
-kojima.net,taken,"Japan Registry Services Co., Ltd.",2026-05-10T04:00:00Z,2,2002,,,http://www.kojima.net/,http://www.eiseihoso.org:80/cgi-bin/cs/012shopping/top.cgi,Domain Name: KOJIMA.NET
-qvcjp.com,taken,MarkMonitor Inc.,2027-06-16T14:18:44Z,2,2002,,,http://www.qvcjp.com/,http://www.eiseihoso.org:80/cgi-bin/cs/012shopping/top.cgi,Domain Name: QVCJP.COM
-at-x.com,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2026-11-30T05:00:00Z,1,2002,,,http://www.at-x.com/,http://www.eiseihoso.org:80/cgi-bin/cs/004anime/top.cgi,Domain Name: AT-X.COM
+jskysports.com,taken,MarkMonitor Inc.,2026-11-04T11:58:46Z,12,"2002,2003",,,http://www.jskysports.com,http://www.eiseihoso.org:80/cgi-bin/cs/005sports/top.cgi,Domain Name: JSKYSPORTS.COM
+clubdam.com,taken,"Japan Registry Services Co., Ltd.",2027-04-19T14:23:58Z,9,"2002,2003,2004,2005",,,http://www.clubdam.com/eco/eco_ie/frame1.html,http://www.eiseihoso.org:80/cgi-bin/cs/006music/top.cgi,Domain Name: CLUBDAM.COM
+nihon-eiga.com,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2027-01-12T10:38:41Z,9,"2002,2003,2004,2005",,,http://www.nihon-eiga.com/,http://www.eiseihoso.org:80/cgi-bin/cs/002cinema/top.cgi,Domain Name: NIHON-EIGA.COM
+access-tv.net,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2026-05-10T08:53:17Z,8,"2002,2003,2004,2005",,,http://www.access-tv.net,http://www.eiseihoso.org:80/cgi-bin/cs/008news/top.cgi,Domain Name: ACCESS-TV.NET
+at-x.com,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2026-11-30T05:00:00Z,8,"2002,2003,2004,2005",,,http://www.at-x.com/,http://www.eiseihoso.org:80/cgi-bin/cs/004anime/top.cgi,Domain Name: AT-X.COM
+classica-jp.com,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2026-08-07T09:27:42Z,8,"2002,2003,2004,2005",,,http://www.classica-jp.com,http://www.eiseihoso.org:80/cgi-bin/cs/006music/top.cgi,Domain Name: CLASSICA-JP.COM
+jsat.net,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2027-01-06T09:21:16Z,8,"2002,2003,2004,2005",,,http://www.jsat.net/,http://www.eiseihoso.org:80/aboutus/main005.html,Domain Name: JSAT.NET
+qvcjp.com,taken,MarkMonitor Inc.,2027-06-16T14:18:44Z,8,"2002,2003,2004",,,http://www.qvcjp.com/,http://www.eiseihoso.org:80/cgi-bin/cs/012shopping/top.cgi,Domain Name: QVCJP.COM
+e-tenki.net,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2027-02-28T06:27:55Z,6,"2002,2003,2004,2005",,,http://www.e-tenki.net,http://www.eiseihoso.org:80/cgi-bin/cs/008news/top.cgi,Domain Name: E-TENKI.NET
+foxjapan.com,taken,"GoDaddy Corporate Domains, LLC",2026-11-19T05:00:00Z,6,"2002,2003,2004",,,http://www.foxjapan.com/tv/,http://www.eiseihoso.org:80/cgi-bin/cs/007ent/top.cgi?start=10&key=,Domain Name: FOXJAPAN.COM
+jidaigeki.com,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2027-02-15T06:58:46Z,6,"2002,2003,2004",,,http://www.jidaigeki.com/,http://www.eiseihoso.org:80/cgi-bin/cs/003drama/top.cgi,Domain Name: JIDAIGEKI.COM
+kojima.net,taken,"Japan Registry Services Co., Ltd.",2026-05-10T04:00:00Z,6,"2002,2003,2004,2005",,,http://www.kojima.net/,http://www.eiseihoso.org:80/cgi-bin/cs/012shopping/top.cgi,Domain Name: KOJIMA.NET
+skystage.net,taken,"Japan Registry Services Co., Ltd.",2027-01-18T10:51:10Z,6,"2003,2004,2005",,,http://www.skystage.net/,http://www.eiseihoso.org:80/cgi-bin/cs02/006entertainment/top.cgi,Domain Name: SKYSTAGE.NET
+v135.com,taken,"eName Technology Co., Ltd.",2026-10-28T02:59:30Z,6,"2002,2003,2004,2005",,,http://www.v135.com,http://www.eiseihoso.org:80/cgi-bin/cs/001ppv/top.cgi?start=30&key=,Domain Name: V135.COM
+csq-tv.com,taken,DropCatch.com 782 LLC,2027-02-23T19:03:21Z,5,"2003,2004,2005",,,http://www.csq-tv.com/,http://www.eiseihoso.org:80/cgi-bin/cs02/009promo/top.cgi,Domain Name: CSQ-TV.COM
+skyperfectv110.jp,taken,SKY Perfect JSAT Corporation,,4,"2004,2005",,,http://www.skyperfectv110.jp/,http://www.eiseihoso.org:80/links/main001.html,[ JPRS database provides information on network administration. Its use is    ]
+cs-nippon.com,taken,"Japan Registry Services Co., Ltd.",2027-04-02T07:56:14Z,3,"2003,2004,2005",,,http://www.cs-nippon.com/guide/146ch.htm,http://www.eiseihoso.org:80/cgi-bin/cs03/009culture/top.cgi,Domain Name: CS-NIPPON.COM
+investation.com,taken,"GoDaddy.com, LLC",2026-11-04T19:33:41Z,3,"2002,2003",,,http://www.investation.com,http://www.eiseihoso.org:80/cgi-bin/cs/008news/top.cgi,Domain Name: INVESTATION.COM
+adk.jp,taken,ADK Holdings Inc.,,2,"2004,2005",,,http://www.adk.jp/,http://www.eiseihoso.org:80/aboutus/main003-02.html,[ JPRS database provides information on network administration. Its use is    ]
+animal-planet.jp,taken,TDK Design Inc.,,2,2005,,,http://www.animal-planet.jp,http://www.eiseihoso.org:80/cgi-bin/cs01/007ent/top.cgi,[ JPRS database provides information on network administration. Its use is    ]
+iryoufukushi.com,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2027-04-24T12:25:59Z,2,"2004,2005",,,http://www.iryoufukushi.com/,http://www.eiseihoso.org:80/cgi-bin/member/top.cgi?start=10&key=,Domain Name: IRYOUFUKUSHI.COM
 edogawa.com,taken,Kagoya Japan Inc.,2026-09-22T04:00:00Z,1,2002,,,http://www.edogawa.com/cable-tv/,http://www.eiseihoso.org:80/guide/main003-02.html,Domain Name: EDOGAWA.COM
-jidaigeki.com,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2027-02-15T06:58:46Z,1,2002,,,http://www.jidaigeki.com,http://www.eiseihoso.org:80/cgi-bin/cs/003drama/top.cgi,Domain Name: JIDAIGEKI.COM
-jsat.net,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2027-01-06T09:21:16Z,1,2002,,,http://www.jsat.net/,http://www.eiseihoso.org:80/aboutus/main005.html,Domain Name: JSAT.NET
-nihon-eiga.com,taken,"GMO Internet Group, Inc. d/b/a Onamae.com",2027-01-12T10:38:41Z,1,2002,,,http://www.nihon-eiga.com,http://www.eiseihoso.org:80/cgi-bin/cs/002cinema/top.cgi,Domain Name: NIHON-EIGA.COM
