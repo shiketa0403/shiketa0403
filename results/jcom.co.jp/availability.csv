@@ -1,6 +1,7 @@
 ﻿domain,availability,registrar,expiry,link_count,years_seen,genre,memo,sample_anchor,sample_source_url,whois_excerpt
-anagth.co.jp,available,,,1,2004,,,,http://www.jcom.co.jp:80/kansai/local/special/2002/shifuku08/natsu.html,[ JPRS database provides information on network administration. Its use is    ]
-www01.vaio.ne.jp,available,,,1,2004,,,,http://www.jcom.co.jp:80/kansai/local/special/2002/shifuku08/natsu.html,[ JPRS database provides information on network administration. Its use is    ]
-hankai.co.jp,unknown,,,1,2004,,,,http://www.jcom.co.jp:80/kansai/local/special/2002/shifuku08/local.html,[ JPRS database provides information on network administration. Its use is    ]
-nankai.co.jp,unknown,,,1,2004,,,,http://www.jcom.co.jp:80/kansai/local/special/2002/shifuku08/local.html,[ JPRS database provides information on network administration. Its use is    ]
-usj.co.jp,unknown,,,1,2004,,,,http://www.jcom.co.jp:80/,[ JPRS database provides information on network administration. Its use is    ]
+anagth.co.jp,available,,,2,"2004,2005",,,,http://www.jcom.co.jp:80/kansai/local/special/2002/shifuku08/natsu.html,[ JPRS database provides information on network administration. Its use is    ]
+www01.vaio.ne.jp,available,,,2,"2004,2005",,,,http://www.jcom.co.jp:80/kansai/local/special/2002/shifuku08/natsu.html,[ JPRS database provides information on network administration. Its use is    ]
+hankai.co.jp,unknown,,,2,"2004,2005",,,,http://www.jcom.co.jp:80/kansai/local/special/2002/shifuku08/local.html,[ JPRS database provides information on network administration. Its use is    ]
+nankai.co.jp,unknown,,,2,"2004,2005",,,,http://www.jcom.co.jp:80/kansai/local/special/2002/shifuku08/local.html,[ JPRS database provides information on network administration. Its use is    ]
+usj.co.jp,unknown,,,2,"2004,2005",,,,http://www.jcom.co.jp:80/,[ JPRS database provides information on network administration. Its use is    ]
+club-off.com,taken,MarkMonitor Inc.,2026-06-28T03:27:35Z,1,2005,,,,http://club.jcom.co.jp:80/index.html,Domain Name: CLUB-OFF.COM
