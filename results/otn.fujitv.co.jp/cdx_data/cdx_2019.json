@@ -1,0 +1,5448 @@
+{
+  "domain": "otn.fujitv.co.jp",
+  "year": 2019,
+  "fetched_at": "2026-04-23T02:51:26+0000",
+  "header": [
+    "timestamp",
+    "original"
+  ],
+  "count": 1359,
+  "records": [
+    {
+      "timestamp": "20190404180449",
+      "original": "https://otn.fujitv.co.jp/"
+    },
+    {
+      "timestamp": "20191120153812",
+      "original": "https://otn.fujitv.co.jp/18jsf-kinki/"
+    },
+    {
+      "timestamp": "20190718173441",
+      "original": "https://otn.fujitv.co.jp/9mm15th/"
+    },
+    {
+      "timestamp": "20190228200540",
+      "original": "http://otn.fujitv.co.jp:80/aaa/"
+    },
+    {
+      "timestamp": "20190302122020",
+      "original": "http://otn.fujitv.co.jp:80/aaa/index.html"
+    },
+    {
+      "timestamp": "20190228210009",
+      "original": "http://otn.fujitv.co.jp:80/aaacal/"
+    },
+    {
+      "timestamp": "20190302042103",
+      "original": "http://otn.fujitv.co.jp:80/aaacal/index.html"
+    },
+    {
+      "timestamp": "20190228205835",
+      "original": "http://otn.fujitv.co.jp:80/aaacalsv/"
+    },
+    {
+      "timestamp": "20190302112925",
+      "original": "http://otn.fujitv.co.jp:80/aaacalsv/index.html"
+    },
+    {
+      "timestamp": "20190302122030",
+      "original": "http://otn.fujitv.co.jp:80/aaanyp2018/"
+    },
+    {
+      "timestamp": "20190117192503",
+      "original": "http://otn.fujitv.co.jp:80/aaawogfukuoka/"
+    },
+    {
+      "timestamp": "20190103060111",
+      "original": "http://otn.fujitv.co.jp:80/aaawogtokyo/"
+    },
+    {
+      "timestamp": "20190121024638",
+      "original": "http://otn.fujitv.co.jp:80/akbkaigi/"
+    },
+    {
+      "timestamp": "20190507183706",
+      "original": "https://otn.fujitv.co.jp/akbkankoutaishi/"
+    },
+    {
+      "timestamp": "20190824025643",
+      "original": "https://otn.fujitv.co.jp/akbkankoutaishi/backnumber.html"
+    },
+    {
+      "timestamp": "20190824025541",
+      "original": "https://otn.fujitv.co.jp/akbkankoutaishi/backnumber2.html"
+    },
+    {
+      "timestamp": "20190824030248",
+      "original": "https://otn.fujitv.co.jp/akbkankoutaishi/backnumber3.html"
+    },
+    {
+      "timestamp": "20190824024940",
+      "original": "https://otn.fujitv.co.jp/akbkankoutaishi/gallery/index.html"
+    },
+    {
+      "timestamp": "20190824030803",
+      "original": "https://otn.fujitv.co.jp/akbkankoutaishi/member/index.html"
+    },
+    {
+      "timestamp": "20190824025702",
+      "original": "https://otn.fujitv.co.jp/akbkankoutaishi/next/index.html"
+    },
+    {
+      "timestamp": "20190118085943",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/special2/index.html"
+    },
+    {
+      "timestamp": "20190117192926",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/special3/galley.html"
+    },
+    {
+      "timestamp": "20190824025545",
+      "original": "https://otn.fujitv.co.jp/akbkankoutaishi/special3/index.html"
+    },
+    {
+      "timestamp": "20190919105217",
+      "original": "https://otn.fujitv.co.jp/akbkankoutaishi/vote/index.html"
+    },
+    {
+      "timestamp": "20190824025450",
+      "original": "https://otn.fujitv.co.jp/akbkankoutaishi/vote/index2.html"
+    },
+    {
+      "timestamp": "20190503031721",
+      "original": "https://otn.fujitv.co.jp/akbkankoutaishi/vote/index3.html"
+    },
+    {
+      "timestamp": "20190127231154",
+      "original": "http://otn.fujitv.co.jp:80/akbkinkyu/"
+    },
+    {
+      "timestamp": "20190102055513",
+      "original": "http://otn.fujitv.co.jp:80/akbkyoukai/"
+    },
+    {
+      "timestamp": "20191022144950",
+      "original": "https://otn.fujitv.co.jp/alice210/"
+    },
+    {
+      "timestamp": "20190516074441",
+      "original": "https://otn.fujitv.co.jp/angerme/"
+    },
+    {
+      "timestamp": "20190105010733",
+      "original": "http://otn.fujitv.co.jp:80/animekids/index.html"
+    },
+    {
+      "timestamp": "20191214083152",
+      "original": "https://otn.fujitv.co.jp/arabaki16/"
+    },
+    {
+      "timestamp": "20190330134359",
+      "original": "http://otn.fujitv.co.jp/asia/"
+    },
+    {
+      "timestamp": "20190129063457",
+      "original": "http://otn.fujitv.co.jp:80/asia/index.html"
+    },
+    {
+      "timestamp": "20190424112935",
+      "original": "https://otn.fujitv.co.jp/aska2019/"
+    },
+    {
+      "timestamp": "20190118095907",
+      "original": "http://otn.fujitv.co.jp:80/ayamachi/"
+    },
+    {
+      "timestamp": "20190215130350",
+      "original": "http://otn.fujitv.co.jp:80/ayamachi/chart/index.html"
+    },
+    {
+      "timestamp": "20190215130355",
+      "original": "http://otn.fujitv.co.jp:80/ayamachi/index.html"
+    },
+    {
+      "timestamp": "20190215130114",
+      "original": "http://otn.fujitv.co.jp:80/ayamachi/interview/index.html"
+    },
+    {
+      "timestamp": "20190118103217",
+      "original": "http://otn.fujitv.co.jp:80/ayamachi/story/index.html"
+    },
+    {
+      "timestamp": "20190127234900",
+      "original": "http://otn.fujitv.co.jp:80/ayamachi/summary/index.html"
+    },
+    {
+      "timestamp": "20190103054536",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000001.html"
+    },
+    {
+      "timestamp": "20190122204000",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000002.html"
+    },
+    {
+      "timestamp": "20190103044845",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000004.html"
+    },
+    {
+      "timestamp": "20190118103222",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000007.html"
+    },
+    {
+      "timestamp": "20190116131144",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000007l.html"
+    },
+    {
+      "timestamp": "20190122141934",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000013.html"
+    },
+    {
+      "timestamp": "20190102191230",
+      "original": "http://otn.fujitv.co.jp/b_hp/100000017.html"
+    },
+    {
+      "timestamp": "20190102012722",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000017l.html"
+    },
+    {
+      "timestamp": "20190920060603",
+      "original": "https://otn.fujitv.co.jp/b_hp/100000020.html"
+    },
+    {
+      "timestamp": "20190109125112",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000020l.html"
+    },
+    {
+      "timestamp": "20190118105045",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000023.html"
+    },
+    {
+      "timestamp": "20190118104915",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000023l.html"
+    },
+    {
+      "timestamp": "20190824025035",
+      "original": "https://otn.fujitv.co.jp/b_hp/100000037.html"
+    },
+    {
+      "timestamp": "20190216094140",
+      "original": "https://otn.fujitv.co.jp/b_hp/100000042.html"
+    },
+    {
+      "timestamp": "20190105013826",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000052.html"
+    },
+    {
+      "timestamp": "20190129060435",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000062.html"
+    },
+    {
+      "timestamp": "20190129060127",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000062l.html"
+    },
+    {
+      "timestamp": "20190919021436",
+      "original": "https://otn.fujitv.co.jp/b_hp/100000089.html"
+    },
+    {
+      "timestamp": "20190917125639",
+      "original": "https://otn.fujitv.co.jp/b_hp/100000090.html"
+    },
+    {
+      "timestamp": "20190118112609",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000093.html"
+    },
+    {
+      "timestamp": "20190201054848",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000096.html"
+    },
+    {
+      "timestamp": "20190122141321",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000118.html"
+    },
+    {
+      "timestamp": "20190919105853",
+      "original": "https://otn.fujitv.co.jp/b_hp/100000130.html"
+    },
+    {
+      "timestamp": "20190113210144",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200011.html"
+    },
+    {
+      "timestamp": "20190118103025",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200011l.html"
+    },
+    {
+      "timestamp": "20190525004303",
+      "original": "https://otn.fujitv.co.jp/b_hp/909200028.html"
+    },
+    {
+      "timestamp": "20190118092008",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200039.html"
+    },
+    {
+      "timestamp": "20190920052154",
+      "original": "https://otn.fujitv.co.jp/b_hp/909200064.html"
+    },
+    {
+      "timestamp": "20190122135702",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200071.html"
+    },
+    {
+      "timestamp": "20190103061308",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200071l.html"
+    },
+    {
+      "timestamp": "20190118102840",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200077.html"
+    },
+    {
+      "timestamp": "20190824031556",
+      "original": "https://otn.fujitv.co.jp/b_hp/909200077.html?sc_ext=tcore_tsutaya_news_24709801_fumetsu"
+    },
+    {
+      "timestamp": "20190824032701",
+      "original": "https://otn.fujitv.co.jp/b_hp/909200077.html?sc_ext=tcore_tsutaya_news_24709802_fumetsu"
+    },
+    {
+      "timestamp": "20191022140835",
+      "original": "https://otn.fujitv.co.jp/b_hp/909200077.html?sc_ext=tcore_tsutaya_news_25046211_fumetsu"
+    },
+    {
+      "timestamp": "20190824025159",
+      "original": "https://otn.fujitv.co.jp/b_hp/909200077.html?sc_ext=tcore_tsutaya_news_25046212_fumetsu"
+    },
+    {
+      "timestamp": "20190920034315",
+      "original": "https://otn.fujitv.co.jp/b_hp/909200077.html?sc_ext=tcore_tsutaya_news_25051114_fumetsu"
+    },
+    {
+      "timestamp": "20190824025409",
+      "original": "https://otn.fujitv.co.jp/b_hp/909200077.html?sc_ext=tcore_tsutaya_news_26760956_fumetsu"
+    },
+    {
+      "timestamp": "20190920034247",
+      "original": "https://otn.fujitv.co.jp/b_hp/909200077.html?sc_ext=tcore_tsutaya_news_27227978_fumetsu"
+    },
+    {
+      "timestamp": "20190824032849",
+      "original": "https://otn.fujitv.co.jp/b_hp/909200077.html?sc_ext=tcore_tsutaya_news_27227985_fumetsu"
+    },
+    {
+      "timestamp": "20190824024909",
+      "original": "https://otn.fujitv.co.jp/b_hp/909200077.html?sc_ext=tcore_tsutaya_news_28466846_fumetsu"
+    },
+    {
+      "timestamp": "20190213233546",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200116.html"
+    },
+    {
+      "timestamp": "20190824033348",
+      "original": "https://otn.fujitv.co.jp/b_hp/909200117.html"
+    },
+    {
+      "timestamp": "20190718173423",
+      "original": "https://otn.fujitv.co.jp/b_hp/909200121.html"
+    },
+    {
+      "timestamp": "20190823045754",
+      "original": "https://otn.fujitv.co.jp/b_hp/909200125.html"
+    },
+    {
+      "timestamp": "20190112045040",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200157.html"
+    },
+    {
+      "timestamp": "20191130014516",
+      "original": "https://otn.fujitv.co.jp/b_hp/909200242.html"
+    },
+    {
+      "timestamp": "20191230205548",
+      "original": "https://otn.fujitv.co.jp/b_hp/909200281.html"
+    },
+    {
+      "timestamp": "20190213103152",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200297.html"
+    },
+    {
+      "timestamp": "20190109121518",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200316.html"
+    },
+    {
+      "timestamp": "20191117043927",
+      "original": "https://otn.fujitv.co.jp/b_hp/909200342.html"
+    },
+    {
+      "timestamp": "20191117054639",
+      "original": "https://otn.fujitv.co.jp/b_hp/909200357.html"
+    },
+    {
+      "timestamp": "20190114094656",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/910200017.html"
+    },
+    {
+      "timestamp": "20190629053900",
+      "original": "https://otn.fujitv.co.jp/b_hp/910200062.html"
+    },
+    {
+      "timestamp": "20190916105134",
+      "original": "https://otn.fujitv.co.jp/b_hp/910200066.html"
+    },
+    {
+      "timestamp": "20190917223903",
+      "original": "https://otn.fujitv.co.jp/b_hp/910200074.html"
+    },
+    {
+      "timestamp": "20190818165707",
+      "original": "https://otn.fujitv.co.jp/b_hp/910200074l.html"
+    },
+    {
+      "timestamp": "20191022141443",
+      "original": "https://otn.fujitv.co.jp/b_hp/910200198.html"
+    },
+    {
+      "timestamp": "20190916104255",
+      "original": "https://otn.fujitv.co.jp/b_hp/910200232.html"
+    },
+    {
+      "timestamp": "20190108182754",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/910200258.html"
+    },
+    {
+      "timestamp": "20191115044716",
+      "original": "https://otn.fujitv.co.jp/b_hp/910200298.html"
+    },
+    {
+      "timestamp": "20190824033529",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200008.html"
+    },
+    {
+      "timestamp": "20190201042521",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200022.html"
+    },
+    {
+      "timestamp": "20190916170034",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200023.html"
+    },
+    {
+      "timestamp": "20190118112226",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200025.html"
+    },
+    {
+      "timestamp": "20190116124259",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200054.html"
+    },
+    {
+      "timestamp": "20191122094308",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200060.html"
+    },
+    {
+      "timestamp": "20190718181130",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200069.html"
+    },
+    {
+      "timestamp": "20190629141924",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200070.html"
+    },
+    {
+      "timestamp": "20190824031143",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200077.html"
+    },
+    {
+      "timestamp": "20190404072551",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200086.html"
+    },
+    {
+      "timestamp": "20191120154038",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200095.html"
+    },
+    {
+      "timestamp": "20191117043828",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200105.html"
+    },
+    {
+      "timestamp": "20190112045349",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200117.html"
+    },
+    {
+      "timestamp": "20190215155857",
+      "original": "http://otn.fujitv.co.jp/b_hp/911200134.html"
+    },
+    {
+      "timestamp": "20190916101042",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200142.html"
+    },
+    {
+      "timestamp": "20190201045107",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200167.html"
+    },
+    {
+      "timestamp": "20190916163446",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200169.html"
+    },
+    {
+      "timestamp": "20191214082837",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200175.html"
+    },
+    {
+      "timestamp": "20190824173012",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200190.html"
+    },
+    {
+      "timestamp": "20190401180345",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200199.html"
+    },
+    {
+      "timestamp": "20190920051154",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200213.html"
+    },
+    {
+      "timestamp": "20190921211541",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200214.html"
+    },
+    {
+      "timestamp": "20190917223617",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200232.html"
+    },
+    {
+      "timestamp": "20190916160514",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200236.html"
+    },
+    {
+      "timestamp": "20190201042928",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200244.html"
+    },
+    {
+      "timestamp": "20190821184526",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200245.html"
+    },
+    {
+      "timestamp": "20190824070336",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200259.html"
+    },
+    {
+      "timestamp": "20191120154330",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200278.html"
+    },
+    {
+      "timestamp": "20190127223624",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200287.html"
+    },
+    {
+      "timestamp": "20190917122729",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200314.html"
+    },
+    {
+      "timestamp": "20190823054218",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200323.html"
+    },
+    {
+      "timestamp": "20190917225226",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200332.html"
+    },
+    {
+      "timestamp": "20191020113543",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200334.html"
+    },
+    {
+      "timestamp": "20190619165621",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200334l.html"
+    },
+    {
+      "timestamp": "20190721234326",
+      "original": "https://otn.fujitv.co.jp/b_hp/911200339.html"
+    },
+    {
+      "timestamp": "20190129063602",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200015.html"
+    },
+    {
+      "timestamp": "20190117193043",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200037.html"
+    },
+    {
+      "timestamp": "20191017130502",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200045.html"
+    },
+    {
+      "timestamp": "20190821183248",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200049.html"
+    },
+    {
+      "timestamp": "20191016003914",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200050.html"
+    },
+    {
+      "timestamp": "20190118105050",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200055.html"
+    },
+    {
+      "timestamp": "20190105013342",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200060.html"
+    },
+    {
+      "timestamp": "20190825050440",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200064.html"
+    },
+    {
+      "timestamp": "20191120153841",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200086.html"
+    },
+    {
+      "timestamp": "20190721235443",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200087.html"
+    },
+    {
+      "timestamp": "20190102191334",
+      "original": "http://otn.fujitv.co.jp/b_hp/912200091.html"
+    },
+    {
+      "timestamp": "20191020110507",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200094.html"
+    },
+    {
+      "timestamp": "20190223133027",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200096.html"
+    },
+    {
+      "timestamp": "20190718173828",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200103.html"
+    },
+    {
+      "timestamp": "20190919105326",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200107.html"
+    },
+    {
+      "timestamp": "20190112045045",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200115.html"
+    },
+    {
+      "timestamp": "20191022140858",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200121.html"
+    },
+    {
+      "timestamp": "20190917124954",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200122.html"
+    },
+    {
+      "timestamp": "20191122102845",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200124.html"
+    },
+    {
+      "timestamp": "20190821175533",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200134.html"
+    },
+    {
+      "timestamp": "20190121085825",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200146.html"
+    },
+    {
+      "timestamp": "20191021084006",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200149.html"
+    },
+    {
+      "timestamp": "20190724084146",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200153.html"
+    },
+    {
+      "timestamp": "20190920060021",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200161.html"
+    },
+    {
+      "timestamp": "20190602092347",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200167.html"
+    },
+    {
+      "timestamp": "20190917123634",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200192.html"
+    },
+    {
+      "timestamp": "20191122001748",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200199.html"
+    },
+    {
+      "timestamp": "20190717222146",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200206.html"
+    },
+    {
+      "timestamp": "20191015082625",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200208.html"
+    },
+    {
+      "timestamp": "20190717224917",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200214.html"
+    },
+    {
+      "timestamp": "20190116123958",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200220.html"
+    },
+    {
+      "timestamp": "20191022140853",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200224.html"
+    },
+    {
+      "timestamp": "20191023233222",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200232.html"
+    },
+    {
+      "timestamp": "20190122134831",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200239.html"
+    },
+    {
+      "timestamp": "20190920054216",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200251.html"
+    },
+    {
+      "timestamp": "20190825051500",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200253.html"
+    },
+    {
+      "timestamp": "20191021081240",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200255.html"
+    },
+    {
+      "timestamp": "20190824182536",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200270.html"
+    },
+    {
+      "timestamp": "20190215155817",
+      "original": "http://otn.fujitv.co.jp/b_hp/912200275.html"
+    },
+    {
+      "timestamp": "20190920034026",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200280.html"
+    },
+    {
+      "timestamp": "20190120094730",
+      "original": "http://otn.fujitv.co.jp/b_hp/912200285.html"
+    },
+    {
+      "timestamp": "20190201041830",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200304.html"
+    },
+    {
+      "timestamp": "20191015134556",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200308.html"
+    },
+    {
+      "timestamp": "20190916170445",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200317.html"
+    },
+    {
+      "timestamp": "20190117114120",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200339.html"
+    },
+    {
+      "timestamp": "20190724084540",
+      "original": "https://otn.fujitv.co.jp/b_hp/912200340.html"
+    },
+    {
+      "timestamp": "20191120192233",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200011.html"
+    },
+    {
+      "timestamp": "20190509055845",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200018.html"
+    },
+    {
+      "timestamp": "20190917231709",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200021.html"
+    },
+    {
+      "timestamp": "20191121234301",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200034.html"
+    },
+    {
+      "timestamp": "20190921213808",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200038.html"
+    },
+    {
+      "timestamp": "20190718174436",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200039.html"
+    },
+    {
+      "timestamp": "20190116133247",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200043.html"
+    },
+    {
+      "timestamp": "20190917121213",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200046.html"
+    },
+    {
+      "timestamp": "20191022140816",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200046l.html"
+    },
+    {
+      "timestamp": "20190524221624",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200057.html"
+    },
+    {
+      "timestamp": "20191208032637",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200058.html"
+    },
+    {
+      "timestamp": "20190118073729",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200062.html"
+    },
+    {
+      "timestamp": "20190825050458",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200074.html"
+    },
+    {
+      "timestamp": "20190201050254",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200075.html"
+    },
+    {
+      "timestamp": "20191023225509",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200084.html"
+    },
+    {
+      "timestamp": "20191117043922",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200087.html"
+    },
+    {
+      "timestamp": "20190917121755",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200089.html"
+    },
+    {
+      "timestamp": "20190112033354",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200094.html"
+    },
+    {
+      "timestamp": "20190128190636",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200113.html"
+    },
+    {
+      "timestamp": "20190824075250",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200119.html"
+    },
+    {
+      "timestamp": "20191215052508",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200121.html"
+    },
+    {
+      "timestamp": "20191208032734",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200131.html"
+    },
+    {
+      "timestamp": "20190103055646",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200138.html"
+    },
+    {
+      "timestamp": "20190127222611",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200154.html"
+    },
+    {
+      "timestamp": "20190102012230",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200163.html"
+    },
+    {
+      "timestamp": "20191208032127",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200164.html"
+    },
+    {
+      "timestamp": "20191016003702",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200173.html"
+    },
+    {
+      "timestamp": "20191215055140",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200188.html"
+    },
+    {
+      "timestamp": "20190717025559",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200190.html"
+    },
+    {
+      "timestamp": "20190822044912",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200203.html"
+    },
+    {
+      "timestamp": "20190721232830",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200206.html"
+    },
+    {
+      "timestamp": "20190122130803",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200210.html"
+    },
+    {
+      "timestamp": "20190126213326",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200214.html"
+    },
+    {
+      "timestamp": "20191206131642",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200232.html"
+    },
+    {
+      "timestamp": "20190719182520",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200233.html"
+    },
+    {
+      "timestamp": "20190817223617",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200239.html"
+    },
+    {
+      "timestamp": "20191120154406",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200244.html"
+    },
+    {
+      "timestamp": "20190718175815",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200254.html"
+    },
+    {
+      "timestamp": "20190118103324",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200255.html"
+    },
+    {
+      "timestamp": "20190302122035",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200268.html"
+    },
+    {
+      "timestamp": "20190718125531",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200271.html"
+    },
+    {
+      "timestamp": "20191022140917",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200290.html"
+    },
+    {
+      "timestamp": "20190105013831",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200291.html"
+    },
+    {
+      "timestamp": "20191113194446",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200293.html"
+    },
+    {
+      "timestamp": "20191121234313",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200295.html"
+    },
+    {
+      "timestamp": "20190920034259",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200299.html"
+    },
+    {
+      "timestamp": "20190106150717",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200311.html"
+    },
+    {
+      "timestamp": "20190824064901",
+      "original": "https://otn.fujitv.co.jp/b_hp/913200313.html"
+    },
+    {
+      "timestamp": "20190823050912",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200010.html"
+    },
+    {
+      "timestamp": "20190112044036",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200015.html"
+    },
+    {
+      "timestamp": "20191113204432",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200017.html"
+    },
+    {
+      "timestamp": "20190622074725",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200036.html"
+    },
+    {
+      "timestamp": "20190622073502",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200037.html"
+    },
+    {
+      "timestamp": "20190623101905",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200039.html"
+    },
+    {
+      "timestamp": "20191113194410",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200041.html"
+    },
+    {
+      "timestamp": "20191022141054",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200049.html"
+    },
+    {
+      "timestamp": "20190105004234",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200055.html"
+    },
+    {
+      "timestamp": "20190129061855",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200058.html"
+    },
+    {
+      "timestamp": "20190118090404",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200059.html"
+    },
+    {
+      "timestamp": "20190629004016",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200071.html"
+    },
+    {
+      "timestamp": "20191020105542",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200073.html"
+    },
+    {
+      "timestamp": "20191015055822",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200074.html"
+    },
+    {
+      "timestamp": "20191022140822",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200074l.html"
+    },
+    {
+      "timestamp": "20190823050800",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200085.html"
+    },
+    {
+      "timestamp": "20190626023049",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200087.html"
+    },
+    {
+      "timestamp": "20190915223438",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200088.html"
+    },
+    {
+      "timestamp": "20191214080518",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200089.html?pagelink=rmenu_rmd_page"
+    },
+    {
+      "timestamp": "20190126010627",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200090.html"
+    },
+    {
+      "timestamp": "20191120153533",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200095.html"
+    },
+    {
+      "timestamp": "20191017073806",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200096.html"
+    },
+    {
+      "timestamp": "20190118095227",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200106.html"
+    },
+    {
+      "timestamp": "20190108101814",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200120.html"
+    },
+    {
+      "timestamp": "20190127231159",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200121.html"
+    },
+    {
+      "timestamp": "20190916163917",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200125.html"
+    },
+    {
+      "timestamp": "20190126213633",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200127.html"
+    },
+    {
+      "timestamp": "20190127231451",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200142.html"
+    },
+    {
+      "timestamp": "20190126214130",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200147.html"
+    },
+    {
+      "timestamp": "20190916110716",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200149.html"
+    },
+    {
+      "timestamp": "20190824032105",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200151.html"
+    },
+    {
+      "timestamp": "20190128153951",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200159.html"
+    },
+    {
+      "timestamp": "20191012061014",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200165.html"
+    },
+    {
+      "timestamp": "20190103053512",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200174.html"
+    },
+    {
+      "timestamp": "20191121235215",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200178.html"
+    },
+    {
+      "timestamp": "20191114172305",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200183.html"
+    },
+    {
+      "timestamp": "20190920052206",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200190.html"
+    },
+    {
+      "timestamp": "20191209212647",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200195.html"
+    },
+    {
+      "timestamp": "20191015063809",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200197.html"
+    },
+    {
+      "timestamp": "20190122131102",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200202.html"
+    },
+    {
+      "timestamp": "20190916162107",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200215.html"
+    },
+    {
+      "timestamp": "20191113195753",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200216.html"
+    },
+    {
+      "timestamp": "20190302122040",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200217.html"
+    },
+    {
+      "timestamp": "20190103043907",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200224.html"
+    },
+    {
+      "timestamp": "20190103060115",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200224l.html"
+    },
+    {
+      "timestamp": "20191016014623",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200225.html"
+    },
+    {
+      "timestamp": "20190116130139",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200234.html"
+    },
+    {
+      "timestamp": "20190226115432",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200235.html"
+    },
+    {
+      "timestamp": "20190920034501",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200242.html"
+    },
+    {
+      "timestamp": "20191123014629",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200252.html"
+    },
+    {
+      "timestamp": "20190126030558",
+      "original": "http://otn.fujitv.co.jp/b_hp/914200263.html"
+    },
+    {
+      "timestamp": "20190201050731",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200264.html"
+    },
+    {
+      "timestamp": "20191022150434",
+      "original": "https://otn.fujitv.co.jp/b_hp/914200268.html"
+    },
+    {
+      "timestamp": "20190126212902",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200006.html"
+    },
+    {
+      "timestamp": "20190129061900",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200045.html"
+    },
+    {
+      "timestamp": "20190331134923",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200047.html"
+    },
+    {
+      "timestamp": "20191214075633",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200053.html"
+    },
+    {
+      "timestamp": "20191022145440",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200059.html"
+    },
+    {
+      "timestamp": "20190116125632",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200061.html"
+    },
+    {
+      "timestamp": "20191116111231",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200061l.html"
+    },
+    {
+      "timestamp": "20190824025437",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200062.html"
+    },
+    {
+      "timestamp": "20190616180455",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200067.html"
+    },
+    {
+      "timestamp": "20190127175345",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200069.html"
+    },
+    {
+      "timestamp": "20190920034204",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200074.html"
+    },
+    {
+      "timestamp": "20190413123007",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200075.html"
+    },
+    {
+      "timestamp": "20191214083557",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200076.html"
+    },
+    {
+      "timestamp": "20191214071313",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200079.html"
+    },
+    {
+      "timestamp": "20191022140726",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200081.html"
+    },
+    {
+      "timestamp": "20190121000925",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200085.html"
+    },
+    {
+      "timestamp": "20191022144740",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200085l.html"
+    },
+    {
+      "timestamp": "20190102004449",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200092.html"
+    },
+    {
+      "timestamp": "20191022140636",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200092l.html"
+    },
+    {
+      "timestamp": "20191214071821",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200094.html"
+    },
+    {
+      "timestamp": "20191214071340",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200096.html"
+    },
+    {
+      "timestamp": "20191022141112",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200102.html"
+    },
+    {
+      "timestamp": "20190102052931",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200108.html"
+    },
+    {
+      "timestamp": "20190112072252",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200112.html"
+    },
+    {
+      "timestamp": "20191022145529",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200116.html"
+    },
+    {
+      "timestamp": "20190824024904",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200119.html"
+    },
+    {
+      "timestamp": "20190103084246",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200122.html"
+    },
+    {
+      "timestamp": "20190824031714",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200123.html"
+    },
+    {
+      "timestamp": "20190108103752",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200126.html"
+    },
+    {
+      "timestamp": "20190920034427",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200127.html"
+    },
+    {
+      "timestamp": "20190116125918",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200128.html"
+    },
+    {
+      "timestamp": "20190920034131",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200129.html"
+    },
+    {
+      "timestamp": "20190824025555",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200132.html"
+    },
+    {
+      "timestamp": "20191214071523",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200141.html"
+    },
+    {
+      "timestamp": "20191120154144",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200142.html"
+    },
+    {
+      "timestamp": "20191022141250",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200144.html"
+    },
+    {
+      "timestamp": "20191214071541",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200149.html"
+    },
+    {
+      "timestamp": "20191120154649",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200160.html"
+    },
+    {
+      "timestamp": "20191214071429",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200163.html"
+    },
+    {
+      "timestamp": "20190228053158",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200164.html"
+    },
+    {
+      "timestamp": "20190302122045",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200167.html"
+    },
+    {
+      "timestamp": "20191120153421",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200168.html"
+    },
+    {
+      "timestamp": "20190108182714",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200170.html"
+    },
+    {
+      "timestamp": "20190224092642",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200180.html"
+    },
+    {
+      "timestamp": "20191120154447",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200187.html"
+    },
+    {
+      "timestamp": "20190518235903",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200191.html"
+    },
+    {
+      "timestamp": "20191022141005",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200194.html"
+    },
+    {
+      "timestamp": "20190414141059",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200196.html"
+    },
+    {
+      "timestamp": "20190824033453",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200200.html"
+    },
+    {
+      "timestamp": "20190108102027",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200204.html"
+    },
+    {
+      "timestamp": "20191214080506",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200205.html"
+    },
+    {
+      "timestamp": "20190126001103",
+      "original": "http://otn.fujitv.co.jp/b_hp/915200208.html"
+    },
+    {
+      "timestamp": "20191214073206",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200209.html"
+    },
+    {
+      "timestamp": "20190524211821",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200212.html"
+    },
+    {
+      "timestamp": "20190224092158",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200218.html"
+    },
+    {
+      "timestamp": "20190527050350",
+      "original": "https://otn.fujitv.co.jp/b_hp/915200222.html"
+    },
+    {
+      "timestamp": "20190224092657",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200224.html"
+    },
+    {
+      "timestamp": "20190106154234",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200229.html"
+    },
+    {
+      "timestamp": "20190102010243",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200234.html"
+    },
+    {
+      "timestamp": "20190117200043",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200008.html"
+    },
+    {
+      "timestamp": "20190330130942",
+      "original": "http://otn.fujitv.co.jp/b_hp/916200009.html"
+    },
+    {
+      "timestamp": "20190307131413",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200013.html"
+    },
+    {
+      "timestamp": "20190824033252",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200016.html"
+    },
+    {
+      "timestamp": "20190215073957",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200017.html"
+    },
+    {
+      "timestamp": "20190224092203",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200022.html"
+    },
+    {
+      "timestamp": "20190224092239",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200023.html"
+    },
+    {
+      "timestamp": "20191120154301",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200025.html"
+    },
+    {
+      "timestamp": "20190410232249",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200030.html"
+    },
+    {
+      "timestamp": "20190201042315",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200041.html"
+    },
+    {
+      "timestamp": "20190103060659",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200042.html"
+    },
+    {
+      "timestamp": "20190824025124",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200046.html"
+    },
+    {
+      "timestamp": "20190718173735",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200049.html"
+    },
+    {
+      "timestamp": "20190118112231",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200058.html"
+    },
+    {
+      "timestamp": "20190201044838",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200060.html"
+    },
+    {
+      "timestamp": "20190103060447",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200061.html"
+    },
+    {
+      "timestamp": "20190127231456",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200061l.html"
+    },
+    {
+      "timestamp": "20190201044733",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200063.html"
+    },
+    {
+      "timestamp": "20190524153054",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200064.html"
+    },
+    {
+      "timestamp": "20190102054201",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200070.html"
+    },
+    {
+      "timestamp": "20190110030851",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200074.html"
+    },
+    {
+      "timestamp": "20191022141654",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200081.html"
+    },
+    {
+      "timestamp": "20190116124135",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200082.html"
+    },
+    {
+      "timestamp": "20191022141257",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200083.html"
+    },
+    {
+      "timestamp": "20190103055107",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200084.html"
+    },
+    {
+      "timestamp": "20191120153514",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200085.html"
+    },
+    {
+      "timestamp": "20190718173853",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200086.html"
+    },
+    {
+      "timestamp": "20190920034555",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200091.html"
+    },
+    {
+      "timestamp": "20190116124003",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200092.html"
+    },
+    {
+      "timestamp": "20190107215130",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200098.html"
+    },
+    {
+      "timestamp": "20190718173717",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200099.html"
+    },
+    {
+      "timestamp": "20190118105145",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200102.html"
+    },
+    {
+      "timestamp": "20190328101810",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200105.html"
+    },
+    {
+      "timestamp": "20190610055428",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200109.html"
+    },
+    {
+      "timestamp": "20191120153539",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200110.html"
+    },
+    {
+      "timestamp": "20191022144513",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200134.html"
+    },
+    {
+      "timestamp": "20190126213507",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200135.html"
+    },
+    {
+      "timestamp": "20190101073311",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200136.html"
+    },
+    {
+      "timestamp": "20190824025359",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200140.html"
+    },
+    {
+      "timestamp": "20190105010859",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200148.html"
+    },
+    {
+      "timestamp": "20190101073036",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200150.html"
+    },
+    {
+      "timestamp": "20190302122050",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200151.html"
+    },
+    {
+      "timestamp": "20190116084724",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200153.html"
+    },
+    {
+      "timestamp": "20190118110548",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200162.html"
+    },
+    {
+      "timestamp": "20190410005739",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200169.html"
+    },
+    {
+      "timestamp": "20190118101707",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200171.html"
+    },
+    {
+      "timestamp": "20190118101948",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200174.html"
+    },
+    {
+      "timestamp": "20190118114031",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200178.html"
+    },
+    {
+      "timestamp": "20191022140930",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200184.html"
+    },
+    {
+      "timestamp": "20190920034138",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200186.html"
+    },
+    {
+      "timestamp": "20190116124008",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200194.html"
+    },
+    {
+      "timestamp": "20190210181640",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200196.html"
+    },
+    {
+      "timestamp": "20191022140912",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200199.html"
+    },
+    {
+      "timestamp": "20190201042036",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200201.html"
+    },
+    {
+      "timestamp": "20190103043737",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200204.html"
+    },
+    {
+      "timestamp": "20190525010006",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200208.html"
+    },
+    {
+      "timestamp": "20190108183541",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200209.html"
+    },
+    {
+      "timestamp": "20190129060404",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200210.html"
+    },
+    {
+      "timestamp": "20191022141232",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200212.html"
+    },
+    {
+      "timestamp": "20191214071334",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200217l.html"
+    },
+    {
+      "timestamp": "20190824024843",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200219.html"
+    },
+    {
+      "timestamp": "20191022142545",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200220.html"
+    },
+    {
+      "timestamp": "20191022140625",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200221.html"
+    },
+    {
+      "timestamp": "20191022143108",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200228.html"
+    },
+    {
+      "timestamp": "20190103045246",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200230.html"
+    },
+    {
+      "timestamp": "20190415070952",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200233.html"
+    },
+    {
+      "timestamp": "20191214084452",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200243.html"
+    },
+    {
+      "timestamp": "20190824025338",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200244.html"
+    },
+    {
+      "timestamp": "20190119121538",
+      "original": "http://otn.fujitv.co.jp/b_hp/916200245.html"
+    },
+    {
+      "timestamp": "20190228152254",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200250.html"
+    },
+    {
+      "timestamp": "20190118094834",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200253.html"
+    },
+    {
+      "timestamp": "20191120153632",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200256.html"
+    },
+    {
+      "timestamp": "20191022140517",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200268.html"
+    },
+    {
+      "timestamp": "20190105011727",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200271.html"
+    },
+    {
+      "timestamp": "20190103054854",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200271l.html"
+    },
+    {
+      "timestamp": "20190302122100",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200274.html"
+    },
+    {
+      "timestamp": "20190401010245",
+      "original": "http://otn.fujitv.co.jp/b_hp/916200275.html"
+    },
+    {
+      "timestamp": "20190224092744",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200276.html"
+    },
+    {
+      "timestamp": "20190920034801",
+      "original": "https://otn.fujitv.co.jp/b_hp/916200277.html"
+    },
+    {
+      "timestamp": "20191120154255",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200004.html"
+    },
+    {
+      "timestamp": "20190118094517",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200011.html"
+    },
+    {
+      "timestamp": "20190118095912",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200020.html"
+    },
+    {
+      "timestamp": "20190102012458",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200021.html"
+    },
+    {
+      "timestamp": "20190122130942",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200030.html"
+    },
+    {
+      "timestamp": "20190122142221",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200033.html"
+    },
+    {
+      "timestamp": "20190121083747",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200035.html"
+    },
+    {
+      "timestamp": "20190107214947",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200036.html"
+    },
+    {
+      "timestamp": "20190118110200",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200038.html"
+    },
+    {
+      "timestamp": "20191214082211",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200039.html"
+    },
+    {
+      "timestamp": "20190106154934",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200040.html"
+    },
+    {
+      "timestamp": "20190103210845",
+      "original": "http://otn.fujitv.co.jp/b_hp/917200042.html"
+    },
+    {
+      "timestamp": "20190127172141",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200047.html"
+    },
+    {
+      "timestamp": "20190102011003",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200053.html"
+    },
+    {
+      "timestamp": "20190109115415",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200055.html"
+    },
+    {
+      "timestamp": "20190612032218",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200056.html"
+    },
+    {
+      "timestamp": "20191214071505",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200057.html"
+    },
+    {
+      "timestamp": "20190116125151",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200058.html"
+    },
+    {
+      "timestamp": "20191120154655",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200064.html"
+    },
+    {
+      "timestamp": "20190427182016",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200065.html"
+    },
+    {
+      "timestamp": "20191214080148",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200068.html"
+    },
+    {
+      "timestamp": "20191120153410",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200069.html"
+    },
+    {
+      "timestamp": "20190116084555",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200070.html"
+    },
+    {
+      "timestamp": "20190117192507",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200071.html"
+    },
+    {
+      "timestamp": "20191022141612",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200075.html"
+    },
+    {
+      "timestamp": "20190103062810",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200077.html"
+    },
+    {
+      "timestamp": "20191022140828",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200081.html"
+    },
+    {
+      "timestamp": "20190118110307",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200083.html"
+    },
+    {
+      "timestamp": "20190117195738",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200094.html"
+    },
+    {
+      "timestamp": "20190331212612",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200095.html"
+    },
+    {
+      "timestamp": "20190227020030",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200096.html"
+    },
+    {
+      "timestamp": "20191120154108",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200097.html"
+    },
+    {
+      "timestamp": "20190105013226",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200100.html"
+    },
+    {
+      "timestamp": "20190127225436",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200102.html"
+    },
+    {
+      "timestamp": "20190405202328",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200104.html"
+    },
+    {
+      "timestamp": "20190122134528",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200108.html"
+    },
+    {
+      "timestamp": "20190302122114",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200109.html"
+    },
+    {
+      "timestamp": "20190131222946",
+      "original": "http://otn.fujitv.co.jp/b_hp/917200120.html"
+    },
+    {
+      "timestamp": "20191214071423",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200121.html"
+    },
+    {
+      "timestamp": "20190116124401",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200122.html"
+    },
+    {
+      "timestamp": "20190118173210",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200123.html"
+    },
+    {
+      "timestamp": "20190406073510",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200125.html"
+    },
+    {
+      "timestamp": "20190118084522",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200128.html"
+    },
+    {
+      "timestamp": "20190122135807",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200129.html"
+    },
+    {
+      "timestamp": "20190102082247",
+      "original": "http://otn.fujitv.co.jp/b_hp/917200130.html"
+    },
+    {
+      "timestamp": "20191120154126",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200132.html"
+    },
+    {
+      "timestamp": "20190116130517",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200133.html"
+    },
+    {
+      "timestamp": "20190111011131",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200134.html"
+    },
+    {
+      "timestamp": "20190306043942",
+      "original": "http://otn.fujitv.co.jp/b_hp/917200139.html"
+    },
+    {
+      "timestamp": "20190127181745",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200140.html"
+    },
+    {
+      "timestamp": "20190122131354",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200141.html"
+    },
+    {
+      "timestamp": "20190113104245",
+      "original": "http://otn.fujitv.co.jp/b_hp/917200143.html"
+    },
+    {
+      "timestamp": "20190118113632",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200144.html"
+    },
+    {
+      "timestamp": "20190106151728",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200149.html"
+    },
+    {
+      "timestamp": "20190112033553",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200152.html"
+    },
+    {
+      "timestamp": "20190102010500",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200153.html"
+    },
+    {
+      "timestamp": "20190103053813",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200167.html"
+    },
+    {
+      "timestamp": "20190524125214",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200168.html"
+    },
+    {
+      "timestamp": "20190118105150",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200169.html"
+    },
+    {
+      "timestamp": "20190122135109",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200173.html"
+    },
+    {
+      "timestamp": "20190116131149",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200183.html"
+    },
+    {
+      "timestamp": "20190129060215",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200184.html"
+    },
+    {
+      "timestamp": "20190129060725",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200185.html"
+    },
+    {
+      "timestamp": "20190208054903",
+      "original": "http://otn.fujitv.co.jp/b_hp/917200186.html"
+    },
+    {
+      "timestamp": "20190302122119",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200187.html"
+    },
+    {
+      "timestamp": "20190108181054",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200188.html"
+    },
+    {
+      "timestamp": "20190824025639",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200189.html"
+    },
+    {
+      "timestamp": "20190102013458",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200190.html"
+    },
+    {
+      "timestamp": "20190129212805",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200195.html"
+    },
+    {
+      "timestamp": "20190102012423",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200199.html"
+    },
+    {
+      "timestamp": "20191120153433",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200200.html"
+    },
+    {
+      "timestamp": "20190227121446",
+      "original": "http://otn.fujitv.co.jp/b_hp/917200201.html"
+    },
+    {
+      "timestamp": "20190123091653",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200202.html"
+    },
+    {
+      "timestamp": "20190129213811",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200204.html"
+    },
+    {
+      "timestamp": "20190129063819",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200207.html"
+    },
+    {
+      "timestamp": "20190105000028",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200209.html"
+    },
+    {
+      "timestamp": "20190127222616",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200211.html"
+    },
+    {
+      "timestamp": "20190103054733",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200212.html"
+    },
+    {
+      "timestamp": "20190105010614",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200213.html"
+    },
+    {
+      "timestamp": "20190118112236",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200214.html"
+    },
+    {
+      "timestamp": "20190102010627",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200216.html"
+    },
+    {
+      "timestamp": "20190127222319",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200218.html"
+    },
+    {
+      "timestamp": "20191214074926",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200219.html"
+    },
+    {
+      "timestamp": "20190105013024",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200222.html"
+    },
+    {
+      "timestamp": "20190117195919",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200223.html"
+    },
+    {
+      "timestamp": "20190207014950",
+      "original": "http://otn.fujitv.co.jp/b_hp/917200224.html"
+    },
+    {
+      "timestamp": "20190129064000",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200226.html"
+    },
+    {
+      "timestamp": "20190105011338",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200230.html"
+    },
+    {
+      "timestamp": "20190103054541",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200231.html"
+    },
+    {
+      "timestamp": "20190105011543",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200234.html"
+    },
+    {
+      "timestamp": "20190302042124",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200235.html"
+    },
+    {
+      "timestamp": "20190124022215",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200236.html"
+    },
+    {
+      "timestamp": "20190127231204",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200239.html"
+    },
+    {
+      "timestamp": "20190122131107",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200242.html"
+    },
+    {
+      "timestamp": "20190329185654",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200243.html"
+    },
+    {
+      "timestamp": "20190718173643",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200245.html"
+    },
+    {
+      "timestamp": "20190610013725",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200246.html"
+    },
+    {
+      "timestamp": "20190102061116",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200248.html"
+    },
+    {
+      "timestamp": "20190302042224",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200249.html"
+    },
+    {
+      "timestamp": "20190524082826",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200250.html"
+    },
+    {
+      "timestamp": "20190117193048",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200253.html"
+    },
+    {
+      "timestamp": "20190112050319",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200254.html"
+    },
+    {
+      "timestamp": "20190118102642",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200256.html"
+    },
+    {
+      "timestamp": "20190117195743",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200258.html"
+    },
+    {
+      "timestamp": "20190126000021",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200259.html"
+    },
+    {
+      "timestamp": "20191120154539",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200261.html"
+    },
+    {
+      "timestamp": "20190118095918",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200264.html"
+    },
+    {
+      "timestamp": "20190105011020",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200265.html"
+    },
+    {
+      "timestamp": "20190103055445",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/917200268.html"
+    },
+    {
+      "timestamp": "20190525003744",
+      "original": "https://otn.fujitv.co.jp/b_hp/917200271.html"
+    },
+    {
+      "timestamp": "20190129063406",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200002.html"
+    },
+    {
+      "timestamp": "20190215130243",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200004.html"
+    },
+    {
+      "timestamp": "20190105011343",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200005.html"
+    },
+    {
+      "timestamp": "20190127234905",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200006.html"
+    },
+    {
+      "timestamp": "20190112035806",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200007.html"
+    },
+    {
+      "timestamp": "20190105013504",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200009.html"
+    },
+    {
+      "timestamp": "20190105004816",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200012.html"
+    },
+    {
+      "timestamp": "20190122141326",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200014.html"
+    },
+    {
+      "timestamp": "20190718175519",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200018.html"
+    },
+    {
+      "timestamp": "20190105013509",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200019.html"
+    },
+    {
+      "timestamp": "20190524111419",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200020.html"
+    },
+    {
+      "timestamp": "20190122141939",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200022.html"
+    },
+    {
+      "timestamp": "20190524210951",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200024.html"
+    },
+    {
+      "timestamp": "20190718173812",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200027.html"
+    },
+    {
+      "timestamp": "20190110033143",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200028.html"
+    },
+    {
+      "timestamp": "20190329175854",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200031.html"
+    },
+    {
+      "timestamp": "20190214161826",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200032.html"
+    },
+    {
+      "timestamp": "20190117193210",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200037.html"
+    },
+    {
+      "timestamp": "20190201074033",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200038.html"
+    },
+    {
+      "timestamp": "20190217190123",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200039.html"
+    },
+    {
+      "timestamp": "20190122134533",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200040.html"
+    },
+    {
+      "timestamp": "20190220001626",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200041.html"
+    },
+    {
+      "timestamp": "20190127182952",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200042.html"
+    },
+    {
+      "timestamp": "20190103183823",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200044.html"
+    },
+    {
+      "timestamp": "20190112045155",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200045.html"
+    },
+    {
+      "timestamp": "20190201175851",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200046.html"
+    },
+    {
+      "timestamp": "20190126015959",
+      "original": "http://otn.fujitv.co.jp/b_hp/918200048.html"
+    },
+    {
+      "timestamp": "20190103185515",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200050.html"
+    },
+    {
+      "timestamp": "20190129062558",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200051.html"
+    },
+    {
+      "timestamp": "20190122132206",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200052.html"
+    },
+    {
+      "timestamp": "20190127225227",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200056.html"
+    },
+    {
+      "timestamp": "20190201042323",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200057.html"
+    },
+    {
+      "timestamp": "20190126213331",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200058.html"
+    },
+    {
+      "timestamp": "20190201070818",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200059.html"
+    },
+    {
+      "timestamp": "20190129212945",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200060.html"
+    },
+    {
+      "timestamp": "20190118102647",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200061.html"
+    },
+    {
+      "timestamp": "20190103184214",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200062.html"
+    },
+    {
+      "timestamp": "20190123183557",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200065.html"
+    },
+    {
+      "timestamp": "20190122141806",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200066.html"
+    },
+    {
+      "timestamp": "20190129060409",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200067.html"
+    },
+    {
+      "timestamp": "20190118091529",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200068.html"
+    },
+    {
+      "timestamp": "20190129062431",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200070.html"
+    },
+    {
+      "timestamp": "20190108181551",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200071.html"
+    },
+    {
+      "timestamp": "20190110033148",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200072.html"
+    },
+    {
+      "timestamp": "20190106151914",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200074.html"
+    },
+    {
+      "timestamp": "20190124040639",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200079.html"
+    },
+    {
+      "timestamp": "20190126221121",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200080.html"
+    },
+    {
+      "timestamp": "20190116132643",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200083.html"
+    },
+    {
+      "timestamp": "20190524223905",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200084.html"
+    },
+    {
+      "timestamp": "20190127231317",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200085.html"
+    },
+    {
+      "timestamp": "20190118110709",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200086.html"
+    },
+    {
+      "timestamp": "20190129213832",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200089.html"
+    },
+    {
+      "timestamp": "20190117194204",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200090.html"
+    },
+    {
+      "timestamp": "20190118080231",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200091.html"
+    },
+    {
+      "timestamp": "20190121084115",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200092.html"
+    },
+    {
+      "timestamp": "20190201042836",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200094.html"
+    },
+    {
+      "timestamp": "20190127181750",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200095.html"
+    },
+    {
+      "timestamp": "20190524193650",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200096.html"
+    },
+    {
+      "timestamp": "20190112045201",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200098.html"
+    },
+    {
+      "timestamp": "20190718173457",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200100.html"
+    },
+    {
+      "timestamp": "20190103060703",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200101.html"
+    },
+    {
+      "timestamp": "20190118091027",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200102.html"
+    },
+    {
+      "timestamp": "20190105013640",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200103.html"
+    },
+    {
+      "timestamp": "20190111101017",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200105.html"
+    },
+    {
+      "timestamp": "20190105004905",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200108.html"
+    },
+    {
+      "timestamp": "20190129063824",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200109.html"
+    },
+    {
+      "timestamp": "20190127175314",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200110.html"
+    },
+    {
+      "timestamp": "20190718173901",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200111.html"
+    },
+    {
+      "timestamp": "20190201042527",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200113.html"
+    },
+    {
+      "timestamp": "20190127224905",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200114.html"
+    },
+    {
+      "timestamp": "20190521203845",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200115.html"
+    },
+    {
+      "timestamp": "20190524214722",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200116.html"
+    },
+    {
+      "timestamp": "20190105000347",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200118.html"
+    },
+    {
+      "timestamp": "20190126214136",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200120.html"
+    },
+    {
+      "timestamp": "20190209063021",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200121.html"
+    },
+    {
+      "timestamp": "20190131145846",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200122.html"
+    },
+    {
+      "timestamp": "20190607044819",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200123.html"
+    },
+    {
+      "timestamp": "20191022144325",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200124.html"
+    },
+    {
+      "timestamp": "20191022140924",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200125.html"
+    },
+    {
+      "timestamp": "20190524134209",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200126.html"
+    },
+    {
+      "timestamp": "20190201041835",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200128.html"
+    },
+    {
+      "timestamp": "20191207124420",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200129.html"
+    },
+    {
+      "timestamp": "20190129213817",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200130.html"
+    },
+    {
+      "timestamp": "20190105010241",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200132.html"
+    },
+    {
+      "timestamp": "20190212030004",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200133.html"
+    },
+    {
+      "timestamp": "20190117192512",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200134.html"
+    },
+    {
+      "timestamp": "20190105013347",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200136.html"
+    },
+    {
+      "timestamp": "20190118084702",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200140.html"
+    },
+    {
+      "timestamp": "20190131145934",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200141.html"
+    },
+    {
+      "timestamp": "20190114211100",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200142.html"
+    },
+    {
+      "timestamp": "20190102012544",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200143.html"
+    },
+    {
+      "timestamp": "20190110033154",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200144.html"
+    },
+    {
+      "timestamp": "20190106083418",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200146.html"
+    },
+    {
+      "timestamp": "20190103062815",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200147.html"
+    },
+    {
+      "timestamp": "20190118112241",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200150.html"
+    },
+    {
+      "timestamp": "20190112034619",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200151.html"
+    },
+    {
+      "timestamp": "20190112045258",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200156.html"
+    },
+    {
+      "timestamp": "20190112045534",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200157.html"
+    },
+    {
+      "timestamp": "20190105010739",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200158.html"
+    },
+    {
+      "timestamp": "20190127224016",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200161.html"
+    },
+    {
+      "timestamp": "20191022143321",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200163.html"
+    },
+    {
+      "timestamp": "20190309072537",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200164.html"
+    },
+    {
+      "timestamp": "20190305152210",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200166.html"
+    },
+    {
+      "timestamp": "20190120000339",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200170.html"
+    },
+    {
+      "timestamp": "20190111101057",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200172.html"
+    },
+    {
+      "timestamp": "20190416223915",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200174.html"
+    },
+    {
+      "timestamp": "20190108181643",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200180.html"
+    },
+    {
+      "timestamp": "20191022140804",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200181.html"
+    },
+    {
+      "timestamp": "20190118090409",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200182.html"
+    },
+    {
+      "timestamp": "20190126213832",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200184.html"
+    },
+    {
+      "timestamp": "20191120154226",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200185.html"
+    },
+    {
+      "timestamp": "20190208112503",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200186.html"
+    },
+    {
+      "timestamp": "20190105015224",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200188.html"
+    },
+    {
+      "timestamp": "20190111101101",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200189.html"
+    },
+    {
+      "timestamp": "20190228210145",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200190.html"
+    },
+    {
+      "timestamp": "20190106083524",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200193.html"
+    },
+    {
+      "timestamp": "20190213170328",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200195.html"
+    },
+    {
+      "timestamp": "20190117193943",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200196.html"
+    },
+    {
+      "timestamp": "20190114093447",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200198.html"
+    },
+    {
+      "timestamp": "20190110033159",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200201.html"
+    },
+    {
+      "timestamp": "20190103182043",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200202.html"
+    },
+    {
+      "timestamp": "20190215130024",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200203.html"
+    },
+    {
+      "timestamp": "20190114095936",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200205.html"
+    },
+    {
+      "timestamp": "20190116125530",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200206.html"
+    },
+    {
+      "timestamp": "20190116135401",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200207.html"
+    },
+    {
+      "timestamp": "20190110033204",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200209.html"
+    },
+    {
+      "timestamp": "20190718173920",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200210.html"
+    },
+    {
+      "timestamp": "20190103062855",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200213.html"
+    },
+    {
+      "timestamp": "20190207072436",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200214.html"
+    },
+    {
+      "timestamp": "20190112050233",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200216.html"
+    },
+    {
+      "timestamp": "20190201042532",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200217.html"
+    },
+    {
+      "timestamp": "20191120154313",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200218.html"
+    },
+    {
+      "timestamp": "20190302120048",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200220.html"
+    },
+    {
+      "timestamp": "20190219153040",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200222.html"
+    },
+    {
+      "timestamp": "20190127181339",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200224.html"
+    },
+    {
+      "timestamp": "20190201045126",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200225.html"
+    },
+    {
+      "timestamp": "20190105004240",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200226.html"
+    },
+    {
+      "timestamp": "20190601002700",
+      "original": "https://otn.fujitv.co.jp/b_hp/918200227.html"
+    },
+    {
+      "timestamp": "20190118105155",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200229.html"
+    },
+    {
+      "timestamp": "20190322102449",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200230.html"
+    },
+    {
+      "timestamp": "20190110033228",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200232.html"
+    },
+    {
+      "timestamp": "20190110033259",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200233.html"
+    },
+    {
+      "timestamp": "20190201050111",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200234.html"
+    },
+    {
+      "timestamp": "20190120170057",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200235.html"
+    },
+    {
+      "timestamp": "20190121023343",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200236.html"
+    },
+    {
+      "timestamp": "20190110033449",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200237.html"
+    },
+    {
+      "timestamp": "20190126143049",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200239.html"
+    },
+    {
+      "timestamp": "20190127234909",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200240.html"
+    },
+    {
+      "timestamp": "20190325014935",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200241.html"
+    },
+    {
+      "timestamp": "20190305072253",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/918200243.html"
+    },
+    {
+      "timestamp": "20190213230115",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/919200008.html"
+    },
+    {
+      "timestamp": "20190302014450",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/919200009.html"
+    },
+    {
+      "timestamp": "20190131101406",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/919200010.html"
+    },
+    {
+      "timestamp": "20190428025418",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200011.html"
+    },
+    {
+      "timestamp": "20190718173803",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200013.html"
+    },
+    {
+      "timestamp": "20190401052918",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200015.html"
+    },
+    {
+      "timestamp": "20190330074525",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200017.html"
+    },
+    {
+      "timestamp": "20190718173749",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200020.html"
+    },
+    {
+      "timestamp": "20190824025947",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200023.html"
+    },
+    {
+      "timestamp": "20190718173628",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200025.html"
+    },
+    {
+      "timestamp": "20190824031540",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200027.html"
+    },
+    {
+      "timestamp": "20190718173916",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200028.html"
+    },
+    {
+      "timestamp": "20190302014542",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/919200030.html"
+    },
+    {
+      "timestamp": "20191120154002",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200031.html"
+    },
+    {
+      "timestamp": "20190323101559",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/919200032.html"
+    },
+    {
+      "timestamp": "20190305210740",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/919200033.html"
+    },
+    {
+      "timestamp": "20190228205840",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/919200036.html"
+    },
+    {
+      "timestamp": "20190311111624",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/919200038.html"
+    },
+    {
+      "timestamp": "20190426011619",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200041.html"
+    },
+    {
+      "timestamp": "20190316044641",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/919200042.html"
+    },
+    {
+      "timestamp": "20190330084210",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/919200043.html"
+    },
+    {
+      "timestamp": "20190403161533",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200045.html"
+    },
+    {
+      "timestamp": "20190307131433",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/919200046.html"
+    },
+    {
+      "timestamp": "20190311111628",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/919200047.html"
+    },
+    {
+      "timestamp": "20190330130943",
+      "original": "http://otn.fujitv.co.jp/b_hp/919200050.html"
+    },
+    {
+      "timestamp": "20191214071453",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200056.html"
+    },
+    {
+      "timestamp": "20190321095050",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/919200057.html"
+    },
+    {
+      "timestamp": "20190824025634",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200058.html"
+    },
+    {
+      "timestamp": "20190321095140",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/919200059.html"
+    },
+    {
+      "timestamp": "20190824031820",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200060.html"
+    },
+    {
+      "timestamp": "20191216133741",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200063.html"
+    },
+    {
+      "timestamp": "20190824030937",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200065.html"
+    },
+    {
+      "timestamp": "20190718180515",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200069.html"
+    },
+    {
+      "timestamp": "20190824024740",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200071.html"
+    },
+    {
+      "timestamp": "20190626150618",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200073.html"
+    },
+    {
+      "timestamp": "20190511161117",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200074.html"
+    },
+    {
+      "timestamp": "20190718180731",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200076.html"
+    },
+    {
+      "timestamp": "20190612062302",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200078.html"
+    },
+    {
+      "timestamp": "20190629175320",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200078.html?utm_source=dlvr.it&utm_medium=twitter"
+    },
+    {
+      "timestamp": "20190718173707",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200079.html"
+    },
+    {
+      "timestamp": "20190504175209",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200080.html"
+    },
+    {
+      "timestamp": "20190601002658",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200081.html"
+    },
+    {
+      "timestamp": "20190425185125",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200083.html"
+    },
+    {
+      "timestamp": "20190824025551",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200085.html"
+    },
+    {
+      "timestamp": "20190527004359",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200087.html"
+    },
+    {
+      "timestamp": "20190506100751",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200088.html"
+    },
+    {
+      "timestamp": "20190502114011",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200089.html"
+    },
+    {
+      "timestamp": "20190619125746",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200091.html"
+    },
+    {
+      "timestamp": "20190718173437",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200094.html"
+    },
+    {
+      "timestamp": "20190718180511",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200095.html"
+    },
+    {
+      "timestamp": "20191120154307",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200096.html"
+    },
+    {
+      "timestamp": "20190718173649",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200098.html"
+    },
+    {
+      "timestamp": "20190519040356",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200099.html"
+    },
+    {
+      "timestamp": "20190517020131",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200100.html"
+    },
+    {
+      "timestamp": "20190629004005",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200101.html"
+    },
+    {
+      "timestamp": "20190602165516",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200103.html"
+    },
+    {
+      "timestamp": "20190824025605",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200105.html"
+    },
+    {
+      "timestamp": "20190824025327",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200106.html"
+    },
+    {
+      "timestamp": "20190718173520",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200107.html"
+    },
+    {
+      "timestamp": "20190824032710",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200108.html"
+    },
+    {
+      "timestamp": "20190920034030",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200110.html"
+    },
+    {
+      "timestamp": "20190824031351",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200111.html"
+    },
+    {
+      "timestamp": "20190824030521",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200116.html"
+    },
+    {
+      "timestamp": "20190824025537",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200117.html"
+    },
+    {
+      "timestamp": "20191130203702",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200119.html"
+    },
+    {
+      "timestamp": "20190614173812",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200120.html"
+    },
+    {
+      "timestamp": "20190824025103",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200121.html"
+    },
+    {
+      "timestamp": "20190718181049",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200122.html"
+    },
+    {
+      "timestamp": "20190718175134",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200123.html"
+    },
+    {
+      "timestamp": "20190718173822",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200124.html"
+    },
+    {
+      "timestamp": "20191120154533",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200127.html"
+    },
+    {
+      "timestamp": "20190824030001",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200128.html"
+    },
+    {
+      "timestamp": "20190824025446",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200129.html"
+    },
+    {
+      "timestamp": "20190718175341",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200130.html"
+    },
+    {
+      "timestamp": "20190718173842",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200131.html"
+    },
+    {
+      "timestamp": "20190718173739",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200132.html"
+    },
+    {
+      "timestamp": "20190718173508",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200133.html"
+    },
+    {
+      "timestamp": "20190718180612",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200134.html"
+    },
+    {
+      "timestamp": "20190824030243",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200135.html"
+    },
+    {
+      "timestamp": "20190920034450",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200136.html"
+    },
+    {
+      "timestamp": "20190824025238",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200137.html"
+    },
+    {
+      "timestamp": "20190718173542",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200140.html"
+    },
+    {
+      "timestamp": "20191120154557",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200141.html"
+    },
+    {
+      "timestamp": "20191022143228",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200142.html"
+    },
+    {
+      "timestamp": "20190913054921",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200143.html"
+    },
+    {
+      "timestamp": "20190824011106",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200144.html"
+    },
+    {
+      "timestamp": "20190824025025",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200145.html"
+    },
+    {
+      "timestamp": "20191120154522",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200146.html"
+    },
+    {
+      "timestamp": "20191120154237",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200147.html"
+    },
+    {
+      "timestamp": "20191120153933",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200148.html"
+    },
+    {
+      "timestamp": "20191120154528",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200153.html"
+    },
+    {
+      "timestamp": "20191030062853",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200155.html"
+    },
+    {
+      "timestamp": "20190824025204",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200156.html"
+    },
+    {
+      "timestamp": "20190824025015",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200158.html?fbclid=IwAR0w9IITNG4dEsVrVrCV8xxCrVHLkplE0SRslsox3f0fbaZJaODb7Jju-bE"
+    },
+    {
+      "timestamp": "20190824030239",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200161.html"
+    },
+    {
+      "timestamp": "20191022141430",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200162.html"
+    },
+    {
+      "timestamp": "20190824024944",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200164.html"
+    },
+    {
+      "timestamp": "20190824031838",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200165.html"
+    },
+    {
+      "timestamp": "20190826162741",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200166.html"
+    },
+    {
+      "timestamp": "20190920034336",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200170.html"
+    },
+    {
+      "timestamp": "20191022140732",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200171.html"
+    },
+    {
+      "timestamp": "20191022141353",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200174.html"
+    },
+    {
+      "timestamp": "20190824024814",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200176.html"
+    },
+    {
+      "timestamp": "20190824031249",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200177.html"
+    },
+    {
+      "timestamp": "20191214072627",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200179.html"
+    },
+    {
+      "timestamp": "20191022142559",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200180.html"
+    },
+    {
+      "timestamp": "20191022144508",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200184.html"
+    },
+    {
+      "timestamp": "20190824025620",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200185.html"
+    },
+    {
+      "timestamp": "20190920041118",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200188.html"
+    },
+    {
+      "timestamp": "20190920035008",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200189.html"
+    },
+    {
+      "timestamp": "20191203155313",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200190.html"
+    },
+    {
+      "timestamp": "20191031044913",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200191.html"
+    },
+    {
+      "timestamp": "20191120154202",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200192.html"
+    },
+    {
+      "timestamp": "20191120153904",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200193.html"
+    },
+    {
+      "timestamp": "20190920034229",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200194.html"
+    },
+    {
+      "timestamp": "20190920041329",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200195.html"
+    },
+    {
+      "timestamp": "20191022143035",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200200.html"
+    },
+    {
+      "timestamp": "20191203012115",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200200.html?fbclid=IwAR3zHovZ4pTJtmspjf4-Cip5ZjVvQX1jd5v3MaYnkhCwCIhpuHUGngB_AKw"
+    },
+    {
+      "timestamp": "20191220152800",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200201.html"
+    },
+    {
+      "timestamp": "20190920034124",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200203.html"
+    },
+    {
+      "timestamp": "20191022140948",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200207.html"
+    },
+    {
+      "timestamp": "20191022150938",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200208.html"
+    },
+    {
+      "timestamp": "20191120154418",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200209.html"
+    },
+    {
+      "timestamp": "20191120153457",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200210.html"
+    },
+    {
+      "timestamp": "20191022145329",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200211.html"
+    },
+    {
+      "timestamp": "20191120154249",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200212.html"
+    },
+    {
+      "timestamp": "20191022141407",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200213.html"
+    },
+    {
+      "timestamp": "20191027022839",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200214.html"
+    },
+    {
+      "timestamp": "20191224091524",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200215.html"
+    },
+    {
+      "timestamp": "20191120154441",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200216.html"
+    },
+    {
+      "timestamp": "20191014044150",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200217.html"
+    },
+    {
+      "timestamp": "20191027022719",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200218.html"
+    },
+    {
+      "timestamp": "20191120153556",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200219.html"
+    },
+    {
+      "timestamp": "20191022141028",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200221.html"
+    },
+    {
+      "timestamp": "20191120154156",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200224.html"
+    },
+    {
+      "timestamp": "20191120153853",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200225.html"
+    },
+    {
+      "timestamp": "20191120153626",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200226.html"
+    },
+    {
+      "timestamp": "20191208055642",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200228.html"
+    },
+    {
+      "timestamp": "20191218230011",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200229.html"
+    },
+    {
+      "timestamp": "20191019080006",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200232.html"
+    },
+    {
+      "timestamp": "20191212135419",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200233.html"
+    },
+    {
+      "timestamp": "20191120154643",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200234.html"
+    },
+    {
+      "timestamp": "20191213204024",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200235.html"
+    },
+    {
+      "timestamp": "20191120021150",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200238.html"
+    },
+    {
+      "timestamp": "20191120153707",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200240.html"
+    },
+    {
+      "timestamp": "20191212042252",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200242.html"
+    },
+    {
+      "timestamp": "20191120153835",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200244.html"
+    },
+    {
+      "timestamp": "20191228154938",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200245.html"
+    },
+    {
+      "timestamp": "20191214081246",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200247.html"
+    },
+    {
+      "timestamp": "20191214074448",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200248.html"
+    },
+    {
+      "timestamp": "20191214075729",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200250.html"
+    },
+    {
+      "timestamp": "20191214071417",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200257.html"
+    },
+    {
+      "timestamp": "20191229010301",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200260.html"
+    },
+    {
+      "timestamp": "20191214075058",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200262.html"
+    },
+    {
+      "timestamp": "20191208232418",
+      "original": "https://otn.fujitv.co.jp/b_hp/919200271.html"
+    },
+    {
+      "timestamp": "20190105011348",
+      "original": "http://otn.fujitv.co.jp:80/bangumi/teiha.html"
+    },
+    {
+      "timestamp": "20191214073519",
+      "original": "https://otn.fujitv.co.jp/bc18/"
+    },
+    {
+      "timestamp": "20191120154551",
+      "original": "https://otn.fujitv.co.jp/berry/"
+    },
+    {
+      "timestamp": "20190105013115",
+      "original": "http://otn.fujitv.co.jp:80/black-company/"
+    },
+    {
+      "timestamp": "20190105004615",
+      "original": "http://otn.fujitv.co.jp:80/black-company/cast-staff/index.html"
+    },
+    {
+      "timestamp": "20191011150457",
+      "original": "https://otn.fujitv.co.jp/black-company/chart/index.html"
+    },
+    {
+      "timestamp": "20190127223457",
+      "original": "http://otn.fujitv.co.jp:80/black-company/index.html"
+    },
+    {
+      "timestamp": "20190127223805",
+      "original": "http://otn.fujitv.co.jp:80/black-company/story/index.html"
+    },
+    {
+      "timestamp": "20190116130145",
+      "original": "http://otn.fujitv.co.jp:80/boowy35/"
+    },
+    {
+      "timestamp": "20191214075641",
+      "original": "https://otn.fujitv.co.jp/brainc/"
+    },
+    {
+      "timestamp": "20191214083332",
+      "original": "https://otn.fujitv.co.jp/brainchilds17/"
+    },
+    {
+      "timestamp": "20190206230753",
+      "original": "http://otn.fujitv.co.jp:80/btikkyo2019/"
+    },
+    {
+      "timestamp": "20190208074930",
+      "original": "http://otn.fujitv.co.jp:80/btikkyo2019/index.html"
+    },
+    {
+      "timestamp": "20190116132623",
+      "original": "http://otn.fujitv.co.jp:80/chansung2018/"
+    },
+    {
+      "timestamp": "20190103062900",
+      "original": "http://otn.fujitv.co.jp:80/char_guitarmuseum/"
+    },
+    {
+      "timestamp": "20190213230158",
+      "original": "http://otn.fujitv.co.jp:80/char_guitarmuseum/backnumber/backnumber_22.html"
+    },
+    {
+      "timestamp": "20190103060708",
+      "original": "http://otn.fujitv.co.jp:80/char_guitarmuseum/backnumber/backnumber_33.html"
+    },
+    {
+      "timestamp": "20190103183657",
+      "original": "http://otn.fujitv.co.jp:80/char_guitarmuseum/backnumber/guitars_33.html"
+    },
+    {
+      "timestamp": "20190505131623",
+      "original": "https://otn.fujitv.co.jp/common/basic/html/right_area_banner.html"
+    },
+    {
+      "timestamp": "20190211105310",
+      "original": "http://otn.fujitv.co.jp/common/basic/html/right_area_banner.html?20192111953"
+    },
+    {
+      "timestamp": "20190211151404",
+      "original": "http://otn.fujitv.co.jp/common/basic/html/right_area_banner.html?2019212013"
+    },
+    {
+      "timestamp": "20190213104509",
+      "original": "http://otn.fujitv.co.jp/common/basic/html/right_area_banner.html?20192131945"
+    },
+    {
+      "timestamp": "20190216081011",
+      "original": "http://otn.fujitv.co.jp/common/basic/html/right_area_banner.html?20192161710"
+    },
+    {
+      "timestamp": "20190218151744",
+      "original": "http://otn.fujitv.co.jp/common/basic/html/right_area_banner.html?2019219017"
+    },
+    {
+      "timestamp": "20190218201759",
+      "original": "http://otn.fujitv.co.jp/common/basic/html/right_area_banner.html?2019219517"
+    },
+    {
+      "timestamp": "20190222223402",
+      "original": "http://otn.fujitv.co.jp/common/basic/html/right_area_banner.html?20192222333"
+    },
+    {
+      "timestamp": "20190222225335",
+      "original": "http://otn.fujitv.co.jp/common/basic/html/right_area_banner.html?20192222353"
+    },
+    {
+      "timestamp": "20190228040503",
+      "original": "http://otn.fujitv.co.jp/common/basic/html/right_area_banner.html?2019228136"
+    },
+    {
+      "timestamp": "20190310143823",
+      "original": "http://otn.fujitv.co.jp/common/basic/html/right_area_banner.html?20193102338"
+    },
+    {
+      "timestamp": "20190311053022",
+      "original": "http://otn.fujitv.co.jp/common/basic/html/right_area_banner.html?20193111430"
+    },
+    {
+      "timestamp": "20190312094259",
+      "original": "http://otn.fujitv.co.jp/common/basic/html/right_area_banner.html?20193121842"
+    },
+    {
+      "timestamp": "20190313132743",
+      "original": "http://otn.fujitv.co.jp/common/basic/html/right_area_banner.html?20193132227"
+    },
+    {
+      "timestamp": "20190302053320",
+      "original": "http://otn.fujitv.co.jp/common/basic/html/right_area_banner.html?2019321433"
+    },
+    {
+      "timestamp": "20190324145752",
+      "original": "http://otn.fujitv.co.jp/common/basic/html/right_area_banner.html?20193242357"
+    },
+    {
+      "timestamp": "20190325040300",
+      "original": "http://otn.fujitv.co.jp/common/basic/html/right_area_banner.html?2019325132"
+    },
+    {
+      "timestamp": "20190330231911",
+      "original": "http://otn.fujitv.co.jp/common/basic/html/right_area_banner.html?2019331819"
+    },
+    {
+      "timestamp": "20190303145131",
+      "original": "http://otn.fujitv.co.jp/common/basic/html/right_area_banner.html?2019332351"
+    },
+    {
+      "timestamp": "20190303172518",
+      "original": "http://otn.fujitv.co.jp/common/basic/html/right_area_banner.html?201934225"
+    },
+    {
+      "timestamp": "20190306042353",
+      "original": "http://otn.fujitv.co.jp/common/basic/html/right_area_banner.html?2019361323"
+    },
+    {
+      "timestamp": "20190707101128",
+      "original": "https://otn.fujitv.co.jp/common/basic/html/right_area_banner.html?2019771911"
+    },
+    {
+      "timestamp": "20190918225627",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/b_hp_pc_footer_banner.html"
+    },
+    {
+      "timestamp": "20190126020004",
+      "original": "http://otn.fujitv.co.jp/common/gbfooter/html/pc_footer_banner.html"
+    },
+    {
+      "timestamp": "20191022134901",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?201910222248"
+    },
+    {
+      "timestamp": "20191027132522",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?201910272225"
+    },
+    {
+      "timestamp": "20191003032758",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?20191031227"
+    },
+    {
+      "timestamp": "20191226212228",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?20191227622"
+    },
+    {
+      "timestamp": "20191226212455",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?20191227624"
+    },
+    {
+      "timestamp": "20191226212527",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?20191227625"
+    },
+    {
+      "timestamp": "20191226212814",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?20191227628"
+    },
+    {
+      "timestamp": "20191229041131",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?201912291311"
+    },
+    {
+      "timestamp": "20190415141118",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?20194152311"
+    },
+    {
+      "timestamp": "20190511003000",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?2019511929"
+    },
+    {
+      "timestamp": "20190530132251",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?20195302222"
+    },
+    {
+      "timestamp": "20190505131625",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?2019552216"
+    },
+    {
+      "timestamp": "20190505132151",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?2019552221"
+    },
+    {
+      "timestamp": "20190505135637",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?2019552256"
+    },
+    {
+      "timestamp": "20190609183721",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?2019610337"
+    },
+    {
+      "timestamp": "20190602085704",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?2019621756"
+    },
+    {
+      "timestamp": "20190602085914",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?2019621759"
+    },
+    {
+      "timestamp": "20190630041419",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?20196301314"
+    },
+    {
+      "timestamp": "20190630135915",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?20196302259"
+    },
+    {
+      "timestamp": "20190603215931",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?201964659"
+    },
+    {
+      "timestamp": "20190609131516",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?2019692215"
+    },
+    {
+      "timestamp": "20190710225014",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?2019711750"
+    },
+    {
+      "timestamp": "20190729111759",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?20197292017"
+    },
+    {
+      "timestamp": "20190729112158",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?20197292021"
+    },
+    {
+      "timestamp": "20190801131858",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?2019812218"
+    },
+    {
+      "timestamp": "20190801132115",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?2019812221"
+    },
+    {
+      "timestamp": "20190801132206",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?2019812222"
+    },
+    {
+      "timestamp": "20190801132724",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?2019812227"
+    },
+    {
+      "timestamp": "20190801133016",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?2019812230"
+    },
+    {
+      "timestamp": "20190801134721",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?2019812247"
+    },
+    {
+      "timestamp": "20190808154001",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?201989039"
+    },
+    {
+      "timestamp": "20190808150833",
+      "original": "https://otn.fujitv.co.jp/common/gbfooter/html/sp_footer_banner.html?20198908"
+    },
+    {
+      "timestamp": "20191214072423",
+      "original": "https://otn.fujitv.co.jp/countdownebichu/"
+    },
+    {
+      "timestamp": "20190824030452",
+      "original": "https://otn.fujitv.co.jp/dicasia16/"
+    },
+    {
+      "timestamp": "20191120153859",
+      "original": "https://otn.fujitv.co.jp/direngrey/"
+    },
+    {
+      "timestamp": "20190118113637",
+      "original": "http://otn.fujitv.co.jp:80/dishhajitabi/"
+    },
+    {
+      "timestamp": "20190807032029",
+      "original": "https://otn.fujitv.co.jp/dishhajitabif/"
+    },
+    {
+      "timestamp": "20190426062641",
+      "original": "https://otn.fujitv.co.jp/dishst2019/"
+    },
+    {
+      "timestamp": "20190920034440",
+      "original": "https://otn.fujitv.co.jp/docubm/"
+    },
+    {
+      "timestamp": "20190824025153",
+      "original": "https://otn.fujitv.co.jp/drama/"
+    },
+    {
+      "timestamp": "20190105104254",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/"
+    },
+    {
+      "timestamp": "20190118101953",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/17sai/index.html"
+    },
+    {
+      "timestamp": "20191107025606",
+      "original": "https://otn.fujitv.co.jp/drama-koshien/1st/cast/index.html"
+    },
+    {
+      "timestamp": "20190106232105",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/1st/index.html"
+    },
+    {
+      "timestamp": "20191107025531",
+      "original": "https://otn.fujitv.co.jp/drama-koshien/1st/interview/index.html"
+    },
+    {
+      "timestamp": "20191107025548",
+      "original": "https://otn.fujitv.co.jp/drama-koshien/1st/interview/index01.html"
+    },
+    {
+      "timestamp": "20191107025604",
+      "original": "https://otn.fujitv.co.jp/drama-koshien/1st/interview/index02.html"
+    },
+    {
+      "timestamp": "20191107025605",
+      "original": "https://otn.fujitv.co.jp/drama-koshien/1st/interview/index03.html"
+    },
+    {
+      "timestamp": "20191107025533",
+      "original": "https://otn.fujitv.co.jp/drama-koshien/1st/story/index.html"
+    },
+    {
+      "timestamp": "20190106234110",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/2nd/index.html"
+    },
+    {
+      "timestamp": "20190325220603",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/3rd/cast-staff/index.html"
+    },
+    {
+      "timestamp": "20190324151311",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/3rd/gallery/index.html"
+    },
+    {
+      "timestamp": "20190106232110",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/3rd/index.html"
+    },
+    {
+      "timestamp": "20190324151316",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/3rd/interview/index.html"
+    },
+    {
+      "timestamp": "20190325220606",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/3rd/story/index.html"
+    },
+    {
+      "timestamp": "20190105114531",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/5th/index.html"
+    },
+    {
+      "timestamp": "20190105102031",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/5th/story/index.html"
+    },
+    {
+      "timestamp": "20191120154516",
+      "original": "https://otn.fujitv.co.jp/drama-koshien/6th/index.html"
+    },
+    {
+      "timestamp": "20190102012504",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/aoitorinante/"
+    },
+    {
+      "timestamp": "20190223134116",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/aoitorinante/index.html"
+    },
+    {
+      "timestamp": "20190106232115",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/gaiyou/index.html"
+    },
+    {
+      "timestamp": "20190105011220",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/henshin/caststaff/index.html"
+    },
+    {
+      "timestamp": "20190105013514",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/henshin/index.html"
+    },
+    {
+      "timestamp": "20190105004459",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/index.html"
+    },
+    {
+      "timestamp": "20190106232120",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/jyushoshiki/index.html"
+    },
+    {
+      "timestamp": "20190106231823",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/jyushoshiki2/index.html"
+    },
+    {
+      "timestamp": "20190106232125",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/jyushou/index.html"
+    },
+    {
+      "timestamp": "20190106234115",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/moushikomi/index.html"
+    },
+    {
+      "timestamp": "20190831220930",
+      "original": "https://otn.fujitv.co.jp/drama-koshien/nandeyanen_jyukensei/"
+    },
+    {
+      "timestamp": "20191122172205",
+      "original": "https://otn.fujitv.co.jp/drama-koshien/nandeyanen_jyukensei/caststaff/index.html"
+    },
+    {
+      "timestamp": "20191120153748",
+      "original": "https://otn.fujitv.co.jp/drama-koshien/nandeyanen_jyukensei/index.html"
+    },
+    {
+      "timestamp": "20191214071800",
+      "original": "https://otn.fujitv.co.jp/drama-koshien/nandeyanen_jyukensei/story/index.html"
+    },
+    {
+      "timestamp": "20190106233738",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/shushi/index.html"
+    },
+    {
+      "timestamp": "20190106155612",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/youkou/index.html"
+    },
+    {
+      "timestamp": "20190112034957",
+      "original": "http://otn.fujitv.co.jp:80/drama/index.html"
+    },
+    {
+      "timestamp": "20191020105916",
+      "original": "https://otn.fujitv.co.jp/easyfisher/"
+    },
+    {
+      "timestamp": "20191214071459",
+      "original": "https://otn.fujitv.co.jp/ebichupride/"
+    },
+    {
+      "timestamp": "20190824025253",
+      "original": "https://otn.fujitv.co.jp/entertainment/"
+    },
+    {
+      "timestamp": "20190103045423",
+      "original": "http://otn.fujitv.co.jp:80/entertainment/index.html"
+    },
+    {
+      "timestamp": "20190612193645",
+      "original": "https://otn.fujitv.co.jp/exocbx2019/"
+    },
+    {
+      "timestamp": "20190129062157",
+      "original": "http://otn.fujitv.co.jp:80/f1gp/2017nextsmart.html"
+    },
+    {
+      "timestamp": "20190219150558",
+      "original": "http://otn.fujitv.co.jp:80/f1gp/2018nextsmart.html"
+    },
+    {
+      "timestamp": "20190920034224",
+      "original": "https://otn.fujitv.co.jp/f1gp19/"
+    },
+    {
+      "timestamp": "20190718174006",
+      "original": "https://otn.fujitv.co.jp/famien2017/"
+    },
+    {
+      "timestamp": "20190108181648",
+      "original": "http://otn.fujitv.co.jp:80/famien2018/"
+    },
+    {
+      "timestamp": "20190920041326",
+      "original": "https://otn.fujitv.co.jp/famien2019/"
+    },
+    {
+      "timestamp": "20190118090555",
+      "original": "http://otn.fujitv.co.jp:80/flashback/chart/?"
+    },
+    {
+      "timestamp": "20190202234024",
+      "original": "http://otn.fujitv.co.jp:80/flashback/index.html"
+    },
+    {
+      "timestamp": "20190116124305",
+      "original": "http://otn.fujitv.co.jp:80/flashback/introduction/index.html"
+    },
+    {
+      "timestamp": "20190920035051",
+      "original": "https://otn.fujitv.co.jp/fnc2016/"
+    },
+    {
+      "timestamp": "20191214083046",
+      "original": "https://otn.fujitv.co.jp/foeveraiai/"
+    },
+    {
+      "timestamp": "20190127175055",
+      "original": "http://otn.fujitv.co.jp:80/fp/ad/otn_gamecenter.html"
+    },
+    {
+      "timestamp": "20190215130119",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_ayamachi.html"
+    },
+    {
+      "timestamp": "20190101073040",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_drama-koshien.html"
+    },
+    {
+      "timestamp": "20190121172601",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_gamecenter.html"
+    },
+    {
+      "timestamp": "20190219123150",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_kanjo8gosen.html"
+    },
+    {
+      "timestamp": "20190101081132",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_toretari.html"
+    },
+    {
+      "timestamp": "20190122143713",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_warepon.html"
+    },
+    {
+      "timestamp": "20190328074641",
+      "original": "http://otn.fujitv.co.jp/freespace/F0259.html?33"
+    },
+    {
+      "timestamp": "20190212063059",
+      "original": "http://otn.fujitv.co.jp/freespace/F0348.html?html"
+    },
+    {
+      "timestamp": "20190127060100",
+      "original": "http://otn.fujitv.co.jp/freespace/F0552.html?211"
+    },
+    {
+      "timestamp": "20190214162149",
+      "original": "http://otn.fujitv.co.jp/freespace/F0697.html?24"
+    },
+    {
+      "timestamp": "20190214161734",
+      "original": "http://otn.fujitv.co.jp/freespace/F0697.html?306"
+    },
+    {
+      "timestamp": "20190214162140",
+      "original": "http://otn.fujitv.co.jp/freespace/F0697.html?48"
+    },
+    {
+      "timestamp": "20190214162006",
+      "original": "http://otn.fujitv.co.jp/freespace/F0697.html?542"
+    },
+    {
+      "timestamp": "20191227084250",
+      "original": "https://otn.fujitv.co.jp/freespace/F0722.html?253"
+    },
+    {
+      "timestamp": "20190616015324",
+      "original": "https://otn.fujitv.co.jp/freespace/F0819.html?874"
+    },
+    {
+      "timestamp": "20191210103902",
+      "original": "https://otn.fujitv.co.jp/freespace/F0851.html"
+    },
+    {
+      "timestamp": "20190222010948",
+      "original": "http://otn.fujitv.co.jp/freespace/F0863.html?611"
+    },
+    {
+      "timestamp": "20190222010940",
+      "original": "http://otn.fujitv.co.jp/freespace/F0863.html?828"
+    },
+    {
+      "timestamp": "20190222010916",
+      "original": "http://otn.fujitv.co.jp/freespace/F0863.html?882"
+    },
+    {
+      "timestamp": "20190214162146",
+      "original": "http://otn.fujitv.co.jp/freespace/F0897.html?322"
+    },
+    {
+      "timestamp": "20190214161735",
+      "original": "http://otn.fujitv.co.jp/freespace/F0897.html?655"
+    },
+    {
+      "timestamp": "20190214161735",
+      "original": "http://otn.fujitv.co.jp/freespace/F0902.html?591"
+    },
+    {
+      "timestamp": "20190214162146",
+      "original": "http://otn.fujitv.co.jp/freespace/F0902.html?839"
+    },
+    {
+      "timestamp": "20191212154537",
+      "original": "https://otn.fujitv.co.jp/freespace/F0908.html"
+    },
+    {
+      "timestamp": "20190219045813",
+      "original": "http://otn.fujitv.co.jp/freespace/F0923.html?634"
+    },
+    {
+      "timestamp": "20190222010948",
+      "original": "http://otn.fujitv.co.jp/freespace/F0924.html?183"
+    },
+    {
+      "timestamp": "20190222010940",
+      "original": "http://otn.fujitv.co.jp/freespace/F0924.html?309"
+    },
+    {
+      "timestamp": "20190222010916",
+      "original": "http://otn.fujitv.co.jp/freespace/F0924.html?791"
+    },
+    {
+      "timestamp": "20190727012411",
+      "original": "https://otn.fujitv.co.jp/freespace/F0984.html?669"
+    },
+    {
+      "timestamp": "20190202100723",
+      "original": "http://otn.fujitv.co.jp/freespace/F0984.html?html"
+    },
+    {
+      "timestamp": "20191210103902",
+      "original": "https://otn.fujitv.co.jp/freespace/F0985.html"
+    },
+    {
+      "timestamp": "20190214162140",
+      "original": "http://otn.fujitv.co.jp/freespace/F1002.html?17"
+    },
+    {
+      "timestamp": "20190214162149",
+      "original": "http://otn.fujitv.co.jp/freespace/F1002.html?569"
+    },
+    {
+      "timestamp": "20190214162007",
+      "original": "http://otn.fujitv.co.jp/freespace/F1002.html?647"
+    },
+    {
+      "timestamp": "20190909145231",
+      "original": "https://otn.fujitv.co.jp/freespace/F1030.html"
+    },
+    {
+      "timestamp": "20190909145231",
+      "original": "https://otn.fujitv.co.jp/freespace/F1111.html"
+    },
+    {
+      "timestamp": "20191208155603",
+      "original": "https://otn.fujitv.co.jp/freespace/F1140.html"
+    },
+    {
+      "timestamp": "20190920034154",
+      "original": "https://otn.fujitv.co.jp/frf19/"
+    },
+    {
+      "timestamp": "20190208225057",
+      "original": "http://otn.fujitv.co.jp:80/fujirock15/musiclist.html"
+    },
+    {
+      "timestamp": "20190208225002",
+      "original": "http://otn.fujitv.co.jp:80/fujirock15/musiclist2.html"
+    },
+    {
+      "timestamp": "20190208225006",
+      "original": "http://otn.fujitv.co.jp:80/fujirock15/musiclist3.html"
+    },
+    {
+      "timestamp": "20190120162933",
+      "original": "http://otn.fujitv.co.jp:80/fujisan_sp/"
+    },
+    {
+      "timestamp": "20190112045050",
+      "original": "http://otn.fujitv.co.jp:80/gakuya/"
+    },
+    {
+      "timestamp": "20190502113022",
+      "original": "https://otn.fujitv.co.jp/gakuya/episode1/index.html"
+    },
+    {
+      "timestamp": "20191001143325",
+      "original": "https://otn.fujitv.co.jp/gakuya/episode4/index.html"
+    },
+    {
+      "timestamp": "20190502141458",
+      "original": "https://otn.fujitv.co.jp/gakuya/index.html"
+    },
+    {
+      "timestamp": "20190112045735",
+      "original": "http://otn.fujitv.co.jp:80/gakuya/introduction/index.html"
+    },
+    {
+      "timestamp": "20190104230408",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/"
+    },
+    {
+      "timestamp": "20190106153732",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/bbs.html"
+    },
+    {
+      "timestamp": "20190103054546",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/douguya/index.html"
+    },
+    {
+      "timestamp": "20190915223926",
+      "original": "https://otn.fujitv.co.jp/gamecenter/effect/"
+    },
+    {
+      "timestamp": "20190127223210",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/effect/index.html"
+    },
+    {
+      "timestamp": "20190117183251",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/index.html"
+    },
+    {
+      "timestamp": "20190105000352",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/mobile.html"
+    },
+    {
+      "timestamp": "20191231182531",
+      "original": "https://otn.fujitv.co.jp/gamecenter/oa/bn01.html"
+    },
+    {
+      "timestamp": "20190122134538",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn02.html"
+    },
+    {
+      "timestamp": "20190824031710",
+      "original": "https://otn.fujitv.co.jp/gamecenter/oa/bn0721.html"
+    },
+    {
+      "timestamp": "20191222045621",
+      "original": "https://otn.fujitv.co.jp/gamecenter/oa/bn134.html"
+    },
+    {
+      "timestamp": "20190118073734",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn233.html"
+    },
+    {
+      "timestamp": "20190126213837",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn253.html"
+    },
+    {
+      "timestamp": "20190126213413",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn263.html"
+    },
+    {
+      "timestamp": "20190122141811",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn268.html"
+    },
+    {
+      "timestamp": "20191026134703",
+      "original": "https://otn.fujitv.co.jp/gamecenter/oa/bn269.html"
+    },
+    {
+      "timestamp": "20190102200001",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn270.html"
+    },
+    {
+      "timestamp": "20190319065738",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn275.html"
+    },
+    {
+      "timestamp": "20190114094829",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn_top.html"
+    },
+    {
+      "timestamp": "20190118090414",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/index.html"
+    },
+    {
+      "timestamp": "20190201175856",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/pulldown02.html"
+    },
+    {
+      "timestamp": "20190602033428",
+      "original": "https://otn.fujitv.co.jp/gamecenter/present/enter.html"
+    },
+    {
+      "timestamp": "20190102011620",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/present/index.html"
+    },
+    {
+      "timestamp": "20191214071320",
+      "original": "https://otn.fujitv.co.jp/gangparadenakano/"
+    },
+    {
+      "timestamp": "20190529035417",
+      "original": "https://otn.fujitv.co.jp/gangparadeyaon/"
+    },
+    {
+      "timestamp": "20190824025509",
+      "original": "https://otn.fujitv.co.jp/ganryujima/"
+    },
+    {
+      "timestamp": "20191120154114",
+      "original": "https://otn.fujitv.co.jp/got7r2u/"
+    },
+    {
+      "timestamp": "20190105010744",
+      "original": "http://otn.fujitv.co.jp:80/got7tu/"
+    },
+    {
+      "timestamp": "20190824024930",
+      "original": "https://otn.fujitv.co.jp/grfablove/"
+    },
+    {
+      "timestamp": "20190824025145",
+      "original": "https://otn.fujitv.co.jp/gryaon/"
+    },
+    {
+      "timestamp": "20191229010304",
+      "original": "https://otn.fujitv.co.jp/helloprocd19sp/"
+    },
+    {
+      "timestamp": "20190429195322",
+      "original": "https://otn.fujitv.co.jp/heroaca-stage/"
+    },
+    {
+      "timestamp": "20190105013519",
+      "original": "http://otn.fujitv.co.jp:80/hide20/"
+    },
+    {
+      "timestamp": "20190129064052",
+      "original": "http://otn.fujitv.co.jp:80/howto/"
+    },
+    {
+      "timestamp": "20190116122222",
+      "original": "http://otn.fujitv.co.jp:80/howto/index.html"
+    },
+    {
+      "timestamp": "20190824031201",
+      "original": "https://otn.fujitv.co.jp/ikemax/"
+    },
+    {
+      "timestamp": "20190118094521",
+      "original": "http://otn.fujitv.co.jp:80/ikkyo1608/index.html"
+    },
+    {
+      "timestamp": "20190718175552",
+      "original": "https://otn.fujitv.co.jp/ikkyo1808/index.html"
+    },
+    {
+      "timestamp": "20190917232718",
+      "original": "https://otn.fujitv.co.jp/imagine2013/"
+    },
+    {
+      "timestamp": "20190525174033",
+      "original": "https://otn.fujitv.co.jp/imy/"
+    },
+    {
+      "timestamp": "20191206150116",
+      "original": "https://otn.fujitv.co.jp/Inazuma2019/"
+    },
+    {
+      "timestamp": "20190411054931",
+      "original": "https://otn.fujitv.co.jp/inc_page/cosblo_oasche.html"
+    },
+    {
+      "timestamp": "20190103054254",
+      "original": "http://otn.fujitv.co.jp:80/index.html"
+    },
+    {
+      "timestamp": "20190129062604",
+      "original": "http://otn.fujitv.co.jp:80/indexb.html"
+    },
+    {
+      "timestamp": "20190516075106",
+      "original": "https://otn.fujitv.co.jp/jaejoong/"
+    },
+    {
+      "timestamp": "20190519072424",
+      "original": "https://otn.fujitv.co.jp/jaejoong/index.html"
+    },
+    {
+      "timestamp": "20190920040347",
+      "original": "https://otn.fujitv.co.jp/jonghyun/"
+    },
+    {
+      "timestamp": "20190127181610",
+      "original": "http://otn.fujitv.co.jp:80/jonghyun2018/"
+    },
+    {
+      "timestamp": "20190118092013",
+      "original": "http://otn.fujitv.co.jp:80/junhobest/"
+    },
+    {
+      "timestamp": "20190118105056",
+      "original": "http://otn.fujitv.co.jp:80/junhoss/"
+    },
+    {
+      "timestamp": "20190118112039",
+      "original": "http://otn.fujitv.co.jp:80/junhowst/"
+    },
+    {
+      "timestamp": "20190102052936",
+      "original": "http://otn.fujitv.co.jp:80/jwavelive2017/"
+    },
+    {
+      "timestamp": "20191120154412",
+      "original": "https://otn.fujitv.co.jp/kanfun2015/"
+    },
+    {
+      "timestamp": "20190121085037",
+      "original": "http://otn.fujitv.co.jp:80/kanjo8gosen/"
+    },
+    {
+      "timestamp": "20190118085948",
+      "original": "http://otn.fujitv.co.jp:80/kanjo8gosen/cast/index.html"
+    },
+    {
+      "timestamp": "20190114042741",
+      "original": "http://otn.fujitv.co.jp:80/kanjo8gosen/chart/index.html"
+    },
+    {
+      "timestamp": "20190219123255",
+      "original": "http://otn.fujitv.co.jp:80/kanjo8gosen/episode1/index.html"
+    },
+    {
+      "timestamp": "20190219123719",
+      "original": "http://otn.fujitv.co.jp:80/kanjo8gosen/episode2/index.html"
+    },
+    {
+      "timestamp": "20190219123300",
+      "original": "http://otn.fujitv.co.jp:80/kanjo8gosen/episode3/index.html"
+    },
+    {
+      "timestamp": "20190219123155",
+      "original": "http://otn.fujitv.co.jp:80/kanjo8gosen/episode4/index.html"
+    },
+    {
+      "timestamp": "20190118090229",
+      "original": "http://otn.fujitv.co.jp:80/kanjo8gosen/episode5/index.html"
+    },
+    {
+      "timestamp": "20190221161459",
+      "original": "http://otn.fujitv.co.jp:80/kanjo8gosen/episode6/index.html"
+    },
+    {
+      "timestamp": "20190102011212",
+      "original": "http://otn.fujitv.co.jp:80/kanjo8gosen/index.html"
+    },
+    {
+      "timestamp": "20190219123724",
+      "original": "http://otn.fujitv.co.jp:80/kanjo8gosen/introduction/index.html"
+    },
+    {
+      "timestamp": "20190718180405",
+      "original": "https://otn.fujitv.co.jp/kazumikio/index.html"
+    },
+    {
+      "timestamp": "20190422080518",
+      "original": "https://otn.fujitv.co.jp/kinkifigure2018/"
+    },
+    {
+      "timestamp": "20190111004534",
+      "original": "http://otn.fujitv.co.jp:80/kioku/"
+    },
+    {
+      "timestamp": "20190613111624",
+      "original": "https://otn.fujitv.co.jp/kiramune/"
+    },
+    {
+      "timestamp": "20190124023141",
+      "original": "http://otn.fujitv.co.jp:80/kiramune10th/"
+    },
+    {
+      "timestamp": "20190331165638",
+      "original": "https://otn.fujitv.co.jp/kiramune10th/index.html"
+    },
+    {
+      "timestamp": "20190613111826",
+      "original": "https://otn.fujitv.co.jp/kiramune1z/"
+    },
+    {
+      "timestamp": "20190613111944",
+      "original": "https://otn.fujitv.co.jp/kiramune2/"
+    },
+    {
+      "timestamp": "20190613112959",
+      "original": "https://otn.fujitv.co.jp/kiramune2z/"
+    },
+    {
+      "timestamp": "20190613111507",
+      "original": "https://otn.fujitv.co.jp/kiramune3/"
+    },
+    {
+      "timestamp": "20190102012727",
+      "original": "http://otn.fujitv.co.jp:80/kiramunel/"
+    },
+    {
+      "timestamp": "20190116132030",
+      "original": "http://otn.fujitv.co.jp:80/kiramuner/"
+    },
+    {
+      "timestamp": "20190122131723",
+      "original": "http://otn.fujitv.co.jp:80/kiramunexmas/"
+    },
+    {
+      "timestamp": "20191208031846",
+      "original": "https://otn.fujitv.co.jp/kishidan2013/"
+    },
+    {
+      "timestamp": "20190506040208",
+      "original": "https://otn.fujitv.co.jp/kiyoshiro/"
+    },
+    {
+      "timestamp": "20190920061245",
+      "original": "https://otn.fujitv.co.jp/lantis2014/"
+    },
+    {
+      "timestamp": "20190122134958",
+      "original": "http://otn.fujitv.co.jp:80/loudpark2017/"
+    },
+    {
+      "timestamp": "20191120154511",
+      "original": "https://otn.fujitv.co.jp/loveho/episode3/index.html"
+    },
+    {
+      "timestamp": "20190718173817",
+      "original": "https://otn.fujitv.co.jp/loveho/index.html"
+    },
+    {
+      "timestamp": "20190106151734",
+      "original": "http://otn.fujitv.co.jp:80/lunasea18/"
+    },
+    {
+      "timestamp": "20190112034332",
+      "original": "http://otn.fujitv.co.jp:80/mamo2018/"
+    },
+    {
+      "timestamp": "20191120153702",
+      "original": "https://otn.fujitv.co.jp/MANNISHBOYS/"
+    },
+    {
+      "timestamp": "20190824025303",
+      "original": "https://otn.fujitv.co.jp/masatoshi45th/"
+    },
+    {
+      "timestamp": "20190613135402",
+      "original": "https://otn.fujitv.co.jp/matsurigannen/"
+    },
+    {
+      "timestamp": "20191130210054",
+      "original": "https://otn.fujitv.co.jp/matsurigannen/index.html"
+    },
+    {
+      "timestamp": "20190531184958",
+      "original": "https://otn.fujitv.co.jp/mayuyu/"
+    },
+    {
+      "timestamp": "20190718173731",
+      "original": "https://otn.fujitv.co.jp/mezamashi2016/"
+    },
+    {
+      "timestamp": "20190824025610",
+      "original": "https://otn.fujitv.co.jp/mezamashi2019/"
+    },
+    {
+      "timestamp": "20190311111633",
+      "original": "http://otn.fujitv.co.jp:80/mezamashi25/"
+    },
+    {
+      "timestamp": "20190719192958",
+      "original": "https://otn.fujitv.co.jp/mezamashiisland/"
+    },
+    {
+      "timestamp": "20190226155531",
+      "original": "http://otn.fujitv.co.jp:80/mezamashilive2017/"
+    },
+    {
+      "timestamp": "20191215052438",
+      "original": "https://otn.fujitv.co.jp/mintetsu/"
+    },
+    {
+      "timestamp": "20190223082720",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/index.html"
+    },
+    {
+      "timestamp": "20190920034544",
+      "original": "https://otn.fujitv.co.jp/mintetsu/station024/index.html"
+    },
+    {
+      "timestamp": "20191022141316",
+      "original": "https://otn.fujitv.co.jp/mixing/"
+    },
+    {
+      "timestamp": "20190718180713",
+      "original": "https://otn.fujitv.co.jp/morohoshiva47/index.html"
+    },
+    {
+      "timestamp": "20190105010904",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/"
+    },
+    {
+      "timestamp": "20190121090233",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode1.html"
+    },
+    {
+      "timestamp": "20190101080109",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode10.html"
+    },
+    {
+      "timestamp": "20190101073537",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode11.html"
+    },
+    {
+      "timestamp": "20190101074526",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode12.html"
+    },
+    {
+      "timestamp": "20190228052812",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode13.html"
+    },
+    {
+      "timestamp": "20190228061528",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode14.html"
+    },
+    {
+      "timestamp": "20190101080712",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode15.html"
+    },
+    {
+      "timestamp": "20190101074300",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode16.html"
+    },
+    {
+      "timestamp": "20190102053424",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode17.html"
+    },
+    {
+      "timestamp": "20190102061343",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode18.html"
+    },
+    {
+      "timestamp": "20190102072230",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode19.html"
+    },
+    {
+      "timestamp": "20190102061923",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode2.html"
+    },
+    {
+      "timestamp": "20190228053033",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode20.html"
+    },
+    {
+      "timestamp": "20190102072014",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode21.html"
+    },
+    {
+      "timestamp": "20190102054721",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode22.html"
+    },
+    {
+      "timestamp": "20190228062230",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode23.html"
+    },
+    {
+      "timestamp": "20190101073045",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode24.html"
+    },
+    {
+      "timestamp": "20190102060909",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode25.html"
+    },
+    {
+      "timestamp": "20190101073754",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode26.html"
+    },
+    {
+      "timestamp": "20190301075719",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode27.html"
+    },
+    {
+      "timestamp": "20190228062109",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode28.html"
+    },
+    {
+      "timestamp": "20190102061500",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode29.html"
+    },
+    {
+      "timestamp": "20190101080114",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode3.html"
+    },
+    {
+      "timestamp": "20190118094753",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode30.html"
+    },
+    {
+      "timestamp": "20190102052737",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode31.html"
+    },
+    {
+      "timestamp": "20190102055242",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode32.html"
+    },
+    {
+      "timestamp": "20190228062422",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode33.html"
+    },
+    {
+      "timestamp": "20190102053629",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode34.html"
+    },
+    {
+      "timestamp": "20190101080119",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode35.html"
+    },
+    {
+      "timestamp": "20190113194653",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode36.html"
+    },
+    {
+      "timestamp": "20190102053429",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode37.html"
+    },
+    {
+      "timestamp": "20190101074737",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode38.html"
+    },
+    {
+      "timestamp": "20190228062235",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode39.html"
+    },
+    {
+      "timestamp": "20190101073050",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode4.html"
+    },
+    {
+      "timestamp": "20190228053203",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode40.html"
+    },
+    {
+      "timestamp": "20190301074957",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode41.html"
+    },
+    {
+      "timestamp": "20190101074531",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode42.html"
+    },
+    {
+      "timestamp": "20190228061653",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode43.html"
+    },
+    {
+      "timestamp": "20190102062217",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode44.html"
+    },
+    {
+      "timestamp": "20190101080124",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode45.html"
+    },
+    {
+      "timestamp": "20190228061658",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode46.html"
+    },
+    {
+      "timestamp": "20190121084416",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode47.html"
+    },
+    {
+      "timestamp": "20190102065548",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode48.html"
+    },
+    {
+      "timestamp": "20190101074536",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode49.html"
+    },
+    {
+      "timestamp": "20190102065339",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode5.html"
+    },
+    {
+      "timestamp": "20190101073317",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode50.html"
+    },
+    {
+      "timestamp": "20190101075919",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode51.html"
+    },
+    {
+      "timestamp": "20190228053520",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode52.html"
+    },
+    {
+      "timestamp": "20190101080426",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode53.html"
+    },
+    {
+      "timestamp": "20190121083751",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode54.html"
+    },
+    {
+      "timestamp": "20190101073542",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode55.html"
+    },
+    {
+      "timestamp": "20190102062222",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode56.html"
+    },
+    {
+      "timestamp": "20190125061727",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode57.html"
+    },
+    {
+      "timestamp": "20190102055247",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode58.html"
+    },
+    {
+      "timestamp": "20190102053434",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode59.html"
+    },
+    {
+      "timestamp": "20190102061505",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode6.html"
+    },
+    {
+      "timestamp": "20190101080129",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode60.html"
+    },
+    {
+      "timestamp": "20190101074937",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode61.html"
+    },
+    {
+      "timestamp": "20190101075122",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode62.html"
+    },
+    {
+      "timestamp": "20190101074942",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode63.html"
+    },
+    {
+      "timestamp": "20190228062240",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode64.html"
+    },
+    {
+      "timestamp": "20190102061928",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode65.html"
+    },
+    {
+      "timestamp": "20190102062407",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode66.html"
+    },
+    {
+      "timestamp": "20190102075747",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode67.html"
+    },
+    {
+      "timestamp": "20190102062412",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode68.html"
+    },
+    {
+      "timestamp": "20190101080431",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode69.html"
+    },
+    {
+      "timestamp": "20190101073547",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode7.html"
+    },
+    {
+      "timestamp": "20190130135038",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode70.html"
+    },
+    {
+      "timestamp": "20190101081411",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode71.html"
+    },
+    {
+      "timestamp": "20190102060914",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode72.html"
+    },
+    {
+      "timestamp": "20190102054726",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode8.html"
+    },
+    {
+      "timestamp": "20190102053634",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode9.html"
+    },
+    {
+      "timestamp": "20190118105206",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/index.html"
+    },
+    {
+      "timestamp": "20190824025225",
+      "original": "https://otn.fujitv.co.jp/music/"
+    },
+    {
+      "timestamp": "20190127231005",
+      "original": "http://otn.fujitv.co.jp:80/music/index.html"
+    },
+    {
+      "timestamp": "20190126212906",
+      "original": "http://otn.fujitv.co.jp:80/negima/"
+    },
+    {
+      "timestamp": "20190915182803",
+      "original": "https://otn.fujitv.co.jp/new-soku/"
+    },
+    {
+      "timestamp": "20190821174450",
+      "original": "https://otn.fujitv.co.jp/new-soku/index.html"
+    },
+    {
+      "timestamp": "20190718173722",
+      "original": "https://otn.fujitv.co.jp/newyear2019/index.html"
+    },
+    {
+      "timestamp": "20190102065945",
+      "original": "http://otn.fujitv.co.jp:80/nextsmart/"
+    },
+    {
+      "timestamp": "20190610062057",
+      "original": "https://otn.fujitv.co.jp/nextsmart/index.html"
+    },
+    {
+      "timestamp": "20190920034403",
+      "original": "https://otn.fujitv.co.jp/NGFACTORY/"
+    },
+    {
+      "timestamp": "20190920034456",
+      "original": "https://otn.fujitv.co.jp/NGTOKYO/"
+    },
+    {
+      "timestamp": "20191214081706",
+      "original": "https://otn.fujitv.co.jp/orepara2019/"
+    },
+    {
+      "timestamp": "20190101073552",
+      "original": "http://otn.fujitv.co.jp:80/otawamure/"
+    },
+    {
+      "timestamp": "20190103045126",
+      "original": "http://otn.fujitv.co.jp:80/otnsmart/"
+    },
+    {
+      "timestamp": "20190109201806",
+      "original": "http://otn.fujitv.co.jp:80/otnsmart/index.html"
+    },
+    {
+      "timestamp": "20190718181218",
+      "original": "https://otn.fujitv.co.jp/otnsmartkiyaku/index.html"
+    },
+    {
+      "timestamp": "20190103181838",
+      "original": "http://otn.fujitv.co.jp:80/pyn/"
+    },
+    {
+      "timestamp": "20190416165230",
+      "original": "https://otn.fujitv.co.jp/regular.html"
+    },
+    {
+      "timestamp": "20190127223109",
+      "original": "http://otn.fujitv.co.jp:80/rekishibudokan/"
+    },
+    {
+      "timestamp": "20190201004511",
+      "original": "http://otn.fujitv.co.jp/rekishiosaka/"
+    },
+    {
+      "timestamp": "20190120164203",
+      "original": "http://otn.fujitv.co.jp:80/ringo20/"
+    },
+    {
+      "timestamp": "20190330192509",
+      "original": "https://otn.fujitv.co.jp/ringo20/index.html"
+    },
+    {
+      "timestamp": "20190330072232",
+      "original": "http://otn.fujitv.co.jp/s_cx/b_hp/100000052.html"
+    },
+    {
+      "timestamp": "20190322014121",
+      "original": "https://otn.fujitv.co.jp/s_cx/b_hp/910200017.html"
+    },
+    {
+      "timestamp": "20190401014936",
+      "original": "https://otn.fujitv.co.jp/s_cx/b_hp/914200235.html"
+    },
+    {
+      "timestamp": "20190331195642",
+      "original": "https://otn.fujitv.co.jp/s_cx/b_hp/914200263.html"
+    },
+    {
+      "timestamp": "20190330032908",
+      "original": "https://otn.fujitv.co.jp/s_cx/b_hp/915200092.html"
+    },
+    {
+      "timestamp": "20190330130947",
+      "original": "https://otn.fujitv.co.jp/s_cx/b_hp/916200009.html"
+    },
+    {
+      "timestamp": "20190331154922",
+      "original": "https://otn.fujitv.co.jp/s_cx/b_hp/916200084.html"
+    },
+    {
+      "timestamp": "20190330071442",
+      "original": "http://otn.fujitv.co.jp/s_cx/b_hp/916200250.html"
+    },
+    {
+      "timestamp": "20190330141432",
+      "original": "https://otn.fujitv.co.jp/s_cx/b_hp/917200128.html"
+    },
+    {
+      "timestamp": "20190202203357",
+      "original": "http://otn.fujitv.co.jp/s_cx/b_hp/917200222.html"
+    },
+    {
+      "timestamp": "20190330080617",
+      "original": "https://otn.fujitv.co.jp/s_cx/b_hp/918200067.html"
+    },
+    {
+      "timestamp": "20190330064700",
+      "original": "http://otn.fujitv.co.jp/s_cx/b_hp/919200032.html"
+    },
+    {
+      "timestamp": "20190401003534",
+      "original": "http://otn.fujitv.co.jp/s_cx/b_hp/919200045.html"
+    },
+    {
+      "timestamp": "20190330130952",
+      "original": "https://otn.fujitv.co.jp/s_cx/b_hp/919200050.html"
+    },
+    {
+      "timestamp": "20190605153535",
+      "original": "https://otn.fujitv.co.jp/s_cx/howto/"
+    },
+    {
+      "timestamp": "20190328013108",
+      "original": "http://otn.fujitv.co.jp/s_cx/index.html"
+    },
+    {
+      "timestamp": "20190824025230",
+      "original": "https://otn.fujitv.co.jp/sataniccarnival19/"
+    },
+    {
+      "timestamp": "20190824030125",
+      "original": "https://otn.fujitv.co.jp/schedule/next/"
+    },
+    {
+      "timestamp": "20190116132819",
+      "original": "http://otn.fujitv.co.jp:80/schedule/next/index.html"
+    },
+    {
+      "timestamp": "20191120154008",
+      "original": "https://otn.fujitv.co.jp/schedule/next/index.html?fbclid=IwAR2j2sd4_mWpBKVPI_nD0w3JEABOCS_hUpmRPp5Q2bIRvv0TD2HdNjDvLiY"
+    },
+    {
+      "timestamp": "20190103053818",
+      "original": "http://otn.fujitv.co.jp:80/schedule/next/next2_week.html"
+    },
+    {
+      "timestamp": "20190102004615",
+      "original": "http://otn.fujitv.co.jp:80/schedule/next/next3_week.html"
+    },
+    {
+      "timestamp": "20190118084913",
+      "original": "http://otn.fujitv.co.jp:80/schedule/next/next_week.html"
+    },
+    {
+      "timestamp": "20190119003804",
+      "original": "http://otn.fujitv.co.jp:80/schedule/next/this_week.html"
+    },
+    {
+      "timestamp": "20190118073739",
+      "original": "http://otn.fujitv.co.jp:80/schedule/one/index.html"
+    },
+    {
+      "timestamp": "20190118114148",
+      "original": "http://otn.fujitv.co.jp:80/schedule/one/next2_week.html"
+    },
+    {
+      "timestamp": "20190201041806",
+      "original": "http://otn.fujitv.co.jp:80/schedule/one/next3_week.html"
+    },
+    {
+      "timestamp": "20190212030609",
+      "original": "http://otn.fujitv.co.jp:80/schedule/one/next_week.html"
+    },
+    {
+      "timestamp": "20190119011627",
+      "original": "http://otn.fujitv.co.jp:80/schedule/one/this_week.html"
+    },
+    {
+      "timestamp": "20190122131837",
+      "original": "http://otn.fujitv.co.jp:80/schedule/two/index.html"
+    },
+    {
+      "timestamp": "20190201041841",
+      "original": "http://otn.fujitv.co.jp:80/schedule/two/next2_week.html"
+    },
+    {
+      "timestamp": "20190129060221",
+      "original": "http://otn.fujitv.co.jp:80/schedule/two/next3_week.html"
+    },
+    {
+      "timestamp": "20190129060226",
+      "original": "http://otn.fujitv.co.jp:80/schedule/two/next_week.html"
+    },
+    {
+      "timestamp": "20190117114220",
+      "original": "http://otn.fujitv.co.jp:80/schedule/two/this_week.html"
+    },
+    {
+      "timestamp": "20190129062609",
+      "original": "http://otn.fujitv.co.jp:80/search/index.html"
+    },
+    {
+      "timestamp": "20191120153818",
+      "original": "https://otn.fujitv.co.jp/search/index.html?keyword=%E6%9F%94%E9%81%93&uri=https%3A%2F%2Fotn.fujitv.co.jp%2F"
+    },
+    {
+      "timestamp": "20191012092340",
+      "original": "https://otn.fujitv.co.jp/search/index.html?keyword=%E9%80%83%E8%B5%B0%E4%B8%AD&uri=https%3A%2F%2Fweb.archive.org%2Fweb%2F20181130054644%2Fhttp%3A%2F%2Fotn.fujitv.co.jp%2F"
+    },
+    {
+      "timestamp": "20190114094840",
+      "original": "http://otn.fujitv.co.jp:80/seventeencamp/"
+    },
+    {
+      "timestamp": "20190212030333",
+      "original": "http://otn.fujitv.co.jp:80/seventeencamp/index.html"
+    },
+    {
+      "timestamp": "20190118101405",
+      "original": "http://otn.fujitv.co.jp:80/seventeencx/"
+    },
+    {
+      "timestamp": "20190221164912",
+      "original": "http://otn.fujitv.co.jp:80/seventeencx/index.html"
+    },
+    {
+      "timestamp": "20191219093609",
+      "original": "https://otn.fujitv.co.jp/seventeencx2/"
+    },
+    {
+      "timestamp": "20190501154619",
+      "original": "https://otn.fujitv.co.jp/seventeenhana/"
+    },
+    {
+      "timestamp": "20191023094839",
+      "original": "https://otn.fujitv.co.jp/shineeworld2012/"
+    },
+    {
+      "timestamp": "20190109125042",
+      "original": "http://otn.fujitv.co.jp:80/sjde2018/"
+    },
+    {
+      "timestamp": "20190210032542",
+      "original": "http://otn.fujitv.co.jp:80/sjde2018/index.html"
+    },
+    {
+      "timestamp": "20190920034320",
+      "original": "https://otn.fujitv.co.jp/sjde2019/"
+    },
+    {
+      "timestamp": "20191211105713",
+      "original": "https://otn.fujitv.co.jp/sjde2019/index.html"
+    },
+    {
+      "timestamp": "20190331111429",
+      "original": "https://otn.fujitv.co.jp/sjryeowookbv/"
+    },
+    {
+      "timestamp": "20190210032546",
+      "original": "http://otn.fujitv.co.jp:80/sjsp/"
+    },
+    {
+      "timestamp": "20191120153847",
+      "original": "https://otn.fujitv.co.jp/sls17/"
+    },
+    {
+      "timestamp": "20191214071440",
+      "original": "https://otn.fujitv.co.jp/SLS2019/"
+    },
+    {
+      "timestamp": "20191120154429",
+      "original": "https://otn.fujitv.co.jp/sma40thfinal/"
+    },
+    {
+      "timestamp": "20191022143432",
+      "original": "https://otn.fujitv.co.jp/spicetravelers/"
+    },
+    {
+      "timestamp": "20190916100655",
+      "original": "https://otn.fujitv.co.jp/sports/"
+    },
+    {
+      "timestamp": "20190112033558",
+      "original": "http://otn.fujitv.co.jp:80/sports/index.html"
+    },
+    {
+      "timestamp": "20190112044307",
+      "original": "http://otn.fujitv.co.jp:80/ss7/"
+    },
+    {
+      "timestamp": "20190210032444",
+      "original": "http://otn.fujitv.co.jp:80/ss7/index.html"
+    },
+    {
+      "timestamp": "20191120153921",
+      "original": "https://otn.fujitv.co.jp/ss8/"
+    },
+    {
+      "timestamp": "20190824025523",
+      "original": "https://otn.fujitv.co.jp/staplalocalism/"
+    },
+    {
+      "timestamp": "20190122132211",
+      "original": "http://otn.fujitv.co.jp:80/stone/"
+    },
+    {
+      "timestamp": "20191022140710",
+      "original": "https://otn.fujitv.co.jp/superfly/"
+    },
+    {
+      "timestamp": "20190408005928",
+      "original": "https://otn.fujitv.co.jp/supernova/"
+    },
+    {
+      "timestamp": "20190404213719",
+      "original": "https://otn.fujitv.co.jp/swallowslive/"
+    },
+    {
+      "timestamp": "20190112035134",
+      "original": "http://otn.fujitv.co.jp:80/TACC/"
+    },
+    {
+      "timestamp": "20190916164332",
+      "original": "https://otn.fujitv.co.jp/TACC/index.html"
+    },
+    {
+      "timestamp": "20190425233942",
+      "original": "https://otn.fujitv.co.jp/tahara40theve/"
+    },
+    {
+      "timestamp": "20191117185300",
+      "original": "https://otn.fujitv.co.jp/teamshachi/"
+    },
+    {
+      "timestamp": "20190129213807",
+      "original": "http://otn.fujitv.co.jp:80/TGC/"
+    },
+    {
+      "timestamp": "20190824030100",
+      "original": "https://otn.fujitv.co.jp/tif2012/index.html"
+    },
+    {
+      "timestamp": "20190116132648",
+      "original": "http://otn.fujitv.co.jp:80/tif2018/"
+    },
+    {
+      "timestamp": "20190131214614",
+      "original": "http://otn.fujitv.co.jp/TOKYO_SESSION/"
+    },
+    {
+      "timestamp": "20190105013645",
+      "original": "http://otn.fujitv.co.jp:80/tokyomarathon2018pre/"
+    },
+    {
+      "timestamp": "20190113074633",
+      "original": "http://otn.fujitv.co.jp/toretari/"
+    },
+    {
+      "timestamp": "20191022140942",
+      "original": "https://otn.fujitv.co.jp/toretari/bt8/"
+    },
+    {
+      "timestamp": "20190525023840",
+      "original": "https://otn.fujitv.co.jp/toretari/btharuyasumi/"
+    },
+    {
+      "timestamp": "20191214080058",
+      "original": "https://otn.fujitv.co.jp/toretari/gallery/16.html"
+    },
+    {
+      "timestamp": "20190127223255",
+      "original": "http://otn.fujitv.co.jp:80/toretari/gallery/33.html"
+    },
+    {
+      "timestamp": "20190127231322",
+      "original": "http://otn.fujitv.co.jp:80/toretari/gallery/34.html"
+    },
+    {
+      "timestamp": "20190127231327",
+      "original": "http://otn.fujitv.co.jp:80/toretari/gallery/36.html"
+    },
+    {
+      "timestamp": "20190127231659",
+      "original": "http://otn.fujitv.co.jp:80/toretari/gallery/38.html"
+    },
+    {
+      "timestamp": "20190127222902",
+      "original": "http://otn.fujitv.co.jp:80/toretari/gallery/39.html"
+    },
+    {
+      "timestamp": "20190127222707",
+      "original": "http://otn.fujitv.co.jp:80/toretari/gallery/40.html"
+    },
+    {
+      "timestamp": "20190129063830",
+      "original": "http://otn.fujitv.co.jp:80/toretari/gallery/41.html"
+    },
+    {
+      "timestamp": "20190108102842",
+      "original": "http://otn.fujitv.co.jp:80/toretari/gallery/47.html"
+    },
+    {
+      "timestamp": "20190215042532",
+      "original": "http://otn.fujitv.co.jp/toretari/gallery/49.html"
+    },
+    {
+      "timestamp": "20190215043103",
+      "original": "http://otn.fujitv.co.jp/toretari/gallery/50.html"
+    },
+    {
+      "timestamp": "20190215043325",
+      "original": "http://otn.fujitv.co.jp/toretari/gallery/51.html"
+    },
+    {
+      "timestamp": "20190215043857",
+      "original": "http://otn.fujitv.co.jp/toretari/gallery/52.html"
+    },
+    {
+      "timestamp": "20190112033358",
+      "original": "http://otn.fujitv.co.jp:80/toretari/gallery/53.html"
+    },
+    {
+      "timestamp": "20190215044531",
+      "original": "http://otn.fujitv.co.jp/toretari/gallery/54.html"
+    },
+    {
+      "timestamp": "20190215044930",
+      "original": "http://otn.fujitv.co.jp/toretari/gallery/55.html"
+    },
+    {
+      "timestamp": "20190215050124",
+      "original": "http://otn.fujitv.co.jp/toretari/gallery/56.html"
+    },
+    {
+      "timestamp": "20190215050509",
+      "original": "http://otn.fujitv.co.jp/toretari/gallery/57.html"
+    },
+    {
+      "timestamp": "20190215050706",
+      "original": "http://otn.fujitv.co.jp/toretari/gallery/58.html"
+    },
+    {
+      "timestamp": "20190215050906",
+      "original": "http://otn.fujitv.co.jp/toretari/gallery/59.html"
+    },
+    {
+      "timestamp": "20190215052038",
+      "original": "http://otn.fujitv.co.jp/toretari/gallery/60.html"
+    },
+    {
+      "timestamp": "20190215052252",
+      "original": "http://otn.fujitv.co.jp/toretari/gallery/61.html"
+    },
+    {
+      "timestamp": "20190215052351",
+      "original": "http://otn.fujitv.co.jp/toretari/gallery/62.html"
+    },
+    {
+      "timestamp": "20190215052454",
+      "original": "http://otn.fujitv.co.jp/toretari/gallery/63.html"
+    },
+    {
+      "timestamp": "20190215052553",
+      "original": "http://otn.fujitv.co.jp/toretari/gallery/64.html"
+    },
+    {
+      "timestamp": "20190215052645",
+      "original": "http://otn.fujitv.co.jp/toretari/gallery/65.html"
+    },
+    {
+      "timestamp": "20190215052743",
+      "original": "http://otn.fujitv.co.jp/toretari/gallery/66.html"
+    },
+    {
+      "timestamp": "20190215052844",
+      "original": "http://otn.fujitv.co.jp/toretari/gallery/67.html"
+    },
+    {
+      "timestamp": "20190215052939",
+      "original": "http://otn.fujitv.co.jp/toretari/gallery/68.html"
+    },
+    {
+      "timestamp": "20190215053047",
+      "original": "http://otn.fujitv.co.jp/toretari/gallery/69.html"
+    },
+    {
+      "timestamp": "20190501043400",
+      "original": "https://otn.fujitv.co.jp/toretari/gallery/73.html"
+    },
+    {
+      "timestamp": "20190624034524",
+      "original": "https://otn.fujitv.co.jp/toretari/gallery/74.html"
+    },
+    {
+      "timestamp": "20190624034508",
+      "original": "https://otn.fujitv.co.jp/toretari/gallery/75.html"
+    },
+    {
+      "timestamp": "20190624034200",
+      "original": "https://otn.fujitv.co.jp/toretari/gallery/76.html"
+    },
+    {
+      "timestamp": "20190624034219",
+      "original": "https://otn.fujitv.co.jp/toretari/gallery/77.html"
+    },
+    {
+      "timestamp": "20191219013930",
+      "original": "https://otn.fujitv.co.jp/toretari/gallery/88.html"
+    },
+    {
+      "timestamp": "20190112034504",
+      "original": "http://otn.fujitv.co.jp:80/toretari/gallery/arc02.html"
+    },
+    {
+      "timestamp": "20190129070614",
+      "original": "http://otn.fujitv.co.jp:80/toretari/index.html"
+    },
+    {
+      "timestamp": "20190208075014",
+      "original": "http://otn.fujitv.co.jp:80/toretari/season3/"
+    },
+    {
+      "timestamp": "20190408145616",
+      "original": "https://otn.fujitv.co.jp/toretarikiseki/"
+    },
+    {
+      "timestamp": "20190824033217",
+      "original": "https://otn.fujitv.co.jp/toshi80/"
+    },
+    {
+      "timestamp": "20190824025514",
+      "original": "https://otn.fujitv.co.jp/toshiokinawa/"
+    },
+    {
+      "timestamp": "20191022141401",
+      "original": "https://otn.fujitv.co.jp/tspook2016dc/"
+    },
+    {
+      "timestamp": "20190824025049",
+      "original": "https://otn.fujitv.co.jp/tune2019/"
+    },
+    {
+      "timestamp": "20190919105842",
+      "original": "https://otn.fujitv.co.jp/tvxqtokyodome/"
+    },
+    {
+      "timestamp": "20190116132035",
+      "original": "http://otn.fujitv.co.jp:80/tvxqtree2014/"
+    },
+    {
+      "timestamp": "20190718173633",
+      "original": "https://otn.fujitv.co.jp/tymsmu27/"
+    },
+    {
+      "timestamp": "20190718180740",
+      "original": "https://otn.fujitv.co.jp/uc100/"
+    },
+    {
+      "timestamp": "20190302122124",
+      "original": "http://otn.fujitv.co.jp:80/unbreakable/"
+    },
+    {
+      "timestamp": "20191217205007",
+      "original": "https://otn.fujitv.co.jp/unomisakohs/"
+    },
+    {
+      "timestamp": "20191214074830",
+      "original": "https://otn.fujitv.co.jp/verivery/"
+    },
+    {
+      "timestamp": "20191015082839",
+      "original": "https://otn.fujitv.co.jp/victorfes2015/"
+    },
+    {
+      "timestamp": "20190718173348",
+      "original": "https://otn.fujitv.co.jp/vivalapop/"
+    },
+    {
+      "timestamp": "20190718173551",
+      "original": "https://otn.fujitv.co.jp/vivalarock2018/"
+    },
+    {
+      "timestamp": "20190824033139",
+      "original": "https://otn.fujitv.co.jp/vivalarock2019/"
+    },
+    {
+      "timestamp": "20190105010909",
+      "original": "http://otn.fujitv.co.jp:80/vixxlf/"
+    },
+    {
+      "timestamp": "20190305203358",
+      "original": "http://otn.fujitv.co.jp:80/vixxn/"
+    },
+    {
+      "timestamp": "20190118114037",
+      "original": "http://otn.fujitv.co.jp:80/warepon/"
+    },
+    {
+      "timestamp": "20190116133252",
+      "original": "http://otn.fujitv.co.jp:80/warepon/index.html"
+    },
+    {
+      "timestamp": "20190118110205",
+      "original": "http://otn.fujitv.co.jp:80/warepon/rule.html"
+    },
+    {
+      "timestamp": "20190122135003",
+      "original": "http://otn.fujitv.co.jp:80/warepon/stats.html"
+    },
+    {
+      "timestamp": "20190919104353",
+      "original": "https://otn.fujitv.co.jp/warepon/?prn=20110714"
+    },
+    {
+      "timestamp": "20190815203505",
+      "original": "https://otn.fujitv.co.jp/yamamotosayakatt/"
+    },
+    {
+      "timestamp": "20190920040101",
+      "original": "https://otn.fujitv.co.jp/yonghwa17/"
+    },
+    {
+      "timestamp": "20191120154232",
+      "original": "https://otn.fujitv.co.jp/yorozuya_johnny/"
+    },
+    {
+      "timestamp": "20190718093950",
+      "original": "https://otn.fujitv.co.jp/yorozuya_jonny/"
+    },
+    {
+      "timestamp": "20190609204253",
+      "original": "https://otn.fujitv.co.jp/yorozuya_jonny/index.html"
+    },
+    {
+      "timestamp": "20190824025455",
+      "original": "https://otn.fujitv.co.jp/yoshii/"
+    },
+    {
+      "timestamp": "20191117121349",
+      "original": "https://otn.fujitv.co.jp/yuki/"
+    },
+    {
+      "timestamp": "20191022141912",
+      "original": "https://otn.fujitv.co.jp/yusukesp5/"
+    },
+    {
+      "timestamp": "20190126143505",
+      "original": "http://otn.fujitv.co.jp:80/yusukesp6/"
+    }
+  ]
+}
