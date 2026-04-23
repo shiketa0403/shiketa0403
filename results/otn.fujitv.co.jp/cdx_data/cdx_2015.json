@@ -1,0 +1,6024 @@
+{
+  "domain": "otn.fujitv.co.jp",
+  "year": 2015,
+  "fetched_at": "2026-04-23T01:57:21+0000",
+  "header": [
+    "timestamp",
+    "original"
+  ],
+  "count": 1503,
+  "records": [
+    {
+      "timestamp": "20150522225433",
+      "original": "http://otn.fujitv.co.jp:80/ainori2/"
+    },
+    {
+      "timestamp": "20150407005940",
+      "original": "http://otn.fujitv.co.jp:80/ainori2/about/index.html"
+    },
+    {
+      "timestamp": "20150407001905",
+      "original": "http://otn.fujitv.co.jp:80/ainori2/about/watch.html"
+    },
+    {
+      "timestamp": "20150407005945",
+      "original": "http://otn.fujitv.co.jp:80/ainori2/chart/index.html"
+    },
+    {
+      "timestamp": "20150407005950",
+      "original": "http://otn.fujitv.co.jp:80/ainori2/diary/index.html"
+    },
+    {
+      "timestamp": "20150407001910",
+      "original": "http://otn.fujitv.co.jp:80/ainori2/index.html"
+    },
+    {
+      "timestamp": "20150625210355",
+      "original": "http://otn.fujitv.co.jp:80/ainori2/profile/bangladesh/f05.html"
+    },
+    {
+      "timestamp": "20151216212117",
+      "original": "http://otn.fujitv.co.jp:80/ainori2/profile/bangladesh/index.html"
+    },
+    {
+      "timestamp": "20150407005955",
+      "original": "http://otn.fujitv.co.jp:80/ainori2/profile/index.html"
+    },
+    {
+      "timestamp": "20150407021100",
+      "original": "http://otn.fujitv.co.jp:80/ainori2/story/009/index.html"
+    },
+    {
+      "timestamp": "20151127010717",
+      "original": "http://otn.fujitv.co.jp:80/ainori2/story/bangladesh/001/index.html"
+    },
+    {
+      "timestamp": "20151125233510",
+      "original": "http://otn.fujitv.co.jp:80/ainori2/story/bangladesh/002/index.html"
+    },
+    {
+      "timestamp": "20151127010722",
+      "original": "http://otn.fujitv.co.jp:80/ainori2/story/bangladesh/003/index.html"
+    },
+    {
+      "timestamp": "20150406235902",
+      "original": "http://otn.fujitv.co.jp:80/ainori2/story/bangladesh/005/index.html"
+    },
+    {
+      "timestamp": "20150405233825",
+      "original": "http://otn.fujitv.co.jp:80/ainori2/story/bangladesh/006/index.html"
+    },
+    {
+      "timestamp": "20150406010019",
+      "original": "http://otn.fujitv.co.jp:80/ainori2/story/bangladesh/007/index.html"
+    },
+    {
+      "timestamp": "20150407010000",
+      "original": "http://otn.fujitv.co.jp:80/ainori2/story/bangladesh/008/index.html"
+    },
+    {
+      "timestamp": "20150407010005",
+      "original": "http://otn.fujitv.co.jp:80/ainori2/story/bangladesh/009/index.html"
+    },
+    {
+      "timestamp": "20150406231407",
+      "original": "http://otn.fujitv.co.jp:80/ainori2/story/bangladesh/010/index.html"
+    },
+    {
+      "timestamp": "20150407010010",
+      "original": "http://otn.fujitv.co.jp:80/ainori2/story/bangladesh/index.html"
+    },
+    {
+      "timestamp": "20150406010023",
+      "original": "http://otn.fujitv.co.jp:80/ainori2/story/index.html"
+    },
+    {
+      "timestamp": "20150411004653",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/backnumber.html"
+    },
+    {
+      "timestamp": "20150824231844",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/backnumber2.html"
+    },
+    {
+      "timestamp": "20151021075428",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/gallery/250.html"
+    },
+    {
+      "timestamp": "20151021075843",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/gallery/251.html"
+    },
+    {
+      "timestamp": "20151021075848",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/gallery/252.html"
+    },
+    {
+      "timestamp": "20151021075432",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/gallery/260.html"
+    },
+    {
+      "timestamp": "20151021075853",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/gallery/261.html"
+    },
+    {
+      "timestamp": "20151021075437",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/gallery/262.html"
+    },
+    {
+      "timestamp": "20151021075442",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/gallery/270.html"
+    },
+    {
+      "timestamp": "20151021075447",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/gallery/271.html"
+    },
+    {
+      "timestamp": "20151021075859",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/gallery/272.html"
+    },
+    {
+      "timestamp": "20151021075452",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/gallery/280.html"
+    },
+    {
+      "timestamp": "20151021075458",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/gallery/281.html"
+    },
+    {
+      "timestamp": "20151021075503",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/gallery/282.html"
+    },
+    {
+      "timestamp": "20151021075508",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/gallery/290.html"
+    },
+    {
+      "timestamp": "20151021075513",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/gallery/291.html"
+    },
+    {
+      "timestamp": "20151021075903",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/gallery/292.html"
+    },
+    {
+      "timestamp": "20151205034114",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/gallery/300.html"
+    },
+    {
+      "timestamp": "20150412030538",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/gallery/index.html"
+    },
+    {
+      "timestamp": "20151021075518",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/gallery/index_past.html"
+    },
+    {
+      "timestamp": "20151021075523",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/gallery/index_past2.html"
+    },
+    {
+      "timestamp": "20150411004859",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/index.html"
+    },
+    {
+      "timestamp": "20150412030545",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/member/index.html"
+    },
+    {
+      "timestamp": "20150628195555",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/member/index_past.html"
+    },
+    {
+      "timestamp": "20150628195422",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/member/index_past2.html"
+    },
+    {
+      "timestamp": "20150731204016",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/next/"
+    },
+    {
+      "timestamp": "20150412030550",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/next/index.html"
+    },
+    {
+      "timestamp": "20150413073502",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/special/index.html"
+    },
+    {
+      "timestamp": "20150815011856",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/special2/index.html"
+    },
+    {
+      "timestamp": "20150428230628",
+      "original": "http://otn.fujitv.co.jp:80/akbkankoutaishi/vote/index2.html"
+    },
+    {
+      "timestamp": "20150802000138",
+      "original": "http://otn.fujitv.co.jp:80/animekids/"
+    },
+    {
+      "timestamp": "20150403174604",
+      "original": "http://otn.fujitv.co.jp:80/animekids/index.html"
+    },
+    {
+      "timestamp": "20150418235500",
+      "original": "http://otn.fujitv.co.jp:80/asia/"
+    },
+    {
+      "timestamp": "20150403092846",
+      "original": "http://otn.fujitv.co.jp:80/asia/index.html"
+    },
+    {
+      "timestamp": "20150419084038",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000001.html"
+    },
+    {
+      "timestamp": "20150517032229",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000001l.html"
+    },
+    {
+      "timestamp": "20150405031720",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000002.html"
+    },
+    {
+      "timestamp": "20150406021818",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000002l.html"
+    },
+    {
+      "timestamp": "20150405064759",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000004.html"
+    },
+    {
+      "timestamp": "20150416033344",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000004l.html"
+    },
+    {
+      "timestamp": "20150428055123",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000005l.html"
+    },
+    {
+      "timestamp": "20151203062036",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000007.html"
+    },
+    {
+      "timestamp": "20151103000014",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000007l.html"
+    },
+    {
+      "timestamp": "20150423173159",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000015.html"
+    },
+    {
+      "timestamp": "20151227225217",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000015l.html"
+    },
+    {
+      "timestamp": "20150403093430",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000017.html"
+    },
+    {
+      "timestamp": "20150504135635",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000017l.html"
+    },
+    {
+      "timestamp": "20150408235310",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000020l.html"
+    },
+    {
+      "timestamp": "20150407001915",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000021.html"
+    },
+    {
+      "timestamp": "20150425024906",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000021l.html"
+    },
+    {
+      "timestamp": "20150410100925",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000023.html"
+    },
+    {
+      "timestamp": "20150406010030",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000023l.html"
+    },
+    {
+      "timestamp": "20150614002858",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000033.html"
+    },
+    {
+      "timestamp": "20150415035203",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000037.html"
+    },
+    {
+      "timestamp": "20150403233150",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000042.html"
+    },
+    {
+      "timestamp": "20150403233155",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000042l.html"
+    },
+    {
+      "timestamp": "20150718230957",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000043.html"
+    },
+    {
+      "timestamp": "20150406045106",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000052.html"
+    },
+    {
+      "timestamp": "20150423124150",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000058.html"
+    },
+    {
+      "timestamp": "20150402210734",
+      "original": "http://otn.fujitv.co.jp/b_hp/100000062.html"
+    },
+    {
+      "timestamp": "20150407021105",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000062l.html"
+    },
+    {
+      "timestamp": "20150506065708",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000089.html"
+    },
+    {
+      "timestamp": "20150820194148",
+      "original": "http://otn.fujitv.co.jp/b_hp/100000090.html"
+    },
+    {
+      "timestamp": "20150404233454",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000093.html"
+    },
+    {
+      "timestamp": "20150808001837",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000095.html"
+    },
+    {
+      "timestamp": "20150518104120",
+      "original": "http://otn.fujitv.co.jp/b_hp/100000095l.html"
+    },
+    {
+      "timestamp": "20150403093436",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000096.html"
+    },
+    {
+      "timestamp": "20150418105934",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000100.html"
+    },
+    {
+      "timestamp": "20151002232549",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000102.html"
+    },
+    {
+      "timestamp": "20150527003550",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000118.html"
+    },
+    {
+      "timestamp": "20150527003555",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000118l.html"
+    },
+    {
+      "timestamp": "20150728020847",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/100000148.html"
+    },
+    {
+      "timestamp": "20150403233158",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200011.html"
+    },
+    {
+      "timestamp": "20150405033337",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200011l.html"
+    },
+    {
+      "timestamp": "20150723151536",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200028.html"
+    },
+    {
+      "timestamp": "20151222221652",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200028l.html"
+    },
+    {
+      "timestamp": "20151003004235",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200038.html"
+    },
+    {
+      "timestamp": "20150405031732",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200039.html"
+    },
+    {
+      "timestamp": "20150406021825",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200039l.html"
+    },
+    {
+      "timestamp": "20151203165621",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200064.html"
+    },
+    {
+      "timestamp": "20150403193707",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200071.html"
+    },
+    {
+      "timestamp": "20150404233217",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200071l.html"
+    },
+    {
+      "timestamp": "20150403100244",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200077.html"
+    },
+    {
+      "timestamp": "20150418235505",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200077l.html"
+    },
+    {
+      "timestamp": "20150403093442",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200121.html"
+    },
+    {
+      "timestamp": "20150406021831",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200121l.html"
+    },
+    {
+      "timestamp": "20150415085510",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200125.html"
+    },
+    {
+      "timestamp": "20150529010226",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200125l.html"
+    },
+    {
+      "timestamp": "20150702015411",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200242.html"
+    },
+    {
+      "timestamp": "20150405232139",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200256.html"
+    },
+    {
+      "timestamp": "20150517013550",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200256l.html"
+    },
+    {
+      "timestamp": "20150614002903",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200281.html"
+    },
+    {
+      "timestamp": "20150405232144",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200297.html"
+    },
+    {
+      "timestamp": "20150718142200",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200297l.html"
+    },
+    {
+      "timestamp": "20150417180144",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200316.html"
+    },
+    {
+      "timestamp": "20150616074653",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200342.html"
+    },
+    {
+      "timestamp": "20150615020539",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/909200357.html"
+    },
+    {
+      "timestamp": "20150402025920",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/910200017.html"
+    },
+    {
+      "timestamp": "20150527213238",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/910200038.html"
+    },
+    {
+      "timestamp": "20150501214607",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/910200062.html"
+    },
+    {
+      "timestamp": "20150426063602",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/910200074.html"
+    },
+    {
+      "timestamp": "20150405031743",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/910200074l.html"
+    },
+    {
+      "timestamp": "20150406010044",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/910200149.html"
+    },
+    {
+      "timestamp": "20150508052211",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/910200168.html"
+    },
+    {
+      "timestamp": "20150620045728",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/910200180.html"
+    },
+    {
+      "timestamp": "20150407000220",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/910200198.html"
+    },
+    {
+      "timestamp": "20150404233220",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/910200258.html"
+    },
+    {
+      "timestamp": "20150813011108",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/910200339.html"
+    },
+    {
+      "timestamp": "20150414005932",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/910200360.html"
+    },
+    {
+      "timestamp": "20150417123550",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200012.html"
+    },
+    {
+      "timestamp": "20150809131008",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200025.html"
+    },
+    {
+      "timestamp": "20150406010054",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200032.html"
+    },
+    {
+      "timestamp": "20150904101726",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200036.html"
+    },
+    {
+      "timestamp": "20150404233459",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200040.html"
+    },
+    {
+      "timestamp": "20150423090445",
+      "original": "http://otn.fujitv.co.jp/b_hp/911200048.html"
+    },
+    {
+      "timestamp": "20150428160616",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200049.html"
+    },
+    {
+      "timestamp": "20150416032813",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200059.html"
+    },
+    {
+      "timestamp": "20150405033340",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200069.html"
+    },
+    {
+      "timestamp": "20150416032930",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200070.html"
+    },
+    {
+      "timestamp": "20151209225803",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200074.html"
+    },
+    {
+      "timestamp": "20150423135715",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200117.html"
+    },
+    {
+      "timestamp": "20150520122723",
+      "original": "http://otn.fujitv.co.jp/b_hp/911200142.html"
+    },
+    {
+      "timestamp": "20150614002909",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200153.html"
+    },
+    {
+      "timestamp": "20150418112734",
+      "original": "http://otn.fujitv.co.jp/b_hp/911200159.html"
+    },
+    {
+      "timestamp": "20150703013328",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200163.html"
+    },
+    {
+      "timestamp": "20150416033349",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200165.html"
+    },
+    {
+      "timestamp": "20150415021627",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200167.html"
+    },
+    {
+      "timestamp": "20150415234906",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200167l.html"
+    },
+    {
+      "timestamp": "20151008183509",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200175.html"
+    },
+    {
+      "timestamp": "20150603004809",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200190.html"
+    },
+    {
+      "timestamp": "20150607031519",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200199.html"
+    },
+    {
+      "timestamp": "20150902222653",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200202.html"
+    },
+    {
+      "timestamp": "20150720220022",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200212.html"
+    },
+    {
+      "timestamp": "20150901225029",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200230.html"
+    },
+    {
+      "timestamp": "20150902213027",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200230l.html"
+    },
+    {
+      "timestamp": "20150711041512",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200243.html"
+    },
+    {
+      "timestamp": "20150711231321",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200243l.html"
+    },
+    {
+      "timestamp": "20150405064507",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200244.html"
+    },
+    {
+      "timestamp": "20150418162938",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200245.html"
+    },
+    {
+      "timestamp": "20150420070305",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200247.html"
+    },
+    {
+      "timestamp": "20150907224559",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200247l.html"
+    },
+    {
+      "timestamp": "20150718061554",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200259.html"
+    },
+    {
+      "timestamp": "20151108215033",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200268.html"
+    },
+    {
+      "timestamp": "20150706093835",
+      "original": "http://otn.fujitv.co.jp/b_hp/911200287.html"
+    },
+    {
+      "timestamp": "20151125012430",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200311.html"
+    },
+    {
+      "timestamp": "20151008171312",
+      "original": "http://otn.fujitv.co.jp/b_hp/911200314.html"
+    },
+    {
+      "timestamp": "20150603004814",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200323.html"
+    },
+    {
+      "timestamp": "20150512050800",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200329.html"
+    },
+    {
+      "timestamp": "20151123015053",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200331.html"
+    },
+    {
+      "timestamp": "20150518013015",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/911200339.html"
+    },
+    {
+      "timestamp": "20150525235848",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200001.html"
+    },
+    {
+      "timestamp": "20150709030508",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200009.html"
+    },
+    {
+      "timestamp": "20150411092429",
+      "original": "http://otn.fujitv.co.jp/b_hp/912200014.html"
+    },
+    {
+      "timestamp": "20150525014352",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200015.html"
+    },
+    {
+      "timestamp": "20150714000832",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200016.html"
+    },
+    {
+      "timestamp": "20150715004344",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200016l.html"
+    },
+    {
+      "timestamp": "20150617200637",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200017.html"
+    },
+    {
+      "timestamp": "20150618182901",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200017l.html"
+    },
+    {
+      "timestamp": "20150713204949",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200033.html"
+    },
+    {
+      "timestamp": "20150427040357",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200037.html"
+    },
+    {
+      "timestamp": "20150405064511",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200049.html"
+    },
+    {
+      "timestamp": "20150422232646",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200049l.html"
+    },
+    {
+      "timestamp": "20150426134300",
+      "original": "http://otn.fujitv.co.jp/b_hp/912200051.html"
+    },
+    {
+      "timestamp": "20150816020421",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200061.html"
+    },
+    {
+      "timestamp": "20150424035722",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200064.html"
+    },
+    {
+      "timestamp": "20151201043349",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200070.html"
+    },
+    {
+      "timestamp": "20150427085146",
+      "original": "http://otn.fujitv.co.jp/b_hp/912200071.html"
+    },
+    {
+      "timestamp": "20150821000514",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200082.html"
+    },
+    {
+      "timestamp": "20150804033602",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200083.html"
+    },
+    {
+      "timestamp": "20150423131729",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200084.html"
+    },
+    {
+      "timestamp": "20150924023505",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200090.html"
+    },
+    {
+      "timestamp": "20150403100249",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200091.html"
+    },
+    {
+      "timestamp": "20150426133619",
+      "original": "http://otn.fujitv.co.jp/b_hp/912200093.html"
+    },
+    {
+      "timestamp": "20150507013959",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200094.html"
+    },
+    {
+      "timestamp": "20150404233226",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200096.html"
+    },
+    {
+      "timestamp": "20150417180150",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200097.html"
+    },
+    {
+      "timestamp": "20150508030251",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200100.html"
+    },
+    {
+      "timestamp": "20150428180858",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200101.html"
+    },
+    {
+      "timestamp": "20150501210119",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200102.html"
+    },
+    {
+      "timestamp": "20150821000754",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200105.html"
+    },
+    {
+      "timestamp": "20150403233208",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200107.html"
+    },
+    {
+      "timestamp": "20150404233233",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200107l.html"
+    },
+    {
+      "timestamp": "20150925162110",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200109.html"
+    },
+    {
+      "timestamp": "20150926102815",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200109l.html"
+    },
+    {
+      "timestamp": "20150405064811",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200111.html"
+    },
+    {
+      "timestamp": "20150522024320",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200111l.html"
+    },
+    {
+      "timestamp": "20150722234906",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200115.html"
+    },
+    {
+      "timestamp": "20150407010035",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200121.html"
+    },
+    {
+      "timestamp": "20150428062150",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200121l.html"
+    },
+    {
+      "timestamp": "20150522225459",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200125.html"
+    },
+    {
+      "timestamp": "20151116013048",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200128.html"
+    },
+    {
+      "timestamp": "20150419004758",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200132.html"
+    },
+    {
+      "timestamp": "20151011220425",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200133.html"
+    },
+    {
+      "timestamp": "20150416032818",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200134.html"
+    },
+    {
+      "timestamp": "20150527220531",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200134l.html"
+    },
+    {
+      "timestamp": "20150411072119",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200139.html"
+    },
+    {
+      "timestamp": "20150907020840",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200140.html"
+    },
+    {
+      "timestamp": "20150405031747",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200146.html"
+    },
+    {
+      "timestamp": "20150502022719",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200158.html"
+    },
+    {
+      "timestamp": "20150418182905",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200167.html"
+    },
+    {
+      "timestamp": "20150712224433",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200168.html"
+    },
+    {
+      "timestamp": "20150814025632",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200171.html"
+    },
+    {
+      "timestamp": "20150418162944",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200176.html"
+    },
+    {
+      "timestamp": "20151023222054",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200181.html"
+    },
+    {
+      "timestamp": "20151024235940",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200181l.html"
+    },
+    {
+      "timestamp": "20150527003810",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200184.html"
+    },
+    {
+      "timestamp": "20150527220536",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200184l.html"
+    },
+    {
+      "timestamp": "20150705175106",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200192.html"
+    },
+    {
+      "timestamp": "20150417025350",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200202.html"
+    },
+    {
+      "timestamp": "20150517032236",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200212.html"
+    },
+    {
+      "timestamp": "20150508030256",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200214.html"
+    },
+    {
+      "timestamp": "20151120120036",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200217.html"
+    },
+    {
+      "timestamp": "20150406021836",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200220.html"
+    },
+    {
+      "timestamp": "20150714000837",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200223.html"
+    },
+    {
+      "timestamp": "20150707003801",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200224.html"
+    },
+    {
+      "timestamp": "20150714170352",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200237.html"
+    },
+    {
+      "timestamp": "20150714000844",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200241.html"
+    },
+    {
+      "timestamp": "20150815011935",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200243.html"
+    },
+    {
+      "timestamp": "20150804033606",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200248.html"
+    },
+    {
+      "timestamp": "20150529210228",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200253.html"
+    },
+    {
+      "timestamp": "20150516023630",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200255.html"
+    },
+    {
+      "timestamp": "20150423173022",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200263.html"
+    },
+    {
+      "timestamp": "20150508030331",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200264.html"
+    },
+    {
+      "timestamp": "20150911185508",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200274.html"
+    },
+    {
+      "timestamp": "20150430055353",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200280.html"
+    },
+    {
+      "timestamp": "20150816020426",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200280l.html"
+    },
+    {
+      "timestamp": "20151014024131",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200281.html"
+    },
+    {
+      "timestamp": "20151215011717",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200285.html"
+    },
+    {
+      "timestamp": "20150508052154",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200298.html"
+    },
+    {
+      "timestamp": "20150406235907",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200304.html"
+    },
+    {
+      "timestamp": "20150416032823",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200304l.html"
+    },
+    {
+      "timestamp": "20151229065456",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200308.html"
+    },
+    {
+      "timestamp": "20150424035347",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200312.html"
+    },
+    {
+      "timestamp": "20150423173317",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200313.html"
+    },
+    {
+      "timestamp": "20150828022629",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200315.html"
+    },
+    {
+      "timestamp": "20150815012005",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200320.html"
+    },
+    {
+      "timestamp": "20151001034853",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200323.html"
+    },
+    {
+      "timestamp": "20150405064516",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200330.html"
+    },
+    {
+      "timestamp": "20150616055434",
+      "original": "http://otn.fujitv.co.jp/b_hp/912200337.html"
+    },
+    {
+      "timestamp": "20150509073309",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/912200339.html"
+    },
+    {
+      "timestamp": "20150621053426",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200012.html"
+    },
+    {
+      "timestamp": "20150528015151",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200018.html"
+    },
+    {
+      "timestamp": "20150914012217",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200028.html"
+    },
+    {
+      "timestamp": "20150804033611",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200029.html"
+    },
+    {
+      "timestamp": "20150820011210",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200029l.html"
+    },
+    {
+      "timestamp": "20150430061732",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200030.html"
+    },
+    {
+      "timestamp": "20150718221647",
+      "original": "http://otn.fujitv.co.jp/b_hp/913200034.html"
+    },
+    {
+      "timestamp": "20150423120813",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200043.html"
+    },
+    {
+      "timestamp": "20150418054109",
+      "original": "http://otn.fujitv.co.jp/b_hp/913200046.html"
+    },
+    {
+      "timestamp": "20150405033346",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200047.html"
+    },
+    {
+      "timestamp": "20150409065448",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200049.html"
+    },
+    {
+      "timestamp": "20150821000834",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200050.html"
+    },
+    {
+      "timestamp": "20150811045248",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200051.html"
+    },
+    {
+      "timestamp": "20151216225603",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200052.html"
+    },
+    {
+      "timestamp": "20150403233214",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200057.html"
+    },
+    {
+      "timestamp": "20150601225810",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200058.html"
+    },
+    {
+      "timestamp": "20150430032404",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200062.html"
+    },
+    {
+      "timestamp": "20150614005824",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200062l.html"
+    },
+    {
+      "timestamp": "20150419004803",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200072.html"
+    },
+    {
+      "timestamp": "20150901024930",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200073.html"
+    },
+    {
+      "timestamp": "20150420071000",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200074.html"
+    },
+    {
+      "timestamp": "20151014232522",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200074l.html"
+    },
+    {
+      "timestamp": "20150731010829",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200082.html"
+    },
+    {
+      "timestamp": "20150426194140",
+      "original": "http://otn.fujitv.co.jp/b_hp/913200083.html"
+    },
+    {
+      "timestamp": "20150502084539",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200084.html"
+    },
+    {
+      "timestamp": "20150502085317",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200084l.html"
+    },
+    {
+      "timestamp": "20150625110546",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200087.html"
+    },
+    {
+      "timestamp": "20150405064522",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200095.html"
+    },
+    {
+      "timestamp": "20150418221836",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200097.html"
+    },
+    {
+      "timestamp": "20150813011111",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200099.html"
+    },
+    {
+      "timestamp": "20150423172654",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200107.html"
+    },
+    {
+      "timestamp": "20150614002913",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200110.html"
+    },
+    {
+      "timestamp": "20151114235554",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200113.html"
+    },
+    {
+      "timestamp": "20150728032922",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200115.html"
+    },
+    {
+      "timestamp": "20150705175111",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200119.html"
+    },
+    {
+      "timestamp": "20150418235520",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200127.html"
+    },
+    {
+      "timestamp": "20150614002918",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200130.html"
+    },
+    {
+      "timestamp": "20150818184815",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200140.html"
+    },
+    {
+      "timestamp": "20150708214528",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200143.html"
+    },
+    {
+      "timestamp": "20150702015415",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200144.html"
+    },
+    {
+      "timestamp": "20151009041739",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200154.html"
+    },
+    {
+      "timestamp": "20150428182911",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200158.html"
+    },
+    {
+      "timestamp": "20150406010106",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200160.html"
+    },
+    {
+      "timestamp": "20150406235912",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200161.html"
+    },
+    {
+      "timestamp": "20151009041746",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200168.html"
+    },
+    {
+      "timestamp": "20150718123411",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200172.html"
+    },
+    {
+      "timestamp": "20151127001459",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200173.html"
+    },
+    {
+      "timestamp": "20151014024146",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200176.html"
+    },
+    {
+      "timestamp": "20150619001004",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200187.html"
+    },
+    {
+      "timestamp": "20150718161200",
+      "original": "http://otn.fujitv.co.jp/b_hp/913200191.html"
+    },
+    {
+      "timestamp": "20150418205812",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200194.html"
+    },
+    {
+      "timestamp": "20150403092300",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200200.html"
+    },
+    {
+      "timestamp": "20150419005914",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200201.html"
+    },
+    {
+      "timestamp": "20150902222709",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200203.html"
+    },
+    {
+      "timestamp": "20150729004431",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200207.html"
+    },
+    {
+      "timestamp": "20150408065338",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200210.html"
+    },
+    {
+      "timestamp": "20150426140228",
+      "original": "http://otn.fujitv.co.jp/b_hp/913200214.html"
+    },
+    {
+      "timestamp": "20150915215857",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200218.html"
+    },
+    {
+      "timestamp": "20150418105622",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200220.html"
+    },
+    {
+      "timestamp": "20150515184456",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200221.html"
+    },
+    {
+      "timestamp": "20150514172425",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200233.html"
+    },
+    {
+      "timestamp": "20150429035227",
+      "original": "http://otn.fujitv.co.jp/b_hp/913200237.html"
+    },
+    {
+      "timestamp": "20150418183533",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200241.html"
+    },
+    {
+      "timestamp": "20151006074554",
+      "original": "http://otn.fujitv.co.jp/b_hp/913200244.html"
+    },
+    {
+      "timestamp": "20150613221221",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200250.html"
+    },
+    {
+      "timestamp": "20150404233503",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200254.html"
+    },
+    {
+      "timestamp": "20150401033451",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200255.html"
+    },
+    {
+      "timestamp": "20150905073016",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200257.html"
+    },
+    {
+      "timestamp": "20150406045115",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200258.html"
+    },
+    {
+      "timestamp": "20151001034857",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200261.html"
+    },
+    {
+      "timestamp": "20151001034903",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200261l.html"
+    },
+    {
+      "timestamp": "20150607031528",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200262.html"
+    },
+    {
+      "timestamp": "20150527213448",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200263.html"
+    },
+    {
+      "timestamp": "20151215011723",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200265.html"
+    },
+    {
+      "timestamp": "20150610020158",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200269.html"
+    },
+    {
+      "timestamp": "20150403014457",
+      "original": "http://otn.fujitv.co.jp/b_hp/913200271.html"
+    },
+    {
+      "timestamp": "20150402025923",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200274.html"
+    },
+    {
+      "timestamp": "20150410030921",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200281.html"
+    },
+    {
+      "timestamp": "20150424041458",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200285.html"
+    },
+    {
+      "timestamp": "20150706010624",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200291.html"
+    },
+    {
+      "timestamp": "20150419004211",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200293.html"
+    },
+    {
+      "timestamp": "20150403031523",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200296.html"
+    },
+    {
+      "timestamp": "20150712224439",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200299.html"
+    },
+    {
+      "timestamp": "20150418235524",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200311.html"
+    },
+    {
+      "timestamp": "20151127001503",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200316.html"
+    },
+    {
+      "timestamp": "20150418181413",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200317.html"
+    },
+    {
+      "timestamp": "20151003031906",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200318.html"
+    },
+    {
+      "timestamp": "20151119014543",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/913200322.html"
+    },
+    {
+      "timestamp": "20151118000759",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200002.html"
+    },
+    {
+      "timestamp": "20150707010120",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200004.html"
+    },
+    {
+      "timestamp": "20150412203508",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200010.html"
+    },
+    {
+      "timestamp": "20150419005918",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200013.html"
+    },
+    {
+      "timestamp": "20150529064021",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200014.html"
+    },
+    {
+      "timestamp": "20150407060447",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200015.html"
+    },
+    {
+      "timestamp": "20150706010629",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200016.html?"
+    },
+    {
+      "timestamp": "20150904091348",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200019.html"
+    },
+    {
+      "timestamp": "20150423135250",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200020.html"
+    },
+    {
+      "timestamp": "20150419021736",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200024.html"
+    },
+    {
+      "timestamp": "20150419015804",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200029.html"
+    },
+    {
+      "timestamp": "20150417025355",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200032.html"
+    },
+    {
+      "timestamp": "20150428212558",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200032l.html"
+    },
+    {
+      "timestamp": "20151126211123",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200036.html"
+    },
+    {
+      "timestamp": "20150408065227",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200039.html"
+    },
+    {
+      "timestamp": "20150425143939",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200041.html"
+    },
+    {
+      "timestamp": "20150419004216",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200045.html"
+    },
+    {
+      "timestamp": "20150419020423",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200048.html"
+    },
+    {
+      "timestamp": "20150408065541",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200049.html"
+    },
+    {
+      "timestamp": "20150409030302",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200052.html"
+    },
+    {
+      "timestamp": "20150406010110",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200055.html"
+    },
+    {
+      "timestamp": "20150417043400",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200056.html"
+    },
+    {
+      "timestamp": "20150419155718",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200057.html"
+    },
+    {
+      "timestamp": "20150419004808",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200058.html"
+    },
+    {
+      "timestamp": "20150419004221",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200059.html"
+    },
+    {
+      "timestamp": "20150430061316",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200060.html"
+    },
+    {
+      "timestamp": "20150419000101",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200064.html"
+    },
+    {
+      "timestamp": "20150418181418",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200065.html"
+    },
+    {
+      "timestamp": "20150407010045",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200066.html"
+    },
+    {
+      "timestamp": "20150407021109",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200071.html"
+    },
+    {
+      "timestamp": "20150404233237",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200072.html"
+    },
+    {
+      "timestamp": "20150419130931",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200073.html"
+    },
+    {
+      "timestamp": "20150406045121",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200074.html"
+    },
+    {
+      "timestamp": "20150804004046",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200074l.html"
+    },
+    {
+      "timestamp": "20150403092851",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200075.html"
+    },
+    {
+      "timestamp": "20150503222308",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200076.html"
+    },
+    {
+      "timestamp": "20151213094038",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200079.html"
+    },
+    {
+      "timestamp": "20150407021115",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200080.html"
+    },
+    {
+      "timestamp": "20150626175317",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200081.html"
+    },
+    {
+      "timestamp": "20150613012652",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200082.html"
+    },
+    {
+      "timestamp": "20150419012233",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200084.html"
+    },
+    {
+      "timestamp": "20150411131656",
+      "original": "http://otn.fujitv.co.jp/b_hp/914200085.html"
+    },
+    {
+      "timestamp": "20150418105636",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200086.html"
+    },
+    {
+      "timestamp": "20150525014429",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200086l.html"
+    },
+    {
+      "timestamp": "20150408231709",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200087.html"
+    },
+    {
+      "timestamp": "20150418154957",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200088.html"
+    },
+    {
+      "timestamp": "20150418110332",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200089.html"
+    },
+    {
+      "timestamp": "20150403233220",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200090.html"
+    },
+    {
+      "timestamp": "20150404233242",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200090l.html"
+    },
+    {
+      "timestamp": "20150408234539",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200092.html"
+    },
+    {
+      "timestamp": "20150403092857",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200093.html"
+    },
+    {
+      "timestamp": "20150817225432",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200093l.html"
+    },
+    {
+      "timestamp": "20150430061321",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200095.html"
+    },
+    {
+      "timestamp": "20150419012238",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200096.html"
+    },
+    {
+      "timestamp": "20150406235916",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200097.html"
+    },
+    {
+      "timestamp": "20150418110827",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200098.html"
+    },
+    {
+      "timestamp": "20150419015809",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200100.html"
+    },
+    {
+      "timestamp": "20150418162029",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200101.html"
+    },
+    {
+      "timestamp": "20150418162034",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200102.html"
+    },
+    {
+      "timestamp": "20150503002550",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200102l.html"
+    },
+    {
+      "timestamp": "20150405064532",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200104.html"
+    },
+    {
+      "timestamp": "20150501125105",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200106.html"
+    },
+    {
+      "timestamp": "20150408234544",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200109.html"
+    },
+    {
+      "timestamp": "20150419054646",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200113.html"
+    },
+    {
+      "timestamp": "20150418011201",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200114.html"
+    },
+    {
+      "timestamp": "20150417025611",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200118.html"
+    },
+    {
+      "timestamp": "20150427101314",
+      "original": "http://otn.fujitv.co.jp/b_hp/914200119.html"
+    },
+    {
+      "timestamp": "20150418143916",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200120.html"
+    },
+    {
+      "timestamp": "20150624222020",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200122.html"
+    },
+    {
+      "timestamp": "20150722204755",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200125.html"
+    },
+    {
+      "timestamp": "20150404233509",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200127.html"
+    },
+    {
+      "timestamp": "20150430063632",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200128.html"
+    },
+    {
+      "timestamp": "20150627175711",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200130.html"
+    },
+    {
+      "timestamp": "20150419021741",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200132.html"
+    },
+    {
+      "timestamp": "20150405233835",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200133.html"
+    },
+    {
+      "timestamp": "20150419005924",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200134.html"
+    },
+    {
+      "timestamp": "20150427150634",
+      "original": "http://otn.fujitv.co.jp/b_hp/914200136.html"
+    },
+    {
+      "timestamp": "20150419012243",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200137.html"
+    },
+    {
+      "timestamp": "20150706002439",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200138.html"
+    },
+    {
+      "timestamp": "20150406235923",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200140.html"
+    },
+    {
+      "timestamp": "20150410231159",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200142.html"
+    },
+    {
+      "timestamp": "20150405233841",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200145.html"
+    },
+    {
+      "timestamp": "20150402033820",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200146.html"
+    },
+    {
+      "timestamp": "20150419002828",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200149.html"
+    },
+    {
+      "timestamp": "20150424003605",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200151.html"
+    },
+    {
+      "timestamp": "20150428062155",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200153.html"
+    },
+    {
+      "timestamp": "20150723151541",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200158.html"
+    },
+    {
+      "timestamp": "20150406010115",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200159.html"
+    },
+    {
+      "timestamp": "20150423140325",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200160.html"
+    },
+    {
+      "timestamp": "20150502102137",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200161.html"
+    },
+    {
+      "timestamp": "20150426064037",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200162.html"
+    },
+    {
+      "timestamp": "20150419000618",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200163.html"
+    },
+    {
+      "timestamp": "20150418205818",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200166.html"
+    },
+    {
+      "timestamp": "20150418205823",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200167.html"
+    },
+    {
+      "timestamp": "20150406010120",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200169.html"
+    },
+    {
+      "timestamp": "20150426062139",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200170.html"
+    },
+    {
+      "timestamp": "20150531010050",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200172.html"
+    },
+    {
+      "timestamp": "20150410100930",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200174.html"
+    },
+    {
+      "timestamp": "20150428061105",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200177.html"
+    },
+    {
+      "timestamp": "20150403092902",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200178.html?"
+    },
+    {
+      "timestamp": "20150419223704",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200180.html"
+    },
+    {
+      "timestamp": "20150406050406",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200181.html"
+    },
+    {
+      "timestamp": "20150901153630",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200181l.html"
+    },
+    {
+      "timestamp": "20150405232149",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200182.html"
+    },
+    {
+      "timestamp": "20150405233106",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200184.html"
+    },
+    {
+      "timestamp": "20150527213459",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200185.html"
+    },
+    {
+      "timestamp": "20150428131222",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200188.html"
+    },
+    {
+      "timestamp": "20150403100254",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200190.html"
+    },
+    {
+      "timestamp": "20150614002923",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200191.html"
+    },
+    {
+      "timestamp": "20150419021746",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200192.html"
+    },
+    {
+      "timestamp": "20150907091202",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200193.html"
+    },
+    {
+      "timestamp": "20150723150941",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200194.html"
+    },
+    {
+      "timestamp": "20150406070021",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200195.html"
+    },
+    {
+      "timestamp": "20150418205827",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200196.html"
+    },
+    {
+      "timestamp": "20150522024324",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200196l.html"
+    },
+    {
+      "timestamp": "20150718122938",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200197.html"
+    },
+    {
+      "timestamp": "20150414020853",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200198.html"
+    },
+    {
+      "timestamp": "20150421222839",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200202.html"
+    },
+    {
+      "timestamp": "20150405031757",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200204.html"
+    },
+    {
+      "timestamp": "20150831180141",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200205.html"
+    },
+    {
+      "timestamp": "20150403233225",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200209.html"
+    },
+    {
+      "timestamp": "20150403233231",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200210.html"
+    },
+    {
+      "timestamp": "20150424035621",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200212.html"
+    },
+    {
+      "timestamp": "20150405233846",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200213.html"
+    },
+    {
+      "timestamp": "20150429020747",
+      "original": "http://otn.fujitv.co.jp/b_hp/914200214.html"
+    },
+    {
+      "timestamp": "20150706191326",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200215.html"
+    },
+    {
+      "timestamp": "20150716171108",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200216.html"
+    },
+    {
+      "timestamp": "20150420004700",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200217.html"
+    },
+    {
+      "timestamp": "20150925162127",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200219.html"
+    },
+    {
+      "timestamp": "20150417175916",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200221.html"
+    },
+    {
+      "timestamp": "20150517013608",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200222.html"
+    },
+    {
+      "timestamp": "20150420070012",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200223.html"
+    },
+    {
+      "timestamp": "20150403100259",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200224.html"
+    },
+    {
+      "timestamp": "20150423135719",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200225.html"
+    },
+    {
+      "timestamp": "20150418145515",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200227.html"
+    },
+    {
+      "timestamp": "20150405033350",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200230.html"
+    },
+    {
+      "timestamp": "20150607031535",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200231.html"
+    },
+    {
+      "timestamp": "20150410022335",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200232.html"
+    },
+    {
+      "timestamp": "20150407001920",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200233.html"
+    },
+    {
+      "timestamp": "20150419021756",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200234.html"
+    },
+    {
+      "timestamp": "20150403092305",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200235.html"
+    },
+    {
+      "timestamp": "20150405064815",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200236.html"
+    },
+    {
+      "timestamp": "20150409013034",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200238.html"
+    },
+    {
+      "timestamp": "20150407021120",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200242.html"
+    },
+    {
+      "timestamp": "20150419001536",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200243.html"
+    },
+    {
+      "timestamp": "20150520223205",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200245.html"
+    },
+    {
+      "timestamp": "20150407021125",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200246.html"
+    },
+    {
+      "timestamp": "20150723150945",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200247.html"
+    },
+    {
+      "timestamp": "20150403100304",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200248.html"
+    },
+    {
+      "timestamp": "20150428131228",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200249.html"
+    },
+    {
+      "timestamp": "20150929194415",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200250.html"
+    },
+    {
+      "timestamp": "20150410022340",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200251.html"
+    },
+    {
+      "timestamp": "20150718142205",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200252.html"
+    },
+    {
+      "timestamp": "20150718142214",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200253.html"
+    },
+    {
+      "timestamp": "20150929045304",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200254.html"
+    },
+    {
+      "timestamp": "20150405064820",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200255.html"
+    },
+    {
+      "timestamp": "20150427062939",
+      "original": "http://otn.fujitv.co.jp/b_hp/914200256.html"
+    },
+    {
+      "timestamp": "20150401033654",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200257.html"
+    },
+    {
+      "timestamp": "20150418184405",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200259.html"
+    },
+    {
+      "timestamp": "20150407010109",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200263.html"
+    },
+    {
+      "timestamp": "20150611032809",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200263l.html"
+    },
+    {
+      "timestamp": "20150413030550",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200264.html"
+    },
+    {
+      "timestamp": "20150402034107",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200265.html"
+    },
+    {
+      "timestamp": "20151021001600",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200266.html"
+    },
+    {
+      "timestamp": "20150423172700",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200267.html"
+    },
+    {
+      "timestamp": "20150428060153",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200268.html"
+    },
+    {
+      "timestamp": "20150802000142",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200272.html"
+    },
+    {
+      "timestamp": "20150406235926",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200273.html"
+    },
+    {
+      "timestamp": "20150407055912",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200274.html"
+    },
+    {
+      "timestamp": "20150405031802",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200275.html"
+    },
+    {
+      "timestamp": "20150502093527",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200276.html"
+    },
+    {
+      "timestamp": "20150407021129",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200279.html"
+    },
+    {
+      "timestamp": "20150413024512",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200280.html"
+    },
+    {
+      "timestamp": "20150407010114",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200281.html"
+    },
+    {
+      "timestamp": "20150419002833",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200282.html"
+    },
+    {
+      "timestamp": "20150403100311",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/914200283.html"
+    },
+    {
+      "timestamp": "20150422014955",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200001.html"
+    },
+    {
+      "timestamp": "20150419130913",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200002.html"
+    },
+    {
+      "timestamp": "20150509023209",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200003.html"
+    },
+    {
+      "timestamp": "20150817225505",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200004.html"
+    },
+    {
+      "timestamp": "20150517032248",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200005.html"
+    },
+    {
+      "timestamp": "20150405033356",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200006.html"
+    },
+    {
+      "timestamp": "20150419003505",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200007.html"
+    },
+    {
+      "timestamp": "20151028150920",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200008.html"
+    },
+    {
+      "timestamp": "20150405031807",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200009.html"
+    },
+    {
+      "timestamp": "20150418221849",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200010.html"
+    },
+    {
+      "timestamp": "20150409081133",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200011.html"
+    },
+    {
+      "timestamp": "20150405031812",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200012.html"
+    },
+    {
+      "timestamp": "20150418162045",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200013.html"
+    },
+    {
+      "timestamp": "20150419012248",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200014.html"
+    },
+    {
+      "timestamp": "20150418184405",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200015.html"
+    },
+    {
+      "timestamp": "20150601002730",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200017.html"
+    },
+    {
+      "timestamp": "20150425002317",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200018.html"
+    },
+    {
+      "timestamp": "20150419002839",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200019.html"
+    },
+    {
+      "timestamp": "20150402135419",
+      "original": "http://otn.fujitv.co.jp/b_hp/915200020.html"
+    },
+    {
+      "timestamp": "20150419002843",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200021.html"
+    },
+    {
+      "timestamp": "20150415012305",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200022.html"
+    },
+    {
+      "timestamp": "20150423120823",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200023.html"
+    },
+    {
+      "timestamp": "20151005062849",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200024.html"
+    },
+    {
+      "timestamp": "20150418182138",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200025.html"
+    },
+    {
+      "timestamp": "20150403100314",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200026.html"
+    },
+    {
+      "timestamp": "20150907091611",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200029.html"
+    },
+    {
+      "timestamp": "20150426063608",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200030.html"
+    },
+    {
+      "timestamp": "20150511205622",
+      "original": "http://otn.fujitv.co.jp/b_hp/915200031.html?pagelink=rmenu_rmd_page"
+    },
+    {
+      "timestamp": "20150402025929",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200032.html"
+    },
+    {
+      "timestamp": "20150505235159",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200033.html"
+    },
+    {
+      "timestamp": "20150408065343",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200034.html"
+    },
+    {
+      "timestamp": "20150401033455",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200035.html"
+    },
+    {
+      "timestamp": "20150403100320",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200036.html"
+    },
+    {
+      "timestamp": "20150529210232",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200037.html"
+    },
+    {
+      "timestamp": "20150723151546",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200038.html"
+    },
+    {
+      "timestamp": "20150408065232",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200039.html"
+    },
+    {
+      "timestamp": "20150420004707",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200040.html"
+    },
+    {
+      "timestamp": "20151225112529",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200041.html"
+    },
+    {
+      "timestamp": "20150419161805",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200043.html"
+    },
+    {
+      "timestamp": "20150404233247",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200044.html"
+    },
+    {
+      "timestamp": "20150403233241",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200045.html"
+    },
+    {
+      "timestamp": "20150405232154",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200046.html"
+    },
+    {
+      "timestamp": "20150405031822",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200047.html"
+    },
+    {
+      "timestamp": "20150404233513",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200048.html"
+    },
+    {
+      "timestamp": "20150410100934",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200049.html"
+    },
+    {
+      "timestamp": "20150407002101",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200052.html"
+    },
+    {
+      "timestamp": "20150407021135",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200053.html"
+    },
+    {
+      "timestamp": "20150403233246",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200054.html"
+    },
+    {
+      "timestamp": "20150405031828",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200055.html"
+    },
+    {
+      "timestamp": "20150405031832",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200056.html"
+    },
+    {
+      "timestamp": "20150408002127",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200057.html"
+    },
+    {
+      "timestamp": "20150403233251",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200058.html"
+    },
+    {
+      "timestamp": "20150403031528",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200059.html"
+    },
+    {
+      "timestamp": "20150527213503",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200060.html"
+    },
+    {
+      "timestamp": "20150410101748",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200061.html"
+    },
+    {
+      "timestamp": "20150404233258",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200062.html"
+    },
+    {
+      "timestamp": "20150406010125",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200063.html"
+    },
+    {
+      "timestamp": "20150403233256",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200065.html"
+    },
+    {
+      "timestamp": "20150407021139",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200066.html"
+    },
+    {
+      "timestamp": "20150416204705",
+      "original": "http://otn.fujitv.co.jp/b_hp/915200067.html"
+    },
+    {
+      "timestamp": "20150418113113",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200068.html"
+    },
+    {
+      "timestamp": "20150419043047",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200069.html"
+    },
+    {
+      "timestamp": "20150417025616",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200070.html"
+    },
+    {
+      "timestamp": "20150508071349",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200071.html"
+    },
+    {
+      "timestamp": "20150417175926",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200072.html"
+    },
+    {
+      "timestamp": "20150419223731",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200074.html"
+    },
+    {
+      "timestamp": "20150410231204",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200075.html"
+    },
+    {
+      "timestamp": "20150504055929",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200076.html"
+    },
+    {
+      "timestamp": "20150503222317",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200077.html"
+    },
+    {
+      "timestamp": "20150516023655",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200078.html"
+    },
+    {
+      "timestamp": "20150507015019",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200079.html"
+    },
+    {
+      "timestamp": "20150509073638",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200080.html"
+    },
+    {
+      "timestamp": "20150424013508",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200081.html"
+    },
+    {
+      "timestamp": "20150427220904",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200082.html"
+    },
+    {
+      "timestamp": "20150428230649",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200083.html"
+    },
+    {
+      "timestamp": "20150718142220",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200085.html"
+    },
+    {
+      "timestamp": "20150512050842",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200086.html"
+    },
+    {
+      "timestamp": "20150509211527",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200087.html"
+    },
+    {
+      "timestamp": "20150516023700",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200088.html"
+    },
+    {
+      "timestamp": "20150516013208",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200089.html"
+    },
+    {
+      "timestamp": "20150517013615",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200090.html"
+    },
+    {
+      "timestamp": "20150501134215",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200091.html"
+    },
+    {
+      "timestamp": "20150503200301",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200092.html"
+    },
+    {
+      "timestamp": "20150519021241",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200093.html"
+    },
+    {
+      "timestamp": "20150511005721",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200094.html"
+    },
+    {
+      "timestamp": "20150720220027",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200095.html"
+    },
+    {
+      "timestamp": "20150501134220",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200096.html"
+    },
+    {
+      "timestamp": "20150516023705",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200097.html"
+    },
+    {
+      "timestamp": "20150507124253",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200098.html"
+    },
+    {
+      "timestamp": "20150524000317",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200099.html"
+    },
+    {
+      "timestamp": "20150614041738",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200101.html"
+    },
+    {
+      "timestamp": "20150607031539",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200102.html"
+    },
+    {
+      "timestamp": "20150607215534",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200103.html"
+    },
+    {
+      "timestamp": "20150706211357",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200104.html"
+    },
+    {
+      "timestamp": "20150706072804",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200105.html"
+    },
+    {
+      "timestamp": "20150608175026",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200106.html"
+    },
+    {
+      "timestamp": "20150804033616",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200107.html"
+    },
+    {
+      "timestamp": "20150625110556",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200108.html"
+    },
+    {
+      "timestamp": "20150627175604",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200109.html"
+    },
+    {
+      "timestamp": "20150906041659",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200110.html"
+    },
+    {
+      "timestamp": "20150627175715",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200112.html"
+    },
+    {
+      "timestamp": "20150805011359",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200114.html"
+    },
+    {
+      "timestamp": "20150623230835",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200115.html"
+    },
+    {
+      "timestamp": "20150707054124",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200116.html"
+    },
+    {
+      "timestamp": "20150628194520",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200117.html"
+    },
+    {
+      "timestamp": "20150714000849",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200118.html"
+    },
+    {
+      "timestamp": "20150719235730",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200119.html"
+    },
+    {
+      "timestamp": "20150719235734",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200121.html"
+    },
+    {
+      "timestamp": "20150711042612",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200122.html"
+    },
+    {
+      "timestamp": "20151021010546",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200122l.html"
+    },
+    {
+      "timestamp": "20150711042655",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200123.html"
+    },
+    {
+      "timestamp": "20150907020848",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200124.html"
+    },
+    {
+      "timestamp": "20150708181100",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200125.html"
+    },
+    {
+      "timestamp": "20150728032927",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200126.html"
+    },
+    {
+      "timestamp": "20150716030946",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200127.html"
+    },
+    {
+      "timestamp": "20150727072509",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200128.html"
+    },
+    {
+      "timestamp": "20150717034840",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200129.html"
+    },
+    {
+      "timestamp": "20150821035215",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200131.html"
+    },
+    {
+      "timestamp": "20150724112457",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200132.html"
+    },
+    {
+      "timestamp": "20150801003156",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200133.html"
+    },
+    {
+      "timestamp": "20150727072514",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200135.html"
+    },
+    {
+      "timestamp": "20150804033621",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200136.html"
+    },
+    {
+      "timestamp": "20150809060549",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200137.html"
+    },
+    {
+      "timestamp": "20150813011119",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200138.html"
+    },
+    {
+      "timestamp": "20150815012030",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200139.html"
+    },
+    {
+      "timestamp": "20150818184942",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200140.html"
+    },
+    {
+      "timestamp": "20150806013324",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200141.html"
+    },
+    {
+      "timestamp": "20150821000839",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200142.html"
+    },
+    {
+      "timestamp": "20150821035540",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200143.html"
+    },
+    {
+      "timestamp": "20150812220541",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200144.html"
+    },
+    {
+      "timestamp": "20150816203700",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200145.html"
+    },
+    {
+      "timestamp": "20150903041005",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200146.html"
+    },
+    {
+      "timestamp": "20150901111906",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200147.html"
+    },
+    {
+      "timestamp": "20150821035219",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200148.html"
+    },
+    {
+      "timestamp": "20150907015416",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200149.html"
+    },
+    {
+      "timestamp": "20150822203936",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200150.html"
+    },
+    {
+      "timestamp": "20150828211314",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200151.html"
+    },
+    {
+      "timestamp": "20150828051428",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200152.html"
+    },
+    {
+      "timestamp": "20150903033846",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200153.html"
+    },
+    {
+      "timestamp": "20150903041011",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200154.html"
+    },
+    {
+      "timestamp": "20150828022633",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200155.html"
+    },
+    {
+      "timestamp": "20150828211319",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200156.html"
+    },
+    {
+      "timestamp": "20150923005531",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200158.html"
+    },
+    {
+      "timestamp": "20150927210722",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200159.html"
+    },
+    {
+      "timestamp": "20150905073020",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200160.html"
+    },
+    {
+      "timestamp": "20150924164409",
+      "original": "http://otn.fujitv.co.jp/b_hp/915200161.html"
+    },
+    {
+      "timestamp": "20151229155730",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200162.html"
+    },
+    {
+      "timestamp": "20150907224616",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200163.html"
+    },
+    {
+      "timestamp": "20150916174636",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200164.html"
+    },
+    {
+      "timestamp": "20150929045309",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200165.html"
+    },
+    {
+      "timestamp": "20151005033028",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200166.html"
+    },
+    {
+      "timestamp": "20150927200847",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200167.html"
+    },
+    {
+      "timestamp": "20150919030724",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200168.html"
+    },
+    {
+      "timestamp": "20150919030728",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200169.html"
+    },
+    {
+      "timestamp": "20150923094806",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200170.html"
+    },
+    {
+      "timestamp": "20150920230229",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200171.html"
+    },
+    {
+      "timestamp": "20150924164617",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200172.html"
+    },
+    {
+      "timestamp": "20151009050130",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200173.html"
+    },
+    {
+      "timestamp": "20151002015448",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200174.html"
+    },
+    {
+      "timestamp": "20151019020541",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200175.html"
+    },
+    {
+      "timestamp": "20151019020545",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200176.html"
+    },
+    {
+      "timestamp": "20151001034913",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200177.html"
+    },
+    {
+      "timestamp": "20151013234735",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200179.html"
+    },
+    {
+      "timestamp": "20150927195758",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200180.html"
+    },
+    {
+      "timestamp": "20151007001140",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200181.html"
+    },
+    {
+      "timestamp": "20151009034451",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200182.html"
+    },
+    {
+      "timestamp": "20151009122611",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200183.html"
+    },
+    {
+      "timestamp": "20151009122617",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200184.html"
+    },
+    {
+      "timestamp": "20151009122348",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200185.html"
+    },
+    {
+      "timestamp": "20151009050135",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200186.html"
+    },
+    {
+      "timestamp": "20151009122637",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200187.html"
+    },
+    {
+      "timestamp": "20151028150924",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200188.html"
+    },
+    {
+      "timestamp": "20151011220429",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200189.html"
+    },
+    {
+      "timestamp": "20151021001607",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200190.html"
+    },
+    {
+      "timestamp": "20151027194018",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200191.html"
+    },
+    {
+      "timestamp": "20151113115008",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200192.html"
+    },
+    {
+      "timestamp": "20151023222114",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200193.html"
+    },
+    {
+      "timestamp": "20151023222120",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200194.html"
+    },
+    {
+      "timestamp": "20151108185143",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200195.html"
+    },
+    {
+      "timestamp": "20151107004329",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200196.html"
+    },
+    {
+      "timestamp": "20151021010551",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200197.html"
+    },
+    {
+      "timestamp": "20151102022037",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200198.html"
+    },
+    {
+      "timestamp": "20151107045052",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200199.html"
+    },
+    {
+      "timestamp": "20151027073629",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200200.html"
+    },
+    {
+      "timestamp": "20151120222822",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200201.html"
+    },
+    {
+      "timestamp": "20151028000141",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200202.html"
+    },
+    {
+      "timestamp": "20151227154156",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200203.html"
+    },
+    {
+      "timestamp": "20151103000644",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200204.html"
+    },
+    {
+      "timestamp": "20151112035840",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200208.html"
+    },
+    {
+      "timestamp": "20151125012433",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200211.html"
+    },
+    {
+      "timestamp": "20151114235557",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200212.html"
+    },
+    {
+      "timestamp": "20151119092234",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200213.html"
+    },
+    {
+      "timestamp": "20151129010719",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200214.html"
+    },
+    {
+      "timestamp": "20151123210252",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200216.html"
+    },
+    {
+      "timestamp": "20151117221128",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200217.html"
+    },
+    {
+      "timestamp": "20151116224957",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200218.html"
+    },
+    {
+      "timestamp": "20151203085917",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200221.html"
+    },
+    {
+      "timestamp": "20151207141022",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200222.html"
+    },
+    {
+      "timestamp": "20151207114457",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200224.html"
+    },
+    {
+      "timestamp": "20151210130516",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200225.html"
+    },
+    {
+      "timestamp": "20151209222905",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200226.html"
+    },
+    {
+      "timestamp": "20151129010726",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200227.html"
+    },
+    {
+      "timestamp": "20151207141042",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200228.html"
+    },
+    {
+      "timestamp": "20151223080109",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200230.html"
+    },
+    {
+      "timestamp": "20151217224305",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200231.html"
+    },
+    {
+      "timestamp": "20151210103446",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200232.html"
+    },
+    {
+      "timestamp": "20151210130520",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200233.html"
+    },
+    {
+      "timestamp": "20151207093022",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200234.html"
+    },
+    {
+      "timestamp": "20151227000654",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/915200235.html"
+    },
+    {
+      "timestamp": "20151213094113",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200001.html"
+    },
+    {
+      "timestamp": "20151221215034",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200002.html"
+    },
+    {
+      "timestamp": "20151230214856",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200003.html"
+    },
+    {
+      "timestamp": "20151223090911",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200004.html"
+    },
+    {
+      "timestamp": "20151218050500",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200006.html"
+    },
+    {
+      "timestamp": "20151231132947",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200007.html"
+    },
+    {
+      "timestamp": "20151229112023",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200011.html"
+    },
+    {
+      "timestamp": "20151229171141",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200012.html"
+    },
+    {
+      "timestamp": "20151226041210",
+      "original": "http://otn.fujitv.co.jp:80/b_hp/916200014.html"
+    },
+    {
+      "timestamp": "20150423002704",
+      "original": "http://otn.fujitv.co.jp:80/backhug/caststaff/index.html"
+    },
+    {
+      "timestamp": "20150423002708",
+      "original": "http://otn.fujitv.co.jp:80/backhug/character/index.html"
+    },
+    {
+      "timestamp": "20150826021348",
+      "original": "http://otn.fujitv.co.jp:80/backhug/gallery/index.html"
+    },
+    {
+      "timestamp": "20150407001925",
+      "original": "http://otn.fujitv.co.jp:80/backhug/index.html"
+    },
+    {
+      "timestamp": "20150809060553",
+      "original": "http://otn.fujitv.co.jp:80/backhug/topics/index.html"
+    },
+    {
+      "timestamp": "20150418235534",
+      "original": "http://otn.fujitv.co.jp:80/backhug/topics/index01.html"
+    },
+    {
+      "timestamp": "20151107004729",
+      "original": "http://otn.fujitv.co.jp:80/backhug/topics/index02.html"
+    },
+    {
+      "timestamp": "20150824180040",
+      "original": "http://otn.fujitv.co.jp:80/backhug/topics/index04.html"
+    },
+    {
+      "timestamp": "20150403092310",
+      "original": "http://otn.fujitv.co.jp:80/bangumi/teiha.html"
+    },
+    {
+      "timestamp": "20150818185003",
+      "original": "http://otn.fujitv.co.jp:80/bundesliga1516/"
+    },
+    {
+      "timestamp": "20150821035224",
+      "original": "http://otn.fujitv.co.jp:80/bundesliga1516/index.html"
+    },
+    {
+      "timestamp": "20150517013625",
+      "original": "http://otn.fujitv.co.jp:80/char_guitarmuseum/"
+    },
+    {
+      "timestamp": "20151101010415",
+      "original": "http://otn.fujitv.co.jp:80/char_guitarmuseum/museum01.html"
+    },
+    {
+      "timestamp": "20151213094209",
+      "original": "http://otn.fujitv.co.jp:80/char_guitarmuseum/museum09.html"
+    },
+    {
+      "timestamp": "20151203062042",
+      "original": "http://otn.fujitv.co.jp:80/char_guitarmuseum/museum14.html"
+    },
+    {
+      "timestamp": "20151031002133",
+      "original": "http://otn.fujitv.co.jp:80/char_guitarmuseum/museum19.html"
+    },
+    {
+      "timestamp": "20151030203539",
+      "original": "http://otn.fujitv.co.jp:80/char_guitarmuseum/museum21.html"
+    },
+    {
+      "timestamp": "20151203062047",
+      "original": "http://otn.fujitv.co.jp:80/char_guitarmuseum/museum31.html"
+    },
+    {
+      "timestamp": "20150517013630",
+      "original": "http://otn.fujitv.co.jp:80/char_guitarmuseum/museum33.html"
+    },
+    {
+      "timestamp": "20150406010131",
+      "original": "http://otn.fujitv.co.jp:80/couplek/"
+    },
+    {
+      "timestamp": "20150407052602",
+      "original": "http://otn.fujitv.co.jp:80/couplek/gallery/01.html"
+    },
+    {
+      "timestamp": "20150407051650",
+      "original": "http://otn.fujitv.co.jp:80/couplek/gallery/02.html"
+    },
+    {
+      "timestamp": "20150407052607",
+      "original": "http://otn.fujitv.co.jp:80/couplek/gallery/03.html"
+    },
+    {
+      "timestamp": "20150407051654",
+      "original": "http://otn.fujitv.co.jp:80/couplek/gallery/04.html"
+    },
+    {
+      "timestamp": "20150407051659",
+      "original": "http://otn.fujitv.co.jp:80/couplek/gallery/05.html"
+    },
+    {
+      "timestamp": "20150407051705",
+      "original": "http://otn.fujitv.co.jp:80/couplek/gallery/06.html"
+    },
+    {
+      "timestamp": "20150407052612",
+      "original": "http://otn.fujitv.co.jp:80/couplek/gallery/07.html"
+    },
+    {
+      "timestamp": "20150407052617",
+      "original": "http://otn.fujitv.co.jp:80/couplek/gallery/08.html"
+    },
+    {
+      "timestamp": "20150406235931",
+      "original": "http://otn.fujitv.co.jp:80/couplek/gallery/09.html"
+    },
+    {
+      "timestamp": "20150828033653",
+      "original": "http://otn.fujitv.co.jp:80/couplek/gallery/10.html"
+    },
+    {
+      "timestamp": "20150520011447",
+      "original": "http://otn.fujitv.co.jp:80/couplek/gallery/11.html"
+    },
+    {
+      "timestamp": "20150624152523",
+      "original": "http://otn.fujitv.co.jp:80/couplek/gallery/12.html"
+    },
+    {
+      "timestamp": "20150826000454",
+      "original": "http://otn.fujitv.co.jp:80/couplek/gallery/13.html"
+    },
+    {
+      "timestamp": "20151219023402",
+      "original": "http://otn.fujitv.co.jp:80/couplek/gallery/18.html"
+    },
+    {
+      "timestamp": "20150406010135",
+      "original": "http://otn.fujitv.co.jp:80/couplek/guest/index.html"
+    },
+    {
+      "timestamp": "20150407001931",
+      "original": "http://otn.fujitv.co.jp:80/couplek/index.html"
+    },
+    {
+      "timestamp": "20150407051710",
+      "original": "http://otn.fujitv.co.jp:80/couplek/recipe/01.html"
+    },
+    {
+      "timestamp": "20150407052622",
+      "original": "http://otn.fujitv.co.jp:80/couplek/recipe/02.html"
+    },
+    {
+      "timestamp": "20150407052627",
+      "original": "http://otn.fujitv.co.jp:80/couplek/recipe/03.html"
+    },
+    {
+      "timestamp": "20150407051715",
+      "original": "http://otn.fujitv.co.jp:80/couplek/recipe/04.html"
+    },
+    {
+      "timestamp": "20150407051720",
+      "original": "http://otn.fujitv.co.jp:80/couplek/recipe/05.html"
+    },
+    {
+      "timestamp": "20150407051725",
+      "original": "http://otn.fujitv.co.jp:80/couplek/recipe/06.html"
+    },
+    {
+      "timestamp": "20150407051730",
+      "original": "http://otn.fujitv.co.jp:80/couplek/recipe/07.html"
+    },
+    {
+      "timestamp": "20150407051735",
+      "original": "http://otn.fujitv.co.jp:80/couplek/recipe/08.html"
+    },
+    {
+      "timestamp": "20150406235937",
+      "original": "http://otn.fujitv.co.jp:80/couplek/recipe/09.html"
+    },
+    {
+      "timestamp": "20150828033747",
+      "original": "http://otn.fujitv.co.jp:80/couplek/recipe/10.html"
+    },
+    {
+      "timestamp": "20150519230609",
+      "original": "http://otn.fujitv.co.jp:80/couplek/recipe/11.html"
+    },
+    {
+      "timestamp": "20150625115139",
+      "original": "http://otn.fujitv.co.jp:80/couplek/recipe/12.html"
+    },
+    {
+      "timestamp": "20150731010850",
+      "original": "http://otn.fujitv.co.jp:80/couplek/recipe/13.html"
+    },
+    {
+      "timestamp": "20151219045439",
+      "original": "http://otn.fujitv.co.jp:80/couplek/recipe/18.html"
+    },
+    {
+      "timestamp": "20150821105414",
+      "original": "http://otn.fujitv.co.jp/curry/index.html"
+    },
+    {
+      "timestamp": "20150410030931",
+      "original": "http://otn.fujitv.co.jp:80/discoverdead/index.html"
+    },
+    {
+      "timestamp": "20150610020208",
+      "original": "http://otn.fujitv.co.jp:80/drama/"
+    },
+    {
+      "timestamp": "20150505235203",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/"
+    },
+    {
+      "timestamp": "20150731204024",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/17sai/cast/index.html"
+    },
+    {
+      "timestamp": "20150506231706",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/17sai/index.html"
+    },
+    {
+      "timestamp": "20150801003202",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/17sai/interview/?"
+    },
+    {
+      "timestamp": "20150731204031",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/17sai/interview/index.html"
+    },
+    {
+      "timestamp": "20150731204035",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/17sai/interview/index01.html"
+    },
+    {
+      "timestamp": "20150801003206",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/17sai/story/?"
+    },
+    {
+      "timestamp": "20150731204040",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/17sai/story/index.html"
+    },
+    {
+      "timestamp": "20150507034043",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/gaiyou/index.html"
+    },
+    {
+      "timestamp": "20150406235941",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/index.html"
+    },
+    {
+      "timestamp": "20150507034049",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/jyushoshiki/index.html"
+    },
+    {
+      "timestamp": "20150712224446",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/jyushoshiki2/index.html"
+    },
+    {
+      "timestamp": "20150507034056",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/jyushou/index.html"
+    },
+    {
+      "timestamp": "20150507034101",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/moushikomi/index.html"
+    },
+    {
+      "timestamp": "20150902222714",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/nandeyanen_jyukensei/caststaff/index.html"
+    },
+    {
+      "timestamp": "20150902222810",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/nandeyanen_jyukensei/index.html"
+    },
+    {
+      "timestamp": "20150507033752",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/shushi/index.html"
+    },
+    {
+      "timestamp": "20150507034106",
+      "original": "http://otn.fujitv.co.jp:80/drama-koshien/youkou/index.html"
+    },
+    {
+      "timestamp": "20150403174615",
+      "original": "http://otn.fujitv.co.jp:80/drama/index.html"
+    },
+    {
+      "timestamp": "20151012080918",
+      "original": "http://otn.fujitv.co.jp/entertainment/"
+    },
+    {
+      "timestamp": "20150401034056",
+      "original": "http://otn.fujitv.co.jp:80/entertainment/index.html"
+    },
+    {
+      "timestamp": "20150418205837",
+      "original": "http://otn.fujitv.co.jp:80/flashback/caststaff/index.html"
+    },
+    {
+      "timestamp": "20150418235539",
+      "original": "http://otn.fujitv.co.jp:80/flashback/chart/index.html"
+    },
+    {
+      "timestamp": "20150525025911",
+      "original": "http://otn.fujitv.co.jp:80/flashback/gallery/index.html"
+    },
+    {
+      "timestamp": "20150408051010",
+      "original": "http://otn.fujitv.co.jp:80/flashback/index.html"
+    },
+    {
+      "timestamp": "20150423121816",
+      "original": "http://otn.fujitv.co.jp:80/flashback/introduction/index.html"
+    },
+    {
+      "timestamp": "20150829065204",
+      "original": "http://otn.fujitv.co.jp:80/flashback/paleography/index.html"
+    },
+    {
+      "timestamp": "20150423115859",
+      "original": "http://otn.fujitv.co.jp:80/flashback/story/index.html"
+    },
+    {
+      "timestamp": "20150829065348",
+      "original": "http://otn.fujitv.co.jp:80/flashback/story/index01.html"
+    },
+    {
+      "timestamp": "20150829065208",
+      "original": "http://otn.fujitv.co.jp:80/flashback/story/index02.html"
+    },
+    {
+      "timestamp": "20150829065353",
+      "original": "http://otn.fujitv.co.jp:80/flashback/story/index03.html"
+    },
+    {
+      "timestamp": "20150423172344",
+      "original": "http://otn.fujitv.co.jp:80/flashback/story/index04.html"
+    },
+    {
+      "timestamp": "20150412030555",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_akbkankoutaishi.html"
+    },
+    {
+      "timestamp": "20150826021144",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_backhug.html"
+    },
+    {
+      "timestamp": "20150406235946",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_couplek.html"
+    },
+    {
+      "timestamp": "20150507033757",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_drama-koshien.html"
+    },
+    {
+      "timestamp": "20150525025916",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_flashback.html"
+    },
+    {
+      "timestamp": "20150405233111",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_gamecenter.html"
+    },
+    {
+      "timestamp": "20150409030322",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_kekkon-dousoukai.html"
+    },
+    {
+      "timestamp": "20150510205025",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_mintetsu.html"
+    },
+    {
+      "timestamp": "20150515185015",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_ojikan.html"
+    },
+    {
+      "timestamp": "20150410022345",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_perfectshow.html"
+    },
+    {
+      "timestamp": "20150831005643",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_seventeenkiller.html"
+    },
+    {
+      "timestamp": "20150710043825",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_sexyzonech_sp.html"
+    },
+    {
+      "timestamp": "20150527220541",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_switchgirl.html"
+    },
+    {
+      "timestamp": "20150508071354",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_switchgirl2.html"
+    },
+    {
+      "timestamp": "20150406113320",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_tatakauonna.html"
+    },
+    {
+      "timestamp": "20150531015035",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_tokunoshima-airport.html"
+    },
+    {
+      "timestamp": "20150414005603",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_warepon.html"
+    },
+    {
+      "timestamp": "20151208012904",
+      "original": "http://otn.fujitv.co.jp:80/fp/r/otn_yorozuya_jonny.html"
+    },
+    {
+      "timestamp": "20150913220137",
+      "original": "http://otn.fujitv.co.jp:80/freespace/F0229.html"
+    },
+    {
+      "timestamp": "20151229233948",
+      "original": "http://otn.fujitv.co.jp/freespace/F0496.html?255"
+    },
+    {
+      "timestamp": "20151229234118",
+      "original": "http://otn.fujitv.co.jp/freespace/F0496.html?330"
+    },
+    {
+      "timestamp": "20151229234047",
+      "original": "http://otn.fujitv.co.jp/freespace/F0496.html?44"
+    },
+    {
+      "timestamp": "20150725013903",
+      "original": "http://otn.fujitv.co.jp:80/fujirock11/"
+    },
+    {
+      "timestamp": "20150914012222",
+      "original": "http://otn.fujitv.co.jp:80/fujirock15/musiclist.html"
+    },
+    {
+      "timestamp": "20150914211041",
+      "original": "http://otn.fujitv.co.jp:80/fujirock15/musiclist2.html"
+    },
+    {
+      "timestamp": "20150914211046",
+      "original": "http://otn.fujitv.co.jp:80/fujirock15/musiclist3.html"
+    },
+    {
+      "timestamp": "20150406010140",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/bbs.html"
+    },
+    {
+      "timestamp": "20150403031222",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/douguya/?"
+    },
+    {
+      "timestamp": "20150403092315",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/douguya/index.html"
+    },
+    {
+      "timestamp": "20150804033626",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/effect/?"
+    },
+    {
+      "timestamp": "20150405031843",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/effect/index.html"
+    },
+    {
+      "timestamp": "20150412203518",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/fod.html"
+    },
+    {
+      "timestamp": "20150403092907",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/index.html"
+    },
+    {
+      "timestamp": "20150403233301",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/mobile.html"
+    },
+    {
+      "timestamp": "20151020012325",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/"
+    },
+    {
+      "timestamp": "20150418011210",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn01.html"
+    },
+    {
+      "timestamp": "20150418011216",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn02.html"
+    },
+    {
+      "timestamp": "20150706010636",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn03.html"
+    },
+    {
+      "timestamp": "20150831180156",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn04.html"
+    },
+    {
+      "timestamp": "20150831164502",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn05.html"
+    },
+    {
+      "timestamp": "20150706010640",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn06.html"
+    },
+    {
+      "timestamp": "20150706010645",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn07.html"
+    },
+    {
+      "timestamp": "20150421222854",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn08.html"
+    },
+    {
+      "timestamp": "20150421222859",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn09.html"
+    },
+    {
+      "timestamp": "20150421222906",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn10.html"
+    },
+    {
+      "timestamp": "20150421222928",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn11.html"
+    },
+    {
+      "timestamp": "20150418182147",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn117.html"
+    },
+    {
+      "timestamp": "20150421155109",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn12.html"
+    },
+    {
+      "timestamp": "20150421155113",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn13.html"
+    },
+    {
+      "timestamp": "20150514074303",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn14.html"
+    },
+    {
+      "timestamp": "20150427012621",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn141.html"
+    },
+    {
+      "timestamp": "20150406070608",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn147.html"
+    },
+    {
+      "timestamp": "20150418193134",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn148.html"
+    },
+    {
+      "timestamp": "20150406063551",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn156.html"
+    },
+    {
+      "timestamp": "20151216225608",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn157.html"
+    },
+    {
+      "timestamp": "20151215013404",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn161.html"
+    },
+    {
+      "timestamp": "20151207223609",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn165.html"
+    },
+    {
+      "timestamp": "20150715002208",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn168.html"
+    },
+    {
+      "timestamp": "20150828211324",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn169.html"
+    },
+    {
+      "timestamp": "20150406070613",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn175.html"
+    },
+    {
+      "timestamp": "20150406070026",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn176.html"
+    },
+    {
+      "timestamp": "20150406064950",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn177.html"
+    },
+    {
+      "timestamp": "20150406065748",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn178.html"
+    },
+    {
+      "timestamp": "20150710063305",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn179.html"
+    },
+    {
+      "timestamp": "20150418193139",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn181.html"
+    },
+    {
+      "timestamp": "20150427220909",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn182.html"
+    },
+    {
+      "timestamp": "20150418231236",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn183.html"
+    },
+    {
+      "timestamp": "20150426063613",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn184.html"
+    },
+    {
+      "timestamp": "20150426063618",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn185.html"
+    },
+    {
+      "timestamp": "20150406010148",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn186.html"
+    },
+    {
+      "timestamp": "20150424100043",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn187.html"
+    },
+    {
+      "timestamp": "20150419010529",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn188.html"
+    },
+    {
+      "timestamp": "20150419012254",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn189.html"
+    },
+    {
+      "timestamp": "20150426062614",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn190.html"
+    },
+    {
+      "timestamp": "20150419011359",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn191.html"
+    },
+    {
+      "timestamp": "20150418143922",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn192.html"
+    },
+    {
+      "timestamp": "20150406010153",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn193.html"
+    },
+    {
+      "timestamp": "20150406010159",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn194.html"
+    },
+    {
+      "timestamp": "20150403092320",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn195.html"
+    },
+    {
+      "timestamp": "20150707215954",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn196.html"
+    },
+    {
+      "timestamp": "20150419233751",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn197.html"
+    },
+    {
+      "timestamp": "20150520223225",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn199.html"
+    },
+    {
+      "timestamp": "20150602220113",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn200.html"
+    },
+    {
+      "timestamp": "20150703013339",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn201.html"
+    },
+    {
+      "timestamp": "20150730001321",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn202.html"
+    },
+    {
+      "timestamp": "20150722201724",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn203.html"
+    },
+    {
+      "timestamp": "20150906224930",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn204.html"
+    },
+    {
+      "timestamp": "20151008224117",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn205.html"
+    },
+    {
+      "timestamp": "20151021010555",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn206.html"
+    },
+    {
+      "timestamp": "20151107210517",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn207.html"
+    },
+    {
+      "timestamp": "20151119014549",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn208.html"
+    },
+    {
+      "timestamp": "20151129010758",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn209.html"
+    },
+    {
+      "timestamp": "20150403092912",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bn_top.html"
+    },
+    {
+      "timestamp": "20150811215933",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bnbs121005.html"
+    },
+    {
+      "timestamp": "20150810013157",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/bnbs150718.html"
+    },
+    {
+      "timestamp": "20150405205620",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/index.html"
+    },
+    {
+      "timestamp": "20150406113329",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/oa/pulldown02.html"
+    },
+    {
+      "timestamp": "20150711225721",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/present/?"
+    },
+    {
+      "timestamp": "20150403093446",
+      "original": "http://otn.fujitv.co.jp:80/gamecenter/present/index.html"
+    },
+    {
+      "timestamp": "20151231221047",
+      "original": "http://otn.fujitv.co.jp:80/ganryujima/apology.html"
+    },
+    {
+      "timestamp": "20150426134722",
+      "original": "http://otn.fujitv.co.jp/hk/"
+    },
+    {
+      "timestamp": "20150416032504",
+      "original": "http://otn.fujitv.co.jp:80/hk/index.html"
+    },
+    {
+      "timestamp": "20150723052712",
+      "original": "http://otn.fujitv.co.jp:80/holmes/"
+    },
+    {
+      "timestamp": "20150402025934",
+      "original": "http://otn.fujitv.co.jp:80/howto/index.html"
+    },
+    {
+      "timestamp": "20150811045253",
+      "original": "http://otn.fujitv.co.jp:80/ikkyo1508/index.html"
+    },
+    {
+      "timestamp": "20150402000627",
+      "original": "http://otn.fujitv.co.jp:80/index.html"
+    },
+    {
+      "timestamp": "20150730214916",
+      "original": "http://otn.fujitv.co.jp:80/index.html?pagelink=fujimenu"
+    },
+    {
+      "timestamp": "20150424035100",
+      "original": "http://otn.fujitv.co.jp:80/jump/jcom.html"
+    },
+    {
+      "timestamp": "20150424035626",
+      "original": "http://otn.fujitv.co.jp:80/jump/sky_hangaku.html"
+    },
+    {
+      "timestamp": "20150503215336",
+      "original": "http://otn.fujitv.co.jp:80/jump/skytop.html"
+    },
+    {
+      "timestamp": "20150409030327",
+      "original": "http://otn.fujitv.co.jp:80/kekkon-dousoukai/caststuff.html"
+    },
+    {
+      "timestamp": "20150403045426",
+      "original": "http://otn.fujitv.co.jp/kekkon-dousoukai/index.html"
+    },
+    {
+      "timestamp": "20150409030332",
+      "original": "http://otn.fujitv.co.jp:80/kekkon-dousoukai/intro.html"
+    },
+    {
+      "timestamp": "20150409030338",
+      "original": "http://otn.fujitv.co.jp:80/kekkon-dousoukai/story01.html"
+    },
+    {
+      "timestamp": "20150505235228",
+      "original": "http://otn.fujitv.co.jp:80/kiyoshiro/zadankai.html"
+    },
+    {
+      "timestamp": "20150617222042",
+      "original": "http://otn.fujitv.co.jp:80/lunaticfest/"
+    },
+    {
+      "timestamp": "20150619001356",
+      "original": "http://otn.fujitv.co.jp:80/lunaticfest/index.html"
+    },
+    {
+      "timestamp": "20150620045739",
+      "original": "http://otn.fujitv.co.jp:80/lunaticfest_nico/"
+    },
+    {
+      "timestamp": "20150815100012",
+      "original": "http://otn.fujitv.co.jp:80/makyo/index.html"
+    },
+    {
+      "timestamp": "20150423142438",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/"
+    },
+    {
+      "timestamp": "20150913220352",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/dvd/index.html"
+    },
+    {
+      "timestamp": "20150403092325",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/index.html"
+    },
+    {
+      "timestamp": "20150403092922",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/special/index.html"
+    },
+    {
+      "timestamp": "20150913220357",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station001/index.html"
+    },
+    {
+      "timestamp": "20150913220403",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station002/index.html"
+    },
+    {
+      "timestamp": "20150913220148",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station003/index.html"
+    },
+    {
+      "timestamp": "20150913220154",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station004/index.html"
+    },
+    {
+      "timestamp": "20150913220408",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station005/index.html"
+    },
+    {
+      "timestamp": "20150913220159",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/index.html"
+    },
+    {
+      "timestamp": "20151125233515",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st001.html"
+    },
+    {
+      "timestamp": "20151126211128",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st002.html"
+    },
+    {
+      "timestamp": "20151127023353",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st003.html"
+    },
+    {
+      "timestamp": "20151127023909",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st004.html"
+    },
+    {
+      "timestamp": "20151127023357",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st005.html"
+    },
+    {
+      "timestamp": "20151127023402",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st006.html"
+    },
+    {
+      "timestamp": "20151127023914",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st007.html"
+    },
+    {
+      "timestamp": "20151127023919",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st008.html"
+    },
+    {
+      "timestamp": "20151127023924",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st009.html"
+    },
+    {
+      "timestamp": "20151127023929",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st010.html"
+    },
+    {
+      "timestamp": "20151127023407",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st011.html"
+    },
+    {
+      "timestamp": "20151127023412",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st012.html"
+    },
+    {
+      "timestamp": "20151127023417",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st013.html"
+    },
+    {
+      "timestamp": "20151127023934",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st014.html"
+    },
+    {
+      "timestamp": "20151127023939",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st015.html"
+    },
+    {
+      "timestamp": "20151127023422",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st016.html"
+    },
+    {
+      "timestamp": "20151127023944",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st017.html"
+    },
+    {
+      "timestamp": "20151127023951",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st018.html"
+    },
+    {
+      "timestamp": "20151127023427",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st019.html"
+    },
+    {
+      "timestamp": "20151127023432",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st020.html"
+    },
+    {
+      "timestamp": "20151127023956",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st021.html"
+    },
+    {
+      "timestamp": "20151127024001",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st022.html"
+    },
+    {
+      "timestamp": "20151127024006",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st023.html"
+    },
+    {
+      "timestamp": "20151127023437",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st024.html"
+    },
+    {
+      "timestamp": "20151127023442",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st025.html"
+    },
+    {
+      "timestamp": "20151127023447",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st026.html"
+    },
+    {
+      "timestamp": "20151127023454",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st027.html"
+    },
+    {
+      "timestamp": "20151127024011",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st028.html"
+    },
+    {
+      "timestamp": "20151127024016",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st029.html"
+    },
+    {
+      "timestamp": "20151127024021",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st030.html"
+    },
+    {
+      "timestamp": "20151127023459",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st031.html"
+    },
+    {
+      "timestamp": "20151127023504",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st032.html"
+    },
+    {
+      "timestamp": "20151127023509",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st033.html"
+    },
+    {
+      "timestamp": "20151127024026",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st034.html"
+    },
+    {
+      "timestamp": "20151127024032",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st035.html"
+    },
+    {
+      "timestamp": "20151127023514",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st036.html"
+    },
+    {
+      "timestamp": "20151127023519",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st037.html"
+    },
+    {
+      "timestamp": "20151127023524",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st038.html"
+    },
+    {
+      "timestamp": "20151127023529",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st039.html"
+    },
+    {
+      "timestamp": "20151127024037",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st040.html"
+    },
+    {
+      "timestamp": "20151127024042",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st041.html"
+    },
+    {
+      "timestamp": "20151127024047",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st042.html"
+    },
+    {
+      "timestamp": "20151127023534",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st043.html"
+    },
+    {
+      "timestamp": "20151127023539",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st044.html"
+    },
+    {
+      "timestamp": "20151127024054",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st045.html"
+    },
+    {
+      "timestamp": "20151127024059",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st046.html"
+    },
+    {
+      "timestamp": "20151127023544",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st047.html"
+    },
+    {
+      "timestamp": "20151127023549",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st048.html"
+    },
+    {
+      "timestamp": "20151127023555",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st049.html"
+    },
+    {
+      "timestamp": "20151127024104",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st050.html"
+    },
+    {
+      "timestamp": "20151127023600",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st051.html"
+    },
+    {
+      "timestamp": "20151127023605",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st052.html"
+    },
+    {
+      "timestamp": "20151127024109",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st053.html"
+    },
+    {
+      "timestamp": "20151127023610",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st054.html"
+    },
+    {
+      "timestamp": "20151127023615",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st055.html"
+    },
+    {
+      "timestamp": "20151127023620",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station006/st056.html"
+    },
+    {
+      "timestamp": "20150913220204",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station007/index.html"
+    },
+    {
+      "timestamp": "20151125233520",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/?"
+    },
+    {
+      "timestamp": "20150509211531",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/index.html"
+    },
+    {
+      "timestamp": "20150511143558",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st001.html"
+    },
+    {
+      "timestamp": "20150511141425",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st002.html"
+    },
+    {
+      "timestamp": "20150511142841",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st003.html"
+    },
+    {
+      "timestamp": "20150511142847",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st004.html"
+    },
+    {
+      "timestamp": "20150511143604",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st005.html"
+    },
+    {
+      "timestamp": "20150511143609",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st006.html"
+    },
+    {
+      "timestamp": "20150511144024",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st007.html"
+    },
+    {
+      "timestamp": "20150511141430",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st008.html"
+    },
+    {
+      "timestamp": "20150511143614",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st009.html"
+    },
+    {
+      "timestamp": "20150511144029",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st010.html"
+    },
+    {
+      "timestamp": "20150511142851",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st011.html"
+    },
+    {
+      "timestamp": "20150511141435",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st012.html"
+    },
+    {
+      "timestamp": "20150511144034",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st013.html"
+    },
+    {
+      "timestamp": "20150511142858",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st014.html"
+    },
+    {
+      "timestamp": "20150511144039",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st015.html"
+    },
+    {
+      "timestamp": "20150511143619",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st016.html"
+    },
+    {
+      "timestamp": "20150511141440",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st017.html"
+    },
+    {
+      "timestamp": "20150511142902",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st018.html"
+    },
+    {
+      "timestamp": "20150511144044",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st019.html"
+    },
+    {
+      "timestamp": "20150511141445",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st020.html"
+    },
+    {
+      "timestamp": "20150511143624",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st021.html"
+    },
+    {
+      "timestamp": "20150511144052",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st022.html"
+    },
+    {
+      "timestamp": "20150511143629",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st023.html"
+    },
+    {
+      "timestamp": "20150511143634",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st024.html"
+    },
+    {
+      "timestamp": "20150511141450",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st025.html"
+    },
+    {
+      "timestamp": "20150511143843",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st026.html"
+    },
+    {
+      "timestamp": "20150511143848",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st027.html"
+    },
+    {
+      "timestamp": "20150511143317",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st028.html"
+    },
+    {
+      "timestamp": "20150511143321",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st029.html"
+    },
+    {
+      "timestamp": "20150511144056",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st030.html"
+    },
+    {
+      "timestamp": "20150511144101",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st031.html"
+    },
+    {
+      "timestamp": "20150511143326",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st032.html"
+    },
+    {
+      "timestamp": "20150511144106",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st033.html"
+    },
+    {
+      "timestamp": "20150511143331",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st034.html"
+    },
+    {
+      "timestamp": "20150511143853",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st035.html"
+    },
+    {
+      "timestamp": "20150511144111",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st036.html"
+    },
+    {
+      "timestamp": "20150511143337",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st037.html"
+    },
+    {
+      "timestamp": "20150511143858",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st038.html"
+    },
+    {
+      "timestamp": "20150511144116",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st039.html"
+    },
+    {
+      "timestamp": "20150511144122",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st040.html"
+    },
+    {
+      "timestamp": "20150511143903",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st041.html"
+    },
+    {
+      "timestamp": "20150511143342",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station008/st042.html"
+    },
+    {
+      "timestamp": "20150509194313",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/index.html"
+    },
+    {
+      "timestamp": "20150511005726",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st001.html"
+    },
+    {
+      "timestamp": "20150511005731",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st002.html"
+    },
+    {
+      "timestamp": "20150511005737",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st003.html"
+    },
+    {
+      "timestamp": "20150511005741",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st004.html"
+    },
+    {
+      "timestamp": "20150511005852",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st005.html"
+    },
+    {
+      "timestamp": "20150511005856",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st006.html"
+    },
+    {
+      "timestamp": "20150511005900",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st007.html"
+    },
+    {
+      "timestamp": "20150511005906",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st008.html"
+    },
+    {
+      "timestamp": "20150511005911",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st009.html"
+    },
+    {
+      "timestamp": "20150511005916",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st010.html"
+    },
+    {
+      "timestamp": "20150511005921",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st011.html"
+    },
+    {
+      "timestamp": "20150511005926",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st012.html"
+    },
+    {
+      "timestamp": "20150511005930",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st013.html"
+    },
+    {
+      "timestamp": "20150511005936",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st014.html"
+    },
+    {
+      "timestamp": "20150511005940",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st015.html"
+    },
+    {
+      "timestamp": "20150511005946",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st016.html"
+    },
+    {
+      "timestamp": "20150511005951",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st017.html"
+    },
+    {
+      "timestamp": "20150511005956",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st018.html"
+    },
+    {
+      "timestamp": "20150511010001",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st019.html"
+    },
+    {
+      "timestamp": "20150511010006",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st020.html"
+    },
+    {
+      "timestamp": "20150511010011",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st021.html"
+    },
+    {
+      "timestamp": "20150511010016",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st022.html"
+    },
+    {
+      "timestamp": "20150511010021",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st023.html"
+    },
+    {
+      "timestamp": "20150511010026",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st024.html"
+    },
+    {
+      "timestamp": "20150511010031",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st025.html"
+    },
+    {
+      "timestamp": "20150511010036",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st026.html"
+    },
+    {
+      "timestamp": "20150511010041",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st027.html"
+    },
+    {
+      "timestamp": "20150511010046",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st028.html"
+    },
+    {
+      "timestamp": "20150511010051",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st029.html"
+    },
+    {
+      "timestamp": "20150510204711",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st030.html"
+    },
+    {
+      "timestamp": "20150509211537",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st031.html"
+    },
+    {
+      "timestamp": "20150509211542",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st032.html"
+    },
+    {
+      "timestamp": "20150510205054",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st033.html"
+    },
+    {
+      "timestamp": "20150511010056",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st034.html"
+    },
+    {
+      "timestamp": "20150511010101",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st035.html"
+    },
+    {
+      "timestamp": "20150511010132",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st036.html"
+    },
+    {
+      "timestamp": "20150511010144",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st037.html"
+    },
+    {
+      "timestamp": "20150511010159",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st038.html"
+    },
+    {
+      "timestamp": "20150511010220",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st039.html"
+    },
+    {
+      "timestamp": "20150511010226",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st040.html"
+    },
+    {
+      "timestamp": "20150511010243",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station009/st041.html"
+    },
+    {
+      "timestamp": "20150913220414",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station010/index.html"
+    },
+    {
+      "timestamp": "20150913215936",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station011/index.html"
+    },
+    {
+      "timestamp": "20150913215940",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station012/index.html"
+    },
+    {
+      "timestamp": "20150913220210",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/index.html"
+    },
+    {
+      "timestamp": "20151019055957",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st001.html"
+    },
+    {
+      "timestamp": "20151019055026",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st002.html"
+    },
+    {
+      "timestamp": "20151019064720",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st003.html"
+    },
+    {
+      "timestamp": "20151019055031",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st004.html"
+    },
+    {
+      "timestamp": "20151019060002",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st005.html"
+    },
+    {
+      "timestamp": "20151019071252",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st006.html"
+    },
+    {
+      "timestamp": "20151019060007",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st007.html"
+    },
+    {
+      "timestamp": "20151019060012",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st008.html"
+    },
+    {
+      "timestamp": "20151019064725",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st009.html"
+    },
+    {
+      "timestamp": "20151019071256",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st010.html"
+    },
+    {
+      "timestamp": "20151019060017",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st011.html"
+    },
+    {
+      "timestamp": "20151019072822",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st012.html"
+    },
+    {
+      "timestamp": "20151019060427",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st013.html"
+    },
+    {
+      "timestamp": "20151019072827",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st014.html"
+    },
+    {
+      "timestamp": "20151019055036",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st015.html"
+    },
+    {
+      "timestamp": "20151019055041",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st016.html"
+    },
+    {
+      "timestamp": "20151019060430",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st017.html"
+    },
+    {
+      "timestamp": "20151019065338",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st018.html"
+    },
+    {
+      "timestamp": "20151019060435",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st019.html"
+    },
+    {
+      "timestamp": "20151019072830",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st020.html"
+    },
+    {
+      "timestamp": "20151019072835",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st021.html"
+    },
+    {
+      "timestamp": "20151019055046",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st022.html"
+    },
+    {
+      "timestamp": "20151019072841",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st023.html"
+    },
+    {
+      "timestamp": "20151019065343",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st024.html"
+    },
+    {
+      "timestamp": "20151019060441",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st025.html"
+    },
+    {
+      "timestamp": "20151019060446",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st026.html"
+    },
+    {
+      "timestamp": "20151019065348",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st027.html"
+    },
+    {
+      "timestamp": "20151019055051",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st028.html"
+    },
+    {
+      "timestamp": "20151019055056",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st029.html"
+    },
+    {
+      "timestamp": "20151019065353",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st030.html"
+    },
+    {
+      "timestamp": "20151019060451",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st031.html"
+    },
+    {
+      "timestamp": "20151019065357",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st032.html"
+    },
+    {
+      "timestamp": "20151019055101",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st033.html"
+    },
+    {
+      "timestamp": "20151019060900",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st034.html"
+    },
+    {
+      "timestamp": "20151019065403",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station013/st035.html"
+    },
+    {
+      "timestamp": "20150913220419",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station014/index.html"
+    },
+    {
+      "timestamp": "20150913220312",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station015/index.html"
+    },
+    {
+      "timestamp": "20150913220317",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station016/index.html"
+    },
+    {
+      "timestamp": "20150913215946",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station017/index.html"
+    },
+    {
+      "timestamp": "20150913220322",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station018/index.html"
+    },
+    {
+      "timestamp": "20150913220425",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station019/index.html"
+    },
+    {
+      "timestamp": "20150913220430",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station020/index.html"
+    },
+    {
+      "timestamp": "20150913220327",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station021/index.html"
+    },
+    {
+      "timestamp": "20150913215950",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station022/index.html"
+    },
+    {
+      "timestamp": "20150913215955",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station024/index.html"
+    },
+    {
+      "timestamp": "20150913220214",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station025/index.html"
+    },
+    {
+      "timestamp": "20150913220219",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station026/index.html"
+    },
+    {
+      "timestamp": "20150913220224",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station027/index.html"
+    },
+    {
+      "timestamp": "20150913220001",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station028/index.html"
+    },
+    {
+      "timestamp": "20150913220230",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station029/index.html"
+    },
+    {
+      "timestamp": "20150913220235",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station030/index.html"
+    },
+    {
+      "timestamp": "20150913220240",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station031/index.html"
+    },
+    {
+      "timestamp": "20150913220006",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station032/index.html"
+    },
+    {
+      "timestamp": "20150913220245",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station033/index.html"
+    },
+    {
+      "timestamp": "20150913220250",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station034/index.html"
+    },
+    {
+      "timestamp": "20150913220255",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station035/index.html"
+    },
+    {
+      "timestamp": "20150913220434",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station036/index.html"
+    },
+    {
+      "timestamp": "20150913220302",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station037/index.html"
+    },
+    {
+      "timestamp": "20150913220441",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station038/index.html"
+    },
+    {
+      "timestamp": "20150403093452",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu/station039/index.html"
+    },
+    {
+      "timestamp": "20151019072846",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/01.html"
+    },
+    {
+      "timestamp": "20151019055106",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/02.html"
+    },
+    {
+      "timestamp": "20151019065408",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/03.html"
+    },
+    {
+      "timestamp": "20151019055112",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/04.html"
+    },
+    {
+      "timestamp": "20151019065413",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/05.html"
+    },
+    {
+      "timestamp": "20151019055117",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/06.html"
+    },
+    {
+      "timestamp": "20151019060904",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/07.html"
+    },
+    {
+      "timestamp": "20151019065418",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/08.html"
+    },
+    {
+      "timestamp": "20151019065423",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/09.html"
+    },
+    {
+      "timestamp": "20151019055122",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/10.html"
+    },
+    {
+      "timestamp": "20151019065428",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/11.html"
+    },
+    {
+      "timestamp": "20151019065433",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/12.html"
+    },
+    {
+      "timestamp": "20151019072851",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/13.html"
+    },
+    {
+      "timestamp": "20151017205926",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/14.html"
+    },
+    {
+      "timestamp": "20151019072855",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/15.html"
+    },
+    {
+      "timestamp": "20151019072901",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/16.html"
+    },
+    {
+      "timestamp": "20151019055127",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/17.html"
+    },
+    {
+      "timestamp": "20151019060909",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/18.html"
+    },
+    {
+      "timestamp": "20151019072905",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/19.html"
+    },
+    {
+      "timestamp": "20151019060914",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/20.html"
+    },
+    {
+      "timestamp": "20151019065439",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/21.html"
+    },
+    {
+      "timestamp": "20151019065444",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/22.html"
+    },
+    {
+      "timestamp": "20151019072910",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/23.html"
+    },
+    {
+      "timestamp": "20151019055132",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/24.html"
+    },
+    {
+      "timestamp": "20151019060919",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/25.html"
+    },
+    {
+      "timestamp": "20151019065449",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/26.html"
+    },
+    {
+      "timestamp": "20151019065454",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/27.html"
+    },
+    {
+      "timestamp": "20151019065459",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/28.html"
+    },
+    {
+      "timestamp": "20151019060924",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/29.html"
+    },
+    {
+      "timestamp": "20151019065504",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/30.html"
+    },
+    {
+      "timestamp": "20151019072915",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/31.html"
+    },
+    {
+      "timestamp": "20151019060930",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/32.html"
+    },
+    {
+      "timestamp": "20151019065509",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/33.html"
+    },
+    {
+      "timestamp": "20151019072920",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/34.html"
+    },
+    {
+      "timestamp": "20151019072925",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/35.html"
+    },
+    {
+      "timestamp": "20151019072931",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/36.html"
+    },
+    {
+      "timestamp": "20151019060935",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/37.html"
+    },
+    {
+      "timestamp": "20151019055137",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/38.html"
+    },
+    {
+      "timestamp": "20151019055142",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/39.html"
+    },
+    {
+      "timestamp": "20151019055148",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/40.html"
+    },
+    {
+      "timestamp": "20151019065514",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/41.html"
+    },
+    {
+      "timestamp": "20151019055152",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/42.html"
+    },
+    {
+      "timestamp": "20151019055157",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/43.html"
+    },
+    {
+      "timestamp": "20151019060940",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/44.html"
+    },
+    {
+      "timestamp": "20151019055202",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/45.html"
+    },
+    {
+      "timestamp": "20151019065519",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/46.html"
+    },
+    {
+      "timestamp": "20151019065524",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/47.html"
+    },
+    {
+      "timestamp": "20151019055207",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/48.html"
+    },
+    {
+      "timestamp": "20151019065529",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/49.html"
+    },
+    {
+      "timestamp": "20151019060945",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/50.html"
+    },
+    {
+      "timestamp": "20151019055212",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/51.html"
+    },
+    {
+      "timestamp": "20151019072935",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/52.html"
+    },
+    {
+      "timestamp": "20151019065535",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/53.html"
+    },
+    {
+      "timestamp": "20151019072940",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/54.html"
+    },
+    {
+      "timestamp": "20151019060950",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/55.html"
+    },
+    {
+      "timestamp": "20151019060955",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/56.html"
+    },
+    {
+      "timestamp": "20151019065540",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/57.html"
+    },
+    {
+      "timestamp": "20151019070459",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/58.html"
+    },
+    {
+      "timestamp": "20151019070502",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/59.html"
+    },
+    {
+      "timestamp": "20151019055217",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/60.html"
+    },
+    {
+      "timestamp": "20151019055223",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/61.html"
+    },
+    {
+      "timestamp": "20151019061000",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/62.html"
+    },
+    {
+      "timestamp": "20151019070508",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/63.html"
+    },
+    {
+      "timestamp": "20151019072945",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/64.html"
+    },
+    {
+      "timestamp": "20151019055228",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/65.html"
+    },
+    {
+      "timestamp": "20151019055233",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/66.html"
+    },
+    {
+      "timestamp": "20151019072951",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/67.html"
+    },
+    {
+      "timestamp": "20151019055239",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/68.html"
+    },
+    {
+      "timestamp": "20151019055244",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/69.html"
+    },
+    {
+      "timestamp": "20151019070513",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/70.html"
+    },
+    {
+      "timestamp": "20151019070518",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/71.html"
+    },
+    {
+      "timestamp": "20151019072957",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/72.html"
+    },
+    {
+      "timestamp": "20151019073002",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/73.html"
+    },
+    {
+      "timestamp": "20151019062729",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/74.html"
+    },
+    {
+      "timestamp": "20151019062731",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/75.html"
+    },
+    {
+      "timestamp": "20151019055249",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/76.html"
+    },
+    {
+      "timestamp": "20151019055253",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/77.html"
+    },
+    {
+      "timestamp": "20151019055258",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/78.html"
+    },
+    {
+      "timestamp": "20151019070523",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/79.html"
+    },
+    {
+      "timestamp": "20151019073007",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/80.html"
+    },
+    {
+      "timestamp": "20151019062737",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/81.html"
+    },
+    {
+      "timestamp": "20151019055303",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/82.html"
+    },
+    {
+      "timestamp": "20151019055308",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/83.html"
+    },
+    {
+      "timestamp": "20151019073012",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/84.html"
+    },
+    {
+      "timestamp": "20151019073017",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/85.html"
+    },
+    {
+      "timestamp": "20151019073022",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/sp.html"
+    },
+    {
+      "timestamp": "20151018230248",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1401.html"
+    },
+    {
+      "timestamp": "20151018230252",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1402.html"
+    },
+    {
+      "timestamp": "20151018154128",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1403.html"
+    },
+    {
+      "timestamp": "20151017230236",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1404.html"
+    },
+    {
+      "timestamp": "20151017203450",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1405.html"
+    },
+    {
+      "timestamp": "20151017230247",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1406.html"
+    },
+    {
+      "timestamp": "20151018154132",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1407.html"
+    },
+    {
+      "timestamp": "20151018230258",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1408.html"
+    },
+    {
+      "timestamp": "20151018230303",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1409.html"
+    },
+    {
+      "timestamp": "20151018230308",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1410.html"
+    },
+    {
+      "timestamp": "20151018230313",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1411.html"
+    },
+    {
+      "timestamp": "20151018230318",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1412.html"
+    },
+    {
+      "timestamp": "20151018230323",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1413.html"
+    },
+    {
+      "timestamp": "20151018230328",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1414.html"
+    },
+    {
+      "timestamp": "20151018230333",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1415.html"
+    },
+    {
+      "timestamp": "20151018230338",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1416.html"
+    },
+    {
+      "timestamp": "20151018230343",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1417.html"
+    },
+    {
+      "timestamp": "20151018230348",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1418.html"
+    },
+    {
+      "timestamp": "20151018230353",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1419.html"
+    },
+    {
+      "timestamp": "20151018230358",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1420.html"
+    },
+    {
+      "timestamp": "20151018230405",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1421.html"
+    },
+    {
+      "timestamp": "20151018230411",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1422.html"
+    },
+    {
+      "timestamp": "20151018230416",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1423.html"
+    },
+    {
+      "timestamp": "20151018230423",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1424.html"
+    },
+    {
+      "timestamp": "20151018230428",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1425.html"
+    },
+    {
+      "timestamp": "20151018230433",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1426.html"
+    },
+    {
+      "timestamp": "20151018230440",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1427.html"
+    },
+    {
+      "timestamp": "20151018230443",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1428.html"
+    },
+    {
+      "timestamp": "20151018230448",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1429.html"
+    },
+    {
+      "timestamp": "20151018230453",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1430.html"
+    },
+    {
+      "timestamp": "20151018230459",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1431.html"
+    },
+    {
+      "timestamp": "20151018230503",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1432.html"
+    },
+    {
+      "timestamp": "20151018230508",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1433.html"
+    },
+    {
+      "timestamp": "20151018230515",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1434.html"
+    },
+    {
+      "timestamp": "20151018230519",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1435.html"
+    },
+    {
+      "timestamp": "20151018230525",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1436.html"
+    },
+    {
+      "timestamp": "20151018230529",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/station/st1437.html"
+    },
+    {
+      "timestamp": "20150409013050",
+      "original": "http://otn.fujitv.co.jp:80/mintetsu_r/top.html"
+    },
+    {
+      "timestamp": "20150407010135",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/?"
+    },
+    {
+      "timestamp": "20150406063556",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode1.html"
+    },
+    {
+      "timestamp": "20150603004838",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode10.html"
+    },
+    {
+      "timestamp": "20151227225222",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode14.html"
+    },
+    {
+      "timestamp": "20150423121821",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode2.html"
+    },
+    {
+      "timestamp": "20150706065246",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode25.html"
+    },
+    {
+      "timestamp": "20151203062052",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode4.html"
+    },
+    {
+      "timestamp": "20151114173757",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode51.html"
+    },
+    {
+      "timestamp": "20150520010125",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode56.html"
+    },
+    {
+      "timestamp": "20150407055609",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode57.html"
+    },
+    {
+      "timestamp": "20151012215906",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode58.html"
+    },
+    {
+      "timestamp": "20150818234733",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode59.html"
+    },
+    {
+      "timestamp": "20151227225227",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode6.html"
+    },
+    {
+      "timestamp": "20150516023719",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode63.html"
+    },
+    {
+      "timestamp": "20150603004908",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode65.html"
+    },
+    {
+      "timestamp": "20150731010912",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode66.html"
+    },
+    {
+      "timestamp": "20151225043323",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/episode/episode68.html"
+    },
+    {
+      "timestamp": "20150404233252",
+      "original": "http://otn.fujitv.co.jp:80/motto-onsen/index.html"
+    },
+    {
+      "timestamp": "20151102022052",
+      "original": "http://otn.fujitv.co.jp:80/munekyun/index.html"
+    },
+    {
+      "timestamp": "20150403233312",
+      "original": "http://otn.fujitv.co.jp:80/music/index.html"
+    },
+    {
+      "timestamp": "20150418164605",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/1.html"
+    },
+    {
+      "timestamp": "20150911001630",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/10.html"
+    },
+    {
+      "timestamp": "20150628233048",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/11.html"
+    },
+    {
+      "timestamp": "20150419021806",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/12.html"
+    },
+    {
+      "timestamp": "20150910220739",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/13.html"
+    },
+    {
+      "timestamp": "20150719004905",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/14.html"
+    },
+    {
+      "timestamp": "20150418235544",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/15.html"
+    },
+    {
+      "timestamp": "20150916151546",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/16.html"
+    },
+    {
+      "timestamp": "20150419001551",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/17.html"
+    },
+    {
+      "timestamp": "20150418162050",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/18.html"
+    },
+    {
+      "timestamp": "20150419004226",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/19.html"
+    },
+    {
+      "timestamp": "20150418182929",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/2.html"
+    },
+    {
+      "timestamp": "20150419155730",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/20.html"
+    },
+    {
+      "timestamp": "20150719004920",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/21.html"
+    },
+    {
+      "timestamp": "20150628233921",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/22.html"
+    },
+    {
+      "timestamp": "20150418211311",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/23.html"
+    },
+    {
+      "timestamp": "20150911001637",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/24.html"
+    },
+    {
+      "timestamp": "20150418182152",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/25.html"
+    },
+    {
+      "timestamp": "20150910214919",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/26.html"
+    },
+    {
+      "timestamp": "20150418231246",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/27.html"
+    },
+    {
+      "timestamp": "20150419001556",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/28.html"
+    },
+    {
+      "timestamp": "20150910220525",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/29.html"
+    },
+    {
+      "timestamp": "20150517001536",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/3.html"
+    },
+    {
+      "timestamp": "20150419155735",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/30.html"
+    },
+    {
+      "timestamp": "20150910210901",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/31.html"
+    },
+    {
+      "timestamp": "20150419161607",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/32.html"
+    },
+    {
+      "timestamp": "20150418182157",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/33.html"
+    },
+    {
+      "timestamp": "20150418214830",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/34.html"
+    },
+    {
+      "timestamp": "20150910223253",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/35.html"
+    },
+    {
+      "timestamp": "20150910213321",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/36.html"
+    },
+    {
+      "timestamp": "20150910221717",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/37.html"
+    },
+    {
+      "timestamp": "20150419004820",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/38.html"
+    },
+    {
+      "timestamp": "20150419000632",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/39.html"
+    },
+    {
+      "timestamp": "20150418193144",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/4.html"
+    },
+    {
+      "timestamp": "20150916150804",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/40.html"
+    },
+    {
+      "timestamp": "20150910221347",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/41.html"
+    },
+    {
+      "timestamp": "20150419021215",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/42.html"
+    },
+    {
+      "timestamp": "20150419000111",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/43.html"
+    },
+    {
+      "timestamp": "20150910220528",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/44.html"
+    },
+    {
+      "timestamp": "20150910214924",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/45.html"
+    },
+    {
+      "timestamp": "20150419000637",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/46.html"
+    },
+    {
+      "timestamp": "20150719004955",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/47.html"
+    },
+    {
+      "timestamp": "20150419002853",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/48.html"
+    },
+    {
+      "timestamp": "20150426140211",
+      "original": "http://otn.fujitv.co.jp/musicsoup/49.html"
+    },
+    {
+      "timestamp": "20150418221853",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/5.html"
+    },
+    {
+      "timestamp": "20150419011404",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/50.html"
+    },
+    {
+      "timestamp": "20150911003118",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/51.html"
+    },
+    {
+      "timestamp": "20150719005005",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/52.html"
+    },
+    {
+      "timestamp": "20150910215856",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/53.html"
+    },
+    {
+      "timestamp": "20150910215901",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/54.html"
+    },
+    {
+      "timestamp": "20150910221357",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/55.html"
+    },
+    {
+      "timestamp": "20150910220741",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/56.html"
+    },
+    {
+      "timestamp": "20150910220533",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/57.html"
+    },
+    {
+      "timestamp": "20150910223331",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/58.html"
+    },
+    {
+      "timestamp": "20150910221222",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/59.html"
+    },
+    {
+      "timestamp": "20150719005010",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/6.html"
+    },
+    {
+      "timestamp": "20150611020316",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/60.html"
+    },
+    {
+      "timestamp": "20150911003203",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/61.html"
+    },
+    {
+      "timestamp": "20150910220801",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/62.html"
+    },
+    {
+      "timestamp": "20150910221730",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/63.html"
+    },
+    {
+      "timestamp": "20150910224503",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/64.html"
+    },
+    {
+      "timestamp": "20150910214929",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/65.html"
+    },
+    {
+      "timestamp": "20150910223259",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/66.html"
+    },
+    {
+      "timestamp": "20150910221128",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/67.html"
+    },
+    {
+      "timestamp": "20150911001641",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/68.html"
+    },
+    {
+      "timestamp": "20150517001755",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/69.html"
+    },
+    {
+      "timestamp": "20150419004825",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/7.html"
+    },
+    {
+      "timestamp": "20150910211415",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/70.html"
+    },
+    {
+      "timestamp": "20150403092927",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/71.html"
+    },
+    {
+      "timestamp": "20150517032259",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/72.html"
+    },
+    {
+      "timestamp": "20150517001800",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/73.html"
+    },
+    {
+      "timestamp": "20150628233952",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/74.html"
+    },
+    {
+      "timestamp": "20150910221800",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/75.html"
+    },
+    {
+      "timestamp": "20150911003248",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/76.html"
+    },
+    {
+      "timestamp": "20150907000822",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/77.html"
+    },
+    {
+      "timestamp": "20151104033258",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/78.html"
+    },
+    {
+      "timestamp": "20151104033308",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/79.html"
+    },
+    {
+      "timestamp": "20150419003519",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/8.html"
+    },
+    {
+      "timestamp": "20151227225515",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/81.html"
+    },
+    {
+      "timestamp": "20150419000644",
+      "original": "http://otn.fujitv.co.jp:80/musicsoup/9.html"
+    },
+    {
+      "timestamp": "20150531050922",
+      "original": "http://otn.fujitv.co.jp:80/new-soku/index.html"
+    },
+    {
+      "timestamp": "20151225004134",
+      "original": "http://otn.fujitv.co.jp:80/newyear2016/index.html"
+    },
+    {
+      "timestamp": "20150403233317",
+      "original": "http://otn.fujitv.co.jp:80/nextsmart/index.html"
+    },
+    {
+      "timestamp": "20150514173858",
+      "original": "http://otn.fujitv.co.jp:80/ojikan/caststaff/index.html"
+    },
+    {
+      "timestamp": "20150514173903",
+      "original": "http://otn.fujitv.co.jp:80/ojikan/gallery/index.html"
+    },
+    {
+      "timestamp": "20150515184542",
+      "original": "http://otn.fujitv.co.jp:80/ojikan/gallery/index01.html"
+    },
+    {
+      "timestamp": "20150515195035",
+      "original": "http://otn.fujitv.co.jp:80/ojikan/gallery/index02.html"
+    },
+    {
+      "timestamp": "20150515195040",
+      "original": "http://otn.fujitv.co.jp:80/ojikan/gallery/index03.html"
+    },
+    {
+      "timestamp": "20150515184547",
+      "original": "http://otn.fujitv.co.jp:80/ojikan/gallery/index04.html"
+    },
+    {
+      "timestamp": "20150410022119",
+      "original": "http://otn.fujitv.co.jp:80/ojikan/index.html"
+    },
+    {
+      "timestamp": "20150514173908",
+      "original": "http://otn.fujitv.co.jp:80/ojikan/introduction/index.html"
+    },
+    {
+      "timestamp": "20150514172252",
+      "original": "http://otn.fujitv.co.jp:80/ojikan/story/index.html"
+    },
+    {
+      "timestamp": "20150515184552",
+      "original": "http://otn.fujitv.co.jp:80/ojikan/story/index01.html"
+    },
+    {
+      "timestamp": "20150515185020",
+      "original": "http://otn.fujitv.co.jp:80/ojikan/story/index02.html"
+    },
+    {
+      "timestamp": "20150515195045",
+      "original": "http://otn.fujitv.co.jp:80/ojikan/story/index03.html"
+    },
+    {
+      "timestamp": "20150515195050",
+      "original": "http://otn.fujitv.co.jp:80/ojikan/story/index04.html"
+    },
+    {
+      "timestamp": "20150514173913",
+      "original": "http://otn.fujitv.co.jp:80/ojikan/topics/index.html"
+    },
+    {
+      "timestamp": "20150515194419",
+      "original": "http://otn.fujitv.co.jp:80/ojikan/topics/index01.html"
+    },
+    {
+      "timestamp": "20150515184557",
+      "original": "http://otn.fujitv.co.jp:80/ojikan/topics/index02.html"
+    },
+    {
+      "timestamp": "20150515184602",
+      "original": "http://otn.fujitv.co.jp:80/ojikan/topics/index03.html"
+    },
+    {
+      "timestamp": "20150514173918",
+      "original": "http://otn.fujitv.co.jp:80/ojikan/topics/index04.html"
+    },
+    {
+      "timestamp": "20150515194425",
+      "original": "http://otn.fujitv.co.jp:80/ojikan/topics/index05.html"
+    },
+    {
+      "timestamp": "20150514172256",
+      "original": "http://otn.fujitv.co.jp:80/ojikan/topics/index06.html"
+    },
+    {
+      "timestamp": "20150515185025",
+      "original": "http://otn.fujitv.co.jp:80/ojikan/topics/index07.html"
+    },
+    {
+      "timestamp": "20150408235315",
+      "original": "http://otn.fujitv.co.jp:80/perfectshow/caststaff/index.html"
+    },
+    {
+      "timestamp": "20150409013054",
+      "original": "http://otn.fujitv.co.jp:80/perfectshow/fod/index.html"
+    },
+    {
+      "timestamp": "20150408235320",
+      "original": "http://otn.fujitv.co.jp:80/perfectshow/gallery/index.html"
+    },
+    {
+      "timestamp": "20150420004711",
+      "original": "http://otn.fujitv.co.jp:80/perfectshow/gallery/index01.html"
+    },
+    {
+      "timestamp": "20150408235325",
+      "original": "http://otn.fujitv.co.jp:80/perfectshow/index.html"
+    },
+    {
+      "timestamp": "20150427040403",
+      "original": "http://otn.fujitv.co.jp:80/perfectshow/topics/?"
+    },
+    {
+      "timestamp": "20150408235330",
+      "original": "http://otn.fujitv.co.jp:80/perfectshow/topics/index.html"
+    },
+    {
+      "timestamp": "20150409013101",
+      "original": "http://otn.fujitv.co.jp:80/perfectshow/topics/index01.html"
+    },
+    {
+      "timestamp": "20150417134653",
+      "original": "http://otn.fujitv.co.jp/regular.html"
+    },
+    {
+      "timestamp": "20150817025014",
+      "original": "http://otn.fujitv.co.jp/s_cx/b_hp/915200122.html"
+    },
+    {
+      "timestamp": "20150406010205",
+      "original": "http://otn.fujitv.co.jp:80/schedule/next/"
+    },
+    {
+      "timestamp": "20150405233852",
+      "original": "http://otn.fujitv.co.jp:80/schedule/next/index.html"
+    },
+    {
+      "timestamp": "20150407052632",
+      "original": "http://otn.fujitv.co.jp:80/schedule/next/next2_week.html"
+    },
+    {
+      "timestamp": "20150407051741",
+      "original": "http://otn.fujitv.co.jp:80/schedule/next/next3_week.html"
+    },
+    {
+      "timestamp": "20150406045127",
+      "original": "http://otn.fujitv.co.jp:80/schedule/next/next_week.html"
+    },
+    {
+      "timestamp": "20150418205833",
+      "original": "http://otn.fujitv.co.jp:80/schedule/next/this_week.html"
+    },
+    {
+      "timestamp": "20150404235605",
+      "original": "http://otn.fujitv.co.jp:80/schedule/one/"
+    },
+    {
+      "timestamp": "20150403193725",
+      "original": "http://otn.fujitv.co.jp:80/schedule/one/index.html"
+    },
+    {
+      "timestamp": "20150406010211",
+      "original": "http://otn.fujitv.co.jp:80/schedule/one/next2_week.html"
+    },
+    {
+      "timestamp": "20150406010216",
+      "original": "http://otn.fujitv.co.jp:80/schedule/one/next3_week.html"
+    },
+    {
+      "timestamp": "20150407052638",
+      "original": "http://otn.fujitv.co.jp:80/schedule/one/next_week.html"
+    },
+    {
+      "timestamp": "20150406045132",
+      "original": "http://otn.fujitv.co.jp:80/schedule/one/this_week.html"
+    },
+    {
+      "timestamp": "20150407010143",
+      "original": "http://otn.fujitv.co.jp:80/schedule/two/"
+    },
+    {
+      "timestamp": "20150403031236",
+      "original": "http://otn.fujitv.co.jp:80/schedule/two/index.html"
+    },
+    {
+      "timestamp": "20150403233323",
+      "original": "http://otn.fujitv.co.jp:80/schedule/two/next2_week.html"
+    },
+    {
+      "timestamp": "20150416000222",
+      "original": "http://otn.fujitv.co.jp:80/schedule/two/next3_week.html"
+    },
+    {
+      "timestamp": "20150406050411",
+      "original": "http://otn.fujitv.co.jp:80/schedule/two/next_week.html"
+    },
+    {
+      "timestamp": "20150406070603",
+      "original": "http://otn.fujitv.co.jp:80/schedule/two/this_week.html"
+    },
+    {
+      "timestamp": "20150428131221",
+      "original": "http://otn.fujitv.co.jp:80/secret-honeymoon/"
+    },
+    {
+      "timestamp": "20150829093532",
+      "original": "http://otn.fujitv.co.jp:80/secret-honeymoon/index.html"
+    },
+    {
+      "timestamp": "20150520182045",
+      "original": "http://otn.fujitv.co.jp:80/seventeenkiller/"
+    },
+    {
+      "timestamp": "20150410030937",
+      "original": "http://otn.fujitv.co.jp:80/seventeenkiller/index.html"
+    },
+    {
+      "timestamp": "20150408065738",
+      "original": "http://otn.fujitv.co.jp:80/sexyzonech/"
+    },
+    {
+      "timestamp": "20150419011410",
+      "original": "http://otn.fujitv.co.jp:80/sexyzonech/index.html"
+    },
+    {
+      "timestamp": "20150710042735",
+      "original": "http://otn.fujitv.co.jp:80/sexyzonech_sp/"
+    },
+    {
+      "timestamp": "20150406063848",
+      "original": "http://otn.fujitv.co.jp:80/sexyzonech_sp/index.html"
+    },
+    {
+      "timestamp": "20150430061503",
+      "original": "http://otn.fujitv.co.jp:80/sexyzonegofor2020/"
+    },
+    {
+      "timestamp": "20150427040716",
+      "original": "http://otn.fujitv.co.jp:80/sexyzonestandandrun/?"
+    },
+    {
+      "timestamp": "20150410022123",
+      "original": "http://otn.fujitv.co.jp:80/sokume/index.html"
+    },
+    {
+      "timestamp": "20150418233843",
+      "original": "http://otn.fujitv.co.jp:80/sports/"
+    },
+    {
+      "timestamp": "20150403031241",
+      "original": "http://otn.fujitv.co.jp:80/sports/index.html"
+    },
+    {
+      "timestamp": "20150527220552",
+      "original": "http://otn.fujitv.co.jp:80/switchgirl/cast_staff.html"
+    },
+    {
+      "timestamp": "20150504020318",
+      "original": "http://otn.fujitv.co.jp:80/switchgirl/index.html"
+    },
+    {
+      "timestamp": "20150527003815",
+      "original": "http://otn.fujitv.co.jp:80/switchgirl/intro.html"
+    },
+    {
+      "timestamp": "20150527220556",
+      "original": "http://otn.fujitv.co.jp:80/switchgirl/story.html"
+    },
+    {
+      "timestamp": "20150407055917",
+      "original": "http://otn.fujitv.co.jp:80/switchgirl2/"
+    },
+    {
+      "timestamp": "20150407055614",
+      "original": "http://otn.fujitv.co.jp:80/switchgirl2/caststaff.html"
+    },
+    {
+      "timestamp": "20150426194144",
+      "original": "http://otn.fujitv.co.jp/switchgirl2/dvd.html"
+    },
+    {
+      "timestamp": "20150428084724",
+      "original": "http://otn.fujitv.co.jp:80/switchgirl2/index.html"
+    },
+    {
+      "timestamp": "20150508071454",
+      "original": "http://otn.fujitv.co.jp:80/switchgirl2/introduction.html"
+    },
+    {
+      "timestamp": "20150508071609",
+      "original": "http://otn.fujitv.co.jp:80/switchgirl2/story.html"
+    },
+    {
+      "timestamp": "20150507014115",
+      "original": "http://otn.fujitv.co.jp:80/switchgirl2/story01.html?"
+    },
+    {
+      "timestamp": "20150508071359",
+      "original": "http://otn.fujitv.co.jp:80/switchgirl2/story02.html"
+    },
+    {
+      "timestamp": "20150508071404",
+      "original": "http://otn.fujitv.co.jp:80/switchgirl2/story03.html"
+    },
+    {
+      "timestamp": "20150508071619",
+      "original": "http://otn.fujitv.co.jp:80/switchgirl2/story04.html"
+    },
+    {
+      "timestamp": "20150508071410",
+      "original": "http://otn.fujitv.co.jp:80/switchgirl2/story05.html"
+    },
+    {
+      "timestamp": "20150508071415",
+      "original": "http://otn.fujitv.co.jp:80/switchgirl2/story06.html"
+    },
+    {
+      "timestamp": "20150508071716",
+      "original": "http://otn.fujitv.co.jp:80/switchgirl2/story07.html"
+    },
+    {
+      "timestamp": "20150508071500",
+      "original": "http://otn.fujitv.co.jp:80/switchgirl2/story08.html"
+    },
+    {
+      "timestamp": "20150419130927",
+      "original": "http://otn.fujitv.co.jp:80/TACC/"
+    },
+    {
+      "timestamp": "20150408235335",
+      "original": "http://otn.fujitv.co.jp:80/tatakauonna/"
+    },
+    {
+      "timestamp": "20150406113334",
+      "original": "http://otn.fujitv.co.jp:80/tatakauonna/concept/index.html"
+    },
+    {
+      "timestamp": "20150406113339",
+      "original": "http://otn.fujitv.co.jp:80/tatakauonna/dvd/index.html"
+    },
+    {
+      "timestamp": "20150406010220",
+      "original": "http://otn.fujitv.co.jp:80/tatakauonna/episode1/index.html"
+    },
+    {
+      "timestamp": "20150406010228",
+      "original": "http://otn.fujitv.co.jp:80/tatakauonna/episode2/index.html"
+    },
+    {
+      "timestamp": "20150405234011",
+      "original": "http://otn.fujitv.co.jp:80/tatakauonna/episode3/index.html"
+    },
+    {
+      "timestamp": "20150406113345",
+      "original": "http://otn.fujitv.co.jp:80/tatakauonna/episode4/index.html"
+    },
+    {
+      "timestamp": "20150406113352",
+      "original": "http://otn.fujitv.co.jp:80/tatakauonna/episode5/index.html"
+    },
+    {
+      "timestamp": "20150406113356",
+      "original": "http://otn.fujitv.co.jp:80/tatakauonna/girlstalk/index.html"
+    },
+    {
+      "timestamp": "20150405205624",
+      "original": "http://otn.fujitv.co.jp:80/tatakauonna/index.html"
+    },
+    {
+      "timestamp": "20150411004658",
+      "original": "http://otn.fujitv.co.jp:80/tatakauonna/music/?"
+    },
+    {
+      "timestamp": "20150406113401",
+      "original": "http://otn.fujitv.co.jp:80/tatakauonna/music/index.html"
+    },
+    {
+      "timestamp": "20150410101753",
+      "original": "http://otn.fujitv.co.jp:80/tatakauonna/present/index.html"
+    },
+    {
+      "timestamp": "20150411004921",
+      "original": "http://otn.fujitv.co.jp:80/tatakauonna/shitagi/?"
+    },
+    {
+      "timestamp": "20150406113406",
+      "original": "http://otn.fujitv.co.jp:80/tatakauonna/shitagi/index.html"
+    },
+    {
+      "timestamp": "20150530230051",
+      "original": "http://otn.fujitv.co.jp:80/tokunoshima-airport/"
+    },
+    {
+      "timestamp": "20150529210238",
+      "original": "http://otn.fujitv.co.jp:80/tokunoshima-airport/index.html"
+    },
+    {
+      "timestamp": "20150412203647",
+      "original": "http://otn.fujitv.co.jp:80/warepon/index.html"
+    },
+    {
+      "timestamp": "20150412235325",
+      "original": "http://otn.fujitv.co.jp:80/warepon/rule.html"
+    },
+    {
+      "timestamp": "20150412235330",
+      "original": "http://otn.fujitv.co.jp:80/warepon/stats.html"
+    },
+    {
+      "timestamp": "20150403031227",
+      "original": "http://otn.fujitv.co.jp:80/whatis/"
+    },
+    {
+      "timestamp": "20150410101758",
+      "original": "http://otn.fujitv.co.jp:80/whatis/index.html"
+    },
+    {
+      "timestamp": "20151028022820",
+      "original": "http://otn.fujitv.co.jp:80/yorozuya_jonny/"
+    },
+    {
+      "timestamp": "20151208012909",
+      "original": "http://otn.fujitv.co.jp:80/yorozuya_jonny/episode1/index.html"
+    },
+    {
+      "timestamp": "20151208012914",
+      "original": "http://otn.fujitv.co.jp:80/yorozuya_jonny/episode2/index.html"
+    },
+    {
+      "timestamp": "20151107045101",
+      "original": "http://otn.fujitv.co.jp:80/yorozuya_jonny/episode3/index.html"
+    },
+    {
+      "timestamp": "20151208012919",
+      "original": "http://otn.fujitv.co.jp:80/yorozuya_jonny/episode4/index.html"
+    },
+    {
+      "timestamp": "20151208012924",
+      "original": "http://otn.fujitv.co.jp:80/yorozuya_jonny/episode5/index.html"
+    },
+    {
+      "timestamp": "20151106015310",
+      "original": "http://otn.fujitv.co.jp:80/yorozuya_jonny/index.html"
+    },
+    {
+      "timestamp": "20151208012929",
+      "original": "http://otn.fujitv.co.jp:80/yorozuya_jonny/intro/index.html"
+    },
+    {
+      "timestamp": "20151107045106",
+      "original": "http://otn.fujitv.co.jp:80/yorozuya_jonny/song/index.html"
+    }
+  ]
+}
