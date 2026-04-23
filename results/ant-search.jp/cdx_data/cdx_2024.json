@@ -1,0 +1,16 @@
+{
+  "domain": "ant-search.jp",
+  "year": 2024,
+  "fetched_at": "2026-04-23T07:51:35+0000",
+  "header": [
+    "timestamp",
+    "original"
+  ],
+  "count": 1,
+  "records": [
+    {
+      "timestamp": "20240327020648",
+      "original": "https://ant-search.jp/"
+    }
+  ]
+}
