@@ -24,6 +24,8 @@ REGISTRANT_PATTERNS = [
 
 NO_MATCH_MARKERS = ('No match!!', 'No match for', 'NOT FOUND', 'no match')
 
+DOMAIN_RE = re.compile(r'^[a-zA-Z0-9][a-zA-Z0-9\-\.]*\.[a-zA-Z]{2,}$')
+
 
 def read_csv_auto(path):
     raw = Path(path).read_bytes()
@@ -96,14 +98,20 @@ def main():
         print('CSV が空です', file=sys.stderr)
         sys.exit(1)
 
-    header = rows[0]
-    data_rows = rows[1:]
-    print(f'ヘッダ: {header}')
+    first_cell = rows[0][0].strip() if rows[0] else ''
+    if DOMAIN_RE.match(first_cell):
+        header = None
+        data_rows = rows
+        print('ヘッダ: なし（1行目がドメイン形式のためヘッダ無しと判定）')
+    else:
+        header = rows[0]
+        data_rows = rows[1:]
+        print(f'ヘッダ: {header}')
     print(f'データ行数: {len(data_rows)}')
     print(f'設定: sleep={args.sleep}秒, retries={args.retries}')
     print('=' * 60)
 
-    kept = [header]
+    kept = [header] if header is not None else []
     removed = 0
     failed = []
 
@@ -126,9 +134,10 @@ def main():
             failed.append(domain)
             status = '保持(失敗)'
 
-        if i % 25 == 0 or i == len(data_rows):
+        kept_count = len(kept) - (1 if header is not None else 0)
+        if i % 25 == 0 or i == len(data_rows) or i <= 5:
             print(f'[{i}/{len(data_rows)}] {domain} → {status} | '
-                  f'保持={len(kept) - 1} 削除={removed} 失敗={len(failed)}')
+                  f'保持={kept_count} 削除={removed} 失敗={len(failed)}')
 
         time.sleep(args.sleep)
 
@@ -139,7 +148,7 @@ def main():
     print('=' * 60)
     print('完了')
     print(f'  入力件数: {len(data_rows)}')
-    print(f'  保持件数: {len(kept) - 1}')
+    print(f'  保持件数: {len(kept) - (1 if header is not None else 0)}')
     print(f'  削除件数: {removed}')
     print(f'  whois取得失敗: {len(failed)} (保持扱い)')
     if failed:
