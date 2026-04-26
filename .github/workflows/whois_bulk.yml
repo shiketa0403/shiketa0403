@@ -1,0 +1,68 @@
+name: whois 一括チェック・登録済みドメイン除外
+
+# 手動トリガーのみ（1.5〜2時間かかる重い処理のため）
+on:
+  workflow_dispatch:
+    inputs:
+      csv_path:
+        description: '対象CSVのパス（1列目=ドメイン、ヘッダ行あり）'
+        required: true
+        default: 'csv/backorder.csv'
+        type: string
+      sleep:
+        description: 'whois間隔（秒）。.jp は3秒以上推奨'
+        required: true
+        default: '3'
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  whois-bulk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: whois コマンドをインストール
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y whois
+
+      - name: 入力CSV存在確認
+        run: |
+          CSV="${{ github.event.inputs.csv_path }}"
+          if [ ! -f "$CSV" ]; then
+            echo "エラー: $CSV が見つかりません"
+            exit 1
+          fi
+          echo "対象: $CSV ($(wc -l < "$CSV") 行)"
+
+      - name: whois 一括チェック実行
+        run: |
+          python whois_bulk.py \
+            --csv "${{ github.event.inputs.csv_path }}" \
+            --sleep "${{ github.event.inputs.sleep }}"
+
+      - name: 結果をブランチにコミット
+        if: always()
+        run: |
+          CSV="${{ github.event.inputs.csv_path }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "$CSV" 2>/dev/null || true
+          # 他ワークフローと干渉しないよう、対象CSV以外はコミット対象から外す
+          git reset -- csv/post.csv 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "変更なし（コミットなし）"
+          else
+            git commit -m "whois一括チェック: 登録済みドメインを除外"
+            git pull --rebase origin "$GITHUB_REF_NAME" || true
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi
