@@ -14,6 +14,14 @@ on:
         options:
           - draft
           - publish
+      mode:
+        description: '実行モード'
+        required: true
+        default: 'post'
+        type: choice
+        options:
+          - post
+          - rewrite
 
 jobs:
   post-to-wordpress:
@@ -58,9 +66,15 @@ jobs:
 
       - name: csv/post.csv を投稿
         run: |
+          MODE="${{ github.event.inputs.mode || 'post' }}"
           STATUS="${{ github.event.inputs.status || 'draft' }}"
-          echo "=== csv/post.csv を投稿 (status: $STATUS) ==="
-          python wp_bulk_post.py csv/post.csv --status "$STATUS"
+          if [ "$MODE" = "rewrite" ]; then
+            echo "=== csv/post.csv をリライト ==="
+            python wp_bulk_post.py csv/post.csv --rewrite
+          else
+            echo "=== csv/post.csv を投稿 (status: $STATUS) ==="
+            python wp_bulk_post.py csv/post.csv --status "$STATUS"
+          fi
 
       - name: 投稿結果を確認
         run: |

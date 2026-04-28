@@ -28,7 +28,7 @@ import sys
 import time
 import urllib.parse
 
-from wp_post import api_request, create_post
+from wp_post import api_request, create_post, update_post
 
 
 def get_or_create_category(name):
@@ -97,6 +97,29 @@ def get_existing_titles():
                 break
             page += 1
     return titles
+
+
+def get_existing_posts_map():
+    """WordPressの既存記事を タイトル→{id, status} のマップで全件取得する"""
+    posts_map = {}
+    for status in ["publish", "draft", "pending", "private"]:
+        page = 1
+        while True:
+            posts = api_request(f"posts?per_page=100&page={page}&status={status}")
+            if not posts:
+                break
+            for p in posts:
+                posts_map[p["title"]["rendered"]] = {"id": p["id"], "status": p["status"]}
+            if len(posts) < 100:
+                break
+            page += 1
+    return posts_map
+
+
+def find_post_by_old_title(posts_map, case_name):
+    """旧タイトル形式で既存記事を検索する"""
+    old_title = f"{case_name}とアフィリエイト提携できるASPはどこ？"
+    return posts_map.get(old_title)
 
 
 def bulk_post_from_csv(csv_path, default_status="draft", delay=2, dry_run=False):
@@ -192,15 +215,98 @@ def bulk_post_from_csv(csv_path, default_status="draft", delay=2, dry_run=False)
     print(f"\n=== 完了: 成功 {success}件 / エラー {errors}件 ===")
 
 
+def bulk_rewrite_from_csv(csv_path, delay=2, dry_run=False):
+    """既存記事を旧タイトルで検索し、新フォーマットで上書き更新する"""
+    with open(csv_path, encoding="utf-8-sig") as f:
+        reader = csv.DictReader(f)
+        rows = list(reader)
+
+    print(f"CSVから {len(rows)} 件の記事を読み込みました")
+    if dry_run:
+        print("=== ドライラン（実際には更新しません） ===")
+
+    if not dry_run:
+        print("WordPress の既存記事を取得中...")
+        posts_map = get_existing_posts_map()
+        print(f"  既存記事: {len(posts_map)}件")
+    else:
+        posts_map = {}
+
+    success = 0
+    skipped = 0
+    errors = 0
+
+    for i, row in enumerate(rows, 1):
+        title = row.get("title", "").strip()
+        content = row.get("content", "").strip()
+        slug = row.get("slug", "").strip()
+        screenshot_target = row.get("screenshot_url", "").strip()
+
+        if not title or not content:
+            print(f"[{i}/{len(rows)}] スキップ（タイトルまたは本文が空）")
+            errors += 1
+            continue
+
+        case_name = re.sub(r'のアフィリエイトはどこのASP？$', '', title)
+        print(f"\n[{i}/{len(rows)}] {case_name}")
+
+        if dry_run:
+            old_title = f"{case_name}とアフィリエイト提携できるASPはどこ？"
+            print(f"  旧タイトル: {old_title}")
+            print(f"  新タイトル: {title}")
+            print(f"  本文: {content[:80]}...")
+            success += 1
+            continue
+
+        post_info = find_post_by_old_title(posts_map, case_name)
+        if not post_info:
+            new_info = posts_map.get(title)
+            if new_info:
+                post_info = new_info
+                print(f"  新タイトルで既存記事を発見 (ID: {post_info['id']})")
+            else:
+                print(f"  ⏭ スキップ（既存記事が見つかりません）")
+                skipped += 1
+                continue
+        else:
+            print(f"  既存記事を発見 (ID: {post_info['id']})")
+
+        if screenshot_target:
+            print(f"  スクリーンショット取得中: {screenshot_target}")
+            screenshot_wp_url = capture_and_upload_screenshot(screenshot_target, name=slug or case_name)
+            if screenshot_wp_url:
+                content = insert_screenshot_into_content(content, screenshot_wp_url, case_name)
+                print(f"  ✓ スクリーンショットを記事に挿入しました")
+
+        try:
+            update_data = {"title": title, "content": content}
+            if slug:
+                update_data["slug"] = slug
+            update_post(post_info["id"], **update_data)
+            success += 1
+        except Exception as e:
+            print(f"  ✗ 更新失敗: {e}")
+            errors += 1
+
+        if i < len(rows) and delay > 0:
+            time.sleep(delay)
+
+    print(f"\n=== 完了: 更新 {success}件 / スキップ {skipped}件 / エラー {errors}件 ===")
+
+
 def main():
-    parser = argparse.ArgumentParser(description="CSV一括投稿")
+    parser = argparse.ArgumentParser(description="CSV一括投稿・リライト")
     parser.add_argument("csv_file", help="CSVファイルのパス")
     parser.add_argument("--status", default="draft", choices=["draft", "publish", "pending", "private"])
     parser.add_argument("--delay", type=float, default=2, help="投稿間隔（秒）")
     parser.add_argument("--dry-run", action="store_true", help="投稿せず内容確認のみ")
+    parser.add_argument("--rewrite", action="store_true", help="既存記事を旧タイトルで検索して上書き更新")
 
     args = parser.parse_args()
-    bulk_post_from_csv(args.csv_file, args.status, args.delay, args.dry_run)
+    if args.rewrite:
+        bulk_rewrite_from_csv(args.csv_file, args.delay, args.dry_run)
+    else:
+        bulk_post_from_csv(args.csv_file, args.status, args.delay, args.dry_run)
 
 
 if __name__ == "__main__":
