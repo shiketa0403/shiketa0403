@@ -37,7 +37,7 @@ def _asp_comparison_table():
     """5社ASP比較テーブル（バリューコマースのみ◯、他は✕）を返す"""
     TH_STYLE = 'style="width: 50%; background-color: #301ef7;"'
     TD_CENTER = 'style="width: 50%; text-align: center; vertical-align: middle;"'
-    IMG_BASE = "https://www.civichat.jp/wp-content/uploads/2026/03"
+    IMG_BASE = "https://www.garage-xxx.jp/wp-content/uploads/2026/04"
 
     asp_list = [
         {
@@ -107,7 +107,7 @@ def _asp_comparison_table():
 
 def _vc_detail_section():
     """バリューコマースの詳細紹介セクション（静的）を返す"""
-    IMG_BASE = "https://www.civichat.jp/wp-content/uploads/2026/03"
+    IMG_BASE = "https://www.garage-xxx.jp/wp-content/uploads/2026/04"
     TH_STYLE = 'style="width: 50%; text-align: center; vertical-align: middle; background-color: #4a4a4a;"'
     TD_STYLE = 'style="width: 50%; text-align: center; vertical-align: middle;"'
 

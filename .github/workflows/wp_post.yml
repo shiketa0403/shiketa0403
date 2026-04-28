@@ -48,7 +48,7 @@ jobs:
               exit(1)
           with open('wp_config.py', 'w') as f:
               f.write(f'''WP_CONFIG = {{
-              "site_url": "https://civichat.jp",
+              "site_url": "https://www.garage-xxx.jp",
               "username": "{username}",
               "app_password": "{app_password}",
           }}

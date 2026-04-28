@@ -47,7 +47,7 @@ jobs:
         run: |
           cat > wp_config.py << 'PYEOF'
           WP_CONFIG = {
-              "site_url": "https://civichat.jp",
+              "site_url": "https://www.garage-xxx.jp",
               "username": "${{ secrets.WP_USERNAME }}",
               "app_password": "${{ secrets.WP_APP_PASSWORD }}",
           }

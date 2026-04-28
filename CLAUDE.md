@@ -1,10 +1,10 @@
 # 運用ルール
 
 ## WordPress投稿
-- WordPress投稿は **GitHub Actions経由** で行う（この環境から直接 civichat.jp に接続できない）
+- WordPress投稿は **GitHub Actions経由** で行う（この環境から直接 garage-xxx.jp に接続できない）
 - `csv/post.csv` をpush → `wp_post.yml` が自動実行される（投稿対象はこの1ファイルのみ）
 - 手動実行も可能（GitHub Actions の workflow_dispatch）
-- 投稿先サイト: https://civichat.jp
+- 投稿先サイト: https://www.garage-xxx.jp
 - 認証情報は GitHub Secrets に保存済み（WP_USERNAME, WP_APP_PASSWORD）
 
 ## ワークフロー
@@ -28,7 +28,7 @@
 - `ai_generator.py` — Claude APIによるジャンル判定・紹介文・スラッグ生成
 
 ## 注意事項
-- この環境のネットワークはプロキシ制限があり、civichat.jp への直接接続は不可
+- この環境のネットワークはプロキシ制限があり、garage-xxx.jp への直接接続は不可
 - 記事の投稿・確認・削除はすべて GitHub Actions 経由で実行すること
 - **csv/post.csv は毎回リセット**: 記事作成時は `csv/post.csv` を必ずヘッダー行＋今回投稿する記事のみにする。過去の記事を残すと重複投稿される
 - **重複投稿防止**: `wp_bulk_post.py` は投稿前にWordPressの既存記事タイトルを確認し、同じタイトルの記事が存在する場合は自動でスキップする
@@ -95,27 +95,27 @@
 <th style="width: 50%; background-color: #301ef7;"><strong><span style="color: #ffffff;">広告掲載状況</span></strong></th>
 </tr>
 <tr>
-<td style="width: 50%; text-align: center; vertical-align: middle;"><a href="https://px.a8.net/svt/ejp?a8mat=3BG026+FXXVXU+0K+10A5LT" rel="nofollow noopener"><img class="alignnone size-full" src="https://www.civichat.jp/wp-content/uploads/2026/03/a8.png" alt="A8net" width="500" height="200" /></a>
+<td style="width: 50%; text-align: center; vertical-align: middle;"><a href="https://px.a8.net/svt/ejp?a8mat=3BG026+FXXVXU+0K+10A5LT" rel="nofollow noopener"><img class="alignnone size-full" src="https://www.garage-xxx.jp/wp-content/uploads/2026/04/a8.png" alt="A8net" width="500" height="200" /></a>
 <a href="https://px.a8.net/svt/ejp?a8mat=3BG026+FXXVXU+0K+10A5LT" rel="nofollow">https://www.a8.net/</a></td>
 <td style="width: 50%; text-align: center; vertical-align: middle;"><span style="font-size: 7em;">✕</span></td>
 </tr>
 <tr>
-<td style="width: 50%; text-align: center; vertical-align: middle;"><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3548721&amp;amp;pid=892566121" rel="nofollow"><img class="alignnone size-full" src="https://www.civichat.jp/wp-content/uploads/2026/03/vc.png" alt="バリューコマース" width="500" height="200" /></a>
+<td style="width: 50%; text-align: center; vertical-align: middle;"><a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3548721&amp;amp;pid=892566121" rel="nofollow"><img class="alignnone size-full" src="https://www.garage-xxx.jp/wp-content/uploads/2026/04/vc.png" alt="バリューコマース" width="500" height="200" /></a>
 <a href="//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3548721&amp;pid=892566121" rel="nofollow"><img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=3548721&amp;pid=892566121" width="1" height="1" border="0" />https://www.valuecommerce.ne.jp/</a></td>
 <td style="width: 50%; text-align: center; vertical-align: middle;"><span class="hutoaka"><span style="font-size: 7em;">◯</span></span></td>
 </tr>
 <tr>
-<td style="width: 50%; text-align: center; vertical-align: middle;"><a href="https://h.accesstrade.net/sp/cc?rk=0100nldw00kolw" rel="nofollow"><img class="alignnone size-full" src="https://www.civichat.jp/wp-content/uploads/2026/03/acces.png" alt="アクセストレード" width="500" height="200" /></a>
+<td style="width: 50%; text-align: center; vertical-align: middle;"><a href="https://h.accesstrade.net/sp/cc?rk=0100nldw00kolw" rel="nofollow"><img class="alignnone size-full" src="https://www.garage-xxx.jp/wp-content/uploads/2026/04/acces.png" alt="アクセストレード" width="500" height="200" /></a>
 <a href="https://h.accesstrade.net/sp/cc?rk=0100nldw00kolw" rel="nofollow">https://www.accesstrade.ne.jp/</a></td>
 <td style="width: 50%; text-align: center; vertical-align: middle;"><span style="font-size: 7em;">✕</span></td>
 </tr>
 <tr>
-<td style="width: 50%; text-align: center; vertical-align: middle;"><a href="https://www.afi-b.com/" rel="nofollow"><img class="alignnone size-full" src="https://www.civichat.jp/wp-content/uploads/2026/03/afb.png" alt="afb" width="500" height="200" /></a>
+<td style="width: 50%; text-align: center; vertical-align: middle;"><a href="https://www.afi-b.com/" rel="nofollow"><img class="alignnone size-full" src="https://www.garage-xxx.jp/wp-content/uploads/2026/04/afb.png" alt="afb" width="500" height="200" /></a>
 <a href="https://www.afi-b.com/" rel="nofollow">https://www.afi-b.com/</a></td>
 <td style="width: 50%; text-align: center; vertical-align: middle;"><span style="font-size: 7em;">✕</span></td>
 </tr>
 <tr>
-<td style="width: 50%; text-align: center; vertical-align: middle;"><a href="//af.moshimo.com/af/c/click?a_id=4207547&amp;p_id=1&amp;pc_id=1&amp;pl_id=82635" rel="nofollow"><img class="alignnone size-full" src="https://www.civichat.jp/wp-content/uploads/2026/03/moshimo.png" alt="もしもアフィリエイト" width="500" height="200" /></a>
+<td style="width: 50%; text-align: center; vertical-align: middle;"><a href="//af.moshimo.com/af/c/click?a_id=4207547&amp;p_id=1&amp;pc_id=1&amp;pl_id=82635" rel="nofollow"><img class="alignnone size-full" src="https://www.garage-xxx.jp/wp-content/uploads/2026/04/moshimo.png" alt="もしもアフィリエイト" width="500" height="200" /></a>
 <a href="//af.moshimo.com/af/c/click?a_id=4207547&amp;p_id=1&amp;pc_id=1&amp;pl_id=82635" rel="nofollow">https://af.moshimo.com/</a></td>
 <td style="width: 50%; text-align: center; vertical-align: middle;"><span style="font-size: 7em;">✕</span></td>
 </tr>

@@ -1,4 +1,4 @@
-# WordPress 自動投稿ツール (civichat.jp)
+# WordPress 自動投稿ツール (garage-xxx.jp)
 
 WordPress REST API を使った記事の自動投稿・管理ツール。
 
