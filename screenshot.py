@@ -112,7 +112,10 @@ def upload_to_wordpress(image_path, title=""):
     filename = os.path.basename(image_path)
     headers = get_auth_header(config)
     headers["Content-Type"] = "image/png"
-    headers["Content-Disposition"] = f'attachment; filename="{filename}"'
+    ascii_filename = filename.encode('ascii', 'ignore').decode()
+    if not ascii_filename or ascii_filename == '.png':
+        ascii_filename = f"screenshot-{int(time.time())}.png"
+    headers["Content-Disposition"] = f'attachment; filename="{ascii_filename}"'
 
     req = urllib.request.Request(url, data=image_data, headers=headers, method="POST")
     try:
@@ -130,10 +133,13 @@ def upload_to_wordpress(image_path, title=""):
 
 
 def slugify(text):
-    """日本語テキストからファイル名用のスラッグを生成"""
-    text = re.sub(r'[^\w\s-]', '', text)
-    text = re.sub(r'[\s_]+', '-', text.strip().lower())
-    return text[:50] or "screenshot"
+    """テキストからファイル名用のASCIIスラッグを生成"""
+    ascii_text = re.sub(r'[^\w\s-]', '', text, flags=re.ASCII)
+    ascii_text = re.sub(r'[\s_]+', '-', ascii_text.strip().lower())
+    if ascii_text:
+        return ascii_text[:50]
+    import hashlib
+    return "ss-" + hashlib.md5(text.encode()).hexdigest()[:10]
 
 
 def capture_and_upload(url, name="", output_dir="screenshots", upload=False):
