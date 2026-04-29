@@ -11,14 +11,10 @@ on:
           - list-categories
           - delete-category
           - list-posts
-          - list-slugs
           - delete-post
       target_id:
         description: '削除対象のID（削除時のみ）'
         required: false
-
-permissions:
-  contents: write
 
 jobs:
   wp-admin:
@@ -67,48 +63,10 @@ jobs:
           "
           elif [ "$ACTION" = "list-posts" ]; then
             python wp_post.py list
-          elif [ "$ACTION" = "list-slugs" ]; then
-            python3 << 'PYEOF'
-          import json
-          from wp_post import api_request
-          all_posts = []
-          for status in ["publish", "draft", "pending", "private"]:
-              page = 1
-              while True:
-                  posts = api_request(f"posts?per_page=100&page={page}&status={status}")
-                  if not posts:
-                      break
-                  all_posts.extend(posts)
-                  if len(posts) < 100:
-                      break
-                  page += 1
-          all_posts.sort(key=lambda p: p["id"])
-          lines = [f"全記事: {len(all_posts)}件\n"]
-          for p in all_posts:
-              lines.append(f"[{p['id']}] {p['title']['rendered']}")
-              lines.append(f"  URL: {p['link']}")
-              lines.append(f"  slug: {p['slug']}")
-              lines.append("")
-          output = "\n".join(lines)
-          print(output)
-          with open("slug_list.txt", "w", encoding="utf-8") as f:
-              f.write(output)
-          PYEOF
           elif [ "$ACTION" = "delete-post" ]; then
             if [ -z "$TARGET_ID" ]; then
               echo "エラー: target_id が必要です"
               exit 1
             fi
             python wp_post.py delete --id "$TARGET_ID" --force
-          fi
-
-      - name: slug_list.txt をpush
-        if: ${{ github.event.inputs.action == 'list-slugs' }}
-        run: |
-          if [ -f slug_list.txt ]; then
-            git config user.name "github-actions"
-            git config user.email "actions@github.com"
-            git add slug_list.txt
-            git commit -m "スラッグ一覧を出力" || echo "変更なし"
-            git push
           fi
