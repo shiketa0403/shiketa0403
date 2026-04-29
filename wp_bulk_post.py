@@ -116,10 +116,21 @@ def get_existing_posts_map():
     return posts_map
 
 
-def find_post_by_old_title(posts_map, case_name):
-    """旧タイトル形式で既存記事を検索する"""
-    old_title = f"{case_name}とアフィリエイト提携できるASPはどこ？"
-    return posts_map.get(old_title)
+def find_post_by_case_name(posts_map, case_name):
+    """案件名を含む既存記事をタイトルから検索する（複数のタイトル形式に対応）"""
+    patterns = [
+        f"{case_name}とアフィリエイト提携できるASPはどこ？",
+        f"{case_name}のアフィリエイト提携はどこのASP？",
+        f"{case_name}のアフィリエイト提携先はどこのASP？",
+        f"【{case_name}】アフィリエイト提携はどこのASP？",
+    ]
+    for pattern in patterns:
+        if pattern in posts_map:
+            return posts_map[pattern]
+    for wp_title in posts_map:
+        if case_name in wp_title and ("アフィリエイト" in wp_title):
+            return posts_map[wp_title]
+    return None
 
 
 def bulk_post_from_csv(csv_path, default_status="draft", delay=2, dry_run=False):
@@ -258,7 +269,7 @@ def bulk_rewrite_from_csv(csv_path, delay=2, dry_run=False):
             success += 1
             continue
 
-        post_info = find_post_by_old_title(posts_map, case_name)
+        post_info = find_post_by_case_name(posts_map, case_name)
         if not post_info:
             new_info = posts_map.get(title)
             if new_info:
