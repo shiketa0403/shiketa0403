@@ -81,10 +81,11 @@ jobs:
                   page += 1
           all_posts.sort(key=lambda p: p["id"])
           print(f"全記事: {len(all_posts)}件\n")
-          print(f"{'ID':<6} {'スラッグ':<40} タイトル")
-          print("-" * 100)
           for p in all_posts:
-              print(f"{p['id']:<6} {p['slug']:<40} {p['title']['rendered']}")
+              print(f"[{p['id']}] {p['title']['rendered']}")
+              print(f"  URL: {p['link']}")
+              print(f"  slug: {p['slug']}")
+              print()
           PYEOF
           elif [ "$ACTION" = "delete-post" ]; then
             if [ -z "$TARGET_ID" ]; then
