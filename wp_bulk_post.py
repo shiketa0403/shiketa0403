@@ -279,9 +279,7 @@ def bulk_rewrite_from_csv(csv_path, delay=2, dry_run=False):
                 print(f"  ✓ スクリーンショットを記事に挿入しました")
 
         try:
-            update_data = {"title": title, "content": content}
-            if slug:
-                update_data["slug"] = slug
+            update_data = {"content": content}
             update_post(post_info["id"], **update_data)
             success += 1
         except Exception as e:
