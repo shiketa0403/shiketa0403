@@ -57,4 +57,5 @@ jobs:
           GSPREAD_WORKSHEET_NAME: ${{ inputs.worksheet_name }}
           INTERVAL_MINUTES: ${{ inputs.interval_minutes }}
           DURATION_HOURS: ${{ inputs.duration_hours }}
-        run: python x_post.py
+          PYTHONUNBUFFERED: '1'
+        run: python -u x_post.py
