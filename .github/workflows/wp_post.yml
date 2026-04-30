@@ -1,6 +1,9 @@
 name: WordPress 自動投稿
 
 on:
+  push:
+    paths:
+      - 'csv/post.csv'
   workflow_dispatch:
     inputs:
       status:
