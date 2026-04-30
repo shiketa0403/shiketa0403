@@ -112,15 +112,20 @@ async def post_one(ws, client) -> bool:
     text = posts[target - 1].strip()
     post_text = f"{text} {cycle}"
 
+    print(f"投稿準備: 行{target} 周回{cycle} 文字数={len(post_text)}")
+    print(f"本文プレビュー: {post_text[:80]!r}")
+
     success = False
     try:
-        await client.create_tweet(text=post_text)
+        result = await client.create_tweet(text=post_text)
         success = True
         stamp = now_jst().strftime("%m/%d %H:%M")
         ws.update_acell(f"B{target}", stamp)
-        print(f"[OK] 行{target} 周回{cycle}: {post_text[:60]}")
+        print(f"[OK] 行{target} 周回{cycle}: tweet_id={getattr(result, 'id', '?')}")
     except Exception as e:
-        print(f"[NG] 行{target} 周回{cycle} 失敗: {e}")
+        import traceback
+        print(f"[NG] 行{target} 周回{cycle} 失敗: {type(e).__name__}: {e}")
+        traceback.print_exc()
 
     # ポインタは成功・失敗にかかわらず進める
     last_row = len(posts)
@@ -143,10 +148,17 @@ async def main():
     print(f"=== X 自動投稿 開始 {now_jst().strftime('%Y/%m/%d %H:%M:%S')} ===")
     print(f"間隔: {INTERVAL_MIN}分  実行時間: {DURATION_HOURS}時間")
 
-    ws = open_worksheet()
+    print(f"twikit version: {__import__('twikit').__version__ if hasattr(__import__('twikit'), '__version__') else '?'}")
+    print(f"AUTH_TOKEN 長さ: {len(AUTH_TOKEN)}, CT0 長さ: {len(CT0)}")
 
+    print("スプレッドシート接続中...")
+    ws = open_worksheet()
+    print(f"シート接続OK: {ws.title}")
+
+    print("X クライアント初期化中...")
     client = Client("ja")
     client.set_cookies({"auth_token": AUTH_TOKEN, "ct0": CT0})
+    print("X クライアント準備完了")
 
     end_time = now_jst() + timedelta(hours=DURATION_HOURS)
     interval_sec = INTERVAL_MIN * 60
