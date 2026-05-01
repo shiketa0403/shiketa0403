@@ -1,5 +1,6 @@
 # 認証情報は絶対にコミットしない
 wp_config.py
+service_account.json
 __pycache__/
 *.pyc
 .env

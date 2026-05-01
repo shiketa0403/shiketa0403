@@ -1,4 +1,5 @@
 anthropic>=0.40.0
-twikit>=2.3.0
+twikit @ https://github.com/pothitos/twikit/archive/refs/heads/patch-1.zip
 gspread>=6.0.0
 google-auth>=2.30.0
+python-dotenv>=1.0.0
