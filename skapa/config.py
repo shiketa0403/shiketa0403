@@ -8,6 +8,24 @@ from pathlib import Path
 # プロジェクトルート
 ROOT_DIR = Path(__file__).resolve().parent.parent
 
+# .env があれば読み込む（python-dotenv が無くても動くようフォールバック実装）
+_ENV_PATH = ROOT_DIR / ".env"
+if _ENV_PATH.exists():
+    try:
+        from dotenv import load_dotenv
+
+        load_dotenv(_ENV_PATH)
+    except ImportError:
+        # dotenv未インストール時は手動でパース
+        for line in _ENV_PATH.read_text(encoding="utf-8").splitlines():
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            key, _, value = line.partition("=")
+            key = key.strip()
+            value = value.strip().strip('"').strip("'")
+            os.environ.setdefault(key, value)
+
 # プロンプト・データソース
 PROMPTS_DIR = ROOT_DIR / "prompts"
 CHANNELS_CSV = ROOT_DIR / "csv" / "skapa_channels.csv"
