@@ -71,6 +71,49 @@ def run_step1(ch: Channel, *, force: bool = False) -> str:
     return output
 
 
+def build_step2_variables(ch: Channel, persona_result: str) -> dict[str, str]:
+    """プロンプト2（見出し構成）に渡す変数を組み立てる。"""
+    context_parts = [
+        "## チャンネル事実データ",
+        build_channel_facts(ch),
+    ]
+    notes = load_industry_notes()
+    if notes:
+        context_parts.append("\n## 業界の最新情報（手動メンテ・確定情報として優先）\n")
+        context_parts.append(notes)
+    return {
+        "TARGET_KEYWORD": ch.target_keyword,
+        "PERSONA_RESULT": persona_result,
+        "CONTEXT": "\n".join(context_parts),
+    }
+
+
+def run_step2(ch: Channel, *, force: bool = False) -> str:
+    """Step 2: 見出し構成を実行。Step 1 の結果が必要。"""
+    cached = prompt_runner.load_step_output(ch.slug, 2)
+    if cached and not force:
+        print(f"[Step 2] キャッシュ利用: {config.channel_draft_dir(ch.slug) / config.STEP_FILENAMES[2]}")
+        return cached
+
+    persona = prompt_runner.load_step_output(ch.slug, 1)
+    if not persona:
+        print(f"[Step 2] Step 1の出力がありません。先に Step 1 を実行します。")
+        persona = run_step1(ch, force=False)
+
+    variables = build_step2_variables(ch, persona)
+    print(f"[Step 2] 見出し構成を生成中...")
+
+    output = prompt_runner.run_prompt(
+        config.PROMPT_FILES[2],
+        variables,
+        enable_web_search=False,
+    )
+
+    path = prompt_runner.save_step_output(ch.slug, 2, output)
+    print(f"[Step 2] 完了 → {path}")
+    return output
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="スカパー記事生成")
     parser.add_argument("channel", help="チャンネル名 / 正式名称 / スラッグ / No")
@@ -94,17 +137,20 @@ def main() -> int:
     print(f"  サブKW: {ch.sub_kw}")
     print()
 
-    if args.step == 1:
-        output = run_step1(ch, force=args.force)
-        print()
-        print("=" * 60)
-        print("Step 1 出力:")
-        print("=" * 60)
-        print(output)
-    else:
+    runners = {
+        1: run_step1,
+        2: run_step2,
+    }
+    if args.step not in runners:
         print(f"Step {args.step} はまだ未実装です。", file=sys.stderr)
         return 2
 
+    output = runners[args.step](ch, force=args.force)
+    print()
+    print("=" * 60)
+    print(f"Step {args.step} 出力:")
+    print("=" * 60)
+    print(output)
     return 0
 
 
