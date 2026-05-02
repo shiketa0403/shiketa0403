@@ -5,3 +5,6 @@ __pycache__/
 *.pyc
 .env
 screenshots/
+
+# スカパー記事生成の中間成果物（ローカルキャッシュ）
+skapa/drafts/
