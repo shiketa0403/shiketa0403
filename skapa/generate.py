@@ -16,11 +16,36 @@ from . import config, prompt_runner, sheet_loader
 from .sheet_loader import Channel
 
 
+def load_industry_notes() -> str:
+    """業界共通の最新情報メモを読む。なければ空文字。"""
+    if config.INDUSTRY_NOTES_PATH.exists():
+        return config.INDUSTRY_NOTES_PATH.read_text(encoding="utf-8").strip()
+    return ""
+
+
+def build_channel_facts(ch: Channel) -> str:
+    """チャンネル個別の事実データを Markdown 文字列で組み立てる。"""
+    lines = [
+        f"- チャンネル名: {ch.name}",
+        f"- 正式名称: {ch.formal_name}",
+        f"- ジャンル: {ch.genre}",
+        f"- 月額視聴料（税込）: {ch.monthly_fee}円",
+        f"- スカパー基本プラン対応: {'あり' if ch.in_basic else 'なし（個別契約のみ）'}",
+        f"- セレクト5/10対応: {'あり' if ch.in_select else 'なし'}",
+        f"- スカパー基本料: 月額429円（税込）が別途必要",
+    ]
+    if ch.note:
+        lines.append(f"- 備考: {ch.note}")
+    return "\n".join(lines)
+
+
 def build_step1_variables(ch: Channel) -> dict[str, str]:
     """プロンプト1（ペルソナ分析）に渡す変数を組み立てる。"""
     return {
         "TARGET_KEYWORD": ch.target_keyword,
         "MEDIA_INFO": config.MEDIA_INFO,
+        "CHANNEL_FACTS": build_channel_facts(ch),
+        "INDUSTRY_NOTES": load_industry_notes(),
     }
 
 

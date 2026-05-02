@@ -30,6 +30,8 @@ if _ENV_PATH.exists():
 PROMPTS_DIR = ROOT_DIR / "prompts"
 CHANNELS_CSV = ROOT_DIR / "csv" / "skapa_channels.csv"
 DRAFTS_DIR = ROOT_DIR / "skapa" / "drafts"
+KNOWLEDGE_DIR = ROOT_DIR / "skapa" / "knowledge"
+INDUSTRY_NOTES_PATH = KNOWLEDGE_DIR / "industry_notes.md"
 
 # スプレッドシート公開CSV URL（GitHub Actionsからはこちらを使う）
 SHEET_PUBLISHED_CSV_URL = (
