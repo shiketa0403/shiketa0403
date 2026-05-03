@@ -89,6 +89,114 @@ def build_step1_variables(ch: Channel) -> dict[str, str]:
     }
 
 
+def _build_step_inputs(ch: Channel, step: int) -> tuple[str, str, str]:
+    """各stepのシステムプロンプト/ユーザーメッセージ/期待出力先パスを返す。
+
+    Claude Code（Pro/MAX）で実行するための準備データ。
+    """
+    out_dir = config.channel_draft_dir(ch.slug)
+
+    if step == 1:
+        variables = build_step1_variables(ch)
+        sys_prompt = prompt_runner.render_prompt(
+            prompt_runner.load_prompt(config.PROMPT_FILES[1]), variables
+        )
+        user_msg = "上記のルールに従って実行してください。"
+        expected = str(out_dir / config.STEP_FILENAMES[1])
+        return sys_prompt, user_msg, expected
+
+    if step == 2:
+        persona = prompt_runner.load_step_output(ch.slug, 1) or ""
+        variables = build_step2_variables(ch, persona)
+        sys_prompt = prompt_runner.render_prompt(
+            prompt_runner.load_prompt(config.PROMPT_FILES[2]), variables
+        )
+        return sys_prompt, "上記のルールに従って実行してください。", str(out_dir / config.STEP_FILENAMES[2])
+
+    if step == 3:
+        persona = prompt_runner.load_step_output(ch.slug, 1) or ""
+        structure = prompt_runner.load_step_output(ch.slug, 2) or ""
+        variables = build_step3_variables(ch, persona, structure)
+        sys_prompt = prompt_runner.render_prompt(
+            prompt_runner.load_prompt(config.PROMPT_FILES[3]), variables
+        )
+        return sys_prompt, "上記のルールに従って実行してください。", str(out_dir / config.STEP_FILENAMES[3])
+
+    if step == 4:
+        persona = prompt_runner.load_step_output(ch.slug, 1) or ""
+        audit = prompt_runner.load_step_output(ch.slug, 3) or ""
+        audited_structure = extract_section(audit, "修正後") or audit
+        variables = build_step4_variables(ch, persona, audited_structure)
+        sys_prompt = prompt_runner.render_prompt(
+            prompt_runner.load_prompt(config.PROMPT_FILES[4]), variables
+        )
+        return sys_prompt, "上記のルールに従って実行してください。", str(out_dir / config.STEP_FILENAMES[4])
+
+    if step == 5:
+        body_md = prompt_runner.load_step_output(ch.slug, 4) or ""
+        body_html = md_to_html.md_to_html(body_md)
+        sys_prompt = prompt_runner.load_prompt(config.PROMPT_FILES[5])
+        return sys_prompt, body_html, str(out_dir / config.STEP_FILENAMES[5])
+
+    if step == 6:
+        body_html = (out_dir / config.STEP_FILENAMES[5]).read_text(encoding="utf-8")
+        sys_prompt = prompt_runner.load_prompt(config.PROMPT_FILES[6])
+        return sys_prompt, body_html, str(out_dir / config.STEP_FILENAMES[6])
+
+    if step == 7:
+        body_html = (out_dir / config.STEP_FILENAMES[6]).read_text(encoding="utf-8")
+        sys_prompt = prompt_runner.load_prompt(config.PROMPT_FILES[7])
+        return sys_prompt, body_html, str(out_dir / config.STEP_FILENAMES[7])
+
+    if step == 8:
+        body_html = (out_dir / config.STEP_FILENAMES[7]).read_text(encoding="utf-8")
+        sys_prompt = prompt_runner.load_prompt(config.PROMPT_FILES[8])
+        return sys_prompt, body_html, str(out_dir / config.STEP_FILENAMES[8])
+
+    raise ValueError(f"unknown step: {step}")
+
+
+def prepare_step(ch: Channel, step: int) -> str:
+    """指定 step のシステム/ユーザープロンプトを 1 つの md ファイルに書き出す。
+
+    API は呼ばず、Claude Code（Pro/MAX サブスクリプション）で実行するための
+    準備データを保存する。私がこのファイルを読み、応答を expected 出力先に保存する。
+    """
+    sys_prompt, user_msg, expected = _build_step_inputs(ch, step)
+    out_dir = config.channel_draft_dir(ch.slug)
+    prompt_path = out_dir / f"_step{step}_prompt.md"
+
+    is_multi_turn = step in {5, 6, 7}
+    flow_note = (
+        "## マルチターン手順\n"
+        "1. 私（Claude Code）が下記システムプロンプトに従ってフェーズ1出力をチャットに表示\n"
+        "2. ユーザーが「OK」または除外指定／修正指示を伝える\n"
+        "3. 私がフェーズ2の本文HTMLをチャットに出力（Step 6は全セクション連結後の最終形）\n"
+        "4. 私が最終本文HTMLを下記「期待出力先」に保存\n"
+        if is_multi_turn
+        else "## 単発実行\n"
+        "1. 私（Claude Code）が下記システムプロンプトに従って応答を生成\n"
+        "2. 応答を下記「期待出力先」に保存\n"
+    )
+
+    text = (
+        f"# Step {step} プロンプト（B案: Claude Code 実行用）\n\n"
+        f"対象チャンネル: {ch.name}（slug: {ch.slug}）\n\n"
+        f"{flow_note}\n"
+        f"## 期待出力先\n\n`{expected}`\n\n"
+        f"---\n\n"
+        f"## システムプロンプト\n\n{sys_prompt}\n\n"
+        f"---\n\n"
+        f"## ユーザーメッセージ（フェーズ1の入力）\n\n"
+        f"{user_msg}\n"
+    )
+    prompt_path.write_text(text, encoding="utf-8")
+    print(f"[Step {step} prepare] 出力: {prompt_path}")
+    print(f"  → 私（Claude Code）に「エムオンのStep {step} を実行して」と伝えてください。")
+    print(f"  → 期待出力先: {expected}")
+    return str(prompt_path)
+
+
 def run_step1(ch: Channel, *, force: bool = False) -> str:
     """Step 1: ペルソナ分析を実行。"""
     cached = prompt_runner.load_step_output(ch.slug, 1)
@@ -550,6 +658,12 @@ def main() -> int:
         help="ユーザー確認フェーズで承認応答を送信して次の出力を取得（Step 5/6/7用）。"
              "値を指定しない場合は 'OK' が送られる。例: --apply 'OK' / --apply '1番除外'",
     )
+    parser.add_argument(
+        "--prepare",
+        action="store_true",
+        help="API を呼ばず、Claude Code（Pro/MAX）で実行するためのプロンプト"
+             "ファイル（_step{N}_prompt.md）を生成する。",
+    )
     args = parser.parse_args()
 
     channels = sheet_loader.load_local()
@@ -567,6 +681,13 @@ def main() -> int:
     print(f"  メインKW: {ch.main_kw}")
     print(f"  サブKW: {ch.sub_kw}")
     print()
+
+    if args.prepare:
+        if args.step not in {1, 2, 3, 4, 5, 6, 7, 8}:
+            print(f"--prepare は Step 1〜8 にのみ対応しています。", file=sys.stderr)
+            return 2
+        prepare_step(ch, args.step)
+        return 0
 
     if args.step == 5:
         if args.apply is not None:
