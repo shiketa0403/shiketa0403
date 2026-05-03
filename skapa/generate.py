@@ -152,6 +152,71 @@ def build_step3_variables(ch: Channel, persona: str, structure: str) -> dict[str
     }
 
 
+def build_step4_variables(ch: Channel, persona: str, audited_structure: str) -> dict[str, str]:
+    """プロンプト4（本文作成）に渡す変数を組み立てる。
+
+    audited_structure は Step 3 の「修正後の完成構成」セクションを抽出済みのもの。
+    独自情報メモにはチャンネル事実 + 業界ナレッジを入れる。
+    """
+    search_intent = extract_section(persona, "検索意図") or ""
+    ideal_state = extract_section(persona, "検索後の理想状態") or ""
+    concerns = extract_section(persona, "不安・懸念") or ""
+    article_goal = extract_section(persona, "記事のゴール") or ""
+
+    original_info_parts = [
+        "## チャンネル事実データ",
+        build_channel_facts(ch),
+    ]
+    notes = load_industry_notes()
+    if notes:
+        original_info_parts.append("\n## 業界の最新情報（手動メンテ・確定情報として優先）\n")
+        original_info_parts.append(notes)
+
+    return {
+        "TARGET_KEYWORD": ch.target_keyword,
+        "SEARCH_INTENT": search_intent,
+        "IDEAL_STATE": ideal_state,
+        "CONCERNS": concerns,
+        "ARTICLE_GOAL": article_goal,
+        "STRUCTURE": audited_structure,
+        "ORIGINAL_INFO": "\n".join(original_info_parts),
+    }
+
+
+def run_step4(ch: Channel, *, force: bool = False) -> str:
+    """Step 4: 本文作成（Markdown）を実行。Step 1〜3 の結果が必要。"""
+    cached = prompt_runner.load_step_output(ch.slug, 4)
+    if cached and not force:
+        print(f"[Step 4] キャッシュ利用: {config.channel_draft_dir(ch.slug) / config.STEP_FILENAMES[4]}")
+        return cached
+
+    persona = prompt_runner.load_step_output(ch.slug, 1)
+    if not persona:
+        persona = run_step1(ch, force=False)
+
+    audit = prompt_runner.load_step_output(ch.slug, 3)
+    if not audit:
+        audit = run_step3(ch, force=False)
+
+    audited_structure = extract_section(audit, "修正後") or audit
+    if not audited_structure:
+        print(f"[Step 4] 警告: 「修正後の完成構成」を抽出できなかったため、監査出力全文を渡します。", file=sys.stderr)
+        audited_structure = audit
+
+    variables = build_step4_variables(ch, persona, audited_structure)
+    print(f"[Step 4] 本文作成中（時間がかかる可能性あり）...")
+
+    output = prompt_runner.run_prompt(
+        config.PROMPT_FILES[4],
+        variables,
+        enable_web_search=True,  # 数字や仕様の最新確認用
+    )
+
+    path = prompt_runner.save_step_output(ch.slug, 4, output)
+    print(f"[Step 4] 完了 → {path}")
+    return output
+
+
 def run_step3(ch: Channel, *, force: bool = False) -> str:
     """Step 3: 構成監査を実行。Step 1, 2 の結果が必要。"""
     cached = prompt_runner.load_step_output(ch.slug, 3)
@@ -208,6 +273,7 @@ def main() -> int:
         1: run_step1,
         2: run_step2,
         3: run_step3,
+        4: run_step4,
     }
     if args.step not in runners:
         print(f"Step {args.step} はまだ未実装です。", file=sys.stderr)
