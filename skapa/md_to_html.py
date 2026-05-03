@@ -145,6 +145,9 @@ def normalize_paragraph_breaks(html: str) -> str:
       テーブル区切り `|`、引用 `>` で始まる行は触らない
     - 行頭が `<a>` `<strong>` などインラインHTMLの場合は平文行として扱い、
       行内の「。」直後で分割する
+    - 「。」直後にインラインの閉じタグ（</strong>, </span>, </a> 等）が
+      連続する場合は、それらをまとめて 「。」 と同じ側に含める
+      （タグの跨ぎ分割で空段落が生じ WP に &nbsp; を挿入される問題を防ぐ）
     - 連続する空行は1つにまとめる
     """
     out: list[str] = []
@@ -161,15 +164,15 @@ def normalize_paragraph_breaks(html: str) -> str:
         if stripped.startswith("<") and _BLOCK_TAG_PREFIX_RE.match(stripped):
             out.append(line)
             continue
-        # 「。」で分割（直後を保持）。末尾「。」のみなら分割しない
-        parts = [p for p in re.split(r"(?<=。)", line) if p.strip()]
+        # 「。」 + 連続する閉じインラインタグを区切りに分割
+        parts = _split_after_period(line)
         if len(parts) <= 1:
             out.append(line)
             continue
         for i, part in enumerate(parts):
             if i > 0:
                 out.append("")
-            out.append(part.lstrip())
+            out.append(part.strip())
 
     # 連続空行を1つに圧縮
     cleaned: list[str] = []
@@ -182,6 +185,36 @@ def normalize_paragraph_breaks(html: str) -> str:
         prev_blank = is_blank
 
     return "\n".join(cleaned)
+
+
+_INLINE_CLOSE_TAG_RE = re.compile(r"</(?:strong|em|span|a|b|i|small|sub|sup|mark|u|s)>", re.I)
+
+
+def _split_after_period(line: str) -> list[str]:
+    """「。」直後（および直後に連続する閉じインラインタグ含む）で文字列を分割する。"""
+    parts: list[str] = []
+    pos = 0
+    n = len(line)
+    while pos < n:
+        idx = line.find("。", pos)
+        if idx == -1:
+            parts.append(line[pos:])
+            break
+        end = idx + 1
+        # 「。」直後に続く閉じインラインタグを取り込む
+        while end < n:
+            m = _INLINE_CLOSE_TAG_RE.match(line, end)
+            if m:
+                end = m.end()
+                continue
+            # 空白も取り込む（次の文との境界を整えるため）
+            if line[end] == " ":
+                end += 1
+                continue
+            break
+        parts.append(line[pos:end])
+        pos = end
+    return [p for p in parts if p.strip()]
 
 
 if __name__ == "__main__":
