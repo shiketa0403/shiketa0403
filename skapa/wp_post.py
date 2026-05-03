@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import base64
 import json
+import mimetypes
 import re
 import sys
 from pathlib import Path
@@ -39,15 +40,28 @@ def upload_media(file_path: Path, alt_text: str = "") -> dict[str, Any]:
     """画像をWordPressメディアライブラリにアップロード。"""
     import requests
 
+    mime_type, _ = mimetypes.guess_type(file_path.name)
+    if not mime_type:
+        mime_type = "application/octet-stream"
+
     headers = _auth_header()
     headers["Content-Disposition"] = f'attachment; filename="{file_path.name}"'
+    headers["Content-Type"] = mime_type
 
     with open(file_path, "rb") as f:
-        resp = requests.post(
-            _api_url("media"),
-            headers=headers,
-            data=f.read(),
-            timeout=60,
+        body = f.read()
+
+    resp = requests.post(
+        _api_url("media"),
+        headers=headers,
+        data=body,
+        timeout=60,
+    )
+    if resp.status_code >= 400:
+        # 詳細レスポンスを表示してデバッグしやすく
+        print(
+            f"[wp_post] エラー応答 ({resp.status_code}): {resp.text[:1000]}",
+            file=sys.stderr,
         )
     resp.raise_for_status()
     media = resp.json()
