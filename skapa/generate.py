@@ -298,6 +298,98 @@ def run_step5_apply(ch: Channel, approval_message: str = "OK") -> str:
     return body_html
 
 
+def run_step6_plan(ch: Channel, *, force: bool = False) -> str:
+    """Step 6 Phase 1: 装飾プランを生成。"""
+    plan_path = config.channel_draft_dir(ch.slug) / "06_decoration_plan.md"
+    if plan_path.exists() and not force:
+        print(f"[Step 6a] キャッシュ利用: {plan_path}")
+        return plan_path.read_text(encoding="utf-8")
+
+    body_html = (config.channel_draft_dir(ch.slug) / config.STEP_FILENAMES[5]).read_text(encoding="utf-8")
+    if not body_html.strip():
+        print(f"[Step 6a] エラー: Step 5の出力（05_body_audit.html）がありません。", file=sys.stderr)
+        sys.exit(2)
+
+    system_prompt = prompt_runner.load_prompt(config.PROMPT_FILES[6])
+    print(f"[Step 6a] 装飾プランを生成中...")
+
+    plan, messages = prompt_runner.call_claude(
+        system_prompt=system_prompt,
+        user_message=body_html,
+        enable_web_search=False,
+    )
+
+    plan_path.write_text(plan, encoding="utf-8")
+    prompt_runner.save_conversation(ch.slug, 6, messages)
+    print(f"[Step 6a] 完了 → {plan_path}")
+    return plan
+
+
+def run_step6_apply(ch: Channel, approval_message: str = "OK", *, max_sections: int = 15) -> str:
+    """Step 6 Phase 2: 装飾済み本文をセクション単位で取得し、自動で続けて連投。"""
+    history = prompt_runner.load_conversation(ch.slug, 6)
+    if not history:
+        print(f"[Step 6b] エラー: Step 6 Phase 1 (プラン)を先に実行してください。", file=sys.stderr)
+        sys.exit(2)
+
+    system_prompt = prompt_runner.load_prompt(config.PROMPT_FILES[6])
+    sections: list[str] = []
+
+    print(f"[Step 6b] 承認応答「{approval_message}」を送信中...")
+    response, history = prompt_runner.call_claude(
+        system_prompt=system_prompt,
+        user_message=approval_message,
+        history=history,
+        enable_web_search=False,
+    )
+    sections.append(response)
+    print(f"[Step 6b] セクション 1 取得")
+
+    final_marker = "フェーズ3"  # プロンプト6の最終チェック開始マーカー
+    for i in range(max_sections):
+        if final_marker in response:
+            print(f"[Step 6b] 全セクション出力完了（フェーズ3マーカー検出）")
+            break
+
+        print(f"[Step 6b] 「続けて」を送信中... ({i + 2}/{max_sections + 1})")
+        response, history = prompt_runner.call_claude(
+            system_prompt=system_prompt,
+            user_message="続けて",
+            history=history,
+            enable_web_search=False,
+        )
+        sections.append(response)
+    else:
+        print(f"[Step 6b] 警告: 最大反復数 {max_sections} に達しました。", file=sys.stderr)
+
+    # 各セクションの textarea から HTML を抽出して連結
+    extracted: list[str] = []
+    for sec in sections:
+        # 各レスポンスに textarea が含まれていればその中身を抽出
+        m = re.search(r"<textarea[^>]*>(.*?)</textarea>", sec, re.S)
+        if m:
+            body = m.group(1)
+            body = body.replace("&lt;", "<").replace("&gt;", ">").replace("&amp;", "&")
+            extracted.append(body.strip())
+        else:
+            # textareaが無い（Phase 3 など）はスキップ
+            pass
+
+    full_html = "\n\n".join(extracted)
+    out_path = config.channel_draft_dir(ch.slug) / config.STEP_FILENAMES[6]
+    out_path.write_text(full_html, encoding="utf-8")
+
+    # Phase 3 の最終チェックレポートも別途保存
+    final_check_path = config.channel_draft_dir(ch.slug) / "06_final_check.md"
+    final_text = sections[-1] if sections else ""
+    if final_marker in final_text:
+        final_check_path.write_text(final_text, encoding="utf-8")
+
+    prompt_runner.save_conversation(ch.slug, 6, history)
+    print(f"[Step 6b] 完了 → {out_path} ({len(extracted)}セクション)")
+    return full_html
+
+
 def run_step3(ch: Channel, *, force: bool = False) -> str:
     """Step 3: 構成監査を実行。Step 1, 2 の結果が必要。"""
     cached = prompt_runner.load_step_output(ch.slug, 3)
@@ -363,6 +455,11 @@ def main() -> int:
             output = run_step5_apply(ch, approval_message=args.apply)
         else:
             output = run_step5_audit(ch, force=args.force)
+    elif args.step == 6:
+        if args.apply is not None:
+            output = run_step6_apply(ch, approval_message=args.apply)
+        else:
+            output = run_step6_plan(ch, force=args.force)
     elif args.step in {1, 2, 3, 4}:
         runners = {1: run_step1, 2: run_step2, 3: run_step3, 4: run_step4}
         output = runners[args.step](ch, force=args.force)
