@@ -159,6 +159,7 @@ async def main() -> int:
 
     success = 0
     fail = 0
+    SLEEP_BETWEEN = 5  # X のバースト判定回避のため、各リクエスト間に待機
 
     for i in range(1, count + 1):
         # 空白行を飛ばして投稿可能な行を見つける
@@ -183,6 +184,7 @@ async def main() -> int:
         scheduled_ts = int(scheduled_dt.timestamp())
 
         prefix = f"[{i}/{count}] {scheduled_dt.strftime('%m/%d %H:%M')} 行{target} 周回{cycle}"
+        post_succeeded = False
         try:
             tweet_id = await client.create_scheduled_tweet(
                 scheduled_at=scheduled_ts,
@@ -190,6 +192,7 @@ async def main() -> int:
             )
             print(f"{prefix}: 予約OK (id={tweet_id}) {post_text[:30]!r}")
             success += 1
+            post_succeeded = True
             try:
                 ws.update_acell(f"B{target}", f"予{scheduled_dt.strftime('%m/%d %H:%M')}")
             except Exception as e:
@@ -199,11 +202,22 @@ async def main() -> int:
             traceback.print_exc()
             fail += 1
 
-        # ポインタを次の行へ
+        # 失敗時はポインタを進めず中断（同じ行を次回リトライできるように）
+        if not post_succeeded:
+            print(f"\n[中断] {i}件目で失敗したため、ここで停止します。")
+            print(f"  D1 は進めません（同じ行から次回リトライできます）")
+            print(f"  少し時間を空けてから再実行してください（X のレート制限と思われます）")
+            break
+
+        # ポインタを次の行へ（成功時のみ）
         next_row += 1
         if next_row > last_row:
             next_row = 2
             cycle += 1
+
+        # 次のリクエストまで待機（最後のループでは不要）
+        if i < count:
+            await asyncio.sleep(SLEEP_BETWEEN)
 
     # 次回の開始位置を D1 に保存
     save_next = next_row if next_row <= last_row else 2
