@@ -443,6 +443,41 @@ def run_step7_apply(ch: Channel, approval_message: str = "OK") -> str:
     return body_html
 
 
+def run_step8(ch: Channel, *, force: bool = False) -> str:
+    """Step 8: 本文の冒頭に挿入するリード文 + ピックアップボックスを生成し、
+    本文と結合して最終HTMLを保存する。"""
+    cached = prompt_runner.load_step_output(ch.slug, 8)
+    if cached and not force:
+        print(f"[Step 8] キャッシュ利用: {config.channel_draft_dir(ch.slug) / config.STEP_FILENAMES[8]}")
+        return cached
+
+    body_path = config.channel_draft_dir(ch.slug) / config.STEP_FILENAMES[7]
+    if not body_path.exists():
+        print(f"[Step 8] エラー: Step 7の出力（07_links.html）がありません。", file=sys.stderr)
+        sys.exit(2)
+    body_html = body_path.read_text(encoding="utf-8")
+
+    system_prompt = prompt_runner.load_prompt(config.PROMPT_FILES[8])
+    print(f"[Step 8] リード文を生成中...")
+
+    lead, _ = prompt_runner.call_claude(
+        system_prompt=system_prompt,
+        user_message=body_html,
+        enable_web_search=False,
+    )
+
+    # リード保存（参考用）
+    lead_path = config.channel_draft_dir(ch.slug) / "08_lead.html"
+    lead_path.write_text(lead, encoding="utf-8")
+
+    # 最終HTML = リード + 本文
+    final_html = lead.strip() + "\n\n" + body_html.strip() + "\n"
+    final_path = config.channel_draft_dir(ch.slug) / config.STEP_FILENAMES[8]
+    final_path.write_text(final_html, encoding="utf-8")
+    print(f"[Step 8] 完了 → {final_path}")
+    return final_html
+
+
 def run_step3(ch: Channel, *, force: bool = False) -> str:
     """Step 3: 構成監査を実行。Step 1, 2 の結果が必要。"""
     cached = prompt_runner.load_step_output(ch.slug, 3)
@@ -518,8 +553,8 @@ def main() -> int:
             output = run_step7_apply(ch, approval_message=args.apply)
         else:
             output = run_step7_candidates(ch, force=args.force)
-    elif args.step in {1, 2, 3, 4}:
-        runners = {1: run_step1, 2: run_step2, 3: run_step3, 4: run_step4}
+    elif args.step in {1, 2, 3, 4, 8}:
+        runners = {1: run_step1, 2: run_step2, 3: run_step3, 4: run_step4, 8: run_step8}
         output = runners[args.step](ch, force=args.force)
     else:
         print(f"Step {args.step} はまだ未実装です。", file=sys.stderr)
