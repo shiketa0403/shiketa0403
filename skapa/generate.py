@@ -289,7 +289,7 @@ def run_step5_apply(ch: Channel, approval_message: str = "OK") -> str:
     )
 
     # textarea から本文を取り出す
-    body_html = _extract_html_artifact(raw)
+    body_html = md_to_html.normalize_paragraph_breaks(_extract_html_artifact(raw))
 
     out_path = config.channel_draft_dir(ch.slug) / config.STEP_FILENAMES[5]
     out_path.write_text(body_html, encoding="utf-8")
@@ -375,7 +375,7 @@ def run_step6_apply(ch: Channel, approval_message: str = "OK", *, max_sections: 
             # textareaが無い（Phase 3 など）はスキップ
             pass
 
-    full_html = "\n\n".join(extracted)
+    full_html = md_to_html.normalize_paragraph_breaks("\n\n".join(extracted))
     out_path = config.channel_draft_dir(ch.slug) / config.STEP_FILENAMES[6]
     out_path.write_text(full_html, encoding="utf-8")
 
@@ -434,7 +434,7 @@ def run_step7_apply(ch: Channel, approval_message: str = "OK") -> str:
         enable_web_search=False,
     )
 
-    body_html = _extract_html_artifact(raw)
+    body_html = md_to_html.normalize_paragraph_breaks(_extract_html_artifact(raw))
 
     out_path = config.channel_draft_dir(ch.slug) / config.STEP_FILENAMES[7]
     out_path.write_text(body_html, encoding="utf-8")
@@ -470,8 +470,9 @@ def run_step8(ch: Channel, *, force: bool = False) -> str:
     lead_path = config.channel_draft_dir(ch.slug) / "08_lead.html"
     lead_path.write_text(lead, encoding="utf-8")
 
-    # 最終HTML = リード + 本文
-    final_html = lead.strip() + "\n\n" + body_html.strip() + "\n"
+    # 最終HTML = リード + 本文（句点後の改行を機械的に正規化）
+    combined = lead.strip() + "\n\n" + body_html.strip() + "\n"
+    final_html = md_to_html.normalize_paragraph_breaks(combined)
     final_path = config.channel_draft_dir(ch.slug) / config.STEP_FILENAMES[8]
     final_path.write_text(final_html, encoding="utf-8")
     print(f"[Step 8] 完了 → {final_path}")

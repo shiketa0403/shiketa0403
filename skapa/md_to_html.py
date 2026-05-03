@@ -130,6 +130,60 @@ def md_to_html(md: str) -> str:
     return "\n".join(cleaned) + "\n"
 
 
+# ブロック扱いするタグ（行頭がこれらで始まる行は段落分割しない）
+_BLOCK_TAG_PREFIX_RE = re.compile(
+    r"^</?(?:h[1-6]|ul|ol|li|table|thead|tbody|tr|th|td|div|blockquote|cite|p|pre|code|hr|br|figure|figcaption)\b",
+    re.I,
+)
+
+
+def normalize_paragraph_breaks(html: str) -> str:
+    """1行に複数の「。」がある平文段落を、1文1段落に分割する。
+
+    ルール:
+    - 行頭がブロック要素タグ（h2/ul/li/table 等）、ショートコード `[`、
+      テーブル区切り `|`、引用 `>` で始まる行は触らない
+    - 行頭が `<a>` `<strong>` などインラインHTMLの場合は平文行として扱い、
+      行内の「。」直後で分割する
+    - 連続する空行は1つにまとめる
+    """
+    out: list[str] = []
+    for line in html.splitlines():
+        stripped = line.strip()
+        if not stripped:
+            out.append(line)
+            continue
+        # ショートコード・テーブル・引用は素通し
+        if stripped[0] in "[|>":
+            out.append(line)
+            continue
+        # ブロック要素タグで始まる行は素通し（インラインタグは対象に含める）
+        if stripped.startswith("<") and _BLOCK_TAG_PREFIX_RE.match(stripped):
+            out.append(line)
+            continue
+        # 「。」で分割（直後を保持）。末尾「。」のみなら分割しない
+        parts = [p for p in re.split(r"(?<=。)", line) if p.strip()]
+        if len(parts) <= 1:
+            out.append(line)
+            continue
+        for i, part in enumerate(parts):
+            if i > 0:
+                out.append("")
+            out.append(part.lstrip())
+
+    # 連続空行を1つに圧縮
+    cleaned: list[str] = []
+    prev_blank = False
+    for line in out:
+        is_blank = not line.strip()
+        if is_blank and prev_blank:
+            continue
+        cleaned.append(line)
+        prev_blank = is_blank
+
+    return "\n".join(cleaned)
+
+
 if __name__ == "__main__":
     import sys
 
