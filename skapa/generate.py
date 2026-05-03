@@ -390,6 +390,59 @@ def run_step6_apply(ch: Channel, approval_message: str = "OK", *, max_sections: 
     return full_html
 
 
+def run_step7_candidates(ch: Channel, *, force: bool = False) -> str:
+    """Step 7 Phase 1: 外部発リンク候補を提示。"""
+    candidates_path = config.channel_draft_dir(ch.slug) / "07_link_candidates.md"
+    if candidates_path.exists() and not force:
+        print(f"[Step 7a] キャッシュ利用: {candidates_path}")
+        return candidates_path.read_text(encoding="utf-8")
+
+    body_html = (config.channel_draft_dir(ch.slug) / config.STEP_FILENAMES[6]).read_text(encoding="utf-8")
+    if not body_html.strip():
+        print(f"[Step 7a] エラー: Step 6の出力（06_decoration.html）がありません。", file=sys.stderr)
+        sys.exit(2)
+
+    system_prompt = prompt_runner.load_prompt(config.PROMPT_FILES[7])
+    print(f"[Step 7a] 発リンク候補を抽出中（WebSearch有効・時間がかかります）...")
+
+    candidates, messages = prompt_runner.call_claude(
+        system_prompt=system_prompt,
+        user_message=body_html,
+        enable_web_search=True,  # 公的機関URLの実在確認用
+    )
+
+    candidates_path.write_text(candidates, encoding="utf-8")
+    prompt_runner.save_conversation(ch.slug, 7, messages)
+    print(f"[Step 7a] 完了 → {candidates_path}")
+    return candidates
+
+
+def run_step7_apply(ch: Channel, approval_message: str = "OK") -> str:
+    """Step 7 Phase 2: 承認後にリンク挿入済みHTMLを取得。"""
+    history = prompt_runner.load_conversation(ch.slug, 7)
+    if not history:
+        print(f"[Step 7b] エラー: Step 7 Phase 1 (候補抽出)を先に実行してください。", file=sys.stderr)
+        sys.exit(2)
+
+    system_prompt = prompt_runner.load_prompt(config.PROMPT_FILES[7])
+    print(f"[Step 7b] 承認応答「{approval_message}」を送信中...")
+
+    raw, messages = prompt_runner.call_claude(
+        system_prompt=system_prompt,
+        user_message=approval_message,
+        history=history,
+        enable_web_search=False,
+    )
+
+    body_html = _extract_html_artifact(raw)
+
+    out_path = config.channel_draft_dir(ch.slug) / config.STEP_FILENAMES[7]
+    out_path.write_text(body_html, encoding="utf-8")
+    prompt_runner.save_conversation(ch.slug, 7, messages)
+    print(f"[Step 7b] 完了 → {out_path}")
+    return body_html
+
+
 def run_step3(ch: Channel, *, force: bool = False) -> str:
     """Step 3: 構成監査を実行。Step 1, 2 の結果が必要。"""
     cached = prompt_runner.load_step_output(ch.slug, 3)
@@ -460,6 +513,11 @@ def main() -> int:
             output = run_step6_apply(ch, approval_message=args.apply)
         else:
             output = run_step6_plan(ch, force=args.force)
+    elif args.step == 7:
+        if args.apply is not None:
+            output = run_step7_apply(ch, approval_message=args.apply)
+        else:
+            output = run_step7_candidates(ch, force=args.force)
     elif args.step in {1, 2, 3, 4}:
         runners = {1: run_step1, 2: run_step2, 3: run_step3, 4: run_step4}
         output = runners[args.step](ch, force=args.force)
