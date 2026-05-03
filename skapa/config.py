@@ -32,6 +32,12 @@ CHANNELS_CSV = ROOT_DIR / "csv" / "skapa_channels.csv"
 DRAFTS_DIR = ROOT_DIR / "skapa" / "drafts"
 KNOWLEDGE_DIR = ROOT_DIR / "skapa" / "knowledge"
 INDUSTRY_NOTES_PATH = KNOWLEDGE_DIR / "industry_notes.md"
+CHANNEL_NOTES_DIR = KNOWLEDGE_DIR / "channel_notes"
+
+
+def channel_notes_path(slug: str) -> Path:
+    """指定スラッグのチャンネル個別情報ファイルパス。存在しない場合もこのパスを返す。"""
+    return CHANNEL_NOTES_DIR / f"{slug}.md"
 
 # スプレッドシート公開CSV URL（GitHub Actionsからはこちらを使う）
 SHEET_PUBLISHED_CSV_URL = (

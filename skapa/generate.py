@@ -42,6 +42,14 @@ def load_industry_notes() -> str:
     return ""
 
 
+def load_channel_notes(slug: str) -> str:
+    """チャンネル個別情報メモを読む。なければ空文字。"""
+    path = config.channel_notes_path(slug)
+    if path.exists():
+        return path.read_text(encoding="utf-8").strip()
+    return ""
+
+
 def build_channel_facts(ch: Channel) -> str:
     """チャンネル個別の事実データを Markdown 文字列で組み立てる。"""
     lines = [
@@ -58,13 +66,26 @@ def build_channel_facts(ch: Channel) -> str:
     return "\n".join(lines)
 
 
+def _build_industry_with_channel_notes(slug: str) -> str:
+    """業界ナレッジ + チャンネル個別ナレッジを連結したテキストを返す。"""
+    industry = load_industry_notes()
+    channel = load_channel_notes(slug)
+    parts: list[str] = []
+    if industry:
+        parts.append(industry)
+    if channel:
+        parts.append("\n## チャンネル個別情報（このチャンネル固有・独自性確保のため最優先で活用）\n")
+        parts.append(channel)
+    return "\n".join(parts)
+
+
 def build_step1_variables(ch: Channel) -> dict[str, str]:
     """プロンプト1（ペルソナ分析）に渡す変数を組み立てる。"""
     return {
         "TARGET_KEYWORD": ch.target_keyword,
         "MEDIA_INFO": config.MEDIA_INFO,
         "CHANNEL_FACTS": build_channel_facts(ch),
-        "INDUSTRY_NOTES": load_industry_notes(),
+        "INDUSTRY_NOTES": _build_industry_with_channel_notes(ch.slug),
     }
 
 
@@ -96,10 +117,14 @@ def build_step2_variables(ch: Channel, persona_result: str) -> dict[str, str]:
         "## チャンネル事実データ",
         build_channel_facts(ch),
     ]
-    notes = load_industry_notes()
-    if notes:
+    industry = load_industry_notes()
+    if industry:
         context_parts.append("\n## 業界の最新情報（手動メンテ・確定情報として優先）\n")
-        context_parts.append(notes)
+        context_parts.append(industry)
+    channel = load_channel_notes(ch.slug)
+    if channel:
+        context_parts.append("\n## チャンネル個別情報（このチャンネル固有・独自H2追加の素材）\n")
+        context_parts.append(channel)
     return {
         "TARGET_KEYWORD": ch.target_keyword,
         "PERSONA_RESULT": persona_result,
@@ -167,10 +192,14 @@ def build_step4_variables(ch: Channel, persona: str, audited_structure: str) -> 
         "## チャンネル事実データ",
         build_channel_facts(ch),
     ]
-    notes = load_industry_notes()
-    if notes:
+    industry = load_industry_notes()
+    if industry:
         original_info_parts.append("\n## 業界の最新情報（手動メンテ・確定情報として優先）\n")
-        original_info_parts.append(notes)
+        original_info_parts.append(industry)
+    channel = load_channel_notes(ch.slug)
+    if channel:
+        original_info_parts.append("\n## チャンネル個別情報（独自性の核・本文中に必ず盛り込む）\n")
+        original_info_parts.append(channel)
 
     return {
         "TARGET_KEYWORD": ch.target_keyword,
