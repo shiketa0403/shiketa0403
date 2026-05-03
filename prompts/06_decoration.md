@@ -302,13 +302,21 @@ CTA挿入位置：
 
 ### 【6. CTA（申込ボタン）】
 
-#### 6-1. MCボタン（赤ベース）
+#### 6-1. AFFINGER アフィリエイトリンク呼び出しショートコード
 
 用途：記事内・記事末尾の申込ボタン
 
+CTA を入れたい位置に、以下のショートコードを **そのまま1行で挿入する**。URL・色・テキストなどの調整は WP 管理画面側で完結しているため、ショートコード内のパラメータを変えてはいけない。
+
 ```
-[st-mcbutton url="#" title="今すぐ申し込む" rel="nofollow" webicon="" target="" color="#fff" bgcolor="#e53935" bgcolor_top="#f44336" bordercolor="#e57373" borderwidth="1" borderradius="10" fontweight="bold" fontsize="120" width="90" webicon_after="st-svg-chevron-right" shadow="#c62828" ref="on" mcbox_bg="#fafafa" mcbox_color="" mcbox_title="太字のテキスト" beacon=""]※マイクロコピー[/st-mcbutton]
+[st_af id="5346"]
 ```
+
+注意:
+
+- ボタンに直接URLや文言を書かない（管理画面で集中管理されている）
+- 上下の段落は装飾せずシンプルに保ち、ボタンを目立たせる
+- 1記事あたり最大3箇所まで（H2末尾やまとめ末尾など、自然な行動誘導の位置に絞る）
 
 ### 【7. アフィリエイト広告の明示ブロック】
 
@@ -466,7 +474,7 @@ CTA挿入位置：
 - `[st-cmemo]` クリップメモ
 - `[st-mybox]` マイボックス
 - `[st-timeline]` `[st-timeline-list]` タイムライン
-- `[st-mcbutton]` MCボタン
+- `[st_af id="5346"]` アフィリエイトリンク呼び出し（CTAボタン）
 
 ### 【使用禁止】
 
