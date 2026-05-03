@@ -6,6 +6,7 @@ WebSearch ツールを必要に応じて有効化できる。
 
 from __future__ import annotations
 
+import json
 import re
 from pathlib import Path
 
@@ -25,6 +26,49 @@ def render_prompt(template: str, variables: dict[str, str]) -> str:
         return variables.get(m.group(1), "")
 
     return VAR_RE.sub(_sub, template)
+
+
+def _content_to_text(content) -> str:
+    """Anthropic応答のcontentをプレーンテキストに変換。"""
+    if isinstance(content, str):
+        return content
+    parts: list[str] = []
+    for block in content:
+        if hasattr(block, "type") and block.type == "text":
+            parts.append(block.text)
+        elif isinstance(block, dict) and block.get("type") == "text":
+            parts.append(block["text"])
+    return "\n".join(parts)
+
+
+def _serialize_messages(messages: list) -> list[dict]:
+    """Anthropic SDKのレスポンスを含むmessagesをJSON保存可能な形に変換。"""
+    out = []
+    for msg in messages:
+        content = msg.get("content")
+        if isinstance(content, str):
+            out.append({"role": msg["role"], "content": content})
+        else:
+            # アシスタントの content blocks をテキストに集約
+            text = _content_to_text(content)
+            out.append({"role": msg["role"], "content": text})
+    return out
+
+
+def save_conversation(slug: str, step: int, messages: list) -> Path:
+    """工程の会話履歴をJSONとして保存。"""
+    path = config.channel_draft_dir(slug) / f"{step:02d}_history.json"
+    serialized = _serialize_messages(messages)
+    path.write_text(json.dumps(serialized, ensure_ascii=False, indent=2), encoding="utf-8")
+    return path
+
+
+def load_conversation(slug: str, step: int) -> list[dict] | None:
+    """工程の会話履歴を読み出す。"""
+    path = config.channel_draft_dir(slug) / f"{step:02d}_history.json"
+    if path.exists():
+        return json.loads(path.read_text(encoding="utf-8"))
+    return None
 
 
 def call_claude(
@@ -67,13 +111,10 @@ def call_claude(
     resp = client.messages.create(**kwargs)
 
     # 応答の text ブロックだけ抽出
-    text_parts: list[str] = []
-    for block in resp.content:
-        if getattr(block, "type", None) == "text":
-            text_parts.append(block.text)
-    answer = "\n".join(text_parts).strip()
+    answer = _content_to_text(resp.content)
 
-    messages.append({"role": "assistant", "content": resp.content})
+    # 履歴は保存可能なテキスト形式に正規化
+    messages.append({"role": "assistant", "content": answer})
     return answer, messages
 
 

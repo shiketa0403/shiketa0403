@@ -13,7 +13,7 @@ import argparse
 import re
 import sys
 
-from . import config, prompt_runner, sheet_loader
+from . import config, md_to_html, prompt_runner, sheet_loader
 from .sheet_loader import Channel
 
 
@@ -217,6 +217,87 @@ def run_step4(ch: Channel, *, force: bool = False) -> str:
     return output
 
 
+def _extract_html_artifact(text: str) -> str:
+    """プロンプト5/6/7が出力するHTMLアーティファクト（textarea埋め込み）から
+    本文だけを取り出す。<textarea>...</textarea>の中身を返す。
+    見つからなければ全文返す。
+    """
+    m = re.search(r"<textarea[^>]*>(.*?)</textarea>", text, re.S)
+    if m:
+        # HTMLエンティティのデコード
+        body = m.group(1)
+        body = body.replace("&lt;", "<").replace("&gt;", ">").replace("&amp;", "&")
+        return body.strip()
+    # textareaが無ければ、最初の<h2>から最後までを返す
+    m = re.search(r"<h2[^>]*>.*", text, re.S)
+    if m:
+        return m.group(0).strip()
+    return text.strip()
+
+
+def run_step5_audit(ch: Channel, *, force: bool = False) -> str:
+    """Step 5 Phase 1: 本文監査レポート生成。"""
+    audit_path = config.channel_draft_dir(ch.slug) / "05_body_audit_report.md"
+    history_path = config.channel_draft_dir(ch.slug) / "05_history.json"
+
+    if audit_path.exists() and not force:
+        print(f"[Step 5a] キャッシュ利用: {audit_path}")
+        return audit_path.read_text(encoding="utf-8")
+
+    body_md = prompt_runner.load_step_output(ch.slug, 4)
+    if not body_md:
+        body_md = run_step4(ch, force=False)
+
+    # MD → HTML 変換
+    body_html = md_to_html.md_to_html(body_md)
+    html_path = config.channel_draft_dir(ch.slug) / "04_body.html"
+    html_path.write_text(body_html, encoding="utf-8")
+    print(f"[Step 5a] MD→HTML変換完了: {html_path}")
+
+    # プロンプト5を system に置き、本文HTMLを user に渡してフェーズ1実行
+    system_prompt = prompt_runner.load_prompt(config.PROMPT_FILES[5])
+    print(f"[Step 5a] 本文監査レポートを生成中...")
+
+    audit, messages = prompt_runner.call_claude(
+        system_prompt=system_prompt,
+        user_message=body_html,
+        enable_web_search=False,
+    )
+
+    audit_path.write_text(audit, encoding="utf-8")
+    prompt_runner.save_conversation(ch.slug, 5, messages)
+    print(f"[Step 5a] 完了 → {audit_path}")
+    print(f"[Step 5a] 履歴保存 → {history_path}")
+    return audit
+
+
+def run_step5_apply(ch: Channel, approval_message: str = "OK") -> str:
+    """Step 5 Phase 2: 監査結果をユーザー承認後、修正版HTMLを取得。"""
+    history = prompt_runner.load_conversation(ch.slug, 5)
+    if not history:
+        print(f"[Step 5b] エラー: Step 5 Phase 1 (監査)を先に実行してください。", file=sys.stderr)
+        sys.exit(2)
+
+    system_prompt = prompt_runner.load_prompt(config.PROMPT_FILES[5])
+    print(f"[Step 5b] 承認応答「{approval_message}」を送信中...")
+
+    raw, messages = prompt_runner.call_claude(
+        system_prompt=system_prompt,
+        user_message=approval_message,
+        history=history,
+        enable_web_search=False,
+    )
+
+    # textarea から本文を取り出す
+    body_html = _extract_html_artifact(raw)
+
+    out_path = config.channel_draft_dir(ch.slug) / config.STEP_FILENAMES[5]
+    out_path.write_text(body_html, encoding="utf-8")
+    prompt_runner.save_conversation(ch.slug, 5, messages)
+    print(f"[Step 5b] 完了 → {out_path}")
+    return body_html
+
+
 def run_step3(ch: Channel, *, force: bool = False) -> str:
     """Step 3: 構成監査を実行。Step 1, 2 の結果が必要。"""
     cached = prompt_runner.load_step_output(ch.slug, 3)
@@ -251,6 +332,14 @@ def main() -> int:
     parser.add_argument("channel", help="チャンネル名 / 正式名称 / スラッグ / No")
     parser.add_argument("--step", type=int, default=1, help="実行する工程番号（1〜8）")
     parser.add_argument("--force", action="store_true", help="キャッシュを無視して再実行")
+    parser.add_argument(
+        "--apply",
+        nargs="?",
+        const="OK",
+        default=None,
+        help="ユーザー確認フェーズで承認応答を送信して次の出力を取得（Step 5/6/7用）。"
+             "値を指定しない場合は 'OK' が送られる。例: --apply 'OK' / --apply '1番除外'",
+    )
     args = parser.parse_args()
 
     channels = sheet_loader.load_local()
@@ -269,17 +358,18 @@ def main() -> int:
     print(f"  サブKW: {ch.sub_kw}")
     print()
 
-    runners = {
-        1: run_step1,
-        2: run_step2,
-        3: run_step3,
-        4: run_step4,
-    }
-    if args.step not in runners:
+    if args.step == 5:
+        if args.apply is not None:
+            output = run_step5_apply(ch, approval_message=args.apply)
+        else:
+            output = run_step5_audit(ch, force=args.force)
+    elif args.step in {1, 2, 3, 4}:
+        runners = {1: run_step1, 2: run_step2, 3: run_step3, 4: run_step4}
+        output = runners[args.step](ch, force=args.force)
+    else:
         print(f"Step {args.step} はまだ未実装です。", file=sys.stderr)
         return 2
 
-    output = runners[args.step](ch, force=args.force)
     print()
     print("=" * 60)
     print(f"Step {args.step} 出力:")
