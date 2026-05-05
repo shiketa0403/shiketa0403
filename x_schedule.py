@@ -6,7 +6,7 @@ X 一括予約投稿スクリプト
 - 間隔: 実行時に対話で選択 (10/15/30/60分)
 - 件数: 実行時に対話で入力
 - 開始時刻: 実行時刻の10分後
-- 周回数: 実行ごとに1から開始、A列を1周するごとに +1
+- 周回数(D2): スプレッドシートに保存して継続（通し番号）
 - 行ポインタ(D1): スプレッドシートに保存して継続
 
 環境変数 (.env):
@@ -31,6 +31,7 @@ load_dotenv()
 
 JST = timezone(timedelta(hours=9), name="JST")
 POINTER_CELL = "D1"
+CYCLE_CELL = "D2"
 INTERVAL_OPTIONS = {"1": 10, "2": 15, "3": 30, "4": 60}
 
 SHEET_ID = os.environ.get("GSPREAD_SHEET_ID", "").strip()
@@ -147,8 +148,10 @@ async def main() -> int:
     next_row = read_int_cell(ws, POINTER_CELL, 2)
     if next_row < 2 or next_row > last_row:
         next_row = 2
-    cycle = 1
-    print(f"開始位置: 行{next_row}（D1の値、または範囲外なら行2にフォールバック）")
+    cycle = read_int_cell(ws, CYCLE_CELL, 1)
+    if cycle < 1:
+        cycle = 1
+    print(f"開始位置: 行{next_row}（D1）、周回数: {cycle}（D2）")
     print()
 
     print("X クライアント初期化中...")
@@ -219,13 +222,14 @@ async def main() -> int:
         if i < count:
             await asyncio.sleep(SLEEP_BETWEEN)
 
-    # 次回の開始位置を D1 に保存
+    # 次回の開始位置(D1)と周回数(D2)を保存
     save_next = next_row if next_row <= last_row else 2
     try:
         ws.update_acell(POINTER_CELL, save_next)
-        print(f"\nD1 = {save_next} に保存（次回はここから開始）")
+        ws.update_acell(CYCLE_CELL, cycle)
+        print(f"\nD1 = {save_next}, D2 = {cycle} に保存（次回はここから開始）")
     except Exception as e:
-        print(f"\n[WARN] D1 更新失敗: {e}")
+        print(f"\n[WARN] D1/D2 更新失敗: {e}")
 
     print(f"\n=== 完了 成功:{success} / 失敗:{fail} ===")
     return 0 if fail == 0 else 2
