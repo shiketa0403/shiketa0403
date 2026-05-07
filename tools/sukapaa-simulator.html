@@ -334,10 +334,7 @@
       <div class="sk-step-label">チャンネル・セットを選ぶ</div>
     </div>
 
-    <div class="sk-section-label">セット商品</div>
     <div id="sk-sets"></div>
-
-    <div class="sk-section-label" style="margin-top:14px;">単チャンネル</div>
     <div id="sk-channels"></div>
   </div>
 
@@ -520,9 +517,18 @@
   // ---------- build product list ----------
   function buildSets() {
     var wrap = $("#sk-sets");
+    var details = el("details", { class: "sk-genre" });
+    var summary = el("summary", { class: "sk-genre-summary" });
+    summary.appendChild(el("span", { text: "セット商品" }));
+    summary.appendChild(el("span", { class: "sk-genre-count", text: SETS.length + "件" }));
+    details.appendChild(summary);
+
+    var inner = el("div", { class: "sk-items" });
     SETS.forEach(function(s) {
-      wrap.appendChild(buildItem(s, true));
+      inner.appendChild(buildItem(s, true));
     });
+    details.appendChild(inner);
+    wrap.appendChild(details);
   }
 
   function buildChannels() {
