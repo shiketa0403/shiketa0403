@@ -59,7 +59,11 @@ def capture_and_upload_screenshot(url, name):
         print("  ✗ screenshot.py が見つかりません。スクリーンショットをスキップします。")
         return None
 
-    result = capture_and_upload(url, name=name, output_dir="screenshots", upload=True)
+    try:
+        result = capture_and_upload(url, name=name, output_dir="screenshots", upload=True)
+    except Exception as e:
+        print(f"  ✗ スクリーンショット取得エラー: {e}")
+        return None
     if result is None:
         return None
     if result.get("skipped"):

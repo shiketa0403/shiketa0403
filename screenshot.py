@@ -130,6 +130,9 @@ def upload_to_wordpress(image_path, title=""):
         error_body = e.read().decode("utf-8", errors="replace")
         print(f"  アップロードエラー {e.code}: {error_body}", file=sys.stderr)
         return None
+    except (urllib.error.URLError, OSError) as e:
+        print(f"  アップロード接続エラー: {e}", file=sys.stderr)
+        return None
 
 
 def slugify(text):
