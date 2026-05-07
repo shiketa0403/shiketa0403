@@ -15,6 +15,8 @@
     line-height: 1.6;
     -webkit-text-size-adjust: 100%;
   }
+  html { scrollbar-width: none; }
+  html::-webkit-scrollbar { display: none; }
   .sk-wrap {
     max-width: 760px;
     margin: 0 auto;
@@ -720,6 +722,33 @@
     recalc();
   }
 
+  // ---------- iframe auto-resize via postMessage ----------
+  function notifyHeight() {
+    if (window.parent === window) return; // not in iframe
+    var h = Math.max(
+      document.documentElement.scrollHeight,
+      document.body.scrollHeight
+    );
+    try {
+      window.parent.postMessage({ skSimHeight: h }, "*");
+    } catch (e) {}
+  }
+
+  function setupAutoResize() {
+    notifyHeight();
+    window.addEventListener("resize", notifyHeight);
+    // accordionの開閉をフック
+    document.querySelectorAll("details").forEach(function(d) {
+      d.addEventListener("toggle", notifyHeight);
+    });
+    // フォーム要素の変更後も高さが変わる
+    document.addEventListener("change", function() {
+      setTimeout(notifyHeight, 0);
+    });
+    // 念のため定期チェック（コンテンツの動的変化を拾い切る）
+    setInterval(notifyHeight, 800);
+  }
+
   // ---------- init ----------
   document.addEventListener("DOMContentLoaded", function() {
     buildMonthSelects();
@@ -729,6 +758,7 @@
     $("#sk-end").addEventListener("change", recalc);
     $("#sk-reset").addEventListener("click", resetAll);
     recalc();
+    setupAutoResize();
   });
 
 })();
