@@ -817,13 +817,22 @@
     recalc();
   }
 
-  // ---------- iframe auto-resize via postMessage ----------
+  // ---------- iframe auto-resize ----------
+  // 同一オリジンなら frameElement.style を直接書き換え。
+  // それが不可（クロスオリジン等）なら postMessage で親に通知。
   function notifyHeight() {
     if (window.parent === window) return; // not in iframe
     var h = Math.max(
       document.documentElement.scrollHeight,
       document.body.scrollHeight
     );
+    try {
+      if (window.frameElement) {
+        window.frameElement.style.height = h + "px";
+      }
+    } catch (e) {
+      // クロスオリジンの場合 frameElement にアクセスできない
+    }
     try {
       window.parent.postMessage({ skSimHeight: h }, "*");
     } catch (e) {}
