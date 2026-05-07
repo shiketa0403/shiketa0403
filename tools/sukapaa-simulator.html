@@ -425,7 +425,7 @@
   var BASE_FEE = 429;
 
   var SETS = [
-    { id: "s1", name: "スカパー！基本プラン", price: 3960, desc: "11ジャンル50ch見放題" },
+    { id: "s1", name: "スカパー！基本プラン", price: 3960, firstMonthPrice: 1980, desc: "11ジャンル50ch見放題" },
     { id: "s2", name: "スカパー！セレクト10", price: 2860, desc: "48chから10ch選択" },
     { id: "s3", name: "スカパー！セレクト5", price: 1980, desc: "48chから5ch選択" },
     { id: "s4", name: "プロ野球セット", price: 4054, desc: "12球団全試合中継" },
@@ -627,6 +627,7 @@
     cb.dataset.kind = isSet ? "set" : "channel";
     cb.dataset.price = String(p.price);
     cb.dataset.name = p.name;
+    if (p.firstMonthPrice) cb.dataset.firstMonthPrice = String(p.firstMonthPrice);
     cb.addEventListener("change", recalc);
     label.appendChild(cb);
 
@@ -637,7 +638,11 @@
     }
     label.appendChild(nameWrap);
 
-    label.appendChild(el("span", { class: "sk-item-price", text: yen(p.price) + "/月" }));
+    var priceText = yen(p.price) + "/月";
+    if (p.firstMonthPrice && p.firstMonthPrice !== p.price) {
+      priceText += "（初月" + yen(p.firstMonthPrice) + "）";
+    }
+    label.appendChild(el("span", { class: "sk-item-price", text: priceText }));
     return label;
   }
 
@@ -648,7 +653,12 @@
     var channels = [];
     for (var i = 0; i < nodes.length; i++) {
       var n = nodes[i];
-      var item = { id: n.value, name: n.dataset.name, price: Number(n.dataset.price) };
+      var item = {
+        id: n.value,
+        name: n.dataset.name,
+        price: Number(n.dataset.price),
+        firstMonthPrice: n.dataset.firstMonthPrice ? Number(n.dataset.firstMonthPrice) : null
+      };
       if (n.dataset.kind === "set") sets.push(item);
       else channels.push(item);
     }
@@ -735,41 +745,70 @@
     var breakdown = el("div", { class: "sk-breakdown" });
     breakdown.appendChild(buildLine("基本料", BASE_FEE, null, null));
 
-    var watchTotal = 0;
+    var initialWatchTotal = 0;  // 初月（最初の課金月）の視聴料合計
+    var regularWatchTotal = 0;  // 2ヶ月目以降の視聴料合計
+    var hasInitialDiscount = false;
 
     // セット
     selected.sets.forEach(function(s) {
+      var first = s.firstMonthPrice && s.firstMonthPrice !== s.price ? s.firstMonthPrice : s.price;
       breakdown.appendChild(buildLine(s.name, s.price, null, null));
-      watchTotal += s.price;
+      initialWatchTotal += first;
+      regularWatchTotal += s.price;
+      if (first !== s.price) hasInitialDiscount = true;
     });
 
     // チャンネル
     selected.channels.forEach(function(c) {
       var d = discounts[c.id];
+      var monthlyPrice = d ? d.newPrice : c.price;
+      var first = c.firstMonthPrice && c.firstMonthPrice !== monthlyPrice ? c.firstMonthPrice : monthlyPrice;
       if (d) {
         breakdown.appendChild(buildLine(c.name, d.newPrice, c.price, d.label));
-        watchTotal += d.newPrice;
       } else {
         breakdown.appendChild(buildLine(c.name, c.price, null, null));
-        watchTotal += c.price;
       }
+      initialWatchTotal += first;
+      regularWatchTotal += monthlyPrice;
+      if (first !== monthlyPrice) hasInitialDiscount = true;
     });
 
-    var monthly = BASE_FEE + watchTotal;
-    var monthlyLine = el("div", { class: "sk-monthly" });
-    monthlyLine.appendChild(el("span", { text: "月額合計" }));
-    monthlyLine.appendChild(el("span", { text: yen(monthly) }));
-    breakdown.appendChild(monthlyLine);
+    var initialMonthly = BASE_FEE + initialWatchTotal;
+    var regularMonthly = BASE_FEE + regularWatchTotal;
+    var billMonths = months.billMonths;
+
+    if (hasInitialDiscount && billMonths >= 2) {
+      var lineInit = el("div", { class: "sk-monthly" });
+      lineInit.appendChild(el("span", { text: "月額合計（初月）" }));
+      lineInit.appendChild(el("span", { text: yen(initialMonthly) }));
+      breakdown.appendChild(lineInit);
+      var lineReg = el("div", { class: "sk-monthly" });
+      lineReg.appendChild(el("span", { text: "月額合計（2ヶ月目以降）" }));
+      lineReg.appendChild(el("span", { text: yen(regularMonthly) }));
+      breakdown.appendChild(lineReg);
+    } else {
+      var monthlyLine = el("div", { class: "sk-monthly" });
+      monthlyLine.appendChild(el("span", { text: hasInitialDiscount ? "月額合計（初月）" : "月額合計" }));
+      monthlyLine.appendChild(el("span", { text: yen(initialMonthly) }));
+      breakdown.appendChild(monthlyLine);
+    }
 
     resultEl.appendChild(breakdown);
 
-    var total = monthly * months.billMonths;
+    // 総支払額
+    var total = initialMonthly + regularMonthly * (billMonths - 1);
+
     var totalBox = el("div", { class: "sk-total-box" });
     totalBox.appendChild(el("div", { class: "sk-total-label", text: "総支払額" }));
     totalBox.appendChild(el("div", { class: "sk-total-value", text: yen(total) }));
-    var subText = months.longTerm
-      ? "（月額 " + yen(monthly) + " × 12ヶ月）"
-      : "（月額 " + yen(monthly) + " × " + months.billMonths + "ヶ月）";
+    var subText;
+    if (hasInitialDiscount && billMonths >= 2) {
+      subText = "（初月 " + yen(initialMonthly) + " + 2ヶ月目以降 " + yen(regularMonthly) + " × " + (billMonths - 1) + "ヶ月）";
+    } else if (billMonths === 1) {
+      subText = "（1ヶ月分）";
+    } else {
+      subText = "（月額 " + yen(regularMonthly) + " × " + billMonths + "ヶ月）";
+    }
     totalBox.appendChild(el("div", { class: "sk-total-sub", text: subText }));
     resultEl.appendChild(totalBox);
 
@@ -784,10 +823,16 @@
     resultEl.appendChild(cta);
 
     // 画面上部の常時表示バーを更新
-    var monthsLabel = months.longTerm ? "12ヶ月" : (months.billMonths + "ヶ月");
+    var monthsLabel = months.longTerm ? "12ヶ月" : (billMonths + "ヶ月");
     var leftCol = el("div");
     leftCol.appendChild(el("div", { class: "sk-sticky-label", text: "総支払額（" + monthsLabel + "）" }));
-    leftCol.appendChild(el("div", { class: "sk-sticky-monthly", text: "月額 " + yen(monthly) }));
+    var stickyMonthlyText;
+    if (hasInitialDiscount && billMonths >= 2) {
+      stickyMonthlyText = "月額 " + yen(regularMonthly) + "（初月" + yen(initialMonthly) + "）";
+    } else {
+      stickyMonthlyText = "月額 " + yen(initialMonthly);
+    }
+    leftCol.appendChild(el("div", { class: "sk-sticky-monthly", text: stickyMonthlyText }));
     stickyBar.appendChild(leftCol);
     stickyBar.appendChild(el("div", { class: "sk-sticky-value", text: yen(total) }));
     stickyBar.classList.add("is-active");
