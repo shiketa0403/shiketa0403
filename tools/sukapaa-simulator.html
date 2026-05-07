@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>スカパー！料金シミュレーター</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+    color: #222;
+    background: #f3f6fa;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+  }
+  .sk-wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 12px 80px;
+  }
+  .sk-header {
+    background: linear-gradient(135deg, #003D7A 0%, #0066CC 100%);
+    color: #fff;
+    padding: 22px 18px;
+    border-radius: 0 0 14px 14px;
+    margin-bottom: 16px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,61,122,0.18);
+  }
+  .sk-title {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  .sk-subtitle {
+    font-size: 12px;
+    margin-top: 4px;
+    opacity: 0.92;
+  }
+  .sk-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .sk-step {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .sk-step-num {
+    background: #0066CC;
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .sk-step-label {
+    font-weight: 700;
+    color: #003D7A;
+    font-size: 16px;
+  }
+  .sk-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .sk-field {
+    flex: 1 1 calc(50% - 6px);
+    min-width: 140px;
+  }
+  .sk-field-label {
+    display: block;
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 4px;
+    font-weight: 600;
+  }
+  .sk-select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cfd8e3;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #fff;
+    color: #222;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path fill='%230066CC' d='M6 8L0 0h12z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 32px;
+  }
+  .sk-select:focus {
+    outline: none;
+    border-color: #0066CC;
+    box-shadow: 0 0 0 3px rgba(0,102,204,0.15);
+  }
+  .sk-genre {
+    margin-bottom: 8px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .sk-genre-summary {
+    padding: 12px 14px;
+    background: #f1f5fa;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    color: #003D7A;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sk-genre-summary::-webkit-details-marker { display: none; }
+  .sk-genre-summary::after {
+    content: "▼";
+    font-size: 10px;
+    color: #0066CC;
+    transition: transform 0.2s;
+  }
+  details[open] > .sk-genre-summary::after {
+    transform: rotate(180deg);
+  }
+  .sk-genre-count {
+    font-size: 12px;
+    color: #0066CC;
+    background: #e0ecf9;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 8px;
+  }
+  .sk-items {
+    padding: 6px 0;
+  }
+  .sk-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    border-top: 1px solid #f0f3f7;
+    cursor: pointer;
+    transition: background 0.1s;
+  }
+  .sk-item:hover { background: #f9fbfd; }
+  .sk-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin: 0 10px 0 0;
+    accent-color: #0066CC;
+    flex-shrink: 0;
+  }
+  .sk-item-name {
+    flex: 1;
+    font-size: 14px;
+    color: #333;
+  }
+  .sk-item-price {
+    font-size: 13px;
+    color: #0066CC;
+    font-weight: 700;
+    white-space: nowrap;
+    margin-left: 8px;
+  }
+  .sk-item-desc {
+    display: block;
+    font-size: 11px;
+    color: #888;
+    margin-top: 2px;
+  }
+  .sk-section-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #003D7A;
+    margin: 6px 0 8px;
+    padding-left: 8px;
+    border-left: 3px solid #0066CC;
+  }
+  .sk-result-empty {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    padding: 20px;
+  }
+  .sk-result-period {
+    background: #eaf3fc;
+    color: #003D7A;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+  .sk-breakdown {
+    margin: 12px 0;
+  }
+  .sk-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8px 0;
+    border-bottom: 1px dashed #e2e8f0;
+    font-size: 13px;
+  }
+  .sk-line-name {
+    flex: 1;
+    padding-right: 8px;
+  }
+  .sk-line-price {
+    text-align: right;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+  .sk-old-price {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 12px;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 4px;
+  }
+  .sk-discount-tag {
+    display: inline-block;
+    font-size: 10px;
+    background: #ffe9c2;
+    color: #a05a00;
+    padding: 1px 6px;
+    border-radius: 8px;
+    margin-left: 4px;
+    font-weight: 600;
+    vertical-align: middle;
+  }
+  .sk-monthly {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 2px solid #003D7A;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #003D7A;
+  }
+  .sk-total-box {
+    background: linear-gradient(135deg, #003D7A 0%, #0066CC 100%);
+    color: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 14px;
+    box-shadow: 0 4px 10px rgba(0,61,122,0.2);
+  }
+  .sk-total-label {
+    font-size: 13px;
+    opacity: 0.92;
+    margin-bottom: 4px;
+  }
+  .sk-total-value {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  .sk-total-sub {
+    font-size: 11px;
+    opacity: 0.85;
+    margin-top: 4px;
+  }
+  .sk-reset {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px;
+    background: #fff;
+    color: #0066CC;
+    border: 1px solid #0066CC;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .sk-reset:hover { background: #f0f7ff; }
+
+  @media (max-width: 480px) {
+    .sk-title { font-size: 18px; }
+    .sk-field { flex: 1 1 100%; }
+    .sk-total-value { font-size: 24px; }
+    .sk-item-name { font-size: 13px; }
+    .sk-item-price { font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+<div class="sk-wrap">
+
+  <div class="sk-header">
+    <div class="sk-title">スカパー！料金シミュレーター</div>
+    <div class="sk-subtitle">加入月・解約月とチャンネルを選ぶだけで総支払額がわかる</div>
+  </div>
+
+  <div class="sk-card">
+    <div class="sk-step">
+      <div class="sk-step-num">1</div>
+      <div class="sk-step-label">加入月・解約月を選ぶ</div>
+    </div>
+    <div class="sk-row">
+      <div class="sk-field">
+        <label class="sk-field-label" for="sk-start">加入月</label>
+        <select class="sk-select" id="sk-start"></select>
+      </div>
+      <div class="sk-field">
+        <label class="sk-field-label" for="sk-end">解約月</label>
+        <select class="sk-select" id="sk-end"></select>
+      </div>
+    </div>
+  </div>
+
+  <div class="sk-card">
+    <div class="sk-step">
+      <div class="sk-step-num">2</div>
+      <div class="sk-step-label">チャンネル・セットを選ぶ</div>
+    </div>
+
+    <div class="sk-section-label">セット商品</div>
+    <div id="sk-sets"></div>
+
+    <div class="sk-section-label" style="margin-top:14px;">単チャンネル</div>
+    <div id="sk-channels"></div>
+  </div>
+
+  <div class="sk-card">
+    <div class="sk-step">
+      <div class="sk-step-num">3</div>
+      <div class="sk-step-label">料金シミュレーション結果</div>
+    </div>
+    <div id="sk-result">
+      <div class="sk-result-empty">商品を1つ以上選ぶと料金が表示されます</div>
+    </div>
+    <button class="sk-reset" id="sk-reset" type="button">選択をリセット</button>
+  </div>
+
+</div>
+
+<script>
+(function() {
+  "use strict";
+
+  var BASE_FEE = 429;
+
+  var SETS = [
+    { id: "s1", name: "スカパー！基本プラン", price: 3960, desc: "11ジャンル50ch見放題" },
+    { id: "s2", name: "スカパー！セレクト10", price: 2860, desc: "48chから10ch選択" },
+    { id: "s3", name: "スカパー！セレクト5", price: 1980, desc: "48chから5ch選択" },
+    { id: "s4", name: "プロ野球セット", price: 4054, desc: "12球団全試合中継" },
+    { id: "s5", name: "スカパー！サッカーセット", price: 2480, desc: "ルヴァン杯・天皇杯ほか" },
+    { id: "s6", name: "スポーツセレクション", price: 3520, desc: "J SPORTS他6ch" },
+    { id: "s7", name: "映画＆スポーツ！プレミアセット", price: 3865, desc: "BS10プレミアム+J SPORTS" }
+  ];
+
+  var GENRES = [
+    { key: "eiga",   name: "映画" },
+    { key: "sports", name: "スポーツ" },
+    { key: "enta",   name: "総合エンタメ" },
+    { key: "music",  name: "音楽" },
+    { key: "kdrama", name: "海外ドラマ" },
+    { key: "ndrama", name: "国内ドラマ・舞台" },
+    { key: "anime",  name: "アニメ" },
+    { key: "docu",   name: "ドキュメンタリー" },
+    { key: "news",   name: "ニュース" },
+    { key: "hobby",  name: "趣味" },
+    { key: "edu",    name: "教育" },
+    { key: "keiba",  name: "公営競技" }
+  ];
+
+  var CHANNELS = [
+    { id: "c1",  name: "WOWOW(プライム・ライブ・シネマ 3chセット)", genre: "eiga",   price: 2530 },
+    { id: "c2",  name: "BS10プレミアム",                               genre: "eiga",   price: 1980 },
+    { id: "c3",  name: "東映チャンネル",                               genre: "eiga",   price: 1650 },
+    { id: "c4",  name: "衛星劇場",                                     genre: "eiga",   price: 2140 },
+    { id: "c5",  name: "映画・チャンネルNECO",                         genre: "eiga",   price: 660  },
+    { id: "c6",  name: "ザ・シネマ",                                   genre: "eiga",   price: 770  },
+    { id: "c7",  name: "ムービープラス",                               genre: "eiga",   price: 660  },
+    { id: "c8",  name: "WOWOWプラス",                                  genre: "eiga",   price: 770  },
+    { id: "c9",  name: "日本映画専門チャンネル",                       genre: "eiga",   price: 770  },
+
+    { id: "c10", name: "J SPORTS(1+2+3+4 4chセット)",                  genre: "sports", price: 2980 },
+    { id: "c11", name: "スカイA",                                       genre: "sports", price: 1320 },
+    { id: "c12", name: "GAORA SPORTS",                                  genre: "sports", price: 1320 },
+    { id: "c13", name: "日テレジータス",                                genre: "sports", price: 1100 },
+    { id: "c14", name: "ゴルフネットワーク",                            genre: "sports", price: 2480 },
+    { id: "c15", name: "スポーツライブ＋",                              genre: "sports", price: 1760 },
+
+    { id: "c16", name: "ディズニー・チャンネル",                        genre: "enta",   price: 813  },
+    { id: "c17", name: "TBSチャンネル1＆2",                             genre: "enta",   price: 1100 },
+    { id: "c18", name: "テレ朝チャンネル1＆2",                          genre: "enta",   price: 1100 },
+    { id: "c19", name: "日テレプラス",                                  genre: "enta",   price: 1100 },
+    { id: "c20", name: "エンタメ〜テレ",                                genre: "enta",   price: 660  },
+    { id: "c21", name: "チャンネル銀河",                                genre: "enta",   price: 660  },
+    { id: "c22", name: "フジテレビONE+TWO",                             genre: "enta",   price: 1100 },
+    { id: "c23", name: "フジテレビNEXT",                                genre: "enta",   price: 2580 },
+
+    { id: "c24", name: "ミュージック・ジャパンTV",                      genre: "music",  price: 660  },
+    { id: "c25", name: "スペースシャワーTV",                            genre: "music",  price: 770  },
+    { id: "c26", name: "MTV",                                           genre: "music",  price: 770  },
+    { id: "c27", name: "ミュージック・エア",                            genre: "music",  price: 660  },
+    { id: "c28", name: "エムオン",                                      genre: "music",  price: 770  },
+    { id: "c29", name: "歌謡ポップスチャンネル",                        genre: "music",  price: 880  },
+
+    { id: "c30", name: "スーパー！ドラマTV",                            genre: "kdrama", price: 770  },
+    { id: "c31", name: "アクションチャンネル",                          genre: "kdrama", price: 880  },
+    { id: "c32", name: "Dlife",                                         genre: "kdrama", price: 785  },
+    { id: "c33", name: "女性チャンネル♪LaLa TV",                        genre: "kdrama", price: 660  },
+    { id: "c34", name: "ミステリーチャンネル",                          genre: "kdrama", price: 550  },
+    { id: "c35", name: "KBS World",                                     genre: "kdrama", price: 1100 },
+    { id: "c36", name: "Mnet",                                          genre: "kdrama", price: 2530 },
+
+    { id: "c37", name: "TAKARAZUKA SKY STAGE",                          genre: "ndrama", price: 2970 },
+    { id: "c38", name: "時代劇専門チャンネル",                          genre: "ndrama", price: 770  },
+    { id: "c39", name: "ファミリー劇場",                                genre: "ndrama", price: 770  },
+    { id: "c40", name: "ホームドラマチャンネル",                        genre: "ndrama", price: 784  },
+    { id: "c41", name: "MONDO TV",                                      genre: "ndrama", price: 880  },
+
+    { id: "c42", name: "アニマックス",                                  genre: "anime",  price: 813  },
+    { id: "c43", name: "キッズステーション",                            genre: "anime",  price: 813  },
+    { id: "c44", name: "カートゥーンネットワーク",                      genre: "anime",  price: 627  },
+    { id: "c45", name: "AT-X",                                          genre: "anime",  price: 2180 },
+
+    { id: "c46", name: "ディスカバリーチャンネル",                      genre: "docu",   price: 880  },
+    { id: "c47", name: "アニマルプラネット",                            genre: "docu",   price: 750  },
+    { id: "c48", name: "ヒストリーチャンネル",                          genre: "docu",   price: 770  },
+    { id: "c49", name: "ナショナルジオグラフィック",                    genre: "docu",   price: 785  },
+
+    { id: "c50", name: "日テレNEWS24",                                  genre: "news",   price: 1100 },
+    { id: "c51", name: "TBS NEWS",                                      genre: "news",   price: 408  },
+    { id: "c52", name: "BBCニュース",                                   genre: "news",   price: 990  },
+    { id: "c53", name: "CNNj",                                          genre: "news",   price: 990  },
+
+    { id: "c54", name: "BS釣りビジョン",                                genre: "hobby",  price: 1320 },
+
+    { id: "c55", name: "ディズニージュニア",                            genre: "edu",    price: 660  },
+    { id: "c56", name: "囲碁・将棋チャンネル",                          genre: "edu",    price: 1540 },
+
+    { id: "c57", name: "グリーンチャンネル",                            genre: "keiba",  price: 880  }
+  ];
+
+  // 組み合わせ割引ルール
+  // type: "set"  -> 指定セットのいずれかが選択されていれば適用
+  // type: "channel" -> 指定チャンネルが選択されていれば適用
+  // 同一対象に複数ルールが該当する場合は最も安い価格を採用する
+  var DISCOUNTS = [
+    { target: "c1",  newPrice: 2200, label: "セット同時加入割", type: "set",     keys: ["s1","s2","s3","s5"] },
+    { target: "c14", newPrice: 2150, label: "セット同時加入割", type: "set",     keys: ["s1","s2","s3"] },
+    { target: "c23", newPrice: 1810, label: "フジONE+TWOセット割", type: "channel", keys: ["c22"] },
+    { target: "c23", newPrice: 2360, label: "セット同時加入割", type: "set",     keys: ["s1","s2","s3"] },
+    { target: "c2",  newPrice: 1726, label: "セレクト同時加入割", type: "set",   keys: ["s2","s3"] },
+    { target: "c4",  newPrice: 1925, label: "セレクト同時加入割", type: "set",   keys: ["s2","s3"] },
+    { target: "c10", newPrice: 1430, label: "プロ野球セット同時割", type: "set", keys: ["s4"] }
+  ];
+
+  // ---------- helpers ----------
+  function $(sel, root) { return (root || document).querySelector(sel); }
+  function el(tag, attrs, children) {
+    var n = document.createElement(tag);
+    if (attrs) {
+      for (var k in attrs) {
+        if (k === "class") n.className = attrs[k];
+        else if (k === "html") n.innerHTML = attrs[k];
+        else if (k === "text") n.textContent = attrs[k];
+        else n.setAttribute(k, attrs[k]);
+      }
+    }
+    if (children) {
+      for (var i = 0; i < children.length; i++) {
+        if (children[i]) n.appendChild(children[i]);
+      }
+    }
+    return n;
+  }
+  function yen(n) {
+    return "¥" + n.toLocaleString("ja-JP");
+  }
+
+  // ---------- build dropdowns ----------
+  function buildMonthSelects() {
+    var start = $("#sk-start");
+    var end = $("#sk-end");
+    for (var m = 1; m <= 12; m++) {
+      var optS = document.createElement("option");
+      optS.value = String(m);
+      optS.textContent = m + "月";
+      start.appendChild(optS);
+
+      var optE = document.createElement("option");
+      optE.value = String(m);
+      optE.textContent = m + "月";
+      end.appendChild(optE);
+    }
+    var optLong = document.createElement("option");
+    optLong.value = "long";
+    optLong.textContent = "1年以上利用";
+    end.appendChild(optLong);
+
+    start.value = "1";
+    end.value = "long";
+  }
+
+  // ---------- build product list ----------
+  function buildSets() {
+    var wrap = $("#sk-sets");
+    SETS.forEach(function(s) {
+      wrap.appendChild(buildItem(s, true));
+    });
+  }
+
+  function buildChannels() {
+    var wrap = $("#sk-channels");
+    GENRES.forEach(function(g) {
+      var items = CHANNELS.filter(function(c) { return c.genre === g.key; });
+      if (!items.length) return;
+
+      var details = el("details", { class: "sk-genre" });
+      var summary = el("summary", { class: "sk-genre-summary" });
+      summary.appendChild(el("span", { text: g.name }));
+      summary.appendChild(el("span", { class: "sk-genre-count", text: items.length + "ch" }));
+      details.appendChild(summary);
+
+      var inner = el("div", { class: "sk-items" });
+      items.forEach(function(c) {
+        inner.appendChild(buildItem(c, false));
+      });
+      details.appendChild(inner);
+      wrap.appendChild(details);
+    });
+  }
+
+  function buildItem(p, isSet) {
+    var label = el("label", { class: "sk-item" });
+    var cb = document.createElement("input");
+    cb.type = "checkbox";
+    cb.value = p.id;
+    cb.dataset.kind = isSet ? "set" : "channel";
+    cb.dataset.price = String(p.price);
+    cb.dataset.name = p.name;
+    cb.addEventListener("change", recalc);
+    label.appendChild(cb);
+
+    var nameWrap = el("div", { class: "sk-item-name" });
+    nameWrap.appendChild(document.createTextNode(p.name));
+    if (p.desc) {
+      nameWrap.appendChild(el("span", { class: "sk-item-desc", text: p.desc }));
+    }
+    label.appendChild(nameWrap);
+
+    label.appendChild(el("span", { class: "sk-item-price", text: yen(p.price) + "/月" }));
+    return label;
+  }
+
+  // ---------- calculation ----------
+  function getSelected() {
+    var nodes = document.querySelectorAll('input[type="checkbox"]:checked');
+    var sets = [];
+    var channels = [];
+    for (var i = 0; i < nodes.length; i++) {
+      var n = nodes[i];
+      var item = { id: n.value, name: n.dataset.name, price: Number(n.dataset.price) };
+      if (n.dataset.kind === "set") sets.push(item);
+      else channels.push(item);
+    }
+    return { sets: sets, channels: channels };
+  }
+
+  function applyDiscounts(selected) {
+    var setIds = selected.sets.map(function(s) { return s.id; });
+    var chIds = selected.channels.map(function(c) { return c.id; });
+    var bestByTarget = {};
+
+    DISCOUNTS.forEach(function(rule) {
+      var matched = false;
+      if (rule.type === "set") {
+        matched = rule.keys.some(function(k) { return setIds.indexOf(k) !== -1; });
+      } else if (rule.type === "channel") {
+        matched = rule.keys.some(function(k) { return chIds.indexOf(k) !== -1; });
+      }
+      if (!matched) return;
+      // 対象が選択されていなければスキップ
+      var targetSelected = chIds.indexOf(rule.target) !== -1;
+      if (!targetSelected) return;
+
+      var current = bestByTarget[rule.target];
+      if (!current || rule.newPrice < current.newPrice) {
+        bestByTarget[rule.target] = rule;
+      }
+    });
+    return bestByTarget;
+  }
+
+  function calcMonths(startVal, endVal) {
+    if (endVal === "long") {
+      return { useMonths: 13, billMonths: 12, longTerm: true };
+    }
+    var s = Number(startVal);
+    var e = Number(endVal);
+    var use;
+    if (s < e)       use = e - s + 1;
+    else if (s > e)  use = (12 - s) + e + 1;
+    else             use = 1;
+
+    var bill;
+    if (s === e) bill = 1;        // 同月解約は1ヶ月分課金
+    else         bill = use - 1;  // 加入月は無料
+    return { useMonths: use, billMonths: bill, longTerm: false };
+  }
+
+  function recalc() {
+    var selected = getSelected();
+    var totalCount = selected.sets.length + selected.channels.length;
+    var resultEl = $("#sk-result");
+    resultEl.innerHTML = "";
+
+    if (totalCount === 0) {
+      resultEl.appendChild(el("div", {
+        class: "sk-result-empty",
+        text: "商品を1つ以上選ぶと料金が表示されます"
+      }));
+      return;
+    }
+
+    var months = calcMonths($("#sk-start").value, $("#sk-end").value);
+    var discounts = applyDiscounts(selected);
+
+    // 期間説明
+    var periodText;
+    if (months.longTerm) {
+      periodText = "1年以上利用：基本料 + 視聴料を 12ヶ月分 お支払い（加入月は無料）";
+    } else {
+      var s = $("#sk-start").value, e = $("#sk-end").value;
+      if (s === e) {
+        periodText = s + "月加入 → " + e + "月解約：1ヶ月分のお支払い（同月解約のため）";
+      } else {
+        periodText = s + "月加入 → " + e + "月解約：利用 " + months.useMonths + "ヶ月／課金 " + months.billMonths + "ヶ月（加入月は無料）";
+      }
+    }
+    resultEl.appendChild(el("div", { class: "sk-result-period", text: periodText }));
+
+    // 内訳作成
+    var breakdown = el("div", { class: "sk-breakdown" });
+    breakdown.appendChild(buildLine("基本料", BASE_FEE, null, null));
+
+    var watchTotal = 0;
+
+    // セット
+    selected.sets.forEach(function(s) {
+      breakdown.appendChild(buildLine(s.name, s.price, null, null));
+      watchTotal += s.price;
+    });
+
+    // チャンネル
+    selected.channels.forEach(function(c) {
+      var d = discounts[c.id];
+      if (d) {
+        breakdown.appendChild(buildLine(c.name, d.newPrice, c.price, d.label));
+        watchTotal += d.newPrice;
+      } else {
+        breakdown.appendChild(buildLine(c.name, c.price, null, null));
+        watchTotal += c.price;
+      }
+    });
+
+    var monthly = BASE_FEE + watchTotal;
+    var monthlyLine = el("div", { class: "sk-monthly" });
+    monthlyLine.appendChild(el("span", { text: "月額合計" }));
+    monthlyLine.appendChild(el("span", { text: yen(monthly) }));
+    breakdown.appendChild(monthlyLine);
+
+    resultEl.appendChild(breakdown);
+
+    var total = monthly * months.billMonths;
+    var totalBox = el("div", { class: "sk-total-box" });
+    totalBox.appendChild(el("div", { class: "sk-total-label", text: "総支払額" }));
+    totalBox.appendChild(el("div", { class: "sk-total-value", text: yen(total) }));
+    var subText = months.longTerm
+      ? "（月額 " + yen(monthly) + " × 12ヶ月）"
+      : "（月額 " + yen(monthly) + " × " + months.billMonths + "ヶ月）";
+    totalBox.appendChild(el("div", { class: "sk-total-sub", text: subText }));
+    resultEl.appendChild(totalBox);
+  }
+
+  function buildLine(name, price, oldPrice, discountLabel) {
+    var line = el("div", { class: "sk-line" });
+    line.appendChild(el("div", { class: "sk-line-name", text: name }));
+
+    var priceWrap = el("div", { class: "sk-line-price" });
+    if (oldPrice && oldPrice !== price) {
+      priceWrap.appendChild(el("span", { class: "sk-old-price", text: yen(oldPrice) }));
+    }
+    priceWrap.appendChild(document.createTextNode(yen(price)));
+    if (discountLabel) {
+      priceWrap.appendChild(el("span", { class: "sk-discount-tag", text: discountLabel }));
+    }
+    line.appendChild(priceWrap);
+    return line;
+  }
+
+  function resetAll() {
+    var nodes = document.querySelectorAll('input[type="checkbox"]:checked');
+    for (var i = 0; i < nodes.length; i++) nodes[i].checked = false;
+    $("#sk-start").value = "1";
+    $("#sk-end").value = "long";
+    recalc();
+  }
+
+  // ---------- init ----------
+  document.addEventListener("DOMContentLoaded", function() {
+    buildMonthSelects();
+    buildSets();
+    buildChannels();
+    $("#sk-start").addEventListener("change", recalc);
+    $("#sk-end").addEventListener("change", recalc);
+    $("#sk-reset").addEventListener("click", resetAll);
+    recalc();
+  });
+
+})();
+</script>
+</body>
+</html>
