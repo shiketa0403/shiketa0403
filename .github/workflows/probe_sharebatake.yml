@@ -1,6 +1,10 @@
 name: sharebatake 探査（捨て）
 
 on:
+  push:
+    paths:
+      - 'probe_sharebatake.py'
+      - '.github/workflows/probe_sharebatake.yml'
   workflow_dispatch:
     inputs:
       list_url:
