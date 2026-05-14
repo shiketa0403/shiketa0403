@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 from typing import Optional
 
@@ -63,7 +64,10 @@ def generate_farm_description(farm: dict) -> str:
         "次の貸し農園の情報をもとに、ユーザーが利用シーンを想像しやすい説明文を"
         "200文字前後（180〜220字）で書いてください。"
         "事実は与えられた情報の範囲で書き、推測や誇張は避けてください。"
-        "「です・ます」調、箇条書きは使わず1段落（200文字前後）でまとめてください。\n\n"
+        "「です・ます」調、箇条書きは使わない。\n\n"
+        "段落・改行ルール:\n"
+        "- 1文（句点「。」で区切る単位）ごとに段落を分け、段落の間に空行を1行入れる。\n"
+        "- <p> や <br> などのタグは使わない（空行で段落分けを表現）。\n"
         f"{DECO_RULES}\n"
         "出力は本文HTML（装飾はspanのみ）のみ。前置きや囲み記号は不要。\n\n"
         f"=== 農園情報 ===\n{materials}"
@@ -86,12 +90,15 @@ def generate_local_gov_info(city_name: str) -> Optional[str]:
 
     prompt = (
         f"{city_name} が運営する区民農園・市民農園・貸し農園など、自治体公式の"
-        "レンタル畑制度について、公式サイトを確認して内容を200文字前後（180〜220字）で"
-        "要約してください。\n\n"
-        "ルール:\n"
-        f"- 公式情報源（{city_name}公式サイト）に該当する内容が見つからない場合、"
-        "  本文を NONE という1単語だけにしてください。\n"
-        "- 見つかった場合は、利用方法・料金目安・申込窓口・特徴を中心に要約。\n"
+        "レンタル畑制度について、公式サイトを Web 検索して内容を 200 文字前後"
+        "（180〜220字）で要約してください。\n\n"
+        "判定ルール（重要）:\n"
+        f"- {city_name} の公式サイト・公式情報源で、自治体運営の区民/市民農園や"
+        "  貸し農園制度が見つからない、または情報が不十分（利用方法・料金・申込み先のいずれかが不明）な場合は、\n"
+        "  出力を **NONE という1単語だけ** にしてください。\n"
+        "- その場合、「見つかりませんでした」「情報がありません」などの説明文は一切書かないこと。\n"
+        "  NONE 以外の文字を一切含めないこと。\n"
+        "- 公式情報源で十分な情報が見つかった場合のみ、利用方法・料金目安・申込窓口・特徴を中心に要約してください。\n"
         "- 「です・ます」調、1段落、200文字前後。事実ベースで誇張は避ける。\n"
         f"{DECO_RULES}\n"
         "出力は本文HTML（装飾はspanのみ）のみ。前置きや囲み記号は不要。"
@@ -110,7 +117,10 @@ def generate_local_gov_info(city_name: str) -> Optional[str]:
         if getattr(block, "type", None) == "text":
             text_parts.append(block.text)
     text = ("\n".join(text_parts)).strip()
-    if not text or text.upper().startswith("NONE"):
+    if not text:
+        return None
+    # "NONE" がテキストのどこかに（独立した語として）含まれていたら情報なし扱い
+    if re.search(r"\bNONE\b", text, re.IGNORECASE):
         return None
     return text
 
