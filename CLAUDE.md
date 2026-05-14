@@ -321,7 +321,7 @@ Yahoo!ショッピングのアフィリエイトを扱えるのはバリュー�
 3. 各農園のフルスクショを取得（`out_sharebatake/farm_NN_*.png`）
 4. WPメディアにアップロードして src URLを取得
 5. `sharebatake_ai.py` が各農園200文字説明文（生データ材料）と自治体情報（Web Search）を Claude API で生成
-6. テンプレに埋め込んで agriwarriors.jp に draft 投稿（カテゴリ「東京都」、タグ「シェア畑,貸し農園,{{区/市名}}」）
+6. テンプレに埋め込んで agriwarriors.jp に draft 投稿（カテゴリ「東京」(slug: tokyo)、タグ「シェア畑,貸し農園,{{区/市名}}」）
 
 ### スクレイピング注意
 - `sharebatake.com` は Cloudflare 系の Bot 対策あり。`requests`/`curl` だけでは 403。**Playwright 必須**。
@@ -337,7 +337,7 @@ Yahoo!ショッピングのアフィリエイトを扱えるのはバリュー�
 ### 記事テンプレート（区/市1件＝1記事）
 - タイトル: `【{{区/市名}}】レンタルできる貸し農園まとめ`
 - スラッグ: `TOKYO_AREA_MAP` の WP slug（大田区→`ota`、世田谷区→`setagaya` 等）
-- カテゴリ: `東京都`（WP側に事前作成必須、無いと投稿スキップ）
+- カテゴリ: `東京`（slug: `tokyo`、WP側に事前作成済み・無いと投稿スキップ）
 - タグ: `シェア畑, 貸し農園, {{区/市名}}`
 - ステータス: draft（既定）
 - 構成:
