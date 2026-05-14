@@ -293,6 +293,29 @@ def scrape_area(city_name: str, out_dir: Path, max_farms: int = 0) -> List[Farm]
 
         # 1) 一覧ページ
         list_html = _fetch(page, area_url)
+
+        # デバッグ: ページ取得状況を可視化
+        from bs4 import BeautifulSoup
+        _dbg_soup = BeautifulSoup(list_html, "html.parser")
+        _dbg_title = _dbg_soup.title.get_text(strip=True) if _dbg_soup.title else "(no title)"
+        _farmlist_count = len(_dbg_soup.select(".farmlist_item"))
+        _farm_anchors = len(_dbg_soup.select("a[href*='/farms/']"))
+        _has_cf_challenge = ("Just a moment" in list_html) or ("cf-browser-verification" in list_html)
+        print(
+            f"[debug] html_len={len(list_html)} title={_dbg_title!r} "
+            f".farmlist_item={_farmlist_count} farm_anchors={_farm_anchors} "
+            f"cf_challenge={_has_cf_challenge}",
+            flush=True,
+        )
+        # HTMLを artifact 保存（先頭3000字をログにも出す）
+        try:
+            (out_dir / "list_page.html").write_text(list_html, encoding="utf-8")
+        except Exception:
+            pass
+        print("[debug] ----- list_page.html head -----", flush=True)
+        print(list_html[:3000], flush=True)
+        print("[debug] ----- end head -----", flush=True)
+
         items = _parse_list_page(list_html, area_url, addr_filter)
         if not items:
             print(f"[scrape] {city_name} に該当する農園が見つかりませんでした", flush=True)
