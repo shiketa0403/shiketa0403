@@ -71,13 +71,31 @@ def format_fee(text: str) -> str:
 
 def format_access(text: str) -> str:
     """最寄駅・アクセスを整形。
-    - 最初の ※ 以降は捨てる（Google Map 操作ヘルプ等の混入を除去）
+    - Google Map ウィジェットから漏れた操作ヘルプ文字列を除去（複数の終端パターンを試す）
     - 「駅からのアクセス」「バスでのアクセス」「お車でのアクセス」見出しと
       【駅名】ブロックの直前で改行
     """
     if not text:
         return ""
-    cut = text.split("※", 1)[0].strip()
+    # 終端候補の中で最も早い位置でカット
+    terminators = [
+        "※",
+        "農園までの詳しい地図",
+        "← 左へ移動",
+        "+ ズームイン",
+        "地図データ",
+        "大きい地図で見る",
+        "（Googleマップ）",
+        "(Googleマップ)",
+        "ショートカット",
+    ]
+    cut = text
+    cut_at = len(cut)
+    for term in terminators:
+        idx = cut.find(term)
+        if 0 <= idx < cut_at:
+            cut_at = idx
+    cut = cut[:cut_at].strip()
     # 連続空白を1つに正規化
     cut = re.sub(r"\s+", " ", cut)
     # 移動手段見出しの直前に改行（先頭でなければ）
