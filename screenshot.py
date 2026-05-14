@@ -113,6 +113,10 @@ def upload_to_wordpress(image_path, title=""):
     headers = get_auth_header(config)
     headers["Content-Type"] = "image/png"
     headers["Content-Disposition"] = f'attachment; filename="{filename}"'
+    headers["User-Agent"] = (
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    )
 
     req = urllib.request.Request(url, data=image_data, headers=headers, method="POST")
     try:

@@ -39,6 +39,10 @@ def api_request(endpoint, method="GET", data=None):
     url = f"{WP_CONFIG['site_url']}/wp-json/wp/v2/{endpoint}"
     headers = get_auth_header()
     headers["Content-Type"] = "application/json"
+    headers["User-Agent"] = (
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    )
 
     body = json.dumps(data).encode() if data else None
     req = urllib.request.Request(url, data=body, headers=headers, method=method)
