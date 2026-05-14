@@ -136,11 +136,18 @@ def _parse_list_page(html: str, area_url: str, addr_filter: Optional[str]):
     results = []
 
     for item in soup.select(".farmlist_item"):
-        # 詳細URL
-        detail_btn = item.select_one(".farmlist_item_header_detailbutton a, a[href*='/farms/']")
-        if not detail_btn:
+        # 詳細URL:
+        #   - 現行構造: item 自体が <a class="farmlist_item" href="...">
+        #   - 旧構造:   item は <div> で、内側に <a class="...detailbutton..." or a[href*='/farms/']>
+        href = ""
+        if item.name == "a" and item.get("href"):
+            href = item.get("href", "")
+        else:
+            detail_btn = item.select_one(".farmlist_item_header_detailbutton a, a[href*='/farms/']")
+            if detail_btn:
+                href = detail_btn.get("href", "")
+        if not href:
             continue
-        href = detail_btn.get("href", "")
         detail_url = urljoin(area_url, href)
         # 同一階層の /farms/ かつ末尾に農園slugがあるものに限定
         path = urlparse(detail_url).path
