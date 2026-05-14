@@ -1,0 +1,42 @@
+name: sharebatake 探査（捨て）
+
+on:
+  workflow_dispatch:
+    inputs:
+      list_url:
+        description: 'エリア一覧URL（空ならトップから大田区を探す）'
+        required: false
+        default: ''
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 依存ライブラリのインストール
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright beautifulsoup4
+          python -m playwright install --with-deps chromium
+
+      - name: 探査スクリプト実行
+        run: |
+          python probe_sharebatake.py \
+            --list-url "${{ github.event.inputs.list_url }}" \
+            --out-dir probe_out
+
+      - name: 結果を artifact にアップロード
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sharebatake-probe
+          path: probe_out/
