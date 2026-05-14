@@ -187,6 +187,50 @@ def summarize_page(html, label):
     lines.append(f"  (total: {len(imgs)} 件)")
     lines.append("")
 
+    # 詳細ページ向け: ラベル/値が div ベースで組まれているケース
+    lines.append("--- .farminfo_subtitle（見出し）と近傍テキスト ---")
+    for sub in soup.select(".farminfo_subtitle"):
+        label = sub.get_text(" ", strip=True)
+        # 後続のテキストを兄弟要素から拾う
+        nxt = sub.find_next_sibling()
+        value = nxt.get_text(" ", strip=True)[:300] if nxt else ""
+        lines.append(f"  [{label[:30]}] => {value}")
+    lines.append("")
+
+    lines.append("--- .tdL / .tdR ペア ---")
+    tdls = soup.select(".tdL")
+    tdrs = soup.select(".tdR")
+    for tdl, tdr in zip(tdls, tdrs):
+        lines.append(
+            f"  [{tdl.get_text(' ', strip=True)[:30]}] "
+            f"= {tdr.get_text(' ', strip=True)[:300]}"
+        )
+    lines.append("")
+
+    lines.append("--- .area / .answer ペア（あれば） ---")
+    areas = soup.select(".area")
+    answers = soup.select(".answer")
+    for a, b in zip(areas, answers):
+        lines.append(
+            f"  [{a.get_text(' ', strip=True)[:30]}] "
+            f"= {b.get_text(' ', strip=True)[:300]}"
+        )
+    lines.append("")
+
+    lines.append("--- <iframe> src 一覧（Google Maps 候補） ---")
+    for iframe in soup.find_all("iframe"):
+        src = iframe.get("src") or iframe.get("data-src") or ""
+        lines.append(f"  {src}")
+    lines.append("")
+
+    lines.append("--- 「円」を含むテキスト行（料金候補） ---")
+    body_text = soup.get_text("\n")
+    for raw in body_text.split("\n"):
+        line = raw.strip()
+        if "円" in line and 2 <= len(line) <= 120:
+            lines.append(f"  {line}")
+    lines.append("")
+
     # 各種クラス・タグの分布
     lines.append("--- class attribute 上位 ---")
     from collections import Counter
