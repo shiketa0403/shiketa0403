@@ -1,0 +1,112 @@
+name: シェア畑 区/市単位 記事を draft 投稿
+
+on:
+  workflow_dispatch:
+    inputs:
+      city:
+        description: '区/市名（例: 大田区）'
+        required: true
+        default: '大田区'
+        type: string
+      status:
+        description: '投稿ステータス'
+        required: true
+        default: 'draft'
+        type: choice
+        options:
+          - draft
+          - publish
+          - private
+      max_farms:
+        description: '取得農園数の上限（0=無制限）'
+        required: false
+        default: '0'
+        type: string
+      dry_run:
+        description: '投稿せず本文HTMLをログに出すだけ'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+  # 初回起動用に push トリガーも仕込んでおく（ファイル更新時のみ走るので暴発しない）
+  push:
+    paths:
+      - 'sharebatake_article.py'
+      - 'sharebatake_scraper.py'
+      - 'sharebatake_ai.py'
+      - '.github/workflows/sharebatake_article.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 依存ライブラリのインストール
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install anthropic playwright beautifulsoup4
+          python -m playwright install --with-deps chromium
+
+      - name: wp_config.py を agriwarriors.jp 用に生成
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        env:
+          WP_USERNAME: ${{ secrets.AGRIWARRIORS_WP_USERNAME }}
+          WP_APP_PASSWORD: ${{ secrets.AGRIWARRIORS_WP_APP_PASSWORD }}
+        run: |
+          python3 << 'PYEOF'
+          import os
+          username = os.environ.get('WP_USERNAME', '')
+          app_password = os.environ.get('WP_APP_PASSWORD', '')
+          if not username or not app_password:
+              print("ERROR: AGRIWARRIORS_WP_USERNAME / AGRIWARRIORS_WP_APP_PASSWORD が未設定です")
+              exit(1)
+          with open('wp_config.py', 'w') as f:
+              f.write(f'''WP_CONFIG = {{
+              "site_url": "https://agriwarriors.jp",
+              "username": "{username}",
+              "app_password": "{app_password}",
+          }}
+          ''')
+          print("wp_config.py を生成しました（site_url=https://agriwarriors.jp）")
+          PYEOF
+
+      - name: 記事生成・投稿
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          ARGS=""
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run --skip-upload"
+          fi
+          if [ -n "${{ github.event.inputs.max_farms }}" ] && [ "${{ github.event.inputs.max_farms }}" != "0" ]; then
+            ARGS="$ARGS --max-farms ${{ github.event.inputs.max_farms }}"
+          fi
+          python sharebatake_article.py "${{ github.event.inputs.city }}" \
+            --status "${{ github.event.inputs.status }}" \
+            $ARGS
+
+      - name: push トリガー時は import 検証だけ実行（誤投稿防止）
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          python -c "import sharebatake_scraper, sharebatake_ai, sharebatake_article; print('import OK')"
+
+      - name: スクショなどを artifact に保存
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sharebatake-article-out
+          path: |
+            out_sharebatake/
+          if-no-files-found: ignore

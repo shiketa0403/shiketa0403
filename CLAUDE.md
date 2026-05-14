@@ -8,9 +8,9 @@
 - 認証情報は GitHub Secrets に保存済み（WP_USERNAME, WP_APP_PASSWORD）
 
 ## ワークフロー
-- `.github/workflows/wp_post.yml` — `csv/post.csv` を WordPress に投稿
+- `.github/workflows/wp_post.yml` — `csv/post.csv` を WordPress に投稿（civichat.jp 向け）
 - `.github/workflows/wp_admin.yml` — 管理操作（カテゴリ一覧・削除、記事一覧・削除）
-- `.github/workflows/sharebatake_scrape.yml` — シェア畑（sharebatake.com）をスクレイピング → エリア集約記事を生成 → そのまま WordPress 投稿（手動実行のみ）
+- `.github/workflows/sharebatake_article.yml` — シェア畑（sharebatake.com）を区/市単位でスクレイピング → 1記事生成 → agriwarriors.jp に draft 投稿（手動実行）
 
 ## 記事作成の流れ
 1. `csv/vc_raw_utf8.csv`（バリューコマース案件一覧）から案件情報を取得
@@ -20,13 +20,14 @@
 
 ## 主要ファイル
 - `csv/vc_raw_utf8.csv` — バリューコマース案件一覧（データソース）
-- `csv/post.csv` — 投稿用CSV（このファイルのみ投稿対象）
-- `wp_post.py` — WordPress REST API操作スクリプト
+- `csv/post.csv` — 投稿用CSV（このファイルのみ投稿対象、civichat.jp向け）
+- `wp_post.py` — WordPress REST API操作スクリプト（`wp_config.py` を読む）
 - `wp_bulk_post.py` — CSV投稿スクリプト
 - `convert_vc_csv.py` — バリューコマースCSV → 記事CSV変換
 - `ai_generator.py` — Claude APIによるジャンル判定・紹介文・スラッグ生成
-- `scrape_sharebatake.py` — シェア畑スクレイパー（Playwrightでヘッドレス取得 → `csv/sharebatake_raw.csv`）
-- `convert_sharebatake_csv.py` — シェア畑生CSV → エリア集約記事 → `csv/post.csv`
+- `sharebatake_scraper.py` — シェア畑の区/市ページを Playwright で取得 → Farm dataclass のリスト化（スクショ含む）
+- `sharebatake_ai.py` — Claude API ラッパー。農園説明文 / 自治体情報（Web Search 利用）
+- `sharebatake_article.py` — 区/市1件 → スクレイピング → AI生成 → テンプレ組立 → agriwarriors.jp に draft 投稿
 
 ## 注意事項
 - この環境のネットワークはプロキシ制限があり、civichat.jp への直接接続は不可
@@ -294,33 +295,59 @@ Yahoo!ショッピングのアフィリエイトを扱えるのはバリュー�
 
 ---
 
-## シェア畑（sharebatake.com）データベース記事
+## シェア畑（sharebatake.com）→ agriwarriors.jp データベース記事
 
-バリューコマースASP記事とは別系統で、シェア畑のサイトをスクレイピング → エリア（既定: 都道府県）単位で1記事生成 → WordPress投稿する仕組み。
+バリューコマースASP記事（civichat.jp）とは完全に別系統。シェア畑のサイトを
+**東京の区/市単位**でスクレイピング → 1回の実行で1区/市の記事を1本生成 →
+**agriwarriors.jp** に下書き投稿する仕組み。
+
+### 投稿先
+- WordPress: https://agriwarriors.jp
+- 認証: GitHub Secrets `AGRIWARRIORS_WP_USERNAME` / `AGRIWARRIORS_WP_APP_PASSWORD`
+- Claude API: GitHub Secrets `ANTHROPIC_API_KEY`
+- ハブ記事: https://agriwarriors.jp/shared-farm/ （事前に作成済み、文末に内部リンク）
+
+### A8 アフィリエイトリンク（CTA）
+- href: `https://px.a8.net/svt/ejp?a8mat=3ZFJ8K+ABII9E+3U16+60H7M`
+- 計測画像は無し、URLのみ
+- アンカーテキスト: `{{農園名}}の見学予約・詳細を見る`
 
 ### フロー
-1. `.github/workflows/sharebatake_scrape.yml` を手動実行（`workflow_dispatch`）
-   - 入力: `max_farms`（取得件数上限）、`area_level`（prefecture / city）、`auto_post`（true/false）、`post_status`
-2. `scrape_sharebatake.py` が Playwright でトップから農園詳細ページを巡回し `csv/sharebatake_raw.csv` を生成
-3. `convert_sharebatake_csv.py` がエリアで集約し `csv/post.csv` を生成
-4. `auto_post=true` のとき同workflow内で `wp_bulk_post.py` を実行して WordPress 投稿
-5. 生 CSV と投稿 CSV をリポジトリにコミット（履歴保持）
+1. `.github/workflows/sharebatake_article.yml` を手動実行（`workflow_dispatch`）
+   - 入力: `city`（区/市名、例: 大田区）、`status`（既定 draft）、`max_farms`、`dry_run`
+2. `sharebatake_scraper.py` が区/市名 → シェア畑のエリアURLを参照、Playwright で一覧→各農園詳細ページを巡回
+   - 調布市・狛江市は同じシェア畑ページから住所で分離
+   - その他市部は `tokyo_else` ページから住所で分離
+3. 各農園のフルスクショを取得（`out_sharebatake/farm_NN_*.png`）
+4. WPメディアにアップロードして src URLを取得
+5. `sharebatake_ai.py` が各農園200文字説明文（生データ材料）と自治体情報（Web Search）を Claude API で生成
+6. テンプレに埋め込んで agriwarriors.jp に draft 投稿（カテゴリ「東京都」、タグ「シェア畑,貸し農園,{{区/市名}}」）
 
-### スクレイピングの注意
-- `sharebatake.com` は Cloudflare 等の Bot 対策があり、`requests` だけでは 403 になりやすい。Playwright（ヘッドレスChrome）必須。
-- ローカルや一般のクラウド経由では 403 になる場合あり。動作確認は GitHub Actions 上で行うこと。
-- サイト構造変更で `FARM_URL_PATTERNS` や `LABEL_KEYS`（`scrape_sharebatake.py` 上部）を要調整。
-- 初回は `max_farms=10` 程度で動作確認してから本番件数に増やす。
+### スクレイピング注意
+- `sharebatake.com` は Cloudflare 系の Bot 対策あり。`requests`/`curl` だけでは 403。**Playwright 必須**。
+- ローカルや一般クラウドからは 403 になりやすい。GitHub Actions 上で実行が安定。
+- HTML 構造変更時は `sharebatake_scraper.py` の `.tdL/.tdR` 抽出と `_parse_list_page` の class 名要調整。
+- 詳細ページの `lat="..." lng="..."` で緯度経度抽出 → Google Maps 埋め込み（APIキー不要）
 
-### シェア畑用の記事テンプレート（エリア1件＝1記事）
-- タイトル: `{{エリア名}}のシェア畑一覧｜料金・アクセス・特徴まとめ`
+### 対象エリア
+東京で農園があるのは13ページ（11区＋調布市・狛江市＋その他市部）。
+区/市名 → (sharebatake slug, WP slug, 住所フィルタ) は `sharebatake_scraper.TOKYO_AREA_MAP` に定義。
+**注意**: 大田区だけ sharebatake 側が `oota`、WP 側が `ota` で違う。
+
+### 記事テンプレート（区/市1件＝1記事）
+- タイトル: `【{{区/市名}}】レンタルできる貸し農園まとめ`
+- スラッグ: `TOKYO_AREA_MAP` の WP slug（大田区→`ota`、世田谷区→`setagaya` 等）
+- カテゴリ: `東京都`（WP側に事前作成必須、無いと投稿スキップ）
+- タグ: `シェア畑, 貸し農園, {{区/市名}}`
+- ステータス: draft（既定）
 - 構成:
-  1. リード文（`<span class="st-mymarker-s">N農園</span>` を含める）
-  2. `<h2>農園一覧（比較表）</h2>` — 農園名／所在地／利用料金／アクセスの比較テーブル
-  3. `<h2>{{エリア名}}のシェア畑 各農園の詳細</h2>` — 農園ごとに `<h3>農園名</h3>` + 詳細テーブル + 公式詳細リンク
-  4. `<h2>シェア畑のメリット</h2>` + `<h2>申し込みの流れ</h2>`
-  5. 締め（`<span class="hutoaka">…</span>` を 1 箇所）
-- カテゴリ: `貸し農園`（WordPress 側に事前作成しておくこと）
-- タグ: `シェア畑, 貸し農園, {{エリア名}}`
-- スラッグ: `sharebatake-{{都道府県ローマ字}}`（例: `sharebatake-tokyo`）
-- 装飾ルール（`st-mymarker-s` / `hutoaka` の使用回数）はASP記事と同じ。
+  1. `<h2>{{区/市名}}でレンタルできる貸し農園一覧</h2>`
+  2. 農園ごとに `<h3>農園名</h3>` + `<img>`（フルスクショ）+ 2カラムテーブル + Google Map iframe + AI生成200文字説明 + CTAリンク
+  3. `<h2>自治体などのレンタル畑情報</h2>` または `<h2>自治体などのレンタル情報なし</h2>`
+  4. 文末にハブ記事リンク（アンカー: `シェア畑の口コミ・評判は本当?契約NGの人を200人調査で暴露`）
+- 装飾: `<span class="hutoaka">` (太赤字 / 最重要1箇所)、`<span class="st-mymarker-s">` (太字+黄色下線 / 重要1〜2箇所)
+
+### 動作確認
+- まず大田区を `dry_run=true` で実行 → ログに HTML 出力されるので確認
+- 大田区を `dry_run=false` で実行 → draft 記事が agriwarriors.jp に作成される
+- 内容確認後に他エリアへ展開
