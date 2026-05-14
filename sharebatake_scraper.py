@@ -289,7 +289,7 @@ def scrape_area(city_name: str, out_dir: Path, max_farms: int = 0) -> List[Farm]
             args=["--disable-blink-features=AutomationControlled"],
         )
         context = browser.new_context(
-            viewport={"width": 1280, "height": 900},
+            viewport={"width": 1280, "height": 1200},
             locale="ja-JP",
             user_agent=USER_AGENT,
         )
@@ -339,11 +339,14 @@ def scrape_area(city_name: str, out_dir: Path, max_farms: int = 0) -> List[Farm]
             detail_html = _fetch(page, url)
             farm = _parse_detail_page(detail_html, url, hint)
 
-            # フルページスクショ
+            # 上部のみのスクショ（タイトル＋画像ギャラリー＋申込ボタンまで）
             safe = re.sub(r"[^a-zA-Z0-9]+", "_", url.rstrip("/").split("/")[-1])
             shot_path = out_dir / f"farm_{i:02d}_{safe}.png"
             try:
-                page.screenshot(path=str(shot_path), full_page=True)
+                page.screenshot(
+                    path=str(shot_path),
+                    clip={"x": 0, "y": 0, "width": 1280, "height": 1100},
+                )
                 farm.screenshot_path = str(shot_path)
                 print(f"[scrape]   -> {farm.name} (img: {shot_path.name})", flush=True)
             except Exception as e:

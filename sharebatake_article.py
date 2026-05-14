@@ -39,6 +39,88 @@ def esc(s: Optional[str]) -> str:
     return html.escape(s or "", quote=True)
 
 
+def _split_by_marker(text: str, marker: str) -> List[str]:
+    """marker を区切り文字として、marker を残したまま分割し、空要素は除外。"""
+    pieces = re.split(f"({re.escape(marker)})", text)
+    out: List[str] = []
+    current = ""
+    for piece in pieces:
+        if piece == marker:
+            if current.strip():
+                out.append(current.strip())
+            current = marker
+        else:
+            current += piece
+    if current.strip():
+        out.append(current.strip())
+    return out
+
+
+def format_address(text: str) -> str:
+    """住所を ※ ごとに <br> 改行（※は残す）。"""
+    if not text:
+        return ""
+    parts = _split_by_marker(text, "※")
+    return "<br>".join(esc(p) for p in parts) if parts else esc(text)
+
+
+def format_fee(text: str) -> str:
+    """利用料金を ※ ごとに <br> 改行（※は残す）。"""
+    return format_address(text)
+
+
+def format_access(text: str) -> str:
+    """最寄駅・アクセスを整形。
+    - 最初の ※ 以降は捨てる（Google Map 操作ヘルプ等の混入を除去）
+    - 「駅からのアクセス」「バスでのアクセス」「お車でのアクセス」見出しと
+      【駅名】ブロックの直前で改行
+    """
+    if not text:
+        return ""
+    cut = text.split("※", 1)[0].strip()
+    # 連続空白を1つに正規化
+    cut = re.sub(r"\s+", " ", cut)
+    # 移動手段見出しの直前に改行（先頭でなければ）
+    cut = re.sub(
+        r"(?<!^)\s*(駅からのアクセス|バスでのアクセス|お車でのアクセス)",
+        r"\n\1",
+        cut,
+    )
+    # 【駅名】の直前に改行
+    cut = re.sub(r"\s*(【[^】]+】)", r"\n\1", cut)
+    cut = re.sub(r"\n+", "\n", cut)
+    lines = [esc(l.strip()) for l in cut.split("\n") if l.strip()]
+    return "<br>".join(lines)
+
+
+def format_description_paragraphs(text: str) -> str:
+    """AI 説明文を「。」ごとに段落（空行）で区切る。
+    WordPress の wpautop が空行を <p> に変換するので、<br> や <p> は使わない。
+    """
+    if not text:
+        return ""
+    # AI が誤って付与した <p>/<br> を剥がす（wpautop に任せる）
+    text = re.sub(r"</?p[^>]*>", "", text)
+    text = re.sub(r"<br\s*/?>", "", text, flags=re.IGNORECASE)
+    text = text.strip()
+    if not text:
+        return ""
+    sentences = re.split(r"(。)", text)
+    paragraphs: List[str] = []
+    buf = ""
+    for piece in sentences:
+        if piece == "。":
+            buf += "。"
+            if buf.strip():
+                paragraphs.append(buf.strip())
+            buf = ""
+        else:
+            buf += piece
+    if buf.strip():
+        paragraphs.append(buf.strip())
+    return "\n\n".join(p for p in paragraphs if p)
+
+
 def render_status_tags(tags: List[str]) -> str:
     if not tags:
         return "-"
@@ -61,20 +143,22 @@ def render_map_iframe(farm: Farm) -> str:
 
 def render_farm_table(farm: Farm) -> str:
     """2カラムテーブル（左=ラベル、右=値）"""
-    rows = [
-        ("農園タイプ", "シェア畑 garden" if farm.is_garden else "シェア畑"),
-        ("住所", farm.address),
-        ("最寄駅・アクセス", farm.access),
-        ("利用料金（月額・税込）", farm.fee),
-        ("入会金", farm.entry_fee),
-        ("料金に含まれるもの", farm.included_services),
-        ("施設・設備", farm.facilities),
-        ("特徴タグ", render_status_tags(farm.status_tags)),
-    ]
+    # 各値の整形（HTML エスケープ済み or 完全な HTML 断片）
+    cells = {
+        "農園タイプ": esc("シェア畑 garden" if farm.is_garden else "シェア畑"),
+        "住所": format_address(farm.address),
+        "最寄駅・アクセス": format_access(farm.access),
+        "利用料金（月額・税込）": format_fee(farm.fee),
+        "入会金": esc(farm.entry_fee),
+        "料金に含まれるもの": esc(farm.included_services),
+        "施設・設備": esc(farm.facilities),
+        "特徴タグ": render_status_tags(farm.status_tags),
+    }
+    label_order = list(cells.keys())
     map_html = render_map_iframe(farm)
     parts = ['<table style="border-collapse: collapse; width: 100%;">', "<tbody>"]
-    for label, value in rows:
-        v = esc(value) if label != "特徴タグ" else value  # tags は既に escape 済
+    for label in label_order:
+        v = cells[label]
         parts.append(
             "<tr>"
             f'<th style="width: 30%; text-align: center; vertical-align: middle; '
@@ -106,10 +190,11 @@ def render_farm_block(farm: Farm, description_html: str) -> str:
         )
     parts.append(render_farm_table(farm))
     if description_html:
-        parts.append(description_html if "<" in description_html else f"<p>{description_html}</p>")
+        # 句点ごとに空行を挟む（WP の wpautop で <p> 化される）
+        parts.append(format_description_paragraphs(description_html))
     parts.append(
-        f'<p><a href="{A8_HREF}" rel="nofollow noopener">'
-        f"{esc(farm.name)}の見学予約・詳細を見る</a></p>"
+        f'<a href="{A8_HREF}" rel="nofollow noopener">'
+        f"{esc(farm.name)}の見学予約・詳細を見る</a>"
     )
     return "\n\n".join(parts)
 
@@ -128,13 +213,9 @@ def render_article(
 
     if gov_info_html:
         parts.append("<h2>自治体などのレンタル畑情報</h2>")
-        parts.append(gov_info_html if "<" in gov_info_html else f"<p>{gov_info_html}</p>")
+        parts.append(format_description_paragraphs(gov_info_html))
     else:
         parts.append("<h2>自治体などのレンタル情報なし</h2>")
-        parts.append(
-            f"<p>{esc(city_name)}が運営する自治体公式の区民農園・市民農園など、"
-            "公的なレンタル畑制度は確認できませんでした。</p>"
-        )
 
     parts.append(f'<p><a href="{HUB_URL}">{esc(HUB_ANCHOR)}</a></p>')
     return "\n\n".join(parts)
