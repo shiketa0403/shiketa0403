@@ -10,6 +10,7 @@
 ## ワークフロー
 - `.github/workflows/wp_post.yml` — `csv/post.csv` を WordPress に投稿
 - `.github/workflows/wp_admin.yml` — 管理操作（カテゴリ一覧・削除、記事一覧・削除）
+- `.github/workflows/sharebatake_scrape.yml` — シェア畑（sharebatake.com）をスクレイピング → エリア集約記事を生成 → そのまま WordPress 投稿（手動実行のみ）
 
 ## 記事作成の流れ
 1. `csv/vc_raw_utf8.csv`（バリューコマース案件一覧）から案件情報を取得
@@ -24,6 +25,8 @@
 - `wp_bulk_post.py` — CSV投稿スクリプト
 - `convert_vc_csv.py` — バリューコマースCSV → 記事CSV変換
 - `ai_generator.py` — Claude APIによるジャンル判定・紹介文・スラッグ生成
+- `scrape_sharebatake.py` — シェア畑スクレイパー（Playwrightでヘッドレス取得 → `csv/sharebatake_raw.csv`）
+- `convert_sharebatake_csv.py` — シェア畑生CSV → エリア集約記事 → `csv/post.csv`
 
 ## 注意事項
 - この環境のネットワークはプロキシ制限があり、civichat.jp への直接接続は不可
@@ -288,3 +291,36 @@ Yahoo!ショッピングのアフィリエイトを扱えるのはバリュー�
   - `<span class="hutoaka">テキスト</span>` — 補足的な強調に1〜2箇所
   - 上記以外のHTMLタグは使わない
 - **スラッグ生成**: タイトルからサービス名を抽出し、英小文字+ハイフン（1〜3単語）
+
+---
+
+## シェア畑（sharebatake.com）データベース記事
+
+バリューコマースASP記事とは別系統で、シェア畑のサイトをスクレイピング → エリア（既定: 都道府県）単位で1記事生成 → WordPress投稿する仕組み。
+
+### フロー
+1. `.github/workflows/sharebatake_scrape.yml` を手動実行（`workflow_dispatch`）
+   - 入力: `max_farms`（取得件数上限）、`area_level`（prefecture / city）、`auto_post`（true/false）、`post_status`
+2. `scrape_sharebatake.py` が Playwright でトップから農園詳細ページを巡回し `csv/sharebatake_raw.csv` を生成
+3. `convert_sharebatake_csv.py` がエリアで集約し `csv/post.csv` を生成
+4. `auto_post=true` のとき同workflow内で `wp_bulk_post.py` を実行して WordPress 投稿
+5. 生 CSV と投稿 CSV をリポジトリにコミット（履歴保持）
+
+### スクレイピングの注意
+- `sharebatake.com` は Cloudflare 等の Bot 対策があり、`requests` だけでは 403 になりやすい。Playwright（ヘッドレスChrome）必須。
+- ローカルや一般のクラウド経由では 403 になる場合あり。動作確認は GitHub Actions 上で行うこと。
+- サイト構造変更で `FARM_URL_PATTERNS` や `LABEL_KEYS`（`scrape_sharebatake.py` 上部）を要調整。
+- 初回は `max_farms=10` 程度で動作確認してから本番件数に増やす。
+
+### シェア畑用の記事テンプレート（エリア1件＝1記事）
+- タイトル: `{{エリア名}}のシェア畑一覧｜料金・アクセス・特徴まとめ`
+- 構成:
+  1. リード文（`<span class="st-mymarker-s">N農園</span>` を含める）
+  2. `<h2>農園一覧（比較表）</h2>` — 農園名／所在地／利用料金／アクセスの比較テーブル
+  3. `<h2>{{エリア名}}のシェア畑 各農園の詳細</h2>` — 農園ごとに `<h3>農園名</h3>` + 詳細テーブル + 公式詳細リンク
+  4. `<h2>シェア畑のメリット</h2>` + `<h2>申し込みの流れ</h2>`
+  5. 締め（`<span class="hutoaka">…</span>` を 1 箇所）
+- カテゴリ: `貸し農園`（WordPress 側に事前作成しておくこと）
+- タグ: `シェア畑, 貸し農園, {{エリア名}}`
+- スラッグ: `sharebatake-{{都道府県ローマ字}}`（例: `sharebatake-tokyo`）
+- 装飾ルール（`st-mymarker-s` / `hutoaka` の使用回数）はASP記事と同じ。

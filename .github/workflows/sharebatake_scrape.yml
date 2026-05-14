@@ -1,0 +1,130 @@
+name: シェア畑スクレイピング → 投稿CSV生成
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_farms:
+        description: '取得農園数の上限（0=無制限、初回は10程度で動作確認推奨）'
+        required: true
+        default: '20'
+        type: string
+      area_level:
+        description: 'エリアの粒度（prefecture=都道府県, city=市区町村）'
+        required: true
+        default: 'prefecture'
+        type: choice
+        options:
+          - prefecture
+          - city
+      auto_post:
+        description: 'スクレイピング後にそのまま WordPress に投稿する'
+        required: true
+        default: 'true'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+      post_status:
+        description: '投稿ステータス（auto_post=true のときに使用）'
+        required: true
+        default: 'draft'
+        type: choice
+        options:
+          - draft
+          - publish
+          - private
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: チェックアウト
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Python セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 依存ライブラリのインストール
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: シェア畑スクレイピング
+        run: |
+          python scrape_sharebatake.py \
+            --output csv/sharebatake_raw.csv \
+            --max-farms "${{ github.event.inputs.max_farms }}"
+
+      - name: 投稿CSVへ変換（エリア集約）
+        run: |
+          python convert_sharebatake_csv.py \
+            --input csv/sharebatake_raw.csv \
+            --output csv/post.csv \
+            --area-level "${{ github.event.inputs.area_level }}"
+
+      - name: 結果の概要表示
+        run: |
+          echo "=== sharebatake_raw.csv ==="
+          wc -l csv/sharebatake_raw.csv
+          head -3 csv/sharebatake_raw.csv
+          echo
+          echo "=== post.csv ==="
+          wc -l csv/post.csv
+          head -2 csv/post.csv
+
+      - name: 成果物をアーティファクト保存
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sharebatake-csv
+          path: |
+            csv/sharebatake_raw.csv
+            csv/post.csv
+
+      - name: wp_config.py を生成（auto_post=true のとき）
+        if: ${{ github.event.inputs.auto_post == 'true' }}
+        env:
+          WP_USERNAME: ${{ secrets.WP_USERNAME }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: |
+          python3 << 'PYEOF'
+          import os
+          username = os.environ.get('WP_USERNAME', '')
+          app_password = os.environ.get('WP_APP_PASSWORD', '')
+          if not username or not app_password:
+              print("ERROR: WP_USERNAME / WP_APP_PASSWORD シークレットが設定されていません")
+              exit(1)
+          with open('wp_config.py', 'w') as f:
+              f.write(f'''WP_CONFIG = {{
+              "site_url": "https://civichat.jp",
+              "username": "{username}",
+              "app_password": "{app_password}",
+          }}
+          ''')
+          print("wp_config.py を生成しました")
+          PYEOF
+
+      - name: WordPress に投稿（auto_post=true のとき）
+        if: ${{ github.event.inputs.auto_post == 'true' }}
+        run: |
+          python wp_bulk_post.py csv/post.csv --status "${{ github.event.inputs.post_status }}"
+
+      - name: スクレイピング結果をコミット（履歴用）
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add csv/sharebatake_raw.csv csv/post.csv
+          if git diff --cached --quiet; then
+            echo "コミット対象なし"
+          else
+            git commit -m "sharebatake: スクレイピング結果と投稿CSVを更新"
+            git push origin HEAD:${GITHUB_REF#refs/heads/}
+          fi
