@@ -259,14 +259,41 @@ def _parse_detail_page(html: str, url: str, hint: dict) -> Farm:
     if not farm.address and hint.get("list_address"):
         farm.address = hint["list_address"]
 
-    # lat/lng （HTML 中の lat="..." lng="..." を拾う）
-    m = re.search(r'lat="([\-0-9.]+)"\s*lng="([\-0-9.]+)"', html)
-    if m:
+    # lat/lng （複数の埋め込みパターンに対応）
+    latlng_patterns = [
+        r'lat="([\-0-9.]+)"\s*lng="([\-0-9.]+)"',
+        r'data-lat="([\-0-9.]+)"\s*data-lng="([\-0-9.]+)"',
+        r'data-latitude="([\-0-9.]+)"\s*data-longitude="([\-0-9.]+)"',
+        r'"lat"\s*:\s*([\-0-9.]+)\s*,\s*"lng"\s*:\s*([\-0-9.]+)',
+        r'"latitude"\s*:\s*([\-0-9.]+)\s*,\s*"longitude"\s*:\s*([\-0-9.]+)',
+        # data-* 順序逆 / その他フォールバック
+        r'data-lng="([\-0-9.]+)"\s*data-lat="([\-0-9.]+)"',
+    ]
+    for pat in latlng_patterns:
+        m = re.search(pat, html)
+        if not m:
+            continue
         try:
-            farm.lat = float(m.group(1))
-            farm.lng = float(m.group(2))
+            # 最後のパターンだけ lng/lat の順
+            if pat.startswith(r'data-lng'):
+                farm.lng = float(m.group(1))
+                farm.lat = float(m.group(2))
+            else:
+                farm.lat = float(m.group(1))
+                farm.lng = float(m.group(2))
+            break
         except ValueError:
-            pass
+            continue
+
+    # 緯度経度が取れなかった場合、デバッグ用に検出を試みる
+    if farm.lat is None or farm.lng is None:
+        # ピンポイント検出: ".000" や "35.xxxx" を含む短いスニペット
+        snippets = re.findall(r"(?:lat|lng|latitude|longitude)[^,\n]{0,80}", html, re.IGNORECASE)
+        if snippets:
+            print(
+                f"[scrape]   ! lat/lng 抽出失敗。HTML 内サンプル: {snippets[:3]}",
+                file=sys.stderr,
+            )
 
     return farm
 
