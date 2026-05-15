@@ -133,45 +133,57 @@ def generate_local_gov_info(city_name: str) -> Optional[str]:
         messages=[{"role": "user", "content": prompt}],
     )
 
-    # tool_use のサイクル後、最終 content から text を取り出す
-    text_parts = []
-    for block in resp.content:
-        if getattr(block, "type", None) == "text":
-            text_parts.append(block.text)
-    text = ("\n".join(text_parts)).strip()
+    # tool_use のサイクル中、AI は検索の合間に「次にこう調べる」のような
+    # 思考テキストを複数ブロック吐く。最終回答は通常 **最後の text ブロック**
+    # なので、それのみを採用する（中間の思考は捨てる）。
+    text_blocks = [b for b in resp.content if getattr(b, "type", None) == "text"]
+    text = text_blocks[-1].text.strip() if text_blocks else ""
     if not text:
         return None
     # "NONE" がテキストのどこかに（独立した語として）含まれていたら情報なし扱い
     if re.search(r"\bNONE\b", text, re.IGNORECASE):
         return None
-    # 万一プロンプト無視でメタ文が混入した場合の後処理：先頭の前置きを段落単位で除去
+    # 念のためメタ前置きの後処理（最終ブロック内にも前置きが混入する場合への保険）
     text = _strip_meta_preface(text)
     return text
 
 
 _META_PREFACE_PATTERNS = [
-    r"公式サイト(で|から)?(詳細が)?確認できました",
+    # サイト確認系
+    r"公式サイト(で|から)?(.{0,15})?確認できました",
+    r"公式サイト(で|から)?(.{0,30})?明記され(て)?(い)?ません",
+    # 検索プロセス言及
     r"Web ?検索(結果)?(から|で)",
+    r"追加で検索(します|してみます)",
+    r"(もう一度|別の角度|改めて)(.{0,5})?検索(します|してみます|してみる)",
+    r"PDF(の|チラシ)(.{0,30})?(確認|チェック)(する|します|必要)",
+    # 要約宣言・前置き
     r"これまでの情報(を|に)?(もとに|基に|元に)?(要約します|まとめます)",
+    r"(見つかった|得られた)情報(を|に)?(もとに|基に|元に)(要約|まとめ)",
     r"以下に(要約|まとめ)(します)?",
     r"(調査|リサーチ)(の結果|によると)",
     r"まとめると",
     r"これらを(まとめる|要約する)と",
     r"以上(の|から)(情報|内容)",
+    # 文脈推定・存在判断
+    r"制度(自体)?は存在(します|する)(ので|ため)",
+    r"情報は見つかりましたが",
+    r"(料金|詳細|内容)が(.{0,30})?(明記|記載)されて(い)?ません",
+    r"有料であることは確実",
 ]
 
 
 def _strip_meta_preface(text: str) -> str:
     """先頭〜本論前までに混じった『AI の作業説明』段落を除去する。
 
-    各段落（空行区切り）を見て、メタ発言パターンを含む段落を最大3つまで先頭から落とす。
+    各段落（空行区切り）を見て、メタ発言パターンを含む段落を最大8つまで先頭から落とす。
     本論（自治体制度の説明）に入った段落は残す。
     """
     # 段落（空行区切り）に分割。HTML 段落タグも考慮（<p>...</p>）
     chunks = re.split(r"\n\s*\n", text)
     chunks = [c.strip() for c in chunks if c.strip()]
     drop_count = 0
-    while chunks and drop_count < 3:
+    while chunks and drop_count < 8:
         first = chunks[0]
         # HTML タグを除去した素テキストで判定
         plain = re.sub(r"<[^>]+>", "", first)
