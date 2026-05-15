@@ -104,48 +104,65 @@ def generate_local_gov_info(city_name: str) -> Optional[str]:
         "- 利用料金（不明な場合は「料金は要問い合わせ」等で明記）\n"
         "- 申込窓口・連絡先（部署名や問い合わせ先）\n"
         "- 利用期間・募集時期・抽選有無 など特徴\n\n"
-        "## 出力ルール（最重要）\n"
+        "## 判定ルール\n"
         f"- {city_name} の **公式の制度が存在するなら**、料金や一部詳細が不明でも、見つかった範囲で要約してください。"
         "全部揃っていなくても OK。不明部分は「要問い合わせ」「公式サイトでご確認ください」などと書く。\n"
         f"- {city_name} に **そもそも自治体運営のレンタル畑制度が存在しない** と判断される場合のみ、"
-        "本文を **NONE という1単語だけ** にしてください（前置きや説明文は一切書かない）。\n"
+        "最終回答を **NONE** という1単語だけにしてください。\n"
         "- 「です・ます」調、1段落、200文字前後。事実ベース、誇張なし。\n"
-        "\n"
-        "## 出力フォーマット（絶対に守ること）\n"
-        "- 出力は **読者向けの本文だけ**。記事のページにそのまま埋め込まれる前提で書く。\n"
-        "- 以下のような **メタ発言・前置き・自分の作業説明は一切書かない**:\n"
-        "  - 「公式サイトで詳細が確認できました」\n"
-        "  - 「Web 検索結果から〜が分かりました／記載されていないため」\n"
-        "  - 「これまでの情報をもとに要約します」\n"
-        "  - 「以下に要約します」「まとめると〜」\n"
-        "  - 「調査の結果」「リサーチによると」\n"
-        "- 検索した事実や情報源の有無に言及しない。出てきた内容を、あたかも書き手が"
-        "  最初から知っている事実として、読者に直接語りかける文体で書く。\n"
-        "- 段落分けや改行はせず、1段落（連続した文）で書く。\n"
+        "- 検索した事実や情報源の有無に言及しない。読者に直接語りかける文体で書く。\n"
+        "- 段落分けや改行はせず、1段落で書く。\n"
         f"{DECO_RULES}\n"
-        "出力は本文HTML（装飾はspanのみ）のみ。前置きや囲み記号は不要。"
+        "\n"
+        "## 出力フォーマット（最重要）\n"
+        "あなたは検索の合間に「次にこう調べる」「料金が分からないので別を調べる」のような\n"
+        "思考メモを自由に書いて構いません。ただし、**最終回答は必ず以下の形式で囲んで**\n"
+        "出力してください。記事には `<final>` と `</final>` の **間の本文だけ** を採用します。\n"
+        "\n"
+        "<final>\n"
+        "（ここに 200 文字前後の本文 HTML。装飾は span のみ。前置き禁止。改行・空行禁止。）\n"
+        "</final>\n"
+        "\n"
+        "タグの外で何を書いてもOKです。記事には反映されません。\n"
+        "制度が存在しない場合は <final>NONE</final> としてください。"
     )
 
     resp = client.messages.create(
         model=MODEL,
-        max_tokens=1200,
+        max_tokens=1500,
         tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 8}],
         messages=[{"role": "user", "content": prompt}],
     )
 
-    # tool_use のサイクル中、AI は検索の合間に「次にこう調べる」のような
-    # 思考テキストを複数ブロック吐く。最終回答は通常 **最後の text ブロック**
-    # なので、それのみを採用する（中間の思考は捨てる）。
-    text_blocks = [b for b in resp.content if getattr(b, "type", None) == "text"]
-    text = text_blocks[-1].text.strip() if text_blocks else ""
+    # 全 text ブロックを連結して、その中から <final>...</final> を抽出する
+    text_blocks = [b.text for b in resp.content if getattr(b, "type", None) == "text"]
+    full_text = "\n".join(text_blocks).strip()
+
+    # デバッグ: 生の AI 出力をログに（行頭・末尾各 600 字）
+    if full_text:
+        preview = full_text if len(full_text) <= 1200 else (full_text[:600] + "\n…\n" + full_text[-600:])
+        print(f"[gov_ai] 生出力 ({len(full_text)}字):\n{preview}", flush=True)
+
+    # <final>...</final> を優先採用
+    m = re.search(r"<final>\s*(.*?)\s*</final>", full_text, re.DOTALL | re.IGNORECASE)
+    if m:
+        text = m.group(1).strip()
+    else:
+        # タグなしの場合は最後の text ブロック → メタ前置き除去にフォールバック
+        text = (text_blocks[-1].strip() if text_blocks else "")
+        text = _strip_meta_preface(text)
+        if text:
+            print("[gov_ai] <final> タグなし。フォールバック処理を適用", flush=True)
+
     if not text:
         return None
-    # "NONE" がテキストのどこかに（独立した語として）含まれていたら情報なし扱い
+    # NONE 判定
     if re.search(r"\bNONE\b", text, re.IGNORECASE):
         return None
-    # 念のためメタ前置きの後処理（最終ブロック内にも前置きが混入する場合への保険）
-    text = _strip_meta_preface(text)
-    return text
+    # 万一中に <p>/<br> が混ざってたら剥がす（記事 render 側で再整形される）
+    text = re.sub(r"</?p[^>]*>", "", text)
+    text = re.sub(r"<br\s*/?>", "", text, flags=re.IGNORECASE)
+    return text.strip()
 
 
 _META_PREFACE_PATTERNS = [
