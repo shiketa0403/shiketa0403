@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>和光クレジット — Step7 H2-5</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 20px; max-width: 1000px; }
+  h1 { font-size: 16px; color: #333; }
+  button { margin-bottom: 10px; padding: 8px 16px; cursor: pointer; font-size: 14px; }
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; padding: 10px; box-sizing: border-box; }
+  .status { display: inline-block; margin-left: 12px; color: #28a745; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>和光クレジット — Step7 H2-5 装飾済み</h1>
+<button id="copyBtn">本文をコピー</button><span class="status" id="status"></span>
+<textarea readonly id="content"><h2>和光クレジットが向いている人・不向きな人</h2>
+
+換金率・実績・透明性を踏まえると、和光クレジットに合う人と合わない人の輪郭が見えてきます。
+
+自分の状況と照らし合わせて判断しましょう。
+
+<h3>向いている人の3つの特徴</h3>
+
+<span class="st-mymarker-s"><strong>法人カード保有者・15万円以上の申込予定者・運営の透明性を重視する人</strong></span>に向いています。
+
+理由は3軸の強みがあるためです。
+
+法人プラン最大94%のレート、15万円以上で個人プランが88%以上にレート向上があります。
+
+さらに創業13年・事故0件・顔写真公開という運営透明性も強みです。
+
+具体的に合うのは以下の3パターンです。
+
+[st-mybox title="こんな方に向いています" webicon="st-svg-check-circle" color="#757575" bordercolor="#BDBDBD" bgcolor="#ffffff" borderwidth="2" borderradius="5" titleweight="bold" fontsize="" myclass="st-mybox-class" margin="25px 0 25px 0"]
+<div class="maruck">
+<ul>
+<li>法人カード保有者</li>
+<li>15万円以上の申込予定者</li>
+<li>初めての業者で安全性を重視する人</li>
+</ul>
+</div>
+[/st-mybox]
+
+3つに当てはまるなら、和光クレジットが有力な選択肢です。
+
+[st-kaiwa1 r]法人プラン×15万円以上×キャンペーン日の組み合わせが最も実利を得られます[/st-kaiwa1]
+
+<h3>不向きな人の3つの特徴</h3>
+
+5万円以下の少額利用・キャリア決済利用者・換金率最優先の人には<span class="hutoaka">不向き</span>です。
+
+5万円以下では個人87%という下限値で実質受取が小さくなります。
+
+キャリア決済は非対応で、換金率重視ならより高い業者が他にあるためです。
+
+該当するのは以下に当てはまる人です。
+
+<ul>
+<li>5万円以下を1回だけ利用したい人</li>
+<li>クレジットカード以外の決済しか使えない人</li>
+<li>98%以上の換金率を最優先する人</li>
+</ul>
+
+これらに当てはまるなら、<strong>24時間対応や高換金率の業者</strong>を検討しましょう。
+
+向き不向きの判断ができたところで、申込前に気になる疑問を確認していきます。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  const ta = document.getElementById('content');
+  navigator.clipboard.writeText(ta.value).then(() => {
+    const s = document.getElementById('status');
+    s.textContent = 'コピーしました';
+    setTimeout(() => { s.textContent = ''; }, 2000);
+  });
+});
+</script>
+</body>
+</html>
