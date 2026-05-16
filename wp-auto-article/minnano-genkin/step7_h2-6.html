@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>みんなの現金化 — Step7 H2-6</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 20px; max-width: 1000px; }
+  h1 { font-size: 16px; color: #333; }
+  button { margin-bottom: 10px; padding: 8px 16px; cursor: pointer; font-size: 14px; }
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; padding: 10px; box-sizing: border-box; }
+  .status { display: inline-block; margin-left: 12px; color: #28a745; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>みんなの現金化 — Step7 H2-6 装飾済み</h1>
+<button id="copyBtn">本文をコピー</button><span class="status" id="status"></span>
+<textarea readonly id="content"><h2>みんなの現金化に関するよくある質問</h2>
+
+申込前に多くの利用者から寄せられる疑問は3つに集中しています。
+
+ひとつずつ回答していきます。
+
+<h3>申込時に必要な書類は?</h3>
+
+申込時に必要なのは<strong>身分証画像とクレジットカード情報の2点のみ</strong>です。
+
+みんなの現金化は買取方式(指定商品をカード決済し、業者が買取代金として現金を振込む方式)を採用しています。
+
+貸金業の与信プロセスが不要なため、書類アップロードと決済情報の入力で取引が成立します。
+
+身分証は以下のいずれか1点で対応可能(要確認)。
+
+<ul>
+<li>運転免許証</li>
+<li>健康保険証</li>
+<li>マイナンバーカード</li>
+<li>パスポート</li>
+</ul>
+
+書類提出は申込フォームから画像アップロードする形式で、<strong>来店や郵送は不要</strong>です。
+
+<h3>換金率の値上げ交渉は可能?</h3>
+
+「他社より0.1%でも高い換金率」を公式に保証しています。
+
+そのため<strong>競合の見積もり画面があれば、値上げ交渉が可能</strong>です。
+
+業者側が日々競合の換金率を調査する独自方針があるためです。
+
+見積もり画面のスクリーンショットで、具体的な交渉材料を提示できます。
+
+実例として、他社で93%の見積もりを取得した状態で交渉し、93.1%にレート調整された報告があります(要確認)。
+
+<strong>申込前に2〜3社の見積もり</strong>を取り、最も高いレートをみんなの現金化に提示するのが効率的です。
+
+<h3>利用がカード会社にバレないコツ</h3>
+
+現金化を集中的に行わず、<strong>通常のショッピング利用と組み合わせる</strong>のがバレないための基本です。
+
+カード会社は不自然な利用パターンを検知する仕組みを持っているためです。
+
+<span class="hutoaka">同一加盟店での短期間の高額利用</span>や、ショッピング枠の急激な消化などが検知対象となります。
+
+意識したいのは以下の3点です。
+
+<ul>
+<li>利用枠の半分以下に抑える</li>
+<li>買い物利用と混在させる</li>
+<li>同じ業者を月内に何度も使わない</li>
+</ul>
+
+ただしクレジットカード現金化は会員規約上の禁止行為であり、利用は自己責任である前提を踏まえましょう。
+
+よくある疑問が解消できたところで、ここまでの内容を踏まえた最終判断に進みます。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  const ta = document.getElementById('content');
+  navigator.clipboard.writeText(ta.value).then(() => {
+    const s = document.getElementById('status');
+    s.textContent = 'コピーしました';
+    setTimeout(() => { s.textContent = ''; }, 2000);
+  });
+});
+</script>
+</body>
+</html>
