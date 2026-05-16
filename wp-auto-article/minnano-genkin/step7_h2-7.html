@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>みんなの現金化 — Step7 H2-7</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 20px; max-width: 1000px; }
+  h1 { font-size: 16px; color: #333; }
+  button { margin-bottom: 10px; padding: 8px 16px; cursor: pointer; font-size: 14px; }
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; padding: 10px; box-sizing: border-box; }
+  .status { display: inline-block; margin-left: 12px; color: #28a745; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>みんなの現金化 — Step7 H2-7 装飾済み</h1>
+<button id="copyBtn">本文をコピー</button><span class="status" id="status"></span>
+<textarea readonly id="content"><h2>まとめ</h2>
+
+みんなの現金化は<strong>5段階の換金率(92〜98.9%)・年中無休9時〜20時・他社より0.1%高い換金率保証</strong>を備えた現金化業者です。
+
+50万円以上の高額利用なら他社を上回る換金率が出ます。
+
+一方、5万円以下の少額や深夜・初回の即時振込には向きません。
+
+代表者と所在地は公開されている透明性がある反面、法人格の記載はない構造。
+
+運営形態は個人事業主の可能性が高い点も把握しておきましょう。
+
+公式表記の換金率と実取り額の乖離報告もあります。
+
+申込前に<strong>手数料の内訳と最終受取額を忘れずに確認</strong>しましょう。
+
+50万円以上の申込で換金率97〜98.9%を確保したい方は、営業時間9:00〜20:00の公式サイトから申込フォームを送信できます。
+
+「他社より0.1%高い換金率」を活かしたい方は、競合の見積もりを取ったうえで公式サイトに進みましょう。
+
+[st-mcbutton url="https://minnano-genkin.com/?c=P107" title="今すぐ申し込む" rel="nofollow" webicon="" target="" color="#fff" bgcolor="#e53935" bgcolor_top="#f44336" bordercolor="#e57373" borderwidth="1" borderradius="10" fontweight="bold" fontsize="120" width="90" webicon_after="st-svg-chevron-right" shadow="#c62828" ref="on" mcbox_bg="#fafafa" mcbox_color="" mcbox_title="換金率92〜98.9%・年中無休9〜20時" beacon=""]※他社より0.1%高い換金率を保証[/st-mcbutton]
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  const ta = document.getElementById('content');
+  navigator.clipboard.writeText(ta.value).then(() => {
+    const s = document.getElementById('status');
+    s.textContent = 'コピーしました';
+    setTimeout(() => { s.textContent = ''; }, 2000);
+  });
+});
+</script>
+</body>
+</html>
