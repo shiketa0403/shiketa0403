@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>和光クレジット — Step7 H2-4</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 20px; max-width: 1000px; }
+  h1 { font-size: 16px; color: #333; }
+  button { margin-bottom: 10px; padding: 8px 16px; cursor: pointer; font-size: 14px; }
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; padding: 10px; box-sizing: border-box; }
+  .status { display: inline-block; margin-left: 12px; color: #28a745; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>和光クレジット — Step7 H2-4 装飾済み</h1>
+<button id="copyBtn">本文をコピー</button><span class="status" id="status"></span>
+<textarea readonly id="content"><h2>他社乗換プランの申込額別シミュレーション</h2>
+
+申込額帯×プラン選択で実質換金率がどう変わるかをシミュレーションすると、和光クレジットの最適活用法が見えてきます。
+
+自分の希望額に合うプランを選びましょう。
+
+<h3>個人/法人/乗換の換金率比較</h3>
+
+申込額30万円の場合、<span class="st-mymarker-s"><strong>個人プラン89%・法人プラン92%・他社乗換87%</strong></span>という換金率の差があります。
+
+プランによって業者側のリスク認識が異なるためです。
+
+同じ申込額でも適用レートに段階差が生まれる構造です。
+
+申込額別の換金率表は以下の通り(数値は要確認)。
+
+<table>
+<thead>
+<tr><th>お申込み金額</th><th>個人プラン</th><th>法人プラン</th><th>他社乗換プラン</th></tr>
+</thead>
+<tbody>
+<tr><td>3〜15万円</td><td>87%</td><td>85%</td><td>85%</td></tr>
+<tr><td>15〜30万円</td><td>88%</td><td>91%</td><td>86%</td></tr>
+<tr><td>30〜50万円</td><td>89%</td><td>92%</td><td>87%</td></tr>
+<tr><td>50〜70万円</td><td>90%</td><td>93%</td><td>88%</td></tr>
+<tr><td>70〜100万円</td><td>91%</td><td>94%</td><td>89%</td></tr>
+<tr><td>100万円超</td><td>ASK</td><td>ASK</td><td>90%</td></tr>
+</tbody>
+</table>
+
+法人カード保有者・他社既存利用者なら個人プラン以外を選んだほうが実質受取が増える計算です。
+
+<h3>キャンペーン日活用で実質UP</h3>
+
+毎月1日・10日・27日の5%買取UPキャンペーンと法人プランを組み合わせると、<strong>業界トップ層と並ぶレート水準</strong>が見えます。
+
+法人プラン70〜100万円帯の94%にキャンペーン5%加算は単純合算で99%に近づきます。
+
+業界平均を大きく上回る計算です。
+
+100万円申込時、通常法人94%で94万円、キャンペーン日に5%UPで<strong>実質98〜99万円相当</strong>(要確認)。
+
+ただし5%UPの加算ルール(乗算/加算)は申込前に忘れずに公式で確認しましょう。
+
+プラン×キャンペーン日の組み合わせがわかったところで、自分に和光クレジットが合うかを判断していきます。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  const ta = document.getElementById('content');
+  navigator.clipboard.writeText(ta.value).then(() => {
+    const s = document.getElementById('status');
+    s.textContent = 'コピーしました';
+    setTimeout(() => { s.textContent = ''; }, 2000);
+  });
+});
+</script>
+</body>
+</html>
