@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>みんなの現金化 — Step7 H2-3</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 20px; max-width: 1000px; }
+  h1 { font-size: 16px; color: #333; }
+  button { margin-bottom: 10px; padding: 8px 16px; cursor: pointer; font-size: 14px; }
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; padding: 10px; box-sizing: border-box; }
+  .status { display: inline-block; margin-left: 12px; color: #28a745; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>みんなの現金化 — Step7 H2-3 装飾済み</h1>
+<button id="copyBtn">本文をコピー</button><span class="status" id="status"></span>
+<textarea readonly id="content"><h2>みんなの現金化の悪い口コミ・3つの注意点</h2>
+
+ポジティブな評価が中心のみんなの現金化ですが、ネガティブな口コミも複数報告されています。
+
+申込前に把握しておくべき注意点は3つです。
+
+<h3>公式換金率と実取り額の乖離</h3>
+
+実体験ブログでは公式表記92%に対して、<span class="hutoaka">実取り額が78%程度に下がる</span>ケースが報告されています。
+
+公式の換金率は「キャンペーン適用後の最終値」が表示されている可能性が高い構造。
+
+決済手数料や振込手数料を差し引くと、表記より少ない受取額になる仕組みです。
+
+5万円申込で公式表記92%なら46,000円のはずが、実際には39,000円程度しか振込まれなかった事例の報告もあります(要確認)。
+
+申込前に<strong>手数料の内訳と最終受取額を書面で確認</strong>しましょう。
+
+<h3>初回利用は振込遅延の報告あり</h3>
+
+最短3分の振込対応を公式に謳う一方で、初回利用時は<span class="hutoaka">30分〜1時間の遅延報告</span>が複数あります。
+
+初回は本人確認・カード登録・決済処理の手順が多く、業者側の確認作業に時間がかかるためです。
+
+<strong>2回目以降は登録情報が残っているため、最短3分の振込が再現</strong>される事例が多い構造。
+
+急ぎで現金が必要な初回利用者は、振込時間に余裕を持ったスケジュールで申込みましょう。
+
+<h3>営業時間外は翌日振込に持ち越し</h3>
+
+営業時間9:00〜20:00の範囲外で申込んだ場合、振込は翌営業日の朝対応となります。
+
+みんなの現金化は24時間受付業者ではないからです。
+
+申込フォームは24時間送信できるものの、審査・振込処理は営業時間内に実施されます。
+
+<span class="hutoaka">20時以降の申込みは翌9時以降に処理が開始</span>され、平日昼の3分振込とは大きく異なる対応時間。
+
+深夜・早朝の急な資金需要には24時間対応の他社の方が向いている場合もあります。
+
+[st-mybox title="注意ポイント" webicon="st-svg-exclamation-circle" color="#ef5350" bordercolor="#ef9a9a" bgcolor="#ffebee" borderwidth="2" borderradius="5" titleweight="bold" fontsize="" myclass="st-mybox-class" margin="25px 0 25px 0"]
+クレジットカード現金化はカード会社の会員規約上の禁止行為です。利用は自己責任である前提を踏まえ、規約違反のリスクを認識した上で申込みましょう。
+[/st-mybox]
+
+ネガティブな評判を踏まえたところで、他社との換金率比較で自分に合う業者を判断していきましょう。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  const ta = document.getElementById('content');
+  navigator.clipboard.writeText(ta.value).then(() => {
+    const s = document.getElementById('status');
+    s.textContent = 'コピーしました';
+    setTimeout(() => { s.textContent = ''; }, 2000);
+  });
+});
+</script>
+</body>
+</html>
