@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>みんなの現金化 — Step7 H2-4</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 20px; max-width: 1000px; }
+  h1 { font-size: 16px; color: #333; }
+  button { margin-bottom: 10px; padding: 8px 16px; cursor: pointer; font-size: 14px; }
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; padding: 10px; box-sizing: border-box; }
+  .status { display: inline-block; margin-left: 12px; color: #28a745; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>みんなの現金化 — Step7 H2-4 装飾済み</h1>
+<button id="copyBtn">本文をコピー</button><span class="status" id="status"></span>
+<textarea readonly id="content"><h2>みんなの現金化と他社の換金率比較</h2>
+
+申込額別に主要業者の換金率を比較すると、みんなの現金化が優位な金額帯と劣位な金額帯が見えてきます。
+
+自分の希望申込額に応じて最適な業者を選びましょう。
+
+<h3>金額別の換金率を競合と比較</h3>
+
+金額帯別に見ると、みんなの現金化は<span class="st-mymarker-s"><strong>20万円超〜100万円帯で他社平均を上回ります</strong></span>。
+
+公式の5段階換金率表が公開されているためです。
+
+申込額別の換金率を競合と直接比較できる業者だからです。
+
+5万円なら92%(他社平均80〜90%)、20万円超で94%、50万円超で97%、100万円超で98.9%という階段式(要確認)。
+
+特に50万円〜100万円帯では、競合の類似業者と比べて<strong>1〜3%程度の優位性</strong>が出る計算です。
+
+<h3>申込額別の最適業者の選び方</h3>
+
+5万円以下の少額なら<strong>みんなの現金化以外の業者も検討</strong>、50万円以上なら<strong>みんなの現金化が有力</strong>です。
+
+少額帯では「他社より0.1%高い換金率保証」を活用しても絶対値が低い構造。
+
+初回プレゼント分の比率が大きい業者の方が、実質受取額が増えるケースがあるためです。
+
+高額帯では公式換金率の段階加算が効くため、みんなの現金化の98.9%が他社を明確に上回るレートです。
+
+複数業者の見積もりを取って、申込額別に最も実質受取が高い業者を選びましょう。
+
+業者選びの軸が見えたところで、自分にみんなの現金化が合うかを判断していきましょう。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  const ta = document.getElementById('content');
+  navigator.clipboard.writeText(ta.value).then(() => {
+    const s = document.getElementById('status');
+    s.textContent = 'コピーしました';
+    setTimeout(() => { s.textContent = ''; }, 2000);
+  });
+});
+</script>
+</body>
+</html>
