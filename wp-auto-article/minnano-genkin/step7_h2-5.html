@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>みんなの現金化 — Step7 H2-5</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 20px; max-width: 1000px; }
+  h1 { font-size: 16px; color: #333; }
+  button { margin-bottom: 10px; padding: 8px 16px; cursor: pointer; font-size: 14px; }
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; padding: 10px; box-sizing: border-box; }
+  .status { display: inline-block; margin-left: 12px; color: #28a745; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>みんなの現金化 — Step7 H2-5 装飾済み</h1>
+<button id="copyBtn">本文をコピー</button><span class="status" id="status"></span>
+<textarea readonly id="content"><h2>みんなの現金化が向いている人・不向きな人</h2>
+
+メリット・注意点・他社比較を踏まえると、みんなの現金化に合う人と合わない人の輪郭が見えてきます。
+
+自分の状況と照らし合わせて判断しましょう。
+
+<h3>向いている人の3つの特徴</h3>
+
+50万円以上の高額利用を予定していて、営業時間内に申込める人に向いています。
+
+みんなの現金化は<span class="st-mymarker-s"><strong>50万円超の換金率97%、100万円超で98.9%という高額帯での強み</strong></span>が大きい業者です。
+
+営業時間9:00〜20:00内の申込みなら、最短3分振込の恩恵も受けられます。
+
+具体的に合うのは以下の3パターンです。
+
+[st-mybox title="こんな方に向いています" webicon="st-svg-check-circle" color="#757575" bordercolor="#BDBDBD" bgcolor="#ffffff" borderwidth="2" borderradius="5" titleweight="bold" fontsize="" myclass="st-mybox-class" margin="25px 0 25px 0"]
+<div class="maruck">
+<ul>
+<li>50万円以上の現金化を予定している人</li>
+<li>平日昼間に申込める人</li>
+<li>女性スタッフ対応で安心したい人</li>
+</ul>
+</div>
+[/st-mybox]
+
+3つに該当するなら、みんなの現金化が有力な選択肢です。
+
+[st-kaiwa1 r]50万円以上の高額×平日昼間ならみんなの現金化の換金率97〜98.9%が活きます[/st-kaiwa1]
+
+<h3>不向きな人の3つの特徴</h3>
+
+5万円以下の少額利用、深夜の急な資金需要、初回で即時振込が必要な人には<span class="hutoaka">不向き</span>です。
+
+少額帯では公式換金率の優位性が薄まります。
+
+深夜・初回は最短3分の謳い文句通りに振込まれないリスクがあるためです。
+
+該当するのは以下に当てはまる人です。
+
+<ul>
+<li>5万円以下を1回だけ利用したい人</li>
+<li>20時以降に申込みたい人</li>
+<li>初回で30分以内に振込が必要な人</li>
+</ul>
+
+これらに当てはまるなら、<strong>24時間対応の業者やリピート優遇のある業者</strong>を検討しましょう。
+
+向き不向きの判断ができたところで、申込前に気になる疑問を確認していきます。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  const ta = document.getElementById('content');
+  navigator.clipboard.writeText(ta.value).then(() => {
+    const s = document.getElementById('status');
+    s.textContent = 'コピーしました';
+    setTimeout(() => { s.textContent = ''; }, 2000);
+  });
+});
+</script>
+</body>
+</html>
