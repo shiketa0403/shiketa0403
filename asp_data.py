@@ -53,7 +53,7 @@ ASP_LIST = {
         "name": "afb",
         "shortcode": '[st_af id="4122"]',
         "banner_html": (
-            '<a href="https://www.afi-b.com/" rel="nofollow">'
+            '<a href="https://t.afi-b.com/visit.php?a=l44x-c11095x&amp;p=T779612O" rel="nofollow">'
             '<img class="alignnone size-full" src="https://www.garage-xxx.jp/wp-content/uploads/2026/04/afb.png" '
             'alt="afb" width="500" height="200" /></a>'
         ),
@@ -117,10 +117,11 @@ ASP_ROW_TEMPLATE = {
     "afb": {
         "cell_html": (
             '<td style="width: 50%; text-align: center; vertical-align: middle;">'
-            '<a href="https://www.afi-b.com/" rel="nofollow">'
+            '<a href="https://t.afi-b.com/visit.php?a=l44x-c11095x&amp;p=T779612O" rel="nofollow">'
             '<img class="alignnone size-full" src="https://www.garage-xxx.jp/wp-content/uploads/2026/04/afb.png" '
             'alt="afb" width="500" height="200" /></a>\n'
-            '<a href="https://www.afi-b.com/" rel="nofollow">https://www.afi-b.com/</a></td>'
+            '<a href="https://t.afi-b.com/visit.php?a=l44x-c11095x&amp;p=T779612O" rel="nofollow">'
+            'https://www.afi-b.com/</a></td>'
         ),
     },
     "moshimo": {
