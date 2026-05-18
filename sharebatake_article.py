@@ -15,7 +15,8 @@
 事前条件:
   - wp_config.py が agriwarriors.jp の認証情報で生成されていること
   - 環境変数 ANTHROPIC_API_KEY が設定されていること
-  - WP 側に「東京」カテゴリ（slug: tokyo）が存在すること
+  - WP 側に該当の都道府県カテゴリが存在すること
+    （東京→「東京」(slug: tokyo)、神奈川→「神奈川」(slug: kanagawa) など）
 """
 
 from __future__ import annotations
@@ -27,12 +28,16 @@ import sys
 from pathlib import Path
 from typing import List, Optional
 
-from sharebatake_scraper import Farm, scrape_area, TOKYO_AREA_MAP, lookup_area
+from sharebatake_scraper import (
+    Farm,
+    scrape_area,
+    lookup_area,
+    PREFECTURE_CATEGORY,
+)
 
 A8_HREF = "https://px.a8.net/svt/ejp?a8mat=3ZFJ8K+ABII9E+3U16+60H7M"
 HUB_URL = "https://agriwarriors.jp/shared-farm/"
 HUB_ANCHOR = "シェア畑の口コミ・評判は本当?契約NGの人を200人調査で暴露"
-CATEGORY_NAME = "東京"
 
 
 def esc(s: Optional[str]) -> str:
@@ -306,14 +311,23 @@ def main():
     args = parser.parse_args()
 
     # 0. 早期検証: 区/市名がマップに存在するか
-    sb_slug, wp_slug, addr_filter = lookup_area(args.city)
-    print(f"[main] 対象: {args.city} -> sharebatake={sb_slug}, wp_slug={wp_slug}")
+    pref_slug, sb_slug, wp_slug, addr_filter = lookup_area(args.city)
+    if pref_slug not in PREFECTURE_CATEGORY:
+        raise SystemExit(
+            f"都道府県 '{pref_slug}' に対応する WP カテゴリ名が未定義です。"
+            "sharebatake_scraper.PREFECTURE_CATEGORY を更新してください。"
+        )
+    category_name = PREFECTURE_CATEGORY[pref_slug]
+    print(
+        f"[main] 対象: {args.city} -> pref={pref_slug}, "
+        f"sharebatake={sb_slug}, wp_slug={wp_slug}, category={category_name}"
+    )
 
     # 0.5 ドライランでない場合、最初に WP 接続テスト + カテゴリ存在チェック
     if not args.dry_run:
         print("[main] WP 接続テスト + カテゴリ存在チェック…")
-        cat_id = ensure_category_id(CATEGORY_NAME)
-        print(f"[main] OK: カテゴリ '{CATEGORY_NAME}' ID={cat_id}")
+        cat_id = ensure_category_id(category_name)
+        print(f"[main] OK: カテゴリ '{category_name}' ID={cat_id}")
 
     # 1. スクレイピング
     out_dir = Path(args.out_dir)
@@ -356,7 +370,7 @@ def main():
         print(f"title: {title}")
         print(f"slug:  {wp_slug}")
         print(f"tags:  シェア畑, 貸し農園, {args.city}")
-        print(f"category: {CATEGORY_NAME}")
+        print(f"category: {category_name}")
         print(f"status: {args.status}")
         print("---- content ----")
         print(content)
@@ -365,7 +379,7 @@ def main():
     # 6. 投稿
     from wp_post import create_post
 
-    cat_id = ensure_category_id(CATEGORY_NAME)
+    cat_id = ensure_category_id(category_name)
     tag_ids = [ensure_tag_id(t) for t in ("シェア畑", "貸し農園", args.city)]
     print(f"[main] 投稿実行: status={args.status}, slug={wp_slug}")
     create_post(

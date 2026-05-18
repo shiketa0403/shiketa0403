@@ -2,14 +2,15 @@
 """
 シェア畑（sharebatake.com）スクレイパー（区/市単位）
 
-東京の区/市名を受け取り、対応する一覧ページから農園URLを集め、
+区/市名を受け取り、対応する一覧ページから農園URLを集め、
 各農園詳細ページを Playwright で取得して構造化データに変換する。
 
 呼び出し例:
   from sharebatake_scraper import scrape_area
   farms = scrape_area("大田区", out_dir=Path("out"))
+  farms = scrape_area("横浜市", out_dir=Path("out"))
 
-入力: 区/市名（例: 大田区）
+入力: 区/市名（例: 大田区、横浜市）
 出力: Farm dataclass のリスト + ローカルに保存した各農園のフルスクショ画像
 """
 
@@ -29,39 +30,59 @@ USER_AGENT = (
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
 )
 
-# 区/市名 → (シェア畑側slug, WP slug, 住所フィルタ)
+# 区/市名 → (都道府県slug, シェア畑側slug, WP slug, 住所フィルタ)
 # 住所フィルタが None の場合はページ内の全農園を対象
 # 住所フィルタがある場合はその文字列を住所に含む農園のみ対象
-TOKYO_AREA_MAP = {
+AREA_MAP = {
+    # ==== 東京都 ====
     # 23区（シェア畑に農園があるもの）
-    "大田区":   ("oota",       "ota",       None),
-    "世田谷区": ("setagaya",   "setagaya",  None),
-    "杉並区":   ("suginami",   "suginami",  None),
-    "渋谷区":   ("shibuya",    "shibuya",   None),
-    "練馬区":   ("nerima",     "nerima",    None),
-    "目黒区":   ("meguro",     "meguro",    None),
-    "江東区":   ("koto",       "koto",      None),
-    "葛飾区":   ("katsushika", "katsushika", None),
-    "板橋区":   ("itabashi",   "itabashi",  None),
-    "江戸川区": ("edogawa",    "edogawa",   None),
-    "足立区":   ("adachi",     "adachi",    None),
+    "大田区":   ("tokyo", "oota",       "ota",        None),
+    "世田谷区": ("tokyo", "setagaya",   "setagaya",   None),
+    "杉並区":   ("tokyo", "suginami",   "suginami",   None),
+    "渋谷区":   ("tokyo", "shibuya",    "shibuya",    None),
+    "練馬区":   ("tokyo", "nerima",     "nerima",     None),
+    "目黒区":   ("tokyo", "meguro",     "meguro",     None),
+    "江東区":   ("tokyo", "koto",       "koto",       None),
+    "葛飾区":   ("tokyo", "katsushika", "katsushika", None),
+    "板橋区":   ("tokyo", "itabashi",   "itabashi",   None),
+    "江戸川区": ("tokyo", "edogawa",    "edogawa",    None),
+    "足立区":   ("tokyo", "adachi",     "adachi",     None),
     # 調布市・狛江市は同じページから住所で分離
-    "調布市":   ("chofu",      "chofu",     "調布市"),
-    "狛江市":   ("chofu",      "komae",     "狛江市"),
+    "調布市":   ("tokyo", "chofu",      "chofu",      "調布市"),
+    "狛江市":   ("tokyo", "chofu",      "komae",      "狛江市"),
     # その他の東京市部（tokyo_else ページから住所で分離）
-    "八王子市": ("tokyo_else", "hachioji",       "八王子市"),
-    "町田市":   ("tokyo_else", "machida",        "町田市"),
-    "三鷹市":   ("tokyo_else", "mitaka",         "三鷹市"),
-    "武蔵野市": ("tokyo_else", "musashino",      "武蔵野市"),
-    "立川市":   ("tokyo_else", "tachikawa",      "立川市"),
-    "府中市":   ("tokyo_else", "fuchu",          "府中市"),
-    "国分寺市": ("tokyo_else", "kokubunji",      "国分寺市"),
-    "小金井市": ("tokyo_else", "koganei",        "小金井市"),
-    "小平市":   ("tokyo_else", "kodaira",        "小平市"),
-    "東村山市": ("tokyo_else", "higashimurayama", "東村山市"),
-    "国立市":   ("tokyo_else", "kunitachi",      "国立市"),
-    "西東京市": ("tokyo_else", "nishitokyo",     "西東京市"),
-    "東久留米市": ("tokyo_else", "higashikurume", "東久留米市"),
+    "八王子市":   ("tokyo", "tokyo_else", "hachioji",        "八王子市"),
+    "町田市":     ("tokyo", "tokyo_else", "machida",         "町田市"),
+    "三鷹市":     ("tokyo", "tokyo_else", "mitaka",          "三鷹市"),
+    "武蔵野市":   ("tokyo", "tokyo_else", "musashino",       "武蔵野市"),
+    "立川市":     ("tokyo", "tokyo_else", "tachikawa",       "立川市"),
+    "府中市":     ("tokyo", "tokyo_else", "fuchu",           "府中市"),
+    "国分寺市":   ("tokyo", "tokyo_else", "kokubunji",       "国分寺市"),
+    "小金井市":   ("tokyo", "tokyo_else", "koganei",         "小金井市"),
+    "小平市":     ("tokyo", "tokyo_else", "kodaira",         "小平市"),
+    "東村山市":   ("tokyo", "tokyo_else", "higashimurayama", "東村山市"),
+    "国立市":     ("tokyo", "tokyo_else", "kunitachi",       "国立市"),
+    "西東京市":   ("tokyo", "tokyo_else", "nishitokyo",      "西東京市"),
+    "東久留米市": ("tokyo", "tokyo_else", "higashikurume",   "東久留米市"),
+
+    # ==== 神奈川県 ====
+    # 各市は専用ページがあると仮定（dry_run で要確認。0件ならフォールバック調整）
+    "横浜市":   ("kanagawa", "yokohama", "yokohama", None),
+    "川崎市":   ("kanagawa", "kawasaki", "kawasaki", None),
+    "藤沢市":   ("kanagawa", "fujisawa", "fujisawa", None),
+}
+
+# 旧APIとの後方互換（外部から参照されているため残す）
+TOKYO_AREA_MAP = {
+    k: (sb, wp, addr)
+    for k, (pref, sb, wp, addr) in AREA_MAP.items()
+    if pref == "tokyo"
+}
+
+# 都道府県slug → WPカテゴリ名（agriwarriors.jp 側に同名カテゴリが必要）
+PREFECTURE_CATEGORY = {
+    "tokyo":    "東京",
+    "kanagawa": "神奈川",
 }
 
 # 状態タグ（アイコンファイル名 → 表示名）
@@ -97,17 +118,17 @@ class Farm:
 
 
 def lookup_area(city_name: str):
-    """区/市名 → (sharebatake_slug, wp_slug, addr_filter)"""
-    if city_name not in TOKYO_AREA_MAP:
+    """区/市名 → (pref_slug, sharebatake_slug, wp_slug, addr_filter)"""
+    if city_name not in AREA_MAP:
         raise ValueError(
             f"未対応の市区町村: {city_name}\n"
-            f"対応している区/市: {', '.join(TOKYO_AREA_MAP.keys())}"
+            f"対応している区/市: {', '.join(AREA_MAP.keys())}"
         )
-    return TOKYO_AREA_MAP[city_name]
+    return AREA_MAP[city_name]
 
 
-def build_area_url(sb_slug: str) -> str:
-    return urljoin(BASE_URL, f"/farms/tokyo/{sb_slug}")
+def build_area_url(pref_slug: str, sb_slug: str) -> str:
+    return urljoin(BASE_URL, f"/farms/{pref_slug}/{sb_slug}")
 
 
 def _fetch(page, url: str, wait_ms: int = 2500) -> str:
@@ -300,10 +321,10 @@ def _parse_detail_page(html: str, url: str, hint: dict) -> Farm:
 
 def scrape_area(city_name: str, out_dir: Path, max_farms: int = 0) -> List[Farm]:
     """区/市名を受け取って、対象農園を集める（詳細データ＋スクショ）。"""
-    sb_slug, wp_slug, addr_filter = lookup_area(city_name)
-    area_url = build_area_url(sb_slug)
+    pref_slug, sb_slug, wp_slug, addr_filter = lookup_area(city_name)
+    area_url = build_area_url(pref_slug, sb_slug)
     out_dir.mkdir(parents=True, exist_ok=True)
-    print(f"[scrape] area={city_name} sb_slug={sb_slug} url={area_url}", flush=True)
+    print(f"[scrape] area={city_name} pref={pref_slug} sb_slug={sb_slug} url={area_url}", flush=True)
     if addr_filter:
         print(f"[scrape] 住所フィルタ: {addr_filter}", flush=True)
 

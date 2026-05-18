@@ -298,8 +298,8 @@ Yahoo!ショッピングのアフィリエイトを扱えるのはバリュー�
 ## シェア畑（sharebatake.com）→ agriwarriors.jp データベース記事
 
 バリューコマースASP記事（civichat.jp）とは完全に別系統。シェア畑のサイトを
-**東京の区/市単位**でスクレイピング → 1回の実行で1区/市の記事を1本生成 →
-**agriwarriors.jp** に下書き投稿する仕組み。
+**区/市単位**でスクレイピング → 1回の実行で1区/市の記事を1本生成 →
+**agriwarriors.jp** に下書き投稿する仕組み。現状は東京都・神奈川県に対応。
 
 ### 投稿先
 - WordPress: https://agriwarriors.jp
@@ -321,7 +321,7 @@ Yahoo!ショッピングのアフィリエイトを扱えるのはバリュー�
 3. 各農園のフルスクショを取得（`out_sharebatake/farm_NN_*.png`）
 4. WPメディアにアップロードして src URLを取得
 5. `sharebatake_ai.py` が各農園200文字説明文（生データ材料）と自治体情報（Web Search）を Claude API で生成
-6. テンプレに埋め込んで agriwarriors.jp に draft 投稿（カテゴリ「東京」(slug: tokyo)、タグ「シェア畑,貸し農園,{{区/市名}}」）
+6. テンプレに埋め込んで agriwarriors.jp に draft 投稿（カテゴリは都道府県名（slug は `PREFECTURE_CATEGORY` 参照、東京→「東京」、神奈川→「神奈川」）、タグ「シェア畑,貸し農園,{{区/市名}}」）
 
 ### スクレイピング注意
 - `sharebatake.com` は Cloudflare 系の Bot 対策あり。`requests`/`curl` だけでは 403。**Playwright 必須**。
@@ -330,14 +330,16 @@ Yahoo!ショッピングのアフィリエイトを扱えるのはバリュー�
 - 詳細ページの `lat="..." lng="..."` で緯度経度抽出 → Google Maps 埋め込み（APIキー不要）
 
 ### 対象エリア
-東京で農園があるのは13ページ（11区＋調布市・狛江市＋その他市部）。
-区/市名 → (sharebatake slug, WP slug, 住所フィルタ) は `sharebatake_scraper.TOKYO_AREA_MAP` に定義。
+区/市名 → (都道府県slug, sharebatake slug, WP slug, 住所フィルタ) は `sharebatake_scraper.AREA_MAP` に定義。
+- 東京: 11区＋調布市・狛江市＋その他市部（`tokyo_else` を住所で分離）
+- 神奈川: 横浜市・川崎市・藤沢市（各市専用ページがある前提）
 **注意**: 大田区だけ sharebatake 側が `oota`、WP 側が `ota` で違う。
+新たな都道府県を追加するときは `PREFECTURE_CATEGORY` にも WPカテゴリ名を追加し、WordPress 側にカテゴリを事前作成する。
 
 ### 記事テンプレート（区/市1件＝1記事）
 - タイトル: `【{{区/市名}}】レンタルできる貸し農園まとめ`
-- スラッグ: `TOKYO_AREA_MAP` の WP slug（大田区→`ota`、世田谷区→`setagaya` 等）
-- カテゴリ: `東京`（slug: `tokyo`、WP側に事前作成済み・無いと投稿スキップ）
+- スラッグ: `AREA_MAP` の WP slug（大田区→`ota`、横浜市→`yokohama` 等）
+- カテゴリ: 都道府県名（東京→`東京`(slug:`tokyo`)、神奈川→`神奈川`(slug:`kanagawa`)。WP側に事前作成必須・無いと投稿スキップ）
 - タグ: `シェア畑, 貸し農園, {{区/市名}}`
 - ステータス: draft（既定）
 - 構成:
