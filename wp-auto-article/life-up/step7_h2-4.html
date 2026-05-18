@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ライフアップ現金化 — Step7 H2-4</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 20px; max-width: 1000px; }
+  h1 { font-size: 16px; color: #333; }
+  button { margin-bottom: 10px; padding: 8px 16px; cursor: pointer; font-size: 14px; }
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; padding: 10px; box-sizing: border-box; }
+  .status { display: inline-block; margin-left: 12px; color: #28a745; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>ライフアップ現金化 — Step7 H2-4 装飾済み</h1>
+<button id="copyBtn">本文をコピー</button><span class="status" id="status"></span>
+<textarea readonly id="content"><h2>申込額別シミュレーションの競合比較</h2>
+
+申込額帯×キャンペーン適用でライフアップの実質受取がどう変わるかをシミュレーションすると、競合他社との位置づけが見えてきます。
+
+自分の希望額に合うか判断しましょう。
+
+<h3>92%基準×100万円までの受取額試算</h3>
+
+ライフアップの92%下限を基準にすると、申込額別の受取は5万円で4.6万円、30万円で27.6万円、100万円で92万円です。
+
+申込額に関わらず92%が下限保証されています。
+
+シンプルに<span class="st-mymarker-s"><strong>「申込額×0.92」で実質受取を計算できる仕組み</strong></span>です。
+
+具体的な受取額は以下の階段で試算できます(要確認)。
+
+<table>
+<thead>
+<tr><th>申込額</th><th>92%基準の受取額</th></tr>
+</thead>
+<tbody>
+<tr><td>5万円</td><td>46,000円</td></tr>
+<tr><td>10万円</td><td>92,000円</td></tr>
+<tr><td>30万円</td><td>276,000円</td></tr>
+<tr><td>50万円</td><td>460,000円</td></tr>
+<tr><td>100万円</td><td>920,000円</td></tr>
+</tbody>
+</table>
+
+業界平均80〜90%の業者と比べると、<strong>5万円以下の少額利用でも92%下限が保証される</strong>点が強みです。
+
+<h3>99.7%キャンペーン日の追加上乗せ</h3>
+
+99.7%キャンペーンが適用されると、<strong>100万円申込で受取が99.7万円</strong>まで上昇します。
+
+通常の92%(92万円)に対して7.7万円の上乗せがあります。
+
+申込額が大きいほどキャンペーンの恩恵が増える構造です。
+
+30万円申込で通常27.6万円、99.7%適用で29.91万円という2.31万円差です。
+
+さらに30,000円プレゼントを併用すれば<strong>最大32.91万円相当</strong>(要確認)。
+
+3日先着の枠制限があるため、月内のいつ申込むかで実質受取が変動します。
+
+<h3>競合他社(現金化本舗等)との比較</h3>
+
+競合他社の換金率と比べると、ライフアップの92%下限・99.7%上限は中庸〜上位水準です。
+
+業界トップ層が個人プランで92〜98.9%を提示しています。
+
+ライフアップは<strong>下限保証の安心感とキャンペーン上限の両方を持つ位置づけ</strong>です。
+
+過去の業界比較ではライフアップの「92%下限保証」が独自の強みとして際立つ計算(数値は要確認)。
+
+<strong>複数業者の見積もりを取って、申込額別に最も実質受取が高い業者を選びましょう</strong>。
+
+シミュレーションと競合比較を踏まえたところで、自分にライフアップが合うかを判断していきます。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  const ta = document.getElementById('content');
+  navigator.clipboard.writeText(ta.value).then(() => {
+    const s = document.getElementById('status');
+    s.textContent = 'コピーしました';
+    setTimeout(() => { s.textContent = ''; }, 2000);
+  });
+});
+</script>
+</body>
+</html>
