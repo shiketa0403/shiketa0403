@@ -133,11 +133,20 @@ def generate_local_gov_info(city_name: str) -> Optional[str]:
         messages=[{"role": "user", "content": prompt}],
     )
 
-    # tool_use のサイクル中、AI は検索の合間に「次にこう調べる」のような
-    # 思考テキストを複数ブロック吐く。最終回答は通常 **最後の text ブロック**
-    # なので、それのみを採用する（中間の思考は捨てる）。
-    text_blocks = [b for b in resp.content if getattr(b, "type", None) == "text"]
-    text = text_blocks[-1].text.strip() if text_blocks else ""
+    # 最終回答は「最後の tool_use 以降の全 text ブロック」を連結したもの。
+    # tool_use のサイクル中、AI は検索の合間に思考用の text ブロックを吐く。
+    # それらは捨てて、最後の検索（=最後の tool_use）後に書かれた本回答だけを採用する。
+    # tool_use が無い場合（検索なしで即答）は、全 text ブロックを連結する。
+    blocks = list(resp.content)
+    last_tool_idx = -1
+    for i, b in enumerate(blocks):
+        if getattr(b, "type", None) == "tool_use":
+            last_tool_idx = i
+    final_blocks = [
+        b for b in blocks[last_tool_idx + 1 :]
+        if getattr(b, "type", None) == "text"
+    ]
+    text = "\n\n".join(b.text.strip() for b in final_blocks if b.text.strip()).strip()
     if not text:
         return None
     # "NONE" がテキストのどこかに（独立した語として）含まれていたら情報なし扱い
@@ -145,6 +154,15 @@ def generate_local_gov_info(city_name: str) -> Optional[str]:
         return None
     # 念のためメタ前置きの後処理（最終ブロック内にも前置きが混入する場合への保険）
     text = _strip_meta_preface(text)
+    # 後処理後に短すぎる場合（尻切れフラグメント等）は None 扱いにして
+    # 「自治体などのレンタル情報なし」のセクションに倒す
+    plain_len = len(re.sub(r"<[^>]+>", "", text).strip())
+    if plain_len < 60:
+        print(
+            f"[ai] 自治体情報が短すぎます（{plain_len}文字）→ None 扱い: {text!r}",
+            file=sys.stderr,
+        )
+        return None
     return text
 
 
