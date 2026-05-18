@@ -167,6 +167,38 @@ def generate_asp_descriptions(case_name, asp_status, case_info):
     return descriptions
 
 
+def _filter_program_lines(program_content):
+    """プログラム内容から説明文に使える行だけ抽出"""
+    lines = program_content.replace("\r\n", "\n").split("\n")
+    useful = []
+    for l in lines:
+        l = l.strip()
+        if not l or len(l) <= 10:
+            continue
+        if l.startswith(("◆", "◇", "※", "・・・", "　・・・", "・")):
+            continue
+        if '【' in l and '】' in l:
+            continue
+        if re.match(r'^「.*」\s*$', l):
+            continue
+        if "http" in l:
+            continue
+        if re.search(r'[\d,]+円', l) and len(l) < 40:
+            continue
+        if any(w in l for w in [
+            "キャッシュバック", "還元中", "キャンペーン", "限定", "実質無料",
+            "ターゲット", "セールスポイント", "スタートサポート", "上乗せ",
+            "割引", "無料！", "当サイト", "工事費", "請求", "相殺",
+            "希望している方", "お使いで", "弊社", "ご覧いただき",
+            "コンバージョン", "ユーザーメリット", "CB対象", "圧倒的",
+            "メディア", "プロモーション", "成果報酬", "宜しくお願い",
+            "掲載して", "ご覧いただき",
+        ]):
+            continue
+        useful.append(l)
+    return useful
+
+
 def generate_case_description(case_name, case_info, asp_names):
     """案件説明文（10文前後）を生成"""
     company = case_info.get("company", "")
@@ -174,36 +206,26 @@ def generate_case_description(case_name, case_info, asp_names):
     condition = case_info.get("condition", "")
     approval = case_info.get("approval", "")
     program_content = case_info.get("program_content", "")
-    site_url = case_info.get("site_url", "")
 
     asp_text = "・".join(asp_names)
 
-    desc = (
-        f"{company}が運営する「{case_name}」の公式サービスです。\n\n"
-        f'報酬単価は<span class="st-mymarker-s">{reward}</span>です。\n\n'
-        f"成果条件は「{condition}」で、承認基準は「{approval}」です。\n\n"
-        f'{case_name}は<span class="hutoaka">{asp_text}</span>で提携できます。\n\n'
-    )
+    desc = f"{company}が運営する「{case_name}」の公式サービスです。\n\n"
+    desc += f'報酬単価は<span class="st-mymarker-s">{reward}</span>です。\n\n'
+
+    if condition and condition != "その他":
+        desc += f"成果条件は「{condition}」です。\n\n"
+    if approval:
+        desc += f"承認基準は「{approval}」です。\n\n"
+
+    desc += f'{case_name}は<span class="hutoaka">{asp_text}</span>で提携できます。\n\n'
 
     if program_content:
-        lines = program_content.replace("\r\n", "\n").split("\n")
-        useful_lines = []
-        for l in lines:
-            l = l.strip()
-            if not l or len(l) <= 5:
-                continue
-            if l.startswith("◆") or l.startswith("※"):
-                continue
-            if re.match(r'^【.*】\s*$', l):
-                continue
-            if "http" in l:
-                continue
-            useful_lines.append(l)
+        useful_lines = _filter_program_lines(program_content)
         for line in useful_lines[:3]:
             desc += f"{line}\n\n"
 
     desc += f"アフィリエイト初心者でも成果を出しやすい案件です。\n\n"
-    desc += f"{case_name}は今すぐ提携申請が可能です。"
+    desc += f"{case_name}のアフィリエイトに興味がある方は、まずASPに無料登録して提携申請しましょう。"
 
     return desc
 
