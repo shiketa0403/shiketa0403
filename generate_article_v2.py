@@ -180,14 +180,25 @@ def generate_case_description(case_name, case_info, asp_names):
 
     desc = (
         f"{company}が運営する「{case_name}」の公式サービスです。\n\n"
-        f"報酬単価は{reward}。\n\n"
+        f'報酬単価は<span class="st-mymarker-s">{reward}</span>です。\n\n'
         f"成果条件は「{condition}」で、承認基準は「{approval}」です。\n\n"
-        f"{case_name}は{asp_text}で提携できます。\n\n"
+        f'{case_name}は<span class="hutoaka">{asp_text}</span>で提携できます。\n\n'
     )
 
     if program_content:
         lines = program_content.replace("\r\n", "\n").split("\n")
-        useful_lines = [l.strip() for l in lines if l.strip() and not l.startswith("◆") and len(l.strip()) > 5]
+        useful_lines = []
+        for l in lines:
+            l = l.strip()
+            if not l or len(l) <= 5:
+                continue
+            if l.startswith("◆") or l.startswith("※"):
+                continue
+            if re.match(r'^【.*】\s*$', l):
+                continue
+            if "http" in l:
+                continue
+            useful_lines.append(l)
         for line in useful_lines[:3]:
             desc += f"{line}\n\n"
 
@@ -244,7 +255,12 @@ def parse_case_info_from_csv_row(row):
 
     fixed_reward = row.get("定額報酬", "").strip()
     rate_reward = row.get("定率報酬", "").strip()
-    reward = fixed_reward if fixed_reward else rate_reward if rate_reward else "要確認"
+    if fixed_reward:
+        reward = f"{fixed_reward}円"
+    elif rate_reward:
+        reward = f"{rate_reward}%"
+    else:
+        reward = "要確認"
 
     condition = row.get("注文発生対象・条件", "").strip()
     approval = row.get("成果の承認基準", "").strip()
