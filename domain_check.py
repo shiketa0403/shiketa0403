@@ -130,19 +130,26 @@ async def async_get_latest_snapshot(session, domain):
 
 
 async def async_get_title(session, domain, timestamp):
-    """スナップショットHTMLからタイトルを取得"""
-    url = f"{WAYBACK_URL}/{timestamp}id_/http://{domain}"
-    try:
-        async with session.get(url,
-                               timeout=aiohttp.ClientTimeout(total=TIMEOUT_SEC)) as resp:
-            if resp.status != 200:
-                return None, ""
-            chunk = await resp.content.read(50000)
-            html = decode_html(chunk)
-            title = extract_title(html)
-            return title, html
-    except Exception:
-        pass
+    """スナップショットHTMLからタイトルを取得（複数URLパターンで試行）"""
+    urls = [
+        f"{WAYBACK_URL}/{timestamp}id_/http://{domain}",
+        f"{WAYBACK_URL}/{timestamp}id_/https://{domain}",
+        f"{WAYBACK_URL}/{timestamp}/http://{domain}",
+        f"{WAYBACK_URL}/{timestamp}/https://{domain}",
+    ]
+    for url in urls:
+        try:
+            async with session.get(url,
+                                   timeout=aiohttp.ClientTimeout(total=TIMEOUT_SEC)) as resp:
+                if resp.status != 200:
+                    continue
+                chunk = await resp.content.read(50000)
+                html = decode_html(chunk)
+                title = extract_title(html)
+                if title:
+                    return title, html
+        except Exception:
+            continue
     return None, ""
 
 
