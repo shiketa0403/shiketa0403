@@ -78,6 +78,9 @@ AREA_MAP = {
     # ==== 埼玉県 ====
     # さいたま市は政令指定都市（10区）。市全体で1ページにまとまっている。
     "さいたま市": ("saitama", "saitama", "saitama", None),
+    # その他の埼玉市部（saitama_else ページから住所で分離）
+    "川口市":     ("saitama", "saitama_else", "kawaguchi", "川口市"),
+    "朝霞市":     ("saitama", "saitama_else", "asaka",     "朝霞市"),
 }
 
 # 旧APIとの後方互換（外部から参照されているため残す）
