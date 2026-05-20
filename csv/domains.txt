@@ -1,15 +1,20 @@
 # 調査対象ドメイン（1行1ドメイン）
 # #で始まる行はコメント（無視されます）
-kuma-ontai.jp
-wlf.jp
-23eme.jp
-benchwarmer.jp
-komoro-ecovillage.jp
-smartballoon.jp
-erogedl.jp
-vase.jp
-fkair.jp
-cipresso.jp
-microsoft-365.jp
-creeps.jp
-kazu-naika.jp
+amisoft.jp
+ja3quu.jp
+youneed.jp
+thegifter.jp
+jbd-tohoku.jp
+brilla.jp
+expo2025-kawase-attendant.jp
+rigbat.jp
+byn.jp
+dsk-vcs.jp
+adachi-jinzai.jp
+life-nc.jp
+e-machisano.jp
+tmnyayoi.jp
+supersize.jp
+eyenee.jp
+shoenekaden.jp
+chiba-soroban.jp
