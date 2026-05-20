@@ -70,6 +70,10 @@ AREA_MAP = {
     "横浜市":   ("kanagawa", "yokohama", "yokohama", None),
     "川崎市":   ("kanagawa", "kawasaki", "kawasaki", None),
     "藤沢市":   ("kanagawa", "fujisawa", "fujisawa", None),
+
+    # ==== 千葉県 ====
+    # 千葉市は政令指定都市（6区）。市全体で1ページにまとまっている想定。
+    "千葉市":   ("chiba", "chiba", "chiba", None),
 }
 
 # 旧APIとの後方互換（外部から参照されているため残す）
@@ -83,6 +87,7 @@ TOKYO_AREA_MAP = {
 PREFECTURE_CATEGORY = {
     "tokyo":    "東京",
     "kanagawa": "神奈川",
+    "chiba":    "千葉",
 }
 
 # 状態タグ（アイコンファイル名 → 表示名）

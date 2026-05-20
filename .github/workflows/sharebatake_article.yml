@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       city:
-        description: '区/市名（例: 大田区、横浜市、川崎市、藤沢市）'
+        description: '区/市名（例: 大田区、横浜市、川崎市、藤沢市、千葉市）'
         required: true
         default: '大田区'
         type: string
