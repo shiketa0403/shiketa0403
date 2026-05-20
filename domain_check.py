@@ -19,8 +19,9 @@ except ImportError:
 
 CDX_API = "https://web.archive.org/cdx/search/cdx"
 WAYBACK_URL = "https://web.archive.org/web"
-CONCURRENCY = 5
+CONCURRENCY = 3
 TIMEOUT_SEC = 20
+REQUEST_DELAY = 0.5
 
 PARKING_PATTERNS = [
     "parking", "parked", "for sale", "buy this domain",
@@ -156,6 +157,7 @@ async def async_get_title(session, domain, timestamp):
 async def async_check_domain(session, sem, domain, idx, total):
     """1ドメインの処理"""
     async with sem:
+        await asyncio.sleep(REQUEST_DELAY)
         print(f"[{idx}/{total}] {domain}")
         timestamp = await async_get_latest_snapshot(session, domain)
         if not timestamp:
