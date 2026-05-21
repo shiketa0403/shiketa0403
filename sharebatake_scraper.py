@@ -98,6 +98,10 @@ AREA_MAP = {
     # ==== 京都府 ====
     # /farms/kyoto 単一ページ構造（sb_slug は空文字）。京都市は区が3つしかないため市全体で1記事。
     "京都市":   ("kyoto", "", "kyoto", "京都市"),
+
+    # ==== 福岡県 ====
+    # /farms/fukuoka 単一ページ構造（sb_slug は空文字）。
+    "福岡市":   ("fukuoka", "", "fukuoka", "福岡市"),
 }
 
 # 旧APIとの後方互換（外部から参照されているため残す）
@@ -116,6 +120,7 @@ PREFECTURE_CATEGORY = {
     "osaka":    "大阪",
     "hyogo":    "兵庫",
     "kyoto":    "京都",
+    "fukuoka":  "福岡",
 }
 
 # 状態タグ（アイコンファイル名 → 表示名）
