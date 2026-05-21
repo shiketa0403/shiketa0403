@@ -81,6 +81,11 @@ AREA_MAP = {
     # その他の埼玉市部（saitama_else ページから住所で分離）
     "川口市":     ("saitama", "saitama_else", "kawaguchi", "川口市"),
     "朝霞市":     ("saitama", "saitama_else", "asaka",     "朝霞市"),
+
+    # ==== 大阪府 ====
+    # 大阪は /farms/osaka 単一ページに全農園が並ぶ構造（sb_slug は空文字）。
+    # 市単位で記事化する場合は住所フィルタで分離する。
+    "吹田市":   ("osaka", "", "suita", "吹田市"),
 }
 
 # 旧APIとの後方互換（外部から参照されているため残す）
@@ -96,6 +101,7 @@ PREFECTURE_CATEGORY = {
     "kanagawa": "神奈川",
     "chiba":    "千葉",
     "saitama":  "埼玉",
+    "osaka":    "大阪",
 }
 
 # 状態タグ（アイコンファイル名 → 表示名）
@@ -141,7 +147,11 @@ def lookup_area(city_name: str):
 
 
 def build_area_url(pref_slug: str, sb_slug: str) -> str:
-    return urljoin(BASE_URL, f"/farms/{pref_slug}/{sb_slug}")
+    # sb_slug が空文字の場合は都道府県トップページ（例: /farms/osaka）。
+    # 大阪のように都道府県内の市区分割が無いケースで使う。
+    if sb_slug:
+        return urljoin(BASE_URL, f"/farms/{pref_slug}/{sb_slug}")
+    return urljoin(BASE_URL, f"/farms/{pref_slug}")
 
 
 def _fetch(page, url: str, wait_ms: int = 2500) -> str:
