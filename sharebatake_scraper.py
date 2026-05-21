@@ -94,6 +94,10 @@ AREA_MAP = {
     # 大阪と同じく /farms/hyogo 単一ページ構造（sb_slug は空文字）。
     "尼崎市":   ("hyogo", "", "amagasaki", "尼崎市"),
     "西宮市":   ("hyogo", "", "nishinomiya", "西宮市"),
+
+    # ==== 京都府 ====
+    # /farms/kyoto 単一ページ構造（sb_slug は空文字）。京都市は区が3つしかないため市全体で1記事。
+    "京都市":   ("kyoto", "", "kyoto", "京都市"),
 }
 
 # 旧APIとの後方互換（外部から参照されているため残す）
@@ -111,6 +115,7 @@ PREFECTURE_CATEGORY = {
     "saitama":  "埼玉",
     "osaka":    "大阪",
     "hyogo":    "兵庫",
+    "kyoto":    "京都",
 }
 
 # 状態タグ（アイコンファイル名 → 表示名）
