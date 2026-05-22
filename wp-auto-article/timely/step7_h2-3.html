@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>タイムリー現金化 — Step7 H2-3</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 20px; max-width: 1000px; }
+  h1 { font-size: 16px; color: #333; }
+  button { margin-bottom: 10px; padding: 8px 16px; cursor: pointer; font-size: 14px; }
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; padding: 10px; box-sizing: border-box; }
+  .status { display: inline-block; margin-left: 12px; color: #28a745; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>タイムリー現金化 — Step7 H2-3 装飾済み</h1>
+<button id="copyBtn">本文をコピー</button><span class="status" id="status"></span>
+<textarea readonly id="content"><h2>タイムリー現金化の悪い口コミ・3つの注意点</h2>
+
+ポジティブな評価が中心のタイムリー現金化ですが、5chを中心にネガティブな報告も一定数あります。
+
+申込前に把握しておくべき注意点は3つです。
+
+<h3>5ch「振込10日遅延」報告の検証</h3>
+
+5chには<span class="hutoaka">「初回振込まで10日かかった」という個別事例</span>が報告されています。
+
+最短5分振込を公式に謳う一方で、混雑時間帯や初回利用時は処理が長引く可能性があります。
+
+報告の発生率は月間500件中の少数と推測されます。
+
+ただし具体的な遅延率は公式・5chともに明示なし(要確認)。
+
+急ぎで現金が必要な場合は、<strong>平日昼間の空いている時間帯</strong>に申込みましょう。
+
+<h3>「実取り60%」事例と公式値の乖離</h3>
+
+5chには「換金率60%だった」という公式表記93〜98.6%とは大きく異なる事例報告があります。
+
+公式の換金率が「キャンペーン適用後の最終値」を含む可能性があります。
+
+決済手数料や振込手数料を差し引くと、表記より低い受取額になるケースが推測されるためです。
+
+5chの「60%」事例と公式の「93%」表記の<span class="hutoaka">差は約33ポイントと大きく</span>、適用条件の不一致が原因と考えられます(要確認)。
+
+申込前に<strong>手数料の内訳と最終受取額を書面で確認</strong>しましょう。
+
+<h3>運営会社情報が公式で見えにくい</h3>
+
+タイムリーの<span class="hutoaka">運営会社・所在地・代表者・特商法表記は公式LP画像内で確認できません</span>。
+
+クレジットカード現金化業界では運営者情報を伏せる業者も多い構造です。
+
+ただし代表者・所在地を公開する業者も存在しています。
+
+現時点で確認できる運営情報は電話番号(0120-984-216)と営業時間のみです。
+
+法人格(株式会社等)の明示はなし(要確認)。
+
+信頼性を重視するなら、<strong>問い合わせフォームから運営会社情報を質問</strong>しましょう。
+
+透明性の高い他社も検討しましょう。
+
+[st-mybox title="注意ポイント" webicon="st-svg-exclamation-circle" color="#ef5350" bordercolor="#ef9a9a" bgcolor="#ffebee" borderwidth="2" borderradius="5" titleweight="bold" fontsize="" myclass="st-mybox-class" margin="25px 0 25px 0"]
+クレジットカード現金化はカード会社の会員規約上の禁止行為です。利用は自己責任である前提を踏まえ、規約違反のリスクを認識した上で申込みましょう。
+[/st-mybox]
+
+ネガティブな評判を踏まえたところで、申込額別の換金率を他社と比較していきます。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  const ta = document.getElementById('content');
+  navigator.clipboard.writeText(ta.value).then(() => {
+    const s = document.getElementById('status');
+    s.textContent = 'コピーしました';
+    setTimeout(() => { s.textContent = ''; }, 2000);
+  });
+});
+</script>
+</body>
+</html>
