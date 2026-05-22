@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>タイムリー現金化 — Step7 H2-6</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 20px; max-width: 1000px; }
+  h1 { font-size: 16px; color: #333; }
+  button { margin-bottom: 10px; padding: 8px 16px; cursor: pointer; font-size: 14px; }
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; padding: 10px; box-sizing: border-box; }
+  .status { display: inline-block; margin-left: 12px; color: #28a745; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>タイムリー現金化 — Step7 H2-6 装飾済み</h1>
+<button id="copyBtn">本文をコピー</button><span class="status" id="status"></span>
+<textarea readonly id="content"><h2>タイムリー現金化に関するよくある質問</h2>
+
+申込前に多くの利用者から寄せられる疑問は3つに集中しています。
+
+ひとつずつ回答していきます。
+
+<h3>在籍確認や本人確認電話はある?</h3>
+
+<strong>在籍確認や本人確認の電話は基本的になく、書類アップロードで完結</strong>します。
+
+タイムリーは買取方式(指定商品をカード決済し業者が買取代金として現金を振込む方式)を採用しています。
+
+そのため貸金業の在籍確認プロセスは不要です。
+
+本人確認も身分証画像のアップロードのみで成立します。
+
+申込フォーム送信後、運転免許証・健康保険証・マイナンバーカード・パスポートのいずれか1点を画像でアップロード(要確認)。
+
+電話確認は原則行われず、<strong>職場・家族にバレるリスクは最小限</strong>です。
+
+<h3>24時間振込対応と営業時間の関係</h3>
+
+「24時間振込対応」とは<strong>申込フォーム受付が24時間という意味</strong>です。
+
+実際の振込処理は営業時間内に行われます。
+
+タイムリーの営業時間は平日10時〜23時・土日祝3時〜23時で、この時間帯にスタッフが審査・振込処理を実施するためです。
+
+平日深夜0時〜10時、土日祝深夜0時〜3時の<span class="hutoaka">申込フォーム送信は受付のみ</span>となります。
+
+振込処理は翌営業時間に開始されます(要確認)。
+
+深夜の急な資金需要には、24時間スタッフ対応の業者の方が向いている場合もあります。
+
+<h3>カード会社にバレないコツ</h3>
+
+現金化を集中せず、<strong>通常のショッピング利用と組み合わせる</strong>のがバレない基本です。
+
+カード会社は<span class="hutoaka">同一加盟店での短期高額利用やショッピング枠の急激な消化を検知</span>できます。
+
+そのため不自然な利用パターンが自動で見分けられるためです。
+
+意識したいのは以下の3点です。
+
+<ul>
+<li>月の利用枠の半分以下に抑える</li>
+<li>買い物利用と混在させる</li>
+<li>同じ業者を月内に何度も使わない</li>
+</ul>
+
+ただしクレジットカード現金化は会員規約上の禁止行為であり、利用は自己責任である前提を踏まえましょう。
+
+よくある疑問が解消できたところで、ここまでの内容を踏まえた最終判断に進みます。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  const ta = document.getElementById('content');
+  navigator.clipboard.writeText(ta.value).then(() => {
+    const s = document.getElementById('status');
+    s.textContent = 'コピーしました';
+    setTimeout(() => { s.textContent = ''; }, 2000);
+  });
+});
+</script>
+</body>
+</html>
