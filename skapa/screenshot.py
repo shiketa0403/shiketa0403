@@ -1,10 +1,20 @@
-"""スカパー公式サイト & CSチャンネルページのスクリーンショット取得。
+"""スカパー公式サイト & 各CSサービスのチャンネルページのスクリーンショット取得。
 
 Playwright を使うため、別環境（GitHub Actions）から実行する想定。
 ローカル（このClaude Code環境）からは実行不可（プロキシ・ブラウザ無し）。
 
+新テンプレ対応：
+- channel_notes/{slug}.md の「視聴可能サービスマトリクス」から
+  各サービス（スカパー／ひかりTV／auひかりTV／J:COM）の個別ページURLを抽出
+- マトリクスで ✓ のサービスのみスクショ取得
+- ケーブルテレビ（J:COM以外）はスクショ対象外
+
+旧テンプレ対応（互換性のため残す）：
+- 07_link_candidates.md からスカパー公式チャンネルURLを抽出
+- skapa_top.png（スカパー公式トップ）、channel_page.png（チャンネル個別）
+
 使い方:
-    python -m skapa.screenshot エムオン
+    python -m skapa.screenshot AT-X
 """
 
 from __future__ import annotations
@@ -28,8 +38,17 @@ CHANNEL_URL_RE = re.compile(
 )
 
 
+# サービス名 → スクショファイル名・IMGラベル のマッピング
+SERVICE_TO_FILENAME = {
+    "スカパー": "skapa.png",
+    "ひかりTV": "hikari_tv.png",
+    "auひかりTV": "au_hikari_tv.png",
+    "J:COM": "jcom.png",
+}
+
+
 def extract_channel_url(slug: str) -> str | None:
-    """Step 7の出力から該当チャンネルのスカパー公式URLを抽出。
+    """Step 7の出力から該当チャンネルのスカパー公式URLを抽出（旧テンプレ用・互換）。
     なければ None。
     """
     candidates_path = config.channel_draft_dir(slug) / "07_link_candidates.md"
@@ -40,6 +59,83 @@ def extract_channel_url(slug: str) -> str | None:
     return m.group(0) if m else None
 
 
+def parse_service_matrix(slug: str) -> dict[str, str]:
+    """channel_notes/{slug}.md の視聴可能サービスマトリクスから
+    サービス名 → 個別ページURL の辞書を返す。
+
+    マトリクスで ✓ かつ URL が空欄でないサービスのみ含まれる。
+    対応サービス：スカパー / ひかりTV / auひかりTV / J:COM
+    """
+    notes_path = config.KNOWLEDGE_DIR / "channel_notes" / f"{slug}.md"
+    if not notes_path.exists():
+        return {}
+
+    text = notes_path.read_text(encoding="utf-8")
+
+    # マトリクスセクションを抽出
+    matrix_match = re.search(
+        r"## 視聴可能サービスマトリクス.*?\n((?:\|.+\n)+)",
+        text,
+        re.DOTALL,
+    )
+    if not matrix_match:
+        return {}
+
+    matrix_block = matrix_match.group(1)
+    result: dict[str, str] = {}
+
+    # サービス名の判定パターン
+    service_patterns = {
+        "スカパー": re.compile(r"スカパー"),
+        "ひかりTV": re.compile(r"ひかりTV", re.IGNORECASE),
+        "auひかりTV": re.compile(r"au\s*ひかり", re.IGNORECASE),
+        "J:COM": re.compile(r"J\s*[:：]\s*COM", re.IGNORECASE),
+    }
+    # URLを拾うパターン
+    url_re = re.compile(r"https?://[^\s|）)]+")
+
+    for line in matrix_block.splitlines():
+        if not line.startswith("|") or "---" in line:
+            continue
+        cells = [c.strip() for c in line.strip("|").split("|")]
+        if len(cells) < 7:
+            continue
+
+        service_cell = cells[0]
+        # ヘッダー行はスキップ
+        if service_cell in ("サービス", ""):
+            continue
+
+        # ケーブルテレビ（J:COM以外）は対象外（ユーザー指示によりスクショ取らない）
+        if "ケーブルテレビ" in service_cell:
+            continue
+
+        kahi_cell = cells[1]
+        url_cell = cells[6] if len(cells) > 6 else ""
+
+        # 可否が ✓ でなければスキップ
+        if "✓" not in kahi_cell:
+            continue
+
+        # サービス名特定
+        matched_service: str | None = None
+        for svc_name, pat in service_patterns.items():
+            if pat.search(service_cell):
+                matched_service = svc_name
+                break
+        if matched_service is None:
+            continue
+
+        # URL抽出（URL列にhttp〜が含まれる場合のみ）
+        url_match = url_re.search(url_cell)
+        if not url_match:
+            continue
+
+        result[matched_service] = url_match.group(0)
+
+    return result
+
+
 def screenshots_dir(slug: str) -> Path:
     d = config.channel_draft_dir(slug) / "screenshots"
     d.mkdir(parents=True, exist_ok=True)
@@ -47,20 +143,37 @@ def screenshots_dir(slug: str) -> Path:
 
 
 def take_screenshots(ch: Channel, *, viewport_width: int = 1280, viewport_height: int = 800) -> dict[str, Path]:
-    """2枚のスクリーンショットを取得して保存パスを返す。
+    """サービス別スクリーンショットを取得して保存パスを返す。
 
-    1. スカパー公式（共通: トップページ）
-    2. 該当チャンネルページ（あれば）/ なければスカパー申込ページ
+    新テンプレ（マトリクス対応）：
+    - channel_notes マトリクスから ✓ サービスのURL取得 → 各サービス分撮影
+    - ファイル名: skapa.png / hikari_tv.png / au_hikari_tv.png / jcom.png
+
+    旧テンプレ互換（マトリクスがない場合）：
+    - skapa_top.png（スカパー公式トップ）
+    - channel_page.png（チャンネル個別）
     """
     from playwright.sync_api import sync_playwright
 
     out_dir = screenshots_dir(ch.slug)
 
-    channel_url = extract_channel_url(ch.slug) or SKYPERFECTV_PLAN_URL
-    targets = [
-        ("skapa_top.png", SKYPERFECTV_TOP_URL, "スカパー公式"),
-        ("channel_page.png", channel_url, "チャンネルページ"),
-    ]
+    # マトリクスから取得を試みる
+    service_urls = parse_service_matrix(ch.slug)
+
+    targets: list[tuple[str, str, str]] = []
+
+    if service_urls:
+        # 新テンプレ：マトリクス対応
+        for svc_name, url in service_urls.items():
+            filename = SERVICE_TO_FILENAME[svc_name]
+            targets.append((filename, url, svc_name))
+    else:
+        # 旧テンプレ互換
+        channel_url = extract_channel_url(ch.slug) or SKYPERFECTV_PLAN_URL
+        targets = [
+            ("skapa_top.png", SKYPERFECTV_TOP_URL, "スカパー公式"),
+            ("channel_page.png", channel_url, "チャンネルページ"),
+        ]
 
     results: dict[str, Path] = {}
     with sync_playwright() as p:
@@ -106,7 +219,7 @@ def main() -> int:
 
     print(f"対象: No.{ch.no} {ch.name}（slug: {ch.slug}）")
     results = take_screenshots(ch)
-    print(f"\n取得済みスクショ: {len(results)}/2")
+    print(f"\n取得済みスクショ: {len(results)}")
     for label, path in results.items():
         print(f"  {label}: {path}")
     return 0
