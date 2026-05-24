@@ -402,6 +402,36 @@ CSチャンネル別記事の固定テンプレートでは、ピックアップ
 </table>
 ```
 
+#### サービスH3末尾のCTAリンク（必須・固定HTML）
+
+各サービスH3の本文末尾（次のH3 or H2 の前）に、以下のCTAリンクを **そのまま固定HTMLで** 挿入する。各サービスでHTMLは固定（URL・rel属性・テキスト変更不可）。
+
+**スカパー（H3「スカパー」末尾）：**
+
+```
+<a href="https://px.a8.net/svt/ejp?a8mat=3HOQGY+1IRWFM+461Y+6D4GI" target="_blank" rel="nofollow noopener"><strong>スカパーの公式サイト</strong></a>（加入月無料）
+```
+
+**ひかりTV（H3「ひかりTV」末尾）：**
+
+```
+<strong><a href="https://tr.affiliate-sp.docomo.ne.jp/cl/d0000006209/3438/1034" target="_blank" rel="noopener nofollow">ひかりTV公式サイト</a></strong>
+```
+
+**auひかりテレビ（H3「auひかりテレビ」末尾）：**
+
+```
+<strong><a href="https://www.au.com/internet/service/auhikari/tv/" target="_blank" rel="noopener">auひかりTV公式サイト</a></strong>
+```
+
+**J:COM（H3「J:COM・ケーブルテレビ」末尾）：**
+
+```
+<a href="https://px.a8.net/svt/ejp?a8mat=3NNKQJ+9DKSS2+54NI+5Z6WY" target="_blank" rel="nofollow noopener"><strong>J:COMの詳細はこちら</strong></a><img src="https://www15.a8.net/0.gif?a8mat=3T6S8N+AABURM+3SPO+1ZGVGI" alt="" width="1" height="1" border="0" />
+```
+
+**ケーブルテレビ（J:COM以外）：CTAリンク・テキストの挿入なし**
+
 #### 旧テンプレ（テレ朝・エムオン記事）用プレースホルダ（互換性のため残す）
 
 - `<!-- IMG: スカパー公式 -->` — スカパー公式トップ
