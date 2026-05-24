@@ -86,7 +86,9 @@ def replace_image_placeholders(html: str, channel_name: str, screenshots_dir: Pa
         (置換後HTML, アップロード済みmedia情報リスト)
     """
     placeholder_to_file = {
-        # 新テンプレ：サービス別個別ページのスクショ
+        # 新テンプレ：チャンネル公式TOPページ（H2「〇〇とは」直下）
+        "チャンネル公式": (screenshots_dir / "channel_official.png", f"{channel_name} 公式サイト"),
+        # 新テンプレ：サービス別個別ページのスクショ（H3 各サービス直下）
         "スカパー": (screenshots_dir / "skapa.png", f"スカパー：{channel_name}"),
         "ひかりTV": (screenshots_dir / "hikari_tv.png", f"ひかりTV：{channel_name}"),
         "auひかりTV": (screenshots_dir / "au_hikari_tv.png", f"auひかりテレビ：{channel_name}"),

@@ -46,6 +46,22 @@ SERVICE_TO_FILENAME = {
     "J:COM": "jcom.png",
 }
 
+# チャンネル公式TOPページの抽出パターン（channel_notes/{slug}.md の `## 公式サイト` セクション）
+CHANNEL_OFFICIAL_URL_RE = re.compile(
+    r"##\s*公式サイト\s*\n+(?:- )?TOP[：:]\s*(https?://\S+)",
+    re.MULTILINE,
+)
+
+
+def extract_channel_official_url(slug: str) -> str | None:
+    """channel_notes/{slug}.md の `## 公式サイト - TOP: URL` を抽出。"""
+    notes_path = config.KNOWLEDGE_DIR / "channel_notes" / f"{slug}.md"
+    if not notes_path.exists():
+        return None
+    text = notes_path.read_text(encoding="utf-8")
+    m = CHANNEL_OFFICIAL_URL_RE.search(text)
+    return m.group(1).rstrip(")）") if m else None
+
 
 def extract_channel_url(slug: str) -> str | None:
     """Step 7の出力から該当チャンネルのスカパー公式URLを抽出（旧テンプレ用・互換）。
@@ -164,6 +180,10 @@ def take_screenshots(ch: Channel, *, viewport_width: int = 1280, viewport_height
 
     if service_urls:
         # 新テンプレ：マトリクス対応
+        # チャンネル公式TOPページも撮影（H2「〇〇とは」直下に挿入）
+        official_url = extract_channel_official_url(ch.slug)
+        if official_url:
+            targets.append(("channel_official.png", official_url, "チャンネル公式"))
         for svc_name, url in service_urls.items():
             filename = SERVICE_TO_FILENAME[svc_name]
             targets.append((filename, url, svc_name))
