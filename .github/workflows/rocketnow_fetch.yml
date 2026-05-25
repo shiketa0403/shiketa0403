@@ -76,12 +76,29 @@ jobs:
       - name: WordPress投稿
         if: ${{ github.event.inputs.post_to_wp == 'true' }}
         env:
-          WP_URL: ${{ secrets.ROCKETNOW_WP_URL }}
-          WP_USERNAME: ${{ secrets.ROCKETNOW_WP_USERNAME }}
-          WP_APP_PASSWORD: ${{ secrets.ROCKETNOW_WP_APP_PASSWORD }}
+          ROCKETNOW_WP_URL: ${{ secrets.ROCKETNOW_WP_URL }}
+          ROCKETNOW_WP_USERNAME: ${{ secrets.ROCKETNOW_WP_USERNAME }}
+          ROCKETNOW_WP_APP_PASSWORD: ${{ secrets.ROCKETNOW_WP_APP_PASSWORD }}
         run: |
-          pip install python-dotenv
-          python wp_bulk_post.py --csv csv/rocketnow_post.csv
+          python3 << 'PYEOF'
+          import os
+          site_url = os.environ.get('ROCKETNOW_WP_URL', '').rstrip('/')
+          username = os.environ.get('ROCKETNOW_WP_USERNAME', '')
+          app_password = os.environ.get('ROCKETNOW_WP_APP_PASSWORD', '')
+          if not site_url or not username or not app_password:
+              print("ERROR: ROCKETNOW_WP_URL / ROCKETNOW_WP_USERNAME / ROCKETNOW_WP_APP_PASSWORD が未設定です")
+              exit(1)
+          with open('wp_config.py', 'w') as f:
+              f.write(f'''WP_CONFIG = {{
+              "site_url": "{site_url}",
+              "username": "{username}",
+              "app_password": "{app_password}",
+          }}
+          ''')
+          print(f"wp_config.py を生成しました (site: {site_url})")
+          PYEOF
+
+          python wp_bulk_post.py csv/rocketnow_post.csv --status ${{ github.event.inputs.status }}
 
       - name: CSVをアーティファクトとして保存
         uses: actions/upload-artifact@v4
