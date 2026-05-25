@@ -118,7 +118,7 @@ def build_html(store: dict, chain_name: str) -> str:
     menu_section = ""
     if menu_rows:
         menu_section = f"""
-<h2>ロケットナウで頼める{chain_name}のメニュー</h2>
+<h2>ロケットナウで頼める{title_name}のメニュー</h2>
 <table style="border-collapse:collapse;width:100%;">
 <tbody>
 <tr>
