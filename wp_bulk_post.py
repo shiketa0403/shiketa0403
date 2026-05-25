@@ -30,23 +30,25 @@ from wp_post import api_request, create_post
 
 
 def get_or_create_category(name):
-    """カテゴリ名から ID を取得（なければエラー）"""
+    """カテゴリ名から ID を取得（なければ自動作成）"""
     cats = api_request(f"categories?search={urllib.parse.quote(name)}")
     for c in cats:
         if c["name"] == name:
             return c["id"]
-    print(f"  ✗ カテゴリ '{name}' が見つかりません。WordPress側で先に作成してください。")
-    return None
+    result = api_request("categories", "POST", {"name": name})
+    print(f"  ✓ カテゴリ自動作成: [{result['id']}] {result['name']}")
+    return result["id"]
 
 
 def get_or_create_tag(name):
-    """タグ名から ID を取得（なければエラー）"""
+    """タグ名から ID を取得（なければ自動作成）"""
     tags = api_request(f"tags?search={urllib.parse.quote(name)}")
     for t in tags:
         if t["name"].lower() == name.lower():
             return t["id"]
-    print(f"  ✗ タグ '{name}' が見つかりません。WordPress側で先に作成してください。")
-    return None
+    result = api_request("tags", "POST", {"name": name})
+    print(f"  ✓ タグ自動作成: [{result['id']}] {result['name']}")
+    return result["id"]
 
 
 def bulk_post_from_csv(csv_path, default_status="draft", delay=2, dry_run=False):
