@@ -166,6 +166,8 @@ def build_html(store: dict, chain_name: str) -> str:
 初回注文時は<span class="st-mymarker-s">最大4,000円OFFクーポン</span>利用可能。
 
 詳細は以下よりアプリダウンロード
+
+[st_af id="51"]
 """
     return html.strip()
 
@@ -211,14 +213,13 @@ def main():
         title = make_title(name)
         content = build_html(store, chain)
         slug = make_slug(name, chain, store.get("place_id", ""))
-        tags = f"{chain},ロケットナウ,デリバリー,フードデリバリー"
 
         rows.append({
             "title": title,
             "content": content,
             "status": args.status,
             "category": args.category,
-            "tags": tags,
+            "tags": "",
             "slug": slug,
         })
         print(f"  生成: {title} → slug: {slug}")
