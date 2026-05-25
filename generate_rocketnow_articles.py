@@ -129,7 +129,7 @@ def build_html(store: dict, chain_name: str) -> str:
 </tbody>
 </table>"""
 
-    html = f"""<span class="hutoaka">ロケットナウ</span>で<span class="st-mymarker-s">{title_name}</span>に配達対応しています。
+    html = f"""<span class="st-mymarker-s">{title_name}</span>は<span class="hutoaka">ロケットナウ</span>で配達できます。
 アプリから注文すると、最短30分程度で届けてもらえます。
 
 <h2>{title_name}の店舗情報</h2>
