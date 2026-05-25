@@ -159,10 +159,15 @@ def main():
     parser.add_argument("--output", default="csv/rocketnow_post.csv")
     parser.add_argument("--status", default="draft", choices=["draft", "publish"])
     parser.add_argument("--category", default="ロケットナウ")
+    parser.add_argument("--limit", type=int, default=0, help="生成する記事数の上限（0=無制限）")
     args = parser.parse_args()
 
     stores = load_stores(args.input)
-    print(f"{len(stores)} 件の店舗データを読み込みました")
+    if args.limit > 0:
+        stores = stores[:args.limit]
+        print(f"{len(stores)} 件に絞って記事を生成します（--limit {args.limit}）")
+    else:
+        print(f"{len(stores)} 件の店舗データを読み込みました")
 
     rows = []
     for store in stores:

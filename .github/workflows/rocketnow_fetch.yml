@@ -23,6 +23,10 @@ on:
         options:
           - 'false'
           - 'true'
+      max_articles:
+        description: '投稿する記事数の上限（0=全件）'
+        required: true
+        default: '1'
 
 jobs:
   fetch-and-generate:
@@ -51,7 +55,8 @@ jobs:
           python generate_rocketnow_articles.py \
             --input csv/rocketnow_stores.csv \
             --output csv/rocketnow_post.csv \
-            --status ${{ github.event.inputs.status }}
+            --status ${{ github.event.inputs.status }} \
+            --limit ${{ github.event.inputs.max_articles }}
 
       - name: 生成結果を確認
         run: |
