@@ -12,25 +12,44 @@ import csv
 import os
 import re
 
+import pykakasi
+
+_kks = pykakasi.kakasi()
+
+
+def to_romaji(text: str) -> str:
+    result = _kks.convert(text)
+    parts = [item["hepburn"] for item in result if item["hepburn"].strip()]
+    slug = "-".join(parts)
+    slug = re.sub(r"-+", "-", slug).strip("-").lower()
+    return slug
+
+
 # チェーンごとのメニュー情報（手動メンテ）
 CHAIN_MENU = {
     "吉野家": {
-        "description": "牛丼チェーン。牛丼・豚丼・牛カルビ丼のほか、定食・から揚げ・カレーなどサイドメニューも充実。",
-        "popular": [
-            ("牛丼（並）", "468円"),
-            ("牛丼（大）", "583円"),
-            ("牛カルビ丼（並）", "748円"),
-        ],
         "genre": "牛丼・丼もの",
-        "app_name": "ロケットナウ",
+        "items": [
+            ("牛丼（並）", "468円"),
+            ("牛丼（中）", "528円"),
+            ("牛丼（大）", "583円"),
+            ("牛丼（特盛）", "759円"),
+            ("牛丼（超特盛）", "869円"),
+            ("牛丼（メガ）", "979円"),
+            ("牛カルビ丼（並）", "748円"),
+            ("牛カルビ丼（大）", "858円"),
+            ("豚丼（並）", "436円"),
+            ("豚丼（大）", "551円"),
+            ("牛皿定食（並）", "638円"),
+            ("から揚げ定食", "748円"),
+            ("牛鮭定食", "748円"),
+        ],
     },
 }
 
 DEFAULT_MENU = {
-    "description": "人気チェーン店。",
-    "popular": [],
     "genre": "飲食",
-    "app_name": "ロケットナウ",
+    "items": [],
 }
 
 
@@ -39,14 +58,7 @@ def make_title(store_name: str) -> str:
 
 
 def make_slug(store_name: str, fallback_id: str = "") -> str:
-    # 日本語スラッグは store_name をそのまま使用（WordPressがURLエンコード処理する）
-    # 例: "吉野家 水道橋三崎町店" -> "yoshinoya-suidobashi-misakicho"
-    slug = store_name.strip()
-    # スペース/中黒/記号をハイフンに
-    slug = re.sub(r"[\s　・]+", "-", slug)
-    # ハイフン以外の記号を削除
-    slug = re.sub(r"[^\w\-ぁ-んァ-ヶー一-龯]", "", slug)
-    slug = slug.strip("-")
+    slug = to_romaji(store_name)
     if not slug:
         slug = f"store-{fallback_id[:8]}" if fallback_id else "store"
     return slug
@@ -64,7 +76,6 @@ def make_maps_embed(lat, lng) -> str:
 def make_hours_display(hours: str) -> str:
     if not hours:
         return "要確認"
-    # "月曜日: 24時間営業 / 火曜日: ..." を改行区切りで表示
     lines = [h.strip() for h in hours.split("/")]
     return "<br>".join(lines)
 
@@ -75,9 +86,9 @@ def build_html(store: dict, chain_name: str) -> str:
     hours_html = make_hours_display(store.get("hours", ""))
     maps_embed = make_maps_embed(store.get("lat"), store.get("lng"))
 
-    # 人気メニューHTML
+    # メニューHTML
     menu_rows = ""
-    for item_name, price in menu_info["popular"]:
+    for item_name, price in menu_info.get("items", []):
         menu_rows += f"""
 <tr>
 <td style="width:50%;text-align:center;vertical-align:middle;">{item_name}</td>
@@ -87,7 +98,7 @@ def build_html(store: dict, chain_name: str) -> str:
     menu_section = ""
     if menu_rows:
         menu_section = f"""
-<h2>ロケットナウで頼める{chain_name}の人気メニュー</h2>
+<h2>ロケットナウで頼める{chain_name}のメニュー</h2>
 <table style="border-collapse:collapse;width:100%;">
 <tbody>
 <tr>
@@ -130,10 +141,11 @@ def build_html(store: dict, chain_name: str) -> str:
 {maps_embed}
 {menu_section}
 
-<h2>ロケットナウで{title_name}を注文する方法</h2>
 ロケットナウのアプリをダウンロードして、配達先住所を入力すると注文できます。
 
-初回注文時はクーポンが使えることがあるので、アプリ内のクーポン欄を確認してみてください。
+初回注文時は<span class="st-mymarker-s">最大4,000円OFFクーポン</span>利用可能。
+
+詳細は以下よりアプリダウンロード
 """
     return html.strip()
 
@@ -189,7 +201,7 @@ def main():
             "tags": tags,
             "slug": slug,
         })
-        print(f"  生成: {title}")
+        print(f"  生成: {title} → slug: {slug}")
 
     save_post_csv(rows, args.output)
 
