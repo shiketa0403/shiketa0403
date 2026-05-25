@@ -196,7 +196,7 @@ def main():
     parser.add_argument("--input", default="csv/rocketnow_stores.csv")
     parser.add_argument("--output", default="csv/rocketnow_post.csv")
     parser.add_argument("--status", default="draft", choices=["draft", "publish"])
-    parser.add_argument("--category", default="ロケットナウ")
+    parser.add_argument("--category", default="吉野家")
     parser.add_argument("--limit", type=int, default=0, help="生成する記事数の上限（0=無制限）")
     args = parser.parse_args()
 
