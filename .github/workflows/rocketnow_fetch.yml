@@ -1,0 +1,88 @@
+name: Rocketnow - 店舗データ取得 & 記事生成
+
+on:
+  workflow_dispatch:
+    inputs:
+      chain:
+        description: 'チェーン名（例: 吉野家）'
+        required: true
+        default: '吉野家'
+      status:
+        description: '投稿ステータス'
+        required: true
+        default: 'draft'
+        type: choice
+        options:
+          - draft
+          - publish
+      post_to_wp:
+        description: 'WordPressに投稿する（falseなら記事生成のみ）'
+        required: true
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+jobs:
+  fetch-and-generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: 店舗データ取得
+        env:
+          GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
+        run: |
+          python fetch_rocketnow_stores.py \
+            --chain "${{ github.event.inputs.chain }}" \
+            --output csv/rocketnow_stores.csv
+
+      - name: 記事HTML生成
+        run: |
+          python generate_rocketnow_articles.py \
+            --input csv/rocketnow_stores.csv \
+            --output csv/rocketnow_post.csv \
+            --status ${{ github.event.inputs.status }}
+
+      - name: 生成結果を確認
+        run: |
+          echo "=== 店舗数 ==="
+          wc -l csv/rocketnow_stores.csv
+          echo "=== 記事数 ==="
+          wc -l csv/rocketnow_post.csv
+          echo "=== 先頭3件のタイトル ==="
+          python -c "
+          import csv
+          with open('csv/rocketnow_post.csv') as f:
+              for i, row in enumerate(csv.DictReader(f)):
+                  if i >= 3: break
+                  print(row['title'])
+          "
+
+      - name: WordPress投稿
+        if: ${{ github.event.inputs.post_to_wp == 'true' }}
+        env:
+          WP_URL: ${{ secrets.ROCKETNOW_WP_URL }}
+          WP_USERNAME: ${{ secrets.ROCKETNOW_WP_USERNAME }}
+          WP_APP_PASSWORD: ${{ secrets.ROCKETNOW_WP_APP_PASSWORD }}
+        run: |
+          pip install python-dotenv
+          python wp_bulk_post.py --csv csv/rocketnow_post.csv
+
+      - name: CSVをアーティファクトとして保存
+        uses: actions/upload-artifact@v4
+        with:
+          name: rocketnow-${{ github.event.inputs.chain }}-${{ github.run_number }}
+          path: |
+            csv/rocketnow_stores.csv
+            csv/rocketnow_post.csv
+          retention-days: 30
