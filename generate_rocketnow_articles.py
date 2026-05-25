@@ -38,13 +38,18 @@ def make_title(store_name: str) -> str:
     return f"ロケットナウで{store_name}は頼める？配達料・メニュー・営業時間まとめ"
 
 
-def make_slug(store_name: str) -> str:
-    # 全角→半角、スペース→ハイフン、英小文字化
-    slug = store_name.lower()
-    slug = re.sub(r"[　 ]+", "-", slug)
-    slug = re.sub(r"[^\w\-]", "", slug, flags=re.ASCII)
+def make_slug(store_name: str, fallback_id: str = "") -> str:
+    # 日本語スラッグは store_name をそのまま使用（WordPressがURLエンコード処理する）
+    # 例: "吉野家 水道橋三崎町店" -> "yoshinoya-suidobashi-misakicho"
+    slug = store_name.strip()
+    # スペース/中黒/記号をハイフンに
+    slug = re.sub(r"[\s　・]+", "-", slug)
+    # ハイフン以外の記号を削除
+    slug = re.sub(r"[^\w\-ぁ-んァ-ヶー一-龯]", "", slug)
     slug = slug.strip("-")
-    return slug if slug else "store"
+    if not slug:
+        slug = f"store-{fallback_id[:8]}" if fallback_id else "store"
+    return slug
 
 
 def make_maps_embed(lat, lng) -> str:
@@ -168,7 +173,7 @@ def main():
 
         title = make_title(name)
         content = build_html(store, chain)
-        slug = make_slug(name)
+        slug = make_slug(name, store.get("place_id", ""))
         tags = f"{chain},ロケットナウ,デリバリー,フードデリバリー"
 
         rows.append({

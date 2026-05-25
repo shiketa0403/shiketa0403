@@ -74,9 +74,35 @@ def search_places(chain_name: str, lat: float, lng: float) -> list[dict]:
     return resp.json().get("places", [])
 
 
+TOKYO_23KU_NAMES = {ku for ku, _, _ in [
+    ("千代田区", 0, 0), ("中央区", 0, 0), ("港区", 0, 0), ("新宿区", 0, 0),
+    ("文京区", 0, 0), ("台東区", 0, 0), ("墨田区", 0, 0), ("江東区", 0, 0),
+    ("品川区", 0, 0), ("目黒区", 0, 0), ("大田区", 0, 0), ("世田谷区", 0, 0),
+    ("渋谷区", 0, 0), ("中野区", 0, 0), ("杉並区", 0, 0), ("豊島区", 0, 0),
+    ("北区", 0, 0), ("荒川区", 0, 0), ("板橋区", 0, 0), ("練馬区", 0, 0),
+    ("足立区", 0, 0), ("葛飾区", 0, 0), ("江戸川区", 0, 0),
+]}
+
+
+def clean_address(address: str) -> str:
+    """住所から '日本、' プレフィックスと郵便番号を除去"""
+    address = address.replace("日本、", "").strip()
+    # 〒XXX-XXXX を除去
+    import re as _re
+    address = _re.sub(r"〒\d{3}-\d{4}\s*", "", address)
+    return address.strip()
+
+
+def is_in_tokyo_23ku(address: str) -> bool:
+    """住所が東京23区内かを判定"""
+    if "東京都" not in address:
+        return False
+    return any(ku in address for ku in TOKYO_23KU_NAMES)
+
+
 def parse_place(place: dict, chain_name: str) -> dict:
     name = place.get("displayName", {}).get("text", "")
-    address = place.get("formattedAddress", "")
+    address = clean_address(place.get("formattedAddress", ""))
     phone = place.get("internationalPhoneNumber", "")
     maps_url = place.get("googleMapsUri", "")
     loc = place.get("location", {})
@@ -120,6 +146,10 @@ def fetch_stores(chain_name: str) -> list[dict]:
             # 店舗名にチェーン名が含まれるもののみ対象
             display = place.get("displayName", {}).get("text", "")
             if chain_name not in display:
+                continue
+            # 東京23区内のみ対象
+            address = place.get("formattedAddress", "")
+            if not is_in_tokyo_23ku(address):
                 continue
             seen_ids.add(pid)
             stores.append(parse_place(place, chain_name))
