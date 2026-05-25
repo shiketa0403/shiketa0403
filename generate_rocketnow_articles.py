@@ -126,6 +126,10 @@ def build_html(store: dict, chain_name: str) -> str:
 <th style="width:50%;background-color:#4a4a4a;text-align:center;"><span style="color:#ffffff;">価格（税込）</span></th>
 </tr>
 {menu_rows}
+<tr>
+<td style="width:50%;text-align:center;vertical-align:middle;">他</td>
+<td style="width:50%;text-align:center;vertical-align:middle;">店舗と同様のメニューを注文可能</td>
+</tr>
 </tbody>
 </table>"""
 
