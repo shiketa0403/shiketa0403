@@ -57,11 +57,31 @@ def make_title(store_name: str) -> str:
     return f"ロケットナウで{store_name}は頼める？配達料・メニュー・営業時間まとめ"
 
 
-def make_slug(store_name: str, fallback_id: str = "") -> str:
-    slug = to_romaji(store_name)
+def make_slug(store_name: str, chain_name: str = "", fallback_id: str = "") -> str:
+    # 店舗名から「チェーン名」と末尾の「店」を除外してローマ字化
+    # 例: "吉野家 水道橋三崎町店" → "水道橋三崎町" → "suidobashi-misakicho"
+    base = store_name
+    if chain_name:
+        base = base.replace(chain_name, "")
+    base = re.sub(r"店$", "", base.strip())
+    base = base.strip()
+    slug = to_romaji(base) if base else ""
     if not slug:
         slug = f"store-{fallback_id[:8]}" if fallback_id else "store"
     return slug
+
+
+def format_phone(phone: str) -> str:
+    """+81 3-3515-2454 → 03-3515-2454 に整形"""
+    if not phone:
+        return "要確認"
+    phone = phone.strip()
+    if phone.startswith("+81"):
+        rest = phone[3:].lstrip()
+        if rest.startswith("-"):
+            rest = rest[1:]
+        return "0" + rest
+    return phone
 
 
 def make_maps_embed(lat, lng) -> str:
@@ -125,7 +145,7 @@ def build_html(store: dict, chain_name: str) -> str:
 </tr>
 <tr>
 <td style="width:50%;text-align:center;vertical-align:middle;background-color:#4a4a4a;"><strong><span style="color:#ffffff;">電話番号</span></strong></td>
-<td style="width:50%;text-align:center;vertical-align:middle;">{store.get("phone", "要確認")}</td>
+<td style="width:50%;text-align:center;vertical-align:middle;">{format_phone(store.get("phone", ""))}</td>
 </tr>
 <tr>
 <td style="width:50%;text-align:center;vertical-align:middle;background-color:#4a4a4a;"><strong><span style="color:#ffffff;">営業時間</span></strong></td>
@@ -190,7 +210,7 @@ def main():
 
         title = make_title(name)
         content = build_html(store, chain)
-        slug = make_slug(name, store.get("place_id", ""))
+        slug = make_slug(name, chain, store.get("place_id", ""))
         tags = f"{chain},ロケットナウ,デリバリー,フードデリバリー"
 
         rows.append({
