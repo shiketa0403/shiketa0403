@@ -54,7 +54,7 @@ DEFAULT_MENU = {
 
 
 def make_title(store_name: str) -> str:
-    return f"ロケットナウで{store_name}は頼める？配達料・メニュー・営業時間まとめ"
+    return f"ロケットナウで{store_name}のデリバリ・配達は頼める？"
 
 
 def make_slug(store_name: str, chain_name: str = "", fallback_id: str = "") -> str:
