@@ -28,7 +28,7 @@ on:
         required: true
         default: '1'
       exclude_slug:
-        description: '除外するslug（カンマ区切り、例: suidobashi-misakicho）'
+        description: 'Slugs to exclude (comma separated)'
         required: false
         default: 'suidobashi-misakicho'
 
