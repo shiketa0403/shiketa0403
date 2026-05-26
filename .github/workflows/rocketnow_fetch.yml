@@ -27,6 +27,10 @@ on:
         description: '投稿する記事数の上限（0=全件）'
         required: true
         default: '1'
+      exclude_slug:
+        description: '除外するslug（カンマ区切り、例: suidobashi-misakicho）'
+        required: false
+        default: 'suidobashi-misakicho'
 
 jobs:
   fetch-and-generate:
@@ -56,7 +60,8 @@ jobs:
             --input csv/rocketnow_stores.csv \
             --output csv/rocketnow_post.csv \
             --status ${{ github.event.inputs.status }} \
-            --limit ${{ github.event.inputs.max_articles }}
+            --limit ${{ github.event.inputs.max_articles }} \
+            --exclude-slug "${{ github.event.inputs.exclude_slug }}"
 
       - name: 生成結果を確認
         run: |

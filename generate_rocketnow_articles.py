@@ -198,14 +198,15 @@ def main():
     parser.add_argument("--status", default="draft", choices=["draft", "publish"])
     parser.add_argument("--category", default="吉野家")
     parser.add_argument("--limit", type=int, default=0, help="生成する記事数の上限（0=無制限）")
+    parser.add_argument("--exclude-slug", default="", help="除外するslug（カンマ区切り）")
     args = parser.parse_args()
 
+    exclude_slugs = {s.strip() for s in args.exclude_slug.split(",") if s.strip()}
+    if exclude_slugs:
+        print(f"除外slug: {sorted(exclude_slugs)}")
+
     stores = load_stores(args.input)
-    if args.limit > 0:
-        stores = stores[:args.limit]
-        print(f"{len(stores)} 件に絞って記事を生成します（--limit {args.limit}）")
-    else:
-        print(f"{len(stores)} 件の店舗データを読み込みました")
+    print(f"{len(stores)} 件の店舗データを読み込みました")
 
     rows = []
     for store in stores:
@@ -217,6 +218,13 @@ def main():
         title = make_title(name)
         content = build_html(store, chain)
         slug = make_slug(name, chain, store.get("place_id", ""))
+
+        if slug in exclude_slugs:
+            print(f"  除外: {name} (slug: {slug})")
+            continue
+
+        if args.limit > 0 and len(rows) >= args.limit:
+            break
 
         rows.append({
             "title": title,
