@@ -30,7 +30,7 @@ on:
       exclude_slug:
         description: 'Slugs to exclude (comma separated)'
         required: false
-        default: 'suidoubashi-misakichou,ogawachou,ootemachi-faasutosukuea,o-cha-no-mizu,yuurakuchou,akihabara'
+        default: 'suidoubashi-misakichou,ogawachou,ootemachi-faasutosukuea,o-cha-no-mizu,yuurakuchou,akihabara,ichigaya-ekimae'
 
 jobs:
   fetch-and-generate:
