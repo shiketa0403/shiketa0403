@@ -74,7 +74,7 @@ function Build-Body($domain) {
     $parts = $domain.ToLower().Trim(".").Split(".", 2)
     if ($parts.Count -ne 2) { return $null }
     $obj = @{
-        registrar   = "GMO"
+        registrar   = "JPRS"
         sld         = $parts[0]
         tld         = $parts[1]
         years       = $VD_YEARS
