@@ -8,21 +8,27 @@
 #        .\dropcatch_jp.ps1              # 本番
 #
 #   ※ このPCの時計が日本時間(JST)である前提です（通常はそのままでOK）。
+#   ※ 複数ドメイン対応。1つ取れたら残りを取りに行き続けます。
 
 param([switch]$Preflight)
 
 # ============================ 設定（ここを書き換える）============================
 $VD_API_KEY      = "ここにValue DomainのAPIキー"
-$VD_DOMAIN       = "example.jp"               # 取りたいドメイン
+
+# 取りたいドメイン（複数OK）。1行に1つ、カンマ区切りで並べる。
+$VD_DOMAINS = @(
+    "example.jp",
+    "example2.jp"
+)
 
 $VD_START_AT     = "2026-06-01T00:00:00"      # この時刻(JST)まで待って自動開始。即開始なら "" にする
 $VD_DEADLINE_SEC = 1800                        # 開始後この秒数で諦める（1800=30分）
-$VD_REG_INTERVAL = 2                            # 登録リトライ間隔(秒)
+$VD_REG_INTERVAL = 2                            # 各リクエストの間隔(秒)
 
 $VD_YEARS        = 1
 $VD_WHOIS_PROXY  = 1                            # 1=Whois代理公開 / 0=自分の情報を公開
 
-# 登録者情報（.jp はレジストリ必須なのは登録者のみ）
+# 登録者情報（.jp はレジストリ必須なのは登録者のみ）。全ドメイン共通で使う。
 $Registrant = @{
     firstname    = "Taro"
     lastname     = "Yamada"
@@ -51,20 +57,6 @@ $NS = @(
 $ErrorActionPreference = "Stop"
 
 $base = "https://api.value-domain.com/v1"
-$parts = $VD_DOMAIN.ToLower().Trim(".").Split(".", 2)
-if ($parts.Count -ne 2) { Write-Host "VD_DOMAIN は example.jp の形式で。" -ForegroundColor Red; exit 1 }
-$sld = $parts[0]; $tld = $parts[1]
-
-$bodyObj = @{
-    registrar   = "GMO"
-    sld         = $sld
-    tld         = $tld
-    years       = $VD_YEARS
-    ns          = $NS
-    whois_proxy = $VD_WHOIS_PROXY
-    contact     = @{ registrant = $Registrant; admin = $Registrant; tech = $Registrant }
-}
-$body = $bodyObj | ConvertTo-Json -Depth 8
 $headers = @{ Authorization = "Bearer $VD_API_KEY" }
 
 function Log($msg) { Write-Host ("[{0}] {1}" -f (Get-Date -Format "HH:mm:ss.fff"), $msg) }
@@ -77,11 +69,33 @@ function Read-ErrBody($err) {
     } catch { return "" }
 }
 
+# ドメイン文字列 → 送信ボディ(JSON) を作る
+function Build-Body($domain) {
+    $parts = $domain.ToLower().Trim(".").Split(".", 2)
+    if ($parts.Count -ne 2) { return $null }
+    $obj = @{
+        registrar   = "GMO"
+        sld         = $parts[0]
+        tld         = $parts[1]
+        years       = $VD_YEARS
+        ns          = $NS
+        whois_proxy = $VD_WHOIS_PROXY
+        contact     = @{ registrant = $Registrant; admin = $Registrant; tech = $Registrant }
+    }
+    return ($obj | ConvertTo-Json -Depth 8)
+}
+
+# 対象ドメインを整える
+$targets = @($VD_DOMAINS | ForEach-Object { $_.ToLower().Trim().Trim(".") } | Where-Object { $_ -ne "" })
+if ($targets.Count -eq 0) { Write-Host "VD_DOMAINS が空です。" -ForegroundColor Red; exit 1 }
+
 # ---- プリフライト ----
 if ($Preflight) {
     Log "=== PREFLIGHT（登録しません）==="
-    Log "対象ドメイン: $VD_DOMAIN"
-    Write-Host "送信予定ペイロード:"; Write-Host $body
+    Log ("対象ドメイン({0}件): {1}" -f $targets.Count, ($targets -join ", "))
+    foreach ($d in $targets) {
+        if (-not (Build-Body $d)) { Log "  [警告] $d は形式が不正（example.jp の形にしてください）" }
+    }
     Log "APIキー疎通確認 GET /domains ..."
     try {
         $r = Invoke-RestMethod -Method Get -Uri "$base/domains?limit=1" -Headers $headers
@@ -111,26 +125,38 @@ if ($VD_START_AT -ne "") {
 # ---- ドロップキャッチ本番 ----
 $deadline = (Get-Date).AddSeconds($VD_DEADLINE_SEC)
 Log ("ドロップキャッチ開始。締切 {0}" -f $deadline.ToString("HH:mm:ss"))
-Log "登録APIを短間隔で再試行します（空いた瞬間に成功 → 終了）。"
+Log ("対象 {0}件を順番に再試行します（取れたものから確定 → 残りを継続）。" -f $targets.Count)
 
+$remaining = [System.Collections.ArrayList]@($targets)
+$caught = @()
 $attempt = 0
-while ((Get-Date) -lt $deadline) {
-    $attempt++
-    try {
-        $resp = Invoke-RestMethod -Method Post -Uri "$base/domains" -Headers $headers -Body $body -ContentType "application/json"
-        Log "*** 取得成功! ***"
-        $resp | ConvertTo-Json -Depth 8 | Write-Host
-        Log "=== $VD_DOMAIN を取得しました。Value Domainの管理画面で確認してください。 ==="
-        exit 0
-    } catch {
-        $code = $null
-        if ($_.Exception.Response) { $code = [int]$_.Exception.Response.StatusCode }
-        $snippet = (Read-ErrBody $_) -replace "`r`n", " "
-        if ($snippet.Length -gt 160) { $snippet = $snippet.Substring(0, 160) }
-        Log ("[#{0}] HTTP {1}: {2}" -f $attempt, $code, $snippet)
-        if ($code -eq 401) { Log "認証失敗(401)。APIキーが無効です。中止します。"; exit 2 }
+
+while ($remaining.Count -gt 0 -and (Get-Date) -lt $deadline) {
+    foreach ($d in @($remaining)) {
+        if ((Get-Date) -ge $deadline) { break }
+        $attempt++
+        $body = Build-Body $d
+        if (-not $body) { Log "[$d] 形式不正のためスキップ"; $remaining.Remove($d); continue }
+        try {
+            $resp = Invoke-RestMethod -Method Post -Uri "$base/domains" -Headers $headers -Body $body -ContentType "application/json"
+            Log "*** [$d] 取得成功! ***"
+            $resp | ConvertTo-Json -Depth 8 | Write-Host
+            $caught += $d
+            $remaining.Remove($d)
+        } catch {
+            $code = $null
+            if ($_.Exception.Response) { $code = [int]$_.Exception.Response.StatusCode }
+            $snippet = (Read-ErrBody $_) -replace "`r`n", " "
+            if ($snippet.Length -gt 140) { $snippet = $snippet.Substring(0, 140) }
+            Log ("[#{0}][{1}] HTTP {2}: {3}" -f $attempt, $d, $code, $snippet)
+            if ($code -eq 401) { Log "認証失敗(401)。APIキーが無効です。中止します。"; exit 2 }
+        }
         Start-Sleep -Seconds $VD_REG_INTERVAL
     }
 }
-Log "締切に到達。取得できませんでした。"
-exit 1
+
+Log "=================================================="
+if ($caught.Count -gt 0) { Log ("取得成功({0}件): {1}" -f $caught.Count, ($caught -join ", ")) }
+if ($remaining.Count -gt 0) { Log ("取得できず({0}件): {1}" -f $remaining.Count, (($remaining) -join ", ")) }
+Log "管理画面で確認してください。"
+if ($remaining.Count -gt 0) { exit 1 } else { exit 0 }
