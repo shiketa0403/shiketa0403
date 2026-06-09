@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>みんなの現金化 — Step7 H2-2</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 20px; max-width: 1000px; }
+  h1 { font-size: 16px; color: #333; }
+  button { margin-bottom: 10px; padding: 8px 16px; cursor: pointer; font-size: 14px; }
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; padding: 10px; box-sizing: border-box; }
+  .status { display: inline-block; margin-left: 12px; color: #28a745; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>みんなの現金化 — Step7 H2-2 装飾済み</h1>
+<button id="copyBtn">本文をコピー</button><span class="status" id="status"></span>
+<textarea readonly id="content"><h2>みんなの現金化を選ぶ4つのメリット</h2>
+
+みんなの現金化のメリットは、4軸に集約できます。
+
+換金率の下限値・振込スピード・スタッフ対応・他社比較保証の順で整理します。
+
+<h3>1万円から92%の業界トップ層換金率</h3>
+
+みんなの現金化の最大の強みは、<span class="st-mymarker-s"><strong>申込額1万円帯から下限92%が確保される点</strong></span>です。
+
+業界平均では1〜5万円帯の換金率が78〜85%に沈むケースが多く、下限値が高く設定されている業者は限られています。
+
+公式LPには「1〜20万円帯92%」と表組みで明示され、<strong>5万円申込でも実質4,600円のロスに収まる試算</strong>が成立します。
+
+少額の急場資金を必要とする層が、申込額を分割しても損失が膨らみにくい構造が魅力です。
+
+<h3>最短3分・土日祝即日の振込スピード</h3>
+
+みんなの現金化は<strong>最短3分・土日祝対応の即日振込</strong>を公式に掲げています。
+
+営業時間9:30〜20:00の幅で対応し、土日祝も振込を止めない運用です。
+
+公式LPファーストビューに「土日祝日も最短3分で即日振込」と明示されています。
+
+給料日前の週末や祝日明けの資金需要にも応える設計です。
+
+ただし<span class="hutoaka">初回申込は本人確認の都合で60分前後かかる事例</span>があり、急ぐ場合は営業時間開始直後の申込が無難です。
+
+<h3>女性スタッフ対応のあんしん宣言</h3>
+
+みんなの現金化は<strong>経験豊富な女性スタッフによる窓口対応</strong>を、4項目のあんしん宣言の1つに掲げています。
+
+クレジットカード現金化は心理的ハードルが高い手続きです。
+
+初心者でも問い合わせしやすい体制を打ち出し、申込障壁を下げる狙いです。
+
+公式LPの「あんしん宣言」には4項目が明示されています。
+
+個人情報保持・迅速丁寧・<span class="st-mymarker-s"><strong>カードトラブル0</strong></span>・経験豊富な女性スタッフの4本柱です。
+
+初回利用で電話確認が不安な人にとって、女性スタッフ対応は実利的な安心材料です。
+
+[st-kaiwa1]電話確認が苦手な方でも、女性スタッフ対応のあんしん宣言が初心者の心理的負担を下げる仕組みです。[/st-kaiwa1]
+
+<h3>0.1%高換金率保証の他社比較制度</h3>
+
+みんなの現金化は<span class="st-mymarker-s"><strong>「他社より0.1%でも高い換金率」</strong></span>を公式に掲げる比較保証制度を採用しています。
+
+公式LPのファーストビュー直下に「他社様より0.1%でも高い換金率で現金化したい方お問い合わせください」と明記されています。
+
+競合他社の最新換金率を業者側が独自調査し、上乗せ提示する運用です。
+
+ただし発動条件は「お問い合わせ」前提のため、申込時に他社見積を提示して条件交渉する流れ(要確認)
+
+換金率を最大化したい利用者は、<strong>他社比較の見積を準備してから問い合わせ</strong>をするのが現実的です。
+
+[st-mybox title="ポイント" webicon="st-svg-check-circle" color="#FFD54F" bordercolor="#FFD54F" bgcolor="#FFFDE7" borderwidth="2" borderradius="5" titleweight="bold" fontsize="" myclass="st-mybox-class" margin="25px 0 25px 0"]
+<div class="maruck">
+<ul>
+<li>1万円から92%の業界トップ層換金率</li>
+<li>最短3分・土日祝即日の振込スピード</li>
+<li>女性スタッフ対応のあんしん宣言</li>
+<li>0.1%高換金率保証の他社比較制度</li>
+</ul>
+</div>
+[/st-mybox]
+
+ここまで4つのメリットを整理しました。
+
+ただしメリットの裏側には公式表示と実態のズレも存在するため、次は3つのデメリットを具体的に確認します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  const ta = document.getElementById('content');
+  navigator.clipboard.writeText(ta.value).then(() => {
+    const s = document.getElementById('status');
+    s.textContent = 'コピーしました';
+    setTimeout(() => { s.textContent = ''; }, 2000);
+  });
+});
+</script>
+</body>
+</html>
