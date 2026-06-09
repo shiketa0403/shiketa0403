@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>みんなの現金化 — Step7 H2-3</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 20px; max-width: 1000px; }
+  h1 { font-size: 16px; color: #333; }
+  button { margin-bottom: 10px; padding: 8px 16px; cursor: pointer; font-size: 14px; }
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; padding: 10px; box-sizing: border-box; }
+  .status { display: inline-block; margin-left: 12px; color: #28a745; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>みんなの現金化 — Step7 H2-3 装飾済み</h1>
+<button id="copyBtn">本文をコピー</button><span class="status" id="status"></span>
+<textarea readonly id="content"><h2>みんなの現金化の3つのデメリット</h2>
+
+メリットの裏側で、利用前に把握すべきデメリットが3つあります。
+
+実取り額の差・新興業者の信頼性・運営情報の透明性の3観点で整理します。
+
+<h3>公式92%表示と実取り78%事例の差</h3>
+
+公式LPの92%表示に対し、<span class="hutoaka">実取り換金率が78%程度になった事例</span>が二次レビューで指摘されています。
+
+公式表示の換金率は「最大値」表記が中心です。
+
+振込手数料や決済手数料を差し引いた手取り額ベースの実取りは、これより下がるケースがあります。
+
+具体的には複数のレビューサイトが、公式92%表記に対し実取り78%程度になるケースを報告しています。
+
+差額の理由は申込前の電話確認で内訳を明示してもらい、<strong>書面で残してから申し込み</strong>ましょう。
+
+[st-kaiwa1 r]実取り額は公式表示より下がる事例があるため、申込前の書面確認が安全です。[/st-kaiwa1]
+
+<h3>開業2024年3月の新興業者リスク</h3>
+
+みんなの現金化は<span class="hutoaka">ドメイン取得2024年2月・開業3月の新興業者</span>です。
+
+クレジットカード現金化業界では、5年以上の運営実績がトラブル耐性の指標として参照される傾向があります。
+
+二次調査の結果、ドメインWHOIS情報から開業時期が約2年と確認できます。
+
+長期営業業者と比べてトラブル時の対応履歴が積み上がりきっていない段階です。
+
+<strong>新興業者特有のリスクを許容できるか</strong>を、申込前に判断軸として持ちましょう。
+
+<h3>運営会社情報の公式LP非公開構造</h3>
+
+みんなの現金化の公式LPでは、<span class="hutoaka">運営会社の法人名・代表者・所在地が目立つ位置に明示されていません</span>。
+
+特定商取引法の表記は最下部の運営情報セクションに収まっています。
+
+トップビュー〜換金率テーブルまでの主要動線には、運営会社情報が登場しません。
+
+公式LP最下部にはサイト名・営業時間9:30〜20:00・TEL 0120-265-755・メールアドレスが記載されています。
+
+ただし運営法人の正式名称・所在地は画像から判読しにくいレイアウトです(要確認)。
+
+<strong>申込前に運営情報セクションを確認</strong>し、不明点は電話で問い合わせるのが安全です。
+
+[st-mybox title="注意ポイント" webicon="st-svg-exclamation-circle" color="#ef5350" bordercolor="#ef9a9a" bgcolor="#ffebee" borderwidth="2" borderradius="5" titleweight="bold" fontsize="" myclass="st-mybox-class" margin="25px 0 25px 0"]
+<div class="maruck">
+<ul>
+<li>公式92%表示に対し実取り78%事例の指摘あり</li>
+<li>開業2024年3月の新興業者で運営履歴が浅い</li>
+<li>運営会社の法人名・代表者・所在地が公式LPで判読しにくい</li>
+</ul>
+</div>
+[/st-mybox]
+
+3つのデメリットを把握したうえで、次は実際の利用者口コミの傾向を確認します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  const ta = document.getElementById('content');
+  navigator.clipboard.writeText(ta.value).then(() => {
+    const s = document.getElementById('status');
+    s.textContent = 'コピーしました';
+    setTimeout(() => { s.textContent = ''; }, 2000);
+  });
+});
+</script>
+</body>
+</html>
