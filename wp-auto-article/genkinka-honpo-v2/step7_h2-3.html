@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>現金化本舗 — Step7 H2-3</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 20px; max-width: 1000px; }
+  h1 { font-size: 16px; color: #333; }
+  button { margin-bottom: 10px; padding: 8px 16px; cursor: pointer; font-size: 14px; }
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; padding: 10px; box-sizing: border-box; }
+  .status { display: inline-block; margin-left: 12px; color: #28a745; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>現金化本舗 — Step7 H2-3 装飾済み</h1>
+<button id="copyBtn">本文をコピー</button><span class="status" id="status"></span>
+<textarea readonly id="content"><h2>現金化本舗の3つのデメリット</h2>
+
+メリットの裏側で、利用前に把握すべきデメリットが3つあります。
+
+実取り額の差・初回時間・運営透明性の観点から、申込判断の材料として整理します。
+
+<h3>公式換金率と実取り額の差</h3>
+
+公式換金率の表示には新規プレゼントが加味されており、<span class="hutoaka">実取り額が公式表示より下がるケース</span>があります。
+
+公式LPで提示される<strong>「最高98.5%」</strong>は新規最大5万円プレゼントを含む計算です。
+
+特典なしの素の換金率は<strong>5段階表(91〜97%)</strong>が基準値です。
+
+具体的には、二次レビューサイトで<strong>「公式94%表記でも実際の手取りは少額利用で90%前後」</strong>という報告が複数確認できます。
+
+申込前の電話確認で内訳を明示してもらい、<strong>書面で残してから申し込み</strong>ましょう。
+
+[st-kaiwa1 r]公式表示と実取り額が違うケースがあるため、申込前に書面で内訳を確認しましょう。[/st-kaiwa1]
+
+<h3>初回30分前後の本人確認時間</h3>
+
+公式の<strong>「最短5分振込」</strong>は2回目以降の表示で、初回は<span class="hutoaka">本人確認を含めて30分前後</span>かかる事例があります。
+
+初回利用者は身分証画像の送付・電話確認・カード決済確認の3段階を経る設計
+
+二次レビューでは「初回は本人確認に10〜15分、<strong>振込までトータル30分前後が現実的</strong>」との指摘が複数の検証記事で見られます。
+
+急ぎの資金需要では、初回ではなく<strong>2回目以降の利用タイミング</strong>で本領を発揮します。
+
+<h3>運営会社情報の公式LP非公開</h3>
+
+現金化本舗の公式LPでは、<span class="hutoaka">運営会社の法人名・代表者・所在地が目立つ位置に明示されていません</span>。
+
+特定商取引法の表記は最下部の運営情報セクションに収まっています。
+
+トップビュー〜換金率テーブルまでの主要動線には、運営会社情報が登場しません。
+
+公式LP最下部には申込フォーム以下に運営情報のリンクが配置されています。
+
+ただし運営法人の正式名称・所在地は画像から判読しにくいレイアウトです(要確認)。
+
+<strong>申込前に運営情報セクションを確認</strong>し、不明点は電話で問い合わせるのが安全です。
+
+[st-mybox title="注意ポイント" webicon="st-svg-exclamation-circle" color="#ef5350" bordercolor="#ef9a9a" bgcolor="#ffebee" borderwidth="2" borderradius="5" titleweight="bold" fontsize="" myclass="st-mybox-class" margin="25px 0 25px 0"]
+<div class="maruck">
+<ul>
+<li>公式表示98.5%には新規プレゼントが含まれ実取り90%前後の事例あり</li>
+<li>初回は本人確認で30分前後の所要時間</li>
+<li>運営会社の法人名・代表者・所在地が公式LPで判読しにくい</li>
+</ul>
+</div>
+[/st-mybox]
+
+3つのデメリットを把握したうえで、次は実際の利用者口コミの傾向を確認します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  const ta = document.getElementById('content');
+  navigator.clipboard.writeText(ta.value).then(() => {
+    const s = document.getElementById('status');
+    s.textContent = 'コピーしました';
+    setTimeout(() => { s.textContent = ''; }, 2000);
+  });
+});
+</script>
+</body>
+</html>
