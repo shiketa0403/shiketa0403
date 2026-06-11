@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>現金化本舗 — Step7 H2-6</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 20px; max-width: 1000px; }
+  h1 { font-size: 16px; color: #333; }
+  button { margin-bottom: 10px; padding: 8px 16px; cursor: pointer; font-size: 14px; }
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; padding: 10px; box-sizing: border-box; }
+  .status { display: inline-block; margin-left: 12px; color: #28a745; font-size: 13px; }
+</style>
+</head>
+<body>
+<h1>現金化本舗 — Step7 H2-6 装飾済み</h1>
+<button id="copyBtn">本文をコピー</button><span class="status" id="status"></span>
+<textarea readonly id="content"><h2>現金化本舗の申込手順</h2>
+
+実際に申込む場合の流れは、Webフォーム送信から振込完了まで3ステップです。
+
+書類準備とリスク確認を申込前に済ませると、振込までの所要時間を短縮できます。
+
+<h3>Webフォーム3ステップ申込フロー</h3>
+
+現金化本舗の申込フローは、<strong>フォーム送信・カード決済・振込完了の3ステップ</strong>で構成されます。
+
+公式LPの「ご利用方法」セクションに上記3段階が明示された独立動線
+
+[st-timeline myclass="st-timeline-count" add_style=""]
+[st-timeline-list text="お申込み" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+ステップ1で公式フォームに申込内容を送信します。
+[/st-timeline-list]
+[st-timeline-list text="カード決済" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+ステップ2で電話確認とカード決済を完了させます。
+[/st-timeline-list]
+[st-timeline-list text="振込完了" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+ステップ3で指定口座への振込が完了する流れです。
+[/st-timeline-list]
+[/st-timeline]
+
+営業時間内に申込みを完了させると、<strong>最短5分の即日振込</strong>が現実的なシナリオです。
+
+<h3>必要書類と在籍確認の事前準備</h3>
+
+<strong>必要書類は本人確認書類</strong>で、在籍確認の有無は申込時の電話で個別確認する設計です。
+
+クレジットカード現金化業界では本人確認書類(運転免許証・健康保険証)の提示が一般的で、現金化本舗も同様の運用
+
+公式LP上では必要書類リストの記載が限定的です。
+
+申込時の電話で<strong>「必要書類は何か」「在籍確認はあるか」</strong>を直接問い合わせましょう(要確認)。
+
+申込前に運転免許証・本人名義の振込口座情報を手元に揃え、電話で求められたらすぐ提示できる準備が安全です。
+
+[st-kaiwa1]必要書類と在籍確認の有無は、申込時の電話で先に確認しておくと安心です。[/st-kaiwa1]
+
+<h3>申込前の最終リスクチェック</h3>
+
+申込前に<span class="hutoaka">カード会員規約上の禁止行為</span>であることを認識したうえで、自己責任での利用判断が前提です。
+
+クレジットカードのショッピング枠を現金化目的で利用する行為は、各カード会社の会員規約上の禁止行為に該当します。
+
+発覚した場合は利用停止リスクがあります。
+
+主要カード会社(VISA・Master・JCB・Amex)の会員規約には「換金目的での利用禁止」条項あり
+
+発覚時にはカードの<strong>利用停止・一括請求・強制解約のいずれかの処分</strong>が下されます(出典:各カード会社会員規約)。
+
+申込前にリスクを理解したうえで、<strong>自己責任の前提で判断</strong>しましょう。
+
+[st-mybox title="注意ポイント" webicon="st-svg-exclamation-circle" color="#ef5350" bordercolor="#ef9a9a" bgcolor="#ffebee" borderwidth="2" borderradius="5" titleweight="bold" fontsize="" myclass="st-mybox-class" margin="25px 0 25px 0"]
+<div class="maruck">
+<ul>
+<li>クレカ現金化は会員規約上の禁止行為に該当</li>
+<li>発覚時は利用停止・一括請求・強制解約のいずれか</li>
+<li>主要4社(VISA・Master・JCB・Amex)の規約に明記</li>
+</ul>
+</div>
+[/st-mybox]
+
+申込手順とリスクの整理が完了したところで、最後に現金化本舗の総評をまとめます。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  const ta = document.getElementById('content');
+  navigator.clipboard.writeText(ta.value).then(() => {
+    const s = document.getElementById('status');
+    s.textContent = 'コピーしました';
+    setTimeout(() => { s.textContent = ''; }, 2000);
+  });
+});
+</script>
+</body>
+</html>
