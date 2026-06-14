@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>まとめ</h2>
+
+SheDollは2022年5月設立の中国メーカーで、写真詐欺なしの仕上がりと15万円前後のコスパが強みです。
+
+直販はなく、OLdoll・kumadoll・Dachi Wifeといった国内代理店経由が購入導線で、各代理店の品揃え・実物確認・上位グレードで選び分けるのが基本です。
+
+新興メーカーで創業3年の実績の浅さと即納在庫の限定性は、申込前に把握しておきましょう。
+
+[CTA: アフィリエイトリンク(各代理店の公式申込フォーム)]
+
+候補が1〜2社に絞れたら、各代理店の公式サイトで希望モデルの在庫・カスタマイズ・納期を確認し、見積りを取り比べて最終1社を決めましょう。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
