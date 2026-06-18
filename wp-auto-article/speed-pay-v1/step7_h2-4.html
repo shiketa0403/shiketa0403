@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>5ch・知恵袋のリアル口コミ</h2>
+
+口コミは5ch・知恵袋・SNSの3経路で傾向を確認できます。
+
+肯定的な声と否定的な声を整理して紹介します。
+
+<h3>5chでの評価傾向</h3>
+
+5chでは<strong>振込スピード</strong>を評価する声が目立ちます。
+
+匿名掲示板の性質上、リアルな利用報告が集まりやすいからです。
+
+「平日の昼間に申込んで<strong>10分で振込完了</strong>」の事例報告が複数件確認できます。
+
+一方で「<strong>深夜申込は翌朝対応になった</strong>」との不満も投稿されています。
+
+<h3>知恵袋の質問と回答</h3>
+
+知恵袋では還元率の実勢値に関する質問が多めです。
+
+公式の94〜96%表記と実際の振込額の差を気にする検索者が多いからです。
+
+回答の多くは「<strong>1万円台は94%通り</strong>」「<strong>30万円台は96%通り</strong>」と公式表記との一致を確認する内容。
+
+<span class="st-mymarker-s"><strong>詐欺被害の集団報告は確認できません。</strong></span>
+
+<h3>SNSでの利用報告</h3>
+
+SNSでは画像付きの振込報告が散見されます。
+
+利用直後の振込完了画面を投稿するユーザーが一定数いるからです。
+
+「<strong>LINE申込で15分以内に着金</strong>」「<strong>他社より高い還元率</strong>」の報告が見られます。
+
+ただしSNS投稿は個別事例のため、平均的な数字とは限らない点に留意しましょう。
+
+[st-cmemo webicon="st-svg-file-text-o" iconcolor="#919191" bgcolor="#fafafa" color="#000000" bordercolor="" borderwidth="" iconsize=""]SNS投稿は事例の傾向把握には役立ちますが、最新の還元率や営業時間は公式LPで確認しましょう。[/st-cmemo]
+
+口コミ傾向を踏まえ、自分が利用に向くタイプかを次節で整理します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
