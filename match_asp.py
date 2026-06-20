@@ -17,6 +17,7 @@ VC案件 × 他ASP案件のマッチングスクリプト（2段階判定）
 
 import argparse
 import csv
+import os
 import re
 
 
@@ -90,9 +91,63 @@ def load_a8(path):
     return rows, by_company
 
 
+def load_asp(path, has_company=True):
+    """ASPのCSVを読み込み、正規化済みの行リストと会社名インデックスを返す"""
+    rows = []
+    by_company = {}
+    with open(path, encoding="utf-8-sig") as f:
+        for r in csv.DictReader(f):
+            rows.append(r)
+            r["_name_norm"] = normalize_text(r.get("program_name", ""))
+            key = normalize_company(r.get("company_name", "")) if has_company else ""
+            r["_company_norm"] = key
+            if key:
+                by_company.setdefault(key, []).append(r)
+    return rows, by_company
+
+
+def match_one(brands, ckey, rows, by_company, has_company=True):
+    """1つのASPに対するVC案件のマッチ判定。
+    戻り値: (mark, matched_name)
+      ◎ ... 案件名（ブランド名）一致
+      ○ ... 会社名のみ一致（会社名ありASPのみ）
+      '' ... 該当なし
+    """
+    company_hits = by_company.get(ckey, []) if (has_company and ckey) else []
+
+    # 会社一致集合の中でブランド名一致（最も確度が高い）
+    brand_hit = None
+    for hit in company_hits:
+        for b in brands:
+            if b and (b in hit["_name_norm"] or hit["_name_norm"] in b):
+                brand_hit = hit
+                break
+        if brand_hit:
+            break
+
+    # 全案件からブランド名一致（会社名なしASP・表記揺れ対策）
+    if not brand_hit and brands:
+        for hit in rows:
+            for b in brands:
+                if len(b) >= 4 and b in hit["_name_norm"]:
+                    brand_hit = hit
+                    break
+            if brand_hit:
+                break
+
+    if brand_hit:
+        return "◎", brand_hit.get("program_name", "")
+    if company_hits:
+        return "○", company_hits[0].get("program_name", "")
+    return "", ""
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--a8", default="csv/a8_programs.csv")
+    parser.add_argument("--accesstrade", default="csv/accesstrade_programs.csv")
+    parser.add_argument("--afb", default="csv/afb_programs.csv")
+    parser.add_argument("--moshimo", default="csv/moshimo_programs.csv")
     parser.add_argument("--vc", default="csv/vc_raw_utf8.csv")
     parser.add_argument("--out", default="csv/asp_match.csv")
     args = parser.parse_args()
@@ -100,11 +155,28 @@ def main():
     with open(args.vc, encoding="utf-8") as f:
         vc_rows = list(csv.DictReader(f))
 
-    a8_rows, a8_by_company = load_a8(args.a8)
+    # ASP定義: (キー, ファイルパス, 会社名の有無)
+    asp_defs = [
+        ("a8", args.a8, True),
+        ("accesstrade", args.accesstrade, False),
+        ("afb", args.afb, True),
+        ("moshimo", args.moshimo, True),
+    ]
+
+    # 存在するASPのみ読み込む
+    asp_data = {}
+    for key, path, has_company in asp_defs:
+        if os.path.exists(path):
+            rows, by_company = load_asp(path, has_company=has_company)
+            asp_data[key] = (rows, by_company, has_company)
+            print(f"  {key}: {len(rows)}件 読み込み")
+
+    fieldnames = ["プログラム名", "会社名", "広告主名"]
+    for key in asp_data:
+        fieldnames += [key, f"{key}_該当案件名"]
 
     out_rows = []
-    n_brand = 0
-    n_company = 0
+    counts = {key: {"◎": 0, "○": 0} for key in asp_data}
     for r in vc_rows:
         program = r.get("プログラム名", "").strip()
         company = r.get("会社名", "").strip()
@@ -112,58 +184,25 @@ def main():
         ckey = normalize_company(company)
         brands = extract_brand(program, advertiser)
 
-        a8_mark = ""
-        a8_matched_name = ""
-
-        company_hits = a8_by_company.get(ckey, []) if ckey else []
-
-        # まず会社一致集合の中でブランド名一致を探す（最も確度が高い）
-        brand_hit = None
-        for hit in company_hits:
-            for b in brands:
-                if b and (b in hit["_name_norm"] or hit["_name_norm"] in b):
-                    brand_hit = hit
-                    break
-            if brand_hit:
-                break
-
-        # 会社一致がなくても、全A8案件からブランド名一致を探す（会社名表記揺れ対策）
-        if not brand_hit and brands:
-            for hit in a8_rows:
-                for b in brands:
-                    if len(b) >= 4 and b in hit["_name_norm"]:
-                        brand_hit = hit
-                        break
-                if brand_hit:
-                    break
-
-        if brand_hit:
-            a8_mark = "◎"
-            a8_matched_name = brand_hit.get("program_name", "")
-            n_brand += 1
-        elif company_hits:
-            a8_mark = "○"
-            a8_matched_name = company_hits[0].get("program_name", "")
-            n_company += 1
-
-        out_rows.append({
-            "プログラム名": program,
-            "会社名": company,
-            "広告主名": advertiser,
-            "a8": a8_mark,
-            "a8_該当案件名": a8_matched_name,
-        })
+        row_out = {"プログラム名": program, "会社名": company, "広告主名": advertiser}
+        for key, (rows, by_company, has_company) in asp_data.items():
+            mark, matched = match_one(brands, ckey, rows, by_company, has_company)
+            row_out[key] = mark
+            row_out[f"{key}_該当案件名"] = matched
+            if mark in counts[key]:
+                counts[key][mark] += 1
+        out_rows.append(row_out)
 
     with open(args.out, "w", encoding="utf-8-sig", newline="") as f:
-        writer = csv.DictWriter(
-            f, fieldnames=["プログラム名", "会社名", "広告主名", "a8", "a8_該当案件名"])
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(out_rows)
 
-    print(f"VC案件: {len(vc_rows)}件 / A8案件: {len(a8_rows)}件")
-    print(f"◎ 案件名一致（確度高）: {n_brand}件")
-    print(f"○ 会社名のみ一致（要確認）: {n_company}件")
-    print(f"合計 A8取り扱い候補: {n_brand + n_company}件")
+    print(f"\nVC案件: {len(vc_rows)}件")
+    for key in asp_data:
+        c = counts[key]
+        print(f"  {key}: ◎案件名一致 {c['◎']}件 / ○会社名のみ {c['○']}件 "
+              f"（候補計 {c['◎'] + c['○']}件）")
     print(f"出力: {args.out}")
 
 
