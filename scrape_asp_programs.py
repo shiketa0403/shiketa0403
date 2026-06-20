@@ -9,7 +9,7 @@ ASPプログラム一覧スクレイピングスクリプト
   4. ログイン後、ターミナルでEnterキーを押す
   5. 自動で全ページ巡回してCSV出力（csv/a8_programs.csv）
 
-対応ASP: a8（実装済み） / accesstrade（実装済み） / afb, moshimo（HTML取得後に対応）
+対応ASP: a8（実装済み） / accesstrade（実装済み） / afb（実装済み） / moshimo（HTML取得後に対応）
 """
 
 import argparse
@@ -274,9 +274,117 @@ def scrape_accesstrade(page):
     return programs
 
 
+# --- afb（www.afi-b.com、URL方式ページング） ---
+from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
+
+
+def _set_page_param(url, page_num):
+    """URLの p パラメータをpage_numに差し替える"""
+    parts = urlparse(url)
+    q = parse_qs(parts.query, keep_blank_values=True)
+    q["p"] = [str(page_num)]
+    new_query = urlencode(q, doseq=True)
+    return urlunparse(parts._replace(query=new_query, fragment="pagination"))
+
+
+def _extract_afb_cards(page):
+    """afbのプロモーションカードを抽出"""
+    results = []
+    cards = page.query_selector_all("div.promotion")
+    for card in cards:
+        h5s = card.query_selector_all("h5")
+        company_name = h5s[0].inner_text().strip() if len(h5s) >= 1 else ""
+        program_name = h5s[1].inner_text().strip() if len(h5s) >= 2 else (
+            h5s[0].inner_text().strip() if h5s else "")
+        # 会社名と案件名が1つしかない場合は案件名扱い、会社名は空に
+        if len(h5s) < 2:
+            company_name = ""
+
+        # ステータス（img alt）
+        status = ""
+        img = card.query_selector("div.short_pid_name img")
+        if img:
+            status = (img.get_attribute("alt") or "").strip()
+
+        # PID とカテゴリ（short_pid_nameのテキストから）
+        program_id = ""
+        category = ""
+        spn = card.query_selector("div.short_pid_name")
+        if spn:
+            txt = spn.inner_text().strip()
+            m = _re.search(r"PID[:：]\s*(\d+)", txt)
+            if m:
+                program_id = m.group(1)
+            # 【PID:xxx】を除去した残りをカテゴリ候補に
+            cat = _re.sub(r"【PID[:：]\s*\d+】", "", txt)
+            cat = _re.sub(r"\s+", " ", cat).strip()
+            category = cat
+
+        # 報酬
+        reward = ""
+        rem = card.query_selector("div.remuneration")
+        if rem:
+            reward = _re.sub(r"\s+", " ", rem.inner_text().strip())[:120]
+
+        if program_name:
+            results.append({
+                "program_name": program_name,
+                "company_name": company_name,
+                "program_id": program_id,
+                "category": category,
+                "reward": reward,
+                "status": status,
+                "asp": "afb",
+            })
+    return results
+
+
 def scrape_afb(page):
-    print("  afbは未実装です。HTMLを取得後に対応します。")
-    return []
+    """afbのプロモーション一覧を全ページ取得（URL方式ページング）"""
+    programs = []
+    try:
+        page.wait_for_selector("div.promotion", timeout=15000)
+    except Exception:
+        print("  プロモーションが見つかりません。一覧ページを表示してから実行してください。")
+        return programs
+
+    base_url = page.url
+    page_num = 1
+    max_pages = 100
+    prev_first = None
+
+    while page_num <= max_pages:
+        url = _set_page_param(base_url, page_num)
+        print(f"  ページ {page_num} 取得中...")
+        try:
+            page.goto(url, wait_until="domcontentloaded", timeout=30000)
+        except Exception as e:
+            print(f"  ナビゲーション失敗: {e}（終了）")
+            break
+        time.sleep(2)
+
+        try:
+            page.wait_for_selector("div.promotion", timeout=15000)
+        except Exception:
+            print("  カードが見つかりません（最終ページ、終了）")
+            break
+
+        cards = _extract_afb_cards(page)
+        if not cards:
+            print("  カード0件（終了）")
+            break
+
+        first_id = cards[0].get("program_id", "")
+        if first_id and first_id == prev_first:
+            print("  前ページと同じ内容（最終ページと判断、終了）")
+            break
+
+        programs.extend(cards)
+        prev_first = first_id
+        print(f"  {len(cards)}件取得（累計: {len(programs)}件）")
+        page_num += 1
+
+    return programs
 
 
 def scrape_moshimo(page):
@@ -334,7 +442,11 @@ def main():
                 "「プログラム検索」で全プログラム一覧を表示してください。\n"
                 "（プログラム情報ページ: merchant/search.html / 案件カードが並んだ状態）\n"
                 "一覧が表示されたら、このターミナルでEnterキーを押してください..."),
-            "afb": "afb にログイン後、プログラム一覧を表示してEnterキーを押してください...",
+            "afb": (
+                "afb にログイン後、\n"
+                "「プロモーション検索」→ プロモーション一覧（promolist）を表示してください。\n"
+                "（案件カードが50件並んだ状態）\n"
+                "一覧が表示されたら、このターミナルでEnterキーを押してください..."),
             "moshimo": "もしもにログイン後、プログラム一覧を表示してEnterキーを押してください...",
         }
         input(f"\n{prompts.get(asp_key, asp_key + ' の一覧を表示後Enter...')}")
