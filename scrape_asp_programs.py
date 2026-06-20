@@ -9,7 +9,7 @@ ASPプログラム一覧スクレイピングスクリプト
   4. ログイン後、ターミナルでEnterキーを押す
   5. 自動で全ページ巡回してCSV出力（csv/a8_programs.csv）
 
-対応ASP: a8（実装済み） / accesstrade（実装済み） / afb（実装済み） / moshimo（HTML取得後に対応）
+対応ASP: a8 / accesstrade / afb / moshimo（全て実装済み）
 """
 
 import argparse
@@ -388,9 +388,123 @@ def scrape_afb(page):
     return programs
 
 
+# --- もしもアフィリエイト（af.moshimo.com、URL方式テーブル） ---
+
+
+def _extract_moshimo_rows(page):
+    """もしものプロモーション検索テーブルから案件を抽出"""
+    results = []
+    trs = page.query_selector_all("table tr")
+    for tr in trs:
+        name_td = tr.query_selector("td.promotion-name")
+        if not name_td:
+            continue
+        program_name = name_td.inner_text().strip()
+
+        # ID (input[name="lump[]"])
+        program_id = ""
+        inp = tr.query_selector("input[name='lump[]']")
+        if inp:
+            program_id = inp.get_attribute("value") or ""
+
+        # 報酬
+        reward = ""
+        rew_td = tr.query_selector("td.max-result")
+        if rew_td:
+            reward = _re.sub(r"\s+", " ", rew_td.inner_text().strip())
+
+        # ステータス
+        status = ""
+        st_td = tr.query_selector("td.apply-status")
+        if st_td:
+            status = st_td.inner_text().strip()
+
+        if program_name:
+            results.append({
+                "program_name": program_name,
+                "company_name": "",
+                "program_id": program_id,
+                "category": "",
+                "reward": reward,
+                "status": status,
+                "asp": "moshimo",
+            })
+    return results
+
+
 def scrape_moshimo(page):
-    print("  もしもは未実装です。HTMLを取得後に対応します。")
-    return []
+    """もしもアフィリエイトのプロモーション一覧を全ページ取得"""
+    programs = []
+
+    # 表示件数を100件に変更
+    try:
+        page.wait_for_selector("td.promotion-name", timeout=15000)
+        selects = page.query_selector_all("select")
+        for sel in selects:
+            opts = sel.query_selector_all("option")
+            for opt in opts:
+                if "100" in (opt.inner_text() or "") and "件" in (opt.inner_text() or ""):
+                    sel.select_option(value="100")
+                    # フォーム送信
+                    form_btn = page.query_selector("button[type=submit], input[type=submit]")
+                    if form_btn:
+                        form_btn.click()
+                    time.sleep(3)
+                    break
+            else:
+                continue
+            break
+    except Exception as e:
+        print(f"  100件表示への切り替えをスキップ: {e}")
+
+    base_url = page.url
+    page_num = 1
+    max_pages = 200
+    prev_first = None
+
+    while page_num <= max_pages:
+        print(f"  ページ {page_num} 取得中...")
+        if page_num > 1:
+            url = _re.sub(r'page=\d+', f'page={page_num}', base_url)
+            if 'page=' not in url:
+                sep = '&' if '?' in url else '?'
+                url = f"{url}{sep}page={page_num}"
+            try:
+                page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            except Exception as e:
+                print(f"  ナビゲーション失敗: {e}（終了）")
+                break
+            time.sleep(2)
+
+        try:
+            page.wait_for_selector("td.promotion-name", timeout=15000)
+        except Exception:
+            print("  案件が見つかりません（最終ページ、終了）")
+            break
+
+        cards = _extract_moshimo_rows(page)
+        if not cards:
+            print("  0件（終了）")
+            break
+
+        first_key = cards[0].get("program_id", "") or cards[0].get("program_name", "")
+        if first_key and first_key == prev_first:
+            print("  前ページと同じ内容（最終ページと判断、終了）")
+            break
+
+        programs.extend(cards)
+        prev_first = first_key
+        print(f"  {len(cards)}件取得（累計: {len(programs)}件）")
+
+        # 次へリンクがあるか確認
+        next_link = page.query_selector("a.next")
+        if not next_link:
+            print("  次へリンクなし（最終ページ、終了）")
+            break
+
+        page_num += 1
+
+    return programs
 
 
 SCRAPERS = {
@@ -448,7 +562,11 @@ def main():
                 "「プロモーション検索」→ プロモーション一覧（promolist）を表示してください。\n"
                 "（案件カードが50件並んだ状態）\n"
                 "一覧が表示されたら、このターミナルでEnterキーを押してください..."),
-            "moshimo": "もしもにログイン後、プログラム一覧を表示してEnterキーを押してください...",
+            "moshimo": (
+                "もしもアフィリエイトにログイン後、\n"
+                "「プロモーション検索」で全案件一覧を表示してください。\n"
+                "（案件がテーブルで並んだ状態）\n"
+                "一覧が表示されたら、このターミナルでEnterキーを押してください..."),
         }
         input(f"\n{prompts.get(asp_key, asp_key + ' の一覧を表示後Enter...')}")
 
