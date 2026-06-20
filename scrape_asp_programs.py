@@ -27,90 +27,133 @@ A8_SEARCH_URL = "https://media-console.a8.net/program/search/keyword?pageNo={pag
 A8_LOGIN_URL = "https://www.a8.net/"
 
 
+def _extract_a8_cards(page):
+    """現在表示中のページからプログラムカード情報を抽出"""
+    results = []
+    cards = page.query_selector_all("div.pgCard")
+    for card in cards:
+        name_el = card.query_selector("h3.pgName")
+        ec_el = card.query_selector("p.ecName")
+        status_el = card.query_selector(".pgStatus")
+
+        program_name = name_el.inner_text().strip() if name_el else ""
+        company_name = ec_el.inner_text().strip() if ec_el else ""
+        status = status_el.inner_text().strip() if status_el else ""
+
+        program_id = ""
+        category = ""
+        reward = ""
+        rows = card.query_selector_all("table tr")
+        for tr in rows:
+            th = tr.query_selector("th")
+            td = tr.query_selector("td")
+            if not th or not td:
+                continue
+            th_text = th.inner_text().strip()
+            td_text = td.inner_text().strip()
+            if "プログラムID" in th_text:
+                program_id = td_text
+            elif "カテゴリ" in th_text:
+                category = td_text
+            elif "成果報酬" in th_text:
+                reward = td_text
+
+        if program_name:
+            results.append({
+                "program_name": program_name,
+                "company_name": company_name,
+                "program_id": program_id,
+                "category": category,
+                "reward": reward,
+                "status": status,
+                "asp": "a8",
+            })
+    return results
+
+
+def _goto_a8_search(page):
+    """検索ページ1に到達する（SPAの/homeリダイレクト対策でリトライ）"""
+    url = A8_SEARCH_URL.format(page=1)
+    for attempt in range(8):
+        try:
+            page.goto(url, wait_until="domcontentloaded", timeout=30000)
+        except Exception as e:
+            print(f"  ナビゲーション中断（リトライ {attempt + 1}/8）")
+        time.sleep(3)
+        # プログラムカードが出ていれば成功
+        try:
+            page.wait_for_selector("h3.pgName", timeout=8000)
+            return True
+        except Exception:
+            cur = page.url
+            print(f"  検索ページ未到達（現在地: {cur}）リトライ {attempt + 1}/8")
+            time.sleep(2)
+    return False
+
+
 def scrape_a8(page):
-    """A8.netのプログラム一覧を全ページ取得（media-console.a8.net）"""
+    """A8.netのプログラム一覧を全ページ取得（media-console.a8.net、SPA）"""
     programs = []
+
+    # 検索ページ1に到達（リトライ込み）
+    if not _goto_a8_search(page):
+        print("  検索ページに到達できませんでした。ログイン状態を確認してください。")
+        return programs
+
     page_num = 1
-    max_pages = 500  # 安全のための上限
+    max_pages = 500
+    prev_first_id = None
 
     while page_num <= max_pages:
-        url = A8_SEARCH_URL.format(page=page_num)
-        print(f"  ページ {page_num} 取得中... {url}")
+        print(f"  ページ {page_num} 取得中...")
 
-        try:
-            page.goto(url, wait_until="networkidle", timeout=30000)
-        except Exception as e:
-            print(f"  ページ読み込みエラー: {e}")
-            time.sleep(3)
-            try:
-                page.goto(url, wait_until="domcontentloaded", timeout=30000)
-            except Exception:
-                print(f"  再試行も失敗。終了します。")
-                break
-
-        # プログラムカードが描画されるまで待つ
         try:
             page.wait_for_selector("h3.pgName", timeout=15000)
         except Exception:
-            print(f"  プログラムが見つかりません（最終ページ到達と判断）")
+            print(f"  プログラムが見つかりません（終了）")
             break
 
-        # 各プログラムカードから情報を抽出
-        cards = page.query_selector_all("div.pgCard")
+        # 重複ページ検出（前ページと同じ先頭IDなら更新されていない）
+        cards = _extract_a8_cards(page)
         if not cards:
-            print(f"  カードが0件。終了します。")
+            print(f"  カード0件（終了）")
             break
 
-        page_count = 0
-        for card in cards:
-            name_el = card.query_selector("h3.pgName")
-            ec_el = card.query_selector("p.ecName")
-            status_el = card.query_selector(".pgStatus")
+        first_id = cards[0].get("program_id", "")
+        if first_id and first_id == prev_first_id:
+            # ページ送りが反映されるまで少し待って再取得
+            time.sleep(2)
+            cards = _extract_a8_cards(page)
+            first_id = cards[0].get("program_id", "") if cards else ""
+            if first_id == prev_first_id:
+                print(f"  ページが更新されていません（最終ページと判断、終了）")
+                break
 
-            program_name = name_el.inner_text().strip() if name_el else ""
-            company_name = ec_el.inner_text().strip() if ec_el else ""
-            status = status_el.inner_text().strip() if status_el else ""
+        programs.extend(cards)
+        prev_first_id = first_id
+        print(f"  {len(cards)}件取得（累計: {len(programs)}件）")
 
-            # テーブルからプログラムID・カテゴリ・成果報酬を取得
-            program_id = ""
-            category = ""
-            reward = ""
-            rows = card.query_selector_all("table tr")
-            for tr in rows:
-                th = tr.query_selector("th")
-                td = tr.query_selector("td")
-                if not th or not td:
-                    continue
-                th_text = th.inner_text().strip()
-                td_text = td.inner_text().strip()
-                if "プログラムID" in th_text:
-                    program_id = td_text
-                elif "カテゴリ" in th_text:
-                    category = td_text
-                elif "成果報酬" in th_text:
-                    reward = td_text
-
-            if program_name:
-                programs.append({
-                    "program_name": program_name,
-                    "company_name": company_name,
-                    "program_id": program_id,
-                    "category": category,
-                    "reward": reward,
-                    "status": status,
-                    "asp": "a8",
-                })
-                page_count += 1
-
-        print(f"  {page_count}件取得（累計: {len(programs)}件）")
-
-        # このページが100件未満なら最終ページ
-        if page_count < 100:
-            print(f"  最終ページ到達（{page_count}件 < 100件）")
+        # 次へボタンを探す
+        next_btn = page.query_selector("button.pagerNext")
+        if not next_btn:
+            print(f"  次へボタンなし（最終ページ、終了）")
             break
 
+        # disabled なら最終ページ
+        is_disabled = next_btn.get_attribute("disabled")
+        if is_disabled is not None:
+            print(f"  次へボタンが無効（最終ページ、終了）")
+            break
+
+        # 次ページへ
+        try:
+            next_btn.click()
+        except Exception as e:
+            print(f"  次へクリック失敗: {e}（終了）")
+            break
+
+        time.sleep(2)
         page_num += 1
-        time.sleep(1)  # サーバー負荷軽減
 
     return programs
 
