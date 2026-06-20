@@ -158,10 +158,120 @@ def scrape_a8(page):
     return programs
 
 
-# --- 他ASPは実際のHTML構造取得後に実装 ---
+# --- アクセストレード（member.accesstrade.net、AJAXページング） ---
+import re as _re
+
+
+def _extract_at_cards(page):
+    """現在表示中のアクセストレードのプログラムカードを抽出"""
+    results = []
+    cards = page.query_selector_all("section.program")
+    for card in cards:
+        name_el = card.query_selector("p.program_name")
+        cat_el = card.query_selector("span.program_category")
+        status_el = card.query_selector("label.label")
+
+        raw_name = name_el.inner_text().strip() if name_el else ""
+        # 「（1155209）案件名」形式 → IDと案件名を分離
+        program_id = ""
+        program_name = raw_name
+        m = _re.match(r"^[（(]\s*(\d+)\s*[）)]\s*(.*)$", raw_name, _re.S)
+        if m:
+            program_id = m.group(1)
+            program_name = m.group(2).strip()
+
+        category = cat_el.inner_text().strip() if cat_el else ""
+        status = status_el.inner_text().strip() if status_el else ""
+
+        # 報酬（dl.program_hosyu の dt/dd を結合）
+        reward_parts = []
+        hosyu = card.query_selector("dl.program_hosyu")
+        if hosyu:
+            dts = hosyu.query_selector_all("dt")
+            dds = hosyu.query_selector_all("dd")
+            for i in range(min(len(dts), len(dds))):
+                cond = dts[i].inner_text().strip()
+                amt = dds[i].inner_text().strip()
+                reward_parts.append(f"{cond}:{amt}")
+        reward = " / ".join(reward_parts)
+
+        if program_name:
+            results.append({
+                "program_name": program_name,
+                "company_name": "",  # アクセストレードのカードに会社名はない
+                "program_id": program_id,
+                "category": category,
+                "reward": reward,
+                "status": status,
+                "asp": "accesstrade",
+            })
+    return results
+
+
 def scrape_accesstrade(page):
-    print("  アクセストレードは未実装です。HTMLを取得後に対応します。")
-    return []
+    """アクセストレードのプログラム一覧を全ページ取得（AJAXページング）"""
+    programs = []
+
+    # 表示件数を100件に変更して再検索（クリック数を減らす）
+    try:
+        page.wait_for_selector("section.program", timeout=15000)
+        line_sel = page.query_selector("#lineMax")
+        if line_sel:
+            page.select_option("#lineMax", "100")
+            # 検索ボタンを押して反映（form再送信）
+            search_btn = page.query_selector(
+                "button[type=submit], input[type=submit], .btn_search, #searchBtn")
+            if search_btn:
+                search_btn.click()
+            time.sleep(3)
+            page.wait_for_selector("section.program", timeout=15000)
+    except Exception as e:
+        print(f"  100件表示への切り替えをスキップ: {e}")
+
+    current_page = 1
+    max_pages = 200
+    prev_first = None
+
+    while current_page <= max_pages:
+        print(f"  ページ {current_page} 取得中...")
+        try:
+            page.wait_for_selector("section.program", timeout=15000)
+        except Exception:
+            print("  プログラムが見つかりません（終了）")
+            break
+
+        cards = _extract_at_cards(page)
+        if not cards:
+            print("  カード0件（終了）")
+            break
+
+        first_id = cards[0].get("program_id", "")
+        if first_id and first_id == prev_first:
+            time.sleep(2)
+            cards = _extract_at_cards(page)
+            first_id = cards[0].get("program_id", "") if cards else ""
+            if first_id == prev_first:
+                print("  ページが更新されていません（最終ページと判断、終了）")
+                break
+
+        programs.extend(cards)
+        prev_first = first_id
+        print(f"  {len(cards)}件取得（累計: {len(programs)}件）")
+
+        # 次ページ（data-page = current+1）のリンクを探す
+        next_links = page.query_selector_all(f"a[data-page='{current_page + 1}']")
+        if not next_links:
+            print("  次ページリンクなし（最終ページ、終了）")
+            break
+        try:
+            next_links[0].click()
+        except Exception as e:
+            print(f"  次へクリック失敗: {e}（終了）")
+            break
+        time.sleep(3)
+        current_page += 1
+
+    return programs
 
 
 def scrape_afb(page):
@@ -217,7 +327,17 @@ def main():
         print(f"ログインページを開きます: {login_url}")
         page.goto(login_url, wait_until="domcontentloaded", timeout=30000)
 
-        input(f"\n{asp_key} にログインしてください。\nログイン完了後、このターミナルでEnterキーを押してください...")
+        prompts = {
+            "a8": "a8 にログインしてください。\nログイン完了後、このターミナルでEnterキーを押してください...",
+            "accesstrade": (
+                "アクセストレードにログイン後、\n"
+                "「プログラム検索」で全プログラム一覧を表示してください。\n"
+                "（プログラム情報ページ: merchant/search.html / 案件カードが並んだ状態）\n"
+                "一覧が表示されたら、このターミナルでEnterキーを押してください..."),
+            "afb": "afb にログイン後、プログラム一覧を表示してEnterキーを押してください...",
+            "moshimo": "もしもにログイン後、プログラム一覧を表示してEnterキーを押してください...",
+        }
+        input(f"\n{prompts.get(asp_key, asp_key + ' の一覧を表示後Enter...')}")
 
         print("プログラム一覧を取得開始...")
         scraper = SCRAPERS[asp_key]
