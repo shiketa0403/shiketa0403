@@ -374,13 +374,14 @@ def scrape_afb(page):
             print("  カード0件（終了）")
             break
 
-        first_id = cards[0].get("program_id", "")
-        if first_id and first_id == prev_first:
+        # 最終ページ検知: program_id が空でも program_name で判定する
+        first_key = cards[0].get("program_id", "") or cards[0].get("program_name", "")
+        if first_key and first_key == prev_first:
             print("  前ページと同じ内容（最終ページと判断、終了）")
             break
 
         programs.extend(cards)
-        prev_first = first_id
+        prev_first = first_key
         print(f"  {len(cards)}件取得（累計: {len(programs)}件）")
         page_num += 1
 
