@@ -3,13 +3,13 @@
 ASPプログラム一覧スクレイピングスクリプト
 
 使い方:
-  1. pip install playwright && playwright install chromium
+  1. python -m playwright install chromium   （初回のみ）
   2. python scrape_asp_programs.py --asp a8
   3. ブラウザが開くので手動でログイン
   4. ログイン後、ターミナルでEnterキーを押す
-  5. 自動で全ページ巡回してCSV出力
+  5. 自動で全ページ巡回してCSV出力（csv/a8_programs.csv）
 
-対応ASP: a8, accesstrade, afb, moshimo
+対応ASP: a8（実装済み） / accesstrade, afb, moshimo（HTML取得後に対応）
 """
 
 import argparse
@@ -22,216 +22,113 @@ from playwright.sync_api import sync_playwright
 
 OUTPUT_DIR = "csv"
 
-ASP_CONFIG = {
-    "a8": {
-        "name": "A8.net",
-        "login_url": "https://www.a8.net/as/as_login/",
-        "search_url": "https://www.a8.net/as/as_prg_s/?sort=new&category=all&appeal=all&payout=all&keyword=&searchMethod=program&page=1&perPage=100",
-        "output": "a8_programs.csv",
-    },
-    "accesstrade": {
-        "name": "アクセストレード",
-        "login_url": "https://member.accesstrade.net/atv3/login.html",
-        "search_url": "https://member.accesstrade.net/atv3/search_program.html",
-        "output": "accesstrade_programs.csv",
-    },
-    "afb": {
-        "name": "afb",
-        "login_url": "https://www.afi-b.com/partner/login",
-        "search_url": "https://www.afi-b.com/partner/search/program",
-        "output": "afb_programs.csv",
-    },
-    "moshimo": {
-        "name": "もしもアフィリエイト",
-        "login_url": "https://af.moshimo.com/af/shop/login",
-        "search_url": "https://af.moshimo.com/af/shop/promotion/search",
-        "output": "moshimo_programs.csv",
-    },
-}
+# A8新管理画面の検索URL（pageSize=100で1ページ100件表示）
+A8_SEARCH_URL = "https://media-console.a8.net/program/search/keyword?pageNo={page}&pageSize=100&sortKey=NORMAL"
+A8_LOGIN_URL = "https://www.a8.net/"
 
 
 def scrape_a8(page):
-    """A8.netのプログラム一覧を全ページ取得"""
+    """A8.netのプログラム一覧を全ページ取得（media-console.a8.net）"""
     programs = []
     page_num = 1
+    max_pages = 500  # 安全のための上限
 
-    # まず検索ページに遷移（全プログラム、100件表示）
-    search_url = ASP_CONFIG["a8"]["search_url"]
-    page.goto(search_url, wait_until="networkidle", timeout=30000)
-    time.sleep(2)
+    while page_num <= max_pages:
+        url = A8_SEARCH_URL.format(page=page_num)
+        print(f"  ページ {page_num} 取得中... {url}")
 
-    while True:
-        print(f"  ページ {page_num} 取得中...")
+        try:
+            page.goto(url, wait_until="networkidle", timeout=30000)
+        except Exception as e:
+            print(f"  ページ読み込みエラー: {e}")
+            time.sleep(3)
+            try:
+                page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            except Exception:
+                print(f"  再試行も失敗。終了します。")
+                break
 
-        # プログラム名を取得（A8のプログラム一覧のセレクタ）
-        # A8の検索結果ページでプログラム名が表示される要素を探す
-        items = page.query_selector_all("span.programTitle, a.programDetailLink, .prg-name, .program-name, h3.program-title")
-
-        if not items:
-            # フォールバック: テーブル内のリンクやテキストを取得
-            items = page.query_selector_all("table.searchResult td a, .search-result-item .title, .program-list-item .name")
-
-        if not items:
-            # さらにフォールバック: ページ内の全テキストからプログラム名っぽいものを取得
-            print(f"  セレクタが見つかりません。ページのHTMLを確認します...")
-            # デバッグ用: ページのタイトルとURL
-            print(f"  URL: {page.url}")
-            print(f"  Title: {page.title()}")
-            # HTMLの一部を保存
-            html = page.content()
-            debug_path = os.path.join(OUTPUT_DIR, "a8_debug.html")
-            with open(debug_path, "w", encoding="utf-8") as f:
-                f.write(html)
-            print(f"  デバッグHTML保存: {debug_path}")
-            print(f"  手動でHTMLを確認してセレクタを調整してください")
+        # プログラムカードが描画されるまで待つ
+        try:
+            page.wait_for_selector("h3.pgName", timeout=15000)
+        except Exception:
+            print(f"  プログラムが見つかりません（最終ページ到達と判断）")
             break
 
-        for item in items:
-            text = item.inner_text().strip()
-            if text and len(text) > 2:
-                programs.append({"program_name": text, "asp": "a8"})
-
-        print(f"  {len(items)}件取得（累計: {len(programs)}件）")
-
-        # 次のページへ
-        next_btn = page.query_selector("a.nextPage, .pagination .next a, a[rel='next'], .pager-next a")
-        if next_btn:
-            next_btn.click()
-            time.sleep(2)
-            page.wait_for_load_state("networkidle", timeout=15000)
-            page_num += 1
-        else:
-            print(f"  最終ページ到達（全{page_num}ページ）")
+        # 各プログラムカードから情報を抽出
+        cards = page.query_selector_all("div.pgCard")
+        if not cards:
+            print(f"  カードが0件。終了します。")
             break
+
+        page_count = 0
+        for card in cards:
+            name_el = card.query_selector("h3.pgName")
+            ec_el = card.query_selector("p.ecName")
+            status_el = card.query_selector(".pgStatus")
+
+            program_name = name_el.inner_text().strip() if name_el else ""
+            company_name = ec_el.inner_text().strip() if ec_el else ""
+            status = status_el.inner_text().strip() if status_el else ""
+
+            # テーブルからプログラムID・カテゴリ・成果報酬を取得
+            program_id = ""
+            category = ""
+            reward = ""
+            rows = card.query_selector_all("table tr")
+            for tr in rows:
+                th = tr.query_selector("th")
+                td = tr.query_selector("td")
+                if not th or not td:
+                    continue
+                th_text = th.inner_text().strip()
+                td_text = td.inner_text().strip()
+                if "プログラムID" in th_text:
+                    program_id = td_text
+                elif "カテゴリ" in th_text:
+                    category = td_text
+                elif "成果報酬" in th_text:
+                    reward = td_text
+
+            if program_name:
+                programs.append({
+                    "program_name": program_name,
+                    "company_name": company_name,
+                    "program_id": program_id,
+                    "category": category,
+                    "reward": reward,
+                    "status": status,
+                    "asp": "a8",
+                })
+                page_count += 1
+
+        print(f"  {page_count}件取得（累計: {len(programs)}件）")
+
+        # このページが100件未満なら最終ページ
+        if page_count < 100:
+            print(f"  最終ページ到達（{page_count}件 < 100件）")
+            break
+
+        page_num += 1
+        time.sleep(1)  # サーバー負荷軽減
 
     return programs
 
 
+# --- 他ASPは実際のHTML構造取得後に実装 ---
 def scrape_accesstrade(page):
-    """アクセストレードのプログラム一覧を全ページ取得"""
-    programs = []
-    page_num = 1
-
-    page.goto(ASP_CONFIG["accesstrade"]["search_url"], wait_until="networkidle", timeout=30000)
-    time.sleep(2)
-
-    # 検索ボタンをクリック（全件検索）
-    search_btn = page.query_selector("button[type='submit'], input[type='submit'], .search-btn, #searchBtn")
-    if search_btn:
-        search_btn.click()
-        time.sleep(3)
-        page.wait_for_load_state("networkidle", timeout=15000)
-
-    while True:
-        print(f"  ページ {page_num} 取得中...")
-
-        items = page.query_selector_all(".program-name, .prg-name, td.program a, .search-result .title")
-
-        if not items:
-            html = page.content()
-            debug_path = os.path.join(OUTPUT_DIR, "accesstrade_debug.html")
-            with open(debug_path, "w", encoding="utf-8") as f:
-                f.write(html)
-            print(f"  セレクタが見つかりません。デバッグHTML保存: {debug_path}")
-            break
-
-        for item in items:
-            text = item.inner_text().strip()
-            if text and len(text) > 2:
-                programs.append({"program_name": text, "asp": "accesstrade"})
-
-        print(f"  {len(items)}件取得（累計: {len(programs)}件）")
-
-        next_btn = page.query_selector("a.next, .pagination .next a, a[rel='next']")
-        if next_btn:
-            next_btn.click()
-            time.sleep(2)
-            page.wait_for_load_state("networkidle", timeout=15000)
-            page_num += 1
-        else:
-            break
-
-    return programs
+    print("  アクセストレードは未実装です。HTMLを取得後に対応します。")
+    return []
 
 
 def scrape_afb(page):
-    """afbのプログラム一覧を全ページ取得"""
-    programs = []
-    page_num = 1
-
-    page.goto(ASP_CONFIG["afb"]["search_url"], wait_until="networkidle", timeout=30000)
-    time.sleep(2)
-
-    while True:
-        print(f"  ページ {page_num} 取得中...")
-
-        items = page.query_selector_all(".program-name, .prg-title, .promotion-name, td a.program-link")
-
-        if not items:
-            html = page.content()
-            debug_path = os.path.join(OUTPUT_DIR, "afb_debug.html")
-            with open(debug_path, "w", encoding="utf-8") as f:
-                f.write(html)
-            print(f"  セレクタが見つかりません。デバッグHTML保存: {debug_path}")
-            break
-
-        for item in items:
-            text = item.inner_text().strip()
-            if text and len(text) > 2:
-                programs.append({"program_name": text, "asp": "afb"})
-
-        print(f"  {len(items)}件取得（累計: {len(programs)}件）")
-
-        next_btn = page.query_selector("a.next, .pagination .next a, a[rel='next']")
-        if next_btn:
-            next_btn.click()
-            time.sleep(2)
-            page.wait_for_load_state("networkidle", timeout=15000)
-            page_num += 1
-        else:
-            break
-
-    return programs
+    print("  afbは未実装です。HTMLを取得後に対応します。")
+    return []
 
 
 def scrape_moshimo(page):
-    """もしもアフィリエイトのプログラム一覧を全ページ取得"""
-    programs = []
-    page_num = 1
-
-    page.goto(ASP_CONFIG["moshimo"]["search_url"], wait_until="networkidle", timeout=30000)
-    time.sleep(2)
-
-    while True:
-        print(f"  ページ {page_num} 取得中...")
-
-        items = page.query_selector_all(".promotion-name, .program-title, .shop-name, td.promotion a")
-
-        if not items:
-            html = page.content()
-            debug_path = os.path.join(OUTPUT_DIR, "moshimo_debug.html")
-            with open(debug_path, "w", encoding="utf-8") as f:
-                f.write(html)
-            print(f"  セレクタが見つかりません。デバッグHTML保存: {debug_path}")
-            break
-
-        for item in items:
-            text = item.inner_text().strip()
-            if text and len(text) > 2:
-                programs.append({"program_name": text, "asp": "moshimo"})
-
-        print(f"  {len(items)}件取得（累計: {len(programs)}件）")
-
-        next_btn = page.query_selector("a.next, .pagination .next a, a[rel='next']")
-        if next_btn:
-            next_btn.click()
-            time.sleep(2)
-            page.wait_for_load_state("networkidle", timeout=15000)
-            page_num += 1
-        else:
-            break
-
-    return programs
+    print("  もしもは未実装です。HTMLを取得後に対応します。")
+    return []
 
 
 SCRAPERS = {
@@ -241,51 +138,61 @@ SCRAPERS = {
     "moshimo": scrape_moshimo,
 }
 
+LOGIN_URLS = {
+    "a8": A8_LOGIN_URL,
+    "accesstrade": "https://member.accesstrade.net/atv3/login.html",
+    "afb": "https://www.afi-b.com/login/",
+    "moshimo": "https://af.moshimo.com/af/shop/login",
+}
+
+OUTPUT_FILES = {
+    "a8": "a8_programs.csv",
+    "accesstrade": "accesstrade_programs.csv",
+    "afb": "afb_programs.csv",
+    "moshimo": "moshimo_programs.csv",
+}
+
+FIELDNAMES = ["program_name", "company_name", "program_id", "category", "reward", "status", "asp"]
+
 
 def main():
     parser = argparse.ArgumentParser(description="ASPプログラム一覧スクレイピング")
-    parser.add_argument("--asp", required=True, choices=["a8", "accesstrade", "afb", "moshimo", "all"],
-                        help="対象ASP（allで全ASP）")
+    parser.add_argument("--asp", required=True, choices=["a8", "accesstrade", "afb", "moshimo"],
+                        help="対象ASP")
     args = parser.parse_args()
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
-
-    targets = list(SCRAPERS.keys()) if args.asp == "all" else [args.asp]
+    asp_key = args.asp
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False)
         context = browser.new_context()
         page = context.new_page()
 
-        for asp_key in targets:
-            config = ASP_CONFIG[asp_key]
-            print(f"\n=== {config['name']} ===")
+        login_url = LOGIN_URLS[asp_key]
+        print(f"\n=== {asp_key} ===")
+        print(f"ログインページを開きます: {login_url}")
+        page.goto(login_url, wait_until="domcontentloaded", timeout=30000)
 
-            # ログインページを開く
-            print(f"ログインページを開きます: {config['login_url']}")
-            page.goto(config["login_url"], wait_until="networkidle", timeout=30000)
+        input(f"\n{asp_key} にログインしてください。\nログイン完了後、このターミナルでEnterキーを押してください...")
 
-            input(f"\n{config['name']}にログインしてください。ログイン完了後、Enterキーを押してください...")
+        print("プログラム一覧を取得開始...")
+        scraper = SCRAPERS[asp_key]
+        programs = scraper(page)
 
-            # スクレイピング実行
-            print("プログラム一覧を取得中...")
-            scraper = SCRAPERS[asp_key]
-            programs = scraper(page)
+        if programs:
+            output_path = os.path.join(OUTPUT_DIR, OUTPUT_FILES[asp_key])
+            with open(output_path, "w", encoding="utf-8-sig", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=FIELDNAMES)
+                writer.writeheader()
+                writer.writerows(programs)
+            print(f"\n✅ 完了: {len(programs)}件 → {output_path}")
+            print(f"このCSVファイルをチャットにアップロードしてください。")
+        else:
+            print(f"\n⚠️ 取得できませんでした。")
 
-            if programs:
-                output_path = os.path.join(OUTPUT_DIR, config["output"])
-                with open(output_path, "w", encoding="utf-8", newline="") as f:
-                    writer = csv.DictWriter(f, fieldnames=["program_name", "asp"])
-                    writer.writeheader()
-                    writer.writerows(programs)
-                print(f"\n完了: {len(programs)}件 → {output_path}")
-            else:
-                print(f"\n取得できませんでした。デバッグHTMLを確認してセレクタを調整してください。")
-
+        input("\nEnterキーでブラウザを閉じます...")
         browser.close()
-
-    print("\n=== 全ASP完了 ===")
-    print("取得したCSVをアップロードしてください。VCデータと突合してASP対応表を作成します。")
 
 
 if __name__ == "__main__":
