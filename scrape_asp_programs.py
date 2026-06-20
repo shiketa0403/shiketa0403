@@ -9,7 +9,7 @@ ASPプログラム一覧スクレイピングスクリプト
   4. ログイン後、ターミナルでEnterキーを押す
   5. 自動で全ページ巡回してCSV出力（csv/a8_programs.csv）
 
-対応ASP: a8（実装済み） / accesstrade, afb, moshimo（HTML取得後に対応）
+対応ASP: a8（実装済み） / accesstrade（実装済み） / afb, moshimo（HTML取得後に対応）
 """
 
 import argparse
