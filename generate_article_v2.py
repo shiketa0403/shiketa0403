@@ -509,7 +509,7 @@ def _build_case_info_table(case_name, case_info, screenshot_url=""):
         ("運営会社", case_info.get("company", "-")),
         ("公式サイト", site_link),
         ("ジャンル", case_info.get("genre", "登録")),
-        ("報酬単価", case_info.get("reward", "-")),
+        ("報酬単価", case_info.get("reward", "-") + "円" if case_info.get("reward", "-") != "-" else "-"),
         ("成果条件", case_info.get("condition", "-")),
         ("確定率", "不明"),
         ("CVR", "不明"),
