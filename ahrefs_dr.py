@@ -44,24 +44,44 @@ MAX_RETRY = 4
 RETRY_BACKOFF = [2, 4, 8, 16]
 
 
-def load_domains(input_arg):
-    """ファイル（1行1ドメイン、#コメント可）またはカンマ区切り文字列からドメインを読む"""
-    domains = []
-    try:
-        with open(input_arg, "r", encoding="utf-8") as f:
-            for line in f:
-                d = line.strip().strip(",").strip()
-                if d and not d.startswith("#"):
-                    domains.append(d)
-    except FileNotFoundError:
-        domains = [d.strip() for d in input_arg.split(",") if d.strip()]
+# 裸ドメインらしさの判定（ヘッダ行や空セルを自動で弾く）
+DOMAIN_RE = re.compile(r"^[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+$")
 
-    # スキーム・末尾スラッシュ・パスを落として裸ドメインに正規化
+
+def normalize_domain(raw):
+    """URL/前後空白/引用符を落として裸ドメインに正規化（不正なら空文字）"""
+    if raw is None:
+        return ""
+    d = raw.strip().strip('"').strip("'").strip()
+    if not d or d.startswith("#"):
+        return ""
+    d = re.sub(r"^https?://", "", d, flags=re.IGNORECASE).strip()
+    d = d.split("/")[0].split("?")[0].strip().rstrip(".").lower()
+    return d if DOMAIN_RE.match(d) else ""
+
+
+def load_domains(input_arg):
+    """ファイルまたはカンマ区切り文字列からドメインを読む。
+
+    ファイルは CSV / TXT どちらもOK:
+    - CSV（ヘッダ付き・複数列）でも各行の「1列目」を採用
+    - 1行1ドメインの TXT もそのまま読める
+    - ドメインとして不正な値（ヘッダ名・空欄など）は自動でスキップ
+    """
+    raw_values = []
+    try:
+        with open(input_arg, "r", encoding="utf-8-sig", newline="") as f:
+            for row in csv.reader(f):
+                if row:
+                    raw_values.append(row[0])  # 常に1列目を採用
+    except FileNotFoundError:
+        # ファイルでなければカンマ区切り文字列とみなす
+        raw_values = input_arg.split(",")
+
     cleaned = []
     seen = set()
-    for d in domains:
-        d = re.sub(r"^https?://", "", d).strip().rstrip("/")
-        d = d.split("/")[0].lower()
+    for raw in raw_values:
+        d = normalize_domain(raw)
         if d and d not in seen:
             seen.add(d)
             cleaned.append(d)

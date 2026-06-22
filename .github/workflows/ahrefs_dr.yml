@@ -5,7 +5,11 @@ on:
   workflow_dispatch:
     inputs:
       domains:
-        description: 'ドメインリスト（カンマ区切り）。空欄なら csv/domains.txt から読み込み'
+        description: 'ドメインリスト（カンマ区切り）。少数のとき用'
+        required: false
+        type: string
+      csv_path:
+        description: 'アップロードしたCSV/TXTのパス（例: csv/mylist.csv）。1列目をドメインとして読む'
         required: false
         type: string
       exclude_max:
@@ -34,20 +38,30 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: ドメインリストファイルを作成
+      - name: 入力ソースを決定
         run: |
           INPUT="${{ github.event.inputs.domains }}"
+          CSV_PATH="${{ github.event.inputs.csv_path }}"
           if [ -n "$INPUT" ]; then
-            echo "カンマ区切り入力からドメインリストを作成"
+            echo "カンマ区切り入力を使用"
             echo "$INPUT" | tr ',' '\n' | sed 's/^ *//;s/ *$//' | grep -v '^$' > domains.txt
+            SRC=domains.txt
+          elif [ -n "$CSV_PATH" ]; then
+            if [ ! -f "$CSV_PATH" ]; then
+              echo "ERROR: 指定された $CSV_PATH が見つかりません。先にCSVをリポジトリにアップロード（コミット）してください。"
+              exit 1
+            fi
+            echo "アップロードされたファイルを使用: $CSV_PATH（1列目をドメインとして読む）"
+            SRC="$CSV_PATH"
           elif [ -f csv/domains.txt ]; then
-            echo "csv/domains.txt からドメインリストを読み込み"
-            grep -v '^\s*#' csv/domains.txt | grep -v '^\s*$' > domains.txt
+            echo "csv/domains.txt を使用"
+            SRC=csv/domains.txt
           else
-            echo "ERROR: ドメインが指定されていません。入力欄にカンマ区切りで入力するか、csv/domains.txt を作成してください。"
+            echo "ERROR: ドメインが指定されていません。csv_path にアップロードしたファイルのパスを入れるか、csv/domains.txt を用意してください。"
             exit 1
           fi
-          echo "=== $(wc -l < domains.txt) 件 ==="
+          echo "DOMAIN_SRC=$SRC" >> "$GITHUB_ENV"
+          echo "=== 入力ソース: $SRC ==="
 
       - name: 依存パッケージ
         run: echo "標準ライブラリのみ。追加インストール不要。"
@@ -61,9 +75,9 @@ jobs:
             exit 1
           fi
           if [ "${{ github.event.inputs.test }}" = "true" ]; then
-            python ahrefs_dr.py domains.txt --test
+            python ahrefs_dr.py "$DOMAIN_SRC" --test
           else
-            python ahrefs_dr.py domains.txt \
+            python ahrefs_dr.py "$DOMAIN_SRC" \
               -o ahrefs_dr.csv \
               --passed-output ahrefs_dr_passed.csv \
               --exclude-max "${{ github.event.inputs.exclude_max || '2' }}"
