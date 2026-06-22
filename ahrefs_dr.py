@@ -49,7 +49,10 @@ DOMAIN_RE = re.compile(r"^[a-z0-9]([a-z0-9-]*[a-z0-9])?(\.[a-z0-9]([a-z0-9-]*[a-
 
 
 def normalize_domain(raw):
-    """URL/前後空白/引用符を落として裸ドメインに正規化（不正なら空文字）"""
+    """URL/前後空白/引用符を落として裸ドメインに正規化（不正なら空文字）。
+
+    日本語ドメイン（IDN, 例: 求人.jp）は punycode（xn--...）に変換する。
+    """
     if raw is None:
         return ""
     d = raw.strip().strip('"').strip("'").strip()
@@ -57,7 +60,19 @@ def normalize_domain(raw):
         return ""
     d = re.sub(r"^https?://", "", d, flags=re.IGNORECASE).strip()
     d = d.split("/")[0].split("?")[0].strip().rstrip(".").lower()
-    return d if DOMAIN_RE.match(d) else ""
+    if not d or " " in d:
+        return ""
+    if DOMAIN_RE.match(d):
+        return d
+    # 非ASCII（日本語ドメイン等）は punycode に変換して再判定
+    if any(ord(c) > 127 for c in d) and "." in d:
+        try:
+            puny = d.encode("idna").decode("ascii")
+            if DOMAIN_RE.match(puny):
+                return puny
+        except (UnicodeError, ValueError):
+            return ""
+    return ""
 
 
 def load_domains(input_arg):
@@ -69,12 +84,23 @@ def load_domains(input_arg):
     - ドメインとして不正な値（ヘッダ名・空欄など）は自動でスキップ
     """
     raw_values = []
-    try:
-        with open(input_arg, "r", encoding="utf-8-sig", newline="") as f:
-            for row in csv.reader(f):
-                if row:
-                    raw_values.append(row[0])  # 常に1列目を採用
-    except FileNotFoundError:
+    if os.path.isfile(input_arg):
+        # 文字コード自動判定: UTF-8(BOM可) → Shift-JIS(cp932) の順で試す
+        text = None
+        for enc in ("utf-8-sig", "cp932", "euc-jp"):
+            try:
+                with open(input_arg, "r", encoding=enc, newline="") as f:
+                    text = f.read()
+                break
+            except UnicodeDecodeError:
+                continue
+        if text is None:
+            with open(input_arg, "r", encoding="utf-8", errors="replace", newline="") as f:
+                text = f.read()
+        for row in csv.reader(text.splitlines()):
+            if row:
+                raw_values.append(row[0])  # 常に1列目を採用
+    else:
         # ファイルでなければカンマ区切り文字列とみなす
         raw_values = input_arg.split(",")
 
