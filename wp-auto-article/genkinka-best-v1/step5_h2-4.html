@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>5ch・知恵袋のリアル口コミ</h2>
+
+口コミは5ch・知恵袋・SNSの3経路で傾向を確認できます。
+
+肯定的な声と否定的な声を整理して紹介します。
+
+<h3>5chでの評価傾向</h3>
+
+5chでは換金率の高さを評価する声が目立ちます。
+
+匿名掲示板の性質上、リアルな利用報告が集まりやすいからです。
+
+「平日の昼間に高額申込で98%台の還元」の事例報告が複数件確認できます。
+
+一方で「少額申込は92%帯にとどまった」との不満も投稿されています。
+
+<h3>知恵袋の質問と回答</h3>
+
+知恵袋では10,000円プレゼントの条件に関する質問が多めです。
+
+公式表記と実際の付与条件の差を気にする検索者が多いからです。
+
+回答の多くは「キャンペーン期間と申込額の組合せで決まる」と公式表記との一致を確認する内容。
+
+詐欺被害の集団報告は確認できません。
+
+<h3>SNSでの利用報告</h3>
+
+SNSでは画像付きの振込報告が散見されます。
+
+利用直後の振込完了画面を投稿するユーザーが一定数いるからです。
+
+「深夜申込で翌朝着金」「初回でキャンペーン適用」の報告が見られます。
+
+ただしSNS投稿は個別事例のため、平均的な数字とは限らない点に留意しましょう。
+
+口コミ傾向を踏まえ、自分が利用に向くタイプかを次節で整理します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
