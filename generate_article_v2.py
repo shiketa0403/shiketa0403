@@ -562,6 +562,7 @@ def build_full_article(case_name, case_info, asp_status, asp_descriptions, case_
 
 
 def write_post_csv(title, content, slug, screenshot_url=""):
+    # スクリーンショットは今後の記事では不要なため、screenshot_url は常に空にする
     fieldnames = ["title", "content", "status", "category", "tags", "slug", "screenshot_url"]
     row = {
         "title": title,
@@ -570,7 +571,7 @@ def write_post_csv(title, content, slug, screenshot_url=""):
         "category": "",
         "tags": "",
         "slug": slug,
-        "screenshot_url": screenshot_url,
+        "screenshot_url": "",
     }
     with open(CSV_OUTPUT, "w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames, quoting=csv.QUOTE_ALL)

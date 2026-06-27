@@ -17,7 +17,9 @@
 2. Google検索で案件のASP掲載状況（◯✕）を調査
 3. `generate_article_v2.py` で新構成の記事HTMLを生成
 4. **`csv/post.csv` をヘッダー行＋新規記事のみにリセットして出力**（フォーマット: title,content,status,category,tags,slug,screenshot_url）
-5. commit & push → GitHub Actions が自動で スクリーンショット取得・挿入 → WordPress に投稿（デフォルト: 下書き）
+5. commit & push → GitHub Actions が WordPress に投稿（デフォルト: 下書き）
+
+※ スクリーンショットは今後の記事では不要。`csv/post.csv` の `screenshot_url` 列は常に空にする（`write_post_csv` が自動で空にする）。
 
 ## 主要ファイル
 - `csv/vc_raw_utf8.csv` — バリューコマース案件一覧（データソース）
@@ -35,7 +37,7 @@
 - **csv/post.csv は毎回リセット**: 記事作成時は `csv/post.csv` を必ずヘッダー行＋今回投稿する記事のみにする。過去の記事を残すと重複投稿される
 - **重複投稿防止**: `wp_bulk_post.py` は投稿前にWordPressの既存記事タイトルを確認し、同じタイトルの記事が存在する場合は自動でスキップする
 - **カテゴリは空にする**: `csv/post.csv` の `category` 列は空文字にすること。WordPress側のデフォルトカテゴリ（ASP）が自動適用される。存在しないカテゴリ名を指定すると投稿がスキップされる
-- **screenshot_url列は必須**: `csv/post.csv` には必ず `screenshot_url` 列を含め、案件の公式サイトURL（`広告主サイトURL`）を入れる。GitHub Actionsがスクリーンショットを自動取得し記事に挿入する。スクリーンショット不要の場合は空にする
+- **screenshot_url列は空にする**: 今後の記事ではスクリーンショットは挿入しない。`csv/post.csv` の `screenshot_url` 列は常に空にする（`write_post_csv` が自動で空にするため通常は意識不要）
 
 ---
 
@@ -95,9 +97,8 @@ python generate_article_v2.py --name "LINEMO" --slug "linemo" \
 ---
 
 ## スクリーンショットルール
-- **自動取得**: `csv/post.csv` の `screenshot_url` 列に対象サイトURLを指定 → GitHub Actionsが自動挿入
-- **挿入箇所**: `<h2>{{案件名}}のアフィリエイト情報</h2>` の直後、テーブルの前
-- **取得失敗時**: スクリーンショットなしで記事を投稿する
+- **今後の記事では使用しない**: スクリーンショットは挿入しない。`csv/post.csv` の `screenshot_url` 列は常に空にする
+- 仕組み自体（GitHub Actions の自動取得・挿入）は残してあるが、`write_post_csv` が `screenshot_url` を常に空で出力するため発動しない
 
 ---
 
