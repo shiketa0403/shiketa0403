@@ -44,6 +44,15 @@ ASP_DISPLAY_NAMES = {
     "moshimo": "もしもアフィリエイト",
 }
 
+# リード文内のASPアフィリエイトリンク（掲載ASPのみ表示）
+ASP_LEAD_LINKS = {
+    "a8": "https://px.a8.net/svt/ejp?a8mat=3BG026+FXXVXU+0K+10A5LT",
+    "valuecommerce": "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3548721&amp;amp;pid=892566121",
+    "accesstrade": "https://h.accesstrade.net/sp/cc?rk=0100nldw00kolw",
+    "afb": "https://t.afi-b.com/visit.php?a=l44x-c11095x&amp;p=T779612O",
+    "moshimo": "//af.moshimo.com/af/c/click?a_id=4207547&amp;p_id=1&amp;pc_id=1&amp;pl_id=82635",
+}
+
 ASP_TABLE_DATA = [
     {
         "key": "a8",
@@ -537,28 +546,35 @@ def _build_case_info_table(case_name, case_info, screenshot_url=""):
     )
 
 
+def _build_lead_text(case_name, available):
+    """掲載ASPのみをアフィリエイトリンク付きで並べたリード文を生成。
+    st-mymarker-s は末尾ASP以外を囲む（末尾ASPは枠外）。"""
+    links = [
+        f'<a href="{ASP_LEAD_LINKS[k]}" target="_blank" rel="noopener nofollow">{ASP_DISPLAY_NAMES[k]}</a>'
+        for k in available
+    ]
+    if len(links) == 1:
+        inner = f'<span class="st-mymarker-s">{links[0]}</span>'
+    else:
+        inner = f'<span class="st-mymarker-s">{"・".join(links[:-1])}</span>・{links[-1]}'
+    return f'{case_name}は{inner}でアフィリエイトできます。'
+
+
 def build_full_article(case_name, case_info, asp_status, asp_descriptions, case_description, screenshot_url=""):
     available = [k for k in ["a8", "valuecommerce", "accesstrade", "afb", "moshimo"] if asp_status.get(k)]
-    asp_names = get_available_asp_names(asp_status)
 
-    if len(asp_names) == 1:
-        lead_text = f'{case_name}は<span class="st-mymarker-s">{asp_names[0]}</span>でアフィリエイトできます。'
-    else:
-        lead_text = f'{case_name}は<span class="st-mymarker-s">{asp_names[0]}</span>・{"・".join(asp_names[1:])}でアフィリエイトできます。'
-
-    section1 = lead_text
+    section1 = _build_lead_text(case_name, available)
 
     last_asp = available[-1]
     last_shortcode = f'[st_af id="{ASP_SHORTCODE_IDS[last_asp]}"]'
 
-    section3 = (
+    section2 = (
         f'<h2>{case_name}のアフィリエイト情報</h2>\n'
-        + _build_case_info_table(case_name, case_info, screenshot_url) + "\n"
         + case_description + "\n"
         + last_shortcode
     )
 
-    return "\n\n".join([section1, section3])
+    return "\n\n".join([section1, section2])
 
 
 def write_post_csv(title, content, slug, screenshot_url=""):
