@@ -21,6 +21,7 @@
 
 import csv
 import os
+import random
 import re
 
 CSV_SOURCE = os.path.join(os.path.dirname(__file__), "csv", "vc_raw_utf8.csv")
@@ -30,10 +31,10 @@ IMG_BASE = "https://www.civichat.jp/wp-content/uploads/2026/03"
 
 ASP_SHORTCODE_IDS = {
     "valuecommerce": "2784",
-    "a8": "4113",
-    "accesstrade": "4115",
-    "afb": "4122",
-    "moshimo": "4124",
+    "a8": "3210",
+    "accesstrade": "3212",
+    "afb": "3214",
+    "moshimo": "3216",
 }
 
 ASP_DISPLAY_NAMES = {
@@ -565,8 +566,9 @@ def build_full_article(case_name, case_info, asp_status, asp_descriptions, case_
 
     section1 = _build_lead_text(case_name, available)
 
-    last_asp = available[-1]
-    last_shortcode = f'[st_af id="{ASP_SHORTCODE_IDS[last_asp]}"]'
+    # 末尾ショートコード: 掲載ASPが複数ある場合はランダムで1つ選ぶ
+    chosen_asp = random.choice(available)
+    last_shortcode = f'[st_af id="{ASP_SHORTCODE_IDS[chosen_asp]}"]'
 
     section2 = (
         f'<h2>{case_name}のアフィリエイト情報</h2>\n'
