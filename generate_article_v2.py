@@ -546,12 +546,7 @@ def build_full_article(case_name, case_info, asp_status, asp_descriptions, case_
     else:
         lead_text = f'{case_name}は<span class="st-mymarker-s">{asp_names[0]}</span>・{"・".join(asp_names[1:])}でアフィリエイトできます。'
 
-    section1 = lead_text + "\n" + _build_asp_comparison_table(asp_status)
-
-    section2 = (
-        f'<h2>{case_name}をアフィリエイトできるASP</h2>\n'
-        + asp_descriptions
-    )
+    section1 = lead_text
 
     last_asp = available[-1]
     last_shortcode = f'[st_af id="{ASP_SHORTCODE_IDS[last_asp]}"]'
@@ -563,7 +558,7 @@ def build_full_article(case_name, case_info, asp_status, asp_descriptions, case_
         + last_shortcode
     )
 
-    return "\n\n".join([section1, section2, section3])
+    return "\n\n".join([section1, section3])
 
 
 def write_post_csv(title, content, slug, screenshot_url=""):
