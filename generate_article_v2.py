@@ -570,6 +570,7 @@ def build_full_article(case_name, case_info, asp_status, asp_descriptions, case_
 
     section2 = (
         f'<h2>{case_name}のアフィリエイト情報</h2>\n'
+        + _build_case_info_table(case_name, case_info, screenshot_url) + "\n"
         + case_description + "\n"
         + last_shortcode
     )
