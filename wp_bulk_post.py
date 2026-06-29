@@ -92,7 +92,9 @@ def get_existing_titles():
     for status in ["publish", "draft", "pending", "private"]:
         page = 1
         while True:
-            posts = api_request(f"posts?per_page=100&page={page}&status={status}")
+            # exit_on_error=False: 記事数がちょうど100の倍数のとき、次ページ要求で
+            # WordPressが返す400(rest_post_invalid_page_number)をNoneとして受け、break する
+            posts = api_request(f"posts?per_page=100&page={page}&status={status}", exit_on_error=False)
             if not posts:
                 break
             for p in posts:
@@ -109,7 +111,8 @@ def get_existing_posts_map():
     for status in ["publish", "draft", "pending", "private"]:
         page = 1
         while True:
-            posts = api_request(f"posts?per_page=100&page={page}&status={status}")
+            # exit_on_error=False: ページ超過時の400をNoneとして受け、break する
+            posts = api_request(f"posts?per_page=100&page={page}&status={status}", exit_on_error=False)
             if not posts:
                 break
             for p in posts:

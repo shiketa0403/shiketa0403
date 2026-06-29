@@ -35,7 +35,7 @@ def get_auth_header():
     return {"Authorization": f"Basic {token}"}
 
 
-def api_request(endpoint, method="GET", data=None):
+def api_request(endpoint, method="GET", data=None, exit_on_error=True):
     url = f"{WP_CONFIG['site_url']}/wp-json/wp/v2/{endpoint}"
     headers = get_auth_header()
     headers["Content-Type"] = "application/json"
@@ -51,6 +51,9 @@ def api_request(endpoint, method="GET", data=None):
             error_body = e.read().decode("utf-8", errors="replace")
         except Exception:
             error_body = "(レスポンス読み取り不可)"
+        # exit_on_error=False のときは終了せず None を返す（ページング超過の検知などに使う）
+        if not exit_on_error:
+            return None
         print(f"エラー {e.code}: {error_body}", file=sys.stderr)
         sys.exit(1)
 
