@@ -123,18 +123,43 @@ class BrowserFetcher:
         self._browser = self._pw.chromium.launch(headless=not headed)
         self._context = self._browser.new_context(locale="ja-JP", bypass_csp=True)
         self.page = self._context.new_page()
-        resp = self.page.goto(base_url, wait_until="domcontentloaded", timeout=30000)
-        status = resp.status if resp else 0
+        self.base_url = base_url
+        status = self._goto(base_url)
+        if status == 202:
+            # AWS WAF の JavaScript チャレンジ。ブラウザが自動解決するのを待つ
+            print("WAFのJavaScriptチャレンジを検出（HTTP 202）。自動解決を待ちます...")
+            print("※ブラウザ画面にパズル等の確認が表示された場合は手動で操作してください")
+            for _ in range(5):
+                self.page.wait_for_timeout(6000)
+                status = self._goto(base_url)
+                if status != 202:
+                    break
         print(f"ブラウザでトップページを取得: HTTP {status}")
-        if status >= 400:
+        if status >= 400 or status == 202:
             print(f"ERROR: 実ブラウザでも HTTP {status} で拒否されました。", file=sys.stderr)
             print(f"  通常のブラウザで {base_url} が開けるか確認してください。", file=sys.stderr)
-            print("  開ける場合は --headed を付けて再実行してみてください。", file=sys.stderr)
+            if not headed:
+                print("  開ける場合は --headed を付けて再実行してみてください。", file=sys.stderr)
             self.close()
             sys.exit(1)
 
+    def _goto(self, url):
+        resp = self.page.goto(url, wait_until="domcontentloaded", timeout=30000)
+        return resp.status if resp else 0
+
+    def _refresh_token(self):
+        """WAFトークン失効時にブラウザ遷移で解き直す"""
+        for _ in range(3):
+            if self._goto(self.base_url) == 200:
+                return True
+            self.page.wait_for_timeout(6000)
+        return False
+
     def fetch_text(self, url):
         r = self.page.evaluate(self._JS_FETCH_TEXT, url)
+        if r["status"] == 202:  # WAFトークン失効 → 解き直して1回だけ再試行
+            self._refresh_token()
+            r = self.page.evaluate(self._JS_FETCH_TEXT, url)
         return r["status"], r.get("ct", ""), r.get("text", "") or r.get("error", "")
 
     def check_urls(self, urls):
@@ -148,6 +173,16 @@ class BrowserFetcher:
             if done % 80 < BROWSER_BATCH or done == len(urls):
                 print(f"内部リンク確認済み {done}/{len(urls)}")
             time.sleep(0.3)
+        # WAFチャレンジ応答(202)が残っていればトークンを取り直して再確認
+        pending = [u for u, (s, _) in results.items() if s == 202]
+        if pending:
+            print(f"WAFチャレンジ応答が{len(pending)}件 → トークン再取得して再確認")
+            self._refresh_token()
+            for i in range(0, len(pending), BROWSER_BATCH):
+                chunk = pending[i:i + BROWSER_BATCH]
+                for u, status, err in self.page.evaluate(self._JS_CHECK_BATCH, chunk):
+                    results[u] = (status, err)
+                time.sleep(0.3)
         return results
 
     def close(self):
@@ -331,6 +366,9 @@ def main():
             for u, (status, err) in browser_results.items():
                 if status == -1:
                     fallback.append(u)  # ブラウザ内fetch不可（http混在等）→ requestsで再確認
+                    continue
+                if status == 202:
+                    judged[u] = ("要確認", 202, "WAFチャレンジ応答。ブラウザで手動確認推奨")
                     continue
                 verdict = verdict_from_status(status)
                 judged[u] = (None, status, "") if verdict is None else (verdict[0], status, verdict[1])
