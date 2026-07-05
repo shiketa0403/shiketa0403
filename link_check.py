@@ -120,22 +120,19 @@ class BrowserFetcher:
             print("  python -m playwright install chromium", file=sys.stderr)
             sys.exit(1)
         self._pw = sync_playwright().start()
-        self._browser = self._pw.chromium.launch(headless=not headed)
+        # AutomationControlled を無効化して navigator.webdriver を隠す
+        # （WAFのBot判定はこのフラグを強いシグナルとして使う）
+        self._browser = self._pw.chromium.launch(
+            headless=not headed,
+            args=["--disable-blink-features=AutomationControlled"],
+        )
         self._context = self._browser.new_context(locale="ja-JP", bypass_csp=True)
         self.page = self._context.new_page()
         self.base_url = base_url
-        status = self._goto(base_url)
-        if status == 202:
-            # AWS WAF の JavaScript チャレンジ。ブラウザが自動解決するのを待つ
-            print("WAFのJavaScriptチャレンジを検出（HTTP 202）。自動解決を待ちます...")
-            print("※ブラウザ画面にパズル等の確認が表示された場合は手動で操作してください")
-            for _ in range(5):
-                self.page.wait_for_timeout(6000)
-                status = self._goto(base_url)
-                if status != 202:
-                    break
+        print("トップページにアクセスしています...")
+        status, _, _ = self._nav_fetch(base_url, need_text=False)
         print(f"ブラウザでトップページを取得: HTTP {status}")
-        if status >= 400 or status == 202:
+        if status != 200:
             print(f"ERROR: 実ブラウザでも HTTP {status} で拒否されました。", file=sys.stderr)
             print(f"  通常のブラウザで {base_url} が開けるか確認してください。", file=sys.stderr)
             if not headed:
@@ -143,9 +140,21 @@ class BrowserFetcher:
             self.close()
             sys.exit(1)
 
-    def _goto(self, url):
-        resp = self.page.goto(url, wait_until="domcontentloaded", timeout=30000)
-        return resp.status if resp else 0
+    def _wait_for_captcha_solved(self):
+        """CAPTCHA画面が人手で解かれるのを最大3分待つ"""
+        print(">>> ブラウザ画面にCAPTCHA（人間確認）が表示されています。")
+        print(">>> 画面のパズルを解いてください。解けるまで最大3分待ちます...")
+        for _ in range(36):
+            self.page.wait_for_timeout(5000)
+            try:
+                title = self.page.title() or ""
+            except Exception:
+                continue
+            if "Human Verification" not in title and "確認" != title:
+                print(">>> CAPTCHA解決を確認。続行します")
+                return True
+        print(">>> 3分待ちましたが解決を確認できませんでした。続行します")
+        return False
 
     def _nav_fetch(self, url, need_text=True):
         """ブラウザの画面遷移でURLを取得（WAFチャレンジは遷移中に自動解決される）。
@@ -153,8 +162,7 @@ class BrowserFetcher:
         戻り値: (status, content_type, text)。ナビゲーション不可は status=-2、
         text にエラー内容。ダウンロード開始 = 実体あり = 200 扱い。
         """
-        hinted = False
-        for attempt in range(3):
+        for attempt in range(4):
             try:
                 resp = self.page.goto(url, wait_until="domcontentloaded", timeout=30000)
             except Exception as e:
@@ -164,12 +172,13 @@ class BrowserFetcher:
                 return -2, "", msg[:150]
             if resp is None:
                 return -2, "", "no response"
-            if resp.status in (202, 405) and attempt < 2:
-                # 202: JSチャレンジ（自動解決を待つ） / 405: CAPTCHA（手動解決が必要）
-                if resp.status == 405 and not hinted:
-                    print("※ブラウザ画面にCAPTCHA（パズル）が表示されていたら手動で解いてください")
-                    hinted = True
-                self.page.wait_for_timeout(8000 if resp.status == 405 else 4000)
+            if resp.status == 202 and attempt < 3:
+                # JSチャレンジ: ブラウザの自動解決を待って再訪問
+                self.page.wait_for_timeout(5000)
+                continue
+            if resp.status == 405 and attempt < 3:
+                # CAPTCHA: 人手での解決を待ってから再訪問（トークン取得後は通る）
+                self._wait_for_captcha_solved()
                 continue
             ct = resp.headers.get("content-type", "")
             text = ""
@@ -209,6 +218,7 @@ class BrowserFetcher:
                 results[u] = (status, err if status < 0 else "")
                 if n % 25 == 0 or n == len(pending):
                     print(f"再確認 {n}/{len(pending)}")
+                time.sleep(0.5)  # アクセス頻度を抑えてWAFの再警戒を防ぐ
         return results
 
     def close(self):
