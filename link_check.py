@@ -38,7 +38,11 @@ NEEDS_REVIEW_STATUS = {401, 403, 405, 406, 429, 999}
 SKIP_SCHEMES = ("mailto:", "tel:", "javascript:", "data:", "#")
 
 session = requests.Session()
-session.headers.update({"User-Agent": USER_AGENT, "Accept-Language": "ja,en;q=0.8"})
+session.headers.update({
+    "User-Agent": USER_AGENT,
+    "Accept-Language": "ja,en;q=0.8",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+})
 
 
 def fetch(url, stream=False):
@@ -53,13 +57,15 @@ def get_sitemap_urls(base_url):
         try:
             r = fetch(sitemap_url)
             if r.status_code != 200 or b"<" not in r.content[:100]:
+                print(f"サイトマップ候補 {sitemap_url}: HTTP {r.status_code}")
                 continue
             urls = parse_sitemap(r.content, depth=0)
             if urls:
                 print(f"サイトマップ検出: {sitemap_url}（{len(urls)}ページ）")
                 return urls
-        except requests.RequestException:
-            continue
+            print(f"サイトマップ候補 {sitemap_url}: URL抽出0件")
+        except requests.RequestException as e:
+            print(f"サイトマップ候補 {sitemap_url}: 取得エラー ({str(e)[:150]})")
     return []
 
 
@@ -91,13 +97,21 @@ def crawl_internal_pages(base_url, max_pages):
     seen = {base_url}
     queue = [base_url]
     pages = []
+    errors_shown = 0
     while queue and len(pages) < max_pages:
         url = queue.pop(0)
         try:
             r = fetch(url)
             if r.status_code != 200 or "text/html" not in r.headers.get("Content-Type", ""):
+                if errors_shown < 10:
+                    print(f"クロール対象外 HTTP {r.status_code} "
+                          f"Content-Type={r.headers.get('Content-Type', '(なし)')}: {url}")
+                    errors_shown += 1
                 continue
-        except requests.RequestException:
+        except requests.RequestException as e:
+            if errors_shown < 10:
+                print(f"クロール取得エラー: {url} ({str(e)[:150]})")
+                errors_shown += 1
             continue
         pages.append(url)
         soup = BeautifulSoup(r.text, "html.parser")
