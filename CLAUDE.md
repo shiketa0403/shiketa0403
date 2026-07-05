@@ -11,7 +11,7 @@
 - `.github/workflows/wp_post.yml` — `csv/post.csv` を WordPress に投稿（civichat.jp 向け）
 - `.github/workflows/wp_admin.yml` — 管理操作（カテゴリ一覧・削除、記事一覧・削除）
 - `.github/workflows/sharebatake_article.yml` — シェア畑（sharebatake.com）を区/市単位でスクレイピング → 1記事生成 → agriwarriors.jp に draft 投稿（手動実行）
-- `.github/workflows/link_check.yml` — サイト内リンク切れチェック（手動実行）。サイトマップから全ページを取得し `<a>`/`<img>` の生存確認 → 結果を `csv/broken_links.csv` にコミット＋アーティファクト保存。入力: `site_url`（既定 civichat.jp）、`internal_only`、`max_pages`。実体は `link_check.py`
+- `.github/workflows/link_check.yml` — サイト内リンク切れチェック（手動実行）。サイトマップから全ページを取得し `<a>`/`<img>` の生存確認 → 結果を `csv/broken_links.csv` にコミット＋アーティファクト保存。入力: `site_url`（既定 civichat.jp）、`internal_only`、`max_pages`。実体は `link_check.py`。**注意**: 政府系サイト（meti.go.jp 等）は海外IP＋非ブラウザを403で遮断するため Actions からは実行不可 → 日本国内のPCで `--browser` オプション（Playwright実ブラウザ経由）を付けてローカル実行する
 
 ## 記事作成の流れ
 1. `csv/vc_raw_utf8.csv`（バリューコマース案件一覧）から案件情報を取得
