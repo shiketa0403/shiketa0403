@@ -1,10 +1,10 @@
 # 運用ルール
 
 ## WordPress投稿
-- WordPress投稿は **GitHub Actions経由** で行う（この環境から直接 garage-xxx.jp に接続できない）
+- WordPress投稿は **GitHub Actions経由** で行う（この環境から直接 gooq.jp に接続できない）
 - `csv/post.csv` をpush → `wp_post.yml` が自動実行される（投稿対象はこの1ファイルのみ）
 - 手動実行も可能（GitHub Actions の workflow_dispatch）
-- 投稿先サイト: https://www.garage-xxx.jp
+- 投稿先サイト: https://gooq.jp
 - 認証情報は GitHub Secrets に保存済み（WP_USERNAME, WP_APP_PASSWORD）
 
 ## ワークフロー
@@ -32,7 +32,7 @@
 - `ai_generator.py` — Claude APIによるジャンル判定・紹介文・スラッグ生成
 
 ## 注意事項
-- この環境のネットワークはプロキシ制限があり、garage-xxx.jp への直接接続は不可
+- この環境のネットワークはプロキシ制限があり、gooq.jp への直接接続は不可
 - 記事の投稿・確認・削除はすべて GitHub Actions 経由で実行すること
 - **csv/post.csv は毎回リセット**: 記事作成時は `csv/post.csv` を必ずヘッダー行＋今回投稿する記事のみにする。過去の記事を残すと重複投稿される
 - **重複投稿防止**: `wp_bulk_post.py` は投稿前にWordPressの既存記事タイトルを確認し、同じタイトルの記事が存在する場合は自動でスキップする
