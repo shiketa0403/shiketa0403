@@ -1,0 +1,76 @@
+name: リンク切れチェック
+
+on:
+  workflow_dispatch:
+    inputs:
+      site_url:
+        description: '対象サイトURL'
+        required: false
+        default: 'https://civichat.jp'
+        type: string
+      internal_only:
+        description: '内部リンクのみ確認する'
+        required: false
+        default: false
+        type: boolean
+      max_pages:
+        description: '確認する最大ページ数'
+        required: false
+        default: '1000'
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 依存パッケージをインストール
+        run: pip install requests beautifulsoup4
+
+      - name: リンク切れをチェック
+        run: |
+          ARGS=""
+          if [ "${{ github.event.inputs.internal_only }}" = "true" ]; then
+            ARGS="--internal-only"
+          fi
+          python link_check.py "${{ github.event.inputs.site_url || 'https://civichat.jp' }}" \
+            -o broken_links.csv \
+            --max-pages "${{ github.event.inputs.max_pages || '1000' }}" \
+            $ARGS
+        timeout-minutes: 180
+
+      - name: 結果CSVを表示
+        if: always()
+        run: |
+          if [ -f broken_links.csv ]; then
+            echo "=== リンク切れ・要確認一覧 ==="
+            cat broken_links.csv
+          fi
+
+      - name: 結果CSVをアーティファクトとして保存
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: broken-links
+          path: broken_links.csv
+          if-no-files-found: ignore
+
+      - name: 結果CSVをリポジトリにコミット
+        if: always()
+        run: |
+          if [ -f broken_links.csv ]; then
+            cp broken_links.csv csv/broken_links.csv
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add csv/broken_links.csv
+            git diff --cached --quiet || git commit -m "リンク切れチェック結果を更新"
+            git push
+          fi
