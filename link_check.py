@@ -147,19 +147,45 @@ class BrowserFetcher:
         resp = self.page.goto(url, wait_until="domcontentloaded", timeout=30000)
         return resp.status if resp else 0
 
-    def _refresh_token(self):
-        """WAFトークン失効時にブラウザ遷移で解き直す"""
-        for _ in range(3):
-            if self._goto(self.base_url) == 200:
-                return True
-            self.page.wait_for_timeout(6000)
-        return False
+    def _nav_fetch(self, url, need_text=True):
+        """ブラウザの画面遷移でURLを取得（WAFチャレンジは遷移中に自動解決される）。
+
+        戻り値: (status, content_type, text)。ナビゲーション不可は status=-2、
+        text にエラー内容。ダウンロード開始 = 実体あり = 200 扱い。
+        """
+        hinted = False
+        for attempt in range(3):
+            try:
+                resp = self.page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            except Exception as e:
+                msg = str(e)
+                if "Download is starting" in msg:
+                    return 200, "application/octet-stream", ""
+                return -2, "", msg[:150]
+            if resp is None:
+                return -2, "", "no response"
+            if resp.status in (202, 405) and attempt < 2:
+                # 202: JSチャレンジ（自動解決を待つ） / 405: CAPTCHA（手動解決が必要）
+                if resp.status == 405 and not hinted:
+                    print("※ブラウザ画面にCAPTCHA（パズル）が表示されていたら手動で解いてください")
+                    hinted = True
+                self.page.wait_for_timeout(8000 if resp.status == 405 else 4000)
+                continue
+            ct = resp.headers.get("content-type", "")
+            text = ""
+            if need_text and resp.status < 400 and ("html" in ct or "xml" in ct):
+                try:
+                    text = resp.text()
+                except Exception:
+                    text = self.page.content()
+            return resp.status, ct, text
+        return resp.status, resp.headers.get("content-type", ""), ""
 
     def fetch_text(self, url):
         r = self.page.evaluate(self._JS_FETCH_TEXT, url)
-        if r["status"] == 202:  # WAFトークン失効 → 解き直して1回だけ再試行
-            self._refresh_token()
-            r = self.page.evaluate(self._JS_FETCH_TEXT, url)
+        if r["status"] in (202, 405):
+            # ページ内fetchはWAFにチャレンジされやすい → 画面遷移で取得し直す
+            return self._nav_fetch(url)
         return r["status"], r.get("ct", ""), r.get("text", "") or r.get("error", "")
 
     def check_urls(self, urls):
@@ -173,16 +199,16 @@ class BrowserFetcher:
             if done % 80 < BROWSER_BATCH or done == len(urls):
                 print(f"内部リンク確認済み {done}/{len(urls)}")
             time.sleep(0.3)
-        # WAFチャレンジ応答(202)が残っていればトークンを取り直して再確認
-        pending = [u for u, (s, _) in results.items() if s == 202]
+        # WAFチャレンジ応答(202/405)は画面遷移で1件ずつ確認し直す（確実だが低速）
+        pending = [u for u, (s, _) in results.items() if s in (202, 405)]
         if pending:
-            print(f"WAFチャレンジ応答が{len(pending)}件 → トークン再取得して再確認")
-            self._refresh_token()
-            for i in range(0, len(pending), BROWSER_BATCH):
-                chunk = pending[i:i + BROWSER_BATCH]
-                for u, status, err in self.page.evaluate(self._JS_CHECK_BATCH, chunk):
-                    results[u] = (status, err)
-                time.sleep(0.3)
+            print(f"WAFチャレンジ応答が{len(pending)}件 → ブラウザ遷移で1件ずつ再確認します"
+                  f"（1件あたり1〜2秒かかります）")
+            for n, u in enumerate(pending, 1):
+                status, _, err = self._nav_fetch(u, need_text=False)
+                results[u] = (status, err if status < 0 else "")
+                if n % 25 == 0 or n == len(pending):
+                    print(f"再確認 {n}/{len(pending)}")
         return results
 
     def close(self):
@@ -229,7 +255,7 @@ def parse_sitemap(text, depth, fetch_text):
     return urls
 
 
-def crawl_internal_pages(base_url, max_pages, fetch_text):
+def crawl_internal_pages(base_url, max_pages, fetch_text, html_cache=None):
     """サイトマップが無い場合のフォールバック: 内部リンクをBFSでクロール"""
     host = urlparse(base_url).netloc
     seen = {base_url}
@@ -245,6 +271,8 @@ def crawl_internal_pages(base_url, max_pages, fetch_text):
                 errors_shown += 1
             continue
         pages.append(url)
+        if html_cache is not None:
+            html_cache[url] = text
         if len(pages) % 25 == 0:
             print(f"クロール中... {len(pages)}/{max_pages}ページ目")
         soup = BeautifulSoup(text, "html.parser")
@@ -324,10 +352,11 @@ def main():
         fetch_text = requests_fetch_text
 
     try:
+        html_cache = {}
         pages = get_sitemap_urls(base_url, fetch_text)
         if not pages:
             print("サイトマップが見つからないため内部リンクをクロールします")
-            pages = crawl_internal_pages(base_url, args.max_pages, fetch_text)
+            pages = crawl_internal_pages(base_url, args.max_pages, fetch_text, html_cache)
         pages = pages[: args.max_pages]
         if not pages:
             print("ERROR: ページを1件も取得できませんでした", file=sys.stderr)
@@ -337,7 +366,10 @@ def main():
         # 各ページからリンクを収集（リンクURL -> [(掲載ページ, 種別, テキスト), ...]）
         link_sources = {}
         for i, page_url in enumerate(pages, 1):
-            status, ct, text = fetch_text(page_url)
+            if page_url in html_cache:
+                status, text = 200, html_cache[page_url]
+            else:
+                status, ct, text = fetch_text(page_url)
             if status != 200:
                 print(f"[{i}/{len(pages)}] ページ取得失敗 {status}: {page_url}")
                 link_sources.setdefault(page_url, []).append((page_url, "ページ本体", ""))
@@ -367,8 +399,14 @@ def main():
                 if status == -1:
                     fallback.append(u)  # ブラウザ内fetch不可（http混在等）→ requestsで再確認
                     continue
-                if status == 202:
-                    judged[u] = ("要確認", 202, "WAFチャレンジ応答。ブラウザで手動確認推奨")
+                if status == -2:
+                    if "Timeout" in err:
+                        judged[u] = ("要確認", "", f"タイムアウト: {err}")
+                    else:
+                        judged[u] = ("リンク切れ", "", f"接続不可: {err}")
+                    continue
+                if status in (202, 405):
+                    judged[u] = ("要確認", status, "WAFチャレンジ応答。ブラウザで手動確認推奨")
                     continue
                 verdict = verdict_from_status(status)
                 judged[u] = (None, status, "") if verdict is None else (verdict[0], status, verdict[1])
