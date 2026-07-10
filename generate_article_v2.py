@@ -459,16 +459,20 @@ def generate_asp_descriptions(case_name, asp_status, case_info):
 
 
 def generate_case_description(case_name, case_info, asp_names):
-    """案件説明文を組み立てる。
-    汎用テンプレ文は使わず、事実ベースの program_content を全文そのまま本文に使う。
-    program_content は WebSearch 等で確認した事実のみで書くこと（推測禁止）。
+    """案件説明文を返す。
+    program_content（<p>ブロック・句点ごと空行・装飾込みの完成形。報酬文・提携ASP文・CTAまで
+    含めて書く）をそのまま説明文として使う。program_content は WebSearch で確認した事実のみ・
+    その広告固有の内容で書くこと（推測・汎用paddingは禁止）。
+    program_content 未指定時のみ、最小限のフォールバック文を自動生成する。
     """
+    program_content = (case_info.get("program_content", "") or "").strip()
+    if program_content:
+        return program_content
+
+    # --- フォールバック（program_content 未指定時のみ） ---
     asp_text = "・".join(asp_names)
     reward = case_info.get("reward", "-")
     condition = case_info.get("condition", "-")
-    program_content = (case_info.get("program_content", "") or "").strip()
-
-    # 報酬表示: %や円で終わるならそのまま、数値のみなら「円」を付ける
     if not reward or reward == "-":
         reward_disp = "-"
     elif reward.endswith("%") or reward.endswith("円"):
@@ -476,30 +480,17 @@ def generate_case_description(case_name, case_info, asp_names):
     else:
         reward_disp = reward + "円"
 
-    parts = []
-
-    # 本文（事実ベース。program_content をそのまま全文使用。汎用の定型文は入れない）
-    # program_content は <p>ブロック・句点ごとの空行・装飾(hutoaka/strong)込みの完成形で書くこと。
-    if program_content:
-        parts.append(program_content)
-
-    # 報酬・成果条件（1文・装飾付き）
-    parts.append(
-        f'<p>アフィリエイトとしては、<span class="st-mymarker-s">報酬単価{reward_disp}</span>で、'
-        f'成果条件は<strong>{condition}</strong>です。</p>'
-    )
-
-    # 提携ASP + CTA
     if len(asp_names) == 1:
         asp_disp = f'<span class="hutoaka">{asp_names[0]}</span>'
     else:
         asp_disp = asp_text
-    parts.append(
-        f'<p>{case_name}は{asp_disp}で提携できます。\n\n'
-        f'興味がある方は、まずASPに無料登録して<strong>提携申請</strong>から始めましょう。</p>'
-    )
 
-    return "\n\n".join(parts)
+    return "\n\n".join([
+        f'<p>アフィリエイトとしては、<span class="st-mymarker-s">報酬単価{reward_disp}</span>で、'
+        f'成果条件は<strong>{condition}</strong>です。</p>',
+        f'<p>{case_name}は{asp_disp}で提携できます。\n\n'
+        f'興味がある方は、まずASPに無料登録して<strong>提携申請</strong>から始めましょう。</p>',
+    ])
 
 
 def _build_case_info_table(case_name, case_info, screenshot_url=""):
