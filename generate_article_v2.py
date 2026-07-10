@@ -514,12 +514,21 @@ def _build_case_info_table(case_name, case_info, screenshot_url=""):
         if site_url else "-"
     )
 
+    # 報酬単価の表示: 数値のみなら「円」を付ける。%や「円」を含む場合はそのまま。
+    _reward = case_info.get("reward", "-")
+    if not _reward or _reward == "-":
+        reward_disp = "-"
+    elif _reward.endswith("%") or _reward.endswith("円"):
+        reward_disp = _reward
+    else:
+        reward_disp = _reward + "円"
+
     info_items = [
         ("案件名", case_name),
         ("運営会社", case_info.get("company", "-")),
         ("公式サイト", site_link),
         ("ジャンル", case_info.get("genre", "登録")),
-        ("報酬単価", case_info.get("reward", "-") + "円" if case_info.get("reward", "-") != "-" else "-"),
+        ("報酬単価", reward_disp),
         ("成果条件", case_info.get("condition", "-")),
         ("確定率", "不明"),
         ("CVR", "不明"),
