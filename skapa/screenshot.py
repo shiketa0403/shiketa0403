@@ -101,10 +101,12 @@ def parse_service_matrix(slug: str) -> dict[str, str]:
     result: dict[str, str] = {}
 
     # サービス名の判定パターン
+    # 注意: 「auひかり」を「ひかりTV」より先に評価する（「auひかりTV」が
+    # r"ひかりTV" に部分一致して誤判定するのを防ぐ）。dictは挿入順を保持する。
     service_patterns = {
-        "スカパー": re.compile(r"スカパー"),
-        "ひかりTV": re.compile(r"ひかりTV", re.IGNORECASE),
         "auひかりTV": re.compile(r"au\s*ひかり", re.IGNORECASE),
+        "ひかりTV": re.compile(r"ひかりTV", re.IGNORECASE),
+        "スカパー": re.compile(r"スカパー"),
         "J:COM": re.compile(r"J\s*[:：]\s*COM", re.IGNORECASE),
     }
     # URLを拾うパターン
