@@ -1,7 +1,9 @@
 name: WordPress 記事エクスポート
 
 on:
-  workflow_dispatch:
+  push:
+    paths:
+      - 'export_trigger.txt'
 
 permissions:
   contents: write
