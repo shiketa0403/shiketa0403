@@ -7,9 +7,25 @@ GitHub Actions（wp_export.yml）から実行し、生成ファイルをブラ�
 
 import csv
 import os
+import time
 from collections import Counter
 
 from wp_post import api_request
+
+
+def api_request_retry(endpoint, retries=5):
+    """接続タイムアウト等の一時エラーに耐えるよう、指数バックオフでリトライする。
+    HTTPError（ページ超過の400など）は api_request が None を返すのでそのまま返す。"""
+    for attempt in range(retries):
+        try:
+            return api_request(endpoint, exit_on_error=False)
+        except Exception as e:
+            if attempt == retries - 1:
+                raise
+            wait = 2 ** attempt  # 1, 2, 4, 8, 16秒
+            print(f"  リトライ {attempt + 1}/{retries}（{wait}s待機）: {type(e).__name__}: {e}")
+            time.sleep(wait)
+    return None
 
 
 def fetch_all_posts():
@@ -18,10 +34,9 @@ def fetch_all_posts():
         page = 1
         while True:
             # exit_on_error=False: ページ超過の400を None として受けて break
-            batch = api_request(
+            batch = api_request_retry(
                 f"posts?per_page=100&page={page}&status={status}"
-                f"&_fields=id,title,status,link,date,slug",
-                exit_on_error=False,
+                f"&_fields=id,title,status,link,date,slug"
             )
             if not batch:
                 break
@@ -30,6 +45,7 @@ def fetch_all_posts():
             if len(batch) < 100:
                 break
             page += 1
+            time.sleep(0.5)  # レート制限回避のため各リクエスト間に小休止
     posts = list(posts_by_id.values())
     posts.sort(key=lambda p: p.get("date", "") or "", reverse=True)
     return posts
