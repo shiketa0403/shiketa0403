@@ -479,19 +479,25 @@ def generate_case_description(case_name, case_info, asp_names):
     parts = []
 
     # 本文（事実ベース。program_content をそのまま全文使用。汎用の定型文は入れない）
+    # program_content は <p>ブロック・句点ごとの空行・装飾(hutoaka/strong)込みの完成形で書くこと。
     if program_content:
         parts.append(program_content)
 
-    # 報酬・成果条件
+    # 報酬・成果条件（1文・装飾付き）
     parts.append(
-        f'アフィリエイトとしては、<span class="st-mymarker-s">報酬単価{reward_disp}</span>で{condition}が成果条件となっています。'
+        f'<p>アフィリエイトとしては、<span class="st-mymarker-s">報酬単価{reward_disp}</span>で、'
+        f'成果条件は<strong>{condition}</strong>です。</p>'
     )
 
-    # 提携ASP
+    # 提携ASP + CTA
     if len(asp_names) == 1:
-        parts.append(f'{case_name}は{asp_names[0]}で提携できます。')
+        asp_disp = f'<span class="hutoaka">{asp_names[0]}</span>'
     else:
-        parts.append(f'{case_name}は{asp_text}で提携できます。')
+        asp_disp = asp_text
+    parts.append(
+        f'<p>{case_name}は{asp_disp}で提携できます。\n\n'
+        f'興味がある方は、まずASPに無料登録して<strong>提携申請</strong>から始めましょう。</p>'
+    )
 
     return "\n\n".join(parts)
 
