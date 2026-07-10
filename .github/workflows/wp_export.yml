@@ -1,0 +1,56 @@
+name: WordPress 記事エクスポート
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Python依存パッケージをインストール
+        run: pip install -r requirements.txt
+
+      - name: wp_config.py を生成
+        env:
+          WP_USERNAME: ${{ secrets.WP_USERNAME }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: |
+          python3 << 'PYEOF'
+          import os
+          username = os.environ.get('WP_USERNAME', '')
+          app_password = os.environ.get('WP_APP_PASSWORD', '')
+          if not username or not app_password:
+              print("ERROR: シークレットが設定されていません！")
+              exit(1)
+          with open('wp_config.py', 'w') as f:
+              f.write(f'''WP_CONFIG = {{
+              "site_url": "https://gooq.jp",
+              "username": "{username}",
+              "app_password": "{app_password}",
+          }}
+          ''')
+          PYEOF
+
+      - name: 記事一覧をエクスポート
+        run: python export_wp_posts.py
+
+      - name: 生成ファイルをコミット＆プッシュ
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add 記事管理.md csv/wp_posts.csv
+          if git diff --cached --quiet; then
+            echo "変更なし（記事一覧に差分なし）"
+          else
+            git commit -m "WP記事一覧を更新（gooq.jp 実データ）"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
