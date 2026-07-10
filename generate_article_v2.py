@@ -459,48 +459,41 @@ def generate_asp_descriptions(case_name, asp_status, case_info):
 
 
 def generate_case_description(case_name, case_info, asp_names):
+    """案件説明文を組み立てる。
+    汎用テンプレ文は使わず、事実ベースの program_content を全文そのまま本文に使う。
+    program_content は WebSearch 等で確認した事実のみで書くこと（推測禁止）。
+    """
     asp_text = "・".join(asp_names)
-
     reward = case_info.get("reward", "-")
     condition = case_info.get("condition", "-")
-    company = case_info.get("company", "")
-    genre = case_info.get("genre", "登録")
-    program_content = case_info.get("program_content", "")
+    program_content = (case_info.get("program_content", "") or "").strip()
 
-    if genre == "物販":
-        part1 = (
-            f'{case_name}は、{company}が運営するサービスです。\n\n'
-            f'豊富な商品ラインナップと使いやすいサイト設計で、多くのユーザーに支持されています。\n\n'
-        )
+    # 報酬表示: %や円で終わるならそのまま、数値のみなら「円」を付ける
+    if not reward or reward == "-":
+        reward_disp = "-"
+    elif reward.endswith("%") or reward.endswith("円"):
+        reward_disp = reward
     else:
-        part1 = (
-            f'{case_name}は、{company}が運営するサービスです。\n\n'
-            f'<span class="hutoaka">無料で利用できる手軽さ</span>が魅力で、幅広いユーザー層に支持されています。\n\n'
-        )
+        reward_disp = reward + "円"
 
-    part2 = (
-        f'アフィリエイトとしては、<span class="st-mymarker-s">報酬単価{reward}円</span>で{condition}が成果条件となっています。\n\n'
+    parts = []
+
+    # 本文（事実ベース。program_content をそのまま全文使用。汎用の定型文は入れない）
+    if program_content:
+        parts.append(program_content)
+
+    # 報酬・成果条件
+    parts.append(
+        f'アフィリエイトとしては、<span class="st-mymarker-s">報酬単価{reward_disp}</span>で{condition}が成果条件となっています。'
     )
 
+    # 提携ASP
     if len(asp_names) == 1:
-        part3 = f'{asp_names[0]}で提携できます。\n\n'
+        parts.append(f'{case_name}は{asp_names[0]}で提携できます。')
     else:
-        part3 = f'{asp_text}で提携できます。\n\n'
+        parts.append(f'{case_name}は{asp_text}で提携できます。')
 
-    desc = part1 + part2 + part3
-
-    if program_content:
-        summary = program_content[:150].strip()
-        if summary and not summary.endswith("。"):
-            last = summary.rfind("。")
-            if last > 0:
-                summary = summary[:last + 1]
-            else:
-                summary = ""
-        if summary:
-            desc += summary + "\n\n"
-
-    return desc.rstrip()
+    return "\n\n".join(parts)
 
 
 def _build_case_info_table(case_name, case_info, screenshot_url=""):
