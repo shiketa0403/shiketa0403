@@ -15,11 +15,17 @@
 ## 記事作成の流れ
 1. `csv/vc_raw_utf8.csv`（バリューコマース案件一覧）から案件情報を取得
 2. Google検索で案件のASP掲載状況（◯✕）を調査
-3. `generate_article_v2.py` で新構成の記事HTMLを生成
-4. **`csv/post.csv` をヘッダー行＋新規記事のみにリセットして出力**（フォーマット: title,content,status,category,tags,slug,screenshot_url）
-5. commit & push → GitHub Actions が WordPress に投稿（デフォルト: 下書き）
+3. **公式サイトURLをWebSearchで取得**（後述）
+4. `generate_article_v2.py` で新構成の記事HTMLを生成
+5. **`csv/post.csv` をヘッダー行＋新規記事のみにリセットして出力**（フォーマット: title,content,status,category,tags,slug,screenshot_url）
+6. commit & push → GitHub Actions が WordPress に投稿（デフォルト: 下書き）
 
 ※ スクリーンショットは今後の記事では不要。`csv/post.csv` の `screenshot_url` 列は常に空にする（`write_post_csv` が自動で空にする）。
+
+### 公式サイトURLの取得ルール（重要）
+- **A8・AT・afb・もしも のCSVには URL列が無い**（列は program_name, company_name, category, reward のみ）。URLを推測で入れると架空URLになりリンク切れするため禁止。
+- **VC案件**: `vc_raw_utf8.csv` の `広告主サイトURL` をそのまま使う（実URLあり）。
+- **非VC案件**: 記事作成前に **WebSearch で「{案件名} 公式サイト」等を検索し、実在する公式URLを確認**してから `site_url` に入れる。確実な公式URLが見つからない場合は、URLを空（`''`）にする（→ 案件情報テーブルの公式サイトは「-」表示になりリンク切れを防げる）。
 
 ## 主要ファイル
 - `csv/vc_raw_utf8.csv` — バリューコマース案件一覧（データソース）
