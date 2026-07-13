@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>スマホ申込から振込までの手順</h2>
+
+申込はスマホで完結し、来店は不要です。
+
+3つの工程で振込完了まで進みます。
+
+[st-timeline myclass="st-timeline-count" add_style=""]
+[st-timeline-list text="申込フォーム送信" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+公式サイトのフォームから申込情報を送信(受付は24時間365日)
+[/st-timeline-list]
+[st-timeline-list text="本人確認・買取契約" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+初回は本人確認書類をスマホで撮影して提出し、買取契約を行う
+[/st-timeline-list]
+[st-timeline-list text="振込完了" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+申込から30分前後が目安(本人確認後10分で着金した報告あり)
+[/st-timeline-list]
+[/st-timeline]
+
+<h3>申込フォーム入力の流れ</h3>
+
+<strong>公式サイトのフォームから申込情報を送信します。</strong>
+
+氏名・連絡先・希望額・利用アプリに入力項目を絞った設計だからです。
+
+受付は<strong>24時間365日</strong>で、営業時間内に担当者から確認の連絡が入ります。
+
+必要情報を手元に揃えてから入力すると、やり取りが速く進みます。
+
+<h3>本人確認と買取契約の進め方</h3>
+
+<strong>初回は本人確認書類の提出と買取契約が必要です。</strong>
+
+後払いアプリの利用枠を買い取る形式上、本人確認が法令上必須だからです。
+
+運転免許証・マイナンバーカード・健康保険証のいずれかをスマホで撮影して提出。
+
+初回に30分程度かかる主因はこの工程で、2回目以降は短縮されます。
+
+<h3>振込完了までの時間目安</h3>
+
+<strong>振込は申込から30分前後が目安です。</strong>
+
+初回は本人確認を挟むため、2回目以降より時間がかかるからです。
+
+本人確認後10分で着金した報告や、夜9時過ぎの申込が翌朝入金になった例があります。
+
+急ぎの場合は営業時間<strong>9時〜21時</strong>の早い時間帯に申込みましょう。
+
+申込手順を把握したら、最後に記事全体の要点をまとめます。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
