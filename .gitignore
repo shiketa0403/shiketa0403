@@ -5,3 +5,18 @@ __pycache__/
 *.pyc
 .env
 screenshots/
+
+# レントラックス→Yahoo連携の生成物・認証（コミットしない）
+out_sync/
+out_local/
+yahoo_profile/
+yahoo_storage_state.json
+local_secrets.json
+state_processed.json
+# 各媒体のインポート生成物（ワイルドカードでまとめて除外）
+yahoo_cv_*.csv
+yahoo_cv_*.tsv
+a8_yahoo_import*.tsv
+dmm_yahoo_import*.tsv
+rentracks_yahoo_import*.tsv
+google_offline_import*.csv
