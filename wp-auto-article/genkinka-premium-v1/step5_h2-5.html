@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>向いている人と向かない人</h2>
+
+プライバシー・実質換金率・規約リスクの3点で適合性が分かれます。
+
+具体的な人物像で整理しましょう。
+
+<h3>利用が向く人の条件</h3>
+
+電話や郵送物を避けて、周囲に知られず使いたい人に向きます。
+
+メール完結・郵送物なし・在籍確認なしの体制だからです。
+
+具体的には「仕事中に電話へ出られない人」「家族と同居で郵送物を避けたい人」を想定する利用者。
+
+文面でやり取りを残したい慎重派にも適合します。
+
+<h3>利用を控えるべき人の特徴</h3>
+
+公表の80%以上をそのまま手取りと考える人には向きません。
+
+手数料差引で実質70%台まで下がる可能性の指摘があるからです。
+
+「電話で相談しながら進めたい人」「カードローン審査に通る属性の人」も該当します。
+
+該当する場合は、金利が明確な消費者金融・カードローンを選びましょう。
+
+利用に向くと判断した方は、申込手順を次節で確認しましょう。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
