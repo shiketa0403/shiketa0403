@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>口コミ評判の実調査結果</h2>
+
+知恵袋・5ch・レビューサイトの3経路を実際に調査しました。
+
+確認できた投稿と確認できなかった範囲を分けて紹介します。
+
+<table>
+<thead><tr><th>調査媒体</th><th>調査結果</th></tr></thead>
+<tbody>
+<tr><td>Yahoo!知恵袋</td><td>質問1件あり(「評判が少なく不安」・回答は確認できず)</td></tr>
+<tr><td>5ch</td><td>利用報告は確認できず</td></tr>
+<tr><td>レビューサイト</td><td>利用報告あり(10万円92%/3万円89%/対応が丁寧)</td></tr>
+</tbody>
+</table>
+
+<h3>知恵袋の投稿内容</h3>
+
+<strong>知恵袋では業者プレミアムへの質問が1件確認できます。</strong>
+
+「評判がほとんど見つからず少し不安」という相談の投稿があるからです。
+
+まさに検索者と同じ不安を抱えた質問で、回答本文はアクセス制限により確認できず。
+
+投稿数が少ないため、知恵袋だけで判断する材料は不足しています。
+
+<h3>5chの投稿状況</h3>
+
+<strong>5chでは利用報告の投稿を確認できませんでした。</strong>
+
+「プレミアム」が一般的な言葉で、業者のスレッドや書き込みを特定できないからです。
+
+炎上の事実も高評価の事実も、5ch上では確認できません。
+
+5chの評判を根拠に判断する材料は現時点でないと考えましょう。
+
+[st-kaiwa1]投稿が少ないという事実も、判断材料のひとつです。[/st-kaiwa1]
+
+<h3>レビューサイトの利用報告</h3>
+
+<strong>レビューサイトでは利用報告が複数確認できます。</strong>
+
+現金化系メディアが検証記事や利用者の声を掲載しているからです。
+
+「10万円を<strong>92%</strong>で現金化」「3万円を89%で即日」「女性スタッフの対応が丁寧」の報告があります。
+
+振り込まれない詐欺の集団報告は確認できませんでした。
+
+口コミの実態を踏まえ、自分が利用に向くタイプかを次節で整理します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
