@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>口コミ評判の実調査結果</h2>
+
+知恵袋・5ch・レビューサイトの3経路を実際に調査しました。
+
+確認できた情報と確認できなかった範囲を分けて紹介します。
+
+<h3>知恵袋の投稿状況</h3>
+
+知恵袋ではダッシュマネーに関する実際の投稿を確認できませんでした。
+
+検索でヒットするのは記号の「ダッシュ」に関する無関係な質問のみだからです。
+
+現金化業者ダッシュマネーへの質問・回答は見つからない状態。
+
+知恵袋の評判を根拠に判断する材料は現時点でないと考えましょう。
+
+<h3>5chの投稿状況</h3>
+
+5chでも利用報告の投稿を確認できませんでした。
+
+確認できたのはまとめ系記事で名前が挙がった言及のみだからです。
+
+そのまとめ記事自体も、近年の5chはステマが混ざりやすいと注記しています。
+
+炎上の事実も高評価の事実も、5ch上では確認できません。
+
+<h3>レビューサイトの利用報告</h3>
+
+レビューサイトでは利用報告と運営情報が確認できます。
+
+現金化系のランキングサイトが紹介枠で情報を掲載しているからです。
+
+「15分前後で入金」「見積額のまま振り込まれた」の報告があり、創業2011年と紹介されています。
+
+振り込まれない詐欺の集団報告は確認できませんでした。
+
+口コミの実態を踏まえ、自分が利用に向くタイプかを次節で整理します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
