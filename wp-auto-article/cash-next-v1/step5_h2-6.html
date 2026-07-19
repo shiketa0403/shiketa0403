@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>スマホ申込から振込までの手順</h2>
+
+申込はスマホで完結し、来店は不要です。
+
+3つの工程で振込完了まで進みます。
+
+<h3>申込フォーム入力の流れ</h3>
+
+公式サイトのフォームか電話で申込情報を送信します。
+
+氏名・連絡先・希望額・利用カードに入力項目を絞った設計だからです。
+
+送信後は担当者から確認の連絡が入り、見積もりの提示に進みます。
+
+必要情報を手元に揃えてから入力すると、確認がスムーズです。
+
+<h3>本人確認と決済の進め方</h3>
+
+初回は本人確認書類の提出とカード決済が必要です。
+
+現金化は商品売買の形式を取り、本人確認が法令上必須だからです。
+
+運転免許証・マイナンバーカード・健康保険証のいずれかをスマホで撮影して提出。
+
+本人確認が済めば、あとは決済と振込を待つだけです。
+
+<h3>振込完了までの時間目安</h3>
+
+振込は決済確認後、5〜10分の報告が中心です。
+
+営業時間9時〜20時の体制で、時間帯により前後するからです。
+
+「11時18分に入金」の実例がある一方、土曜申込は月曜振込の例もあります。
+
+急ぎの場合は、平日の午前中に申込みましょう。
+
+申込手順を把握したら、最後に記事全体の要点をまとめます。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
