@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>口コミ評判の実調査結果</h2>
+
+知恵袋・5ch・レビューサイトの3経路を実際に調査しました。
+
+確認できた投稿の内容を良否ともに紹介します。
+
+<h3>知恵袋の相談内容</h3>
+
+知恵袋では利用後の相談投稿が確認できます。
+
+「詐欺ではないか」という趣旨の相談が実際に投稿されているからです。
+
+「98%と案内されたが実際の率は低く、説明されていない手数料があった」という内容。
+
+申込前の見積もり確認で防げるトラブルのため、事前確認を徹底しましょう。
+
+<h3>5chの利用報告</h3>
+
+5chでは実際の利用報告が複数確認できます。
+
+率の乖離への不満と、振込スピードへの評価が混在しているからです。
+
+「実質70%以下だった」の一方、「振込は速かった」「翌日入金」という報告もあります。
+
+率は事前確認、スピードは期待どおりという傾向で読み解きましょう。
+
+<h3>レビューサイトの評価</h3>
+
+レビューサイトの評価は好意と検証指摘の両論です。
+
+「手軽で速い」という評価と「公表どおりでない」という検証が並ぶからです。
+
+「手数料無料・カード事故0件の安心感」の一方、乖離を指摘する記事が複数あります。
+
+振り込まれない詐欺の集団報告は確認できませんでした。
+
+口コミの実態を踏まえ、自分が利用に向くタイプかを次節で整理します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
