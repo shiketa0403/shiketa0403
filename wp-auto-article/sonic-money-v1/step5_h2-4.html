@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>口コミ評判の実調査結果</h2>
+
+知恵袋・5ch・レビューサイトの3経路を実際に調査しました。
+
+確認できた投稿と調査結果を紹介します。
+
+<h3>知恵袋の利用者投稿</h3>
+
+知恵袋には「ソニックマネーを利用された方に質問です」という実投稿があります。
+
+2025年7月に、利用を検討する人からの相談が投稿されているからです。
+
+回答本文はアクセス制限により確認できず、投稿数自体はごく少ない状況。
+
+他の媒体とあわせて判断しましょう。
+
+<h3>5chの調査結果</h3>
+
+5chでは口コミが確認できないという調査結果です。
+
+複数のレビューメディアが調査し、書き込みは1件も見つからなかったと報告しているからです。
+
+悪評がない一方、生のスレッドや書き込みは今回の調査でも直接確認できませんでした。
+
+口コミがない状態を、良い評判の証拠とまでは考えないでおきましょう。
+
+<h3>レビューサイトの両論</h3>
+
+レビューサイトの評価は肯定と不満の両論です。
+
+「早い」「乗り換えで満足」の一方、「手数料が引かれてがっかり」との声が並ぶからです。
+
+振り込まれない詐欺の集団報告は、調査の範囲では確認できませんでした。
+
+口コミの実態を踏まえ、自分が利用に向くタイプかを次で整理します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
