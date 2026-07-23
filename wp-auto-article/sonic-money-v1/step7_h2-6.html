@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>スマホ申込から振込までの手順</h2>
+
+申込はスマホで完結し、来店は不要です。
+
+カード決済と本人確認の工程が入ります。
+
+[st-timeline myclass="st-timeline-count" add_style=""]
+[st-timeline-list text="フォーム・電話で申込" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+フォームは24時間受付・対応時間内に担当者から連絡が入り見積もり提示
+[/st-timeline-list]
+[st-timeline-list text="本人確認・カード決済" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+初回は本人確認書類をスマホで撮影して提出し、カード決済を行う
+[/st-timeline-list]
+[st-timeline-list text="振込完了" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+決済確認後に振込・最短3分をうたう(実際は30分程度の解説も)
+[/st-timeline-list]
+[/st-timeline]
+
+<h3>フォーム・電話申込の流れ</h3>
+
+<strong>公式サイトのフォームか電話で申込みます。</strong>
+
+フォームは24時間受付で、対応時間内に担当者から連絡が入るからです。
+
+伝えるのは氏名・連絡先・希望額・利用カードの4点。
+
+提示された振込額に納得できない場合は、この段階で断りましょう。
+
+<h3>本人確認とカード決済</h3>
+
+<strong>初回は本人確認書類の提出とカード決済が必要です。</strong>
+
+現金化は商品売買の形式を取り、本人確認が法令上必須だからです。
+
+運転免許証やマイナンバーカードをスマホで撮影して提出します。
+
+支払いは分割・リボ払いも選べるため、決済前に金額と内容の確認がおすすめです。
+
+<h3>振込完了までの時間目安</h3>
+
+<strong>振込は決済確認後で、最短3分をうたいます。</strong>
+
+対応時間9時〜20時の体制で、時間帯により前後するからです。
+
+実際は30分程度という解説もあるため、余裕を持った申込が無難です。
+
+急ぎの場合は、平日の午前中に申込みましょう。
+
+申込手順を把握したら、最後に記事全体の要点をまとめます。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
