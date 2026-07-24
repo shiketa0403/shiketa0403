@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>口コミ評判の実調査結果</h2>
+
+知恵袋・5ch・レビューサイトの3経路を実際に調査しました。
+
+確認できた投稿と調査結果を紹介します。
+
+<h3>知恵袋の利用者投稿</h3>
+
+知恵袋には「いいねクレジットを使っている方いらっしゃれば教えてほしいです」という実投稿があります。
+
+利用を検討する人からの相談が、実際に投稿されているからです。
+
+回答本文はアクセス制限により確認できず、投稿数自体は少ない状況。
+
+他の媒体とあわせて判断しましょう。
+
+<h3>5chの換金率報告</h3>
+
+5chには「90%以上でできた」と「70%程度だった」の両方の書き込みが報告されています。
+
+2023〜2024年の書き込みを集計したメディアが紹介しているからです。
+
+ただし5chには宣伝目的の書き込みが混じるという指摘もあります。
+
+生のスレッドは今回の調査では直接確認できませんでした。
+
+書き込みを鵜呑みにせず、参考情報のひとつとして扱いましょう。
+
+<h3>レビューサイトの評価傾向</h3>
+
+レビューサイトでは「対応が丁寧」という好意的な評価が目立ちます。
+
+「案内がわかりやすい」「約1時間で振込完了」との報告が並ぶからです。
+
+一方で、なりすまし業者への注意を促す記事もあります。
+
+口コミの実態を踏まえ、自分が利用に向くタイプかを次で整理します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
