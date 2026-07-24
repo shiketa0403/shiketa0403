@@ -1,6 +1,5 @@
 # 調査対象ドメイン（1行1ドメイン）
 # #で始まる行はコメント（無視されます）
-nagasaki-peace-half-marathon.jp/
 testtest.jp/
 siw.jp/
 wakura-hamanasu.jp/
@@ -246,23 +245,3 @@ akilog.jp/
 meiwp.jp/
 torao.jp/
 gfjapan2025.jp/
-fukugyo-kengyo-hojo.jp/
-ims-yokohama-asahi.jp/
-migawari-movie.jp/
-yoshida-exhn.jp/
-expo2025-fukuoka-shin-ichi.jp/
-yugoten.jp/
-aomori-trip.jp/
-do-shiminkatsudo.jp/
-tab2.jp/
-d-lounge.jp/
-ecwa.jp/
-caso-gallery.jp/
-ichihara-umizuri.jp/
-smart-a.jp/
-e-jisso.jp/
-isaburo.jp/
-yumekodo.jp/
-ecpatstop.jp/
-wakuwaku-farm.jp/
-corona-kifu.jp/
