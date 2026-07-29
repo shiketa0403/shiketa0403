@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>まとめ</h2>
+
+あんしんクレジットは最大99.5%を掲げる現金化サービスです。
+
+知恵袋にはカード利用停止をめぐる相談があり、5chには換金率相違の報告が紹介されています。
+
+一方でレビューサイトは「対応が丁寧・振込が早い」という好意的な評価が中心です。
+
+実調査では、振り込まれない詐欺の集団報告は確認できませんでした。
+
+即日振込は営業9時〜20時内の申込が条件で、夜間は翌日対応の可能性があります。
+
+利用する場合は、見積もりの振込額に納得してから進みましょう。
+
+[CTA: アフィリエイトリンクなし(公式サイトへの素リンク https://anshincredit.net/)]
+公式サイトで振込額の見積もりを確認したうえで申込みに進みましょう。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
