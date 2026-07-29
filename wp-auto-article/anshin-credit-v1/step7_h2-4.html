@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>口コミ評判の実調査結果</h2>
+
+知恵袋・5ch・レビューサイトの3経路を実際に調査しました。
+
+確認できた投稿と調査結果を紹介します。
+
+<table>
+<thead><tr><th>調査媒体</th><th>調査結果</th></tr></thead>
+<tbody>
+<tr><td>Yahoo!知恵袋</td><td>カード利用停止をめぐる相談投稿あり(回答は確認できず)</td></tr>
+<tr><td>5ch</td><td>「表記と実際が違った」「65〜70%前後」の書き込み報告あり</td></tr>
+<tr><td>レビューサイト</td><td>「対応が丁寧・振込が早い」の好評が中心・詐欺報告なし</td></tr>
+</tbody>
+</table>
+
+<h3>知恵袋の利用停止相談</h3>
+
+<span class="st-mymarker-s"><strong>知恵袋には「友人がカード利用停止になった」との趣旨の相談投稿があります。</strong></span>
+
+あんしんクレジットの利用をめぐり、消費者センターに相談したという内容だからです。
+
+回答本文はアクセス制限により確認できず、投稿の詳細は不明。
+
+<span class="hutoaka">同名をかたる勧誘メールの質問も混在</span>するため、投稿は文脈ごと確認しましょう。
+
+<h3>5chの換金率相違報告</h3>
+
+<span class="st-mymarker-s"><strong>5chでは「公式記載の換金率と実際が違った」との書き込みが報告されています。</strong></span>
+
+<span class="hutoaka">「実際は65〜70%前後だった」</span>という低率の報告を紹介するメディアがあるからです。
+
+生のスレッドや書き込みは、今回の調査では直接確認できませんでした。
+
+書き込みを鵜呑みにせず、参考情報のひとつとして扱いましょう。
+
+[st-kaiwa1]掲示板や知恵袋の投稿は、時期や文脈も含めて読むと判断を誤りにくいです。[/st-kaiwa1]
+
+<h3>レビューサイトの評価傾向</h3>
+
+<span class="st-mymarker-s"><strong>レビューサイトでは「対応が丁寧・振込が早い」という好意的な評価が目立ちます。</strong></span>
+
+「本人確認後10〜30分で振込」という報告が並ぶからです。
+
+振り込まれない詐欺の集団報告は、調査の範囲では確認できませんでした。
+
+口コミの実態を踏まえ、自分が利用に向くタイプかを次で整理します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
