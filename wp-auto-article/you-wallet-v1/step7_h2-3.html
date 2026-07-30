@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>注意したい3つのデメリット</h2>
+
+つまずきやすいのは保証の差引・営業時間・規約リスクの3点です。
+
+3つの注意点を事前に押さえましょう。
+
+<h3>保証値を下回った報告</h3>
+
+<span class="st-mymarker-s"><strong>「最低換金率の保証を下回った」という報告があります。</strong></span>
+
+表示の率から、手数料や消費税が差し引かれる場合があるからです。
+
+申込時に振込額そのものを確認すれば防げる、と整理する解説が中心。
+
+率でなく、<span class="hutoaka">振り込まれる金額で判断</span>しましょう。
+
+<h3>営業時間外は翌日対応</h3>
+
+<span class="st-mymarker-s"><strong>営業時間外の申込は、翌日の対応に回ります。</strong></span>
+
+平日9時〜18時・土日祝9時〜17時の営業体制だからです。
+
+深夜に申込んでも、<span class="hutoaka">振込は翌営業日の朝以降</span>です。
+
+急ぎの場合は、日中の早い時間に申込みましょう。
+
+<h3>カード会員規約違反のリスク</h3>
+
+<span class="st-mymarker-s"><strong>クレジットカード現金化はカード会員規約上の禁止行為です。</strong></span>
+
+カード会社の規約で「換金目的の利用」が明示的に禁止されているからです。
+
+発覚時は<span class="hutoaka">利用停止・残額の一括請求・強制解約</span>のリスクがあります。
+
+カード事故0件の掲示があっても、利用は自己責任が前提です。
+
+[st-mybox title="注意ポイント" webicon="st-svg-exclamation-circle" color="#ef5350" bordercolor="#ef9a9a" bgcolor="#ffebee" borderwidth="2" borderradius="5" titleweight="bold" fontsize="" myclass="st-mybox-class" margin="25px 0 25px 0"]
+<div class="maruck">
+<ul>
+<li>保証値を下回った報告あり(手数料・消費税の差引が原因)</li>
+<li>営業は平日9〜18時・土日祝9〜17時で夜間は翌日対応</li>
+<li>現金化はカード会員規約上の禁止行為</li>
+</ul>
+</div>
+[/st-mybox]
+
+掲示の読み方も含めて、次で実調査の結果を確認します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
