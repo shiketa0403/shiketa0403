@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>まとめ</h2>
+
+プライムウォレットは即日振込と初回還元率100%を掲げる現金化サービスです。
+
+調査では未入金の集団報告は確認できず、入金自体はされるとの検証が複数ありました。
+
+一方で実勢の換金率は70%前後の集計があり、「10万円で7万円」という報告も確認しています。
+
+知恵袋に実投稿はなく、5ch由来の「10万で69%」との書き込みが確認できた範囲の実例です。
+
+消費税10%を含む計算構造を理解し、見積もりの振込額に納得してから申し込みましょう。
+
+[CTA: アフィリエイトリンクなし(公式サイトへの素リンク https://prime-wallet.jp/)]
+申込を決める前に、公式サイトの見積もりで実際の振込額を確かめましょう。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
