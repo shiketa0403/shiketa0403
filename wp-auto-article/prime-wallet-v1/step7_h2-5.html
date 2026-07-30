@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>申込前に知るべき3つの注意点</h2>
+
+「騙された」と感じる声の多くは、仕組みを知らないまま申し込んだことに原因があります。
+
+申込前に3つの注意点を確認しましょう。
+
+<h3>消費税10%が引かれる計算構造</h3>
+
+<span class="st-mymarker-s"><strong>受取額の計算には、商品代金にかかる消費税10%が影響します。</strong></span>
+
+現金化は商品購入の形式を取るため、<span class="hutoaka">カード決済額は税込金額になる</span>からです。
+
+現金3万円の受け取りに4万円分の商品購入が必要な例では、税込の決済額は<strong>4万3,200円</strong>。
+
+この場合の換金率は計算上69%で、「率が思ったより低い」と感じる原因の多くはこの構造です。
+
+決済額ベースの振込額を見積もりで確認しましょう。
+
+[st-kaiwa1 r]換金率の計算は、税込の決済額をもとに確認するのがおすすめです。[/st-kaiwa1]
+
+<h3>商品発送による家族バレの可能性</h3>
+
+<span class="st-mymarker-s"><strong>キャッシュバック方式のため、購入した商品が自宅に届く場合があります。</strong></span>
+
+カード会社に説明のつく実体のある売買として、商品の受け渡しが行われるからです。
+
+<span class="hutoaka">「家族に知られたくない場合は注意」</span>との指摘がレビューサイトに複数あります。
+
+受取方法や配送の有無は、申込時に確認しましょう。
+
+<h3>カード会員規約上の禁止行為</h3>
+
+<span class="st-mymarker-s"><strong>クレジットカードの現金化は、業者を問わずカード会社が禁止している行為です。</strong></span>
+
+カード会社の規約で「換金目的の利用」が明示的に禁止されているからです。
+
+発覚した場合、カードの<span class="hutoaka">利用停止や強制退会につながるリスク</span>があります。
+
+業者選び以前に、この前提を理解した上で判断しましょう。
+
+[st-mybox title="注意ポイント" webicon="st-svg-exclamation-circle" color="#ef5350" bordercolor="#ef9a9a" bgcolor="#ffebee" borderwidth="2" borderradius="5" titleweight="bold" fontsize="" myclass="st-mybox-class" margin="25px 0 25px 0"]
+<div class="maruck">
+<ul>
+<li>決済額は消費税10%込みで計算される</li>
+<li>商品の発送で家族に知られる可能性がある</li>
+<li>現金化はカード会員規約上の禁止行為</li>
+</ul>
+</div>
+[/st-mybox]
+
+注意点を押さえたところで、実際の申込手順を確認します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
