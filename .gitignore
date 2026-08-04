@@ -20,3 +20,5 @@ a8_yahoo_import*.tsv
 dmm_yahoo_import*.tsv
 rentracks_yahoo_import*.tsv
 google_offline_import*.csv
+gads_*import*.csv
+unext_yahoo_import*.tsv
