@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>知恵袋・5chの投稿を実際に調査</h2>
+
+「いますぐクレジット 知恵袋」と検索する人は多いものの、投稿の状況は意外な結果でした。
+
+本記事で実際に調査した内容を紹介します。
+
+<h3>知恵袋は実投稿を直接確認できず</h3>
+
+<span class="st-mymarker-s"><strong>Yahoo!知恵袋では、いますぐクレジットに関する実投稿を直接確認できませんでした。</strong></span>
+
+「クレジット」が一般的な言葉で、カード全般や映画の話題に埋もれやすいからです。
+
+出てくるのは、クレジット表記やカード一般の質問。
+
+元投稿が確認できない引用は、<span class="hutoaka">参考程度にとどめ</span>ましょう。
+
+<h3>5chはスレ実在も言及は確認できず</h3>
+
+<span class="st-mymarker-s"><strong>5chには現金化業者の情報交換スレがありますが、言及は確認できませんでした。</strong></span>
+
+スレ自体は実在するものの、本文での書き込みまでは確認できないからです。
+
+[st-cmemo webicon="st-svg-exclamation-circle" iconcolor="#919191" bgcolor="#fafafa" color="#000000" bordercolor="" borderwidth="" iconsize=""]現金化系のスレには業者のサクラ投稿が混じる、という指摘もあります。[/st-cmemo]
+
+<span class="hutoaka">出どころの分からない引用</span>は、確認できた事実と分けて判断しましょう。
+
+ここまでは口コミの話でしたが、数字と掲示の見方も押さえておきましょう。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
