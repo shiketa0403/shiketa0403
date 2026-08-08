@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>知恵袋・5chの投稿を実際に調査</h2>
+
+「オンラインキャッシュ 知恵袋」と検索する人は多いものの、投稿の状況は意外な結果でした。
+
+本記事で実際に調査した内容を紹介します。
+
+<h3>知恵袋は別サービスに埋もれる結果</h3>
+
+Yahoo!知恵袋では、オンラインキャッシュに関する実投稿を直接確認できませんでした。
+
+「オンライン」も「キャッシュ」も一般的な言葉で、別の話題に埋もれやすいからです。
+
+出てくるのは、ビットキャッシュや楽天キャッシュの質問。
+
+別サービスの口コミと混同しないようにしましょう。
+
+<h3>5chの生の書き込みは確認できず</h3>
+
+5chでも、オンラインキャッシュに関する生の書き込みは今回の調査では確認できませんでした。
+
+「厳しい口コミも散見」と紹介するレビュー記事でも、元の投稿の引用は確認できないからです。
+
+掲示板上の情報が少なく、確認できた口コミはレビューサイト経由が中心です。
+
+出どころの分からない引用は、確認できた事実と分けて判断しましょう。
+
+ここまでは口コミの話でしたが、数字と運営情報の見方も押さえておきましょう。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
