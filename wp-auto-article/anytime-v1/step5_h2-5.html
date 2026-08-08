@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>申込前に知るべき3つの注意点</h2>
+
+「思ったより少ない」と感じる原因の多くは、表示の読み方にあります。
+
+申込前に3つの注意点を確認しましょう。
+
+<h3>98%台は上限側という表示</h3>
+
+最大98%台という表示は、条件がそろった場合の上限側の数字です。
+
+レート表はブランド別で、クレジットカード系は80%前後からだからです。
+
+媒体の紹介も98.8%や98.1%と、数字がゆれる表記。
+
+適用される率は、申込時の見積もりで確認しましょう。
+
+<h3>最短3分はリピーター向けの掲示</h3>
+
+最短3分の振込は、リピーター向けの掲示です。
+
+初回は本人確認の工程がある分、時間がかかるからです。
+
+平均入金時間は10〜30分という紹介もあります。
+
+初回は時間に余裕を持って申し込みましょう。
+
+<h3>カード会員規約上の禁止行為</h3>
+
+クレジットカードの現金化は、業者を問わずカード会社が禁止している行為です。
+
+カード会社の規約で「換金目的の利用」が明示的に禁止されているからです。
+
+発覚した場合、カードの利用停止や強制退会につながるリスクがあります。
+
+業者選び以前に、この前提を理解した上で判断しましょう。
+
+注意点を押さえたところで、実際の申込手順を確認します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
