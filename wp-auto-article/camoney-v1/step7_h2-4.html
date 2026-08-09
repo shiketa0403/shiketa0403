@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>知恵袋・5chの投稿を実際に調査</h2>
+
+「キャリアマネー 知恵袋」と検索する人は多いものの、投稿の状況は意外な結果でした。
+
+本記事で実際に調査した内容を紹介します。
+
+<h3>知恵袋は安全性や退会の相談3件</h3>
+
+<span class="st-mymarker-s"><strong>Yahoo!知恵袋で確認できた実投稿は、安全性・利用者探し・退会方法の相談3件でした。</strong></span>
+
+「安全でしょうか?」「使った方いますか?」に加え、退会方法の質問もあるからです。
+
+[st-cmemo webicon="st-svg-exclamation-circle" iconcolor="#919191" bgcolor="#fafafa" color="#000000" bordercolor="" borderwidth="" iconsize=""]検索結果の大半は、語順違いのマネーキャリアというFP相談の話題。別サービスの口コミと<span class="hutoaka">混同しないように</span>しましょう。[/st-cmemo]
+
+<h3>5chの生の書き込みは確認できず</h3>
+
+<span class="st-mymarker-s"><strong>5chでは、キャリアマネーに関する生の書き込みは今回の調査では確認できませんでした。</strong></span>
+
+「振り込まれない」という報告の紹介はあるものの、元の投稿は確認できないからです。
+
+掲示板上の情報が少なく、確認できた口コミはレビューサイト経由が中心です。
+
+<span class="hutoaka">出どころの分からない引用</span>は、確認できた事実と分けて判断しましょう。
+
+ここまでは口コミの話でしたが、数字と条件の見方も押さえておきましょう。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
