@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>スマホ申込から振込までの手順</h2>
+
+申込はスマホで完結し、来店は不要です。
+
+フォーム申込から振込までの流れを順に見ていきましょう。
+
+[st-timeline myclass="st-timeline-count" add_style=""]
+[st-timeline-list text="お申込み" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+公式サイトのフォーム(簡単30秒・受付24時間)で申込み、条件の案内を受ける
+[/st-timeline-list]
+[st-timeline-list text="商品の購入・発送" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+指定のURLから商品を購入して発送する(追跡番号の共有で検品がスムーズ)
+[/st-timeline-list]
+[st-timeline-list text="お振込み" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+最短即日(15時までの手続きが条件・確認できた報告は15時前の着金)
+[/st-timeline-list]
+[/st-timeline]
+
+<h3>フォーム申込から案内までの流れ</h3>
+
+<span class="st-mymarker-s"><strong>申込は公式サイトのフォームから始まります。</strong></span>
+
+送信後に条件の案内があり、納得してから進む流れだからです。
+
+フォームは簡単<strong>30秒</strong>・WEB受付は24時間という掲示。
+
+案内された振込額に納得できなければ、<span class="hutoaka">この段階で断りましょう</span>。
+
+<h3>指定URLでの購入と商品の発送</h3>
+
+<span class="st-mymarker-s"><strong>条件に納得したら、指定のURLから商品を購入して発送します。</strong></span>
+
+現金化は商品買取の形式を取り、商品の到着確認が挟まるからです。
+
+発送時に追跡番号を共有すると、検品が進みやすいという紹介があります。
+
+購入前に、金額と商品の内容を確認しましょう。
+
+[st-kaiwa1]購入する商品と金額は、購入前に画面で確認しておきましょう。[/st-kaiwa1]
+
+<h3>振込完了までの時間目安</h3>
+
+<span class="st-mymarker-s"><strong>振込は最短即日ですが、15時までの手続きが条件です。</strong></span>
+
+15時以降や営業時間外の申込は、<span class="hutoaka">翌日の対応になる</span>からです。
+
+確認できた報告は、昼過ぎの申込で15時前に着金という内容。
+
+<table>
+<thead><tr><th>項目</th><th>内容</th></tr></thead>
+<tbody>
+<tr><td>受付</td><td>営業9:00〜19:00(WEB申込は24時間)</td></tr>
+<tr><td>掲示の振込速度</td><td>最短即日(15時までの手続きが条件)</td></tr>
+<tr><td>確認できた報告</td><td>昼過ぎの申込で15時前に着金</td></tr>
+<tr><td>発送のコツ</td><td>追跡番号の共有で検品がスムーズ</td></tr>
+</tbody>
+</table>
+
+当日中に受け取りたい場合は、午前中の申込がおすすめです。
+
+手順を把握したら、最後に記事全体の要点を整理します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
