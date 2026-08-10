@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>スマホ申込から振込までの手順</h2>
+
+申込はスマホで完結し、来店は不要です。
+
+シミュレーションから振込までの流れを順に見ていきましょう。
+
+[st-timeline myclass="st-timeline-count" add_style=""]
+[st-timeline-list text="お申込み" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+シミュレーションで振込額を確認してから、フォーム(受付24時間)で申込む
+[/st-timeline-list]
+[st-timeline-list text="商品購入" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+指定の商品を購入して手続きを進める(商品直送買取りの形式)
+[/st-timeline-list]
+[st-timeline-list text="お振込み" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+掲示は最短3分(繁忙期は遅延の批判あり・営業時間9時〜22時)
+[/st-timeline-list]
+[/st-timeline]
+
+<h3>シミュレーションでの事前確認</h3>
+
+<span class="st-mymarker-s"><strong>申込前に、公式サイトのシミュレーションで振込額を確認できます。</strong></span>
+
+メニューと利用金額を入力すると、振込金額が表示される機能だからです。
+
+手数料込みの手取りを、申込前に把握できる機能が特徴。
+
+表示された金額に納得してから、申込に進みましょう。
+
+<h3>フォーム申込と商品購入の流れ</h3>
+
+<span class="st-mymarker-s"><strong>申込はフォームの入力から始まり、指定の商品を購入して進めます。</strong></span>
+
+現金化は商品直送買取りの形式を取るからです。
+
+2回目以降は<strong>マイページ</strong>から手続きする導線もあります。
+
+<span class="hutoaka">購入前に、金額と商品の内容を確認</span>しましょう。
+
+[st-kaiwa1]購入する商品と金額は、購入前に画面で確認しておきましょう。[/st-kaiwa1]
+
+<h3>振込完了までの時間目安</h3>
+
+<span class="st-mymarker-s"><strong>振込は最短3分という紹介ですが、実際は幅があります。</strong></span>
+
+繁忙期の混雑や営業時間で、<span class="hutoaka">所要時間が変わる</span>からです。
+
+営業時間は9時〜22時で、時間外は翌営業日の対応が目安。
+
+<table>
+<thead><tr><th>項目</th><th>内容</th></tr></thead>
+<tbody>
+<tr><td>受付</td><td>WEBフォーム(24時間)・営業時間9:00〜22:00</td></tr>
+<tr><td>掲示の振込速度</td><td>最短3分(最短即日)</td></tr>
+<tr><td>注意</td><td>繁忙期は入金が遅れたという批判あり</td></tr>
+<tr><td>事前確認</td><td>シミュレーションで手数料込みの振込額を表示</td></tr>
+</tbody>
+</table>
+
+当日中に受け取りたい場合は、早めの時間帯の申込がおすすめです。
+
+手順を把握したら、最後に記事全体の要点を整理します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
