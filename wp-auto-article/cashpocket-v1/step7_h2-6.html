@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>スマホ申込から振込までの手順</h2>
+
+申込はスマホで完結し、来店は不要です。
+
+フォーム申込から振込までの流れを順に見ていきましょう。
+
+[st-timeline myclass="st-timeline-count" add_style=""]
+[st-timeline-list text="フォームで申込" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+公式サイトのフォーム(受付24時間365日)で利用金額と連絡希望時間帯を入力する
+[/st-timeline-list]
+[st-timeline-list text="本人名義カードで決済" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+本人名義のクレジットカードで決済手続きをする(デビットカードは利用不可)
+[/st-timeline-list]
+[st-timeline-list text="振込完了" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+掲示は最短5分(確認できた報告は新規でも30分以内という内容)
+[/st-timeline-list]
+[/st-timeline]
+
+<h3>フォーム申込と確認項目の流れ</h3>
+
+<span class="st-mymarker-s"><strong>申込は公式サイトのフォームから始まります。</strong></span>
+
+受付は<strong>24時間365日</strong>で、利用金額と連絡希望時間帯を入力する流れだからです。
+
+特徴は「当社が金融業者でない事を理解していますか」という確認項目。
+
+提示された振込額に納得できなければ、<span class="hutoaka">この段階で断りましょう</span>。
+
+<h3>本人名義カードでの決済</h3>
+
+<span class="st-mymarker-s"><strong>決済に使えるのは、本人名義のクレジットカードだけです。</strong></span>
+
+フォームの必須項目で、本人名義かどうかの確認があるからです。
+
+デビットカードは利用できないという注意書きもあります。
+
+決済前に、金額と内容を確認しましょう。
+
+[st-kaiwa1]決済する金額と内容は、決済前に画面で確認しておきましょう。[/st-kaiwa1]
+
+<h3>振込完了までの時間目安</h3>
+
+<span class="st-mymarker-s"><strong>振込は最短5分という掲示ですが、実際は幅があります。</strong></span>
+
+初回の確認や混雑で、<span class="hutoaka">所要時間が変わる</span>からです。
+
+確認できた報告は、新規でも30分以内という内容。
+
+<table>
+<thead><tr><th>項目</th><th>内容</th></tr></thead>
+<tbody>
+<tr><td>受付</td><td>WEBフォーム(24時間365日)</td></tr>
+<tr><td>掲示の振込速度</td><td>最短5分</td></tr>
+<tr><td>確認できた報告</td><td>新規でも30分以内(即日目安の注記も)</td></tr>
+<tr><td>決済の条件</td><td>本人名義カードのみ・デビットカード不可</td></tr>
+</tbody>
+</table>
+
+当日中に受け取りたい場合は、早めの時間帯の申込がおすすめです。
+
+手順を把握したら、最後に記事全体の要点を整理します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
