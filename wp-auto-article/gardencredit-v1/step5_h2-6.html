@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>スマホ申込から振込までの手順</h2>
+
+申込はスマホで完結し、来店は不要です。
+
+フォーム申込から振込までの流れを順に見ていきましょう。
+
+<h3>フォーム申込と電話でのやりとり</h3>
+
+申込は公式サイトのフォーム、または電話から始まります。
+
+受付後にオペレーターとの電話があり、条件を確認してから進む流れだからです。
+
+フォーム受付は24時間365日という掲示。
+
+提示された振込額に納得できなければ、この段階で断りましょう。
+
+<h3>カードでの商品決済の手続き</h3>
+
+条件に納得したら、案内に沿ってカードで商品を決済します。
+
+現金化は商品購入の形式を取るからです。
+
+決済もスマホで完結し、来店や書類の郵送はありません。
+
+決済前に、金額と内容を確認しましょう。
+
+<h3>振込完了までの時間目安</h3>
+
+振込は最短3分という掲示ですが、実際は幅があります。
+
+混雑や申込の時間帯で、所要時間が変わるからです。
+
+確認できた整理は、営業時間外の申込は翌日9時から対応という内容。
+
+当日中に受け取りたい場合は、早めの時間帯の申込がおすすめです。
+
+手順を把握したら、最後に記事全体の要点を整理します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
