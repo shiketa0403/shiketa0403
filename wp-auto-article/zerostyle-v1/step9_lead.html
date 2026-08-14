@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content">ゼロスタイルの利用を考えて、「口コミ」「評判」「知恵袋」と検索していませんか。
+
+「振り込まれない?騙された?」と題する記事が並び、不安を感じている方も多いはずです。
+
+この記事では、知恵袋・5chの実調査結果と、レビューで確認できた声・数字を整理しました。
+
+<span class="st-mymarker-s">結論として、詐欺と断定できる被害報告は確認できず、着金の遅れの多くは口座側の反映の問題という整理です。</span>
+
+最大99.2%と実体験約92%の開きや、手数料0円の声、対応への指摘まで一つずつまとめています。
+
+読み終えるころには、見積もりで振込額を確かめてから申し込むかどうかを、自分で判断できる状態です。
+
+[st-minihukidashi webicon="" fontsize="" fontweight="" bgcolor="#FFB74D" color="#fff" margin="0 0 20px 0" radius="" position="" myclass="" add_boxstyle=""]この記事のまとめ
+<div class="maruck">
+<ul>
+ 	<li>詐欺と断定できる被害報告は確認できず</li>
+ 	<li>知恵袋の実投稿1件は2019年の信用確認の相談</li>
+ 	<li>最大99.2%は上限・実体験は約92%(5万円・約25分)</li>
+ 	<li>着金の遅れはモアタイム非対応口座の反映が要因の場合あり</li>
+ 	<li>判断基準は率でなく見積もりで確認した振込額</li>
+</ul>
+</div>
+[/st-minihukidashi]
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
