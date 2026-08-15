@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>申込から振込までの手順</h2>
+
+らくらくマネーの手続きは、電話・WEB・LINEの申込から始まります。
+
+流れは申込・決済・振込の3ステップです。
+
+[st-timeline myclass="st-timeline-count" add_style=""]
+[st-timeline-list text="電話・WEB・LINEで申込" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+[/st-timeline-list]
+[st-timeline-list text="見積もり確認とカード決済" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+[/st-timeline-list]
+[st-timeline-list text="即日振込(決済後10分の体験紹介)" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+[/st-timeline-list]
+[/st-timeline]
+
+<h3>電話・WEB・LINEの申込窓口</h3>
+
+<span class="st-mymarker-s"><strong>最初のステップは、電話・WEBフォーム・LINEのいずれかでの申込です。</strong></span>
+
+急ぎなら電話、記録を残すならWEBやLINEという使い分けができます。
+
+受付は年中無休の掲示。
+
+見積もりの返答で、手数料込みの振込額を文面で確かめましょう。
+
+<h3>見積もりとカード決済</h3>
+
+<strong>申込後は、案内に沿ってカードのショッピング枠で決済します。</strong>
+
+<span class="hutoaka">決済の確認をもって、振込の手続きに進む方式</span>のためです。
+
+対応はVISA・Mastercard・JCB・AMEX・Dinersの5ブランドの表示です。
+
+自分のカードが対象かは、<span class="st-mymarker-s">見積もりの返答で確かめましょう</span>。
+
+[st-kaiwa1]対象カードと振込額は見積もりで確認。案内に沿って進めましょう。[/st-kaiwa1]
+
+<h3>振込までの時間目安</h3>
+
+<span class="st-mymarker-s"><strong>振込までの時間は、決済後10分という体験の紹介があります。</strong></span>
+
+即日即金を掲げ、決済確認後すぐに振込へ進むためです。
+
+<table>
+<thead><tr><th>項目</th><th>内容</th></tr></thead>
+<tbody>
+<tr><td>申込</td><td>電話・WEB・LINE</td></tr>
+<tr><td>受付</td><td>年中無休・全国対応</td></tr>
+<tr><td>振込の目安</td><td>決済後10分の体験紹介</td></tr>
+<tr><td>初回</td><td>本人確認で1時間近くの声</td></tr>
+</tbody>
+</table>
+
+初回にかかった時間の声は、<span class="hutoaka">1時間近くという内容</span>。
+
+着金を急ぐ日は、初回の時間も見込んで動きましょう。
+
+最後に、この記事の調査結果を整理します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
