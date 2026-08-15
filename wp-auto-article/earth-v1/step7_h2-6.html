@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>申込から振込までの手順</h2>
+
+アースサポートの手続きは、WEBの申込から始まります。
+
+流れは申込・見積もり・決済・振込の順です。
+
+[st-timeline myclass="st-timeline-count" add_style=""]
+[st-timeline-list text="WEBフォームで申込" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+[/st-timeline-list]
+[st-timeline-list text="見積もり・条件を文面で確認" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+[/st-timeline-list]
+[st-timeline-list text="カードのショッピング枠で決済" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+[/st-timeline-list]
+[st-timeline-list text="お振込み(モアタイム口座なら夜間も即時の解説)" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+[/st-timeline-list]
+[/st-timeline]
+
+<h3>申込と見積もりの文面確認</h3>
+
+<span class="st-mymarker-s"><strong>最初のステップは、申込と見積もりの確認です。</strong></span>
+
+提示額に納得してから進めば、受取額のずれを防げます。
+
+確認したいのは、手数料込みの振込額と必要書類。
+
+見積もりの内容は、文面で受け取ってから決めましょう。
+
+<h3>カード決済の手続き</h3>
+
+<strong>見積もりに納得したら、案内に沿ってカードのショッピング枠で決済します。</strong>
+
+決済の確認をもって、振込の手続きに進む方式のためです。
+
+初回は身分証に加えて、<span class="hutoaka">収入証明系の書類を求められる場合</span>があります。
+
+<span class="st-mymarker-s">書類は事前に手元へ用意</span>して、手続きの中断を防ぎましょう。
+
+[st-kaiwa1]初回は書類が多め。先に揃えておくと手続きが止まりません。[/st-kaiwa1]
+
+<h3>振込までの時間目安</h3>
+
+<span class="st-mymarker-s"><strong>受付は24時間365日で、モアタイム参加口座なら夜間の即時振込も可能という解説です。</strong></span>
+
+振込の反映が、口座側の対応で変わるためです。
+
+<table>
+<thead><tr><th>項目</th><th>内容</th></tr></thead>
+<tbody>
+<tr><td>申込</td><td>WEB(24時間365日)</td></tr>
+<tr><td>決済</td><td>カードのショッピング枠</td></tr>
+<tr><td>振込</td><td>モアタイム口座なら夜間も即時の解説</td></tr>
+<tr><td>初回</td><td>身分証+収入証明系の場合あり</td></tr>
+</tbody>
+</table>
+
+着金を左右するのは、<span class="hutoaka">口座の条件と手続きの時間帯</span>。
+
+着金を急ぐ日は、対応口座を振込先に選びましょう。
+
+最後に、この記事の調査結果を整理します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
