@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>申込から振込までの手順</h2>
+
+TOPクレカの手続きは、電話かWEBの申込から始まります。
+
+流れは申込・本人確認・振込・商品発送の4ステップです。
+
+[st-timeline myclass="st-timeline-count" add_style=""]
+[st-timeline-list text="電話かWEBフォームで申込" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+[/st-timeline-list]
+[st-timeline-list text="初回は本人確認・見積もり確認" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+[/st-timeline-list]
+[st-timeline-list text="お振込み(2回目以降は最短5分の解説)" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+[/st-timeline-list]
+[st-timeline-list text="商品の発送・受け取り" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+[/st-timeline-list]
+[/st-timeline]
+
+<h3>電話・WEBの申込と本人確認</h3>
+
+<span class="st-mymarker-s"><strong>最初のステップは、電話かWEBフォームでの申込です。</strong></span>
+
+フリーダイヤルの番号が公式サイトに掲載されています。
+
+初回は<span class="hutoaka">本人確認書類の提出が必要</span>という流れ。
+
+見積もりの返答で、手数料込みの振込額を文面で確かめましょう。
+
+<h3>振込と商品発送の流れ</h3>
+
+<strong>振込のあとに、購入した商品が自宅へ発送されます。</strong>
+
+公式サイトの流れでも、お振込みの後に商品発送が置かれているためです。
+
+商品の受け取りまでが、この方式の一連の工程です。
+
+<span class="st-mymarker-s">配送のタイミングは、申込時に相談</span>しておきましょう。
+
+[st-kaiwa1]振込の後に商品が届く流れ。受け取りまでが一連の工程ですね。[/st-kaiwa1]
+
+<h3>入金までの時間目安</h3>
+
+<span class="st-mymarker-s"><strong>入金までの時間は、2回目以降で最短5分という解説です。</strong></span>
+
+初回は本人確認があるため、<span class="hutoaka">30分〜1時間ほどが目安</span>です。
+
+<table>
+<thead><tr><th>項目</th><th>内容</th></tr></thead>
+<tbody>
+<tr><td>申込</td><td>電話・WEBフォーム</td></tr>
+<tr><td>振込の目安</td><td>2回目以降は最短5分の解説</td></tr>
+<tr><td>初回</td><td>本人確認で30分〜1時間</td></tr>
+<tr><td>商品</td><td>振込後に自宅へ発送</td></tr>
+</tbody>
+</table>
+
+時間を左右するのは、初回かどうかと申込の時間帯。
+
+着金を急ぐ日は、初回の時間も見込んで動きましょう。
+
+最後に、この記事の調査結果を整理します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
