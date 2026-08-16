@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>申込から振込までの手順</h2>
+
+換金堂の手続きは、公式サイトのフォームかフリーダイヤルの申込から始まります。
+
+流れは申込・本人確認・商品購入・振込の順です。
+
+[st-timeline myclass="st-timeline-count" add_style=""]
+[st-timeline-list text="フォームかフリーダイヤルで申込" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+[/st-timeline-list]
+[st-timeline-list text="見積もり・条件を電話で確認" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+[/st-timeline-list]
+[st-timeline-list text="本人確認とカード決済" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+[/st-timeline-list]
+[st-timeline-list text="お振込み(最短5分〜30分紹介・時間帯で変動)" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+[/st-timeline-list]
+[/st-timeline]
+
+<h3>申込と見積もりの電話確認</h3>
+
+<span class="st-mymarker-s"><strong>最初のステップは、申込と見積もりの電話確認です。</strong></span>
+
+<span class="hutoaka">掲示と実際の率に開きがある</span>業者では、金額の確定が先に立ちます。
+
+確認したいのは、適用率・手数料の扱い・振込額の3点。
+
+内容をメモに残してから、次の手続きに進みましょう。
+
+<h3>カード決済の手続き</h3>
+
+<strong>見積もりに納得したら、本人確認を済ませ、案内に沿ってカードで指定商品を決済します。</strong>
+
+現物の商品の売買という方式で、決済の確認をもって振込に進むためです。
+
+初回は本人確認書類の提出があるため、手元に用意しておくと進行が止まりません。
+
+不明点は、<span class="st-mymarker-s">決済前に電話で確かめ</span>ましょう。
+
+[st-kaiwa1]初回は本人確認書類を手元に。準備しておくと止まりません。[/st-kaiwa1]
+
+<h3>振込までの時間目安</h3>
+
+<span class="st-mymarker-s"><strong>入金は最短5分〜30分という紹介ですが、時間帯や確認の状況で変わります。</strong></span>
+
+申込の集中や本人確認の所要で、実際の着金が延びる場合があるためです。
+
+<table>
+<thead><tr><th>項目</th><th>内容</th></tr></thead>
+<tbody>
+<tr><td>申込</td><td>WEBフォーム・フリーダイヤル</td></tr>
+<tr><td>決済</td><td>本人確認+カードで指定商品を購入</td></tr>
+<tr><td>振込</td><td>最短5分〜30分の紹介</td></tr>
+<tr><td>下限</td><td>申込は3万円から(小口非対応)</td></tr>
+</tbody>
+</table>
+
+時間を左右するのは、<span class="hutoaka">申込の時間帯と本人確認の進み具合</span>。
+
+当日中の入金を狙う日は、早めの時間に申し込みましょう。
+
+最後に、この記事の調査結果を整理します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
