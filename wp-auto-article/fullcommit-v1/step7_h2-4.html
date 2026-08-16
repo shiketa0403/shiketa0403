@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>知恵袋・5chの投稿を実際に調査</h2>
+
+Yahoo!知恵袋と5chを実際に検索して調査しました。
+
+確認できたのは、紹介経由の内容が中心です。
+
+<h3>知恵袋はSMS報告の紹介1件</h3>
+
+<span class="st-mymarker-s"><strong>知恵袋については、SMS連絡の念押しに関する投稿の紹介が1件ある状況です。</strong></span>
+
+当方の検索では、<span class="hutoaka">元の投稿そのものを特定できていません</span>。
+
+それ以外にヒットするのは、レビューサイト同士の紹介記事ばかり。
+
+「知恵袋の口コミ」と称する記事も、元の投稿を確かめてから読みましょう。
+
+<h3>5chの投稿は特定できず</h3>
+
+<span class="st-mymarker-s"><strong>5chでは、フルコミットへの直接の書き込みを特定できませんでした。</strong></span>
+
+「5chの口コミまとめ」と題する記事にも、元レスの引用がないためです。
+
+まとめ記事の内容は、レビューサイト経由の紹介として読む範囲にとどまります。
+
+<span class="hutoaka">元の書き込みが示されない口コミ</span>は、参考程度にとどめましょう。
+
+[st-cmemo webicon="st-svg-exclamation-circle" iconcolor="#919191" bgcolor="#fafafa" color="#000000" bordercolor="" borderwidth="" iconsize=""]「フルコミットの口コミ」はレビューサイト経由の紹介が中心です。元の投稿があるかを確かめて読みましょう。[/st-cmemo]
+
+生の声が少ないからこそ、申込前に押さえるべきは条件と連絡経路の確認です。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
