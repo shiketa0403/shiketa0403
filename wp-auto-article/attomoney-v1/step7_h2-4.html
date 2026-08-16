@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>知恵袋・5chの投稿を実際に調査</h2>
+
+Yahoo!知恵袋と5chを実際に検索して調査しました。
+
+結論から言うと、生の投稿はほとんど見つかりません。
+
+<h3>知恵袋に実投稿は確認できず</h3>
+
+<span class="st-mymarker-s"><strong>あっとマネーの利用体験に関する知恵袋の実投稿は、確認できませんでした。</strong></span>
+
+検索でヒットするのは、テレビ番組や曲名の「マネー」に関する無関係な質問のためです。
+
+レビュー記事にも「知恵袋に投稿はない」という記述があり、この記事の調査結果と一致。
+
+「知恵袋で高評価」といった紹介を見ても、<span class="hutoaka">元の投稿を確かめてから</span>信じましょう。
+
+<h3>5chの要旨は提出書類の指摘</h3>
+
+<span class="st-mymarker-s"><strong>5chの言及はごくわずかで、確認できたのは提出書類に関する否定的な要旨1件です。</strong></span>
+
+専用スレッドがなく、後払い現金化の総合スレッドでも話題が少ないためです。
+
+内容は、勤務先や学生証の提出を求められたという指摘にとどまります。
+
+<span class="hutoaka">元の書き込みは特定できていない</span>ため、参考程度にとどめましょう。
+
+[st-cmemo webicon="st-svg-exclamation-circle" iconcolor="#919191" bgcolor="#fafafa" color="#000000" bordercolor="" borderwidth="" iconsize=""]ネットで見かける「あっとマネーの口コミ」は、レビューサイト経由の紹介や要旨が中心です。元の投稿があるかを確かめて読みましょう。[/st-cmemo]
+
+生の声が少ないからこそ、申込前に押さえるべきは情報の読み方です。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
