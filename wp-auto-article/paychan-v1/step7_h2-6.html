@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  textarea { width: 100%; height: 600px; font-family: monospace; font-size: 13px; white-space: pre-wrap; word-wrap: break-word; }
+</style>
+</head>
+<body>
+<button id="copyBtn">コピー</button>
+<textarea readonly id="content"><h2>申込から振込までの手順</h2>
+
+ペイチェンの手続きは、公式サイトの申込フォームから始まります。
+
+流れは申込・見積もり・決済・振込の順です。
+
+[st-timeline myclass="st-timeline-count" add_style=""]
+[st-timeline-list text="申込フォームで申込" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+[/st-timeline-list]
+[st-timeline-list text="見積もり・条件を文面で確認" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+[/st-timeline-list]
+[st-timeline-list text="案内に沿って指定商品を決済" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+[/st-timeline-list]
+[st-timeline-list text="お振込み(最短3分の掲示・時間帯で変動)" url="" myclass="" fontsize="" fontweight="bold" color="" bgcolor="" center=""]
+[/st-timeline-list]
+[/st-timeline]
+
+<h3>申込と見積もりの文面確認</h3>
+
+<span class="st-mymarker-s"><strong>最初のステップは、申込と見積もりの確認です。</strong></span>
+
+提示額に納得してから進めば、<span class="hutoaka">受取額のずれ</span>を防げます。
+
+シミュレーションは目安で、確認したいのは手数料込みの振込額。
+
+見積もりの内容は、文面で受け取ってから決めましょう。
+
+<h3>指定商品の決済手続き</h3>
+
+<strong>見積もりに納得したら、案内に沿って指定の商品を決済します。</strong>
+
+購入の確認をもって、振込の手続きに進む方式のためです。
+
+初回は本人確認のやり取りが挟まるため、書類を手元に用意しておくと止まりません。
+
+不明点は、<span class="st-mymarker-s">決済前にLINEで確かめ</span>ましょう。
+
+[st-kaiwa1]初回は本人確認書類を手元に。準備しておくと止まりません。[/st-kaiwa1]
+
+<h3>振込までの時間目安</h3>
+
+<span class="st-mymarker-s"><strong>振込は最短3分の掲示ですが、時間帯によっては翌営業日にずれます。</strong></span>
+
+当日の処理は、営業時間と締切の範囲で進むためです。
+
+<table>
+<thead><tr><th>項目</th><th>内容</th></tr></thead>
+<tbody>
+<tr><td>申込</td><td>WEBフォーム</td></tr>
+<tr><td>決済</td><td>後払いアプリ・キャリア決済・クレカ</td></tr>
+<tr><td>振込</td><td>最短3分の掲示・時間帯で翌営業日</td></tr>
+<tr><td>営業</td><td>9〜22時の記載(紹介では幅あり)</td></tr>
+</tbody>
+</table>
+
+時間を左右するのは、<span class="hutoaka">申込の時刻と当日の混雑</span>。
+
+当日中の入金を狙う日は、早めの時間に申し込みましょう。
+
+最後に、この記事の調査結果を整理します。
+</textarea>
+<script>
+document.getElementById('copyBtn').addEventListener('click', () => {
+  navigator.clipboard.writeText(document.getElementById('content').value);
+});
+</script>
+</body>
+</html>
