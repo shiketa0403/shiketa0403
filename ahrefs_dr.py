@@ -34,7 +34,7 @@ API_URL = "https://api.ahrefs.com/v3/batch-analysis/batch-analysis"
 # Standard プランの制限に合わせた既定値
 DEFAULT_CHUNK = 25          # 1リクエストあたりのドメイン数（Standard は25行上限）
 DEFAULT_INTERVAL = 1.1      # リクエスト間隔（秒）。60req/min を超えないように
-DEFAULT_EXCLUDE_MAX = 2     # この DR 以下を除外（既定: DR2以下を除外 = DR3以上だけ残す）
+DEFAULT_MIN_DR = 3.0        # このDR以上を残す（この値を含む）。小数OK
 
 # batch-analysis の target 設定
 TARGET_MODE = "subdomains"  # ドメイン全体の DR を見る（exact/prefix/domain/subdomains）
@@ -260,8 +260,8 @@ def main():
     ap.add_argument("-o", "--output", default="ahrefs_dr.csv", help="全結果CSV")
     ap.add_argument("--passed-output", default="ahrefs_dr_passed.csv",
                     help="しきい値を通過したドメインのCSV")
-    ap.add_argument("--exclude-max", type=int, default=DEFAULT_EXCLUDE_MAX,
-                    help="この DR 以下を除外（既定2 = DR2以下を除外しDR3以上を残す）")
+    ap.add_argument("--min-dr", type=float, default=DEFAULT_MIN_DR,
+                    help="このDR以上を残す（この値を含む・小数OK）。例: 1.5 で DR1.5以上を残す")
     ap.add_argument("--chunk", type=int, default=DEFAULT_CHUNK, help="1リクエストのドメイン数")
     ap.add_argument("--interval", type=float, default=DEFAULT_INTERVAL, help="リクエスト間隔(秒)")
     ap.add_argument("--test", action="store_true", help="1件だけ投げて生レスポンス・消費unitsを確認")
@@ -285,7 +285,7 @@ def main():
 
     num_chunks = (len(domains) + args.chunk - 1) // args.chunk
     print(f"チャンク数: {num_chunks}（{args.chunk}件/リクエスト, {args.interval}s間隔）")
-    print(f"除外条件: DR {args.exclude_max} 以下を除外（DR {args.exclude_max + 1} 以上を通過）\n")
+    print(f"絞り込み: DR {args.min_dr} 以上を残す（この値を含む）\n")
 
     results = []          # {domain, dr, note}
     total_units = 0
@@ -327,8 +327,8 @@ def main():
     results = list(by_domain.values())
     write_csv(args.output, results)
 
-    # しきい値で絞り込み（DR が exclude_max より大きいものだけ通過）
-    passed = [r for r in results if r["dr"] is not None and r["dr"] > args.exclude_max]
+    # しきい値で絞り込み（DR が min_dr 以上のものだけ通過）
+    passed = [r for r in results if r["dr"] is not None and r["dr"] >= args.min_dr]
     passed.sort(key=lambda r: r["dr"], reverse=True)
     write_csv(args.passed_output, passed)
 
@@ -337,7 +337,7 @@ def main():
     failed = [r for r in results if r["dr"] is None]
     print(f"\n{'='*60}")
     print(f"完了: {len(results)}件中 DR取得 {len(got)}件 / 失敗 {len(failed)}件")
-    print(f"通過（DR>{args.exclude_max}）: {len(passed)}件 → {args.passed_output}")
+    print(f"通過（DR>={args.min_dr}）: {len(passed)}件 → {args.passed_output}")
     print(f"全結果: {args.output}")
     print(f"合計消費 units: {total_units if total_units else '不明（ヘッダ未検出）'}")
     print(f"{'='*60}")

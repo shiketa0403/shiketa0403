@@ -1,7 +1,7 @@
 # 中古ドメイン DR 一括チェック（Ahrefs API v3）
 
 中古ドメイン購入の選別用。Ahrefs の `batch-analysis` エンドポイントでドメインの
-DR（Domain Rating）を一括取得し、**DR2以下を除外**（DR3以上だけ残す）する。
+DR（Domain Rating）を一括取得し、指定したDR以上のドメインだけ残す（`min_dr` で指定）。
 
 `domain_check`（Wayback でタイトル調査）とは独立したツール。お互い干渉しない。
 
@@ -38,8 +38,8 @@ Ahrefs API のレスポンス構造・消費 units の実値を確認する。
 
 1. **Actions → Ahrefs DR 一括チェック → Run workflow**
    - `test` は **false**（既定）
-   - `exclude_max` は除外する DR の上限（既定 `2` = DR2以下を除外）
-2. 完了後 `csv/ahrefs_dr_passed.csv` に DR3以上のドメインが残る
+   - `min_dr` は残す最小DR（この値を含む・小数OK）。既定 `3`。例: `1.5` で DR1.5以上を残す
+2. 完了後 `csv/ahrefs_dr_passed.csv` に `min_dr` 以上のドメインが残る
 
 ## Standard プランの制限と消費量
 
