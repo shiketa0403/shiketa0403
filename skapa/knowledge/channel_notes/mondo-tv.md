@@ -29,7 +29,7 @@
 
 ## 公式サイト
 
-- TOP: https://mondotv.jp/
+- TOP: https://www.discoveryjapan.jp/mondotv/ （mondotv.jp はこちらへリダイレクト・2026年8月ユーザー確認済み）
 
 ## 看板番組・主要コンテンツ
 
