@@ -36,8 +36,11 @@ def capture(page, shot: dict, out_path: Path) -> dict:
         pass
     page.wait_for_timeout(3500)
 
-    # Cookie同意バナー等を閉じる試み
-    for sel in ['button:has-text("同意")', 'button:has-text("Accept")',
+    # Cookie同意バナー・年齢確認モーダル等を閉じる試み
+    for sel in ['button:has-text("はい")', 'a:has-text("はい")',
+                'button:has-text("18歳以上")', 'a:has-text("18歳以上")',
+                'button:has-text("ENTER")', 'a:has-text("ENTER")',
+                'button:has-text("同意")', 'button:has-text("Accept")',
                 'button:has-text("OK")', 'button:has-text("閉じる")',
                 '[id*="cookie"] button', '[class*="cookie"] button',
                 '[id*="consent"] button', '[class*="consent"] button']:

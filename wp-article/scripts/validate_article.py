@@ -73,9 +73,10 @@ class Finding:
 
 
 def strip_markup(html: str) -> str:
-    """タグ・ショートコードを除いた本文テキスト。"""
+    """タグ・ショートコード・画像プレースホルダを除いた本文テキスト。"""
     text = SHORTCODE_RE.sub("", html)
     text = TAG_RE.sub("", text)
+    text = re.sub(r"\{\{IMG:[^}]+\}\}", "", text)
     return text
 
 
@@ -148,8 +149,10 @@ def check_text_rules(name: str, html: str, findings: list[Finding]):
         if count >= 3:
             findings.append(Finding("P2", "曖昧語の多用", name, f"「{w}」×{count}回"))
 
-    # P1: 文長
-    for sent in split_sentences(text):
+    # P1: 文長（見出し・テーブル・リスト・装飾ボックスを除いた地の文のみ対象。
+    # 表のセルやli項目は句点を持たず連結されて誤検知するため）
+    prose = strip_markup(strip_paragraph_source(html))
+    for sent in split_sentences(prose):
         n = len(sent)
         if n >= SENT_LEN_ERR:
             findings.append(Finding("P1", "P1-1 文長超過", name, sent[:40] + f"…({n}字)"))
