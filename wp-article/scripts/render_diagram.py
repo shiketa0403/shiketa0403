@@ -58,8 +58,21 @@ def main():
                 print(f"  スキップ: fileが未指定 ({job.get('type')})", file=sys.stderr)
                 continue
             try:
-                page.evaluate("spec => render(spec)", job)
-                page.wait_for_timeout(120)
+                if job.get("type") == "custom":
+                    # 自由デザイン: out/<slug>/diagrams/*.html を直接描画。
+                    # HTML内に id="canvas" の要素が必須（その範囲を撮影する）
+                    html_path = (outdir / job["html"]).resolve()
+                    if not html_path.exists():
+                        raise FileNotFoundError(f"custom html not found: {html_path}")
+                    page.goto(html_path.as_uri())
+                    page.wait_for_load_state("load")
+                    page.evaluate("document.fonts.ready")
+                else:
+                    page.goto(TEMPLATE.resolve().as_uri())
+                    page.wait_for_load_state("load")
+                    page.evaluate("document.fonts.ready")
+                    page.evaluate("spec => render(spec)", job)
+                page.wait_for_timeout(150)
                 el = page.locator("#canvas")
                 box = el.bounding_box()
                 el.screenshot(path=str(images_dir / fname))

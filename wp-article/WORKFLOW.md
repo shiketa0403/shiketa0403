@@ -86,12 +86,16 @@ facts.json で usable_as_link=true のURLのみ使用。トップページでは
 バナー・st_af はマスタに値がある場合のみ。`out/lead.html` に保存。
 
 ### Phase 8: 図解＋アイキャッチ（prompts/11）
-本文全文を分析して `out/diagrams.json` を作成（アイキャッチ+図解4枚以上、
-タイプ重複回避、CTA直前に後押し図解、YMYLルール適用、数値はfacts.jsonと一致）。
-```
-python wp-article/scripts/render_diagram.py out/<slug>
-```
-→ `out/images/` にPNGが生成される。
+1. 記事全体のビジュアルテーマを決める（prompts/11「自由デザイン方式」参照）
+2. 図解ごとに `out/diagrams/dNN.html` を自由デザインで作成し、
+   `out/diagrams.json` を作成（type: "custom" 基本。アイキャッチ+図解4枚以上、
+   CTA直前に後押し図解、YMYLルール適用、数値はfacts.jsonと一致、日付なし）
+3. ```
+   python wp-article/scripts/render_diagram.py out/<slug>
+   ```
+4. **目視セルフチェック（必須）**: 生成された `out/images/*.png` を1枚ずつReadで開いて確認する。
+   チェック観点: 文字のはみ出し・不自然な改行・コントラスト不足・要素の重なり・
+   絵文字が内容と合っているか。問題があればHTMLを修正して再レンダリング（最大2周）
 
 ### Phase 9: エビデンススクショ（prompts/12）
 facts.json から `out/shots.json` を作成（自動撮影3〜8枚+manual_shots）。
