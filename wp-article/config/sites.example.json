@@ -1,0 +1,8 @@
+{
+  "lovedoll": {
+    "url": "https://lovedoll.jetboy.jp",
+    "username": "YOUR_WP_USERNAME",
+    "app_password": "YOUR_APP_PASSWORD"
+  },
+  "_memo": "このファイルを sites.local.json という名前でコピーして記入する。sites.local.json はgitignore対象なのでGitHubにはアップロードされない。新しいドメインを追加するときはブロックを増やすだけ"
+}

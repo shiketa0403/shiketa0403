@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  :root {
+    --primary: #1E4E8C;
+    --primary-dark: #14365F;
+    --accent: #F59E0B;
+    --accent-soft: #FEF3C7;
+    --danger: #DC2626;
+    --danger-soft: #FEE2E2;
+    --ok: #16A34A;
+    --ok-soft: #DCFCE7;
+    --ink: #1F2937;
+    --sub: #6B7280;
+    --line: #E2E8F0;
+    --bg: #FFFFFF;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Yu Gothic UI", "Yu Gothic", "Meiryo", "Hiragino Sans",
+                 "Noto Sans CJK JP", "Noto Sans JP", sans-serif;
+    background: #fff;
+  }
+  #canvas {
+    width: 1200px;
+    background: var(--bg);
+    color: var(--ink);
+    overflow: hidden;
+  }
+
+  /* ---- 共通ヘッダー ---- */
+  .head-band {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: #fff;
+    padding: 44px 56px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .head-band.warn { background: linear-gradient(135deg, #B91C1C 0%, #7F1D1D 100%); }
+  .head-band .t { font-size: 62px; font-weight: 800; line-height: 1.25; letter-spacing: .02em; }
+  .head-bar { width: 14px; align-self: stretch; border-radius: 7px; background: var(--accent); flex: none; }
+  .body-pad { padding: 48px 56px 56px; }
+
+  /* ---- eyecatch ---- */
+  .ec {
+    width: 1200px; height: 630px;
+    background:
+      radial-gradient(900px 500px at 85% -10%, rgba(255,255,255,.14), transparent 60%),
+      radial-gradient(700px 420px at 10% 110%, rgba(245,158,11,.25), transparent 55%),
+      linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 70%);
+    color: #fff;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center; gap: 30px;
+    padding: 0 180px; /* OGPセーフゾーン: 左右15% */
+    position: relative;
+  }
+  .ec .badge {
+    background: var(--accent); color: #fff;
+    font-size: 34px; font-weight: 700;
+    padding: 12px 36px; border-radius: 999px;
+  }
+  .ec .main { font-size: 84px; font-weight: 900; line-height: 1.25; letter-spacing: .02em;
+              text-shadow: 0 4px 18px rgba(0,0,0,.25); }
+  .ec .main .em { color: #FFD766; }
+  .ec .sub { font-size: 42px; font-weight: 600; opacity: .92; line-height: 1.4; }
+  .ec .rule { width: 120px; height: 6px; background: var(--accent); border-radius: 3px; }
+
+  /* ---- features ---- */
+  .feat { display: flex; flex-direction: column; gap: 28px; }
+  .feat .item {
+    display: flex; align-items: center; gap: 32px;
+    border: 3px solid var(--line); border-radius: 20px;
+    padding: 34px 38px; background: #FBFDFF;
+  }
+  .icon-wrap {
+    width: 108px; height: 108px; flex: none; border-radius: 999px;
+    background: var(--primary); display: flex; align-items: center; justify-content: center;
+  }
+  .icon-wrap svg { width: 60px; height: 60px; fill: #fff; }
+  .feat .txt .h { font-size: 48px; font-weight: 800; line-height: 1.3; }
+  .feat .txt .b { font-size: 40px; color: var(--sub); margin-top: 8px; line-height: 1.45; }
+
+  /* ---- steps ---- */
+  .steps { display: flex; flex-direction: column; }
+  .step { display: flex; gap: 34px; }
+  .step .rail { display: flex; flex-direction: column; align-items: center; flex: none; width: 130px; }
+  .step .num {
+    width: 130px; height: 130px; border-radius: 999px; flex: none;
+    background: var(--primary); color: #fff;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    font-weight: 800;
+  }
+  .step .num .l1 { font-size: 30px; opacity: .85; }
+  .step .num .l2 { font-size: 44px; line-height: 1; }
+  .step.goal .num { background: var(--accent); }
+  .step.goal .num .l2 { font-size: 36px; letter-spacing: .04em; }
+  .step .conn { width: 8px; flex: 1 1 24px; min-height: 34px; background: var(--line); }
+  .step:last-child .conn { display: none; }
+  .step .txt { padding: 16px 0 44px; }
+  .step .txt .h { font-size: 50px; font-weight: 800; line-height: 1.3; }
+  .step .txt .b { font-size: 40px; color: var(--sub); margin-top: 6px; line-height: 1.45; }
+
+  /* ---- compare ---- */
+  table.cmp { width: 100%; border-collapse: collapse; font-size: 40px; }
+  table.cmp th, table.cmp td {
+    border: 2px solid var(--line); padding: 26px 20px; text-align: center; line-height: 1.35;
+  }
+  table.cmp thead th { background: var(--primary); color: #fff; font-size: 42px; font-weight: 800; }
+  table.cmp thead th.hl { background: var(--accent); }
+  table.cmp td.hl { background: var(--accent-soft); font-weight: 800; }
+  table.cmp td:first-child, table.cmp th:first-child { font-weight: 700; background: #F8FAFC; }
+  table.cmp thead th:first-child { background: var(--primary-dark); color: #fff; }
+
+  /* ---- proscons ---- */
+  .pc { display: flex; flex-direction: column; gap: 36px; }
+  .pc .block { border-radius: 20px; overflow: hidden; border: 3px solid var(--line); }
+  .pc .cap { font-size: 46px; font-weight: 800; color: #fff; padding: 22px 36px;
+             display: flex; align-items: center; gap: 18px; }
+  .pc .good .cap { background: var(--ok); }
+  .pc .bad .cap { background: var(--danger); }
+  .pc ul { list-style: none; padding: 20px 36px 30px; }
+  .pc .good ul { background: var(--ok-soft); }
+  .pc .bad ul { background: var(--danger-soft); }
+  .pc li { font-size: 42px; line-height: 1.4; padding: 14px 0 14px 56px; position: relative; }
+  .pc .good li::before { content: "◯"; position: absolute; left: 0; color: var(--ok); font-weight: 800; }
+  .pc .bad li::before { content: "✕"; position: absolute; left: 0; color: var(--danger); font-weight: 800; }
+
+  /* ---- warning ---- */
+  .warn-list { display: flex; flex-direction: column; gap: 26px; }
+  .warn-list .item {
+    display: flex; gap: 28px; align-items: flex-start;
+    background: #FFF7F7; border: 3px solid #FECACA; border-left: 16px solid var(--danger);
+    border-radius: 16px; padding: 30px 34px;
+  }
+  .warn-list .mark { flex: none; width: 74px; height: 74px; border-radius: 999px;
+    background: var(--danger); color: #fff; font-size: 48px; font-weight: 900;
+    display: flex; align-items: center; justify-content: center; }
+  .warn-list .h { font-size: 46px; font-weight: 800; line-height: 1.3; }
+  .warn-list .b { font-size: 40px; color: var(--sub); margin-top: 6px; line-height: 1.45; }
+
+  /* ---- summary ---- */
+  .sum ul { list-style: none; display: flex; flex-direction: column; gap: 22px; }
+  .sum li { font-size: 44px; line-height: 1.4; padding: 6px 0 6px 66px; position: relative; font-weight: 600; }
+  .sum li::before { content: "✔"; position: absolute; left: 8px; color: var(--accent); font-weight: 900; }
+  .sum .concl {
+    margin-top: 42px; background: var(--accent-soft); border: 3px solid var(--accent);
+    border-radius: 16px; padding: 32px 38px; font-size: 44px; font-weight: 800; line-height: 1.45;
+  }
+</style>
+</head>
+<body>
+<div id="canvas"></div>
+<script>
+const ICONS = {
+  shield: '<path d="M32 4 8 14v16c0 15 10 26 24 30 14-4 24-15 24-30V14L32 4zm-4 40-10-10 4-4 6 6 14-14 4 4-18 18z"/>',
+  coin:   '<path d="M32 6C17 6 6 17 6 32s11 26 26 26 26-11 26-26S47 6 32 6zm3 40v4h-6v-4c-5-1-9-4-9-9h6c0 2 2 4 6 4s6-1 6-4c0-2-2-3-7-4-6-1-11-3-11-9 0-5 4-8 9-9v-4h6v4c5 1 8 4 9 8h-6c-1-2-3-3-6-3-4 0-6 1-6 4 0 2 3 3 7 4 7 1 11 3 11 9 0 5-4 8-9 9z"/>',
+  graph:  '<path d="M8 52h48v6H8zM12 30h8v18h-8zM26 18h8v30h-8zM40 8h8v40h-8z"/>',
+  check:  '<path d="M26 46 10 30l5-5 11 11 23-23 5 5z"/>',
+  clock:  '<path d="M32 6C17 6 6 17 6 32s11 26 26 26 26-11 26-26S47 6 32 6zm2 28-14 8-3-5 11-6V16h6v18z"/>',
+  truck:  '<path d="M4 12h34v28H4zM42 22h10l8 10v8h-4a7 7 0 1 1-14 0H26a7 7 0 1 1-14 0H8v-6h34V22z"/>',
+  chat:   '<path d="M8 8h48v34H26L12 56V42H8z"/>',
+  doc:    '<path d="M14 4h26l10 10v46H14zM40 6v10h10zM20 28h24v4H20zm0 10h24v4H20zm0 10h16v4H20z"/>',
+  star:   '<path d="m32 4 8 18 20 2-15 13 5 19-18-11-18 11 5-19L4 24l20-2z"/>',
+  warn:   '<path d="M32 4 2 58h60L32 4zm-3 20h6v18h-6zm0 22h6v6h-6z"/>',
+  home:   '<path d="m32 6 26 22h-8v28H38V40H26v16H14V28H6z"/>',
+  lock:   '<path d="M46 26v-6a14 14 0 0 0-28 0v6h-6v32h40V26zm-22-6a8 8 0 0 1 16 0v6H24z"/>'
+};
+const esc = s => String(s ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+const icon = n => `<svg viewBox="0 0 64 64">${ICONS[n] || ICONS.check}</svg>`;
+
+function headBand(title, warn=false) {
+  return `<div class="head-band${warn ? " warn" : ""}"><div class="head-bar"></div><div class="t">${esc(title)}</div></div>`;
+}
+
+const RENDER = {
+  eyecatch(s) {
+    // メインコピー中の数字をアクセント色に。「|」は改行指定
+    const main = esc(s.main_copy)
+      .replace(/([0-9０-９]+[^ 、。<|]{0,3})/g, '<span class="em">$1</span>')
+      .replace(/\|/g, "<br>");
+    const sub = esc(s.sub_copy || "").replace(/\|/g, "<br>");
+    return `<div class="ec">
+      ${s.badge ? `<div class="badge">${esc(s.badge)}</div>` : ""}
+      <div class="main">${main}</div>
+      <div class="rule"></div>
+      ${sub ? `<div class="sub">${sub}</div>` : ""}
+    </div>`;
+  },
+  features(s) {
+    const items = (s.items || []).map(i => `
+      <div class="item">
+        <div class="icon-wrap">${icon(i.icon)}</div>
+        <div class="txt"><div class="h">${esc(i.head)}</div>
+        ${i.body ? `<div class="b">${esc(i.body)}</div>` : ""}</div>
+      </div>`).join("");
+    return headBand(s.title) + `<div class="body-pad"><div class="feat">${items}</div></div>`;
+  },
+  steps(s) {
+    const n = (s.steps || []).length;
+    const items = (s.steps || []).map((st, i) => {
+      const goal = /goal|完了/i.test(st.label || "") || i === n - 1;
+      const [l1, l2] = splitLabel(st.label || `STEP${i + 1}`);
+      return `<div class="step${goal ? " goal" : ""}">
+        <div class="rail"><div class="num"><div class="l1">${esc(l1)}</div><div class="l2">${esc(l2)}</div></div>
+        <div class="conn"></div></div>
+        <div class="txt"><div class="h">${esc(st.head)}</div>
+        ${st.body ? `<div class="b">${esc(st.body)}</div>` : ""}</div>
+      </div>`;
+    }).join("");
+    return headBand(s.title) + `<div class="body-pad"><div class="steps">${items}</div></div>`;
+  },
+  compare(s) {
+    const hl = s.highlight_col ?? 1;
+    const ths = (s.columns || []).map((c, i) =>
+      `<th class="${i === hl ? "hl" : ""}">${esc(c)}</th>`).join("");
+    const rows = (s.rows || []).map(r =>
+      `<tr>${r.map((c, i) => `<td class="${i === hl ? "hl" : ""}">${esc(c)}</td>`).join("")}</tr>`).join("");
+    return headBand(s.title) +
+      `<div class="body-pad"><table class="cmp"><thead><tr>${ths}</tr></thead><tbody>${rows}</tbody></table></div>`;
+  },
+  proscons(s) {
+    const li = a => (a || []).map(x => `<li>${esc(x)}</li>`).join("");
+    return headBand(s.title) + `<div class="body-pad"><div class="pc">
+      <div class="block good"><div class="cap">${esc(s.pros_title || "メリット")}</div><ul>${li(s.pros)}</ul></div>
+      <div class="block bad"><div class="cap">${esc(s.cons_title || "デメリット")}</div><ul>${li(s.cons)}</ul></div>
+    </div></div>`;
+  },
+  warning(s) {
+    const items = (s.items || []).map(i => `
+      <div class="item"><div class="mark">!</div>
+        <div><div class="h">${esc(i.head)}</div>
+        ${i.body ? `<div class="b">${esc(i.body)}</div>` : ""}</div>
+      </div>`).join("");
+    return headBand(s.title, true) + `<div class="body-pad"><div class="warn-list">${items}</div></div>`;
+  },
+  summary(s) {
+    const items = (s.items || []).map(x => `<li>${esc(x)}</li>`).join("");
+    return headBand(s.title) + `<div class="body-pad"><div class="sum"><ul>${items}</ul>
+      ${s.conclusion ? `<div class="concl">${esc(s.conclusion)}</div>` : ""}</div></div>`;
+  }
+};
+
+function splitLabel(label) {
+  const m = label.match(/^([A-Za-z]+)\s*([0-9０-９]*)$/);
+  if (m && m[2]) return [m[1], m[2]];
+  if (/^goal$/i.test(label)) return ["", "GOAL"];
+  return ["", label];
+}
+
+// render_diagram.py から呼ばれる
+function render(spec) {
+  const el = document.getElementById("canvas");
+  const fn = RENDER[spec.type];
+  if (!fn) throw new Error("unknown type: " + spec.type);
+  el.innerHTML = fn(spec);
+  return true;
+}
+</script>
+</body>
+</html>

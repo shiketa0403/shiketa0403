@@ -5,3 +5,7 @@ __pycache__/
 *.pyc
 .env
 screenshots/
+
+# 記事パイプライン: 認証情報と生成物はコミットしない
+wp-article/config/sites.local.json
+wp-article/out/

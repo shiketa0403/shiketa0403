@@ -1,5 +1,12 @@
 # 運用ルール
 
+## ブログ記事自動作成パイプライン（wp-article/）
+- キーワード・案件情報から **リサーチ→執筆→機械監査→装飾→図解/アイキャッチ→スクショ→WordPress下書き投稿** までを無人実行する仕組み
+- **「◯◯の記事を作成して」と指示されたら `wp-article/WORKFLOW.md` に従って実行する**（承認ゲートなし・最後に下書きURLを報告）
+- 投稿先は `wp-article/config/sites.local.json`（ローカルのみ・gitignore対象）で定義。現在: lovedoll（https://lovedoll.jetboy.jp）
+- 実行はローカルセッション推奨（このクラウド環境からは投稿先WordPressに直接接続できないため、クラウドでは final.html 生成まで）
+- 詳細: `wp-article/README.md`
+
 ## WordPress投稿
 - WordPress投稿は **GitHub Actions経由** で行う（この環境から直接 civichat.jp に接続できない）
 - `csv/post.csv` をpush → `wp_post.yml` が自動実行される（投稿対象はこの1ファイルのみ）
