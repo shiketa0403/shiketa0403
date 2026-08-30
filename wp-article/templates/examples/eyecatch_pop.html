@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- 見本: アイキャッチ（ポップ・丸ゴシック）。out/<slug>/diagrams/ に置く場合は
+     fonts.css のパスを ../../../templates/diagram_fonts.css に変える -->
+<html lang="ja"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../diagram_fonts.css">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:"ZenMaru","NotoSansJP","Yu Gothic UI","Meiryo",sans-serif; background:#fff; }
+#canvas {
+  width:1200px; height:630px; position:relative; overflow:hidden;
+  background:linear-gradient(135deg,#FFF6E9 0%,#FFEAD1 55%,#FFE0B8 100%);
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+}
+/* 装飾: 大きな円・ドット */
+.deco { position:absolute; border-radius:999px; }
+.c1 { width:420px; height:420px; background:#FFD9A0; opacity:.5; top:-180px; left:-140px; }
+.c2 { width:340px; height:340px; background:#FFC97E; opacity:.4; bottom:-150px; right:-100px; }
+.c3 { width:120px; height:120px; border:14px dotted #F5A93F; opacity:.5; top:60px; right:130px; }
+.stripe { position:absolute; width:200%; height:86px; background:#2B3A67; bottom:0; left:-50%;
+  transform:rotate(-3deg) translateY(46px); }
+
+.badge {
+  position:relative; background:#E85D3A; color:#fff; font-size:34px; font-weight:900;
+  padding:12px 42px; border-radius:999px; letter-spacing:.05em;
+  box-shadow:0 5px 0 #B23E22; margin-bottom:26px;
+}
+.badge::before, .badge::after { content:"＼"; margin-right:14px; font-size:30px; }
+.badge::after { content:"／"; margin-left:14px; margin-right:0; }
+.main {
+  position:relative; font-size:92px; font-weight:900; color:#2B3A67; line-height:1.22;
+  text-align:center; letter-spacing:.01em;
+  text-shadow:4px 4px 0 #fff, 6px 6px 0 rgba(43,58,103,.12);
+}
+.main .em {
+  color:#E85D3A; font-size:108px;
+  text-shadow:4px 4px 0 #fff, 6px 6px 0 rgba(232,93,58,.18);
+}
+.sub {
+  position:relative; margin-top:24px; font-size:40px; font-weight:700; color:#5B4A2F;
+  background:#fff; padding:12px 44px; border-radius:16px; box-shadow:0 4px 14px rgba(180,120,40,.2);
+}
+.icons { position:absolute; display:flex; gap:8px; }
+.icons.l { left:64px; bottom:96px; }
+.icons.r { right:64px; top:96px; }
+.icon-chip {
+  width:120px; height:120px; border-radius:28px; background:#fff;
+  display:flex; align-items:center; justify-content:center; font-size:74px;
+  box-shadow:0 8px 20px rgba(180,120,40,.25); transform:rotate(-6deg);
+}
+.icons.r .icon-chip { transform:rotate(7deg); }
+</style></head><body>
+<div id="canvas">
+  <div class="deco c1"></div><div class="deco c2"></div><div class="deco c3"></div>
+  <div class="stripe"></div>
+  <div class="icons l"><div class="icon-chip">🔍</div></div>
+  <div class="icons r"><div class="icon-chip">🧸</div></div>
+  <div class="badge">レビュー950件を調査</div>
+  <div class="main">KUMADOLLの<br>口コミは<span class="em">本当？</span></div>
+  <div class="sub">価格・検品・サポートを実データで検証</div>
+</div>
+</body></html>

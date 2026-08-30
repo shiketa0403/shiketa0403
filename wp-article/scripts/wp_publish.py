@@ -122,6 +122,28 @@ def main():
     wp = WP(site)
     print(f"投稿先: {site['url']}")
 
+    # 認証プリフライト: アップロードを始める前に資格情報を検証する
+    r = requests.get(f"{wp.base}/users/me", headers=wp.headers, timeout=30)
+    if r.status_code == 200:
+        me = r.json()
+        print(f"認証OK: {me.get('name', '?')} (ユーザーID {me.get('id', '?')})")
+    else:
+        code = ""
+        try:
+            code = r.json().get("code", "")
+        except Exception:
+            pass
+        if code == "rest_not_logged_in" or r.status_code == 401 and not code:
+            die("認証に失敗しました (401)。\n"
+                "  よくある原因: sites.local.json の username がWordPressの実際の\n"
+                "  ユーザー名と一致していない（存在しないユーザー名だとこのエラーになります）。\n"
+                "  WordPress管理画面 → ユーザー で正しいユーザー名を確認してください。\n"
+                "  ヘッダーがサーバーに剥がされている場合も同じ症状です。")
+        if code == "incorrect_password":
+            die("認証に失敗しました: アプリケーションパスワードが正しくありません。\n"
+                "  再発行して sites.local.json を更新してください。")
+        die(f"認証チェック失敗 ({r.status_code}): {r.text[:300]}")
+
     # 1. 画像アップロード
     images_dir = outdir / "images"
     uploaded: dict[str, dict] = {}

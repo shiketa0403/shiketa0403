@@ -57,6 +57,8 @@ H2_LEN_WARN, H2_LEN_ERR = 26, 31
 H3_LEN_WARN, H3_LEN_ERR = 21, 26
 PARA_KUTEN_WARN, PARA_KUTEN_ERR = 4, 5
 MIN_DIAGRAMS = 4
+MIN_TOTAL_CHARS = 8000   # 本文合計（タグ・ショートコード除く）の下限
+TARGET_TOTAL_CHARS = 9000
 
 SHORTCODE_RE = re.compile(r"\[/?st-[a-z0-9_-]+[^\]]*\]|\[/?st_af[^\]]*\]")
 TAG_RE = re.compile(r"<[^>]+>")
@@ -306,6 +308,19 @@ def check_images(dirpath: Path, html: str, findings: list[Finding]):
         findings.append(Finding("P0", "images.json不在", "全体", "プレースホルダがあるのにマニフェストが無い"))
 
 
+def check_total_length(html: str, findings: list[Finding]):
+    """本文合計の文字数（タグ・ショートコード・空白除く）。"""
+    text = re.sub(r"\s", "", strip_markup(html))
+    n = len(text)
+    if n < MIN_TOTAL_CHARS:
+        findings.append(Finding("P1", f"本文量不足(最低{MIN_TOTAL_CHARS}字)", "全体",
+                                f"{n}字", f"目標{TARGET_TOTAL_CHARS}〜12,000字。H2を追加して拡充する"))
+    elif n < TARGET_TOTAL_CHARS:
+        findings.append(Finding("P2", f"本文量注意(目標{TARGET_TOTAL_CHARS}字)", "全体", f"{n}字"))
+    else:
+        print(f"[情報] 本文文字数: {n}字")
+
+
 # ---------------------------------------------------------------- main
 
 def run(dirpath: Path, stage: str) -> int:
@@ -322,6 +337,7 @@ def run(dirpath: Path, stage: str) -> int:
             check_headings(html, findings)
         joined = "\n\n".join(s.read_text(encoding="utf-8") for s in sections)
         check_numbers_grounding(joined, dirpath / "facts.json", findings)
+        check_total_length(joined, findings)
     else:  # final
         final = dirpath / "final.html"
         if not final.exists():
@@ -333,6 +349,7 @@ def run(dirpath: Path, stage: str) -> int:
         check_decoration(html, findings)
         check_numbers_grounding(html, dirpath / "facts.json", findings)
         check_images(dirpath, html, findings)
+        check_total_length(html, findings)
 
     # レポート
     order = {"P0": 0, "P1": 1, "P2": 2}

@@ -12,7 +12,10 @@
 cd $HOME\Documents\shiketa0403
 pip install playwright requests
 python -m playwright install chromium
+python wp-article\scripts\fetch_fonts.py
 ```
+
+最後の行は図解用の日本語フォント（丸ゴシック・極太ゴシック・明朝）のダウンロードです。
 
 認証情報ファイルを作成:
 

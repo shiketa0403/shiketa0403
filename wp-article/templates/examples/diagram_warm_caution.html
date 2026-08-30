@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- 見本図解: out/<slug>/diagrams/ に置く場合は fonts.css パスを ../../../templates/diagram_fonts.css に変える -->
+
+<html lang="ja"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../diagram_fonts.css">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:"ZenMaru","NotoSansJP","Yu Gothic UI",sans-serif; font-weight:700; background:#fff; }
+#canvas {
+  width:1200px; padding:44px 40px 34px;
+  background:linear-gradient(160deg,#FFFBEB 0%,#FFF3D6 55%,#FFEFC4 100%);
+}
+h1 { text-align:center; font-size:60px; font-weight:900; color:#3B2F0B; }
+.sub { text-align:center; font-size:38px; font-weight:700; color:#8A6D1D; margin:14px 0 40px; }
+.item {
+  display:flex; align-items:center; gap:26px; margin-bottom:30px; padding:30px 32px;
+  border-radius:22px; box-shadow:0 8px 22px rgba(180,130,20,.18);
+}
+.item.i1 { background:linear-gradient(135deg,#FFE9A8,#FFD666); }
+.item.i2 { background:linear-gradient(135deg,#FFD08A,#FFAF52); }
+.item.i3 { background:linear-gradient(135deg,#FFE29E,#F9C440); }
+.num {
+  flex:none; width:88px; height:88px; border-radius:999px; background:#B97A0C; color:#fff;
+  font-size:52px; font-weight:900; display:flex; align-items:center; justify-content:center;
+  box-shadow:0 4px 0 rgba(0,0,0,.18); margin-top:-64px;
+}
+.pic { flex:none; font-size:110px; line-height:1; }
+.prob { flex:1; font-size:44px; word-break:keep-all; font-weight:900; color:#3B2F0B; line-height:1.4; }
+.arrow { flex:none; font-size:56px; color:#B97A0C; font-weight:900; }
+.sol {
+  flex:none; width:370px; background:rgba(255,255,255,.85); border-radius:16px; padding:20px 22px;
+  font-size:34px; font-weight:800; color:#5C4708; line-height:1.45; display:flex; align-items:center; gap:14px;
+}
+.sol .se { font-size:60px; flex:none; }
+.foot { text-align:center; font-size:32px; color:#8A6D1D; font-weight:700; margin-top:8px; }
+</style></head><body>
+<div id="canvas">
+  <h1>購入前に知っておくべき3つの注意点</h1>
+  <div class="sub">悪い口コミから見えるデメリットの整理</div>
+
+  <div class="item i1">
+    <div class="num">1</div><div class="pic">🏷️</div>
+    <div class="prob">価格は海外直送より<br><span style='font-size:48px'>10〜20%高い</span></div>
+    <div class="arrow">➜</div>
+    <div class="sol"><span class="se">🛡️</span>国内検品・<br>サポートの「保険料」</div>
+  </div>
+
+  <div class="item i2">
+    <div class="num">2</div><div class="pic">🎫</div>
+    <div class="prob">セールやクーポンの<br>頻度が少ない</div>
+    <div class="arrow">➜</div>
+    <div class="sol"><span class="se">📱</span>LINE登録等で<br>割引情報をキャッチ</div>
+  </div>
+
+  <div class="item i3">
+    <div class="num">3</div><div class="pic">🖌️</div>
+    <div class="prob">手作業ゆえの<br>軽微な個体差</div>
+    <div class="arrow">➜</div>
+    <div class="sol"><span class="se">✅</span>初期不良なら<br>補修・交換対応あり</div>
+  </div>
+
+  <div class="foot">口コミ調査に基づき整理</div>
+</div>
+</body></html>

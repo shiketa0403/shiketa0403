@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- 見本図解: out/<slug>/diagrams/ に置く場合は fonts.css パスを ../../../templates/diagram_fonts.css に変える -->
+
+<html lang="ja"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../diagram_fonts.css">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:"NotoSansJP","Yu Gothic UI","Meiryo",sans-serif; font-weight:700; background:#fff; }
+#canvas {
+  width:1200px; padding:0 0 44px;
+  background:
+    radial-gradient(420px 300px at 92% 6%, rgba(255,255,255,.06), transparent 60%),
+    radial-gradient(380px 300px at 6% 90%, rgba(255,255,255,.05), transparent 60%),
+    #1B4332;
+}
+.titlebar {
+  margin:40px 44px 36px; background:#0F2E20; border:3px solid #67C08B; border-radius:14px;
+  color:#fff; font-size:58px; font-weight:900; text-align:center; padding:26px 20px;
+  letter-spacing:.03em; box-shadow:0 6px 0 rgba(0,0,0,.25);
+}
+.titlebar .key { font-size:50px; margin-right:14px; }
+.row { display:flex; align-items:center; gap:34px; padding:0 52px; }
+.illust {
+  flex:none; width:250px; height:250px; border-radius:999px; background:#F6F3E7;
+  border:6px solid #67C08B; display:flex; flex-direction:column; align-items:center; justify-content:center;
+  box-shadow:0 10px 24px rgba(0,0,0,.35);
+}
+.illust .e { font-size:118px; line-height:1; }
+.illust .c { font-size:30px; font-weight:800; color:#1B4332; margin-top:10px; }
+.txt { flex:1; }
+.banner {
+  background:linear-gradient(135deg,#2D6A4F,#40916C); color:#fff; font-size:48px; font-weight:900;
+  padding:18px 34px; border-radius:10px 40px 40px 10px; display:inline-block;
+  box-shadow:0 5px 0 rgba(0,0,0,.3);
+}
+.sub { color:#EAF6EE; font-size:42px; font-weight:700; line-height:1.5; margin:20px 6px 0;
+  padding-left:44px; position:relative; }
+.sub::before { content:"└"; position:absolute; left:0; top:0; color:#95D5B2; font-weight:900; }
+.sub b { color:#FFE066; }
+.next { text-align:right; padding:10px 90px 14px 0; color:#fff; font-size:38px; font-weight:900; letter-spacing:.1em; }
+.next .arrow { display:inline-block; transform:rotate(90deg); font-size:44px; color:#95D5B2; margin-left:12px; }
+</style></head><body>
+<div id="canvas">
+  <div class="titlebar"><span class="key">🔒</span>バレないプライバシー保護設計</div>
+
+  <div class="row">
+    <div class="illust"><div class="e">📋</div><div class="c">配送伝票</div></div>
+    <div class="txt">
+      <div class="banner">工夫1：品名の変更</div>
+      <div class="sub">「マネキン」「人形」「衣料品」<br>から表記を<b>指定可能</b></div>
+    </div>
+  </div>
+  <div class="next">NEXT<span class="arrow">➤</span></div>
+
+  <div class="row">
+    <div class="illust"><div class="e">📦</div><div class="c">無地の箱</div></div>
+    <div class="txt">
+      <div class="banner">工夫2：無地ダンボール</div>
+      <div class="sub">国内倉庫経由だから外箱に<br><b>ロゴや英語表記なし</b></div>
+    </div>
+  </div>
+  <div class="next">NEXT<span class="arrow">➤</span></div>
+
+  <div class="row">
+    <div class="illust"><div class="e">🏠</div><div class="c">玄関</div></div>
+    <div class="txt">
+      <div class="banner">工夫3：柔軟な受取方法</div>
+      <div class="sub">日時指定・置き配に対応<br><b>家族の不在時間</b>に受け取れる</div>
+    </div>
+  </div>
+</div>
+</body></html>

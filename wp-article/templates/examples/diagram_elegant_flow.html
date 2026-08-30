@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- 見本図解: out/<slug>/diagrams/ に置く場合は fonts.css パスを ../../../templates/diagram_fonts.css に変える -->
+
+<html lang="ja"><head><meta charset="UTF-8">
+<link rel="stylesheet" href="../diagram_fonts.css">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:"ShipporiMincho","Yu Mincho","NotoSansJP",serif; font-weight:600; background:#fff; }
+#canvas { width:1200px; background:#FDFCF8; padding:34px; }
+.frame {
+  border:3px solid #23305A; outline:1px solid #23305A; outline-offset:6px;
+  padding:64px 40px 58px; border-radius:4px; background:#FDFCF8;
+}
+h1 { text-align:center; font-size:56px; font-weight:800; color:#23305A; letter-spacing:.06em; margin-bottom:64px; }
+.flow { display:flex; align-items:flex-start; justify-content:center; }
+.node { width:186px; text-align:center; }
+.circ {
+  width:150px; height:150px; margin:0 auto; border-radius:999px; background:#F3EEE4;
+  border:2px solid #C9BFA8; display:flex; align-items:center; justify-content:center;
+}
+.circ .e { font-size:84px; line-height:1; }
+.node .l { font-size:38px; font-weight:800; color:#23305A; margin-top:22px; letter-spacing:.04em; }
+.arr { align-self:center; font-size:46px; color:#23305A; padding:0 4px; margin-top:-46px; }
+</style></head><body>
+<div id="canvas"><div class="frame">
+  <h1>KUMADOLLの配送フロー</h1>
+  <div class="flow">
+    <div class="node"><div class="circ"><span class="e">📱</span></div><div class="l">注文</div></div>
+    <div class="arr">→</div>
+    <div class="node"><div class="circ"><span class="e">🏭</span></div><div class="l">製造</div></div>
+    <div class="arr">→</div>
+    <div class="node"><div class="circ"><span class="e">🔍</span></div><div class="l">国内検品</div></div>
+    <div class="arr">→</div>
+    <div class="node"><div class="circ"><span class="e">📷</span></div><div class="l">画像確認</div></div>
+    <div class="arr">→</div>
+    <div class="node"><div class="circ"><span class="e">📦</span></div><div class="l">無地発送</div></div>
+  </div>
+</div></div>
+</body></html>

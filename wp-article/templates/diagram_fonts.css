@@ -1,0 +1,36 @@
+/* 図解用フォント定義。custom HTML から相対パスで読み込む:
+   out/<slug>/diagrams/dNN.html の場合
+   <link rel="stylesheet" href="../../../templates/diagram_fonts.css">
+
+   事前に scripts/fetch_fonts.py の実行が必要（fonts/ に実体を配置）。
+   フォントが無い環境でも Yu Gothic 等にフォールバックする。 */
+
+@font-face {
+  font-family: "NotoSansJP";
+  src: url("fonts/NotoSansJP.ttf") format("truetype-variations");
+  font-weight: 100 900;
+  font-display: block;
+}
+@font-face {
+  font-family: "ZenMaru";
+  src: url("fonts/ZenMaruGothic-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: block;
+}
+@font-face {
+  font-family: "ZenMaru";
+  src: url("fonts/ZenMaruGothic-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: block;
+}
+@font-face {
+  font-family: "ShipporiMincho";
+  src: url("fonts/ShipporiMincho-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: block;
+}
+
+/* 推奨スタック（custom HTML でそのまま使う）:
+   ゴシック(標準・迫力): "NotoSansJP","Yu Gothic UI","Meiryo",sans-serif  + font-weight:900
+   丸ゴシック(ポップ) : "ZenMaru","NotoSansJP","Yu Gothic UI",sans-serif + font-weight:900
+   明朝(高級・上品)   : "ShipporiMincho","Yu Mincho",serif               + font-weight:600 */
