@@ -350,6 +350,15 @@ def check_lead_structure(html: str, findings: list[Finding]):
             findings.append(Finding("P1", "H2直前のCTAボタン不在",
                                     f"H2「{title[:18]}」", "各H2の直前にCTAボタンを配置する"))
 
+    # 記事末尾（最後のH2＝まとめセクションの文末）にもCTAボタン必須
+    if h2s:
+        tail = html[h2s[-1].end():]
+        if "[st_af" not in tail and "st-mcbutton" not in tail:
+            title = strip_markup(h2s[-1].group(1)).strip()
+            findings.append(Finding("P1", "記事末尾のCTAボタン不在",
+                                    f"H2「{title[:18]}」の文末",
+                                    "最後のH2セクションの文末にCTAボタンを配置する"))
+
 
 def check_total_length(html: str, findings: list[Finding]):
     """本文合計の文字数（タグ・ショートコード・空白除く）。"""
