@@ -326,6 +326,16 @@ def check_lead_structure(html: str, findings: list[Finding]):
         findings.append(Finding("P1", "ピックアップボックス不在", "冒頭",
                                 "prompts/10のgrayboxテンプレで必ず出力（アフィリンク無しでも公式リンクで）"))
 
+    # まとめH2の特則: H3・図解を置かない
+    for title, body in iter_h_sections(html, "h2"):
+        if title.strip().endswith("まとめ"):
+            if "<h3" in body:
+                findings.append(Finding("P2", "まとめH2にH3禁止", f"H2「{title[:18]}」",
+                                        "まとめはフラットな本文のみにする"))
+            if "{{IMG:" in body or "<img" in body:
+                findings.append(Finding("P2", "まとめH2に図解禁止", f"H2「{title[:18]}」",
+                                        "まとめセクションには画像を配置しない"))
+
     # 各H2の直前にCTAボタン（st_af または st-mcbutton）があるか。
     # 最初のH2は冒頭ブロック（ピックアップ内CTA）が直前にあるため免除
     h2s = list(re.finditer(r"<h2[^>]*>(.*?)</h2>", html, re.S))

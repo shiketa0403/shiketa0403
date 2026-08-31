@@ -68,11 +68,17 @@ def capture(page, shot: dict, out_path: Path) -> dict:
     page.wait_for_timeout(600)
 
     selector = shot.get("selector")
+    clip = shot.get("clip")
     if selector:
         el = page.locator(selector).first
         el.scroll_into_view_if_needed(timeout=8000)
         page.wait_for_timeout(500)
         el.screenshot(path=str(out_path))
+    elif clip:
+        # ページ上部の横長クロップ（バナー代用等）。width省略時はビューポート幅
+        page.screenshot(path=str(out_path), clip={
+            "x": clip.get("x", 0), "y": clip.get("y", 0),
+            "width": clip.get("width", 1280), "height": clip.get("height", 500)})
     elif shot.get("full_page"):
         page.screenshot(path=str(out_path), full_page=True)
     else:
