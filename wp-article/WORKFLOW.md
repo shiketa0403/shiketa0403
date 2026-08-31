@@ -40,7 +40,17 @@ slugが未指定ならキーワードから英小文字ハイフンで生成（�
 ### Phase 1: リサーチ＋事実シート（prompts/01 + 12のSearch Protocol）
 WebSearch / WebFetch を使い次を実施:
 1. ターゲットKWでSERPs上位10件の傾向把握（prompts/01 Step0）
-2. 口コミ実調査 — 知恵袋・5ch・ブログ等で実在の投稿を確認。見つからなければ「確認できなかった」と記録。**創作禁止**（prompts/01 Step0.5、prompts/04 実調査ルール）
+2. 口コミ実調査 — 次の媒体で実在の投稿・評価を確認する。見つからなければ「確認できなかった」と記録。**創作禁止・転載禁止（要約のみ）**（prompts/01 Step0.5、prompts/04 実調査ルール）
+   - Yahoo!知恵袋・5ch（従来通り）
+   - **みん評（minhyo.jp）・その他レビューサイト**（WebSearch→WebFetchで内容確認。
+     リンクは張らない・参考のみ）
+   - **Googleマップ**（実店舗・ショールームがある商標のみ）:
+     ```
+     python wp-article/scripts/google_reviews.py "サービス名 店舗名" --out out/<slug>
+     ```
+     評点・レビュー件数は数値としてfacts.jsonに記録（source_kind: "Googleマップ"、
+     source_url: maps_url）。記事では「Googleマップでは評価◯.◯（◯件）」のような
+     定量表現に使える。APIキー未設定・店舗なしの場合はスキップして記録に残す
 3. 公式サイトの一次情報収集 — 料金・会社概要・特商法表記・条件等の**該当ページを直接開いて**数値を抽出
 4. すべての事実を `out/facts.json` に記録:
 ```json

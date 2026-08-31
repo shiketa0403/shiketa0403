@@ -4,5 +4,6 @@
     "username": "YOUR_WP_USERNAME",
     "app_password": "YOUR_APP_PASSWORD"
   },
-  "_memo": "このファイルを sites.local.json という名前でコピーして記入する。sites.local.json はgitignore対象なのでGitHubにはアップロードされない。新しいドメインを追加するときはブロックを増やすだけ"
+  "_google_maps_api_key": "YOUR_GOOGLE_MAPS_API_KEY",
+  "_memo": "このファイルを sites.local.json という名前でコピーして記入する。sites.local.json はgitignore対象なのでGitHubにはアップロードされない。新しいドメインを追加するときはブロックを増やすだけ。_google_maps_api_key はGoogleマップ口コミ調査用（Places API有効のキー。未記入ならマップ調査はスキップされる）"
 }
