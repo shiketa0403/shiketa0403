@@ -14,6 +14,14 @@ import json
 import sys
 from pathlib import Path
 
+# Windows環境でstdoutがcp932になり日本語・記号の出力で落ちるのを防ぐ
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
+
 TEMPLATE = Path(__file__).resolve().parent.parent / "templates" / "diagram_template.html"
 
 

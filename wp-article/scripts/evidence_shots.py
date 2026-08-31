@@ -22,6 +22,14 @@ import sys
 import time
 from pathlib import Path
 
+# Windows環境でstdoutがcp932になり日本語・記号の出力で落ちるのを防ぐ
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
+
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
 MIN_BYTES = 20 * 1024

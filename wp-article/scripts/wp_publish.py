@@ -32,6 +32,14 @@ from pathlib import Path
 
 import requests
 
+# Windows環境でstdoutがcp932になり日本語・記号の出力で落ちるのを防ぐ
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
+
 CONFIG_PATH = Path(__file__).resolve().parent.parent / "config" / "sites.local.json"
 UA = "wp-article-pipeline/1.0"
 

@@ -23,6 +23,14 @@ import re
 import sys
 from pathlib import Path
 
+# Windows環境でstdoutがcp932になり日本語・記号の出力で落ちるのを防ぐ
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
+
 # ---------------------------------------------------------------- ルール定義
 
 # P0: 致命的（必ず修正）

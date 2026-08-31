@@ -19,6 +19,14 @@ from pathlib import Path
 
 import requests
 
+# Windows環境でstdoutがcp932になり日本語・記号の出力で落ちるのを防ぐ
+for _stream in (sys.stdout, sys.stderr):
+    try:
+        _stream.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
+
 FONTS_DIR = Path(__file__).resolve().parent.parent / "templates" / "fonts"
 BASE = "https://raw.githubusercontent.com/google/fonts/main/ofl"
 
