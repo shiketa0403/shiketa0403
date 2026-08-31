@@ -316,6 +316,31 @@ def check_images(dirpath: Path, html: str, findings: list[Finding]):
         findings.append(Finding("P0", "images.json不在", "全体", "プレースホルダがあるのにマニフェストが無い"))
 
 
+def check_lead_structure(html: str, findings: list[Finding]):
+    """冒頭ブロックの必須要素（WORKFLOW Phase 7）とH2前CTA（Phase 10）。"""
+    if "[st-minihukidashi" not in html or "この記事のまとめ" not in html:
+        findings.append(Finding("P1", "まとめボックス不在", "冒頭",
+                                "prompts/09の[st-minihukidashi]「この記事のまとめ」形式で出力する。"
+                                "独自デザインの「この記事でわかること」等は不可"))
+    if 'class="graybox"' not in html:
+        findings.append(Finding("P1", "ピックアップボックス不在", "冒頭",
+                                "prompts/10のgrayboxテンプレで必ず出力（アフィリンク無しでも公式リンクで）"))
+
+    # 各H2の直前にCTAボタン（st_af または st-mcbutton）があるか。
+    # 最初のH2は冒頭ブロック（ピックアップ内CTA）が直前にあるため免除
+    h2s = list(re.finditer(r"<h2[^>]*>(.*?)</h2>", html, re.S))
+    prev_end = 0
+    for i, m in enumerate(h2s):
+        segment = html[prev_end:m.start()]
+        prev_end = m.end()
+        if i == 0:
+            continue
+        if "[st_af" not in segment and "st-mcbutton" not in segment:
+            title = strip_markup(m.group(1)).strip()
+            findings.append(Finding("P1", "H2直前のCTAボタン不在",
+                                    f"H2「{title[:18]}」", "各H2の直前にCTAボタンを配置する"))
+
+
 def check_total_length(html: str, findings: list[Finding]):
     """本文合計の文字数（タグ・ショートコード・空白除く）。"""
     text = re.sub(r"\s", "", strip_markup(html))
@@ -358,6 +383,7 @@ def run(dirpath: Path, stage: str) -> int:
         check_numbers_grounding(html, dirpath / "facts.json", findings)
         check_images(dirpath, html, findings)
         check_total_length(html, findings)
+        check_lead_structure(html, findings)
 
     # レポート
     order = {"P0": 0, "P1": 1, "P2": 2}
