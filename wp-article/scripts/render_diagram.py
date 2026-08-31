@@ -24,6 +24,46 @@ for _stream in (sys.stdout, sys.stderr):
 
 TEMPLATE = Path(__file__).resolve().parent.parent / "templates" / "diagram_template.html"
 
+# キャンバス外にはみ出したテキスト要素を検出するJS。
+# 装飾図形（テキストを含まない要素）の意図的なはみ出しは対象外。
+OVERFLOW_CHECK_JS = """
+() => {
+  const canvas = document.getElementById('canvas');
+  if (!canvas) return [{tag: '(no #canvas)', text: '', overflow: {}}];
+  const c = canvas.getBoundingClientRect();
+  const tol = 4;
+  const bad = [];
+  for (const el of canvas.querySelectorAll('*')) {
+    if (!(el.textContent || '').trim()) continue;  // 文字を含む要素だけ検査
+    const r = el.getBoundingClientRect();
+    if (r.width === 0 && r.height === 0) continue;
+    const over = {
+      right: Math.round(r.right - c.right),
+      left: Math.round(c.left - r.left),
+      bottom: Math.round(r.bottom - c.bottom),
+      top: Math.round(c.top - r.top),
+    };
+    const dirs = {};
+    for (const [k, v] of Object.entries(over)) if (v > tol) dirs[k] = v;
+    if (Object.keys(dirs).length) {
+      bad.push({
+        tag: el.tagName.toLowerCase()
+          + (el.className && typeof el.className === 'string'
+             ? '.' + el.className.trim().split(/\\s+/).join('.') : ''),
+        text: (el.textContent || '').trim().replace(/\\s+/g, ' ').slice(0, 24),
+        overflow: dirs,
+      });
+    }
+  }
+  return bad.slice(0, 8);
+}
+"""
+
+
+def check_overflow(page) -> list[dict]:
+    """#canvas からはみ出しているテキスト要素の一覧を返す（空なら合格）。"""
+    return page.evaluate(OVERFLOW_CHECK_JS)
+
 
 def main():
     if len(sys.argv) < 2:
@@ -84,6 +124,25 @@ def main():
                 el = page.locator("#canvas")
                 box = el.bounding_box()
                 el.screenshot(path=str(images_dir / fname))
+                overflow = check_overflow(page)
+                if overflow:
+                    detail = "; ".join(
+                        f"<{o['tag']}>「{o['text']}」が"
+                        + "・".join(f"{k}に{v}px" for k, v in o["overflow"].items())
+                        for o in overflow)
+                    print(f"  ✗ はみ出し検出: {fname}", file=sys.stderr)
+                    for o in overflow:
+                        dirs = "・".join(f"{k}方向に{v}px" for k, v in o["overflow"].items())
+                        print(f"     <{o['tag']}>「{o['text']}」 → {dirs} はみ出し",
+                              file=sys.stderr)
+                    print("     修正例: グリッド列は固定pxでなく 1fr 指定 / 子要素の固定widthを外す /"
+                          " * {box-sizing:border-box} を確認 / パディング・gapの合計を見直す",
+                          file=sys.stderr)
+                    results.append({"file": fname, "type": job.get("type"),
+                                    "alt": job.get("alt", ""),
+                                    "width": int(box["width"]), "height": int(box["height"]),
+                                    "error": f"canvas外はみ出し: {detail}"})
+                    continue
                 results.append({"file": fname, "type": job.get("type"),
                                 "alt": job.get("alt", ""),
                                 "width": int(box["width"]), "height": int(box["height"])})
