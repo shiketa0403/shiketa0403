@@ -1,11 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python wp-article/scripts/*)",
-      "Bash(python3 wp-article/scripts/*)",
-      "Bash(python -m playwright *)",
-      "Bash(python -m json.tool *)",
-      "Bash(python -m pip install *)",
+      "Bash(python *)",
+      "Bash(python3 *)",
       "Bash(pip install *)",
       "Bash(git status*)",
       "Bash(git log*)",
