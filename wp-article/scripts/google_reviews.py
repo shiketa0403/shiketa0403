@@ -9,6 +9,9 @@ APIキーの取得順:
   1. wp-article/config/sites.local.json の "_google_maps_api_key"
   2. 環境変数 GOOGLE_MAPS_API_KEY
 
+Places API (New) を優先し、失敗したら旧版 Places API にフォールバックする
+（Google Cloud側でどちらが有効化されていても動く）。
+
 出力: <out>/google_reviews.json（評点・件数・代表レビュー最大5件/店舗）
 - レビュー本文は記事に転載せず、要約の材料としてのみ使うこと（prompts/01・04参照）
 """
@@ -32,9 +35,30 @@ for _stream in (sys.stdout, sys.stderr):
 
 
 CONFIG_PATH = Path(__file__).resolve().parent.parent / "config" / "sites.local.json"
-SEARCH_URL = "https://maps.googleapis.com/maps/api/place/textsearch/json"
-DETAILS_URL = "https://maps.googleapis.com/maps/api/place/details/json"
-DETAIL_FIELDS = "name,rating,user_ratings_total,reviews,formatted_address,url"
+
+# Places API (New)
+NEW_SEARCH_URL = "https://places.googleapis.com/v1/places:searchText"
+NEW_FIELD_MASK = ",".join([
+    "places.displayName", "places.rating", "places.userRatingCount",
+    "places.formattedAddress", "places.googleMapsUri", "places.reviews",
+])
+
+# 旧版 Places API
+LEGACY_SEARCH_URL = "https://maps.googleapis.com/maps/api/place/textsearch/json"
+LEGACY_DETAILS_URL = "https://maps.googleapis.com/maps/api/place/details/json"
+LEGACY_DETAIL_FIELDS = "name,rating,user_ratings_total,reviews,formatted_address,url"
+
+HINT = """  取得に失敗しました。Google Cloud Console で次の3点を確認してください:
+  1. 課金の有効化: 「お支払い」でプロジェクトに課金アカウントが紐付いているか
+     （Places APIは無料枠内の利用でも課金設定が必須）
+  2. APIの有効化: 「APIとサービス → ライブラリ」で「Places API (New)」を有効にする
+     （「Places API」(旧版)しか無い場合はそちらでも可）
+  3. キーの制限: 「認証情報 → 該当キー → APIの制限」で
+     Places API (New) / Places API が許可されているか（「キーを制限しない」なら問題なし）"""
+
+
+class PlacesError(Exception):
+    pass
 
 
 def get_api_key() -> str:
@@ -55,21 +79,80 @@ def get_api_key() -> str:
     sys.exit(1)
 
 
-def api_get(url: str, params: dict) -> dict:
+# ---------------------------------------------------------------- Places API (New)
+
+def fetch_new_api(query: str, key: str, max_places: int) -> list[dict]:
+    r = requests.post(
+        NEW_SEARCH_URL,
+        headers={
+            "Content-Type": "application/json",
+            "X-Goog-Api-Key": key,
+            "X-Goog-FieldMask": NEW_FIELD_MASK,
+        },
+        json={"textQuery": query, "languageCode": "ja", "regionCode": "JP",
+              "pageSize": max(1, min(max_places, 20))},
+        timeout=30,
+    )
+    data = r.json() if r.content else {}
+    if r.status_code != 200:
+        msg = (data.get("error") or {}).get("message", r.text[:300])
+        raise PlacesError(f"Places API (New) HTTP {r.status_code}: {msg}")
+    places = []
+    for p in data.get("places", [])[:max_places]:
+        reviews = [{
+            "rating": rv.get("rating"),
+            "time_description": rv.get("relativePublishedTimeDescription", ""),
+            "text": ((rv.get("text") or {}).get("text") or "")[:500],
+        } for rv in p.get("reviews", [])[:5]]
+        places.append({
+            "name": (p.get("displayName") or {}).get("text", ""),
+            "address": p.get("formattedAddress", ""),
+            "rating": p.get("rating"),
+            "user_ratings_total": p.get("userRatingCount"),
+            "maps_url": p.get("googleMapsUri", ""),
+            "reviews": reviews,
+        })
+    return places
+
+
+# ---------------------------------------------------------------- 旧版 Places API
+
+def legacy_get(url: str, params: dict) -> dict:
     r = requests.get(url, params=params, timeout=30)
     r.raise_for_status()
     data = r.json()
     status = data.get("status", "")
     if status not in ("OK", "ZERO_RESULTS"):
-        msg = data.get("error_message", "")
-        hint = ""
-        if status == "REQUEST_DENIED":
-            hint = ("\n  Places API が有効化されていないか、キーのAPI制限で弾かれています。"
-                    "\n  Google Cloud Console → APIライブラリ → Places API → 有効にする を確認してください。")
-        print(f"ERROR: Places API {status}: {msg}{hint}", file=sys.stderr)
-        sys.exit(1)
+        raise PlacesError(f"旧版 Places API {status}: {data.get('error_message', '')}")
     return data
 
+
+def fetch_legacy_api(query: str, key: str, max_places: int) -> list[dict]:
+    search = legacy_get(LEGACY_SEARCH_URL, {"query": query, "language": "ja",
+                                            "region": "jp", "key": key})
+    places = []
+    for c in search.get("results", [])[:max_places]:
+        det = legacy_get(LEGACY_DETAILS_URL, {
+            "place_id": c["place_id"], "fields": LEGACY_DETAIL_FIELDS,
+            "language": "ja", "reviews_sort": "most_relevant", "key": key,
+        }).get("result", {})
+        reviews = [{
+            "rating": rv.get("rating"),
+            "time_description": rv.get("relative_time_description", ""),
+            "text": (rv.get("text") or "")[:500],
+        } for rv in det.get("reviews", [])[:5]]
+        places.append({
+            "name": det.get("name", c.get("name", "")),
+            "address": det.get("formatted_address", ""),
+            "rating": det.get("rating"),
+            "user_ratings_total": det.get("user_ratings_total"),
+            "maps_url": det.get("url", ""),
+            "reviews": reviews,
+        })
+    return places
+
+
+# ---------------------------------------------------------------- main
 
 def main():
     ap = argparse.ArgumentParser()
@@ -80,37 +163,33 @@ def main():
 
     key = get_api_key()
 
-    search = api_get(SEARCH_URL, {"query": args.query, "language": "ja",
-                                  "region": "jp", "key": key})
-    candidates = search.get("results", [])[:args.max_places]
-    if not candidates:
-        print(f"該当なし: 「{args.query}」でGoogleマップに店舗が見つかりませんでした")
-        result = {"query": args.query, "places": []}
-    else:
-        places = []
-        for c in candidates:
-            det = api_get(DETAILS_URL, {
-                "place_id": c["place_id"], "fields": DETAIL_FIELDS,
-                "language": "ja", "reviews_sort": "most_relevant", "key": key,
-            }).get("result", {})
-            reviews = [{
-                "rating": rv.get("rating"),
-                "time_description": rv.get("relative_time_description", ""),
-                "text": (rv.get("text") or "")[:500],
-            } for rv in det.get("reviews", [])[:5]]
-            place = {
-                "name": det.get("name", c.get("name", "")),
-                "address": det.get("formatted_address", ""),
-                "rating": det.get("rating"),
-                "user_ratings_total": det.get("user_ratings_total"),
-                "maps_url": det.get("url", ""),
-                "reviews": reviews,
-            }
-            places.append(place)
-            print(f"  {place['name']}: 評価 {place['rating']}"
-                  f"（{place['user_ratings_total']}件） レビュー取得 {len(reviews)}件")
-        result = {"query": args.query, "places": places}
+    places = None
+    errors = []
+    for label, fetch in (("Places API (New)", fetch_new_api),
+                         ("旧版 Places API", fetch_legacy_api)):
+        try:
+            places = fetch(args.query, key, args.max_places)
+            print(f"[情報] {label} で取得しました")
+            break
+        except PlacesError as e:
+            errors.append(str(e))
+        except requests.RequestException as e:
+            errors.append(f"{label} 通信エラー: {e}")
 
+    if places is None:
+        for e in errors:
+            print(f"ERROR: {e}", file=sys.stderr)
+        print(HINT, file=sys.stderr)
+        sys.exit(1)
+
+    if not places:
+        print(f"該当なし: 「{args.query}」でGoogleマップに店舗が見つかりませんでした")
+    else:
+        for place in places:
+            print(f"  {place['name']}: 評価 {place['rating']}"
+                  f"（{place['user_ratings_total']}件） レビュー取得 {len(place['reviews'])}件")
+
+    result = {"query": args.query, "places": places}
     outdir = Path(args.out)
     outdir.mkdir(parents=True, exist_ok=True)
     out_path = outdir / "google_reviews.json"
