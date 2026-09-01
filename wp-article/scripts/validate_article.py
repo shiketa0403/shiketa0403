@@ -67,6 +67,8 @@ PARA_KUTEN_WARN, PARA_KUTEN_ERR = 4, 5
 MIN_DIAGRAMS = 4
 MIN_TOTAL_CHARS = 8000   # 本文合計（タグ・ショートコード除く）の下限
 TARGET_TOTAL_CHARS = 9000
+SUMMARY_TARGET_CHARS = 400  # まとめH2セクションの目安（箇条書き含む）
+SUMMARY_MAX_CHARS = 500     # これを超えたらP1エラー
 
 SHORTCODE_RE = re.compile(r"\[/?st-[a-z0-9_-]+[^\]]*\]|\[/?st_af[^\]]*\]")
 TAG_RE = re.compile(r"<[^>]+>")
@@ -335,6 +337,15 @@ def check_lead_structure(html: str, findings: list[Finding]):
             if "{{IMG:" in body or "<img" in body:
                 findings.append(Finding("P2", "まとめH2に図解禁止", f"H2「{title[:18]}」",
                                         "まとめセクションには画像を配置しない"))
+            n = len(re.sub(r"\s", "", strip_markup(body)))
+            if n > SUMMARY_MAX_CHARS:
+                findings.append(Finding("P1", f"まとめが長すぎる(最大{SUMMARY_MAX_CHARS}字)",
+                                        f"H2「{title[:18]}」", f"{n}字",
+                                        "結論1〜2文→箇条書き5項目以内→行動の一押し→CTAに圧縮。"
+                                        "箇条書きの内容を本文で繰り返さない"))
+            elif n > SUMMARY_TARGET_CHARS:
+                findings.append(Finding("P2", f"まとめ長め(目安{SUMMARY_TARGET_CHARS}字)",
+                                        f"H2「{title[:18]}」", f"{n}字"))
 
     # 各H2の直前にCTAボタン（st_af または st-mcbutton）があるか。
     # 最初のH2は冒頭ブロック（ピックアップ内CTA）が直前にあるため免除
