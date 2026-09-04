@@ -371,6 +371,20 @@ def check_lead_structure(html: str, findings: list[Finding]):
                                     "最後のH2セクションの文末にCTAボタンを配置する"))
 
 
+def check_image_spacing(html: str, findings: list[Finding]):
+    """画像プレースホルダの直後に空行があるか（WORKFLOW Phase 10）。"""
+    lines = html.split("\n")
+    for i, line in enumerate(lines):
+        if "{{IMG:" not in line:
+            continue
+        if i + 1 < len(lines) and lines[i + 1].strip():
+            m = re.search(r"\{\{IMG:([^}]+)\}\}", line)
+            fname = m.group(1) if m else "?"
+            findings.append(Finding("P2", "画像直下に空行なし", fname,
+                                    lines[i + 1].strip()[:24],
+                                    "{{IMG:...}} の直後に空行を1行入れる"))
+
+
 def check_total_length(html: str, findings: list[Finding]):
     """本文合計の文字数（タグ・ショートコード・空白除く）。"""
     text = re.sub(r"\s", "", strip_markup(html))
@@ -412,6 +426,7 @@ def run(dirpath: Path, stage: str) -> int:
         check_decoration(html, findings)
         check_numbers_grounding(html, dirpath / "facts.json", findings)
         check_images(dirpath, html, findings)
+        check_image_spacing(html, findings)
         check_total_length(html, findings)
         check_lead_structure(html, findings)
 
