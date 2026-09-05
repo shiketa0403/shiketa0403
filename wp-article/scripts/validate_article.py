@@ -373,6 +373,47 @@ def check_lead_structure(html: str, findings: list[Finding], light: bool = False
                                     "最後のH2セクションの文末にCTAボタンを配置する"))
 
 
+DECORATED_LINE = re.compile(
+    r"st-mymarker-s|hutoaka|\[st-|\[st_af|\[/st|<ul|<ol|<li|</ul|</ol|<h\d|</h\d"
+    r"|\{\{IMG|<img|<table|</table|<t[rdh]|<a\s|class=\"graybox\"|</div|<div")
+
+
+def check_section_structure(html: str, findings: list[Finding]):
+    """H2配下の粒度: 長文なのにH3が無いH2を検出（まとめは除外）。"""
+    for title, body in iter_h_sections(html, "h2"):
+        if title.strip().endswith("まとめ"):
+            continue
+        n = len(re.sub(r"\s", "", strip_markup(body)))
+        if "<h3" not in body and n >= 500:
+            findings.append(Finding("P1", "H2がH3未分割の長文", f"H2「{title[:18]}」",
+                                    f"{n}字",
+                                    "H2の中をH3 2〜3個に分割する（通常記事と同じ粒度にする）"))
+
+
+def check_decoration_runs(html: str, findings: list[Finding]):
+    """装飾なしの本文段落が連続しすぎていないか（prompts/07: 装飾なし3段落連続の禁止）。"""
+    for title, body in iter_h_sections(html, "h2"):
+        run = 0
+        first = ""
+        for line in body.split("\n"):
+            s = line.strip()
+            if not s:
+                continue
+            if DECORATED_LINE.search(s):
+                run = 0
+                continue
+            if run == 0:
+                first = strip_markup(s)[:18]
+            run += 1
+            if run == 6:
+                findings.append(Finding("P1", "装飾なし段落が6連続以上",
+                                        f"H2「{title[:18]}」", f"「{first}…」から",
+                                        "マーカー・ふきだし・ボックス・箇条書き等を挟む"))
+            elif run == 4:
+                findings.append(Finding("P2", "装飾なし段落が4連続",
+                                        f"H2「{title[:18]}」", f"「{first}…」から"))
+
+
 def check_image_spacing(html: str, findings: list[Finding]):
     """画像プレースホルダの直後に空行があるか（WORKFLOW Phase 10）。"""
     lines = html.split("\n")
@@ -434,6 +475,7 @@ def run(dirpath: Path, stage: str) -> int:
             check_headings(html, findings)
         joined = "\n\n".join(s.read_text(encoding="utf-8") for s in sections)
         check_numbers_grounding(joined, dirpath / "facts.json", findings)
+        check_section_structure(joined, findings)
         check_total_length(joined, findings, light)
     else:  # final
         final = dirpath / "final.html"
@@ -446,6 +488,8 @@ def run(dirpath: Path, stage: str) -> int:
         check_decoration(html, findings)
         check_numbers_grounding(html, dirpath / "facts.json", findings)
         check_images(dirpath, html, findings)
+        check_section_structure(html, findings)
+        check_decoration_runs(html, findings)
         check_image_spacing(html, findings)
         check_total_length(html, findings, light)
         check_lead_structure(html, findings, light)
