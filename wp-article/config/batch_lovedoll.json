@@ -1,0 +1,20 @@
+{
+  "name": "lovedoll_brands",
+  "description": "ラブドールのメーカー・ブランド商標ライト記事の量産バッチ（スプシのシート2）",
+  "spreadsheet_id": "1mbVrsGjYutZ3FCvinzIlqxf8fbOgooYBod2lZSMFMPE",
+  "sheet_hint": "2枚目のシート（列に「国」「素材」があるメーカー・ブランド一覧の方）",
+  "site_key": "lovedoll",
+  "article_type": "商標ライト",
+  "media_info": "ラブドールの正規代理店・メーカー・ブランドを紹介するレビューメディア",
+  "affiliate_url": "",
+  "ad_tag": "[st_af id=\"66\"]",
+  "ad_tag_positions": [
+    "アフィリエイト明示ブロックの直下",
+    "まとめ文末（CTAボタンの後・記事の最後）"
+  ],
+  "skip_rules": [
+    "作成可否が「〇」の行はスキップ（作成しない）",
+    "作成状況が「済」または「スキップ」で始まる行はスキップ（再作成しない）"
+  ],
+  "_memo": "このバッチ専用の設定。ad_tag の挿入はこのバッチの記事だけに適用し、通常記事には影響させない"
+}

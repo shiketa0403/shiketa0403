@@ -222,6 +222,9 @@ python wp-article/scripts/evidence_shots.py out/<slug>
    `{{IMG:ファイル名}}` プレースホルダで挿入。
    **すべての `{{IMG:...}}` の直後には空行を1行入れてから次の本文を続ける**
    （画像と本文が詰まって見えるのを防ぐ。機械監査でチェックされる）
+   **meta.json に ad_tag がある場合のみ**（バッチ実行時。wp-article/BATCH.md 参照）、
+   そのタグをアフィリエイト明示ブロックの直下と、まとめ文末CTAボタンの直後にも挿入する。
+   ad_tag が無い通常記事では何もしない
 3. 画像マニフェスト `out/images.json` を作成:
 ```json
 {"eyecatch": "kuma-doll-00-eyecatch.png",
