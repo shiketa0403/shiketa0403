@@ -67,6 +67,8 @@ PARA_KUTEN_WARN, PARA_KUTEN_ERR = 4, 5
 MIN_DIAGRAMS = 4
 MIN_TOTAL_CHARS = 8000   # 本文合計（タグ・ショートコード除く）の下限
 TARGET_TOTAL_CHARS = 9000
+LIGHT_MIN_TOTAL_CHARS = 4000    # ライトモード（商標ライト・補助ライト）の下限
+LIGHT_TARGET_TOTAL_CHARS = 4500
 SUMMARY_TARGET_CHARS = 400  # まとめH2セクションの目安（箇条書き含む）
 SUMMARY_MAX_CHARS = 500     # これを超えたらP1エラー
 
@@ -318,13 +320,13 @@ def check_images(dirpath: Path, html: str, findings: list[Finding]):
         findings.append(Finding("P0", "images.json不在", "全体", "プレースホルダがあるのにマニフェストが無い"))
 
 
-def check_lead_structure(html: str, findings: list[Finding]):
+def check_lead_structure(html: str, findings: list[Finding], light: bool = False):
     """冒頭ブロックの必須要素（WORKFLOW Phase 7）とH2前CTA（Phase 10）。"""
     if "[st-minihukidashi" not in html or "この記事のまとめ" not in html:
         findings.append(Finding("P1", "まとめボックス不在", "冒頭",
                                 "prompts/09の[st-minihukidashi]「この記事のまとめ」形式で出力する。"
                                 "独自デザインの「この記事でわかること」等は不可"))
-    if 'class="graybox"' not in html:
+    if not light and 'class="graybox"' not in html:
         findings.append(Finding("P1", "ピックアップボックス不在", "冒頭",
                                 "prompts/10のgrayboxテンプレで必ず出力（アフィリンク無しでも公式リンクで）"))
 
@@ -385,23 +387,41 @@ def check_image_spacing(html: str, findings: list[Finding]):
                                     "{{IMG:...}} の直後に空行を1行入れる"))
 
 
-def check_total_length(html: str, findings: list[Finding]):
-    """本文合計の文字数（タグ・ショートコード・空白除く）。"""
+def check_total_length(html: str, findings: list[Finding], light: bool = False):
+    """本文合計の文字数（タグ・ショートコード・空白除く）。ライトモードは基準を下げる。"""
+    min_chars = LIGHT_MIN_TOTAL_CHARS if light else MIN_TOTAL_CHARS
+    target = LIGHT_TARGET_TOTAL_CHARS if light else TARGET_TOTAL_CHARS
+    goal = "6,000" if light else "12,000"
     text = re.sub(r"\s", "", strip_markup(html))
     n = len(text)
-    if n < MIN_TOTAL_CHARS:
-        findings.append(Finding("P1", f"本文量不足(最低{MIN_TOTAL_CHARS}字)", "全体",
-                                f"{n}字", f"目標{TARGET_TOTAL_CHARS}〜12,000字。H2を追加して拡充する"))
-    elif n < TARGET_TOTAL_CHARS:
-        findings.append(Finding("P2", f"本文量注意(目標{TARGET_TOTAL_CHARS}字)", "全体", f"{n}字"))
+    if n < min_chars:
+        findings.append(Finding("P1", f"本文量不足(最低{min_chars}字)", "全体",
+                                f"{n}字", f"目標{target}〜{goal}字。H2を追加して拡充する"))
+    elif n < target:
+        findings.append(Finding("P2", f"本文量注意(目標{target}字)", "全体", f"{n}字"))
     else:
         print(f"[情報] 本文文字数: {n}字")
 
 
 # ---------------------------------------------------------------- main
 
+def load_light_mode(dirpath: Path) -> bool:
+    """meta.json の article_type に「ライト」が含まれればライト基準を適用。"""
+    meta_path = dirpath / "meta.json"
+    if meta_path.exists():
+        try:
+            meta = json.loads(meta_path.read_text(encoding="utf-8"))
+            return "ライト" in str(meta.get("article_type", ""))
+        except Exception:
+            pass
+    return False
+
+
 def run(dirpath: Path, stage: str) -> int:
     findings: list[Finding] = []
+    light = load_light_mode(dirpath)
+    if light:
+        print("[情報] ライトモード基準で監査します（article_type にライト指定）")
 
     if stage == "text":
         sections = sorted((dirpath / "sections").glob("h2-*.html"))
@@ -414,7 +434,7 @@ def run(dirpath: Path, stage: str) -> int:
             check_headings(html, findings)
         joined = "\n\n".join(s.read_text(encoding="utf-8") for s in sections)
         check_numbers_grounding(joined, dirpath / "facts.json", findings)
-        check_total_length(joined, findings)
+        check_total_length(joined, findings, light)
     else:  # final
         final = dirpath / "final.html"
         if not final.exists():
@@ -427,8 +447,8 @@ def run(dirpath: Path, stage: str) -> int:
         check_numbers_grounding(html, dirpath / "facts.json", findings)
         check_images(dirpath, html, findings)
         check_image_spacing(html, findings)
-        check_total_length(html, findings)
-        check_lead_structure(html, findings)
+        check_total_length(html, findings, light)
+        check_lead_structure(html, findings, light)
 
     # レポート
     order = {"P0": 0, "P1": 1, "P2": 2}
