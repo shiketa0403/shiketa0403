@@ -34,6 +34,20 @@
    **同じ事実への根拠提示は記事全体で1回まで**（2回目以降の言及は根拠なしでよい）。
    根拠を付けられない数字はそもそも本文に書かない（共通ルール4と同じ）
 
+## サイト別プロファイル（装飾セット・YMYL強化）
+
+Phase 0 で `sites.local.json` の該当サイト設定を読み、次の2項目があれば適用する。
+**どちらも無いサイト（lovedoll等の既存サイト）は従来通りで一切変わらない。**
+
+| 設定キー | 値 | 効果 |
+|---|---|---|
+| `decoration` | `"plain"` | 装飾を `prompts/13_装飾セット_plain.md` の書式で出力（AFFINGERショートコード禁止）。`main_color` で配色を決める |
+| `ymyl_profile` | `"medicine_import"` | `prompts/14_YMYL強化_医薬品個人輸入.md` を最優先で適用 |
+
+`decoration: "plain"` のサイトでは、prompts/07・09・10 の**装飾の書式のみ**を
+prompts/13 に差し替える（構成・順序・密度ルールは共通のまま）。
+`st_af` などAFFINGER前提の要素は出力せず、CTAは prompts/13 のボタン書式を使う。
+
 ## 記事モード（通常 / 商標ライト / 補助ライト）
 
 案件マスタ・プロンプトの「記事タイプ」で切り替える。
@@ -80,7 +94,9 @@
 service_name / official_url / media_info / slug / category / tags /
 アフィリエイト各項目 / main_article_url(補助ライトの内部リンク先・任意) を読み取る。
 slugが未指定ならキーワードから英小文字ハイフンで生成（例: kuma-doll）。
-`out/meta.json` に保存する。
+あわせて `sites.local.json` の該当サイトから `decoration` / `main_color` / `ymyl_profile` を読み、
+**その値も `out/meta.json` に保存する**（「サイト別プロファイル」節の通り適用。
+機械監査もこの値を見て装飾書式の判定を切り替える）。
 
 ### Phase 1: リサーチ＋事実シート（prompts/01 + 12のSearch Protocol）
 WebSearch / WebFetch を使い次を実施:

@@ -4,6 +4,14 @@
     "username": "YOUR_WP_USERNAME",
     "app_password": "YOUR_APP_PASSWORD"
   },
+  "iyakuhin": {
+    "url": "https://iyakuhin-import.heteml.net",
+    "username": "YOUR_WP_USERNAME",
+    "app_password": "YOUR_APP_PASSWORD",
+    "decoration": "plain",
+    "main_color": "#1565c0",
+    "ymyl_profile": "medicine_import"
+  },
   "_google_maps_api_key": "YOUR_GOOGLE_MAPS_API_KEY",
-  "_memo": "このファイルを sites.local.json という名前でコピーして記入する。sites.local.json はgitignore対象なのでGitHubにはアップロードされない。新しいドメインを追加するときはブロックを増やすだけ。_google_maps_api_key はGoogleマップ口コミ調査用（Places API有効のキー。未記入ならマップ調査はスキップされる）"
+  "_memo": "このファイルを sites.local.json という名前でコピーして記入する。sites.local.json はgitignore対象なのでGitHubにはアップロードされない。新しいドメインを追加するときはブロックを増やすだけ。decoration/main_color/ymyl_profile は任意（無ければ従来通りAFFINGER装飾）。decoration:\"plain\" はテーマ非依存のインラインCSS装飾（prompts/13）、ymyl_profile:\"medicine_import\" は医薬品個人輸入代行向けの表現規制（prompts/14）。_google_maps_api_key はGoogleマップ口コミ調査用（Places API有効のキー。未記入ならマップ調査はスキップされる）"
 }

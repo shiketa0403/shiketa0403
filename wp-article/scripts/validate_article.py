@@ -219,6 +219,26 @@ def check_headings(html: str, findings: list[Finding]):
             findings.append(Finding("P2", "H3文字数(20字推奨)", "見出し", t))
 
 
+def check_plain_decoration(html: str, findings: list[Finding]):
+    """decoration="plain" のサイト用（prompts/13）。テーマ依存記法の混入を検出。"""
+    for m in re.finditer(r"\[st[-_][a-z]+", html):
+        findings.append(Finding("P1", "AFFINGERショートコード混入(plainサイト)", "全体",
+                                m.group(0),
+                                "prompts/13_装飾セット_plain.md の書式に置き換える"))
+        break
+    for cls in ("st-mymarker-s", "hutoaka", "graybox", "st-square-checkbox"):
+        if cls in html:
+            findings.append(Finding("P1", "テーマ依存クラス混入(plainサイト)", "全体", cls,
+                                    "インラインstyleの書式（prompts/13）に置き換える"))
+    # 最低限の装飾が入っているか
+    if "linear-gradient(transparent 60%" not in html:
+        findings.append(Finding("P2", "黄色マーカー不在(plainサイト)", "全体",
+                                "最重要ポイントに1箇所入れる"))
+    if "この記事のまとめ" not in html:
+        findings.append(Finding("P1", "まとめボックス不在(plainサイト)", "冒頭",
+                                "prompts/13 の3.の書式で出力する"))
+
+
 def check_decoration(html: str, findings: list[Finding]):
     """prompts/07 の装飾ルール検証（finalステージ用）。"""
     for h2_title, body in iter_h_sections(html, "h2"):
@@ -320,15 +340,24 @@ def check_images(dirpath: Path, html: str, findings: list[Finding]):
         findings.append(Finding("P0", "images.json不在", "全体", "プレースホルダがあるのにマニフェストが無い"))
 
 
-def check_lead_structure(html: str, findings: list[Finding], light: bool = False):
+def has_cta(segment: str) -> bool:
+    """AFFINGER（st_af/st-mcbutton）とplain（インラインstyleのボタン）の両方を検出。"""
+    if "[st_af" in segment or "st-mcbutton" in segment:
+        return True
+    return bool(re.search(r"<a [^>]*style=\"[^\"]*display:inline-block", segment))
+
+
+def check_lead_structure(html: str, findings: list[Finding], light: bool = False,
+                         plain: bool = False):
     """冒頭ブロックの必須要素（WORKFLOW Phase 7）とH2前CTA（Phase 10）。"""
-    if "[st-minihukidashi" not in html or "この記事のまとめ" not in html:
-        findings.append(Finding("P1", "まとめボックス不在", "冒頭",
-                                "prompts/09の[st-minihukidashi]「この記事のまとめ」形式で出力する。"
-                                "独自デザインの「この記事でわかること」等は不可"))
-    if not light and 'class="graybox"' not in html:
-        findings.append(Finding("P1", "ピックアップボックス不在", "冒頭",
-                                "prompts/10のgrayboxテンプレで必ず出力（アフィリンク無しでも公式リンクで）"))
+    if not plain:
+        if "[st-minihukidashi" not in html or "この記事のまとめ" not in html:
+            findings.append(Finding("P1", "まとめボックス不在", "冒頭",
+                                    "prompts/09の[st-minihukidashi]「この記事のまとめ」形式で出力する。"
+                                    "独自デザインの「この記事でわかること」等は不可"))
+        if not light and 'class="graybox"' not in html:
+            findings.append(Finding("P1", "ピックアップボックス不在", "冒頭",
+                                    "prompts/10のgrayboxテンプレで必ず出力（アフィリンク無しでも公式リンクで）"))
 
     # まとめH2の特則: H3・図解を置かない
     for title, body in iter_h_sections(html, "h2"):
@@ -358,7 +387,7 @@ def check_lead_structure(html: str, findings: list[Finding], light: bool = False
         prev_end = m.end()
         if i == 0:
             continue
-        if "[st_af" not in segment and "st-mcbutton" not in segment:
+        if not has_cta(segment):
             title = strip_markup(m.group(1)).strip()
             findings.append(Finding("P1", "H2直前のCTAボタン不在",
                                     f"H2「{title[:18]}」", "各H2の直前にCTAボタンを配置する"))
@@ -366,7 +395,7 @@ def check_lead_structure(html: str, findings: list[Finding], light: bool = False
     # 記事末尾（最後のH2＝まとめセクションの文末）にもCTAボタン必須
     if h2s:
         tail = html[h2s[-1].end():]
-        if "[st_af" not in tail and "st-mcbutton" not in tail:
+        if not has_cta(tail):
             title = strip_markup(h2s[-1].group(1)).strip()
             findings.append(Finding("P1", "記事末尾のCTAボタン不在",
                                     f"H2「{title[:18]}」の文末",
@@ -446,23 +475,25 @@ def check_total_length(html: str, findings: list[Finding], light: bool = False):
 
 # ---------------------------------------------------------------- main
 
-def load_light_mode(dirpath: Path) -> bool:
-    """meta.json の article_type に「ライト」が含まれればライト基準を適用。"""
+def load_meta(dirpath: Path) -> dict:
     meta_path = dirpath / "meta.json"
     if meta_path.exists():
         try:
-            meta = json.loads(meta_path.read_text(encoding="utf-8"))
-            return "ライト" in str(meta.get("article_type", ""))
+            return json.loads(meta_path.read_text(encoding="utf-8"))
         except Exception:
             pass
-    return False
+    return {}
 
 
 def run(dirpath: Path, stage: str) -> int:
     findings: list[Finding] = []
-    light = load_light_mode(dirpath)
+    meta = load_meta(dirpath)
+    light = "ライト" in str(meta.get("article_type", ""))
+    plain = str(meta.get("decoration", "")) == "plain"
     if light:
         print("[情報] ライトモード基準で監査します（article_type にライト指定）")
+    if plain:
+        print("[情報] plain装飾セット基準で監査します（decoration: plain）")
 
     if stage == "text":
         sections = sorted((dirpath / "sections").glob("h2-*.html"))
@@ -485,14 +516,17 @@ def run(dirpath: Path, stage: str) -> int:
         html = final.read_text(encoding="utf-8")
         check_text_rules("final.html", html, findings)
         check_headings(html, findings)
-        check_decoration(html, findings)
+        if plain:
+            check_plain_decoration(html, findings)
+        else:
+            check_decoration(html, findings)
         check_numbers_grounding(html, dirpath / "facts.json", findings)
         check_images(dirpath, html, findings)
         check_section_structure(html, findings)
         check_decoration_runs(html, findings)
         check_image_spacing(html, findings)
         check_total_length(html, findings, light)
-        check_lead_structure(html, findings, light)
+        check_lead_structure(html, findings, light, plain)
 
     # レポート
     order = {"P0": 0, "P1": 1, "P2": 2}
