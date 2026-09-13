@@ -22,3 +22,4 @@ rentracks_yahoo_import*.tsv
 google_offline_import*.csv
 gads_*import*.csv
 unext_yahoo_import*.tsv
+suumo_yahoo_import*.tsv
