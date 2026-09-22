@@ -18,7 +18,9 @@ wp_config.py は呼び出し側(GitHub Actions)が生成する。
 
 import argparse
 import json
+import shutil
 import sys
+import tempfile
 from pathlib import Path
 
 from wp_post import create_post
@@ -43,7 +45,7 @@ def main():
     images_path = base / f"images_{args.area}.json"
     if images_path.exists():
         images = json.loads(images_path.read_text(encoding="utf-8"))
-        for img in images:
+        for i, img in enumerate(images, 1):
             h3 = img["h3"]
             png = Path(img["png"])
             alt = img.get("alt", h3)
@@ -54,7 +56,11 @@ def main():
             if not png.exists():
                 print(f"  [SKIP] 画像なし: {png}")
                 continue
-            result = upload_to_wordpress(png, title=alt)
+            # 日本語ファイル名はHTTPヘッダー(latin-1)で送れないため、ASCII名にコピーしてから上げる
+            ascii_name = img.get("name") or f"{args.area}-shop-{i}"
+            tmp_png = Path(tempfile.gettempdir()) / f"{ascii_name}.png"
+            shutil.copyfile(png, tmp_png)
+            result = upload_to_wordpress(tmp_png, title=alt)
             if not result or not result.get("url"):
                 print(f"  [SKIP] アップロード失敗: {png}")
                 continue
