@@ -170,20 +170,50 @@ def main():
     print(f"検証結果を書き出し: {out_path} ({len(out_rows)}行)")
 
     if args.screenshots and screenshot_targets:
-        from screenshot import take_screenshot  # 既存スクリプトを流用
-        shot_dir = base / "screenshots" / args.area
+        from playwright.sync_api import sync_playwright
+        shot_dir = base / "shots" / args.area
+        page_dir = base / "pages" / args.area
         shot_dir.mkdir(parents=True, exist_ok=True)
-        for gyosha, urls in screenshot_targets.items():
-            for j, url in enumerate(sorted(urls), 1):
-                out_png = shot_dir / f"{safe_filename(gyosha)}_{j}.png"
-                try:
-                    take_screenshot(url, str(out_png))
-                    if out_png.exists() and out_png.stat().st_size < 20 * 1024:
-                        print(f"  [SKIP] 20KB未満(ブロック判定): {url}")
-                        out_png.unlink()
-                except Exception as e:
-                    print(f"  [ERROR] スクショ失敗 {url}: {e}", file=sys.stderr)
-        print(f"スクリーンショット保存先: {shot_dir}")
+        page_dir.mkdir(parents=True, exist_ok=True)
+        with sync_playwright() as p:
+            browser = p.chromium.launch(
+                headless=True,
+                args=["--disable-blink-features=AutomationControlled"],
+            )
+            context = browser.new_context(
+                viewport={"width": 1280, "height": 800},
+                locale="ja-JP",
+                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+            )
+            context.add_init_script(
+                "Object.defineProperty(navigator, 'webdriver', { get: () => false });"
+            )
+            for gyosha, urls in screenshot_targets.items():
+                for j, url in enumerate(sorted(urls), 1):
+                    stem = f"{safe_filename(gyosha)}_{j}"
+                    out_png = shot_dir / f"{stem}.png"
+                    out_txt = page_dir / f"{stem}.txt"
+                    page = context.new_page()
+                    try:
+                        print(f"取得中: {url}")
+                        page.goto(url, wait_until="domcontentloaded", timeout=60000)
+                        try:
+                            page.wait_for_load_state("networkidle", timeout=15000)
+                        except Exception:
+                            pass
+                        page.wait_for_timeout(5000)
+                        page.screenshot(path=str(out_png), full_page=True)
+                        if out_png.exists() and out_png.stat().st_size < 20 * 1024:
+                            print(f"  [SKIP] 20KB未満(ブロック判定): {url}")
+                            out_png.unlink()
+                        body_text = page.inner_text("body")
+                        out_txt.write_text(f"URL: {url}\n\n{body_text}", encoding="utf-8")
+                    except Exception as e:
+                        print(f"  [ERROR] 取得失敗 {url}: {e}", file=sys.stderr)
+                    finally:
+                        page.close()
+            browser.close()
+        print(f"スクリーンショット保存先: {shot_dir} / 本文テキスト: {page_dir}")
 
 
 if __name__ == "__main__":
