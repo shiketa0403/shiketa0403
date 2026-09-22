@@ -1,0 +1,81 @@
+name: Genkinka Area (地域指定→業者発見+裏取り一括)
+
+on:
+  workflow_dispatch:
+    inputs:
+      area_ja:
+        description: "地域名(日本語・例: 新宿)"
+        required: true
+      slug:
+        description: "ローマ字スラッグ(例: shinjuku)"
+        required: true
+      screenshots:
+        description: "公式サイトのスクショ・本文テキストも取得する"
+        required: true
+        default: true
+        type: boolean
+      force:
+        description: "既存マスタを上書きして発見からやり直す"
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  area:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install anthropic playwright
+          playwright install chromium
+          playwright install-deps chromium
+
+      - name: Discover (Claude Web Search)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          FORCE=""
+          if [ "${{ inputs.force }}" = "true" ]; then
+            FORCE="--force"
+          fi
+          python local_genkinka_discover.py --area-ja "${{ inputs.area_ja }}" --slug "${{ inputs.slug }}" $FORCE
+
+      - name: Verify (Places API + Playwright)
+        env:
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+        run: |
+          FLAGS="--merge"
+          if [ "${{ inputs.screenshots }}" = "true" ]; then
+            FLAGS="$FLAGS --screenshots"
+          fi
+          python local_genkinka_verify.py --area "${{ inputs.slug }}" $FLAGS
+
+      - name: Upload screenshots artifact
+        if: ${{ inputs.screenshots }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: genkinka-shots-${{ inputs.slug }}
+          path: local-genkinka/shots/${{ inputs.slug }}/
+          if-no-files-found: ignore
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add local-genkinka/
+          if git diff --cached --quiet; then
+            echo "変更なし"
+          else
+            git commit -m "genkinka_area: ${{ inputs.area_ja }}(${{ inputs.slug }}) の発見+裏取り結果"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
