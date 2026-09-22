@@ -94,6 +94,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--area", required=True, help="エリア名 (master_{area}.csv)")
     parser.add_argument("--screenshots", action="store_true", help="公式サイトのスクショも取得")
+    parser.add_argument("--merge", action="store_true", help="裏取り結果をマスタへ自動反映")
     parser.add_argument("--max-results", type=int, default=3)
     args = parser.parse_args()
 
@@ -168,6 +169,46 @@ def main():
         writer.writeheader()
         writer.writerows(out_rows)
     print(f"検証結果を書き出し: {out_path} ({len(out_rows)}行)")
+
+    if args.merge:
+        # 類似度の高い営業中候補が見つかった業者は、マスタにPlacesデータを自動反映する
+        best = {}
+        for r in out_rows:
+            if r["候補順位"] == 1 and r["名称"] != "(候補なし)":
+                best[r["入力業者名"]] = r
+        updated = 0
+        for row in rows:
+            gyosha = row.get("業者名", "").strip()
+            b = best.get(gyosha)
+            if not b:
+                continue
+            sim = float(b["名称類似度"] or 0)
+            if sim >= 0.9 and b["営業状態"] == "営業中":
+                row["住所"] = b["住所"]
+                row["営業時間"] = b["営業時間"]
+                if b["公式サイト"] and row.get("公式サイト", "") in ("", "要確認", "未発見"):
+                    row["公式サイト"] = b["公式サイト"]
+                extra = f"電話{b['電話']}" if b["電話"] else ""
+                if b["評価件数"]:
+                    extra += f"・Google評価{b['評価点']}({b['評価件数']}件)"
+                if extra and extra not in row.get("掲示・特徴", ""):
+                    row["掲示・特徴"] = (row.get("掲示・特徴", "") + " / " + extra).strip(" /")
+                row["状態"] = "営業中(Places確認済み)"
+                row["要確認事項"] = "なし"
+                updated += 1
+            elif sim < 0.5:
+                if "Places" not in row.get("要確認事項", ""):
+                    row["要確認事項"] = (row.get("要確認事項", "") +
+                                    " / Placesで一致候補なし(Googleビジネス未登録の可能性)").strip(" /")
+            else:
+                if "目視確認" not in row.get("要確認事項", ""):
+                    row["要確認事項"] = (row.get("要確認事項", "") +
+                                    f" / Places類似候補あり(類似度{sim})・目視確認要").strip(" /")
+        with open(master_path, "w", encoding="utf-8", newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+            writer.writeheader()
+            writer.writerows(rows)
+        print(f"マスタへ自動反映: {master_path} (確定{updated}件)")
 
     if args.screenshots and screenshot_targets:
         from playwright.sync_api import sync_playwright
