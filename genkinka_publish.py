@@ -20,6 +20,7 @@ import argparse
 import json
 import shutil
 import sys
+import time
 import tempfile
 from pathlib import Path
 
@@ -60,7 +61,13 @@ def main():
             ascii_name = img.get("name") or f"{args.area}-shop-{i}"
             tmp_png = Path(tempfile.gettempdir()) / f"{ascii_name}.png"
             shutil.copyfile(png, tmp_png)
-            result = upload_to_wordpress(tmp_png, title=alt)
+            # SiteGuard等のWAFが単発403を返すことがあるため最大3回リトライ
+            result = None
+            for attempt in range(3):
+                result = upload_to_wordpress(tmp_png, title=alt)
+                if result and result.get("url"):
+                    break
+                time.sleep(5)
             if not result or not result.get("url"):
                 print(f"  [SKIP] アップロード失敗: {png}")
                 continue
