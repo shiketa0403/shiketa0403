@@ -1,0 +1,52 @@
+name: Genkinka Post (credit-genkinka.heteml.net へ投稿)
+
+on:
+  workflow_dispatch:
+    inputs:
+      area:
+        description: "エリアスラッグ (local-genkinka/articles/{area}.html)"
+        required: true
+        default: "ikebukuro"
+      title:
+        description: "記事タイトル"
+        required: true
+      slug:
+        description: "記事スラッグ"
+        required: true
+      status:
+        description: "投稿ステータス"
+        required: true
+        default: "draft"
+        type: choice
+        options:
+          - draft
+          - publish
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate wp_config.py (heteml)
+        run: |
+          cat > wp_config.py << 'PYEOF'
+          WP_CONFIG = {
+              "site_url": "https://credit-genkinka.heteml.net",
+              "username": "${{ secrets.GENKINKA_WP_USERNAME }}",
+              "app_password": "${{ secrets.GENKINKA_WP_APP_PASSWORD }}",
+          }
+          PYEOF
+
+      - name: Publish
+        run: |
+          python genkinka_publish.py \
+            --area "${{ inputs.area }}" \
+            --title "${{ inputs.title }}" \
+            --slug "${{ inputs.slug }}" \
+            --status "${{ inputs.status }}"
