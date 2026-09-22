@@ -1,0 +1,61 @@
+name: Genkinka Verify (地域×現金化 業者裏取り)
+
+on:
+  workflow_dispatch:
+    inputs:
+      area:
+        description: "エリア名 (local-genkinka/master_{area}.csv)"
+        required: true
+        default: "ikebukuro"
+      screenshots:
+        description: "公式サイトのスクリーンショットも取得する"
+        required: true
+        default: true
+        type: boolean
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install playwright
+          playwright install chromium
+          playwright install-deps chromium
+
+      - name: Run verify
+        env:
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+        run: |
+          FLAGS=""
+          if [ "${{ inputs.screenshots }}" = "true" ]; then
+            FLAGS="--screenshots"
+          fi
+          python local_genkinka_verify.py --area "${{ inputs.area }}" $FLAGS
+
+      - name: Upload screenshots artifact
+        if: ${{ inputs.screenshots }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: genkinka-screenshots-${{ inputs.area }}
+          path: local-genkinka/screenshots/${{ inputs.area }}/
+          if-no-files-found: ignore
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add local-genkinka/
+          if git diff --cached --quiet; then
+            echo "変更なし"
+          else
+            git commit -m "genkinka_verify: ${{ inputs.area }} の裏取り結果を更新"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
