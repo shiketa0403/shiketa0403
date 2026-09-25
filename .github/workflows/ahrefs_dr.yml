@@ -12,10 +12,10 @@ on:
         description: 'アップロードしたCSV/TXTのパス（例: csv/mylist.csv）。1列目をドメインとして読む'
         required: false
         type: string
-      exclude_max:
-        description: 'この DR 以下を除外（既定2 = DR2以下を除外しDR3以上を残す）'
+      min_dr:
+        description: 'このDR以上を残す（この値を含む・小数OK）。例: 1.5 で DR1.5以上を残す'
         required: false
-        default: '2'
+        default: '3'
         type: string
       test:
         description: 'true なら1件だけ投げて生レスポンス・消費unitsを確認（本番前の確認用）'
@@ -80,7 +80,7 @@ jobs:
             python ahrefs_dr.py "$DOMAIN_SRC" \
               -o ahrefs_dr.csv \
               --passed-output ahrefs_dr_passed.csv \
-              --exclude-max "${{ github.event.inputs.exclude_max || '2' }}"
+              --min-dr "${{ github.event.inputs.min_dr || '3' }}"
           fi
         timeout-minutes: 50
 
